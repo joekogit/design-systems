@@ -1,6 +1,6 @@
 # Deploying
 
-Live at **https://joekonet-systems.netlify.app** — pending the `systems.joeko.net` alias below.
+Live at **https://systems.joeko.net** (also https://joekonet-systems.netlify.app).
 
 - **Repo:** `github.com/joekogit/design-systems` (private)
 - **Netlify site:** `joekonet-systems` — site id `9a161ed6-7881-4b6c-8ee7-864d7fccd50d`
@@ -8,21 +8,14 @@ Live at **https://joekonet-systems.netlify.app** — pending the `systems.joeko.
 - Static: no build step, no dependencies, relative links only. `netlify.toml` sets
   `publish = "."` with an empty build command plus a few security headers.
 
-## Remaining: point systems.joeko.net at it
+## Domain — done
 
-`joeko.net` is on Netlify DNS (nameservers `dns*.p02.nsone.net`), the same as `move`, `shot`,
-`play`, `arcade` and `rave`. So the DNS record and the TLS certificate are both created for you —
-there is nothing to add at a registrar.
-
-1. https://app.netlify.com/projects/joekonet-systems/domain-management
-2. **Add a domain** → `systems.joeko.net` → confirm.
-3. Netlify writes the record in its own zone and provisions the certificate. Usually under a
-   minute; occasionally a few minutes for the certificate.
-
-Verify:
+`systems.joeko.net` is the primary URL. `joeko.net` is on Netlify DNS (nameservers
+`dns*.p02.nsone.net`), so the A records and the wildcard `*.joeko.net` Let's Encrypt certificate
+were issued automatically. Verified: HTTP/2, HSTS, security headers, and a working 404.
 
 ```bash
-dig +short A systems.joeko.net          # expect the Netlify load-balancer IPs
+dig +short A systems.joeko.net    # 98.84.224.111  18.208.88.157
 curl -sI https://systems.joeko.net | head -1
 ```
 
