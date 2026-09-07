@@ -62,3 +62,20 @@ a:hover .feat-title { color: var(--c-primary-hover); }
 .cta-band { background: var(--c-surface); border-color: var(--c-surface); border-radius: var(--r-xl); }
 .spec { --spec-bg: transparent; border-top-color: var(--c-surface); }
 .sw-val, .ts-meta code { font-family: var(--font-mono); }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant role
+   at once. Scoped to the exact instance: the shared class is painted
+   several ways here, and the plain cards keep the page's own tokens. */
+.tier {
+  color: var(--c-ink);
+  --c-ink: #ffffff; --c-ink-muted: #cecece; --c-ink-subtle: #b4b4b4;
+  --c-accent-text: #f46d62; --c-accent-ui: #f36458;
+}  /* on #212121: ink 16.1, muted 10.2, subtle 7.8 */
+.tier-feat {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #414141; --c-ink-subtle: #5c5c5c;
+  --c-accent-text: #b91b0d; --c-accent-ui: #ef2f1f;
+}  /* on #ededed: ink 16.1, muted 8.7, subtle 5.7 */
+

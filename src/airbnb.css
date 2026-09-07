@@ -16,7 +16,7 @@
 .nav-act .btn { border-radius: var(--r-pill); }
 .eyebrow { color: var(--c-ink-subtle); text-transform: none; letter-spacing: 0; font-weight: 600; }
 .t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; letter-spacing: -.03em; }
-.hero-title em { color: var(--c-primary); }
+.hero-title em { color: var(--c-accent-text); }
 
 /* the pill search bar — the brand's most recognisable component */
 .hero-cta { position: relative; }
@@ -53,7 +53,7 @@
   color: var(--c-ink); font-weight: 600; font-size: 14px; backdrop-filter: none; }
 
 .metrics { --metrics-bg: #f7f7f7; border-block: 0; }
-.metric-v { color: var(--c-ink); }
+.metric-v { color: var(--c-accent-text); }
 .quote-card { background: #f7f7f7; border: 0; border-radius: var(--r-xl);
   --quote-align: left; --quote-by-just: flex-start; }
 .quote-mark { color: var(--c-primary); }
@@ -70,3 +70,15 @@
 /* footer is plain text columns — no card surface, no shadow */
 .foot { border-top-color: #ebebeb; }
 .spec { --spec-bg: #f7f7f7; }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* Neither pole reads on this band (white 5.4:1, black 3.5:1), so the
+   ground itself is the problem: deepen the brand red, keep white text. */
+.tier.tier-feat {
+  color: var(--c-ink);
+  background: #6a6a6a;
+  --c-ink: #ffffff; --c-ink-muted: #f2f2f2; --c-ink-subtle: #e8e8e8;
+  --c-accent-text: #ffffff; --c-accent-ui: #ffffff;
+}
+.tier.tier-feat .lede { color: var(--c-ink-muted); }
+

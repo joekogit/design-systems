@@ -2,11 +2,11 @@
 :root {
   --maxw: 1100px; --gut: 16px; --sect: clamp(28px, 3.5vw, 44px);
   --bevel-hi: rgba(255,255,255,.62); --bevel-lo: #3d4f97;
-  --plate: linear-gradient(180deg, #93a3cd 0%, #7a8aba 46%, #6d7dae 100%);
+  --plate: linear-gradient(180deg, #93a3cd 0%, #7a8aba 46%, #7d8cb7 100%);
   --plate-lt: linear-gradient(180deg, #b6cdee 0%, #9fbee7 100%);
   --carbon: #21242e; --shadow-1: none; --shadow-2: none;
 }
-body { background: #6d7dae; }
+body { background: #7d8cb7; }  /* deep enough for the carbon ink to clear 4.5:1 */
 
 /* every plate is edge-lit above and shadow-lined below */
 .feat-card, .tier, .quote-card, .g-item, .cta-band, .zoo-cell, .hero-media, .sc-media img, .alert {

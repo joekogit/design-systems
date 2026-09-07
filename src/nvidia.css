@@ -15,7 +15,7 @@
 .btn-secondary { background: transparent; border-color: #3a3a3a; color: #fff; }
 .btn-secondary:hover { background: rgba(255,255,255,.06); border-color: var(--green); }
 .eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .1em; font-size: 11px; font-weight: 600; }
-.eyebrow { color: var(--green); }
+.eyebrow { color: var(--c-accent-text); }
 .t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; letter-spacing: -.01em; }
 .hero-title em { color: var(--green); }
 .hero-sub { color: rgba(255,255,255,.84); }
@@ -52,3 +52,13 @@
 .faq-mk { color: var(--green); }
 .cta-band { background: var(--soft); border-color: #2a2a2a; }
 .spec { --spec-bg: var(--soft); }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant
+   role at once, because they all already draw from these names. */
+.section.features {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #4c4c4c; --c-ink-subtle: #686868;
+  --c-accent-text: #487200; --c-accent-ui: #5f9500;
+}  /* on #ffffff: ink 18.9, muted 8.6, subtle 5.6, accent 5.7 */

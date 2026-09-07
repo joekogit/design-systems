@@ -14,7 +14,7 @@
 .btn-secondary { background: #fff; color: var(--teal-deep); border-color: var(--teal-deep); }
 .btn-secondary:hover { background: #eef5f4; }
 .eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 700; }
-.eyebrow { color: var(--green); }
+.eyebrow { color: var(--c-accent-text); }
 .t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 800; letter-spacing: -.035em; }
 
 /* the deep teal hero band */
@@ -60,3 +60,21 @@
 .foot-socials a { border-color: rgba(255,255,255,.26); color: rgba(255,255,255,.86); border-radius: var(--r-pill); }
 .spec { --spec-bg: #f7faf9; }
 .input, .badge2, .tabs, .tabs button { border-radius: var(--r-pill); }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant
+   role at once, because they all already draw from these names. */
+.hero {
+  color: var(--c-ink);
+  --c-ink: #ffffff; --c-ink-muted: #c3cece; --c-ink-subtle: #9fb1b0;
+  --c-accent-text: #00ed64; --c-accent-ui: #00ed64;
+}  /* on #0e3b3a: ink 12.3, muted 7.6, subtle 5.5, accent 7.8 */
+
+/* Gallery tags carry white label text, so each tag colour is deepened
+   only as far as white needs; the hue and the one treatment are kept. */
+.g-item figcaption { background: #118181; }  /* #16a5a5 -> #118181, white 4.7:1 */
+.g-item:nth-child(2) figcaption { background: #a539ef; }  /* #b45af2 -> #a539ef, white 4.7:1 */
+.g-item:nth-child(3) figcaption { background: #c74f00; }  /* #ff8a3d -> #c74f00, white 4.6:1 */
+.g-item:nth-child(4) figcaption { background: #00854b; }  /* #00c26e -> #00854b, white 4.7:1 */
+.g-item:nth-child(5) figcaption { background: #a539ef; }  /* #b45af2 -> white 4.7:1 */

@@ -3,23 +3,25 @@
 /* ---- colors ---- */
   --c-primary: #76b900;
   --c-on-primary: #000000;
-  --c-canvas: #ffffff;
-  --c-ink: #000000;
+  --c-canvas: #000000;
+  --c-surface: #000000;
+  --c-ink: #ffffff;
+  --c-ink-muted: rgba(255,255,255,0.7);
+  --c-ink-subtle: rgba(255,255,255,0.7);
   --c-hairline: #cccccc;
   --c-hairline-strong: #5e5e5e;
   --c-warning: #df6500;
   --c-danger: #e52020;
-  --c-surface: #ffffff;
-  --c-surface-2: #ffffff;
-  --c-surface-3: #ffffff;
-  --c-ink-muted: #000000;
-  --c-ink-subtle: #000000;
+  --c-surface-2: #000000;
+  --c-surface-3: #000000;
   --c-primary-hover: #76b900;
   --c-primary-soft: #76b900;
   --c-accent-2: #76b900;
   --c-success: #2f9e44;
-  --c-inverse-canvas: #000000;
-  --c-inverse-ink: #ffffff;
+  --c-inverse-canvas: #ffffff;
+  --c-inverse-ink: #000000;
+  --c-accent-text: #76b900;   /* >=5.5:1 on card + page - body text */
+  --c-accent-ui: #76b900;     /* >=3.5:1 on card + page - icons, marks */
 /* ---- raw palette (spec appendix) ---- */
   --raw-primary: #76b900;
   --raw-on-primary: #000000;

@@ -48,3 +48,19 @@
 .cta-band { background: var(--card); border: 0; border-radius: 20px; }
 .spec { --spec-bg: var(--card); }
 .input, .badge2, .tabs, .tabs button { border-radius: 12px; }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant role
+   at once. Scoped to the exact instance: the shared class is painted
+   several ways here, and the plain cards keep the page's own tokens. */
+.tier {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #434343; --c-ink-subtle: #5f5f5f;
+}  /* plain tier is painted light on this dark page: #f5f5f5 */
+.tier-feat {
+  color: var(--c-ink);
+  --c-ink: #ffffff; --c-ink-muted: #f1efff; --c-ink-subtle: #e8e4ff;
+  --c-accent-text: #ffffff; --c-accent-ui: #d4d5f7;
+}  /* on #6b4eff: ink 5.0, muted 4.5, subtle 4.1 */
+

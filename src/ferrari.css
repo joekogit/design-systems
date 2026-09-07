@@ -19,7 +19,7 @@
 .btn-primary:hover { background: #b81f14; }
 .btn-secondary { background: transparent; border-color: rgba(255,255,255,.34); color: #fff; }
 .btn-secondary:hover { background: rgba(255,255,255,.08); border-color: #fff; }
-.btn-ghost { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; color: var(--c-primary); }
+.btn-ghost { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; color: var(--c-accent-text); }
 
 .eyebrow { text-transform: uppercase; letter-spacing: .2em; font-size: 10.5px; font-weight: 500; color: var(--c-ink-subtle); }
 /* display never goes bold — scale carries the emphasis */
@@ -66,3 +66,22 @@
   border-bottom: 1px solid rgba(255,255,255,.16); }
 .cta-band .t-display-md { font-size: clamp(30px, 5.4vw, 64px); }
 .spec { --spec-bg: #111; border-top-color: rgba(255,255,255,.16); }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant
+   role at once, because they all already draw from these names. */
+.zoo-cell {
+  color: var(--c-ink);
+  --c-ink: #ffffff; --c-ink-muted: #c5c5c5; --c-ink-subtle: #a3a3a3;
+  --c-accent-text: #ea675d; --c-accent-ui: #da291c;
+}  /* on #181818: ink 17.8, muted 10.3, subtle 7.0, accent 5.6 *//* Neither pole reads on this band (white 4.9:1, black 3.9:1), so the
+   ground itself is the problem: deepen the brand red, keep white text. */
+.tier.tier-feat {
+  color: var(--c-ink);
+  background: #da291c;
+  --c-ink: #ffffff; --c-ink-muted: #f2f2f2; --c-ink-subtle: #e8e8e8;
+  --c-accent-text: #ffffff; --c-accent-ui: #ffffff;
+}
+.tier.tier-feat .lede { color: var(--c-ink-muted); }
+.tier.tier-feat { --c-ink-muted: #ffffff; --c-ink-subtle: #ffffff; }  /* white is the only ink that clears on Rosso */

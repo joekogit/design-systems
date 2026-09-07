@@ -13,13 +13,15 @@
 .btn-secondary { background: transparent; border-color: var(--c-primary); color: var(--c-primary); }
 .btn-secondary:hover { background: #eaf1fc; }
 .eyebrow, .logos-lead, .metric-l, .hstat span { text-transform: uppercase; letter-spacing: .16em; font-size: 10.5px; font-weight: 500; }
-.eyebrow { color: rgba(255,255,255,.75); }
 /* weight 700 display against weight 300 body is the signature */
 .t-display-xl, .t-display-lg, .t-display-md, .sc-title, .feat-title, .tier-name, .metric-v, .hstat b { font-weight: 700; }
 .lede, .sc-body, .feat-body, .faq-a, .tier-desc, .hero-sub { font-weight: 300; }
 .hero-title { color: #fff; }
 .hero-title em { color: var(--c-primary); }
-.hero-sub { color: rgba(255,255,255,.9); }
+/* White text belongs to the photographic hero only. Left unscoped it also
+   painted the eyebrows on the light sections, white on white. */
+.hero .eyebrow { color: rgba(255,255,255,.75); }
+.hero .hero-sub { color: rgba(255,255,255,.9); }
 .hero-stats { border-top-color: rgba(255,255,255,.28); }
 .hstat b { color: #fff; } .hstat span { color: rgba(255,255,255,.68); }
 .hero .btn-secondary { color: #fff; border-color: rgba(255,255,255,.6); }
@@ -47,3 +49,13 @@
 .cta-band .btn-primary { background: #fff; color: var(--navy); }
 .cta-band .btn-secondary { color: #fff; border-color: rgba(255,255,255,.5); }
 .spec { --spec-bg: #f5f7f9; }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant
+   role at once, because they all already draw from these names. */
+.section.spec {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #4a4a4b; --c-ink-subtle: #626364;
+  --c-accent-text: #1a60c2; --c-accent-ui: #1c69d4;
+}  /* on #f5f7f9: ink 17.6, muted 8.2, subtle 5.6, accent 5.6 */

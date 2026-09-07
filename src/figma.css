@@ -45,3 +45,13 @@
 .cta-band .btn-primary { background: #fff; color: var(--navy); }
 .cta-band .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.4); }
 .spec { --spec-bg: #fafafa; }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant
+   role at once, because they all already draw from these names. */
+.section.features {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #424047; --c-ink-subtle: #524e59;
+  --c-accent-text: #000000; --c-accent-ui: #000000;
+}  /* on #ded4f5: ink 13.3, muted 7.2, subtle 5.7, accent 14.8 */

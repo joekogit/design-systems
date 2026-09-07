@@ -7,7 +7,7 @@
 .brand-ico { color: var(--c-primary); }
 .btn { border-radius: var(--r-md); font-weight: 600; }
 .btn-secondary { background: var(--cream); border-color: rgba(0,0,0,.12); }
-.eyebrow { color: var(--c-primary); text-transform: none; letter-spacing: 0; font-weight: 600; }
+.eyebrow { color: var(--c-accent-text); text-transform: none; letter-spacing: 0; font-weight: 600; }
 .t-display-xl, .t-display-lg, .t-display-md, .sc-title, .quote-text {
   font-family: var(--font-display); font-weight: 400; letter-spacing: -.02em; }
 .hero-title em { font-style: italic; color: var(--c-primary); }

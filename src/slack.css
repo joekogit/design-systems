@@ -56,3 +56,13 @@ a:not(.btn):not(.brand):not(.card) { color: var(--link); }
 .foot-socials a { border-color: rgba(255,255,255,.26); color: rgba(255,255,255,.88); border-radius: 90px; }
 .spec { --spec-bg: var(--cream); }
 .input, .badge2, .tabs, .tabs button { border-radius: 90px; }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant
+   role at once, because they all already draw from these names. */
+.tier.tier-feat {
+  color: var(--c-ink);
+  --c-ink: #ffffff; --c-ink-muted: #d2c4d2; --c-ink-subtle: #b7a1b7;
+  --c-accent-text: #db83dc; --c-accent-ui: #ca4bcd;
+}  /* on #4a154b: ink 14.0, muted 8.4, subtle 5.9, accent 5.5 */

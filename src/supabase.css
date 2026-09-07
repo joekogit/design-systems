@@ -8,7 +8,7 @@
 .btn { border-radius: var(--r-sm); font-weight: 500; padding: 11px 18px; }
 .btn-primary { color: #10281c; }
 .btn-secondary { background: #fff; border-color: #e6e8eb; }
-.eyebrow { color: var(--c-primary); text-transform: none; letter-spacing: 0; font-weight: 500; }
+.eyebrow { color: var(--c-accent-text); text-transform: none; letter-spacing: 0; font-weight: 500; }
 .hero-title em { color: var(--c-ink-subtle); }
 .t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 500; letter-spacing: -.032em; }
 

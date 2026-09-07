@@ -18,7 +18,7 @@
 .nav-act .btn-primary { background: var(--commerce); }
 .nav-act .btn-primary:hover { background: #ef4a0a; }
 
-.eyebrow { text-transform: uppercase; letter-spacing: .16em; font-weight: 600; font-size: 11px; color: var(--ps-blue); }
+.eyebrow { text-transform: uppercase; letter-spacing: .16em; font-weight: 600; font-size: 11px; color: var(--c-accent-text); }
 /* weight 300 display is the airy editorial voice */
 .t-display-xl, .t-display-lg, .t-display-md, .sc-title, .metric-v, .tier-num, .hstat b {
   font-weight: 300; letter-spacing: .004em; }
@@ -33,7 +33,7 @@
 
 .features { background: var(--canvas-light); color: #000; }
 .features .lede, .features .feat-body { color: #4a4a4a; }
-.features .eyebrow { color: var(--ps-blue); }
+.features .eyebrow { color: var(--c-accent-text); }
 .feat-card { background: #f2f2f2; border: 0; border-radius: var(--r-md); box-shadow: none; }
 .feat-card:hover { background: #eaeaea; box-shadow: 0 4px 18px rgba(0,0,0,.10); transform: translateY(-2px); }
 .feat-ico { background: var(--ps-blue); color: #fff; border: 0; border-radius: var(--r-md); }
@@ -81,3 +81,23 @@
 .foot-socials a { border-color: rgba(255,255,255,.34); color: #fff; }
 .spec { --spec-bg: #0a0a0a; }
 .input { border-radius: var(--r-sm); }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant role
+   at once. Scoped to the exact instance: the shared class is painted
+   several ways here, and the plain cards keep the page's own tokens. */
+.tier {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #424242; --c-ink-subtle: #5e5e5e;
+}  /* plain tier is painted light on this dark page: #f2f2f2 */
+.tier-feat {
+  color: var(--c-ink);
+  --c-ink: #ffffff; --c-ink-muted: #c7c7c7; --c-ink-subtle: #a8a8a8;
+  --c-accent-text: #0083f5; --c-accent-ui: #0070d1;
+}  /* on #000000: ink 21.0, muted 12.4, subtle 8.8 */
+.section.features {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #454545; --c-ink-subtle: #626262;
+  --c-accent-text: #0068c2; --c-accent-ui: #0070d1;
+}  /* features band is painted light on this dark page: #ffffff */

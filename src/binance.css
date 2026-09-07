@@ -36,8 +36,18 @@
 /* the deliberate inversion: a light footer under a dark body */
 .foot { background: var(--light); --foot-bg: var(--light); color: #1e2329; border-top: 0; }
 .foot .brand { color: #1e2329; }
-.fcol h4 { color: #707a8a; } .fcol a, .foot-tag { color: #474d57; }
+.fcol h4 { color: #656e7c; }  /* #707a8a was 4.16:1 on the light footer */ .fcol a, .foot-tag { color: #474d57; }
 .fcol a:hover { color: #1e2329; }
 .foot-legal { color: #707a8a; border-top-color: #eaecef; }
 .foot-socials a { border-color: #eaecef; color: #474d57; }
 .spec { --spec-bg: var(--card); }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant
+   role at once, because they all already draw from these names. */
+.foot {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #4b4b4b; --c-ink-subtle: #666666;
+  --c-accent-text: #786102; --c-accent-ui: #a08102;
+}  /* on #fafafa: ink 18.1, muted 8.4, subtle 5.5, accent 5.7 */

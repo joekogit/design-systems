@@ -121,6 +121,26 @@ COLOR_MAP = {
     "inverse-ink":   ["inverse-ink", "inverse-text", "inverse-foreground"],
 }
 
+# A reference that documents both tracks names its dark surfaces separately, and
+# the generic keys above then describe the LIGHT track. A design whose CSS paints
+# a dark page therefore resolved dark-on-dark ink. When the design declares
+# `scheme: dark`, try these first; anything unmatched falls through to COLOR_MAP.
+DARK_MAP = {
+    "canvas":          ["canvas-dark", "canvas-night", "surface-canvas-dark",
+                        "background-dark", "bg-dark", "canvas-deep", "surface-dark"],
+    "surface":         ["surface-card-dark", "surface-dark-elevated",
+                        "surface-elevated-dark", "surface-dark-soft", "surface-night",
+                        "surface-deep", "canvas-night-elevated", "surface-dark"],
+    "surface-2":       ["surface-elevated-dark", "surface-dark-soft", "surface-night",
+                        "canvas-night-soft", "surface-deep"],
+    "ink":             ["on-dark", "inverse-ink"],
+    "ink-muted":       ["on-dark-soft", "on-dark-mute", "on-dark-muted", "body-dark",
+                        "inverse-ink-muted"],
+    "ink-subtle":      ["on-dark-faint", "mute-dark", "ash-dark", "on-dark-mute"],
+    "hairline":        ["hairline-on-dark", "hairline-dark"],
+    "hairline-strong": ["hairline-strong-dark", "hairline-on-dark", "hairline-dark"],
+}
+
 TYPE_MAP = {
     "display-xl":  ["display-xl", "display-1", "hero", "display-large", "h1", "display"],
     "display-lg":  ["display-lg", "display-2", "display-medium", "h2", "section-title"],
@@ -181,6 +201,70 @@ def mobile_size(px):
     return px
 
 
+def _rgb(v):
+    """Parse a hex colour to an (r, g, b) tuple, or None if it is not hex."""
+    m = re.match(r"^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$", str(v).strip())
+    if not m:
+        return None
+    h = m.group(1)
+    if len(h) == 3:
+        h = "".join(c * 2 for c in h)
+    return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
+
+
+def _lum(rgb):
+    f = lambda c: (c / 255) / 12.92 if (c / 255) <= .03928 else (((c / 255) + .055) / 1.055) ** 2.4
+    r, g, b = [f(x) for x in rgb]
+    return .2126 * r + .7152 * g + .0722 * b
+
+
+def contrast(a, b):
+    l1, l2 = sorted([_lum(a), _lum(b)], reverse=True)
+    return (l1 + .05) / (l2 + .05)
+
+
+def readable_on(accent, canvas, target):
+    """Return the accent adjusted just far enough to clear `target` contrast
+    against the canvas, keeping its hue. An accent that already passes is
+    returned untouched, so a design that chose well is never altered.
+
+    Both lightness directions are tried and the nearer winner kept: against a
+    mid-tone ground (a periwinkle console chrome, a mid-grey) either direction
+    can be the readable one, and guessing from the canvas alone picks wrong.
+    If neither direction reaches the target — the canvas has no room — the
+    furthest-contrast candidate is returned rather than nothing."""
+    a, c = _rgb(accent), _rgb(canvas)
+    if not a or not c:
+        return accent
+    if contrast(a, c) >= target:
+        return accent
+    import colorsys
+    h, l, sat = colorsys.rgb_to_hls(*[x / 255 for x in a])
+
+    def walk(sign):
+        best, best_cr = None, -1
+        for i in range(1, 101):
+            nl = min(1.0, max(0.0, l + sign * i / 100))
+            cand = tuple(round(x * 255) for x in colorsys.hls_to_rgb(h, nl, sat))
+            cr = contrast(cand, c)
+            if cr > best_cr:
+                best, best_cr = cand, cr
+            if cr >= target:
+                return cand, i, cr
+        return best, 101, best_cr
+
+    up, up_d, up_cr = walk(1)
+    dn, dn_d, dn_cr = walk(-1)
+    if up_cr >= target or dn_cr >= target:
+        # both may clear; keep the one that moved least from the authored colour
+        cands = [(d, v) for v, d, cr in ((up, up_d, up_cr), (dn, dn_d, dn_cr))
+                 if cr >= target]
+        pick_ = min(cands)[1]
+    else:
+        pick_ = up if up_cr >= dn_cr else dn
+    return "#%02x%02x%02x" % pick_
+
+
 COLOUR_OK = re.compile(
     r"^(#[0-9a-fA-F]{3,8}|rgba?\([^)]*\)|hsla?\([^)]*\)|color\([^)]*\)|var\(--[^)]*\)"
     r"|transparent|currentColor|inherit|[a-z]+)$")
@@ -196,9 +280,74 @@ def assert_colour(slug, token, value):
             % (slug, token, value))
 
 
-def derive_tokens(slug):
+def mix(a, b, t):
+    """`a` blended `t` of the way toward `b`. Returns `a` unchanged if either
+    colour is not a plain hex (rgba() neutrals are already deliberate)."""
+    ra, rb = _rgb(a), _rgb(b)
+    if not ra or not rb:
+        return a
+    return "#%02x%02x%02x" % tuple(round(x + (y - x) * t) for x, y in zip(ra, rb))
+
+
+def grounds_of(resolved):
+    """The backgrounds the skeleton actually paints text on. Cards and bands use
+    --c-surface / --c-surface-2, so a token floored only against the canvas can
+    still fail everywhere the content actually sits.
+
+    Only surfaces that are a *tint* of the canvas count. A surface far enough
+    from the canvas to be readable against it (a mid-grey band on a black page)
+    is a different tier of ground: no single ink serves both, flooring against it
+    drags the ink toward the wrong pole, and the design's CSS owns that case."""
+    canvas = resolved["canvas"]
+    rc = _rgb(canvas)
+    out = [canvas]
+    if not rc:
+        return out
+    for k in ("surface", "surface-2"):
+        g = resolved.get(k)
+        rg = _rgb(g) if g else None
+        if rg and g not in out and contrast(rg, rc) < 3.0:
+            out.append(g)
+    return out
+
+
+def weakest(colour, grounds):
+    """The ground this colour reads worst against — the one worth flooring to."""
+    c = _rgb(colour)
+    if not c:
+        return grounds[0]
+    return min(grounds, key=lambda g: contrast(c, _rgb(g)) if _rgb(g) else 99)
+
+
+def floor_ink(colour, canvas, gate, aim):
+    """Keep `colour` if it clears `target` on `canvas`; otherwise walk its own hue
+    until it does. A colour with no parseable hex (rgba on an unknown ground)
+    can't be measured, so it is trusted as authored."""
+    c = _rgb(colour)
+    if not c or not _rgb(canvas):
+        return colour
+    if contrast(c, _rgb(canvas)) >= gate:
+        return colour
+    # `gate` decides whether to intervene, `aim` how far to go once we do: a
+    # neutral that has to be replaced outright should land where body text
+    # belongs, not stop the instant it scrapes past the minimum.
+    walked = readable_on(colour, canvas, aim)
+    if contrast(_rgb(walked), _rgb(canvas)) <= contrast(c, _rgb(canvas)):
+        return colour
+    # An achromatic ink walked off an achromatic ground has no hue to preserve,
+    # so the ramp just stops at the first passing grey. Body text there wants
+    # the pole the walk was heading for.
+    if aim >= 10 and max(_rgb(walked)) - min(_rgb(walked)) < 20:
+        return "#ffffff" if _lum(_rgb(walked)) > _lum(_rgb(canvas)) else "#111111"
+    return walked
+
+
+def derive_tokens(slug, scheme=None):
     slug_hint = slug
-    """Produce the canonical token CSS block for a slug from its reference file."""
+    """Produce the canonical token CSS block for a slug from its reference file.
+
+    `scheme` is what the design's content JSON declares its page to be; it decides
+    which of the reference's two colour tracks the neutrals come from."""
     text, fm = read_reference(slug)
     colors = fm.get("colors", {}) or {}
     typo = fm.get("typography", {}) or {}
@@ -209,8 +358,12 @@ def derive_tokens(slug):
     lines.append("/* ---- colors ---- */")
     resolved = {}
     for canon, cands in COLOR_MAP.items():
+        if scheme == "dark":
+            cands = DARK_MAP.get(canon, []) + cands
         v = pick(colors, cands)
-        if v:
+        # a nested key (`button-on-dark: {bg: ..., text: ...}`) is a component
+        # recipe, not a colour - skip it rather than emit an invalid declaration
+        if isinstance(v, str) and v.strip():
             resolved[canon] = v
     # sensible derivations for anything unresolved
     resolved.setdefault("canvas", "#ffffff")
@@ -218,8 +371,10 @@ def derive_tokens(slug):
     resolved.setdefault("surface", resolved["canvas"])
     resolved.setdefault("surface-2", resolved["surface"])
     resolved.setdefault("surface-3", resolved["surface-2"])
-    resolved.setdefault("ink-muted", resolved["ink"])
-    resolved.setdefault("ink-subtle", resolved["ink-muted"])
+    # A reference that names no muted ink leaves every text role at full strength,
+    # which flattens the page. Blend toward the canvas instead of repeating ink.
+    resolved.setdefault("ink-muted", mix(resolved["ink"], resolved["canvas"], .30))
+    resolved.setdefault("ink-subtle", mix(resolved["ink-muted"], resolved["canvas"], .28))
     resolved.setdefault("hairline", "rgba(128,128,128,.28)")
     resolved.setdefault("hairline-strong", resolved["hairline"])
     resolved.setdefault("primary", resolved["ink"])
@@ -232,11 +387,49 @@ def derive_tokens(slug):
     resolved.setdefault("danger", "#e03131")
     resolved.setdefault("inverse-canvas", resolved["ink"])
     resolved.setdefault("inverse-ink", resolved["canvas"])
+    # The two tracks can still cross: a reference may name a dark canvas but no
+    # `on-dark`, leaving the light track's ink sitting on it. Measure the text
+    # roles against the canvas they actually land on and lift any that fail.
+    # 4.5:1 is the WCAG AA floor for normal text, and every one of these roles
+    # carries running text somewhere in the skeleton.
+    grounds = grounds_of(resolved)
+    # Every role fed by these tokens is small text, and designs paint tinted
+    # bands the token set never sees, so each needs headroom over the 4.5 floor
+    # rather than to sit exactly on it.
+    for role, aim in (("ink", 10.0), ("ink-muted", 7.0), ("ink-subtle", 6.0)):
+        resolved[role] = floor_ink(resolved[role], weakest(resolved[role], grounds),
+                                   5.5, aim)
+    # A canvas with little headroom (a mid-tone chrome) can leave a lifted muted
+    # reading *stronger* than ink, which inverts the hierarchy. Collapse instead.
+    for weaker, stronger in (("ink-muted", "ink"), ("ink-subtle", "ink-muted")):
+        w, st, bg = _rgb(resolved[weaker]), _rgb(resolved[stronger]), _rgb(resolved["canvas"])
+
+        if w and st and bg and contrast(w, bg) > contrast(st, bg):
+            resolved[weaker] = resolved[stronger]
+
+    # Flooring can only raise contrast; if a text role still fails against the
+    # page's own canvas the resolution went wrong upstream (a light-track neutral
+    # landing on a dark canvas) and shipping it would be an unreadable page.
+    for role in ("ink", "ink-muted", "ink-subtle"):
+        rv, rc2 = _rgb(resolved[role]), _rgb(resolved["canvas"])
+        if rv and rc2 and contrast(rv, rc2) < 4.5:
+            raise SystemExit("%s: --c-%s (%s) is only %.2f:1 on --c-canvas (%s)"
+                             % (slug_hint, role, resolved[role],
+                                contrast(rv, rc2), resolved["canvas"]))
+
     for k, v in resolved.items():
         assert_colour(slug_hint, "--c-" + k, v)
         lines.append("  --c-%s: %s;" % (k, v))
 
     # every raw color from the reference, for the swatch appendix
+    # Accent-as-text is the classic failure: a bright accent that reads fine as a
+    # button fill is unreadable as 12px type on a light canvas. Derive two safe
+    # variants rather than letting the raw accent be used for everything.
+    acc_bg = weakest(resolved["primary"], grounds)
+    lines.append("  --c-accent-text: %s;   /* >=5.5:1 on card + page - body text */"
+                 % readable_on(resolved["primary"], acc_bg, 5.5))
+    lines.append("  --c-accent-ui: %s;     /* >=3.5:1 on card + page - icons, marks */"
+                 % readable_on(resolved["primary"], acc_bg, 3.5))
     lines.append("/* ---- raw palette (spec appendix) ---- */")
     for k, v in colors.items():
         assert_colour(slug_hint, "--raw-" + k, v)
@@ -302,8 +495,20 @@ def font_stack(name, kind):
     return "%s, %s" % (quoted, tail)
 
 
+def declared_scheme(slug):
+    """The scheme the design's own content declares — the page its CSS paints."""
+    path = os.path.join(SRC, slug + ".json")
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, encoding="utf-8") as f:
+            return (json.load(f) or {}).get("scheme")
+    except Exception:
+        return None
+
+
 def scaffold(slug):
-    css = derive_tokens(slug)
+    css = derive_tokens(slug, declared_scheme(slug))
     path = os.path.join(SRC, slug + ".tokens.css")
     os.makedirs(SRC, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:

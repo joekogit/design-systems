@@ -35,3 +35,13 @@
 .faq-item { border-bottom-color: #ededed; }
 .cta-band { background: var(--grey); border: 0; border-radius: var(--r-xxl); }
 .spec { --spec-bg: var(--grey); }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant
+   role at once, because they all already draw from these names. */
+.tier.tier-feat {
+  color: var(--c-ink);
+  --c-ink: #ffffff; --c-ink-muted: #c4c4c4; --c-ink-subtle: #a0a0a0;
+  --c-accent-text: #8b8b8b; --c-accent-ui: #6d6d6d;
+}  /* on #111111: ink 18.9, muted 10.8, subtle 7.2, accent 5.5 */

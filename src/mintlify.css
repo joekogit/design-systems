@@ -11,7 +11,7 @@
 .btn-primary:hover { background: #333; }
 .btn-secondary { background: #fff; border-color: #e2e2e2; box-shadow: var(--shadow-1); }
 .eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 700; }
-.eyebrow { color: var(--mint); }
+.eyebrow { color: var(--c-accent-text); }
 .hero { text-align: center; overflow: hidden; }
 /* the atmospheric gradient band */
 .hero::before { content: ""; position: absolute; inset: -160px -15% auto -15%; height: 640px; z-index: 0;

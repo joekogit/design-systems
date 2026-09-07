@@ -10,10 +10,10 @@
 .btn { font-weight: 600; padding: 12px 24px; }
 .btn-secondary { background: var(--bone); border-color: transparent; }
 .btn-secondary:hover { background: #e9e5db; border-color: transparent; }
-.eyebrow { color: var(--c-primary); text-transform: none; letter-spacing: 0; font-weight: 600; }
+.eyebrow { color: var(--c-accent-text); text-transform: none; letter-spacing: 0; font-weight: 600; }
 .t-display-xl { font-size: clamp(44px, 9vw, 116px); line-height: 1; letter-spacing: -.045em; font-weight: 800; }
 .t-display-lg, .t-display-md, .sc-title { line-height: 1.02; letter-spacing: -.04em; font-weight: 800; }
-.hero-title em { color: var(--c-primary); }
+.hero-title em { color: var(--c-accent-text); }
 a:not(.btn):not(.brand) { color: var(--c-primary); }
 
 .logos { border-block-color: rgba(0,0,0,.1); }
@@ -23,7 +23,7 @@ a:not(.btn):not(.brand) { color: var(--c-primary); }
 .hero-media img, .sc-media img, .g-item { border-radius: 10px; border: 0; }
 /* dark code wells as print-style pull quotes */
 .metrics { --metrics-bg: var(--dark-well); border-block: 0; }
-.metrics .metric-v { color: var(--c-primary); font-family: var(--font-mono); }
+.metrics .metric-v { color: var(--c-accent-text); font-family: var(--font-mono); }
 .metrics .metric-l, .metrics .logos-lead { color: #8f877c; }
 .g-item figcaption { background: rgba(28,26,23,.86); border-radius: var(--r-pill); font-family: var(--font-mono); font-size: 11px; }
 .quote-card { background: var(--dark-well); color: #f9f7f3; border: 0; border-radius: 10px;
@@ -49,3 +49,22 @@ a:not(.btn):not(.brand) { color: var(--c-primary); }
 .foot-socials a { border-color: #2e2b27; color: #d8d3c9; }
 .spec { --spec-bg: var(--bone); }
 .sw-val, .ts-meta code { font-family: var(--font-mono); }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* Neither pole reads on this band (white 4.4:1, black 4.3:1), so the
+   ground itself is the problem: deepen the brand red, keep white text. */
+.cta-band {
+  color: var(--c-ink);
+  background: #e02604;
+  --c-ink: #ffffff; --c-ink-muted: #f2f2f2; --c-ink-subtle: #e8e8e8;
+  --c-accent-text: #ffffff; --c-accent-ui: #ffffff;
+}
+.cta-band .lede { color: var(--c-ink-muted); }
+.cta-band { --c-ink-muted: #ffffff; --c-ink-subtle: #ffffff; }
+.metrics {
+  color: var(--c-ink);
+  --c-ink: #ffffff; --c-ink-muted: #cdcdcc; --c-ink-subtle: #b2b1b0;
+  --c-accent-text: #fb4b2b; --c-accent-ui: #ea2804;
+}  /* the metrics well is dark on this light page: #1c1a17 */
+/* the well's own label colour was picked for the light page */
+.metrics .metric-l, .metrics .logos-lead { color: var(--c-ink-muted); }

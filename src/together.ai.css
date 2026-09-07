@@ -17,7 +17,7 @@
 .hero { text-align: center; }
 .hero .btn-primary { background: var(--mint); color: #06251a; border-color: var(--mint); }
 .hero .btn-secondary { background: #fff; color: #0a0a0a; border-color: #fff; }
-.eyebrow { color: var(--mint); font-size: 11px; }
+.eyebrow { color: var(--c-accent-text); font-size: 11px; }
 .t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; letter-spacing: -.035em; }
 .hero-title em { background: linear-gradient(90deg,var(--g1),var(--g2),var(--g3));
   -webkit-background-clip: text; background-clip: text; color: transparent; }
@@ -68,3 +68,13 @@
   transform: translateX(-50%); font-size: clamp(64px, 15vw, 210px); font-weight: 700;
   letter-spacing: -.05em; color: #171717; line-height: 1; pointer-events: none; white-space: nowrap; }
 .spec { --spec-bg: #111; }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant
+   role at once, because they all already draw from these names. */
+.section.features {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #4c4c4c; --c-ink-subtle: #686868;
+  --c-accent-text: #000000; --c-accent-ui: #000000;
+}  /* on #ffffff: ink 18.9, muted 8.6, subtle 5.6, accent 21.0 */

@@ -11,9 +11,9 @@
 .btn-secondary { background: var(--card); border-color: #26262f; }
 .btn-secondary:hover { background: var(--card-hi); border-color: #3a3a46; }
 .eyebrow { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .1em;
-  font-size: 11px; color: var(--blue-lit); }
+  font-size: 11px; color: var(--c-accent-text); }
 .t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; letter-spacing: -.035em; }
-.hero-title em { color: var(--blue-lit); }
+.hero-title em { color: var(--c-accent-text); }
 /* the radial spotlight glow behind the hero */
 .hero { overflow: hidden; }
 .hero::before { content: ""; position: absolute; left: 50%; top: -220px; width: 900px; height: 620px;
@@ -33,7 +33,7 @@
 .feat-ico { background: rgba(61,67,255,.14); border: 0; color: var(--blue-lit); border-radius: var(--r-md); }
 .sc-media img, .g-item { border-radius: var(--r-lg); border-color: #26262f; }
 .metrics { --metrics-bg: var(--card); border-block: 0; }
-.metric-v { color: var(--blue-lit); }
+.metric-v { color: var(--c-accent-text); }
 .metric-l, .logos-lead { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .1em; font-size: 10.5px; }
 .g-item figcaption { background: rgba(9,9,12,.88); border: 1px solid #26262f; border-radius: var(--r-sm); }
 .quote-card { background: var(--card); border-color: #26262f; border-radius: var(--r-lg);

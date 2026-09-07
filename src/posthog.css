@@ -12,7 +12,7 @@
 .btn-secondary:hover { background: rgba(0,0,0,.05); }
 .eyebrow { color: var(--c-ink-subtle); text-transform: none; letter-spacing: 0; font-weight: 600; }
 .t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; letter-spacing: -.028em; }
-.hero-title em { color: var(--c-primary); -webkit-text-stroke: 1px var(--olive); paint-order: stroke fill; }
+.hero-title em { color: var(--c-accent-text); -webkit-text-stroke: 1px var(--olive); paint-order: stroke fill; }
 
 .logos { border-block-color: rgba(0,0,0,.1); }
 /* 6px cards with a hard 2px border — the brand's sketchbook chrome */
@@ -26,7 +26,7 @@
 .sc-points li:nth-child(3) { background: var(--purple-soft); border-left-color: #9b7ac4; }
 .sc-points i { color: var(--olive); }
 .metrics { --metrics-bg: transparent; border-block: 2px solid var(--olive); }
-.metric-v { color: var(--olive); }
+.metric-v { color: var(--c-accent-text); }
 .g-item figcaption { background: var(--c-primary); color: var(--olive); border: 2px solid var(--olive);
   border-radius: var(--r-pill); font-weight: 700; }
 .quote-card { background: transparent; border: 2px solid var(--olive); border-radius: 8px;
@@ -44,3 +44,13 @@
 .spec { --spec-bg: transparent; border-top: 2px solid var(--olive); }
 .input, .sw { border-radius: 6px; border-color: var(--olive); }
 .badge2, .tabs, .tabs button { border-radius: var(--r-pill); }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant
+   role at once, because they all already draw from these names. */
+.tier.tier-feat {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #342609; --c-ink-subtle: #4d3508;
+  --c-accent-text: #4f3500; --c-accent-ui: #785000;
+}  /* on #f7a501: ink 9.3, muted 7.2, subtle 5.7, accent 5.6 */

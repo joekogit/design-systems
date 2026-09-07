@@ -38,7 +38,7 @@
 .quote-card { background: var(--coral); color: #fff; border: 0; border-radius: var(--r-lg);
   --quote-align: left; --quote-by-just: flex-start; }
 .quote-text { color: #fff; }
-.quote-by b { color: #fff; } .quote-by span { color: rgba(255,255,255,.8); }
+.quote-by b { color: var(--c-ink); } .quote-by span { color: rgba(255,255,255,.8); }
 .quote-mark { color: rgba(255,255,255,.8); }
 
 .tier { background: var(--cream-card); border: 0; border-radius: var(--r-lg); }
@@ -59,3 +59,22 @@
 .cta-band .btn-secondary { color: #fff; border-color: rgba(255,255,255,.5); }
 .spec { --spec-bg: var(--cream-card); }
 .badge2 { border-radius: var(--r-pill); }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant
+   role at once, because they all already draw from these names. */
+.tier.tier-feat {
+  color: var(--c-ink);
+  --c-ink: #ffffff; --c-ink-muted: #c5c5c4; --c-ink-subtle: #a3a2a1;
+  --c-accent-text: #cd7b60; --c-accent-ui: #cc785c;
+}  /* on #181715: ink 17.9, muted 10.4, subtle 7.0, accent 5.6 *//* Brand band too light for white text (3.3:1) and too dark for a full
+   ink ramp. Keep the brand ground, carry the text in near-black. */
+.cta-band {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #2b1f1c; --c-ink-subtle: #30211c;
+  --c-accent-text: #111111; --c-accent-ui: #111111;
+}
+.cta-band .lede, .cta-band .feat-body, .cta-band .metric-l, .cta-band .logos-lead,
+.cta-band .tier-desc, .cta-band .tier-per { color: var(--c-ink-muted); }
+

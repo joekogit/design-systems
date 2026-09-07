@@ -48,20 +48,29 @@
 
 <section class="controls" id="grid">
   <div class="wrap">
-    <div class="search">
-      <i class="ph ph-magnifying-glass" aria-hidden="true"></i>
-      <label class="sr-only" for="q">Search designs</label>
-      <input id="q" type="search" placeholder="Search a name, a look, a category…" autocomplete="off">
-      <kbd>/</kbd>
-    </div>
-    <div class="chips" role="group" aria-label="Filter by category">{{CHIPS}}</div>
-    <div class="subrow">
-      <div class="chips small" role="group" aria-label="Filter by scheme">
-        <button class="chip is-on" type="button" data-scheme="all">Any theme</button>
-        <button class="chip" type="button" data-scheme="dark">Dark</button>
-        <button class="chip" type="button" data-scheme="light">Light</button>
+    <div class="searchrow">
+      <div class="search">
+        <i class="ph ph-magnifying-glass" aria-hidden="true"></i>
+        <label class="sr-only" for="q">Search designs</label>
+        <input id="q" type="search" placeholder="Search designs…" autocomplete="off">
+        <kbd>/</kbd>
       </div>
-      <p class="count" aria-live="polite"><span id="n">{{TOTAL}}</span> shown</p>
+      <button class="filterbtn" type="button" id="filterbtn" aria-expanded="false" aria-controls="filters">
+        <i class="ph ph-sliders-horizontal" aria-hidden="true"></i>
+        <span>Filters</span>
+        <span class="fcount" id="fcount" hidden></span>
+      </button>
+    </div>
+    <div class="filters" id="filters">
+      <div class="chips" role="group" aria-label="Filter by category">{{CHIPS}}</div>
+      <div class="subrow">
+        <div class="chips small" role="group" aria-label="Filter by scheme">
+          <button class="chip is-on" type="button" data-scheme="all">Any theme</button>
+          <button class="chip" type="button" data-scheme="dark">Dark</button>
+          <button class="chip" type="button" data-scheme="light">Light</button>
+        </div>
+        <p class="count" aria-live="polite"><span id="n">{{TOTAL}}</span> shown</p>
+      </div>
     </div>
   </div>
 </section>

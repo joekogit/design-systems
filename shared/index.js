@@ -17,6 +17,7 @@
     });
     n.textContent = shown;
     empty.hidden = shown > 0;
+    if (typeof badge === "function") badge();
   }
 
   q.addEventListener("input", function () { state.q = q.value; apply(); });
@@ -37,6 +38,36 @@
   }
   group("cat", "cat");
   group("scheme", "scheme");
+
+  /* filter panel — collapsed on mobile, always open on wider screens */
+  var mq = window.matchMedia("(max-width: 760px)");
+  var fbtn = document.getElementById("filterbtn");
+  var panel = document.getElementById("filters");
+  var fcount = document.getElementById("fcount");
+  var controls = document.querySelector(".controls");
+  function setPanel(open) {
+    panel.classList.toggle("open", open);
+    controls.classList.toggle("expanded", open);
+    fbtn.setAttribute("aria-expanded", String(open));
+  }
+  fbtn.addEventListener("click", function () {
+    setPanel(!panel.classList.contains("open"));
+  });
+  /* category is single-select, so choosing one is the end of the interaction */
+  panel.querySelectorAll("[data-cat]").forEach(function (b) {
+    b.addEventListener("click", function () { if (mq.matches) setPanel(false); });
+  });
+  function badge() {
+    var active = (state.cat !== "all" ? 1 : 0) + (state.scheme !== "all" ? 1 : 0);
+    fcount.textContent = active;
+    fcount.hidden = active === 0;
+  }
+  /* keep the panel's collapsed state honest when crossing the breakpoint */
+  function sync() {
+    if (!mq.matches) setPanel(false);
+  }
+  (mq.addEventListener ? mq.addEventListener("change", sync) : mq.addListener(sync));
+  sync();
 
   /* theme toggle — remembers per browser, tolerates blocked storage */
   var root = document.documentElement;

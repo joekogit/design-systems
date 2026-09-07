@@ -11,9 +11,9 @@
 .btn-secondary { background: #fff; color: #101828; border-color: #d6dae0; }
 .btn-secondary:hover { background: #fafbfc; border-color: #101828; }
 .eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 700; }
-.eyebrow { color: var(--coral); }
+.eyebrow { color: var(--c-accent-text); }
 .t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-family: var(--font-display); font-weight: 800; letter-spacing: -.035em; }
-.hero-title em { color: var(--coral); }
+.hero-title em { color: var(--c-accent-text); }
 .logos { border-block-color: #e6e9ed; }
 /* demo grids on warm pastel surfaces */
 .feat-card { background: var(--peach); border: 0; border-radius: 16px; padding: 26px; }
@@ -26,7 +26,7 @@
 .hero-media img, .sc-media img, .g-item { border-radius: 16px; border: 1px solid #e6e9ed; }
 /* full-bleed signature surfaces; the canvas resets between them */
 .metrics { --metrics-bg: var(--coral); border-block: 0; }
-.metrics .metric-v { color: #fff; }
+.metrics .metric-v { color: var(--c-ink); }
 .metrics .metric-l, .metrics .logos-lead { color: rgba(255,255,255,.82); }
 .g-item figcaption { background: rgba(16,24,40,.86); border-radius: 10px; }
 .quote-card { background: var(--forest); color: #fff; border: 0; border-radius: 20px;
@@ -47,3 +47,15 @@
 .cta-band .btn-primary { background: #fff; color: var(--navy); }
 .cta-band .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.34); }
 .spec { --spec-bg: #f7f8f9; }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* Brand band too light for white text (2.8:1) and too dark for a full
+   ink ramp. Keep the brand ground, carry the text in near-black. */
+.section.metrics {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #321e1b; --c-ink-subtle: #452520;
+  --c-accent-text: #111111; --c-accent-ui: #111111;
+}
+.section.metrics .lede, .section.metrics .feat-body, .section.metrics .metric-l, .section.metrics .logos-lead,
+.section.metrics .tier-desc, .section.metrics .tier-per { color: var(--c-ink-muted); }
+

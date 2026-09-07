@@ -20,6 +20,8 @@
   --c-accent-2: #ffffff;
   --c-warning: #f08c00;
   --c-danger: #e03131;
+  --c-accent-text: #ffffff;   /* >=5.5:1 on card + page - body text */
+  --c-accent-ui: #ffffff;     /* >=3.5:1 on card + page - icons, marks */
 /* ---- raw palette (spec appendix) ---- */
   --raw-primary: #ffffff;
   --raw-on-primary: #000000;

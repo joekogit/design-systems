@@ -16,7 +16,7 @@
 .t-display-lg, .t-display-md, .sc-title { letter-spacing: -.028em; font-weight: 800; }
 .lede, .feat-body, .sc-body { letter-spacing: 0; }
 /* orange belongs to the AI product only */
-.hero-title em { color: var(--fin); }
+.hero-title em { color: var(--c-accent-text); }
 .logos { border-block-color: rgba(17,17,17,.1); }
 .feat-card { background: #fff; border: 0; border-radius: var(--r-xl); box-shadow: var(--shadow-1); padding: 26px; }
 .feat-card:hover { box-shadow: var(--shadow-2); transform: translateY(-2px); background: #fff; }

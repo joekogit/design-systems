@@ -68,3 +68,13 @@
 .cta-band { background: var(--c-surface-2); border-radius: var(--r-xxl); }
 .spec { --spec-bg: var(--c-surface-2); border-top: 0; }
 .foot { border-top: 1px solid var(--c-hairline); }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant
+   role at once, because they all already draw from these names. */
+.section.spec {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #4a4a4a; --c-ink-subtle: #626262;
+  --c-accent-text: #2456dd; --c-accent-ui: #3e6ae1;
+}  /* on #f4f4f4: ink 17.2, muted 8.1, subtle 5.5, accent 5.5 */

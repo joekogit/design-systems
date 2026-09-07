@@ -95,3 +95,13 @@ body { border: 8px solid var(--frame); background: #ffffff; }
 .foot-socials a { border: 2px solid var(--frame); border-radius: 0; color: #000; }
 .spec { --spec-bg: #fff; border-top: 3px solid var(--frame); }
 .input, .sw, .badge2, .tabs, .tabs button { border-radius: 0; border-color: var(--frame); }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant
+   role at once, because they all already draw from these names. */
+.section.metrics {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #3a4044; --c-ink-subtle: #454f54;
+  --c-accent-text: #9b0f18; --c-accent-ui: #d31521;
+}  /* on #bcd8ea: ink 12.7, muted 7.1, subtle 5.7, accent 5.7 */

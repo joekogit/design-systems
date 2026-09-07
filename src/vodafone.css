@@ -13,7 +13,7 @@
 .btn-secondary { background: transparent; border-color: var(--red); color: var(--red); border-width: 2px; }
 .btn-secondary:hover { background: #fdeaea; }
 .eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .14em; font-size: 11px; font-weight: 700; }
-.eyebrow { color: var(--red); }
+.eyebrow { color: var(--c-accent-text); }
 /* monumental uppercase 800; the 300 siblings handle calmer moments */
 .t-display-xl, .t-display-lg { font-family: var(--font-display); text-transform: uppercase;
   font-weight: 800; letter-spacing: -.01em; line-height: .96; }
@@ -53,3 +53,13 @@
 .foot-socials a { border-color: #2a2a2a; color: #d8d8d8; border-radius: 32px; }
 .spec { --spec-bg: #f4f4f4; }
 .input, .badge2, .tabs, .tabs button { border-radius: 32px; }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant
+   role at once, because they all already draw from these names. */
+.section.spec {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #4a4a4a; --c-ink-subtle: #626262;
+  --c-accent-text: #c70000; --c-accent-ui: #e60000;
+}  /* on #f4f4f4: ink 17.2, muted 8.1, subtle 5.5, accent 5.6 */

@@ -18,7 +18,9 @@
 .eyebrow { color: #000; }
 /* headlines stack cleanly at 0.95 */
 .t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; line-height: .95; letter-spacing: -.02em; }
-.hero-title em { background: var(--yellow); padding: 0 .1em; }
+/* The headline highlight is a yellow block, so the type on it must be ink -
+   inheriting the accent put yellow on yellow. */
+.hero-title em { background: var(--yellow); padding: 0 .1em; color: #000; }
 .logos { background: #f4f4f4; border-block: 0; }
 .logo-item { font-weight: 600; }
 /* photography-first tiles: photo full bleed, copy stacked beneath */

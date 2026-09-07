@@ -9,8 +9,8 @@
   --c-surface: #101010;
   --c-surface-2: #101010;
   --c-surface-3: #101010;
-  --c-ink-muted: #f2f2f2;
-  --c-ink-subtle: #f2f2f2;
+  --c-ink-muted: #aeaeae;
+  --c-ink-subtle: #919191;
   --c-hairline-strong: #3d3a39;
   --c-primary-hover: #00d992;
   --c-primary-soft: #00d992;
@@ -20,6 +20,8 @@
   --c-danger: #e03131;
   --c-inverse-canvas: #f2f2f2;
   --c-inverse-ink: #101010;
+  --c-accent-text: #00d992;   /* >=5.5:1 on card + page - body text */
+  --c-accent-ui: #00d992;     /* >=3.5:1 on card + page - icons, marks */
 /* ---- raw palette (spec appendix) ---- */
   --raw-primary: #00d992;
   --raw-primary-soft: #2fd6a1;

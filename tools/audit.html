@@ -32,6 +32,55 @@ window.audit=function(){
       if(r.height<44-.5)small.push((el.className||el.tagName).toString().slice(0,26)+':'+Math.round(r.height));});
     o.small=small.length; o.smallEg=[...new Set(small)].slice(0,5);
     o.bodyPx=parseFloat(w.getComputedStyle(d.body).fontSize);
+    // real contrast of small text against whatever is actually behind it
+    const px=c=>{const m=c.match(/[\d.]+/g)||[0,0,0];return [+m[0],+m[1],+m[2]];};
+    const lum=r=>{const f=x=>{x/=255;return x<=.03928?x/12.92:Math.pow((x+.055)/1.055,2.4)};
+      return .2126*f(r[0])+.7152*f(r[1])+.0722*f(r[2])};
+    const ratio=(a,b)=>{const l=[lum(a),lum(b)].sort((x,y)=>y-x);return (l[0]+.05)/(l[1]+.05)};
+    // Walk to the first painted background. A background *image* or gradient on
+    // the way up means the real ground is a photograph or ramp we can't sample,
+    // so the measurement below would compare against the wrong colour entirely -
+    // report those separately instead of counting them as failures.
+    const bgOf=el=>{let n=el,img=false;const r=el.getBoundingClientRect();while(n&&n!==d.documentElement){
+      const cs=w.getComputedStyle(n);
+      if(cs.backgroundImage&&cs.backgroundImage!=='none')img=true;
+      // a photographic ground is just as often an <img>/<video> layer under the
+      // text as a CSS background, and it is equally unsamplable
+      // the photo is often a positioned media layer nested a level or two down
+      // (.hero > .hero-media > img), not a direct child of the text's ancestor
+      if(!img&&n.querySelector&&[...n.querySelectorAll('img,video,picture,canvas')]
+         .some(k=>{const b=k.getBoundingClientRect();
+           return b.width>120&&b.height>60&&b.top<=r.top&&b.bottom>=r.bottom;}))img=true;
+      const c=cs.backgroundColor;
+      if(c&&!/rgba\(0, 0, 0, 0\)|transparent/.test(c))return {rgb:px(c),img:img};
+      n=n.parentElement;}
+      return {rgb:px(w.getComputedStyle(d.body).backgroundColor),img:img};};
+    const low=[],overImg=[];
+    const TEXT='.eyebrow, .ts-meta code, .btn-ghost, .card-look, .feat-body, .sw-note,'
+      +' .ts-code, .sw-val, .metric-l, .logo-item, .spec-note, .tier-desc, .foot-legal,'
+      +' .sc-points li, .faq-q, .quote-by, .g-item figcaption, .tier-feats li, p, li, td,'
+      // headline emphasis is styled independently of body roles and had its own
+      // accent-as-text bug (pale yellow on a yellow highlight block)
+      +' h1, h2, h3, h4, em, strong, mark, b, .hero-title, .sec-title, .metric-v, .tier-price';
+    d.querySelectorAll(TEXT).forEach(el=>{
+      const r=el.getBoundingClientRect(); if(!r.height) return;
+      // Only an element's OWN text nodes are painted in its own colour. A wrapper
+      // whose text all lives in children (a footer <li> holding one <a>) paints
+      // nothing at that colour, so measuring it invents a failure.
+      if(![...el.childNodes].some(n=>n.nodeType===3&&n.textContent.trim())) return;
+      const cs=w.getComputedStyle(el);
+      if(cs.visibility==='hidden'||cs.opacity==='0') return;
+      const size=parseFloat(cs.fontSize), weight=parseInt(cs.fontWeight)||400;
+      const large=size>=24||(size>=18.66&&weight>=700);
+      const need=large?3:4.5;
+      const g=bgOf(el);
+      const cr=ratio(px(cs.color), g.rgb);
+      if(cr>=need-0.05) return;
+      const tag=(el.className||el.tagName).toString().slice(0,20)+':'+cr.toFixed(2);
+      (g.img?overImg:low).push(tag);
+    });
+    o.overImage=overImg.length;
+    o.lowContrast=low.length; o.lowEg=[...new Set(low)].slice(0,4);
     // every Phosphor <i> must actually resolve a glyph
     const ics=[...d.querySelectorAll('i[class*="ph"]')];
     const dead=ics.filter(i=>{const c=w.getComputedStyle(i,'::before').content;

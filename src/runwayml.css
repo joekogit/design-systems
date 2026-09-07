@@ -35,7 +35,7 @@
 .features { background: var(--paper); color: var(--ink-on-paper); }
 .features .t-display-lg { color: #000; }
 .features .lede, .features .feat-body { color: #4a4a4a; }
-.features .eyebrow { color: #6b7280; }
+.features .eyebrow { color: #5f6672; }  /* #6b7280 was 4.09:1 on this band */
 .feat-grid.v-list { gap: 0; }
 .v-list .feat-card { background: transparent; border: 0; border-top: 1px solid #c9ccd1;
   border-radius: 0; padding: var(--s-lg) 0; grid-template-columns: 34px 1fr; }
@@ -80,3 +80,18 @@
   border-bottom: 1px solid var(--c-hairline); border-radius: 0; }
 .spec { --spec-bg: #030303; border-top-color: var(--c-hairline); }
 .input, .badge2, .tabs, .tabs button, .sw { border-radius: 0; }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant
+   role at once, because they all already draw from these names. */
+.section.features {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #474849; --c-ink-subtle: #5a5c5e;
+  --c-accent-text: #5c5c5c; --c-accent-ui: #7a7a7a;
+}  /* on #e9ecf2: ink 16.0, muted 7.7, subtle 5.7, accent 5.7 */
+.section.features {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #414142; --c-ink-subtle: #5a5b5e;
+  --c-accent-text: #5c5c5c; --c-accent-ui: #7a7a7a;
+}  /* features band is painted light on this dark page: #e9ecf2 */

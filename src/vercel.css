@@ -8,6 +8,9 @@
   font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .06em;
   color: var(--c-ink-subtle); font-weight: 400;
 }
+/* the gallery caption is a pill on a dark scrim over the photo, so the page's
+   muted ink does not apply to it - it keeps the light text the scrim expects */
+.g-item figcaption { color: #ffffff; }
 .hero .eyebrow { font-size: 12px; }
 
 /* the mesh gradient is the brand — hero scale, once */

@@ -47,3 +47,33 @@
 .cta-band .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.3); }
 .spec { --spec-bg: #f6f7f9; }
 .input, .badge2, .tabs, .tabs button, .sw { border-radius: 4px; }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* Four sibling cards in the brand palette, all carrying white body copy.
+   Mixed ink across a row reads as a mistake, so instead of flipping some to
+   dark, each colour is deepened only as far as white needs -- the hue is kept
+   and the row stays one treatment. */
+.feat-card {
+  color: var(--c-ink); background: #4353ff;
+  --c-ink: #ffffff; --c-ink-muted: #f0f0f0; --c-ink-subtle: #e4e4e4;
+  --c-accent-text: #ffffff; --c-accent-ui: #ffffff;
+}  /* --c-purple #4353ff -> #4353ff, white 5.4:1 */
+.feat-card:nth-child(2) {
+  color: var(--c-ink); background: #d8258b;
+  --c-ink: #ffffff; --c-ink-muted: #f0f0f0; --c-ink-subtle: #e4e4e4;
+  --c-accent-text: #ffffff; --c-accent-ui: #ffffff;
+}  /* --c-pink #e04ba0 -> #d8258b, white 4.6:1 */
+.feat-card:nth-child(3) {
+  color: var(--c-ink); background: #0769ff;
+  --c-ink: #ffffff; --c-ink-muted: #f0f0f0; --c-ink-subtle: #e4e4e4;
+  --c-accent-text: #ffffff; --c-accent-ui: #ffffff;
+}  /* --c-blue #2b7fff -> #0769ff, white 4.7:1 */
+.feat-card:nth-child(4) {
+  color: var(--c-ink); background: #c74f00;
+  --c-ink: #ffffff; --c-ink-muted: #f0f0f0; --c-ink-subtle: #e4e4e4;
+  --c-accent-text: #ffffff; --c-accent-ui: #ffffff;
+}  /* --c-orange #ff8a3d -> #c74f00, white 4.6:1 */
+.feat-card:nth-child(5) {
+  color: var(--c-ink); background: #1b855d;
+  --c-ink: #ffffff; --c-ink-muted: #f0f0f0; --c-ink-subtle: #e4e4e4;
+}  /* --c-green #24b47e -> #1b855d, white 4.6:1 */

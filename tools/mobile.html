@@ -1,0 +1,15 @@
+<!doctype html><meta charset=utf-8><title>mobile check</title>
+<style>body{margin:0;background:#222;font:12px system-ui;color:#eee;display:flex;gap:10px;padding:10px}
+figure{margin:0}iframe{width:375px;height:667px;border:0;background:#fff;display:block}
+figcaption{padding:4px 0}</style>
+<figure><iframe id="f" src="../index.html"></iframe><figcaption>index @ 375×667</figcaption></figure>
+<script>
+window.measure=()=>{const d=f.contentDocument,w=f.contentWindow;
+ const r=s=>{const e=d.querySelector(s);if(!e)return null;const b=e.getBoundingClientRect();
+   return {h:Math.round(b.height),top:Math.round(b.top),bottom:Math.round(b.bottom)};};
+ return {viewport:d.documentElement.clientHeight,
+   header:r('.top'), controls:r('.controls'), search:r('.search'),
+   chips:r('.chips'), subrow:r('.subrow'), firstCard:r('.card'),
+   chipCount:d.querySelectorAll('.chips [data-cat]').length,
+   chromeTotal:(r('.top')?.h||0)+(r('.controls')?.h||0)};};
+</script>

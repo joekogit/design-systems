@@ -10,7 +10,7 @@
 .btn-secondary { background: var(--cream-soft); border-color: #e2dcd3; }
 .btn-secondary:hover { background: #f1ebe4; border-color: var(--mute); }
 .eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 700; }
-.eyebrow { color: var(--c-primary); }
+.eyebrow { color: var(--c-accent-text); }
 .t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-family: var(--font-display); font-weight: 800; letter-spacing: -.035em; }
 .hero-title em { color: var(--c-primary); }
 .logos { border-block-color: #ece7e0; background: var(--cream-soft); }
@@ -36,3 +36,15 @@
 .cta-band .btn-primary { background: var(--c-ink); color: #fff; }
 .cta-band .btn-secondary { background: rgba(0,0,0,.14); color: #fff; border-color: transparent; }
 .spec { --spec-bg: var(--cream-soft); }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* Brand band too light for white text (3.3:1) and too dark for a full
+   ink ramp. Keep the brand ground, carry the text in near-black. */
+.cta-band {
+  color: var(--c-ink);
+  --c-ink: #111111; --c-ink-muted: #321a0f; --c-ink-subtle: #3c1b0b;
+  --c-accent-text: #111111; --c-accent-ui: #111111;
+}
+.cta-band .lede, .cta-band .feat-body, .cta-band .metric-l, .cta-band .logos-lead,
+.cta-band .tier-desc, .cta-band .tier-per { color: var(--c-ink-muted); }
+

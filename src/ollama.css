@@ -51,3 +51,15 @@
 .spec { --spec-bg: #f9f9f9; }
 .input, .badge2, .tabs, .tabs button { border-radius: var(--r-pill); }
 .sw-val, .ts-meta code { font-family: var(--font-mono); }
+
+/* --- a11y: token scope for bands this design repaints --- */
+/* A repainted band is a different ground, so the canvas-tuned text tokens
+   no longer read on it. Rescoping the variables fixes every descendant role
+   at once. Scoped to the exact instance: the shared class is painted
+   several ways here, and the plain cards keep the page's own tokens. */
+.tier:last-child {
+  color: var(--c-ink);
+  --c-ink: #ffffff; --c-ink-muted: #cbcbcb; --c-ink-subtle: #aeaeae;
+  --c-accent-text: #8c8c8c; --c-accent-ui: #6b6b6b;
+}  /* on #111111: ink 18.9, muted 11.6, subtle 8.5 */
+
