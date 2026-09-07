@@ -64,10 +64,27 @@ def parse_frontmatter(text):
             parent[key] = node
             stack.append((indent, node))
         else:
+            val = strip_yaml_comment(val)
             if len(val) >= 2 and val[0] == val[-1] and val[0] in "\"'":
                 val = val[1:-1]
             parent[key] = val
     return root
+
+
+def strip_yaml_comment(val):
+    """Remove a trailing ` # comment`. Must not eat the `#` of a hex colour,
+    and must not cut inside a quoted string (`"#e60012"  # Nintendo Red`)."""
+    if not val:
+        return val
+    if val[0] in "\"'":
+        q = val[0]
+        end = val.find(q, 1)
+        if end != -1:
+            return val[: end + 1]
+        return val
+    # unquoted: a comment is ` #` — whitespace then hash
+    m = re.search(r"\s+#", val)
+    return val[: m.start()].rstrip() if m else val
 
 
 def read_reference(slug):
@@ -164,7 +181,23 @@ def mobile_size(px):
     return px
 
 
+COLOUR_OK = re.compile(
+    r"^(#[0-9a-fA-F]{3,8}|rgba?\([^)]*\)|hsla?\([^)]*\)|color\([^)]*\)|var\(--[^)]*\)"
+    r"|transparent|currentColor|inherit|[a-z]+)$")
+
+
+def assert_colour(slug, token, value):
+    """A malformed colour is a silent failure — the declaration is simply dropped
+    by the browser and the page renders with an unset variable."""
+    if not COLOUR_OK.match(str(value).strip()):
+        raise SystemExit(
+            "%s: %s has a value that is not a colour: %r\n"
+            "  (a YAML inline comment or stray text probably leaked into it)"
+            % (slug, token, value))
+
+
 def derive_tokens(slug):
+    slug_hint = slug
     """Produce the canonical token CSS block for a slug from its reference file."""
     text, fm = read_reference(slug)
     colors = fm.get("colors", {}) or {}
@@ -200,11 +233,13 @@ def derive_tokens(slug):
     resolved.setdefault("inverse-canvas", resolved["ink"])
     resolved.setdefault("inverse-ink", resolved["canvas"])
     for k, v in resolved.items():
+        assert_colour(slug_hint, "--c-" + k, v)
         lines.append("  --c-%s: %s;" % (k, v))
 
     # every raw color from the reference, for the swatch appendix
     lines.append("/* ---- raw palette (spec appendix) ---- */")
     for k, v in colors.items():
+        assert_colour(slug_hint, "--raw-" + k, v)
         lines.append("  --raw-%s: %s;" % (k, v))
 
     lines.append("/* ---- typography ---- */")
@@ -481,6 +516,25 @@ TOKEN_DOC = re.compile(r"\*\*(.+?)\*\*\s*\(\{colors\.([A-Za-z0-9_-]+)\}\)\s*:\s*
 HEX_DOC = re.compile(r"\*\*(.+?)\*\*\s*\(`(#[0-9a-fA-F]{3,8})`\)\s*:\s*(.+)")
 
 
+FM_COMMENT = re.compile(r"^\s+([A-Za-z0-9_-]+):\s*(\"[^\"]*\"|'[^']*'|\S+)\s+#\s*(.+?)\s*$")
+
+
+def frontmatter_comments(slug):
+    """Some references document each token as a YAML inline comment
+    (`primary: "#e60012"   # Nintendo Red - racetrack logo`). That is real usage
+    documentation, so keep it rather than discarding it with the comment."""
+    text, _ = read_reference(slug)
+    if not text.startswith("---"):
+        return {}
+    end = text.find("\n---", 3)
+    out = {}
+    for line in text[3:end if end != -1 else None].split("\n"):
+        m = FM_COMMENT.match(line)
+        if m:
+            out[m.group(1).lower()] = m.group(3)
+    return out
+
+
 def colour_docs(slug):
     """Friendly name + usage note per colour, mined from the reference prose.
     Keyed by token name and by hex so both reference formats resolve."""
@@ -504,10 +558,16 @@ def render_swatches(d, slug):
     if not pal:
         _, fm = read_reference(slug)
         pal = [{"name": k, "value": v} for k, v in (fm.get("colors", {}) or {}).items()]
+    fmc = frontmatter_comments(slug)
     for p in pal:
         doc = docs.get(p["name"].lower()) or docs.get(str(p["value"]).lower())
         if doc and not p.get("note"):
             p["label"], p["note"] = doc[0], doc[1]
+        # fall back to the token's own YAML inline comment
+        if not p.get("note"):
+            c = fmc.get(p["name"].lower())
+            if c:
+                p["note"] = c
     out = []
     for p in pal:
         val = p["value"]

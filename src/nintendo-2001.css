@@ -84,8 +84,9 @@ body { background: #6d7dae; }
 .g-item figcaption { border-radius: 0; background: #e60012; color: #fff; font-weight: 700;
   letter-spacing: .1em; font-size: 10px; left: 12px; bottom: 12px; }
 
-/* chamfered corners on the largest modules */
-.quote-card, .cta-band, .tier-feat {
+/* Chamfer the large modules — but NOT the featured tier: its badge sits above
+   the top edge and clip-path would slice it off. */
+.quote-card, .cta-band {
   clip-path: polygon(18px 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%, 0 18px); }
 .quote-card { --quote-align: left; --quote-by-just: flex-start; background: var(--plate-lt); }
 .quote-text { font-size: clamp(17px, 2.2vw, 22px); line-height: 1.25; color: #21242e; }
@@ -93,8 +94,13 @@ body { background: #6d7dae; }
 .q-av { border-radius: 0; border: 2px solid var(--carbon); }
 
 .tier { background: var(--plate-lt); }
-.tier-feat { background: var(--plate); border-color: #f68d1f; }
-.tier-badge { border-radius: 0; background: #e60012; color: #fff; letter-spacing: .08em; font-weight: 800; }
+/* the featured plate reads brighter than its siblings, not duller */
+.tier-feat { background: linear-gradient(180deg, #cfe0f7 0%, #b6cdee 100%);
+  border-color: #f68d1f; border-width: 3px; }
+.tier-badge { position: static; display: inline-block; align-self: flex-start;
+  margin-bottom: 10px;
+  border-radius: 0; background: #e60012; color: #fff; letter-spacing: .08em;
+  font-weight: 800; padding: 4px 12px; }
 .tier-num { font-family: var(--font-display); font-weight: 900; }
 .tier-desc, .tier-feats li { color: #21242e; }
 .tier-feats i { color: #f68d1f; }
