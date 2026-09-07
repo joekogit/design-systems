@@ -1,0 +1,86 @@
+{
+  "slug": "nintendo-2001", "name": "Nintendo 2001", "category": "Retro web",
+  "look": "Y2K console chrome — brushed periwinkle bevels, carbon-navy command bars, chamfered plates, rationed warm signal colour.",
+  "scheme": "light", "icon_weights": ["fill", "bold"],
+  "fonts": {
+    "display": "\"Jost\", \"Arial Black\", Arial, sans-serif",
+    "body": "Arial, Helvetica, \"Liberation Sans\", sans-serif",
+    "mono": "\"VT323\", ui-monospace, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=VT323&display=swap"
+  },
+  "variants": { "nav": "chrome", "hero": "split", "features": "list", "cards": "bordered", "gallery": "grid" },
+  "brand": { "mark": "ph-game-controller-fill", "name": "POLYGON 64" },
+  "nav": { "links": [{"label":"SYSTEMS","href":"features"},{"label":"GAMES","href":"gallery"},{"label":"NEWS","href":"showcase-0"},{"label":"SUPPORT","href":"faq"},{"label":"STORE","href":"pricing"}], "cta": "REGISTER", "cta2": "Members" },
+  "hero": {
+    "eyebrow": "NOW SHIPPING",
+    "title": "POLYGON 64<br><em>CHANGES EVERYTHING</em>",
+    "sub": "Sixty-four bits of processing power. Four controller ports. Nine launch titles. The next generation is not coming — it is plugged in.",
+    "cta1": "SEE THE SYSTEM", "cta2": "BROWSE GAMES",
+    "image": "photo-1550745165-9bc0b252726f", "ratio": 0.7,
+    "stats": [{"v":"64-BIT","l":"Processor"},{"v":"4","l":"Controller ports"},{"v":"9","l":"Launch titles"}]
+  },
+  "logo_lead": "AVAILABLE AT",
+  "logos": ["ELECTRO WORLD", "GAME CASTLE", "TOY BARN", "MEGA MART", "DISC CITY", "PLAY DEPOT"],
+  "features": {
+    "eyebrow": "SYSTEM SPECS",
+    "title": "INSIDE THE MACHINE",
+    "sub": "Every component chosen for one thing: frames on the screen.",
+    "items": [
+      {"icon":"ph-cpu-fill","title":"64-BIT PROCESSOR","body":"93.75 MHz of custom silicon, co-designed with the graphics unit so the two never wait on each other."},
+      {"icon":"ph-graphics-card-fill","title":"REALITY ENGINE","body":"Hardware texture filtering, mip-mapping and anti-aliasing — in the box, not as an add-on."},
+      {"icon":"ph-game-controller-fill","title":"FOUR PORTS","body":"Four controllers plug straight in. No adapter, no multi-tap, no arguments about whose turn it is."},
+      {"icon":"ph-lightning-fill","title":"CARTRIDGE LOADING","body":"No load times. Blow on the cartridge, push it in, and you are playing inside four seconds."},
+      {"icon":"ph-vibrate-fill","title":"RUMBLE PAK","body":"Force feedback in the controller grip, driven by the game rather than bolted on afterwards."},
+      {"icon":"ph-hard-drive-fill","title":"EXPANSION BAY","body":"A memory expansion doubles the working RAM and unlocks high-resolution mode on supported titles."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"NEWS","title":"NINE TITLES AT LAUNCH","body":"Four first-party games and five from partner studios, all shipping on day one. Three more arrive before the holidays, including the racing title that has been in the magazines all year.","points":["Four first-party launch titles","Five partner studio releases","Three more before December"],"image":"photo-1550745165-9bc0b252726f","cta":"SEE THE LINE-UP","ratio":0.66},
+    {"eyebrow":"HARDWARE","title":"BUILT TO SURVIVE A CHILDHOOD","body":"Drop-tested from a metre onto carpet and concrete. Reinforced port housings, a cartridge slot rated to ten thousand insertions, and a shell moulded in one piece.","points":["One-metre drop rating","10,000-insertion cartridge slot","Single-piece moulded shell"],"image":"photo-1518770660439-4636190af475","cta":"READ THE SPECS","ratio":0.66}
+  ],
+  "metric_lead": "SYSTEM AT A GLANCE",
+  "metrics": [{"v":"93.75","l":"MHz processor"},{"v":"4MB","l":"Base RAM"},{"v":"4","l":"Controller ports"},{"v":"9","l":"Launch titles"}],
+  "gallery": {
+    "title": "GAME LIBRARY",
+    "sub": "Nine at launch. Twelve by December. Browse the full catalogue.",
+    "items": [
+      {"id":"photo-1550745165-9bc0b252726f","tag":"ARCADE","ratio":0.75},
+      {"id":"photo-1552519507-da3b142c6e3d","tag":"RACING","ratio":0.75},
+      {"id":"photo-1518770660439-4636190af475","tag":"PUZZLE","ratio":0.75},
+      {"id":"photo-1541701494587-cb58502866ab","tag":"ACTION","ratio":0.75},
+      {"id":"photo-1517649763962-0c623066013b","tag":"SPORTS","ratio":0.75},
+      {"id":"photo-1502920917128-1aa500764cbd","tag":"ADVENTURE","ratio":0.75}
+    ]
+  },
+  "testimonial": {"quote":"I saved for eleven months and queued from six in the morning. Nineteen years later it is still under the television, and it still works.","name":"Danny Kolar","role":"Member since launch day","avatar":"photo-1633332755192-727a05c4013d"},
+  "pricing": {
+    "title": "GET YOURS",
+    "sub": "Three bundles. All include the console, one controller and the power supply.",
+    "tiers": [
+      {"name":"CONSOLE","price":"$199", "period":"", "desc":"The system, one controller, and the cables.","features":["Polygon 64 console","One controller","AV and power cables","One-year warranty"],"cta":"ADD TO CART"},
+      {"name":"STARTER SET","price":"$249","period":"","desc":"The system plus a launch title and a memory card.","features":["Everything in Console","One launch title","Memory card","Rumble Pak"],"cta":"ADD TO CART","featured":true,"badge":"BEST SELLER"},
+      {"name":"COLLECTOR","price":"$329","period":"","desc":"Two controllers, three games, expansion bay module.","features":["Two controllers","Three launch titles","Memory expansion","Carry case"],"cta":"ADD TO CART"}
+    ]
+  },
+  "faq": {"title":"SUPPORT","items":[
+    {"q":"What is in the box?","a":"The console, one controller, an AV cable, the power supply and the printed manual. Memory cards and additional controllers are sold separately."},
+    {"q":"Will my old cartridges work?","a":"No. The Polygon 64 uses a new cartridge format with a different pin count and a physically different slot, so previous-generation games will not fit."},
+    {"q":"How many players is it?","a":"Four, out of the box, with four ports on the front of the console. No adapter is required, though not every title supports four players."},
+    {"q":"What does the expansion bay do?","a":"The memory expansion module doubles the working RAM and enables a high-resolution display mode on titles that support it. It is included in the Collector bundle."}
+  ]},
+  "cta": {"title":"PLAY IT ON POLYGON 64","sub":"Available now at retailers everywhere. Register your system for a free game voucher.","btn1":"FIND A RETAILER","btn2":"REGISTER SYSTEM"},
+  "footer": {"tagline":"Play it loud. Play it on Polygon 64.","columns":[
+    {"title":"SYSTEMS","links":["Polygon 64","Handheld","Accessories","Retired systems"]},
+    {"title":"GAMES","links":["New releases","Coming soon","Full catalogue","Player guides"]},
+    {"title":"SUPPORT","links":["Manuals","Repairs","Warranty","Contact us"]},
+    {"title":"CORPORATE","links":["About","Press","Careers","Legal"]}
+  ],"legal":"© 2001 Polygon Interactive"},
+  "specimen": "PLAY IT LOUD",
+  "notes": [
+    "Every region is a bevelled metal plate: a light top edge, a chrome-indigo shadow line below. The page is assembled from panels rather than laid out on a grid.",
+    "Chamfered (cut-corner) geometry on the largest modules; most chrome is sharp-edged, with rounding reserved for the logo pill and circular badges.",
+    "A carbon-navy command layer with halftone texture carries the top nav, the right rail and the footer.",
+    "Warmth is rationed as directional signal only — gold for menu words, amber for utility chips, orange for every forward or submit cue.",
+    "Density is the point. Minimal whitespace, packed modular panels, and a hero field tinted per section."
+  ]
+}

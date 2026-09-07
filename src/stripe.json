@@ -1,0 +1,86 @@
+{
+  "slug": "stripe", "name": "Stripe", "category": "Fintech & crypto",
+  "look": "Gradient-mesh hero over a white canvas, weight-300 display type, a single indigo pill CTA.",
+  "scheme": "light", "icon_weights": ["regular", "fill"],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "body": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "variants": { "nav": "bar", "hero": "split", "features": "grid", "cards": "elevated", "gallery": "grid" },
+  "brand": { "mark": "ph-currency-circle-dollar-fill", "name": "Ledgerline" },
+  "nav": { "links": [{"label":"Products","href":"features"},{"label":"Solutions","href":"showcase-0"},{"label":"Developers","href":"gallery"},{"label":"Pricing","href":"pricing"},{"label":"Company","href":"f"}], "cta": "Start now", "cta2": "Sign in" },
+  "hero": {
+    "eyebrow": "Payments infrastructure",
+    "title": "Financial infrastructure to <em>grow your revenue</em>",
+    "sub": "Join millions of companies that use Ledgerline to accept payments, send payouts, and manage their businesses online.",
+    "cta1": "Start with payments", "cta2": "Contact sales",
+    "image": "photo-1551288049-bebda4e38f71", "ratio": 0.66,
+    "stats": [{"v":"250M+","l":"API requests per day"},{"v":"99.999%","l":"Historical uptime"},{"v":"135+","l":"Currencies supported"}]
+  },
+  "logo_lead": "Powering payments for",
+  "logos": ["Northwind", "Corva", "Halyard", "Basisplan", "Meridian", "Tessera"],
+  "features": {
+    "eyebrow": "A full stack",
+    "title": "Everything you need to move money",
+    "sub": "A unified platform for online and in-person payments, billing, marketplaces and financial reporting.",
+    "items": [
+      {"icon":"ph-credit-card","title":"Payments","body":"Accept cards, wallets and local methods in 135 currencies with a single integration and one reconciliation model."},
+      {"icon":"ph-receipt","title":"Billing","body":"Recurring subscriptions, usage-based pricing, proration and dunning without a billing engine of your own."},
+      {"icon":"ph-users-three","title":"Connect","body":"Onboard sellers, split payments and handle payouts across a marketplace with compliance built in."},
+      {"icon":"ph-shield-check","title":"Radar","body":"Machine-learned fraud scoring trained on network-wide signal, tunable with rules you write yourself."},
+      {"icon":"ph-chart-line-up","title":"Reporting","body":"Every transaction reconciled to the cent, exportable to your ledger with tabular figures throughout."},
+      {"icon":"ph-code","title":"Developer tools","body":"Idempotent APIs, typed SDKs in nine languages, and a test mode that mirrors production exactly."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"Checkout","title":"A checkout that converts","body":"A prebuilt, hosted payment page localised into 30 languages and optimised continuously against network-wide conversion data. One redirect, no PCI scope.","points":["Apple Pay, Google Pay and Link out of the box","Adaptive 3D Secure that only steps up when it lifts authorisation","Address and card autofill across the network"],"image":"photo-1556742049-0cfed4f6a45d","cta":"Explore Checkout"},
+    {"eyebrow":"Financial reporting","title":"Reconciliation that actually reconciles","body":"Every balance transaction, fee and refund is exposed as a queryable row. Close the month against the ledger rather than against a dashboard screenshot.","points":["Tabular figures on every numeric cell","Scheduled exports to your warehouse","Revenue recognition on the accrual basis"],"image":"photo-1591696205602-2f950c417cb9","cta":"See reporting"}
+  ],
+  "metric_lead": "Measured across the platform in the last twelve months",
+  "metrics": [{"v":"+11.9%","l":"Median lift in authorisation"},{"v":"$1.4T","l":"Processed annually"},{"v":"47ms","l":"Median API latency"},{"v":"99.999%","l":"Historical uptime"}],
+  "gallery": {
+    "title": "Built for developers",
+    "sub": "Documentation, sandboxes and reference implementations for every surface of the platform.",
+    "items": [
+      {"id":"photo-1498050108023-c5249f4df085","tag":"Quickstart","ratio":0.72},
+      {"id":"photo-1460925895917-afdab827c52f","tag":"Dashboard","ratio":0.72},
+      {"id":"photo-1579621970563-ebec7560ff3e","tag":"Treasury","ratio":0.72},
+      {"id":"photo-1454165804606-c3d57bc86b40","tag":"Reporting","ratio":0.72},
+      {"id":"photo-1555066931-4365d14bab8c","tag":"SDKs","ratio":0.72},
+      {"id":"photo-1521737604893-d14cc237f11d","tag":"Support","ratio":0.72}
+    ]
+  },
+  "testimonial": {"quote":"We replaced four vendors and a reconciliation spreadsheet with one integration. The finance team closed the month two days early for the first time in the company's history.","name":"Daniel Okafor","role":"CFO, Meridian Commerce","avatar":"photo-1500648767791-00dcc994a43e"},
+  "pricing": {
+    "title": "Integrated per-transaction pricing",
+    "sub": "No setup fees, monthly fees, or hidden fees. Only pay for what you use.",
+    "tiers": [
+      {"name":"Standard","price":"2.9%","period":"+ 30¢","desc":"Everything you need to accept payments online.","features":["All payment methods","Hosted Checkout","Fraud protection","24/7 support"],"cta":"Start now"},
+      {"name":"Scale","price":"Custom","period":"volume rates","desc":"For businesses processing at scale.","features":["Volume discounts","Interchange-plus pricing","Multi-entity support","Named account team"],"cta":"Contact sales","featured":true,"badge":"Most common"},
+      {"name":"Enterprise","price":"Custom","period":"","desc":"For platforms and marketplaces.","features":["Connect and payouts","Custom contracts","Data residency","Solutions architect"],"cta":"Talk to us"}
+    ]
+  },
+  "faq": {"title":"Questions about pricing","items":[
+    {"q":"Are there any setup or monthly fees?","a":"No. Integrated pricing is purely per successful transaction, so an account that processes nothing in a month is charged nothing that month."},
+    {"q":"How are refunds and disputes handled?","a":"Refunding a charge returns the full amount to the customer; the original processing fee is not returned. Disputes carry a separate fee that is reversed automatically when the dispute is resolved in your favour."},
+    {"q":"Do you support interchange-plus?","a":"Yes, on Scale and Enterprise. Interchange, scheme fees and the margin are itemised separately on every balance transaction."},
+    {"q":"When do payouts arrive?","a":"On a rolling two-day schedule by default, configurable to daily, weekly or monthly, with instant payouts available to supported debit cards."}
+  ]},
+  "cta": {"title":"Start building today","sub":"Create an account and begin taking live payments in minutes, or talk to us about a bespoke package.","btn1":"Start now","btn2":"Contact sales"},
+  "footer": {"tagline":"Financial infrastructure for the internet economy.","columns":[
+    {"title":"Products","links":["Payments","Billing","Connect","Terminal"]},
+    {"title":"Developers","links":["Documentation","API reference","Changelog","Status"]},
+    {"title":"Resources","links":["Guides","Customer stories","Support","Partners"]},
+    {"title":"Company","links":["About","Careers","Newsroom","Legal"]}
+  ],"legal":"© 2026 Ledgerline Payments Ltd"},
+  "specimen": "Move money faster",
+  "notes": [
+    "The gradient mesh belongs in the upper third of the page only — cream, orange, lavender, indigo and ruby washed horizontally. It never repeats lower down.",
+    "Exactly one filled indigo pill per view. Every other action is a ghost link with a chevron.",
+    "Display type sits at weight 300 with negative tracking; the lightness is the brand, so resist bolding headlines.",
+    "Any cell containing money uses tabular figures (font-variant-numeric: tabular-nums). This is the quiet financial-data signal.",
+    "Cream bands break long white stretches without introducing a new hue."
+  ]
+}

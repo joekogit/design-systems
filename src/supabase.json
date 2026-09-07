@@ -1,0 +1,86 @@
+{
+  "slug": "supabase", "name": "Supabase", "category": "Backend, database & DevOps",
+  "look": "White canvas, single emerald accent, composited product screenshots, tight technical radii.",
+  "scheme": "light", "icon_weights": ["regular", "bold"],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "body": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": { "nav": "bar", "hero": "product-frame", "features": "grid", "cards": "bordered", "gallery": "grid" },
+  "brand": { "mark": "ph-database", "name": "Stratum" },
+  "nav": { "links": [{"label":"Product","href":"features"},{"label":"Developers","href":"gallery"},{"label":"Enterprise","href":"showcase-0"},{"label":"Pricing","href":"pricing"},{"label":"Docs","href":"faq"}], "cta": "Start your project", "cta2": "Sign in" },
+  "hero": {
+    "eyebrow": "The open Postgres platform",
+    "title": "Build in a weekend. <em>Scale to millions.</em>",
+    "sub": "Stratum is a Postgres database with authentication, storage, realtime subscriptions and edge functions attached. No lock-in, because underneath it is just Postgres.",
+    "cta1": "Start your project", "cta2": "Read the docs",
+    "image": "photo-1555066931-4365d14bab8c", "ratio": 0.6,
+    "stats": [{"v":"1.6M","l":"Databases created"},{"v":"Postgres 16","l":"Under the hood"},{"v":"Apache 2.0","l":"Core licence"}]
+  },
+  "logo_lead": "Built on Stratum",
+  "logos": ["Northwind", "Corva", "Basisplan", "Perigee", "Tessera", "Halyard"],
+  "features": {
+    "eyebrow": "The platform",
+    "title": "Everything attached to your database",
+    "sub": "Each piece works on its own. Together they are a backend you did not have to assemble.",
+    "items": [
+      {"icon":"ph-database","title":"Postgres database","body":"A dedicated Postgres instance with extensions enabled, point-in-time recovery and no proprietary query layer in front of it."},
+      {"icon":"ph-key","title":"Authentication","body":"Email, magic links, phone and twenty OAuth providers, enforced at the row through Postgres policies."},
+      {"icon":"ph-hard-drives","title":"Storage","body":"S3-compatible object storage with image transformation on the fly and the same policy engine as the database."},
+      {"icon":"ph-broadcast","title":"Realtime","body":"Subscribe to inserts, updates and deletes over websockets, filtered by the same row-level rules."},
+      {"icon":"ph-function","title":"Edge functions","body":"Deno functions deployed to the edge, close to your users and next to your data."},
+      {"icon":"ph-magnifying-glass","title":"Vector search","body":"pgvector built in, so embeddings live beside the rows they describe instead of in a second database."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"Row level security","title":"Authorisation in the database, not the API","body":"Policies are written in SQL and enforced by Postgres itself. A misconfigured client cannot read what a policy forbids, because the check happens below the API rather than inside it.","points":["Policies expressed as ordinary SQL","Enforced for REST, realtime and storage alike","Testable with a plain SQL test suite"],"image":"photo-1498050108023-c5249f4df085","cta":"Read the RLS guide"},
+    {"eyebrow":"No lock-in","title":"It is just Postgres underneath","body":"Take a pg_dump and leave whenever you like. The platform adds extensions and services around a standard database rather than replacing it with something you cannot export.","points":["Standard pg_dump and pg_restore","Direct connection string available","Core platform under Apache 2.0"],"image":"photo-1558494949-ef010cbdcc31","cta":"See the architecture"}
+  ],
+  "metric_lead": "Across the platform",
+  "metrics": [{"v":"1.6M","l":"Databases created"},{"v":"99.9%","l":"Uptime SLA"},{"v":"12","l":"Regions available"},{"v":"78k","l":"GitHub stars"}],
+  "gallery": {
+    "title": "Documentation and examples",
+    "sub": "Reference implementations for the frameworks and runtimes people actually use.",
+    "items": [
+      {"id":"photo-1555066931-4365d14bab8c","tag":"Quickstart","ratio":0.72},
+      {"id":"photo-1558494949-ef010cbdcc31","tag":"Infrastructure","ratio":0.72},
+      {"id":"photo-1518770660439-4636190af475","tag":"Extensions","ratio":0.72},
+      {"id":"photo-1460925895917-afdab827c52f","tag":"Dashboard","ratio":0.72},
+      {"id":"photo-1526374965328-7f61d4dc18c5","tag":"Realtime","ratio":0.72},
+      {"id":"photo-1573164713988-8665fc963095","tag":"Regions","ratio":0.72}
+    ]
+  },
+  "testimonial": {"quote":"We evaluated four backends and picked the one we could walk away from. Two years later we have not needed to, which is rather the point.","name":"Tomas Berg","role":"CTO, Perigee Systems","avatar":"photo-1573496359142-b8d87734a5a2"},
+  "pricing": {
+    "title": "Predictable pricing, no surprises",
+    "sub": "Start free. Scale when you need to. Every plan runs on dedicated Postgres.",
+    "tiers": [
+      {"name":"Free","price":"$0","period":"/month","desc":"For hobby projects and experiments.","features":["500MB database","1GB file storage","50,000 monthly users","Community support"],"cta":"Start free"},
+      {"name":"Pro","price":"$25","period":"/month","desc":"For production applications.","features":["8GB database included","100GB file storage","Daily backups","Email support"],"cta":"Get started","featured":true,"badge":"Most popular"},
+      {"name":"Enterprise","price":"Custom","period":"","desc":"For teams with compliance requirements.","features":["Designated support","SOC 2 and HIPAA","99.9% uptime SLA","Custom regions"],"cta":"Contact sales"}
+    ]
+  },
+  "faq": {"title":"Common questions","items":[
+    {"q":"Is it really just Postgres?","a":"Yes. You get a connection string to a standard Postgres instance. Everything the platform adds is built with extensions and services around it, so pg_dump gets you out cleanly."},
+    {"q":"What happens if a project is idle?","a":"Free-tier projects pause after a week without activity and can be restored from the dashboard in about a minute. Paid projects never pause."},
+    {"q":"Can we self-host?","a":"The core platform is Apache 2.0 licensed and there is a documented Docker Compose setup. Some managed conveniences — the dashboard's log explorer in particular — are cloud-only."},
+    {"q":"How do backups work?","a":"Daily backups on Pro with seven-day retention, and point-in-time recovery to any second within the retention window as an add-on."}
+  ]},
+  "cta": {"title":"Start your project","sub":"A new Postgres database in about two minutes. Free tier, no card required.","btn1":"Start your project","btn2":"Read the docs"},
+  "footer": {"tagline":"An open source backend built on Postgres.","columns":[
+    {"title":"Product","links":["Database","Auth","Storage","Realtime"]},
+    {"title":"Developers","links":["Documentation","API reference","Changelog","Status"]},
+    {"title":"Resources","links":["Support","System status","Integrations","Partners"]},
+    {"title":"Company","links":["Open source","Careers","Blog","Contact"]}
+  ],"legal":"© 2026 Stratum Data"},
+  "specimen": "Just use Postgres",
+  "notes": [
+    "The emerald is the only chromatic event on the page. Everything else is a greyscale ladder from hairline to ink.",
+    "Composited product UI screenshots — dashboard, SQL editor, log stream — are the only decorative element. No photography, no illustration.",
+    "Button radii stay tight at 6–8px. Nothing in this system is a pill.",
+    "Code blocks sit on a near-black surface with monospace inline code; the developer DNA should be visible on every marketing surface.",
+    "The featured pricing tier inverts to near-black rather than turning green — the green stays reserved for buttons and dot accents."
+  ]
+}

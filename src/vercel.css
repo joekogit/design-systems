@@ -1,0 +1,55 @@
+/* Vercel — black-and-white precision. Mono eyebrows, one mesh gradient, stacked shadows. */
+:root { --maxw: 1200px; --sect: clamp(60px, 8vw, 104px);
+  --shadow-1: 0 1px 2px rgba(0,0,0,.04), 0 2px 6px rgba(0,0,0,.04), 0 8px 18px rgba(0,0,0,.06);
+  --shadow-2: 0 2px 4px rgba(0,0,0,.06), 0 8px 16px rgba(0,0,0,.06), 0 20px 40px rgba(0,0,0,.10); }
+
+/* mono for every eyebrow and small label — the typographic signature */
+.eyebrow, .logos-lead, .g-item figcaption, .fcol h4, .tier-per, .zoo-cell h4, .ts-meta code {
+  font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .06em;
+  color: var(--c-ink-subtle); font-weight: 400;
+}
+.hero .eyebrow { font-size: 12px; }
+
+/* the mesh gradient is the brand — hero scale, once */
+.hero { text-align: center; }
+.hero::after {
+  content: ""; position: absolute; left: 50%; top: -280px; width: 1100px; height: 620px;
+  transform: translateX(-50%); z-index: 0; pointer-events: none; opacity: .5;
+  background: conic-gradient(from 210deg at 50% 50%, #00d4ff, #0070f3, #ff0080, #ffb800, #00d4ff);
+  filter: blur(90px);
+}
+.hero > * { position: relative; z-index: 1; }
+.hero-title { font-weight: 800; letter-spacing: -.045em; }
+.hero-title em { color: var(--c-ink-subtle); }
+
+.btn { border-radius: var(--r-pill); font-weight: 500; }
+.btn-primary { background: #000; color: #fff; }
+.btn-primary:hover { background: #383838; }
+.btn-secondary { background: #fff; border-color: #eaeaea; box-shadow: none; }
+.btn-secondary:hover { border-color: #999; background: #fff; }
+.nav-act .btn { border-radius: var(--r-sm); }
+
+.nav { --nav-bg: rgba(255,255,255,.8); backdrop-filter: blur(12px); }
+.brand-ico { color: #000; font-size: 17px; }
+
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title, .feat-title, .tier-name { letter-spacing: -.035em; font-weight: 700; }
+.feat-card { border-radius: var(--r-lg); background: #fff; }
+.feat-card:hover { background: #fff; border-color: #999; }
+.feat-ico { background: #fafafa; border: 1px solid #eaeaea; color: #000; border-radius: var(--r-md); }
+
+.metrics { --metrics-bg: #000; border-block: 0; }
+.metrics .metric-v { color: #fff; }
+.metrics .metric-l, .metrics .logos-lead { color: #888; }
+.hero-media img, .sc-media img { box-shadow: var(--shadow-2); border-color: #eaeaea; }
+
+/* featured tier flips polarity rather than gaining a colour */
+.tier-feat { background: #000; border-color: #000; color: #fff; }
+.tier-feat .tier-desc, .tier-feat .tier-feats li, .tier-feat .tier-per { color: #a1a1a1; }
+.tier-feat .tier-feats i { color: #fff; }
+.tier-feat .btn-primary { background: #fff; color: #000; }
+.tier-feat .btn-primary:hover { background: #eaeaea; }
+.tier-badge { background: #000; color: #fff; }
+.cta-band { background: #000; color: #fff; border-color: #000; }
+.cta-band .lede { color: #888; }
+.cta-band .btn-secondary { background: transparent; color: #fff; border-color: #333; }
+.spec { --spec-bg: #fafafa; }

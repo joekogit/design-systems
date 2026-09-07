@@ -1,0 +1,61 @@
+/* Notion — navy hero band, purple pill, pastel cards, sober 8/12px geometry. */
+:root { --maxw: 1180px; --sect: clamp(56px, 7vw, 92px);
+  --navy: #16324f; --shadow-1: 0 1px 2px rgba(15,23,42,.06), 0 6px 20px rgba(15,23,42,.08);
+  --shadow-2: 0 24px 60px rgba(15,23,42,.22);
+  --tint-peach: #ffeadb; --tint-rose: #ffe2e6; --tint-mint: #ddf3e4;
+  --tint-lavender: #eae4fb; --tint-sky: #ddedfa; --tint-yellow: #fdf0c9; }
+
+.nav { --nav-bg: rgba(255,255,255,.9); backdrop-filter: blur(10px); }
+.brand { font-weight: 700; letter-spacing: -.02em; }
+.btn { border-radius: var(--r-md); font-weight: 600; }
+.btn-primary { box-shadow: none; }
+.btn-secondary { background: #fff; border-color: rgba(15,23,42,.14); }
+.eyebrow { color: var(--c-ink-subtle); text-transform: none; letter-spacing: 0; font-weight: 500; }
+
+/* the navy band is the signature opening move */
+.hero { background: var(--navy); color: #fff; padding-bottom: clamp(96px, 14vw, 190px); }
+.hero .eyebrow { color: #9dbbd6; }
+.hero-title em { color: #c9b6ff; }
+.hero-sub { color: #cfe0ee; }
+.hero .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.34); }
+.hero-stats { border-top-color: rgba(255,255,255,.2); }
+.hstat b { color: #fff; } .hstat span { color: #9dbbd6; }
+/* scattered sticky-note dots */
+.hero::before {
+  content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: .5;
+  background-image:
+    radial-gradient(7px 7px at 8% 24%, #ffd9a0 99%, transparent),
+    radial-gradient(6px 6px at 22% 68%, #b7e4c7 99%, transparent),
+    radial-gradient(5px 5px at 78% 18%, #c9b6ff 99%, transparent),
+    radial-gradient(7px 7px at 91% 62%, #ffb3c1 99%, transparent),
+    radial-gradient(5px 5px at 61% 84%, #a9d6f5 99%, transparent);
+}
+.hero > * { position: relative; z-index: 1; }
+/* the product card lifts out of the band */
+.hero.v-centered .hero-media { margin-bottom: calc(-1 * clamp(120px, 16vw, 230px)); }
+.hero-media img { border: 0; border-radius: var(--r-lg); box-shadow: var(--shadow-2); }
+.logos { padding-top: clamp(140px, 18vw, 250px); border-top: 0; }
+
+/* pastel feature cards echoing the product's property colours */
+.feat-card { border: 0; border-radius: var(--r-lg); box-shadow: none; }
+.feat-card:nth-child(1) { background: var(--tint-peach); }
+.feat-card:nth-child(2) { background: var(--tint-sky); }
+.feat-card:nth-child(3) { background: var(--tint-mint); }
+.feat-card:nth-child(4) { background: var(--tint-lavender); }
+.feat-card:nth-child(5) { background: var(--tint-rose); }
+.feat-card:nth-child(6) { background: var(--tint-yellow); }
+.feat-card:hover { box-shadow: var(--shadow-1); transform: translateY(-2px); }
+.feat-ico { background: rgba(255,255,255,.72); color: #16324f; border: 0; border-radius: var(--r-md); }
+.feat-body { color: #4a5b6b; }
+
+.sc-media img { border-radius: var(--r-lg); box-shadow: var(--shadow-1); border: 0; }
+.metrics { --metrics-bg: var(--tint-yellow); border-block: 0; }
+.metric-v { color: var(--navy); }
+.g-item { border-radius: var(--r-lg); }
+.quote-card { background: var(--tint-lavender); border: 0; border-radius: var(--r-xl); }
+.tier { border-radius: var(--r-lg); box-shadow: var(--shadow-1); border-color: transparent; }
+.tier-feat { border: 2px solid var(--c-primary); }
+.cta-band { background: var(--navy); color: #fff; border: 0; border-radius: var(--r-xxl); }
+.cta-band .lede { color: #cfe0ee; }
+.cta-band .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.34); }
+.spec { --spec-bg: #fbfaf9; }

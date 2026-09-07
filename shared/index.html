@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Design Template Library</title>
+<meta name="description" content="A reference library of {{TOTAL}} design systems, each rendered as a complete responsive page template.">
+<meta name="color-scheme" content="dark light">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+{{CSS}}
+</style>
+</head>
+<body>
+<a class="skip" href="#grid">Skip to the library</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <span class="mark"><i class="ph-bold ph-swatches" aria-hidden="true"></i> Design Library</span>
+    <button class="theme" type="button" aria-label="Switch colour theme">
+      <i class="ph ph-moon" aria-hidden="true"></i>
+    </button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Reference library</p>
+    <h1>{{TOTAL}} design systems,<br>each built out as a <em>real page</em>.</h1>
+    <p class="lede">
+      Every entry renders the same fourteen-section page — hero, features, showcases, pricing,
+      FAQ, component zoo — in a different design language. Same structure, so what changes is
+      only ever the design. Open one, read the spec appendix, lift the file.
+    </p>
+    <div class="stats">
+      <div><b>{{BUILT}}</b><span>Pages built</span></div>
+      <div><b>{{TOTAL}}</b><span>Systems catalogued</span></div>
+      <div><b>{{CATS}}</b><span>Categories</span></div>
+      <div><b>14</b><span>Sections per page</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="controls" id="grid">
+  <div class="wrap">
+    <div class="search">
+      <i class="ph ph-magnifying-glass" aria-hidden="true"></i>
+      <label class="sr-only" for="q">Search designs</label>
+      <input id="q" type="search" placeholder="Search a name, a look, a category…" autocomplete="off">
+      <kbd>/</kbd>
+    </div>
+    <div class="chips" role="group" aria-label="Filter by category">{{CHIPS}}</div>
+    <div class="subrow">
+      <div class="chips small" role="group" aria-label="Filter by scheme">
+        <button class="chip is-on" type="button" data-scheme="all">Any theme</button>
+        <button class="chip" type="button" data-scheme="dark">Dark</button>
+        <button class="chip" type="button" data-scheme="light">Light</button>
+      </div>
+      <p class="count" aria-live="polite"><span id="n">{{TOTAL}}</span> shown</p>
+    </div>
+  </div>
+</section>
+
+<section class="listing">
+  <div class="wrap">
+    <div class="cards">{{CARDS}}</div>
+    <p class="empty" hidden>No design matches that. Try a shorter search.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Design languages extracted from public sites by the
+      <code>design-md</code> skill, rendered here as page templates. Palettes, scales and
+      component rules only &mdash; no logos, wordmarks or brand copy. Not affiliated with any
+      brand shown.</p>
+    <p class="muted">Icons by Phosphor. Photography from Unsplash.</p>
+  </div>
+</footer>
+
+<script>
+{{JS}}
+</script>
+</body>
+</html>

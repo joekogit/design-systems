@@ -1,0 +1,86 @@
+{
+  "slug": "notion", "name": "Notion", "category": "Productivity & SaaS",
+  "look": "Deep navy hero band, signature purple pill CTA, pastel feature cards, sober 8px/12px geometry.",
+  "scheme": "light", "icon_weights": ["regular", "duotone"],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "body": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "variants": { "nav": "bar", "hero": "centered", "features": "grid", "cards": "elevated", "gallery": "masonry" },
+  "brand": { "mark": "ph-squares-four", "name": "Almanac" },
+  "nav": { "links": [{"label":"Product","href":"features"},{"label":"Templates","href":"gallery"},{"label":"Teams","href":"showcase-0"},{"label":"Pricing","href":"pricing"},{"label":"Docs","href":"faq"}], "cta": "Get Almanac free", "cta2": "Log in" },
+  "hero": {
+    "eyebrow": "Docs, wikis and projects",
+    "title": "The workspace that <em>works the way you do</em>",
+    "sub": "Write, plan and organise in one place. Almanac replaces the four tools your team keeps half-using and never quite abandoning.",
+    "cta1": "Get Almanac free", "cta2": "Request a demo",
+    "image": "photo-1547658719-da2b51169166", "ratio": 0.6,
+    "stats": [{"v":"4M+","l":"Teams"},{"v":"32k","l":"Community templates"},{"v":"4.8/5","l":"Average rating"}]
+  },
+  "logo_lead": "Teams building in Almanac",
+  "logos": ["Northwind", "Corva", "Tessera", "Halyard", "Basisplan", "Perigee"],
+  "features": {
+    "eyebrow": "One workspace",
+    "title": "Everything in one place, finally",
+    "sub": "Notes, databases, projects and documentation, sharing one link structure and one permissions model.",
+    "items": [
+      {"icon":"ph-note-pencil","title":"Docs that behave","body":"A block editor where every paragraph, table and toggle can be moved, linked and referenced from anywhere else."},
+      {"icon":"ph-table","title":"Databases, not spreadsheets","body":"The same records viewed as a table, a board, a calendar or a gallery, with filters that belong to the view."},
+      {"icon":"ph-kanban","title":"Projects with context","body":"The task and the document that explains it live in the same place, so the spec is never a stale link."},
+      {"icon":"ph-users","title":"A wiki people read","body":"Verified pages, owners and an expiry date, so the handbook stops quietly rotting."},
+      {"icon":"ph-magic-wand","title":"AI in the page","body":"Summarise a thread, draft a brief, or ask a question of the whole workspace without leaving the document."},
+      {"icon":"ph-lock-simple","title":"Permissions that make sense","body":"Inherited by default, overridable per page, and auditable from a single screen."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"Databases","title":"One set of records, six ways to look at it","body":"A database in Almanac is a set of records with typed properties. A table, a board, a calendar and a gallery are just saved views over the same rows, so nothing has to be kept in sync.","points":["Filters and sorts saved per view","Relations and rollups across databases","Formulas with a real type system"],"image":"photo-1454165804606-c3d57bc86b40","cta":"Explore databases"},
+    {"eyebrow":"For teams","title":"The handbook that stops rotting","body":"Pages carry an owner and a verification date. When a page goes stale it says so at the top, and the owner gets a nudge rather than the reader getting bad information.","points":["Verified badges with expiry","Owner nudges before expiry","Analytics on what people actually read"],"image":"photo-1552664730-d307ca884978","cta":"See team features"}
+  ],
+  "metric_lead": "Across workspaces with more than twenty members",
+  "metrics": [{"v":"4M+","l":"Teams using Almanac"},{"v":"3.4","l":"Tools replaced on average"},{"v":"32k","l":"Community templates"},{"v":"4.8/5","l":"Average rating"}],
+  "gallery": {
+    "title": "Start from a template",
+    "sub": "Thirty-two thousand templates from the community, free to duplicate into your workspace.",
+    "items": [
+      {"id":"photo-1487017159836-4e23ece2e4cf","tag":"Personal","ratio":0.8},
+      {"id":"photo-1522202176988-66273c2fd55f","tag":"Students","ratio":1.15},
+      {"id":"photo-1557804506-669a67965ba0","tag":"Workshops","ratio":0.9},
+      {"id":"photo-1544716278-ca5e3f4abd8c","tag":"Reading","ratio":1.1},
+      {"id":"photo-1521737604893-d14cc237f11d","tag":"Team wiki","ratio":0.85},
+      {"id":"photo-1497215728101-856f4ea42174","tag":"Planning","ratio":1.05}
+    ]
+  },
+  "testimonial": {"quote":"We cancelled three subscriptions in the first month. The fourth one we kept, and honestly only because one person likes the keyboard shortcuts.","name":"Rosa Delgado","role":"Head of Operations, Tessera","avatar":"photo-1494790108377-be9c29b29330"},
+  "pricing": {
+    "title": "Plans for every team",
+    "sub": "Free for individuals, forever. Paid plans add collaboration, history and controls.",
+    "tiers": [
+      {"name":"Free","price":"$0","period":"forever","desc":"For individuals organising their own work.","features":["Unlimited pages","Up to 10 guests","7-day page history","Basic AI"],"cta":"Get started"},
+      {"name":"Plus","price":"$10","period":"/user/mo","desc":"For small teams working together.","features":["Unlimited blocks for teams","100 guests","30-day page history","Custom domains"],"cta":"Start free trial","featured":true,"badge":"Most popular"},
+      {"name":"Business","price":"$18","period":"/user/mo","desc":"For companies that need controls.","features":["SAML SSO","Private teamspaces","90-day history","Advanced analytics"],"cta":"Contact sales"}
+    ]
+  },
+  "faq": {"title":"Questions we get a lot","items":[
+    {"q":"Is the free plan genuinely free?","a":"Yes, and permanently. Individuals get unlimited pages and blocks. The paid plans exist for teams that need shared blocks, longer history and administrative controls."},
+    {"q":"Can I import from other tools?","a":"There are importers for the common suspects — documents, wikis, spreadsheets and Markdown archives — and page structure and links are preserved rather than flattened."},
+    {"q":"Who owns the content?","a":"You do. Everything can be exported at any time as Markdown, CSV, HTML or PDF, individually or as a full workspace archive."},
+    {"q":"How does the AI use our data?","a":"Workspace content is used to answer your questions and is not used to train shared models. AI can be disabled workspace-wide by an administrator."}
+  ]},
+  "cta": {"title":"Get started, free","sub":"Join four million teams. No card required, and the free plan does not expire.","btn1":"Get Almanac free","btn2":"Request a demo"},
+  "footer": {"tagline":"One workspace for your notes, docs, projects and team knowledge.","columns":[
+    {"title":"Product","links":["Docs","Databases","Projects","AI"]},
+    {"title":"Templates","links":["Personal","Team","Marketplace","Submit"]},
+    {"title":"Resources","links":["Help centre","Guides","Webinars","Community"]},
+    {"title":"Company","links":["About","Careers","Security","Blog"]}
+  ],"legal":"© 2026 Almanac Software"},
+  "specimen": "Think it through",
+  "notes": [
+    "The navy hero band is the signature opening move, with the product UI card sitting on it under a deep drop shadow.",
+    "The purple pill is the primary CTA and appears once per view. Everything else is a text link or a bordered secondary.",
+    "Buttons are 8px rounded, cards 12px — deliberately not pills. The geometry is sober and editorial.",
+    "Feature cards draw from a pastel set (peach, rose, mint, lavender, sky, yellow) echoing the product's database property colours.",
+    "The hero is centred, which sets it apart from the left-aligned norm across B2B SaaS."
+  ]
+}

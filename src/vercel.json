@@ -1,0 +1,86 @@
+{
+  "slug": "vercel", "name": "Vercel", "category": "Developer tools & IDEs",
+  "look": "Black-and-white precision, monospace eyebrows, one mesh gradient as the only decorative chrome.",
+  "scheme": "light", "icon_weights": ["regular", "bold"],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "body": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": { "nav": "bar", "hero": "centered", "features": "bento", "cards": "bordered", "gallery": "grid" },
+  "brand": { "mark": "ph-triangle-fill", "name": "Edgeline" },
+  "nav": { "links": [{"label":"Products","href":"features"},{"label":"Solutions","href":"showcase-0"},{"label":"Docs","href":"gallery"},{"label":"Pricing","href":"pricing"},{"label":"Enterprise","href":"cta"}], "cta": "Deploy", "cta2": "Log in" },
+  "hero": {
+    "eyebrow": "EDGELINE / PLATFORM",
+    "title": "Your framework. <em>Deployed everywhere.</em>",
+    "sub": "Edgeline gives developers the frameworks, workflows and infrastructure to build a faster, more personalised web.",
+    "cta1": "Start deploying", "cta2": "Get a demo",
+    "image": "photo-1547658719-da2b51169166", "ratio": 0.6,
+    "stats": [{"v":"< 300ms","l":"Global cold start"},{"v":"119","l":"Edge regions"},{"v":"6.4B","l":"Requests per week"}]
+  },
+  "logo_lead": "Trusted by teams shipping at scale",
+  "logos": ["Northwind", "Corva", "Basisplan", "Tessera", "Halyard", "Perigee"],
+  "features": {
+    "eyebrow": "PLATFORM",
+    "title": "Everything after git push",
+    "sub": "Preview every commit, ship to the edge, and observe what happens next.",
+    "items": [
+      {"icon":"ph-git-pull-request","title":"Preview deployments","body":"Every pull request gets a live URL with its own environment, seeded data and a comment thread anchored to the change."},
+      {"icon":"ph-globe-hemisphere-west","title":"Edge network","body":"119 regions, automatic cache invalidation, and a single origin you never have to think about."},
+      {"icon":"ph-function","title":"Serverless functions","body":"Deploy a function next to the request rather than next to the database."},
+      {"icon":"ph-gauge","title":"Analytics","body":"Real user Core Web Vitals per route, per region."},
+      {"icon":"ph-lock-key","title":"Enterprise ready","body":"SOC 2 Type II, SAML SSO and audit logs."},
+      {"icon":"ph-terminal-window","title":"One CLI","body":"The same command deploys from your laptop and from CI, with identical output and identical exit codes — no drift between the two."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"WORKFLOW","title":"Every commit gets a URL","body":"Push a branch and get a running environment within thirty seconds. Designers review the real thing, QA tests the real thing, and the comment thread lives on the deployment rather than in a spreadsheet.","points":["Isolated environment per pull request","Automatic teardown when the branch merges","Inline comments anchored to a DOM element"],"image":"photo-1555066931-4365d14bab8c","cta":"See the workflow"},
+    {"eyebrow":"OBSERVABILITY","title":"Know what shipped, and what it cost","body":"Real user metrics per route and per region, with the deployment that introduced a regression named directly rather than inferred from a timestamp.","points":["Core Web Vitals from real sessions","Per-route cost attribution","Regression traced to a commit"],"image":"photo-1551288049-bebda4e38f71","cta":"Explore analytics"}
+  ],
+  "metric_lead": "Platform metrics from the trailing ninety days",
+  "metrics": [{"v":"31s","l":"Median build time"},{"v":"119","l":"Edge regions"},{"v":"6.4B","l":"Weekly requests"},{"v":"99.99%","l":"Platform uptime"}],
+  "gallery": {
+    "title": "Documentation",
+    "sub": "Guides, references and templates for every framework we support.",
+    "items": [
+      {"id":"photo-1498050108023-c5249f4df085","tag":"Quickstart","ratio":0.72},
+      {"id":"photo-1558494949-ef010cbdcc31","tag":"Edge network","ratio":0.72},
+      {"id":"photo-1460925895917-afdab827c52f","tag":"Analytics","ratio":0.72},
+      {"id":"photo-1526374965328-7f61d4dc18c5","tag":"Middleware","ratio":0.72},
+      {"id":"photo-1518770660439-4636190af475","tag":"Runtimes","ratio":0.72},
+      {"id":"photo-1519389950473-47ba0277781c","tag":"Templates","ratio":0.72}
+    ]
+  },
+  "testimonial": {"quote":"Our deploy process used to be a runbook with fourteen steps and one person who understood step nine. Now it is a push, and step nine no longer exists.","name":"Sam Aldridge","role":"Staff Engineer, Basisplan","avatar":"photo-1633332755192-727a05c4013d"},
+  "pricing": {
+    "title": "Predictable pricing, designed to scale",
+    "sub": "Start free. Pay for the compute you actually use, billed by the millisecond.",
+    "tiers": [
+      {"name":"Hobby","price":"$0","period":"/month","desc":"For personal projects and experiments.","features":["100GB bandwidth","Preview deployments","Automatic HTTPS","Community support"],"cta":"Start free"},
+      {"name":"Pro","price":"$20","period":"/user/mo","desc":"For teams shipping production sites.","features":["1TB bandwidth","Password protection","Web analytics","Email support"],"cta":"Start free trial","featured":true,"badge":"Recommended"},
+      {"name":"Enterprise","price":"Custom","period":"","desc":"For organisations with scale and compliance needs.","features":["Guaranteed SLA","SAML SSO and SCIM","Audit logs","Dedicated support"],"cta":"Contact sales"}
+    ]
+  },
+  "faq": {"title":"Common questions","items":[
+    {"q":"Which frameworks are supported?","a":"Any framework that produces static output or runs on a Node or edge runtime. There are zero-config presets for about forty of them, and a custom build command covers the rest."},
+    {"q":"How is compute billed?","a":"By active CPU time measured in milliseconds, not by wall-clock duration, so a function waiting on a slow upstream request costs almost nothing."},
+    {"q":"Can we bring our own domain?","a":"Yes, on every plan including the free tier. Certificates are issued and renewed automatically."},
+    {"q":"What happens if we exceed the included bandwidth?","a":"Usage above the included amount is billed at the published overage rate. Spend limits and alerts are configurable, and a hard cap can pause the project instead of billing further."}
+  ]},
+  "cta": {"title":"Ship your first deployment in minutes","sub":"Import a repository and get a live URL before your coffee is cold.","btn1":"Start deploying","btn2":"Talk to sales"},
+  "footer": {"tagline":"The platform for frontend developers.","columns":[
+    {"title":"Products","links":["Previews","Edge network","Functions","Analytics"]},
+    {"title":"Resources","links":["Documentation","Guides","Templates","Changelog"]},
+    {"title":"Company","links":["About","Careers","Blog","Contact"]},
+    {"title":"Legal","links":["Privacy","Terms","Security","DPA"]}
+  ],"legal":"© 2026 Edgeline Inc"},
+  "specimen": "Deploy on every push",
+  "notes": [
+    "Every eyebrow and small label is set in the monospace face; everything else is the geometric sans. That contrast is the whole typographic system.",
+    "The multi-stop mesh gradient (cyan → blue → magenta → amber) is the only decorative chrome in the system. Use it once at hero scale, and never as a card background.",
+    "Elevation is three stacked shadows at 4–12% black, never a single heavy drop shadow.",
+    "The featured pricing tier flips polarity to solid black against white siblings rather than gaining a colour.",
+    "A full 100–1000 colour scale exists in tokens, but marketing surfaces use only the 100, 700 and 1000 steps."
+  ]
+}

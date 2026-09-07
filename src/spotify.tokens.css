@@ -1,0 +1,57 @@
+/* HAND-AUTHORED from design-md/spotify.md (prose format — no frontmatter to derive).
+   Values transcribed from the reference's colour, type and shape sections. */
+:root{
+/* ---- colors ---- */
+  --c-primary: #1ed760;
+  --c-on-primary: #000000;
+  --c-primary-hover: #3be477;
+  --c-primary-soft: #1db954;
+  --c-accent-2: #539df5;
+  --c-canvas: #121212;
+  --c-surface: #181818;
+  --c-surface-2: #1f1f1f;
+  --c-surface-3: #252525;
+  --c-ink: #ffffff;
+  --c-ink-muted: #cbcbcb;
+  --c-ink-subtle: #b3b3b3;
+  --c-hairline: #2a2a2a;
+  --c-hairline-strong: #4d4d4d;
+  --c-success: #1ed760;
+  --c-warning: #ffa42b;
+  --c-danger: #f3727f;
+  --c-inverse-canvas: #eeeeee;
+  --c-inverse-ink: #121212;
+/* ---- typography ---- */
+  --font-display: "Figtree", "Circular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Figtree", "Circular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --t-display-xl: 84px; --t-display-xl-m: 38px; --fs-display-xl: clamp(38px, calc(21.8px + 3.192vw), 84px);
+  --t-display-xl-w: 800; --t-display-xl-lh: 0.98; --t-display-xl-ls: -0.03em;
+  --t-display-lg: 56px; --t-display-lg-m: 32px; --fs-display-lg: clamp(32px, calc(23.55px + 2.2535vw), 56px);
+  --t-display-lg-w: 800; --t-display-lg-lh: 1.05; --t-display-lg-ls: -0.025em;
+  --t-display-md: 36px; --t-display-md-m: 26.6px; --fs-display-md: clamp(26.6px, calc(23.29px + 0.8826vw), 36px);
+  --t-display-md-w: 700; --t-display-md-lh: 1.15; --t-display-md-ls: -0.018em;
+  --t-headline: 24px; --t-headline-m: 21.1px; --fs-headline: clamp(21.1px, calc(20.08px + 0.2723vw), 24px);
+  --t-headline-w: 700; --t-headline-lh: 1.2; --t-headline-ls: -0.01em;
+  --t-card-title: 18px; --t-card-title-m: 17px; --fs-card-title: clamp(17px, calc(16.65px + 0.0939vw), 18px);
+  --t-card-title-w: 600; --t-card-title-lh: 1.3; --t-card-title-ls: 0em;
+  --t-subhead: 20px; --t-subhead-m: 17.6px; --fs-subhead: clamp(17.6px, calc(16.75px + 0.2254vw), 20px);
+  --t-subhead-w: 400; --t-subhead-lh: 1.4; --t-subhead-ls: 0em;
+  --t-body-lg: 18px; --t-body-lg-m: 18px; --fs-body-lg: 18px;
+  --t-body-lg-w: 400; --t-body-lg-lh: 1.5; --t-body-lg-ls: 0em;
+  --t-body: 16px; --t-body-m: 16px; --fs-body: 16px;
+  --t-body-w: 400; --t-body-lh: 1.5; --t-body-ls: 0em;
+  --t-body-sm: 14px; --t-body-sm-m: 14px; --fs-body-sm: 14px;
+  --t-body-sm-w: 400; --t-body-sm-lh: 1.54; --t-body-sm-ls: 0em;
+  --t-caption: 12px; --t-caption-m: 12px; --fs-caption: 12px;
+  --t-caption-w: 400; --t-caption-lh: 1.5; --t-caption-ls: 0em;
+  --t-button: 14px; --t-button-m: 14px; --fs-button: 14px;
+  --t-button-w: 700; --t-button-lh: 1; --t-button-ls: 0.1em;
+  --t-eyebrow: 12px; --t-eyebrow-m: 12px; --fs-eyebrow: 12px;
+  --t-eyebrow-w: 700; --t-eyebrow-lh: 1.33; --t-eyebrow-ls: 0.14em;
+  --t-mono: 13px; --t-mono-m: 13px; --fs-mono: 13px;
+  --t-mono-w: 400; --t-mono-lh: 1.5; --t-mono-ls: 0em;
+/* ---- shape & space ---- */
+  --r-xs: 4px; --r-sm: 6px; --r-md: 8px; --r-lg: 8px; --r-xl: 12px; --r-xxl: 16px; --r-pill: 9999px;
+  --s-xxs: 4px; --s-xs: 8px; --s-sm: 12px; --s-md: 16px; --s-lg: 24px; --s-xl: 32px; --s-xxl: 48px; --s-section: 88px;
+}

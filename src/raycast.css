@@ -1,0 +1,61 @@
+/* Raycast — surface ladder plus hairlines. No shadows, one white pill. */
+:root { --maxw: 1180px; --sect: clamp(56px, 7vw, 96px); --shadow-1: none; --shadow-2: none;
+  --elevated: #101111; --card: #121212; }
+body { font-feature-settings: "calt", "kern", "liga", "ss03"; }
+
+.nav { --nav-bg: rgba(7,8,10,.82); backdrop-filter: blur(12px); border-bottom-color: var(--c-hairline); }
+.nav-in { min-height: 60px; }
+.brand { font-weight: 700; letter-spacing: -.025em; }
+.brand-ico { color: #fff; }
+.btn { border-radius: var(--r-md); font-weight: 600; }
+.btn-primary { background: #fff; color: #07080a; }
+.btn-primary:hover { background: #e3e3e3; }
+.btn-secondary { background: var(--card); border-color: var(--c-hairline); color: var(--c-ink); }
+.btn-secondary:hover { background: var(--elevated); border-color: #363a3b; }
+.eyebrow { color: var(--c-ink-subtle); text-transform: none; letter-spacing: 0; font-weight: 500; }
+
+/* the signature: three angled red stripes, once per page, at the top of the hero */
+.hero { text-align: center; }
+.hero::before {
+  content: ""; position: absolute; top: -230px; left: 50%; width: 1500px; height: 460px;
+  transform: translateX(-50%) rotate(-13deg); z-index: 0; pointer-events: none; opacity: .5;
+  /* hero-stripe-start #ff5757 -> hero-stripe-end #a1131a, per the reference */
+  background: repeating-linear-gradient(90deg,
+    #ff5757 0 180px, transparent 180px 262px,
+    #d0323a 262px 424px, transparent 424px 506px,
+    #a1131a 506px 632px, transparent 632px 752px);
+  filter: blur(58px);
+}
+.hero > * { position: relative; z-index: 1; }
+.hero-title { font-weight: 800; letter-spacing: -.04em; }
+.hero-title em { color: var(--c-ink-subtle); }
+.hstat b { font-variant-numeric: tabular-nums; }
+/* the hero mockup gets the largest radius in the vocabulary */
+.hero.v-centered .hero-media { padding: 8px; background: var(--card); border: 1px solid var(--c-hairline); border-radius: var(--r-xl); }
+.hero-media img { border-radius: var(--r-lg); border: 0; }
+
+.logos { border-block-color: var(--c-hairline); }
+.feat-card { background: var(--card); border-radius: var(--r-lg); }
+.feat-card:hover { background: var(--elevated); border-color: #363a3b; }
+.feat-ico { background: var(--elevated); border: 1px solid var(--c-hairline); color: var(--c-ink-muted);
+  border-radius: var(--r-md); width: 38px; height: 38px; font-size: 18px; }
+.feat-card:hover .feat-ico { color: #fff; }
+.feat-title { font-weight: 600; letter-spacing: -.02em; }
+
+.sc-media img, .hero-media img { border: 0; }
+.sc-media { padding: 8px; background: var(--card); border: 1px solid var(--c-hairline); border-radius: var(--r-xl); }
+.metrics { --metrics-bg: var(--c-surface); border-block-color: var(--c-hairline); }
+.metric-v { font-variant-numeric: tabular-nums; }
+.g-item { background: var(--card); border: 1px solid var(--c-hairline); border-radius: var(--r-lg); }
+.g-item figcaption { font-family: var(--font-mono); font-size: 10.5px; background: rgba(7,8,10,.88);
+  border: 1px solid var(--c-hairline); }
+.quote-card { background: var(--card); border-radius: var(--r-lg); }
+.tier { background: var(--card); border-radius: var(--r-lg); }
+.tier-feat { background: var(--elevated); border-color: #3a3f40; }
+.tier-badge { background: #fff; color: #07080a; }
+.tier-feats i { color: var(--c-ink-muted); }
+.cta-band { background: var(--card); border-color: var(--c-hairline); border-radius: var(--r-xl); }
+.input { background: var(--elevated); border-radius: var(--r-md); }
+.spec { --spec-bg: var(--c-surface); }
+/* keycaps use the smallest step in the vocabulary */
+.badge2 { border-radius: var(--r-sm); background: var(--elevated); font-family: var(--font-mono); font-size: 11px; }

@@ -1,0 +1,86 @@
+{
+  "slug": "wired", "name": "WIRED", "category": "Media & consumer tech",
+  "look": "Paper-white broadsheet density, three-face serif and sans system, square buttons, ink-blue links.",
+  "scheme": "light", "icon_weights": ["regular", "bold"],
+  "fonts": {
+    "display": "\"Playfair Display\", \"Times New Roman\", Georgia, serif",
+    "body": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "variants": { "nav": "chrome", "hero": "split", "features": "numbered", "cards": "flat", "gallery": "grid" },
+  "brand": { "mark": "ph-broadcast", "name": "THE SIGNAL" },
+  "nav": { "links": [{"label":"Business","href":"features"},{"label":"Science","href":"gallery"},{"label":"Security","href":"showcase-0"},{"label":"Culture","href":"quote"},{"label":"Ideas","href":"faq"}], "cta": "Subscribe", "cta2": "Sign in" },
+  "hero": {
+    "eyebrow": "The Long Read",
+    "title": "The engineers who <em>quietly rebuilt</em> the grid",
+    "sub": "For six years a team of forty worked on a problem nobody wanted to fund. Then the lights stayed on, and everybody wanted to know how.",
+    "cta1": "Read the story", "cta2": "Subscribe from $3",
+    "image": "photo-1558494949-ef010cbdcc31", "ratio": 0.7,
+    "stats": [{"v":"12 min","l":"Read time"},{"v":"Mar 2026","l":"Issue 34.03"},{"v":"Feature","l":"Section"}]
+  },
+  "logo_lead": "Reporting recognised by",
+  "logos": ["Pulitzer", "Loeb", "Polk", "NPPA", "Gerald Loeb", "ASME"],
+  "features": {
+    "eyebrow": "In this issue",
+    "title": "Six stories from the March edition",
+    "sub": "Reported over four continents across the last eleven weeks.",
+    "items": [
+      {"icon":"ph-lightning","title":"The grid rebuilders","body":"Forty engineers, six years, and the unglamorous work of keeping the lights on in a warming world."},
+      {"icon":"ph-shield-warning","title":"The breach nobody reported","body":"A three-year intrusion at a supplier nobody had heard of, and the disclosure rules that let it stay quiet."},
+      {"icon":"ph-dna","title":"Editing the wheat","body":"A gene-edited grain is about to reach European fields. The science is settled; the politics are not."},
+      {"icon":"ph-globe-hemisphere-east","title":"The cable wars","body":"Ninety-eight percent of intercontinental traffic runs through cables owned by fewer companies each year."},
+      {"icon":"ph-brain","title":"What the models forgot","body":"A generation of climate models agreed on the average and missed the tails. The tails arrived first."},
+      {"icon":"ph-camera","title":"The last darkroom","body":"In a basement in Lisbon, four printers keep a craft alive that the industry declared finished in 2009."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"Security","title":"The breach nobody reported","body":"For three years an intruder sat inside a components supplier serving eleven national utilities. Disclosure rules did not require anyone to say so, and nobody did. Our reporters reconstructed the intrusion from court filings and four sources inside the company.","points":["Reconstructed from 1,400 pages of filings","Four sources, three on the record","Timeline verified against three incident reports"],"image":"photo-1526374965328-7f61d4dc18c5","cta":"Read the investigation"},
+    {"eyebrow":"Science","title":"Editing the wheat","body":"A gene-edited grain resistant to a fungus that costs European farmers a billion euros a year is weeks from approval. The science has been settled since 2021. The argument has not.","points":["Field data from six growing seasons","Interviews across four regulators","Photographed over eleven months"],"image":"photo-1581091226033-d5c48150dbaa","cta":"Read the report"}
+  ],
+  "metric_lead": "The Signal, in numbers",
+  "metrics": [{"v":"34","l":"Years in print"},{"v":"11","l":"Bureaus worldwide"},{"v":"1.4M","l":"Print and digital readers"},{"v":"0","l":"Sponsored features"}],
+  "gallery": {
+    "title": "Photography",
+    "sub": "From the March edition. Full credits appear alongside each story.",
+    "items": [
+      {"id":"photo-1516035069371-29a1b244cc32","tag":"Portfolio","ratio":0.78},
+      {"id":"photo-1544716278-ca5e3f4abd8c","tag":"Ideas","ratio":0.78},
+      {"id":"photo-1487958449943-2429e8be8625","tag":"Architecture","ratio":0.78},
+      {"id":"photo-1518770660439-4636190af475","tag":"Hardware","ratio":0.78},
+      {"id":"photo-1449824913935-59a10b8d2000","tag":"Cities","ratio":0.78},
+      {"id":"photo-1573164713988-8665fc963095","tag":"Infrastructure","ratio":0.78}
+    ]
+  },
+  "testimonial": {"quote":"They spent eleven weeks on a story that four other outlets had declared finished in an afternoon. That is the entire difference, and it is worth paying for.","name":"Helen Whitcombe","role":"Reader since 2004","avatar":"photo-1438761681033-6461ffad8d80"},
+  "pricing": {
+    "title": "Subscribe",
+    "sub": "Independent reporting, no sponsored features, cancel whenever you like.",
+    "tiers": [
+      {"name":"Digital","price":"$3","period":"/month","desc":"Unlimited access on every device.","features":["Unlimited articles","The full archive","Newsletters","Ad-light reading"],"cta":"Subscribe"},
+      {"name":"Print + Digital","price":"$8","period":"/month","desc":"Twelve print issues a year, plus everything digital.","features":["Twelve print issues","Everything in Digital","Subscriber events","Gift a subscription"],"cta":"Subscribe","featured":true,"badge":"Best value"},
+      {"name":"Institution","price":"Custom","period":"","desc":"For libraries, universities and newsrooms.","features":["Campus-wide access","Archive licensing","Usage reporting","Named contact"],"cta":"Enquire"}
+    ]
+  },
+  "faq": {"title":"About your subscription","items":[
+    {"q":"Can I cancel at any time?","a":"Yes, from the account page, and access continues to the end of the period you have already paid for. There is no retention call and no cancellation form to post."},
+    {"q":"Do you run sponsored content?","a":"No. Advertising appears clearly marked and separated from editorial, and no advertiser sees a story before publication."},
+    {"q":"What is included in the archive?","a":"Every issue since the first, in 1992, including scanned print editions with their original layouts and photography credits intact."},
+    {"q":"Can I share my subscription?","a":"A digital subscription covers one reader across five devices. Gift subscriptions and household plans are available separately."}
+  ]},
+  "cta": {"title":"Reporting that takes the time it takes","sub":"From $3 a month. Cancel whenever you like, keep the archive access until the period ends.","btn1":"Subscribe now","btn2":"Read a sample issue"},
+  "footer": {"tagline":"Independent reporting on the forces shaping the next decade.","columns":[
+    {"title":"Sections","links":["Business","Science","Security","Culture"]},
+    {"title":"Magazine","links":["Current issue","Archive","Newsletters","Podcasts"]},
+    {"title":"Subscribe","links":["Digital","Print","Gift","Institutions"]},
+    {"title":"About","links":["Masthead","Ethics policy","Contact","Careers"]}
+  ],"legal":"© 2026 The Signal Magazine"},
+  "specimen": "The long read",
+  "notes": [
+    "A strict black-and-white duet. The only chromatic element in the whole system is the inline link blue.",
+    "Three faces do three jobs: a display serif for headlines, a text serif for body, and a sans reserved for metadata, bylines and buttons.",
+    "Buttons are square. The brand never softens a corner on an interactive element.",
+    "The story grid is the layout: a large feature at the top, a two-up below it, then bylined rows separated by 1px hairlines.",
+    "The masthead band — a thin black strip with the wordmark centred — is the only decorative move in the system."
+  ]
+}

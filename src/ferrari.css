@@ -1,0 +1,68 @@
+/* Ferrari — chiaroscuro. Photography is the chrome; red is rationed. */
+:root { --maxw: 1320px; --gut: 24px; --sect: clamp(56px, 7vw, 92px);
+  --hero-scrim: linear-gradient(180deg, rgba(0,0,0,.30) 0%, rgba(0,0,0,.10) 40%, rgba(24,24,24,.92) 100%);
+  --shadow-1: none; --shadow-2: none; }
+
+/* nothing is rounded */
+.btn, .feat-card, .tier, .quote-card, .g-item, .cta-band, .input, .hero-media img,
+.sc-media img, .badge2, .tabs, .tabs button, .q-av, .g-item figcaption, .tier-badge, .sw, .feat-ico {
+  border-radius: 0; }
+
+.nav { --nav-bg: rgba(24,24,24,.86); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,.10); }
+.nav-in { min-height: 62px; }
+.brand { font-weight: 600; letter-spacing: .22em; font-size: 15px; }
+.brand-ico { color: var(--c-primary); font-size: 20px; }
+.nav-links a { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 500; }
+
+.btn { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 600; padding: 15px 26px; }
+.btn-primary { background: var(--c-primary); color: #fff; }
+.btn-primary:hover { background: #b81f14; }
+.btn-secondary { background: transparent; border-color: rgba(255,255,255,.34); color: #fff; }
+.btn-secondary:hover { background: rgba(255,255,255,.08); border-color: #fff; }
+.btn-ghost { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; color: var(--c-primary); }
+
+.eyebrow { text-transform: uppercase; letter-spacing: .2em; font-size: 10.5px; font-weight: 500; color: var(--c-ink-subtle); }
+/* display never goes bold — scale carries the emphasis */
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title, .metric-v, .tier-num, .hstat b, .quote-text {
+  font-weight: 500; letter-spacing: -.01em; }
+.hero-title, .sc-title, .feat-title, .tier-name, .faq-item summary, .t-display-lg, .t-display-md {
+  text-transform: uppercase; }
+.hero-title { font-size: clamp(38px, 7.4vw, 96px); line-height: .98; color: #fff; }
+.hero-title em { color: var(--c-primary); }
+.hero .eyebrow { color: rgba(255,255,255,.7); }
+.hero-sub { color: rgba(255,255,255,.86); max-width: 44ch; }
+.hero-stats { border-top-color: rgba(255,255,255,.22); }
+.hstat b { color: #fff; } .hstat span { color: rgba(255,255,255,.6); text-transform: uppercase; letter-spacing: .1em; font-size: 10px; }
+
+.logos { border-block-color: rgba(255,255,255,.10); }
+.logo-item { text-transform: uppercase; letter-spacing: .16em; font-size: 11px; font-weight: 500; }
+
+/* hairlines and photography do the work of shadow */
+.feat-card { background: transparent; border: 0; border-top: 1px solid rgba(255,255,255,.16); padding: var(--s-lg) 0; }
+.feat-ico { background: transparent; border: 0; color: var(--c-primary); width: auto; height: auto; font-size: 24px; }
+.feat-title { font-size: 15px; letter-spacing: .06em; font-weight: 500; }
+.sc-media img, .hero-media img { border: 0; }
+.sc-points i { color: var(--c-primary); }
+
+.metrics { --metrics-bg: transparent; border-block: 1px solid rgba(255,255,255,.16); }
+.metric-v { font-size: clamp(30px, 4vw, 46px); }
+.metric-l { text-transform: uppercase; letter-spacing: .12em; font-size: 10px; }
+.g-item { background: transparent; }
+.g-item figcaption { background: rgba(24,24,24,.9); text-transform: uppercase; letter-spacing: .14em; font-size: 9.5px; }
+
+.quote-card { background: transparent; border: 0; border-top: 1px solid var(--c-primary);
+  --quote-align: left; --quote-by-just: flex-start; padding-inline: 0; }
+.quote-text { font-size: clamp(20px, 2.8vw, 32px); line-height: 1.24; }
+.quote-mark { color: var(--c-primary); }
+
+.tier { background: transparent; border: 1px solid rgba(255,255,255,.16); }
+.tier-feat { border-color: var(--c-primary); background: rgba(218,41,28,.06); }
+.tier-badge { background: var(--c-primary); text-transform: uppercase; letter-spacing: .12em; }
+.tier-name { letter-spacing: .1em; font-size: 15px; }
+.faq-item { border-bottom-color: rgba(255,255,255,.16); }
+.faq-item summary { font-size: 14px; letter-spacing: .08em; }
+.faq-mk { color: var(--c-primary); }
+.cta-band { background: transparent; border: 0; border-top: 1px solid rgba(255,255,255,.16);
+  border-bottom: 1px solid rgba(255,255,255,.16); }
+.cta-band .t-display-md { font-size: clamp(30px, 5.4vw, 64px); }
+.spec { --spec-bg: #111; border-top-color: rgba(255,255,255,.16); }

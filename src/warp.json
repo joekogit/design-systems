@@ -1,0 +1,87 @@
+{
+  "slug": "warp", "name": "Warp", "category": "Developer tools & IDEs",
+  "look": "Warm brown-dark canvas, off-white as the only 'colour', very tight 3–4px radii, terminal mockups as the whole decorative system.",
+  "scheme": "dark", "icon_weights": ["regular"],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "body": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "mono": "\"DM Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap"
+  },
+  "variants": { "nav": "bar", "hero": "terminal", "features": "grid", "cards": "bordered", "gallery": "grid" },
+  "brand": { "mark": "ph-terminal-window", "name": "Relay" },
+  "nav": { "links": [{"label":"Features","href":"features"},{"label":"Teams","href":"showcase-1"},{"label":"Pricing","href":"pricing"},{"label":"Docs","href":"gallery"},{"label":"Blog","href":"faq"}], "cta": "Download", "cta2": "Sign in" },
+  "hero": {
+    "eyebrow": "Relay 2.0 — now on Linux",
+    "title": "The terminal, <em>reconsidered</em>",
+    "sub": "Blocks instead of a scrollback soup. A real text editor on the command line. Command history that is searchable, shareable and actually yours.",
+    "cta1": "Download for macOS", "cta2": "Read the docs",
+    "image": "photo-1555066931-4365d14bab8c", "ratio": 0.6,
+    "stats": [{"v":"< 40ms","l":"Input latency"},{"v":"600k+","l":"Developers"},{"v":"Rust","l":"Written in"}]
+  },
+  "logo_lead": "Installed at",
+  "logos": ["Northwind", "Corva", "Basisplan", "Perigee", "Tessera", "Halyard"],
+  "features": {
+    "eyebrow": "What changes",
+    "title": "A terminal that keeps its shape",
+    "sub": "Everything here exists because a scrollback buffer is a bad interface for work you need to come back to.",
+    "items": [
+      {"icon":"ph-rows","title":"Blocks, not scrollback","body":"Every command and its output is one addressable block you can collapse, copy, re-run, bookmark or share as a link."},
+      {"icon":"ph-cursor-text","title":"A real editor","body":"Selection, multiple cursors, undo and find — on the command line, behaving the way they do everywhere else."},
+      {"icon":"ph-clock-counter-clockwise","title":"History that is searchable","body":"Fuzzy search across every command you have run, scoped by directory, with the working directory and exit code attached."},
+      {"icon":"ph-users-three","title":"Shared sessions","body":"Send a colleague a link to a live session or a single block. They see the command, the output and the environment it ran in."},
+      {"icon":"ph-lightning","title":"Written in Rust","body":"GPU-accelerated rendering, under 40ms from keystroke to frame, on a hundred thousand lines of output."},
+      {"icon":"ph-book-open","title":"Workflows","body":"Save a parameterised command with a description, then find it by what it does rather than by remembering its flags."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"Blocks","title":"Every command is an object","body":"Output stops being an undifferentiated stream. A block knows which command produced it, in which directory, with which exit code — so you can fold it, re-run it, or send someone a permalink to the failure.","points":["Collapse, copy or re-run any block","Permalink a single block to a colleague","Filter the session by exit code"],"image":"photo-1526374965328-7f61d4dc18c5","cta":"See blocks"},
+    {"eyebrow":"Teams","title":"Runbooks that live in the terminal","body":"Save the commands your team actually runs as workflows with descriptions and named parameters. New starters find them by searching for the task, not by grepping a wiki nobody has updated since the migration.","points":["Shared workflow library per team","Named parameters with descriptions","Works offline once synced"],"image":"photo-1519389950473-47ba0277781c","cta":"See Relay for Teams"}
+  ],
+  "metric_lead": "Measured on a 2024 laptop against 100,000 lines of output",
+  "metrics": [{"v":"< 40ms","l":"Keystroke to frame"},{"v":"600k+","l":"Developers"},{"v":"3","l":"Platforms"},{"v":"0","l":"Config files required"}],
+  "gallery": {
+    "title": "Documentation",
+    "sub": "Getting started, shell setup, keybindings and the workflow format.",
+    "items": [
+      {"id":"photo-1498050108023-c5249f4df085","tag":"install","ratio":0.7},
+      {"id":"photo-1555066931-4365d14bab8c","tag":"blocks","ratio":0.7},
+      {"id":"photo-1526374965328-7f61d4dc18c5","tag":"history","ratio":0.7},
+      {"id":"photo-1558494949-ef010cbdcc31","tag":"ssh","ratio":0.7},
+      {"id":"photo-1518770660439-4636190af475","tag":"keybindings","ratio":0.7},
+      {"id":"photo-1487017159836-4e23ece2e4cf","tag":"workflows","ratio":0.7}
+    ]
+  },
+  "testimonial": {"quote":"I sent a colleague a link to one failing block instead of pasting forty lines into Slack and losing the indentation. That is a small thing that happens to me four times a day.",
+    "name":"Malik Osei", "role":"SRE, Basisplan", "avatar":"photo-1472099645785-5658abf4ff4e"},
+  "pricing": {
+    "title": "Free for individuals",
+    "sub": "The terminal is free forever. Teams pay for shared workflows and administration.",
+    "tiers": [
+      {"name":"Free","price":"$0","period":"forever","desc":"The full terminal, for one person.","features":["All terminal features","Personal workflows","Cloud history sync","Community support"],"cta":"Download"},
+      {"name":"Team","price":"$15","period":"/user/mo","desc":"Shared workflows and session sharing.","features":["Shared workflow library","Session sharing","Team drive","Priority support"],"cta":"Start free trial","featured":true,"badge":"Most teams"},
+      {"name":"Enterprise","price":"Custom","period":"","desc":"For organisations with policy requirements.","features":["SSO and SCIM","Audit logging","Policy controls","Dedicated support"],"cta":"Contact sales"}
+    ]
+  },
+  "faq": {"title":"Questions","items":[
+    {"q":"Does it work with my shell?","a":"Yes — zsh, bash and fish, with your existing configuration, aliases and prompt left alone. Relay adds a layer above the shell rather than replacing it."},
+    {"q":"Does my command history leave my machine?","a":"Only if you turn on cloud sync, which is off by default. With it off, history is stored locally and nothing is transmitted."},
+    {"q":"Is it available on Linux?","a":"Yes, as of 2.0, on x86_64 and arm64 with packages for Debian, Fedora and Arch. Windows is in beta."},
+    {"q":"Will it work over SSH?","a":"Blocks and history work on the remote host once the lightweight helper is installed there; without it you get a standard terminal session with local blocks only."}
+  ]},
+  "cta": {"title":"Try it for an afternoon","sub":"Free for individuals, on macOS, Linux and Windows. Your shell config carries over.","btn1":"Download Relay","btn2":"Read the docs"},
+  "footer": {"tagline":"A terminal built for how people actually work in one.","columns":[
+    {"title":"Product","links":["Features","Workflows","Teams","Changelog"]},
+    {"title":"Resources","links":["Documentation","Keybindings","Blog","Status"]},
+    {"title":"Community","links":["Discord","GitHub","Roadmap","Feedback"]},
+    {"title":"Company","links":["About","Careers","Privacy","Terms"]}
+  ],"legal":"© 2026 Relay Terminal"},
+  "specimen": "cd ~/projects",
+  "notes": [
+    "The only 'colour' in the system is an off-white that doubles as body text on the canvas and as the primary button fill. There is no chromatic brand accent.",
+    "The canvas is warm brown-dark, not black. That warmth is the brand — every neutral, including dividers and body text, carries a hint of it.",
+    "Button radii are extremely tight at 3–4px. Pills are reserved for icon containers and nothing else.",
+    "Inter with DM Mono is the canonical pairing; Instrument Serif appears only as an occasional editorial italic.",
+    "Terminal mockups are the entire decorative system. No gradients, no atmospheric overlays, no illustration."
+  ]
+}

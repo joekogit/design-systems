@@ -1,0 +1,336 @@
+{
+  "slug": "ferrari",
+  "name": "Ferrari",
+  "category": "Automotive",
+  "look": "Chiaroscuro near-black editorial, cinematic full-bleed photography, Rosso Corsa used scarcely, zero radius throughout.",
+  "scheme": "dark",
+  "icon_weights": [
+    "thin",
+    "regular"
+  ],
+  "fonts": {
+    "display": "\"Archivo\", \"Helvetica Neue\", Arial, sans-serif",
+    "body": "\"Archivo\", \"Helvetica Neue\", Arial, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "minimal",
+    "hero": "full-bleed",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "filmstrip"
+  },
+  "brand": {
+    "mark": "ph-horse",
+    "name": "AVENTINE"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Models",
+        "href": "features"
+      },
+      {
+        "label": "Racing",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Atelier",
+        "href": "gallery"
+      },
+      {
+        "label": "Heritage",
+        "href": "quote"
+      },
+      {
+        "label": "Ownership",
+        "href": "pricing"
+      }
+    ],
+    "cta": "Configure",
+    "cta2": "Dealers"
+  },
+  "hero": {
+    "eyebrow": "Tipo 12 — Maranello, 2026",
+    "title": "TWELVE CYLINDERS.<br><em>NO APOLOGY.</em>",
+    "sub": "Naturally aspirated, 9,500rpm, and mounted behind the driver where it belongs. The Aventine Tipo 12 is the last of a line we do not intend to replace.",
+    "cta1": "Configure yours",
+    "cta2": "Book a viewing",
+    "image": "photo-1503376780353-7e6692767b70",
+    "ratio": 0.56,
+    "stats": [
+      {
+        "v": "6.5L",
+        "l": "Naturally aspirated V12"
+      },
+      {
+        "v": "9,500",
+        "l": "Redline, rpm"
+      },
+      {
+        "v": "2.9s",
+        "l": "0–100 km/h"
+      }
+    ]
+  },
+  "logo_lead": "Concours honours",
+  "logos": [
+    "VILLA D'ESTE",
+    "PEBBLE BEACH",
+    "GOODWOOD",
+    "AMELIA",
+    "SALON PRIVE",
+    "CHANTILLY"
+  ],
+  "features": {
+    "eyebrow": "Engineering",
+    "title": "BUILT AROUND THE ENGINE",
+    "sub": "Everything else in the car exists to serve the twelve cylinders behind the driver.",
+    "items": [
+      {
+        "icon": "ph-engine",
+        "title": "V12, unassisted",
+        "body": "Six and a half litres, no turbochargers, no electrical augmentation. The response is immediate because there is nothing in between."
+      },
+      {
+        "icon": "ph-gauge",
+        "title": "9,500rpm",
+        "body": "A flat-plane crank and titanium rods let the engine run past nine thousand without drama, which is where it does its best work."
+      },
+      {
+        "icon": "ph-wind",
+        "title": "Active aerodynamics",
+        "body": "A rear surface that reconfigures across three states, generating 390kg of downforce at maximum without a fixed wing."
+      },
+      {
+        "icon": "ph-scales",
+        "title": "1,380kg dry",
+        "body": "A carbon monocoque, carbon body panels and a titanium exhaust. Weight was removed, not offset."
+      },
+      {
+        "icon": "ph-steering-wheel",
+        "title": "Manual gearbox",
+        "body": "Six ratios, an open gate, and a mechanical linkage. Offered because a small number of owners still ask for it."
+      },
+      {
+        "icon": "ph-flag-checkered",
+        "title": "Homologated",
+        "body": "Developed alongside the racing programme and validated over 18,000km at Fiorano and the Nordschleife."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "Racing",
+      "title": "FIORANO, EVERY WEEK",
+      "body": "The road car and the race car are developed on the same circuit by the same engineers. Suspension geometry, aerodynamic balance and brake cooling all arrived on the road car because they were needed first on the track.",
+      "points": [
+        "18,000km of development at Fiorano",
+        "Shared aerodynamic platform with the competition car",
+        "Brake package homologated for endurance racing"
+      ],
+      "image": "photo-1552519507-da3b142c6e3d",
+      "cta": "The racing programme",
+      "ratio": 0.62
+    },
+    {
+      "eyebrow": "Atelier",
+      "title": "NO TWO ALIKE",
+      "body": "Every Tipo 12 is specified in Maranello with a client and a designer across three sessions. Paint is mixed to sample, leather is selected from the hide, and the configuration is recorded and never repeated.",
+      "points": [
+        "Paint matched to any physical sample",
+        "Hides selected individually by the client",
+        "Each specification retired after delivery"
+      ],
+      "image": "photo-1493238792000-8113da705763",
+      "cta": "Visit the Atelier",
+      "ratio": 0.62
+    }
+  ],
+  "metric_lead": "Tipo 12 — homologated figures",
+  "metrics": [
+    {
+      "v": "830cv",
+      "l": "Maximum power"
+    },
+    {
+      "v": "1,380kg",
+      "l": "Dry weight"
+    },
+    {
+      "v": "390kg",
+      "l": "Peak downforce"
+    },
+    {
+      "v": "599",
+      "l": "Cars to be built"
+    }
+  ],
+  "gallery": {
+    "title": "THE CAR",
+    "sub": "Photographed at Fiorano and on the Passo dello Stelvio, October 2026.",
+    "items": [
+      {
+        "id": "photo-1503376780353-7e6692767b70",
+        "tag": "Rear three-quarter",
+        "ratio": 0.66
+      },
+      {
+        "id": "photo-1552519507-da3b142c6e3d",
+        "tag": "Profile",
+        "ratio": 0.66
+      },
+      {
+        "id": "photo-1493238792000-8113da705763",
+        "tag": "Night",
+        "ratio": 0.66
+      },
+      {
+        "id": "photo-1553440569-bcc63803a83d",
+        "tag": "Stelvio",
+        "ratio": 0.66
+      },
+      {
+        "id": "photo-1492144534655-ae79c964c9d7",
+        "tag": "Studio",
+        "ratio": 0.66
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "Detail",
+        "ratio": 0.66
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "I have owned eleven of them. This is the only one I have driven where I could not tell you which part is the best part, because none of it is trying to be.",
+    "name": "Giulia Mazzanti",
+    "role": "Client since 1998",
+    "avatar": "photo-1438761681033-6461ffad8d80"
+  },
+  "pricing": {
+    "title": "OWNERSHIP",
+    "sub": "599 cars. Allocation is by invitation, through your dealer.",
+    "tiers": [
+      {
+        "name": "TIPO 12",
+        "price": "€430,000",
+        "period": "",
+        "desc": "The car as homologated.",
+        "features": [
+          "6.5L V12, 830cv",
+          "Seven-speed dual clutch",
+          "Carbon monocoque",
+          "Seven-year maintenance"
+        ],
+        "cta": "Register interest"
+      },
+      {
+        "name": "TIPO 12 ASSETTO",
+        "price": "€512,000",
+        "period": "",
+        "desc": "The track package, road legal.",
+        "features": [
+          "Everything in Tipo 12",
+          "Titanium exhaust, −18kg",
+          "Adjustable dampers",
+          "Six-speed open-gate manual"
+        ],
+        "cta": "Register interest",
+        "featured": true,
+        "badge": "399 cars"
+      },
+      {
+        "name": "ATELIER",
+        "price": "On application",
+        "period": "",
+        "desc": "Specified with a designer in Maranello.",
+        "features": [
+          "Everything in Assetto",
+          "Paint matched to sample",
+          "Hides selected individually",
+          "Specification retired after delivery"
+        ],
+        "cta": "Contact Maranello"
+      }
+    ]
+  },
+  "faq": {
+    "title": "OWNERSHIP QUESTIONS",
+    "items": [
+      {
+        "q": "How is allocation decided?",
+        "a": "By the dealer network, in consultation with Maranello. Ownership history is the primary consideration, and the list for the Tipo 12 closed within eleven days of the announcement."
+      },
+      {
+        "q": "Is the manual gearbox a delete option?",
+        "a": "It is a separate specification rather than a deletion, and it is only offered on the Assetto. It carries no price difference and a slightly longer build slot."
+      },
+      {
+        "q": "What is included in maintenance?",
+        "a": "Seven years of scheduled servicing including fluids, filters, brake wear and collection from an address of your choosing. Consumables from track use are not included."
+      },
+      {
+        "q": "Can the car be used on track?",
+        "a": "It is homologated for road use and developed on circuit. Track use does not affect the warranty, though the tyre and brake packages are treated as consumables."
+      }
+    ]
+  },
+  "cta": {
+    "title": "THE LAST OF THE LINE",
+    "sub": "599 cars, and no successor planned. Speak to your dealer about allocation.",
+    "btn1": "Find a dealer",
+    "btn2": "Configure yours"
+  },
+  "footer": {
+    "tagline": "Built in Maranello since 1947.",
+    "columns": [
+      {
+        "title": "MODELS",
+        "links": [
+          "Tipo 12",
+          "Tipo 8",
+          "Competizione",
+          "Icona"
+        ]
+      },
+      {
+        "title": "RACING",
+        "links": [
+          "Formula programme",
+          "Endurance",
+          "Challenge series",
+          "Corse Clienti"
+        ]
+      },
+      {
+        "title": "OWNERSHIP",
+        "links": [
+          "Atelier",
+          "Classiche",
+          "Approved",
+          "Warranty"
+        ]
+      },
+      {
+        "title": "COMPANY",
+        "links": [
+          "Heritage",
+          "Museum",
+          "Careers",
+          "Investors"
+        ]
+      }
+    ],
+    "legal": "© 2026 Aventine S.p.A."
+  },
+  "specimen": "TWELVE CYLINDERS",
+  "notes": [
+    "The canvas is near-black (#181818), never pure black. White bands appear only inside editorial contexts.",
+    "Rosso Corsa is a single accent used scarcely — the CTA, the marque device, a race-position highlight. It never becomes a background.",
+    "Display weight stays at 500. Nothing in this system is bold; the scale carries the emphasis instead.",
+    "Every corner is square. Zero radius on CTAs, cards and bands is the luxury-automotive precision cue.",
+    "Depth is hairlines and photographic contrast. There is no drop-shadow tier anywhere in the system."
+  ]
+}

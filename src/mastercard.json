@@ -1,0 +1,404 @@
+{
+  "slug": "mastercard",
+  "name": "Mastercard",
+  "category": "Fintech & crypto",
+  "look": "Warm cream canvas, extreme radii as the design language, circular portraits on traced orbital paths, ghost watermark headlines.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "bold"
+  ],
+  "fonts": {
+    "google": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Karla:wght@400;500;600;700&display=swap"
+  },
+  "variants": {
+    "nav": "floating-pill",
+    "hero": "split",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-intersect",
+    "name": "Cadence"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Solutions",
+        "href": "features"
+      },
+      {
+        "label": "Businesses",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Developers",
+        "href": "gallery"
+      },
+      {
+        "label": "Insights",
+        "href": "faq"
+      }
+    ],
+    "cta": "Get in touch",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "PAYMENT NETWORK",
+    "title": "There are some things money can't buy. <em>For everything else.</em>",
+    "sub": "Cadence connects two hundred million merchants to three billion cardholders across two hundred and ten countries, and settles it in about four hundred milliseconds.",
+    "cta1": "Talk to us",
+    "cta2": "For developers",
+    "image": "photo-1556742049-0cfed4f6a45d",
+    "ratio": 1.0,
+    "stats": [
+      {
+        "v": "210",
+        "l": "Countries and territories"
+      },
+      {
+        "v": "3.1B",
+        "l": "Cards in circulation"
+      },
+      {
+        "v": "400ms",
+        "l": "Median authorisation"
+      }
+    ]
+  },
+  "logo_lead": "Issued with",
+  "logos": [
+    "Northwind Bank",
+    "Corva Financial",
+    "Basisplan",
+    "Perigee",
+    "Tessera",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "WHAT WE DO",
+    "title": "A network, not a bank",
+    "sub": "We do not issue the card or hold the account. We move the authorisation, the clearing and the settlement between the people who do.",
+    "items": [
+      {
+        "icon": "ph-arrows-left-right",
+        "title": "Authorisation",
+        "body": "A request routed from terminal to issuer and back in about four hundred milliseconds, at any hour, in any of two hundred and ten markets."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "Fraud scoring",
+        "body": "A risk decision computed on network-wide signal in the same round trip, so a legitimate customer is not stopped at the till."
+      },
+      {
+        "icon": "ph-globe-hemisphere-west",
+        "title": "Cross-border",
+        "body": "Currency conversion at the network rate with the margin published, rather than folded invisibly into the exchange rate."
+      },
+      {
+        "icon": "ph-lock-key",
+        "title": "Tokenisation",
+        "body": "The card number never reaches the merchant. A token scoped to that merchant does, and it is useless anywhere else."
+      },
+      {
+        "icon": "ph-code",
+        "title": "Developer APIs",
+        "body": "Sandbox credentials in about two minutes, and forty-one APIs documented with real request and response payloads."
+      },
+      {
+        "icon": "ph-scales",
+        "title": "Dispute resolution",
+        "body": "A structured chargeback process with defined evidence requirements and a published clock at every stage."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "FOR BUSINESSES",
+      "title": "Accept payments in two hundred and ten markets",
+      "body": "One integration reaches every market we operate in, with local acquiring where it lowers the cost and cross-border rails where it does not. The routing decision is made per transaction, and the reasoning is visible in the reporting.",
+      "points": [
+        "Local acquiring in fifty-four markets",
+        "Per-transaction routing, explained in reporting",
+        "Settlement in thirty-one currencies"
+      ],
+      "image": "photo-1441986300917-64674bd600d8",
+      "cta": "Solutions for business"
+    },
+    {
+      "eyebrow": "FOR DEVELOPERS",
+      "title": "Sandbox credentials in two minutes",
+      "body": "Forty-one APIs with documented rate limits, real payloads and a sandbox that returns the same decline codes production does — including the awkward ones you only find out about at three in the morning.",
+      "points": [
+        "Sandbox mirrors production decline codes",
+        "Typed SDKs in seven languages",
+        "Webhook replay for the last thirty days"
+      ],
+      "image": "photo-1498050108023-c5249f4df085",
+      "cta": "Read the API docs"
+    }
+  ],
+  "metric_lead": "THE NETWORK, LAST YEAR",
+  "metrics": [
+    {
+      "v": "210",
+      "l": "Countries and territories"
+    },
+    {
+      "v": "3.1B",
+      "l": "Cards in circulation"
+    },
+    {
+      "v": "143B",
+      "l": "Transactions processed"
+    },
+    {
+      "v": "400ms",
+      "l": "Median authorisation"
+    }
+  ],
+  "gallery": {
+    "title": "Where it works",
+    "sub": "Two hundred million merchant locations, from a market stall to a global retailer.",
+    "items": [
+      {
+        "id": "photo-1441986300917-64674bd600d8",
+        "tag": "Retail",
+        "ratio": 0.78
+      },
+      {
+        "id": "photo-1556742049-0cfed4f6a45d",
+        "tag": "In person",
+        "ratio": 0.78
+      },
+      {
+        "id": "photo-1554118811-1e0d58224f24",
+        "tag": "Hospitality",
+        "ratio": 0.78
+      },
+      {
+        "id": "photo-1483985988355-763728e1935b",
+        "tag": "Commerce",
+        "ratio": 0.78
+      },
+      {
+        "id": "photo-1449824913935-59a10b8d2000",
+        "tag": "Transit",
+        "ratio": 0.78
+      },
+      {
+        "id": "photo-1521737604893-d14cc237f11d",
+        "tag": "Business",
+        "ratio": 0.78
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "We asked four networks what their cross-border margin actually was. One of them answered with a number and a page explaining how it was calculated. That is the one we integrated.",
+    "name": "Yusuf Demir",
+    "role": "Payments Lead, Tessera",
+    "avatar": "photo-1573496359142-b8d87734a5a2"
+  },
+  "pricing": {
+    "title": "Work with us",
+    "sub": "Interchange is set by the network and published. What you pay your acquirer is between you and them.",
+    "tiers": [
+      {
+        "name": "Developer",
+        "price": "Free",
+        "period": "",
+        "desc": "Sandbox access and the full API surface.",
+        "features": [
+          "Sandbox credentials",
+          "All 41 APIs",
+          "Webhook replay",
+          "Community support"
+        ],
+        "cta": "Get credentials"
+      },
+      {
+        "name": "Business",
+        "price": "Interchange",
+        "period": "+ acquirer fee",
+        "desc": "For merchants accepting payments.",
+        "features": [
+          "Published interchange tables",
+          "Local acquiring routing",
+          "Tokenisation included",
+          "Dispute tooling"
+        ],
+        "cta": "Talk to us",
+        "featured": true,
+        "badge": "Most common"
+      },
+      {
+        "name": "Institution",
+        "price": "Custom",
+        "period": "",
+        "desc": "For issuers and acquiring banks.",
+        "features": [
+          "Issuer certification",
+          "Settlement accounts",
+          "Scheme compliance support",
+          "Named relationship team"
+        ],
+        "cta": "Contact the team"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Common questions",
+    "items": [
+      {
+        "q": "Do you issue cards?",
+        "a": "No. Cards are issued by banks and licensed institutions. We operate the network that carries the authorisation, clearing and settlement between the issuer, the acquirer and the merchant."
+      },
+      {
+        "q": "How is interchange set?",
+        "a": "By the network, published per region and per card category, and updated on a fixed annual schedule. It is paid by the acquirer to the issuer — we do not receive it."
+      },
+      {
+        "q": "What does tokenisation change?",
+        "a": "The merchant stores a token scoped to them rather than the card number. If their systems are breached, the token cannot be used anywhere else, and the underlying card does not need reissuing."
+      },
+      {
+        "q": "How long do disputes take?",
+        "a": "Each stage has a published clock — typically 30 days for the initial chargeback and 45 for representment. The tooling shows which stage a case is in and what evidence is still outstanding."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Let's talk about what you're building",
+    "sub": "Sandbox credentials take about two minutes. A conversation takes slightly longer.",
+    "btn1": "Get in touch",
+    "btn2": "Get sandbox credentials"
+  },
+  "footer": {
+    "tagline": "A payment network connecting merchants, banks and cardholders in 210 countries.",
+    "columns": [
+      {
+        "title": "Solutions",
+        "links": [
+          "For business",
+          "For issuers",
+          "For acquirers",
+          "For governments"
+        ]
+      },
+      {
+        "title": "Developers",
+        "links": [
+          "API reference",
+          "Sandbox",
+          "SDKs",
+          "Status"
+        ]
+      },
+      {
+        "title": "Insights",
+        "links": [
+          "Research",
+          "Reports",
+          "Newsroom",
+          "Events"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Sustainability",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Cadence Payment Network"
+  },
+  "specimen": "For everything else",
+  "palette": [
+    {
+      "name": "Ink Black",
+      "value": "#141413",
+      "note": "Warm near-black — primary CTAs, headline text on cream, footer surface"
+    },
+    {
+      "name": "Canvas Cream",
+      "value": "#f3f0ee",
+      "note": "The page canvas. Warm, putty-toned; all editorial sections sit on this"
+    },
+    {
+      "name": "Lifted Cream",
+      "value": "#fcfbfa",
+      "note": "One step lighter — nested sections that feel like paper laid on paper"
+    },
+    {
+      "name": "White",
+      "value": "#ffffff",
+      "note": "The floating nav pill, modal cards, secondary fills, satellite CTA circles"
+    },
+    {
+      "name": "Signal Orange",
+      "value": "#cf4500",
+      "note": "The burnt CTA orange used on consent actions and eyebrow dots. The page's single aggressive colour — use sparingly"
+    },
+    {
+      "name": "Light Signal Orange",
+      "value": "#f37338",
+      "note": "Carousel indicators and decorative orbital arcs. An attention cue, never body colour"
+    },
+    {
+      "name": "Clay Brown",
+      "value": "#9a3a0a",
+      "note": "Deep rust for secondary link-style buttons"
+    },
+    {
+      "name": "Soft Bone",
+      "value": "#f4f4f4",
+      "note": "A cool-grey alternative surface for component subregions"
+    },
+    {
+      "name": "Charcoal",
+      "value": "#262627",
+      "note": "A slightly softer black for text alternates"
+    },
+    {
+      "name": "Slate Gray",
+      "value": "#696969",
+      "note": "Muted secondary text, eyebrow alternative, disabled states"
+    },
+    {
+      "name": "Graphite",
+      "value": "#565656",
+      "note": "Deeper grey for inline body accents and link alternates"
+    },
+    {
+      "name": "Dust Taupe",
+      "value": "#d1cdc7",
+      "note": "Whisper text and placeholders. Low contrast on cream — subdued content only"
+    },
+    {
+      "name": "Link Blue",
+      "value": "#3860be",
+      "note": "Deep dusty blue for inline links and informational callouts"
+    },
+    {
+      "name": "Mastercard Red",
+      "value": "#eb001b",
+      "note": "Left circle of the brand mark. Logo only — never a UI colour"
+    },
+    {
+      "name": "Mastercard Yellow",
+      "value": "#f79e1b",
+      "note": "Right circle of the brand mark. Logo only — never a UI colour"
+    }
+  ],
+  "notes": [
+    "Extreme radius is the design language: 20px on body CTAs, 40px on cards, 99px and 1000px on pills and portraits. Anything square reads as a third-party embed.",
+    "The brand red and yellow belong to the logo mark only. Putting either on a button or a surface breaks the identity — the UI palette is cream, ink and one orange.",
+    "Signal orange is the single aggressive colour, reserved for consent actions and the eyebrow dot. It is a cue, never a fill.",
+    "Circular portraits sit on traced orbital arcs with small white satellite CTAs attached to their edge — the signature compositional move.",
+    "Ghost watermark headlines (cream on cream at heading scale) sit behind the circular portraits to add depth without adding contrast."
+  ]
+}

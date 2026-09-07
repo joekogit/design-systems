@@ -1,0 +1,625 @@
+{
+  "_note": "Verified Unsplash ids. 'alt' describes what the photo ACTUALLY shows (checked visually on a contact sheet). build.py pulls alt from here unless a design overrides it.",
+  "photo-1497215728101-856f4ea42174": {
+    "alt": "A quiet office interior with a laptop on a desk beside a large plant",
+    "tags": [
+      "office",
+      "workspace",
+      "light"
+    ]
+  },
+  "photo-1517841905240-472988babdf9": {
+    "alt": "Portrait of a smiling woman in a denim jacket against a blue wall",
+    "tags": [
+      "portrait"
+    ]
+  },
+  "photo-1441986300917-64674bd600d8": {
+    "alt": "Interior of a clothing boutique with garments on rails",
+    "tags": [
+      "retail",
+      "commerce"
+    ]
+  },
+  "photo-1519389950473-47ba0277781c": {
+    "alt": "Overhead view of a desk covered with laptops, tablets and notebooks",
+    "tags": [
+      "team",
+      "tech",
+      "overhead"
+    ]
+  },
+  "photo-1498050108023-c5249f4df085": {
+    "alt": "A laptop on a wooden desk displaying lines of source code",
+    "tags": [
+      "code",
+      "dev"
+    ]
+  },
+  "photo-1531297484001-80022131f5a1": {
+    "alt": "A laptop half closed, lit from within by red and blue light",
+    "tags": [
+      "tech",
+      "dark",
+      "moody"
+    ]
+  },
+  "photo-1526374965328-7f61d4dc18c5": {
+    "alt": "Cascading green characters on a black background, a digital rain effect",
+    "tags": [
+      "abstract",
+      "dark",
+      "code"
+    ]
+  },
+  "photo-1451187580459-43490279c0fa": {
+    "alt": "The curve of the Earth at night seen from orbit, city lights glowing",
+    "tags": [
+      "space",
+      "dark",
+      "network"
+    ]
+  },
+  "photo-1550745165-9bc0b252726f": {
+    "alt": "A collection of vintage home computers lit in pink and blue neon",
+    "tags": [
+      "retro",
+      "gaming",
+      "neon"
+    ]
+  },
+  "photo-1492144534655-ae79c964c9d7": {
+    "alt": "A dark sports car photographed in a dimly lit studio",
+    "tags": [
+      "car",
+      "dark"
+    ]
+  },
+  "photo-1460925895917-afdab827c52f": {
+    "alt": "A laptop screen showing an analytics dashboard with charts",
+    "tags": [
+      "dashboard",
+      "data"
+    ]
+  },
+  "photo-1552664730-d307ca884978": {
+    "alt": "A team collaborating around a whiteboard covered in sticky notes",
+    "tags": [
+      "team",
+      "meeting"
+    ]
+  },
+  "photo-1522202176988-66273c2fd55f": {
+    "alt": "Three colleagues laughing together over open laptops",
+    "tags": [
+      "team",
+      "people"
+    ]
+  },
+  "photo-1600880292203-757bb62b4baf": {
+    "alt": "Two colleagues celebrating with a high five across a desk",
+    "tags": [
+      "team",
+      "people"
+    ]
+  },
+  "photo-1556742049-0cfed4f6a45d": {
+    "alt": "A customer and a shop assistant at a retail counter",
+    "tags": [
+      "retail",
+      "commerce"
+    ]
+  },
+  "photo-1579621970563-ebec7560ff3e": {
+    "alt": "A young plant growing from a pile of coins",
+    "tags": [
+      "finance",
+      "growth"
+    ]
+  },
+  "photo-1611974789855-9c2a0a7236a3": {
+    "alt": "A candlestick trading chart glowing on a dark screen",
+    "tags": [
+      "finance",
+      "data",
+      "dark"
+    ]
+  },
+  "photo-1555066931-4365d14bab8c": {
+    "alt": "Colourful source code on a dark editor background",
+    "tags": [
+      "code",
+      "dev",
+      "dark"
+    ]
+  },
+  "photo-1504384308090-c894fdcc538d": {
+    "alt": "A wide open-plan office with rows of desks",
+    "tags": [
+      "office",
+      "workspace"
+    ]
+  },
+  "photo-1541961017774-22349e4a1262": {
+    "alt": "An abstract painting in vivid red, yellow and turquoise",
+    "tags": [
+      "abstract",
+      "art",
+      "colour"
+    ]
+  },
+  "photo-1487958449943-2429e8be8625": {
+    "alt": "A white modernist building photographed against a clear sky",
+    "tags": [
+      "architecture",
+      "light"
+    ]
+  },
+  "photo-1449824913935-59a10b8d2000": {
+    "alt": "A busy city street framed by tall buildings",
+    "tags": [
+      "city",
+      "urban"
+    ]
+  },
+  "photo-1493246507139-91e8fad9978e": {
+    "alt": "A turquoise mountain lake ringed by peaks and pines",
+    "tags": [
+      "nature",
+      "landscape"
+    ]
+  },
+  "photo-1506905925346-21bda4d32df4": {
+    "alt": "Snow-covered peaks rising above a sea of cloud",
+    "tags": [
+      "nature",
+      "landscape"
+    ]
+  },
+  "photo-1470071459604-3b5ec3a7fe05": {
+    "alt": "A green valley at sunrise with low mist over the hills",
+    "tags": [
+      "nature",
+      "landscape"
+    ]
+  },
+  "photo-1518791841217-8f162f1e1131": {
+    "alt": "A tabby cat sitting and looking at the camera",
+    "tags": [
+      "animal"
+    ]
+  },
+  "photo-1546069901-ba9599a7e63c": {
+    "alt": "A colourful salad bowl with grains and vegetables",
+    "tags": [
+      "food"
+    ]
+  },
+  "photo-1504674900247-0877df9cc836": {
+    "alt": "Two plated dishes with herbs on a rustic table",
+    "tags": [
+      "food"
+    ]
+  },
+  "photo-1441984904996-e0b6ba687e04": {
+    "alt": "A brightly lit clothing store with a mannequin display",
+    "tags": [
+      "retail",
+      "commerce"
+    ]
+  },
+  "photo-1542291026-7eec264c27ff": {
+    "alt": "A red running shoe on a red background",
+    "tags": [
+      "product",
+      "sport",
+      "shoe"
+    ]
+  },
+  "photo-1523275335684-37898b6baf30": {
+    "alt": "Two smartwatches with white straps on a pale surface",
+    "tags": [
+      "product",
+      "tech"
+    ]
+  },
+  "photo-1505740420928-5e560c06d30e": {
+    "alt": "Black over-ear headphones on a bright yellow background",
+    "tags": [
+      "product",
+      "audio"
+    ]
+  },
+  "photo-1526170375885-4d8ecf77b99f": {
+    "alt": "An instant camera standing on a white surface",
+    "tags": [
+      "product",
+      "camera"
+    ]
+  },
+  "photo-1560472354-b33ff0c44a43": {
+    "alt": "A multi-line performance graph in pale blues",
+    "tags": [
+      "data",
+      "chart"
+    ]
+  },
+  "photo-1552519507-da3b142c6e3d": {
+    "alt": "A blue sports car parked on a desert road",
+    "tags": [
+      "car",
+      "auto"
+    ]
+  },
+  "photo-1503376780353-7e6692767b70": {
+    "alt": "The rear of a dark sports car in low light",
+    "tags": [
+      "car",
+      "auto",
+      "dark"
+    ]
+  },
+  "photo-1493238792000-8113da705763": {
+    "alt": "Car tail lights glowing red on a wet street at dusk",
+    "tags": [
+      "car",
+      "auto",
+      "dark"
+    ]
+  },
+  "photo-1553440569-bcc63803a83d": {
+    "alt": "A red performance car on a road through pine forest",
+    "tags": [
+      "car",
+      "auto"
+    ]
+  },
+  "photo-1541701494587-cb58502866ab": {
+    "alt": "Orange and blue ink billowing through water",
+    "tags": [
+      "abstract",
+      "colour"
+    ]
+  },
+  "photo-1550684376-efcbd6e3f031": {
+    "alt": "A close crop of matte black textured material",
+    "tags": [
+      "abstract",
+      "dark",
+      "texture"
+    ]
+  },
+  "photo-1557804506-669a67965ba0": {
+    "alt": "A workshop session with people gathered around a whiteboard",
+    "tags": [
+      "team",
+      "meeting"
+    ]
+  },
+  "photo-1614850523459-c2f4c699c52e": {
+    "alt": "A soft gradient blending magenta into deep violet",
+    "tags": [
+      "gradient",
+      "abstract"
+    ]
+  },
+  "photo-1620641788421-7a1c342ea42e": {
+    "alt": "A dark gradient with a magenta light streak across it",
+    "tags": [
+      "gradient",
+      "dark"
+    ]
+  },
+  "photo-1635776062127-d379bfcba9f8": {
+    "alt": "A smooth violet to indigo gradient",
+    "tags": [
+      "gradient",
+      "dark"
+    ]
+  },
+  "photo-1618005182384-a83a8bd57fbe": {
+    "alt": "Abstract blue and purple waves layered against a pale sky",
+    "tags": [
+      "gradient",
+      "abstract"
+    ]
+  },
+  "photo-1579546929518-9e396f3cc809": {
+    "alt": "A soft rainbow gradient in pastel tones",
+    "tags": [
+      "gradient",
+      "colour"
+    ]
+  },
+  "photo-1495474472287-4d71bcdd2085": {
+    "alt": "Two hands holding takeaway coffee cups from above",
+    "tags": [
+      "food",
+      "lifestyle"
+    ]
+  },
+  "photo-1521737604893-d14cc237f11d": {
+    "alt": "Colleagues talking around a table in a bright meeting room",
+    "tags": [
+      "team",
+      "meeting"
+    ]
+  },
+  "photo-1573496359142-b8d87734a5a2": {
+    "alt": "Portrait of a man in a grey blazer beside a window",
+    "tags": [
+      "portrait"
+    ]
+  },
+  "photo-1494790108377-be9c29b29330": {
+    "alt": "Portrait of a laughing woman in a red top",
+    "tags": [
+      "portrait"
+    ]
+  },
+  "photo-1500648767791-00dcc994a43e": {
+    "alt": "Portrait of a smiling man in a grey jumper",
+    "tags": [
+      "portrait"
+    ]
+  },
+  "photo-1438761681033-6461ffad8d80": {
+    "alt": "Portrait of a woman with auburn hair outdoors",
+    "tags": [
+      "portrait"
+    ]
+  },
+  "photo-1472099645785-5658abf4ff4e": {
+    "alt": "Portrait of a bearded man in glasses and a dark shirt",
+    "tags": [
+      "portrait"
+    ]
+  },
+  "photo-1534528741775-53994a69daeb": {
+    "alt": "Portrait of a woman in cool blue light",
+    "tags": [
+      "portrait"
+    ]
+  },
+  "photo-1633332755192-727a05c4013d": {
+    "alt": "Portrait of a smiling man in glasses and a black t-shirt",
+    "tags": [
+      "portrait"
+    ]
+  },
+  "photo-1487017159836-4e23ece2e4cf": {
+    "alt": "A laptop, coffee and mouse arranged on a dark wooden desk",
+    "tags": [
+      "desk",
+      "flatlay"
+    ]
+  },
+  "photo-1544716278-ca5e3f4abd8c": {
+    "alt": "An open book beside reading glasses and a coffee cup",
+    "tags": [
+      "editorial",
+      "reading"
+    ]
+  },
+  "photo-1516035069371-29a1b244cc32": {
+    "alt": "A black and white close-up of a camera lens",
+    "tags": [
+      "editorial",
+      "camera",
+      "mono"
+    ]
+  },
+  "photo-1454165804606-c3d57bc86b40": {
+    "alt": "Colleagues reviewing printed charts and a laptop at a desk",
+    "tags": [
+      "team",
+      "data"
+    ]
+  },
+  "photo-1551288049-bebda4e38f71": {
+    "alt": "A dark analytics dashboard showing several charts",
+    "tags": [
+      "dashboard",
+      "data",
+      "dark"
+    ]
+  },
+  "photo-1591696205602-2f950c417cb9": {
+    "alt": "A printed line chart on graph paper",
+    "tags": [
+      "data",
+      "chart",
+      "print"
+    ]
+  },
+  "photo-1558494949-ef010cbdcc31": {
+    "alt": "Rows of illuminated server racks in a data centre",
+    "tags": [
+      "infra",
+      "dark"
+    ]
+  },
+  "photo-1573164713988-8665fc963095": {
+    "alt": "Two engineers inspecting equipment in a blue-lit data centre",
+    "tags": [
+      "infra",
+      "team",
+      "dark"
+    ]
+  },
+  "photo-1581091226825-a6a2a5aee158": {
+    "alt": "An engineer working on machinery in a laboratory",
+    "tags": [
+      "science",
+      "engineering"
+    ]
+  },
+  "photo-1547658719-da2b51169166": {
+    "alt": "A desk with monitors showing a web design in progress",
+    "tags": [
+      "design",
+      "workspace"
+    ]
+  },
+  "photo-1567095761054-7a02e69e5c43": {
+    "alt": "Dark red and blue smoke curling against black",
+    "tags": [
+      "abstract",
+      "dark"
+    ]
+  },
+  "photo-1483985988355-763728e1935b": {
+    "alt": "A woman in sunglasses carrying shopping bags",
+    "tags": [
+      "retail",
+      "fashion"
+    ]
+  },
+  "photo-1469334031218-e382a71b716b": {
+    "alt": "A woman in sunglasses against a bright yellow wall",
+    "tags": [
+      "fashion",
+      "portrait",
+      "colour"
+    ]
+  },
+  "photo-1490481651871-ab68de25d43d": {
+    "alt": "A rail of neutral-toned clothing against a white wall",
+    "tags": [
+      "fashion",
+      "retail",
+      "light"
+    ]
+  },
+  "photo-1571019613454-1cb2f99b2d8b": {
+    "alt": "A person doing sit-ups on a mat outdoors",
+    "tags": [
+      "fitness",
+      "sport"
+    ]
+  },
+  "photo-1517649763962-0c623066013b": {
+    "alt": "A tight pack of cyclists racing on an open road",
+    "tags": [
+      "sport",
+      "action"
+    ]
+  },
+  "photo-1571902943202-507ec2618e8f": {
+    "alt": "An empty gym interior in black and white",
+    "tags": [
+      "fitness",
+      "mono",
+      "dark"
+    ]
+  },
+  "photo-1596460107916-430662021049": {
+    "alt": "A wristwatch resting on a smooth grey stone",
+    "tags": [
+      "product",
+      "watch"
+    ]
+  },
+  "photo-1502920917128-1aa500764cbd": {
+    "alt": "A digital SLR camera on a plain white background",
+    "tags": [
+      "product",
+      "camera"
+    ]
+  },
+  "photo-1446776653964-20c1d3a81b06": {
+    "alt": "North America at night from orbit, city lights across the continent",
+    "tags": [
+      "space",
+      "dark"
+    ]
+  },
+  "photo-1516849841032-87cbac4d88f7": {
+    "alt": "A rocket lifting off through billowing exhaust clouds",
+    "tags": [
+      "space",
+      "launch"
+    ]
+  },
+  "photo-1614728263952-84ea256f9679": {
+    "alt": "A space shuttle climbing away from the launch pad",
+    "tags": [
+      "space",
+      "launch"
+    ]
+  },
+  "photo-1518770660439-4636190af475": {
+    "alt": "A close view of a green circuit board and its components",
+    "tags": [
+      "tech",
+      "hardware",
+      "dark"
+    ]
+  },
+  "photo-1581091226033-d5c48150dbaa": {
+    "alt": "Two researchers working with equipment in a laboratory",
+    "tags": [
+      "science",
+      "team"
+    ]
+  },
+  "photo-1576091160399-112ba8d25d1d": {
+    "alt": "A clinician in a white coat holding a smartphone",
+    "tags": [
+      "health"
+    ]
+  },
+  "photo-1538108149393-fbbd81895907": {
+    "alt": "An empty hospital room with beds by a window",
+    "tags": [
+      "health",
+      "light"
+    ]
+  },
+  "photo-1554118811-1e0d58224f24": {
+    "alt": "A bright café interior with rattan chairs, plants and a counter",
+    "tags": [
+      "cafe",
+      "retail",
+      "light"
+    ]
+  },
+  "photo-1501339847302-ac426a4a7cbb": {
+    "alt": "A café interior with a painted CAFE sign and green pendant lamps",
+    "tags": [
+      "cafe",
+      "retail"
+    ]
+  },
+  "photo-1442512595331-e89e73853f31": {
+    "alt": "A gooseneck kettle pouring water over a paper filter for hand-brewed coffee",
+    "tags": [
+      "cafe",
+      "coffee",
+      "dark"
+    ]
+  },
+  "photo-1509042239860-f550ce710b93": {
+    "alt": "Three cups of coffee with latte art on a table beside potted herbs",
+    "tags": [
+      "cafe",
+      "coffee",
+      "food"
+    ]
+  },
+  "photo-1453614512568-c4024d13c247": {
+    "alt": "A barista working behind a counter with an espresso machine",
+    "tags": [
+      "cafe",
+      "people",
+      "retail"
+    ]
+  },
+  "photo-1521017432531-fbd92d768814": {
+    "alt": "A café interior with wooden tables and shelves of packaged coffee",
+    "tags": [
+      "cafe",
+      "retail"
+    ]
+  }
+}

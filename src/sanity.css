@@ -1,0 +1,64 @@
+/* Sanity — nocturnal command centre. Machined display type, achromatic discipline. */
+:root { --maxw: 1220px; --sect: clamp(60px, 8vw, 104px); --shadow-1: none; --shadow-2: none; }
+
+.nav { --nav-bg: rgba(11,11,11,.86); backdrop-filter: blur(12px); border-bottom-color: var(--c-hairline); }
+.brand { font-weight: 600; letter-spacing: -.03em; }
+.brand-ico { color: var(--c-primary); }
+.nav-links a:hover { color: var(--c-primary-hover); }
+
+.btn { border-radius: var(--r-md); font-weight: 500; }
+.btn-primary { background: var(--c-primary); color: #0b0b0b; }
+/* electric blue is the universal hover, not a second accent */
+.btn-primary:hover { background: var(--c-primary-hover); color: #fff; }
+.btn-secondary { background: transparent; border-color: #353535; color: #fff; }
+.btn-secondary:hover { background: transparent; border-color: var(--c-primary-hover); color: var(--c-primary-hover); }
+.btn-ghost:hover { color: var(--c-primary-hover); opacity: 1; }
+a:hover .feat-title { color: var(--c-primary-hover); }
+
+.eyebrow, .logos-lead, .metric-l, .g-item figcaption, .fcol h4, .tier-per, .zoo-cell h4 {
+  font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .1em; font-weight: 400; }
+.eyebrow { color: var(--c-ink-subtle); font-size: 11px; }
+.hero { text-align: center; }
+.hero-title em { color: var(--c-primary); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 500; }
+
+.logos { border-block-color: var(--c-hairline); }
+.logo-item { font-weight: 500; letter-spacing: -.02em; }
+
+/* numbered features — the platform reads as an enumerated capability set */
+.features { counter-reset: f; }
+.feat-card { background: transparent; border: 0; border-top: 1px solid var(--c-surface); border-radius: 0;
+  padding: var(--s-lg) 0; counter-increment: f; }
+.feat-card:hover { background: transparent; }
+.feat-ico { background: transparent; border: 0; width: auto; height: auto; margin-bottom: var(--s-sm);
+  font-family: var(--font-mono); font-size: 12px; color: var(--c-ink-subtle); }
+.feat-ico i { display: none; }
+.feat-ico::after { content: counter(f, decimal-leading-zero); }
+.feat-title { font-weight: 500; letter-spacing: -.022em; }
+
+.hero-media img, .sc-media img { border-radius: var(--r-lg); border-color: var(--c-surface); }
+.metrics { --metrics-bg: transparent; border-block-color: var(--c-surface); }
+.metric-v { color: #fff; font-variant-numeric: tabular-nums; }
+.g-item { border: 1px solid var(--c-surface); border-radius: var(--r-lg); background: var(--c-surface); }
+.g-item figcaption { background: rgba(11,11,11,.86); border-radius: var(--r-xs); font-size: 10px; }
+
+.quote-card { background: transparent; border: 0; border-left: 2px solid var(--c-primary);
+  border-radius: 0; --quote-align: left; --quote-by-just: flex-start; padding-left: var(--s-xl); }
+.quote-text { font-weight: 400; letter-spacing: -.018em; }
+.quote-mark { display: none; }
+.q-av { border-radius: var(--r-sm); }
+
+.tier { background: var(--c-surface); border-color: var(--c-surface); border-radius: var(--r-lg); }
+/* the featured tier inverts to light — the one place the system flips polarity */
+.tier-feat { background: #ededed; color: #0b0b0b; border-color: #ededed; }
+.tier-feat .tier-desc, .tier-feat .tier-feats li { color: #353535; }
+.tier-feat .tier-per { color: #797979; }
+.tier-feat .tier-feats i { color: #0b0b0b; }
+.tier-feat .btn-primary { background: #0b0b0b; color: #fff; }
+.tier-feat .btn-primary:hover { background: var(--c-primary-hover); }
+.tier-badge { background: var(--c-primary); color: #0b0b0b; border-radius: var(--r-xs); }
+.faq-item { border-bottom-color: var(--c-surface); }
+.faq-mk { color: var(--c-primary); }
+.cta-band { background: var(--c-surface); border-color: var(--c-surface); border-radius: var(--r-xl); }
+.spec { --spec-bg: transparent; border-top-color: var(--c-surface); }
+.sw-val, .ts-meta code { font-family: var(--font-mono); }

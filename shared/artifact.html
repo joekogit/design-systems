@@ -1,0 +1,398 @@
+<title>Design System Reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#fbfbf9; --surface:#ffffff; --surface-2:#f4f3f0;
+  --ink:#17171a; --muted:#6e6e78; --faint:#93939d;
+  --line:#e5e4e0; --line-2:#d3d2cc;
+  --accent:#2f6f6b; --on-accent:#ffffff;
+  --ok:#3f7d52; --ok-bg:#e8f2ea;
+  --display:"Bricolage Grotesque",Georgia,serif;
+  --body:"Karla",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --sp:clamp(16px,3.5vw,28px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#121214; --surface:#1a1a1e; --surface-2:#212127;
+    --ink:#eaeaef; --muted:#8e8e9a; --faint:#6c6c78;
+    --line:#2a2a31; --line-2:#3a3a44;
+    --accent:#5fb3ab; --on-accent:#0e1f1e;
+    --ok:#6fbd85; --ok-bg:#17291d;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#121214; --surface:#1a1a1e; --surface-2:#212127;
+  --ink:#eaeaef; --muted:#8e8e9a; --faint:#6c6c78;
+  --line:#2a2a31; --line-2:#3a3a44;
+  --accent:#5fb3ab; --on-accent:#0e1f1e;
+  --ok:#6fbd85; --ok-bg:#17291d;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);
+  font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p{margin:0}
+button{font:inherit;color:inherit;cursor:pointer}
+:where(button,a,input):focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.wrap{width:100%;max-width:1220px;margin-inline:auto;padding-inline:var(--sp)}
+
+/* masthead */
+.head{border-bottom:1px solid var(--line);background:var(--surface)}
+.head-in{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between;
+  padding-block:clamp(26px,5vw,44px) clamp(18px,3vw,26px)}
+h1{font-family:var(--display);font-size:clamp(27px,4.6vw,42px);font-weight:800;
+  letter-spacing:-.03em;line-height:1.04;text-wrap:balance}
+.sub{color:var(--muted);max-width:56ch;margin-top:10px;font-size:15px}
+.meta{display:flex;gap:22px;flex:none}
+.meta div{display:flex;flex-direction:column}
+.meta b{font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums;line-height:1.1}
+.meta span{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
+.themebtn{position:absolute;top:14px;right:var(--sp);width:38px;height:38px;display:grid;place-items:center;
+  background:var(--surface);border:1px solid var(--line);border-radius:8px;font-size:15px}
+body{position:relative}
+
+/* controls */
+.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 93%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar-in{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding-block:12px}
+.find{position:relative;flex:1 1 230px;min-width:0}
+.find input{width:100%;height:40px;padding:0 12px 0 34px;border:1px solid var(--line-2);
+  border-radius:8px;background:var(--surface);color:var(--ink);font-family:var(--body);font-size:14px}
+.find input::placeholder{color:var(--faint)}
+.find input:focus{outline:none;border-color:var(--accent)}
+.find::before{content:"";position:absolute;left:12px;top:13px;width:11px;height:11px;
+  border:1.6px solid var(--faint);border-radius:50%}
+.find::after{content:"";position:absolute;left:21px;top:23px;width:6px;height:1.6px;
+  background:var(--faint);transform:rotate(45deg)}
+select{height:40px;padding:0 30px 0 11px;border:1px solid var(--line-2);border-radius:8px;
+  background:var(--surface);color:var(--ink);font-family:var(--body);font-size:14px;
+  appearance:none;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),
+    linear-gradient(135deg,currentColor 50%,transparent 50%);
+  background-position:calc(100% - 16px) 18px,calc(100% - 11px) 18px;
+  background-size:5px 5px,5px 5px;background-repeat:no-repeat}
+.tally{margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--faint);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* the grid: every card wears the palette it documents */
+.grid{display:grid;gap:14px;grid-template-columns:1fr;padding-block:clamp(20px,4vw,32px) 64px}
+.item{display:flex;flex-direction:column;text-align:left;padding:0;overflow:hidden;
+  border:1px solid var(--line);border-radius:10px;background:var(--surface);
+  transition:border-color .15s ease,transform .15s ease}
+.item:hover{border-color:var(--line-2);transform:translateY(-2px)}
+.item[aria-expanded="true"]{border-color:var(--accent)}
+.swatchband{display:flex;height:74px;background:var(--pbg)}
+.swatchband i{flex:1;display:block}
+.swatchband i:first-child{flex:2.4}
+.plate{padding:12px 14px 14px;border-top:1px solid var(--line)}
+.ptop{display:flex;align-items:baseline;gap:8px;justify-content:space-between}
+.pname{font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:-.02em}
+.pslug{font-family:var(--mono);font-size:10.5px;color:var(--faint)}
+.plook{margin-top:5px;font-size:13px;line-height:1.42;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.prow{display:flex;align-items:center;gap:7px;margin-top:11px}
+.tag{font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;
+  padding:2px 7px;border-radius:4px;border:1px solid var(--line);color:var(--faint)}
+.tag.on{background:var(--ok-bg);color:var(--ok);border-color:transparent}
+.cat{font-size:11.5px;color:var(--faint);margin-left:auto;text-align:right}
+
+/* detail drawer */
+.veil{position:fixed;inset:0;z-index:40;background:rgba(10,10,12,.42);border:0;width:100%;
+  opacity:0;pointer-events:none;transition:opacity .2s ease}
+.veil.on{opacity:1;pointer-events:auto}
+.sheet{position:fixed;z-index:50;inset:auto 0 0 0;max-height:88vh;
+  background:var(--surface);border-top:1px solid var(--line);
+  border-radius:14px 14px 0 0;overflow:auto;transform:translateY(101%);
+  transition:transform .24s cubic-bezier(.2,.75,.3,1)}
+.sheet.on{transform:none}
+.sheet-in{padding:var(--sp) var(--sp) 48px}
+.sheet-head{display:flex;gap:14px;align-items:flex-start;justify-content:space-between;
+  position:sticky;top:0;padding-block:14px;background:var(--surface);z-index:2}
+.sheet h2{font-family:var(--display);font-size:clamp(21px,3.4vw,29px);font-weight:800;letter-spacing:-.025em}
+.sheet .look{color:var(--muted);font-size:14px;margin-top:5px;max-width:62ch}
+.x{width:36px;height:36px;flex:none;border:1px solid var(--line);border-radius:8px;
+  background:var(--surface);display:grid;place-items:center;font-size:17px;line-height:1}
+.block{margin-top:26px}
+.blabel{font-family:var(--mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--faint);padding-bottom:7px;border-bottom:1px solid var(--line);margin-bottom:13px;
+  display:flex;justify-content:space-between;gap:10px}
+
+/* a live specimen rendered in the design's own colours */
+.demo{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--dbg)}
+.demo-in{padding:20px}
+.demo-nav{display:flex;align-items:center;gap:8px;padding:10px 14px;background:var(--dsf);
+  border-bottom:1px solid var(--dhl)}
+.demo-dot{width:9px;height:9px;border-radius:50%;background:var(--dac)}
+.demo-nav b{font-size:12px;color:var(--dink);font-weight:700;letter-spacing:-.01em}
+.demo-nav span{margin-left:auto;font-size:10px;color:var(--dink);opacity:.55}
+.demo h3{font-size:clamp(19px,3vw,27px);font-weight:800;letter-spacing:-.03em;color:var(--dink);
+  line-height:1.1;text-wrap:balance}
+.demo p{margin-top:8px;font-size:13px;line-height:1.5;color:var(--dink);opacity:.72;max-width:46ch}
+.demo-btns{display:flex;gap:8px;margin-top:15px;flex-wrap:wrap}
+.demo-btn{padding:8px 15px;border-radius:6px;font-size:12px;font-weight:700;
+  background:var(--dac);color:var(--dbg)}
+.demo-btn.ghost{background:transparent;color:var(--dink);border:1px solid var(--dhl)}
+.demo-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
+.demo-cards i{display:block;height:44px;border-radius:6px;background:var(--dsf);border:1px solid var(--dhl)}
+
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:8px}
+.sw{display:flex;gap:9px;align-items:flex-start;padding:7px;text-align:left;
+  border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.sw:hover{border-color:var(--accent)}
+.sw b{flex:none;width:30px;height:30px;border-radius:5px;border:1px solid var(--line-2)}
+.sw u{display:block;text-decoration:none;font-size:12px;font-weight:600;line-height:1.25}
+.sw code{display:block;font-family:var(--mono);font-size:10.5px;color:var(--faint);text-transform:uppercase}
+.sw em{display:block;font-style:normal;font-size:10.5px;line-height:1.35;color:var(--muted);margin-top:3px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.sw.copied{border-color:var(--ok)}
+
+.scale{width:100%;border-collapse:collapse;font-size:13px}
+.scale th{text-align:left;font-family:var(--mono);font-size:10px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--faint);font-weight:500;padding:0 10px 7px 0}
+.scale td{padding:7px 10px 7px 0;border-top:1px solid var(--line);vertical-align:middle}
+.scale td:first-child{font-family:var(--mono);font-size:11.5px;color:var(--accent);white-space:nowrap}
+.scale td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--muted);font-size:12px}
+.tblwrap{overflow-x:auto}
+.radii{display:flex;flex-wrap:wrap;gap:14px}
+.radii div{display:grid;gap:6px;justify-items:center}
+.radii i{width:46px;height:46px;display:block;border:1.5px solid var(--accent);
+  background:color-mix(in srgb,var(--accent) 13%,transparent)}
+.radii code{font-family:var(--mono);font-size:10px;color:var(--faint)}
+.path{font-family:var(--mono);font-size:11.5px;color:var(--muted);background:var(--surface-2);
+  border:1px solid var(--line);border-radius:7px;padding:9px 11px;margin-top:11px;
+  overflow-x:auto;white-space:nowrap}
+.none{padding:52px 0;text-align:center;color:var(--faint)}
+.foot{border-top:1px solid var(--line);padding-block:22px 40px;color:var(--faint);font-size:12.5px}
+.foot p{max-width:74ch}
+
+@media (min-width:560px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:900px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .sheet{inset:0 0 0 auto;width:min(620px,94vw);max-height:none;border-radius:0;
+    border-top:0;border-left:1px solid var(--line);transform:translateX(101%)}
+  .sheet.on{transform:none}
+}
+@media (min-width:1240px){.grid{grid-template-columns:repeat(4,1fr)}}
+@media (prefers-reduced-motion:reduce){*{transition-duration:.001ms!important}}
+</style>
+
+<button class="themebtn" type="button" id="theme" aria-label="Switch colour theme">&#9680;</button>
+
+<header class="head">
+  <div class="wrap head-in">
+    <div>
+      <h1>Design System Reference</h1>
+      <p class="sub">Seventy-four design languages, catalogued by their own tokens. Open any one to read
+        its palette with usage notes, its type scale and its shape scale &mdash; rendered in its own colours.</p>
+    </div>
+    <div class="meta">
+      <div><b id="mTotal">74</b><span>Systems</span></div>
+      <div><b id="mBuilt">10</b><span>Built out</span></div>
+      <div><b id="mCat">10</b><span>Categories</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="wrap bar-in">
+    <div class="find">
+      <label class="mono" for="q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Search designs</label>
+      <input id="q" type="search" placeholder="Search a name, a look, a colour&hellip;" autocomplete="off">
+    </div>
+    <label for="cat" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Category</label>
+    <select id="cat"></select>
+    <label for="sch" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Theme</label>
+    <select id="sch">
+      <option value="all">Any theme</option>
+      <option value="dark">Dark</option>
+      <option value="light">Light</option>
+    </select>
+    <span class="tally" id="tally">74 of 74</span>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid"></div>
+  <p class="none" id="none" hidden>Nothing matches that.</p>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Design languages extracted from public sites by the <span class="mono">design-md</span> skill.
+      Palettes, scales and component rules only &mdash; no logos, wordmarks or brand copy. Not affiliated
+      with any brand shown. The ten marked <em>Built</em> have a full fourteen-section page template in
+      the local library.</p>
+  </div>
+</footer>
+
+<button class="veil" id="veil" type="button" aria-label="Close details" tabindex="-1"></button>
+<aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetName" hidden>
+  <div class="sheet-in" id="sheetBody"></div>
+</aside>
+
+<script>
+const DATA = /*{{DATA}}*/[];
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* ---- theme ------------------------------------------------------------- */
+const root = document.documentElement, tbtn = $("#theme");
+try { const t = localStorage.getItem("dsr-theme"); if (t) root.setAttribute("data-theme", t); } catch (e) {}
+tbtn.addEventListener("click", () => {
+  const dark = root.getAttribute("data-theme") === "dark" ||
+    (!root.getAttribute("data-theme") && matchMedia("(prefers-color-scheme: dark)").matches);
+  const next = dark ? "light" : "dark";
+  root.setAttribute("data-theme", next);
+  try { localStorage.setItem("dsr-theme", next); } catch (e) {}
+});
+
+/* ---- catalogue --------------------------------------------------------- */
+const cats = [...new Set(DATA.map(d => d.cat))];
+$("#cat").innerHTML = '<option value="all">All categories</option>' +
+  cats.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join("");
+$("#mTotal").textContent = DATA.length;
+$("#mBuilt").textContent = DATA.filter(d => d.built).length;
+$("#mCat").textContent = cats.length;
+
+const order = Object.fromEntries(cats.map((c, i) => [c, i]));
+const rows = DATA.slice().sort((a, b) =>
+  (a.built === b.built ? 0 : a.built ? -1 : 1) ||
+  (order[a.cat] - order[b.cat]) || a.name.localeCompare(b.name));
+
+const grid = $("#grid");
+grid.innerHTML = rows.map((d, i) => {
+  const band = [d.ac, d.ink, d.sf, d.bg].map(c => `<i style="background:${esc(c)}"></i>`).join("");
+  return `<button class="item" type="button" data-i="${i}" aria-expanded="false"
+      style="--pbg:${esc(d.bg)}">
+    <span class="swatchband">${band}</span>
+    <span class="plate">
+      <span class="ptop"><span class="pname">${esc(d.name)}</span>
+        <span class="pslug">${esc(d.slug)}</span></span>
+      <span class="plook">${esc(d.look)}</span>
+      <span class="prow">
+        <span class="tag${d.built ? " on" : ""}">${d.built ? "Built" : "Tokens"}</span>
+        <span class="tag">${esc(d.scheme)}</span>
+        <span class="cat">${esc(d.cat)}</span>
+      </span>
+    </span>
+  </button>`;
+}).join("");
+
+/* ---- filtering --------------------------------------------------------- */
+const items = [...grid.children];
+const hay = rows.map(d => (d.slug + " " + d.name + " " + d.look + " " + d.cat + " " +
+  d.sw.map(s => s.v + " " + s.n).join(" ")).toLowerCase());
+const st = { q: "", cat: "all", sch: "all" };
+function filter() {
+  let n = 0;
+  items.forEach((el, i) => {
+    const d = rows[i];
+    const ok = (st.cat === "all" || d.cat === st.cat) &&
+               (st.sch === "all" || d.scheme === st.sch) &&
+               (!st.q || hay[i].includes(st.q));
+    el.hidden = !ok; if (ok) n++;
+  });
+  $("#tally").textContent = n + " of " + rows.length;
+  $("#none").hidden = n > 0;
+}
+$("#q").addEventListener("input", e => { st.q = e.target.value.trim().toLowerCase(); filter(); });
+$("#cat").addEventListener("change", e => { st.cat = e.target.value; filter(); });
+$("#sch").addEventListener("change", e => { st.sch = e.target.value; filter(); });
+
+/* ---- detail sheet ------------------------------------------------------ */
+const sheet = $("#sheet"), veil = $("#veil"), body = $("#sheetBody");
+let opener = null;
+
+function render(d) {
+  const sws = d.sw.map(s => `<button class="sw" type="button" data-copy="${esc(s.v)}"
+      aria-label="Copy ${esc(s.n)}, ${esc(s.v)}">
+      <b style="background:${esc(s.v)}"></b>
+      <span><u>${esc(s.n)}</u><code>${esc(s.v)}</code>${s.u ? `<em>${esc(s.u)}</em>` : ""}</span>
+    </button>`).join("");
+
+  const ty = d.ty.length ? `<div class="block">
+      <p class="blabel"><span>Type scale</span><span>${esc(d.ty[0].f || "")}</span></p>
+      <div class="tblwrap"><table class="scale">
+        <thead><tr><th>Token</th><th>Size</th><th>Weight</th><th>Specimen</th></tr></thead>
+        <tbody>${d.ty.map(t => `<tr><td>${esc(t.k)}</td><td class="num">${esc(t.s)}</td>
+          <td class="num">${esc(t.w)}</td>
+          <td style="font-size:${/^\d+(\.\d+)?px$/.test(t.s) ? Math.min(parseFloat(t.s), 34) + "px" : "15px"};
+                     font-weight:${/^\d+$/.test(t.w) ? esc(t.w) : 400};letter-spacing:-.02em">Aa</td></tr>`).join("")}
+        </tbody></table></div></div>` : "";
+
+  const rd = d.rd.length ? `<div class="block"><p class="blabel"><span>Shape scale</span></p>
+      <div class="radii">${d.rd.map(r => `<div><i style="border-radius:${esc(r.v)}"></i>
+        <code>${esc(r.k)} ${esc(r.v)}</code></div>`).join("")}</div></div>` : "";
+
+  body.innerHTML = `
+    <div class="sheet-head">
+      <div><h2 id="sheetName" tabindex="-1">${esc(d.name)}</h2>
+        <p class="look">${esc(d.look)}</p></div>
+      <button class="x" type="button" id="close" aria-label="Close">&times;</button>
+    </div>
+
+    <div class="demo" style="--dbg:${esc(d.bg)};--dsf:${esc(d.sf)};--dink:${esc(d.ink)};
+        --dac:${esc(d.ac)};--dhl:${esc(d.hl)}">
+      <div class="demo-nav"><span class="demo-dot"></span><b>${esc(d.name)}</b><span>${esc(d.slug)}</span></div>
+      <div class="demo-in">
+        <h3>The same page, in this design language.</h3>
+        <p>Canvas, surface, ink and accent applied to a nav, a headline, two buttons and a card row.</p>
+        <div class="demo-btns"><span class="demo-btn">Primary</span><span class="demo-btn ghost">Secondary</span></div>
+        <div class="demo-cards"><i></i><i></i><i></i></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <p class="blabel"><span>Colour tokens</span><span>${d.sw.length} &middot; tap to copy</span></p>
+      <div class="sws">${sws}</div>
+    </div>
+    ${ty}${rd}
+    <div class="block">
+      <p class="blabel"><span>In the local library</span></p>
+      <p style="font-size:13px;color:var(--muted)">${d.built
+        ? "A full fourteen-section page template is built for this system."
+        : "Tokens are catalogued; the page template is not built yet."}</p>
+      <p class="path">${d.built ? "designs/" + esc(d.slug) + ".html" : "python3 build.py scaffold " + esc(d.slug)}</p>
+    </div>`;
+
+  body.querySelectorAll(".sw").forEach(b => b.addEventListener("click", () => {
+    const v = b.getAttribute("data-copy"), c = b.querySelector("code"), old = c.textContent;
+    const done = () => { b.classList.add("copied"); c.textContent = "copied"; 
+      setTimeout(() => { c.textContent = old; b.classList.remove("copied"); }, 1000); };
+    if (navigator.clipboard) navigator.clipboard.writeText(v).then(done, done); else done();
+  }));
+  body.querySelector("#close").addEventListener("click", close);
+}
+
+function open(i, el) {
+  opener = el;
+  render(rows[i]);
+  sheet.hidden = false;
+  requestAnimationFrame(() => { sheet.classList.add("on"); veil.classList.add("on"); });
+  el.setAttribute("aria-expanded", "true");
+  veil.tabIndex = 0;
+  body.querySelector("#sheetName").focus();
+}
+function close() {
+  sheet.classList.remove("on"); veil.classList.remove("on"); veil.tabIndex = -1;
+  items.forEach(e => e.setAttribute("aria-expanded", "false"));
+  setTimeout(() => { sheet.hidden = true; }, 220);
+  if (opener) { opener.focus(); opener = null; }
+}
+grid.addEventListener("click", e => {
+  const b = e.target.closest(".item"); if (!b) return;
+  items.forEach(x => x.setAttribute("aria-expanded", "false"));
+  open(+b.dataset.i, b);
+});
+veil.addEventListener("click", close);
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && !sheet.hidden) close();
+  if (e.key === "/" && document.activeElement !== $("#q")) { e.preventDefault(); $("#q").focus(); }
+});
+
+filter();
+</script>

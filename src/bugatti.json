@@ -1,0 +1,87 @@
+{
+  "slug": "bugatti", "name": "Bugatti", "category": "Automotive",
+  "look": "Pure black, monumental uppercase display with wide tracking, transparent outlined pill CTAs, photography as the only depth.",
+  "scheme": "dark", "icon_weights": ["thin", "regular"],
+  "fonts": {
+    "display": "\"Jost\", \"Futura\", \"Helvetica Neue\", sans-serif",
+    "body": "\"EB Garamond\", Georgia, \"Times New Roman\", serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "variants": { "nav": "minimal", "hero": "full-bleed", "features": "list", "cards": "flat", "gallery": "filmstrip" },
+  "brand": { "mark": "ph-diamond", "name": "MERIDIAN" },
+  "nav": { "links": [{"label":"MODELS","href":"features"},{"label":"HERITAGE","href":"showcase-0"},{"label":"ATELIER","href":"showcase-1"},{"label":"GALLERY","href":"gallery"},{"label":"CONTACT","href":"pricing"}], "cta": "ENQUIRE", "cta2": "OWNERS" },
+  "hero": {
+    "eyebrow": "MERIDIAN ARCHE — 40 EXAMPLES",
+    "title": "ARCHE",
+    "sub": "A sixteen-cylinder quad-turbo hyper sports car, hand-assembled in Molsheim. Forty examples. All accounted for.",
+    "cta1": "ENQUIRE", "cta2": "VIEW GALLERY",
+    "image": "photo-1492144534655-ae79c964c9d7", "ratio": 0.54,
+    "stats": [{"v":"1,600 PS","l":"OUTPUT"},{"v":"440 KM/H","l":"TOP SPEED"},{"v":"40","l":"EXAMPLES"}]
+  },
+  "logo_lead": "MOLSHEIM, FRANCE",
+  "logos": ["MOLSHEIM", "GENEVA", "PEBBLE BEACH", "VILLA D'ESTE", "MONTEREY", "GOODWOOD"],
+  "features": {
+    "eyebrow": "THE MACHINE",
+    "title": "SIXTEEN CYLINDERS",
+    "sub": "An engine architecture that exists nowhere else, because nobody else has been asked to build one.",
+    "items": [
+      {"icon":"ph-engine","title":"W16 QUAD-TURBO","body":"Eight litres, four turbochargers, 1,600 PS. Assembled by hand over six days by a team of four."},
+      {"icon":"ph-drop","title":"SIXTY LITRES PER MINUTE","body":"The cooling system moves enough water to empty a domestic bath in ninety seconds."},
+      {"icon":"ph-wind","title":"ACTIVE AERODYNAMICS","body":"A rear wing that serves as spoiler, air brake and stabiliser, deploying in under four tenths of a second."},
+      {"icon":"ph-diamond","title":"CARBON MONOCOQUE","body":"A single-piece passenger cell with a torsional rigidity of 50,000 Nm per degree."},
+      {"icon":"ph-clock","title":"SIX MONTHS","body":"The build time for one car, from the first component to the final road test on the Alsace roads."},
+      {"icon":"ph-certificate","title":"FORTY EXAMPLES","body":"The production run in full. Each is recorded, numbered, and never repeated in specification."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"HERITAGE","title":"MOLSHEIM SINCE 1909","body":"The Atelier occupies the same grounds it has since the marque was founded. Every car built here has passed through the same courtyard, and every owner is invited to walk it before delivery.","points":["The original grounds, continuously in use","Four technicians per car, start to finish","Every chassis number recorded since 1909"],"image":"photo-1503376780353-7e6692767b70","cta":"THE ATELIER","ratio":0.6},
+    {"eyebrow":"COMMISSION","title":"NO SPECIFICATION IS REPEATED","body":"A commission begins with two days in Molsheim. Paint is developed to a physical reference, leather is chosen from the hide, and the finished specification is retired the moment the car leaves.","points":["Paint developed to a physical reference","Hides selected in person","Specification retired on delivery"],"image":"photo-1493238792000-8113da705763","cta":"BEGIN A COMMISSION","ratio":0.6}
+  ],
+  "metric_lead": "ARCHE — HOMOLOGATED",
+  "metrics": [{"v":"1,600 PS","l":"OUTPUT"},{"v":"440 KM/H","l":"TOP SPEED"},{"v":"2.3 S","l":"0–100 KM/H"},{"v":"40","l":"EXAMPLES"}],
+  "gallery": {
+    "title": "GALLERY",
+    "sub": "Photographed in Molsheim and on the Route des Crêtes.",
+    "items": [
+      {"id":"photo-1492144534655-ae79c964c9d7","tag":"STUDIO","ratio":0.62},
+      {"id":"photo-1503376780353-7e6692767b70","tag":"REAR","ratio":0.62},
+      {"id":"photo-1493238792000-8113da705763","tag":"NIGHT","ratio":0.62},
+      {"id":"photo-1553440569-bcc63803a83d","tag":"ROUTE","ratio":0.62},
+      {"id":"photo-1552519507-da3b142c6e3d","tag":"PROFILE","ratio":0.62},
+      {"id":"photo-1518770660439-4636190af475","tag":"DETAIL","ratio":0.62}
+    ]
+  },
+  "testimonial": {"quote":"They asked what I wanted the car to sound like at three thousand revolutions, and then they went away and did it. I have never been asked that question by anyone else.",
+    "name":"Isabelle Rousseau", "role":"Owner, Arche 07", "avatar":"photo-1438761681033-6461ffad8d80"},
+  "pricing": {
+    "title": "OWNERSHIP",
+    "sub": "Forty examples. Enquiries are handled directly by Molsheim.",
+    "tiers": [
+      {"name":"ARCHE","price":"€3.8M","period":"","desc":"The car as homologated.","features":["W16 quad-turbo, 1,600 PS","Carbon monocoque","Two days in Molsheim","Ten-year service"],"cta":"ENQUIRE"},
+      {"name":"ARCHE SPORT","price":"€4.4M","period":"","desc":"Lightweight specification.","features":["Everything in Arche","Magnesium wheels, −16 kg","Titanium exhaust","Track telemetry"],"cta":"ENQUIRE","featured":true,"badge":"24 EXAMPLES"},
+      {"name":"SOLITAIRE","price":"ON APPLICATION","period":"","desc":"A single commissioned example.","features":["Bespoke coachwork","Direct design collaboration","Eighteen-month build","One example only"],"cta":"CONTACT MOLSHEIM"}
+    ]
+  },
+  "faq": {"title":"ENQUIRIES","items":[
+    {"q":"How are enquiries handled?","a":"Directly by Molsheim rather than through a dealer network. The first conversation is with the commission team, and it establishes what you want from the car before any figure is discussed."},
+    {"q":"How long is the build?","a":"Six months for Arche and Arche Sport from the confirmation of specification. A Solitaire commission runs to approximately eighteen months."},
+    {"q":"Is servicing included?","a":"Ten years of scheduled servicing is included, performed by a travelling technician at an address of your choosing anywhere in Europe."},
+    {"q":"Can the car be driven on the road?","a":"It is homologated for road use in the European Union, the United Kingdom, Switzerland and the United States. Top speed is limited to 380 km/h unless the second key is fitted."}
+  ]},
+  "cta": {"title":"ENQUIRE","sub":"Forty examples. Enquiries handled directly by Molsheim.","btn1":"BEGIN AN ENQUIRY","btn2":"REQUEST THE BOOK"},
+  "footer": {"tagline":"Molsheim, France. Since 1909.","columns":[
+    {"title":"MODELS","links":["Arche","Arche Sport","Solitaire","Heritage"]},
+    {"title":"THE MARQUE","links":["History","Molsheim","Craftsmanship","Motorsport"]},
+    {"title":"OWNERSHIP","links":["Service","Certification","La Maison","Events"]},
+    {"title":"CONTACT","links":["Enquiries","Press", "Careers","Legal"]}
+  ],"legal":"© 2026 Meridian Automobiles S.A.S."},
+  "specimen": "ARCHE",
+  "notes": [
+    "Pure black canvas with white type. There is no light mode in this system and no card surface brighter than #141414.",
+    "Every display headline is uppercase with 2–4px of positive tracking. Body copy stays sentence case at normal tracking — the contrast between the two is the whole voice.",
+    "There is no accent colour. The single non-monochrome value is a desaturated ice-blue used on inline anchor links, and even that appears rarely.",
+    "The primary CTA is a transparent pill with a 1px white outline. A filled button would break the restraint the rest of the system depends on.",
+    "Section rhythm runs to 120px — longer than most marketing sites, because the pages are mostly photography with very little text."
+  ]
+}

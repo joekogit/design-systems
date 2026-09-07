@@ -1,0 +1,95 @@
+{
+  "slug": "kraken", "name": "Kraken", "category": "Fintech & crypto",
+  "look": "Kraken purple on a white canvas with a cool blue-grey neutral scale, 12px radii and whisper-level shadows.",
+  "scheme": "light", "icon_weights": ["regular", "fill"],
+  "fonts": { "google": "https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" },
+  "variants": { "nav": "bar", "hero": "split", "features": "grid", "cards": "elevated", "gallery": "grid" },
+  "brand": { "mark": "ph-waves", "name": "Fathom" },
+  "nav": { "links": [{"label":"Trade","href":"features"},{"label":"Markets","href":"gallery"},{"label":"Earn","href":"showcase-1"},{"label":"Institutions","href":"showcase-0"},{"label":"Fees","href":"pricing"}], "cta": "Get started", "cta2": "Sign in" },
+  "hero": {
+    "eyebrow": "REGULATED IN 12 JURISDICTIONS",
+    "title": "The exchange that <em>shows its books</em>",
+    "sub": "Proof-of-reserves published every quarter and audited by a third party. Deep order books, real custody, and fees you can read on one page.",
+    "cta1": "Open an account", "cta2": "View proof of reserves",
+    "image": "photo-1611974789855-9c2a0a7236a3", "ratio": 0.64,
+    "stats": [{"v":"$18.4B","l":"Assets in custody"},{"v":"0.16%","l":"Taker fee at tier 1"},{"v":"12","l":"Regulated jurisdictions"}]
+  },
+  "logo_lead": "Trusted by institutions",
+  "logos": ["Northwind Capital", "Corva Asset", "Basisplan", "Perigee Funds", "Tessera", "Halyard"],
+  "features": {
+    "eyebrow": "THE PLATFORM",
+    "title": "Built for people who read the fee schedule",
+    "sub": "Everything an active trader checks before funding an account, published rather than buried.",
+    "items": [
+      {"icon":"ph-vault","title":"Proof of reserves","body":"A Merkle-tree attestation every quarter, audited independently, with a tool that lets you verify your own balance is included."},
+      {"icon":"ph-chart-line-up","title":"Deep order books","body":"Spot, margin and futures on one book, with maker rebates from the first tier rather than the fifth."},
+      {"icon":"ph-shield-check","title":"Cold storage by default","body":"95 percent of assets held offline in geographically distributed vaults with multi-party signing."},
+      {"icon":"ph-code","title":"A real API","body":"REST and WebSocket, documented rate limits, and a testnet that mirrors production behaviour exactly."},
+      {"icon":"ph-percent","title":"Fees on one page","body":"Thirteen tiers, published in full, with no hidden spread markup and no payment for order flow."},
+      {"icon":"ph-bank","title":"Institutional custody","body":"Segregated accounts, qualified custodian arrangements and same-day fiat settlement in six currencies."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"INSTITUTIONS","title":"Custody that satisfies an auditor","body":"Segregated, bankruptcy-remote accounts held under a qualified custodian arrangement, with attestation reports issued quarterly and available to your auditors directly rather than through us.","points":["Segregated, bankruptcy-remote accounts","Quarterly attestation issued to your auditor","Same-day fiat settlement in six currencies"],"image":"photo-1454165804606-c3d57bc86b40","cta":"Institutional services"},
+    {"eyebrow":"EARN","title":"Yield with the mechanism written down","body":"Every earn product states where the yield comes from, what the counterparty risk is, and what happens in a stress scenario — before you opt in, in plain language, on the product page itself.","points":["Source of yield stated per product","Counterparty exposure published","Unbonding periods shown before opt-in"],"image":"photo-1579621970563-ebec7560ff3e","cta":"See earn products"}
+  ],
+  "metric_lead": "PLATFORM, TRAILING TWELVE MONTHS",
+  "metrics": [{"v":"$18.4B","l":"Assets in custody"},{"v":"$412B","l":"Volume traded"},{"v":"99.98%","l":"Matching engine uptime"},{"v":"4","l":"Reserve attestations"}],
+  "gallery": {
+    "title": "Markets",
+    "sub": "Three hundred and forty pairs across spot, margin and futures.",
+    "items": [
+      {"id":"photo-1611974789855-9c2a0a7236a3","tag":"Spot","ratio":0.7},
+      {"id":"photo-1551288049-bebda4e38f71","tag":"Futures","ratio":0.7},
+      {"id":"photo-1560472354-b33ff0c44a43","tag":"Analytics","ratio":0.7},
+      {"id":"photo-1579621970563-ebec7560ff3e","tag":"Earn","ratio":0.7},
+      {"id":"photo-1454165804606-c3d57bc86b40","tag":"Institutional","ratio":0.7},
+      {"id":"photo-1591696205602-2f950c417cb9","tag":"Reports","ratio":0.7}
+    ]
+  },
+  "testimonial": {"quote":"They publish the fee schedule, the reserve attestation and the incident history on pages you can find without an account. Three things, and almost nobody else does all three.",
+    "name":"Rina Chaudhary", "role":"Head of Treasury, Corva Asset", "avatar":"photo-1534528741775-53994a69daeb"},
+  "pricing": {
+    "title": "Fees, in full",
+    "sub": "Thirteen tiers by 30-day volume. No spread markup, no payment for order flow.",
+    "tiers": [
+      {"name":"Starter","price":"0.26%","period":"taker","desc":"Under $50,000 in 30-day volume.","features":["0.16% maker fee","Spot and margin","Instant fiat deposit","Email support"],"cta":"Open an account"},
+      {"name":"Pro","price":"0.16%","period":"taker","desc":"$100,000 or more in 30-day volume.","features":["0.06% maker fee","Futures and options","Advanced order types","Priority support"],"cta":"See all tiers","featured":true,"badge":"Most active traders"},
+      {"name":"Institutional","price":"Custom","period":"","desc":"Negotiated for desks and funds.","features":["Custom fee schedule","Qualified custody","Dedicated coverage","OTC desk access"],"cta":"Contact the desk"}
+    ]
+  },
+  "faq": {"title":"Before you fund an account","items":[
+    {"q":"How does proof of reserves work?","a":"Balances are hashed into a Merkle tree that a third-party auditor verifies against on-chain holdings each quarter. A tool on the site lets you confirm your own balance was included in that tree, using a record only you can see."},
+    {"q":"Where are assets held?","a":"About 95 percent in offline cold storage across geographically separated vaults with multi-party signing. The remainder is in hot wallets sized to cover expected withdrawals."},
+    {"q":"Do you sell order flow?","a":"No. Revenue comes from published trading fees and the spread on fiat conversion, which is also published. There is no third party paying for the right to fill your orders."},
+    {"q":"What happens in an incident?","a":"Every outage since 2019 is listed on the status history page with the duration, the cause and what changed afterwards, including the ones that were our fault."}
+  ]},
+  "cta": {"title":"Open an account in about four minutes","sub":"Identity verification is usually complete within the hour, and the fee schedule is on one page.","btn1":"Get started","btn2":"View proof of reserves"},
+  "footer": {"tagline":"A regulated exchange that publishes what most exchanges bury.","columns":[
+    {"title":"Trade","links":["Spot","Margin","Futures","OTC desk"]},
+    {"title":"Learn","links":["Fee schedule","Proof of reserves","Status history","Security"]},
+    {"title":"Developers","links":["API docs","WebSocket","Testnet","Libraries"]},
+    {"title":"Company","links":["About","Licences","Careers","Legal"]}
+  ],"legal":"© 2026 Fathom Digital Exchange"},
+  "specimen": "Show your books",
+  "palette": [
+    {"name":"Kraken Purple","value":"#7132f5","note":"Primary CTA, brand accent, links"},
+    {"name":"Purple Dark","value":"#5741d8","note":"Button borders, outlined variants"},
+    {"name":"Purple Deep","value":"#5b1ecf","note":"The deepest purple — pressed and hover states"},
+    {"name":"Purple Subtle","value":"rgba(133,91,251,0.16)","note":"Purple at 16% — subtle button backgrounds"},
+    {"name":"Near Black","value":"#101114","note":"Primary text"},
+    {"name":"Cool Gray","value":"#686b82","note":"Primary neutral, borders at 24% opacity"},
+    {"name":"Silver Blue","value":"#9497a9","note":"Secondary text, muted elements"},
+    {"name":"White","value":"#ffffff","note":"Primary surface"},
+    {"name":"Border Gray","value":"#dedee5","note":"Divider borders"},
+    {"name":"Green","value":"#149e61","note":"Success and positive states, at 16% for badges"},
+    {"name":"Green Dark","value":"#026b3f","note":"Badge text on green"}
+  ],
+  "notes": [
+    "Purple is the single brand accent and it carries CTAs, links and focus. Green appears only for positive or success states, never as a second brand colour.",
+    "The neutral ramp is cool and blue-leaning, not warm grey. That coolness is what makes the purple read as brand rather than decoration.",
+    "Radii sit at 12px — clearly rounded but never a pill. A pill CTA reads as consumer; this system is trading-desk.",
+    "Shadows are whisper level (rgba(0,0,0,.03) 0 4px 24px). They suggest a card edge rather than lifting anything off the page.",
+    "Numbers are the content. Use tabular figures everywhere a price, fee or balance appears."
+  ]
+}

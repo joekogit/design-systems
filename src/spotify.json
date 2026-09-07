@@ -1,0 +1,99 @@
+{
+  "slug": "spotify", "name": "Spotify", "category": "Media & consumer tech",
+  "look": "Near-black immersive canvas, one green accent, pill-and-circle geometry, uppercase tracked buttons.",
+  "scheme": "dark", "icon_weights": ["fill", "regular"],
+  "fonts": { "google": "https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" },
+  "variants": { "nav": "bar", "hero": "split", "features": "grid", "cards": "elevated", "gallery": "masonry" },
+  "brand": { "mark": "ph-waveform-fill", "name": "Resonate" },
+  "nav": { "links": [{"label":"Premium","href":"pricing"},{"label":"Discover","href":"gallery"},{"label":"Artists","href":"showcase-0"},{"label":"Support","href":"faq"}], "cta": "Sign up free", "cta2": "Log in" },
+  "hero": {
+    "eyebrow": "Resonate Premium",
+    "title": "Sound, <em>uninterrupted</em>",
+    "sub": "Ninety million tracks, lossless from the first play, downloadable for the tunnel. No adverts between you and the record.",
+    "cta1": "Get Premium free", "cta2": "Browse the catalogue",
+    "image": "photo-1505740420928-5e560c06d30e", "ratio": 0.72,
+    "stats": [{"v":"90M+","l":"Tracks"},{"v":"24-bit","l":"Lossless audio"},{"v":"184","l":"Markets"}]
+  },
+  "logo_lead": "Featured this week",
+  "logos": ["Kilo Motive", "Ash & Ember", "Nightbus", "Solva", "The Quiet Hours", "Marram"],
+  "features": {
+    "eyebrow": "Why Premium",
+    "title": "Built for listening, not for scrolling",
+    "sub": "Everything that gets between you and the music, removed.",
+    "items": [
+      {"icon":"ph-speaker-high-fill","title":"Lossless from the start","body":"24-bit playback on every track that has a master for it, with no separate tier and no upsell prompt."},
+      {"icon":"ph-download-simple-fill","title":"Download anything","body":"Take up to ten thousand tracks offline across five devices for the flight, the tunnel and the run."},
+      {"icon":"ph-sliders-fill","title":"Real controls","body":"A ten-band equaliser, crossfade, gapless playback and normalisation you can switch off."},
+      {"icon":"ph-users-three-fill","title":"Group sessions","body":"Hand the queue to the room. Everyone adds, everyone skips, nobody hands their phone around."},
+      {"icon":"ph-microphone-stage-fill","title":"Credits that matter","body":"Full personnel on every release — engineer, session players, studio and the room it was cut in."},
+      {"icon":"ph-heart-fill","title":"Pays artists more","body":"A user-centric royalty model routes your subscription to the artists you actually played."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"Discovery","title":"A queue that knows when to stop","body":"Recommendations weighted towards what you finished rather than what you clicked. Skip an artist twice and they stop appearing, without you having to find a settings page to say so.","points":["Completion-weighted, not click-weighted","Explicit dislikes that actually persist","Weekly mix you can regenerate on demand"],"image":"photo-1550745165-9bc0b252726f","cta":"How discovery works"},
+    {"eyebrow":"For artists","title":"Paid per listener, not per stream","body":"Under a user-centric model each subscription is divided between the artists that subscriber played, so a thousand devoted listeners is worth more than a million passive ones.","points":["Per-listener royalty accounting","Payouts on a 30-day cycle","Full statement export"],"image":"photo-1571902943202-507ec2618e8f","cta":"Read the artist terms"}
+  ],
+  "metric_lead": "Across the platform in the last quarter",
+  "metrics": [{"v":"90M+","l":"Tracks available"},{"v":"6.2B","l":"Hours streamed"},{"v":"184","l":"Markets served"},{"v":"71%","l":"Revenue to rights holders"}],
+  "gallery": {
+    "title": "New this week",
+    "sub": "Editorial picks from the team, refreshed every Friday morning.",
+    "items": [
+      {"id":"photo-1541701494587-cb58502866ab","tag":"Electronic","ratio":1.0},
+      {"id":"photo-1567095761054-7a02e69e5c43","tag":"Ambient","ratio":1.3},
+      {"id":"photo-1550684376-efcbd6e3f031","tag":"Minimal","ratio":0.8},
+      {"id":"photo-1620641788421-7a1c342ea42e","tag":"Synth","ratio":1.1},
+      {"id":"photo-1635776062127-d379bfcba9f8","tag":"Downtempo","ratio":0.9},
+      {"id":"photo-1531297484001-80022131f5a1","tag":"Late night","ratio":1.2}
+    ]
+  },
+  "testimonial": {"quote":"The credits page alone changed how I listen. I found three session players I now follow, and two of them have records of their own.","name":"Kwame Boateng","role":"Producer, Nightbus","avatar":"photo-1472099645785-5658abf4ff4e"},
+  "pricing": {
+    "title": "Pick your Premium",
+    "sub": "Cancel any time, keep your library, and downgrade back to free without losing a playlist.",
+    "tiers": [
+      {"name":"Individual","price":"$11.99","period":"/month","desc":"One account, everything included.","features":["Ad-free listening","Lossless audio","Offline downloads","Group sessions"],"cta":"Get Individual"},
+      {"name":"Duo","price":"$15.99","period":"/month","desc":"Two accounts under one roof.","features":["Two Premium accounts","A shared Duo Mix","Separate libraries","All Individual features"],"cta":"Get Duo","featured":true,"badge":"Best value"},
+      {"name":"Family","price":"$19.99","period":"/month","desc":"Up to six accounts at one address.","features":["Six Premium accounts","Explicit content controls","A shared Family Mix","All Individual features"],"cta":"Get Family"}
+    ]
+  },
+  "faq": {"title":"Questions","items":[
+    {"q":"What happens if I cancel?","a":"The account reverts to the free tier at the end of the billing period. Playlists, saved albums and listening history are all retained, and downloads simply become unavailable until you resubscribe."},
+    {"q":"Does lossless cost extra?","a":"No. Every Premium tier plays 24-bit audio wherever a lossless master exists. There is no separate hi-fi add-on."},
+    {"q":"How many devices can I use?","a":"Sign in on as many devices as you like; play on one at a time. Offline downloads are limited to five devices and ten thousand tracks each."},
+    {"q":"How are artists paid?","a":"Under a user-centric model, your subscription is split between the artists you actually listened to that month, rather than pooled and divided by total platform share."}
+  ]},
+  "cta": {"title":"Start listening today","sub":"One month of Premium free. No card needed to try it, and no advert will ever interrupt a track.","btn1":"Get Premium free","btn2":"See all plans"},
+  "footer": {"tagline":"Ninety million tracks. No adverts between you and the record.","columns":[
+    {"title":"Company","links":["About","Jobs","For the Record","Newsroom"]},
+    {"title":"Communities","links":["For Artists","Developers","Advertising","Vendors"]},
+    {"title":"Useful links","links":["Support","Mobile app","Gift cards","Accessibility"]},
+    {"title":"Legal","links":["Privacy","Terms","Cookies","Royalties"]}
+  ],"legal":"© 2026 Resonate Audio"},
+  "specimen": "Play it loud",
+  "palette": [
+    {"name":"Spotify Green","value":"#1ed760","note":"Primary brand accent — play buttons, active states, CTAs"},
+    {"name":"Green Border","value":"#1db954","note":"Green accent border variant and pressed state"},
+    {"name":"Near Black","value":"#121212","note":"Deepest background surface"},
+    {"name":"Dark Surface","value":"#181818","note":"Cards, containers, elevated surfaces"},
+    {"name":"Mid Dark","value":"#1f1f1f","note":"Button backgrounds, interactive surfaces"},
+    {"name":"Dark Card","value":"#252525","note":"Elevated card surface"},
+    {"name":"Mid Card","value":"#272727","note":"Alternate card surface"},
+    {"name":"White","value":"#ffffff","note":"Primary text"},
+    {"name":"Near White","value":"#cbcbcb","note":"Slightly brighter secondary text"},
+    {"name":"Silver","value":"#b3b3b3","note":"Secondary text, muted labels, inactive nav"},
+    {"name":"Border Gray","value":"#4d4d4d","note":"Button borders on dark"},
+    {"name":"Light Border","value":"#7c7c7c","note":"Outlined button borders, muted links"},
+    {"name":"Light Surface","value":"#eeeeee","note":"Light-mode buttons (rare)"},
+    {"name":"Negative Red","value":"#f3727f","note":"Error states"},
+    {"name":"Warning Orange","value":"#ffa42b","note":"Warning states"},
+    {"name":"Announcement Blue","value":"#539df5","note":"Info states"}
+  ],
+  "notes": [
+    "The UI is achromatic by design — album art is the colour source. Green is functional (play, active, CTA) and never decorative.",
+    "Pill-and-circle geometry throughout: full-radius buttons, 50% circular play controls, 500px search pills. There are no sharp corners.",
+    "Button labels are uppercase with 1.4–2px tracking, which reads as a systematic label voice distinct from content text.",
+    "Type is a bold/regular binary — 700 or 400, with 600 used sparingly. Hierarchy comes from weight, not size.",
+    "The reference documents a compact 10–24px app UI scale; the display tier here extends it upward for a marketing surface, keeping the same weight logic."
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "slug": "linear.app",
+  "name": "Linear",
+  "category": "Productivity & SaaS",
+  "look": "Ultra-minimal near-black canvas, four-step surface ladder, a single lavender accent used sparingly.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+    "body": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "bordered",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-triangle-fill",
+    "name": "Vector"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Product",
+        "href": "features"
+      },
+      {
+        "label": "Method",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Customers",
+        "href": "quote"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Changelog",
+        "href": "gallery"
+      }
+    ],
+    "cta": "Get started",
+    "cta2": "Log in"
+  },
+  "hero": {
+    "eyebrow": "Vector 2.4 — now with cycles",
+    "title": "The issue tracker your team stops <em>working around</em>",
+    "sub": "Vector is a purpose-built planning tool for product teams. Keyboard-first, offline-capable, and fast enough that nobody opens a spreadsheet instead.",
+    "cta1": "Start building",
+    "cta2": "See how it works",
+    "image": "photo-1555066931-4365d14bab8c",
+    "ratio": 0.68,
+    "stats": [
+      {
+        "v": "11ms",
+        "l": "Median interaction"
+      },
+      {
+        "v": "9,400+",
+        "l": "Engineering teams"
+      },
+      {
+        "v": "99.99%",
+        "l": "Rolling uptime"
+      }
+    ]
+  },
+  "logo_lead": "Planning happens here",
+  "logos": [
+    "Northwind",
+    "Rivet Labs",
+    "Cadence",
+    "Halyard",
+    "Perigee",
+    "Meridian"
+  ],
+  "features": {
+    "eyebrow": "Built for the work",
+    "title": "Opinionated where it matters",
+    "sub": "Every surface is designed around a single question: does this help the team ship this week?",
+    "items": [
+      {
+        "icon": "ph-lightning",
+        "title": "Instant everything",
+        "body": "A local-first sync engine keeps the entire workspace in memory. Navigation never waits on a request."
+      },
+      {
+        "icon": "ph-keyboard",
+        "title": "Keyboard native",
+        "body": "Every action is reachable in two keystrokes. The command menu is the primary interface, not a shortcut."
+      },
+      {
+        "icon": "ph-git-branch",
+        "title": "Git that closes itself",
+        "body": "Branch names, PR titles and deploy events move issues through the workflow without anyone updating a status."
+      },
+      {
+        "icon": "ph-arrows-clockwise",
+        "title": "Cycles, not sprints",
+        "body": "Fixed-length cycles roll unfinished work forward automatically and surface the scope you quietly added."
+      },
+      {
+        "icon": "ph-target",
+        "title": "Projects with a spine",
+        "body": "Milestones, owners and a health signal that comes from real activity rather than a weekly status field."
+      },
+      {
+        "icon": "ph-plugs-connected",
+        "title": "An API worth building on",
+        "body": "A typed GraphQL API, real webhooks, and an OAuth flow that takes about ten minutes end to end."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "Cycles",
+      "title": "Planning that survives contact with the week",
+      "body": "Cycles are fixed and automatic. Work that does not finish rolls forward, scope added mid-cycle is flagged, and the burndown reflects what actually happened rather than what was promised.",
+      "points": [
+        "Automatic rollover with a scope-change log",
+        "Per-team velocity from completed estimates",
+        "Cycle review generated the moment it closes"
+      ],
+      "image": "photo-1460925895917-afdab827c52f",
+      "cta": "Read the method"
+    },
+    {
+      "eyebrow": "Integrations",
+      "title": "The status field updates itself",
+      "body": "Connect the repository once. Opening a branch moves the issue to In Progress, opening a pull request moves it to In Review, and merging closes it against the right cycle.",
+      "points": [
+        "GitHub, GitLab and Bitbucket",
+        "Slack threads that stay in sync both ways",
+        "Figma and Sentry links resolved inline"
+      ],
+      "image": "photo-1555066931-4365d14bab8c",
+      "cta": "Browse integrations"
+    }
+  ],
+  "metric_lead": "Measured across workspaces with more than fifty active members",
+  "metrics": [
+    {
+      "v": "42%",
+      "l": "Less time in planning meetings"
+    },
+    {
+      "v": "3.1×",
+      "l": "Faster issue triage"
+    },
+    {
+      "v": "88%",
+      "l": "Cycles completed on scope"
+    },
+    {
+      "v": "11ms",
+      "l": "Median keystroke to paint"
+    }
+  ],
+  "gallery": {
+    "title": "Changelog",
+    "sub": "Shipped continuously. A selection from the last two release cycles.",
+    "items": [
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Insights",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1498050108023-c5249f4df085",
+        "tag": "API v3",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1517841905240-472988babdf9",
+        "tag": "Profiles",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Sync engine",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1519389950473-47ba0277781c",
+        "tag": "Teamspaces",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1618005182384-a83a8bd57fbe",
+        "tag": "Themes",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "We moved forty engineers across in an afternoon and deleted three spreadsheets, a status bot and a recurring Thursday meeting. Nobody has asked to go back.",
+    "name": "Priya Raman",
+    "role": "VP Engineering, Northwind",
+    "avatar": "photo-1534528741775-53994a69daeb"
+  },
+  "pricing": {
+    "title": "Pricing that stays out of the way",
+    "sub": "Free while you are small. Priced per active member, never per seat you forgot to remove.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "forever",
+        "desc": "For small teams getting organised.",
+        "features": [
+          "Up to 10 members",
+          "Unlimited issues",
+          "2 teamspaces",
+          "Community support"
+        ],
+        "cta": "Start free"
+      },
+      {
+        "name": "Standard",
+        "price": "$9",
+        "period": "/member/mo",
+        "desc": "For teams running real cycles.",
+        "features": [
+          "Unlimited members",
+          "Cycles and projects",
+          "Full API and webhooks",
+          "Priority support"
+        ],
+        "cta": "Start 14-day trial",
+        "featured": true,
+        "badge": "Most teams"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "desc": "For organisations with compliance needs.",
+        "features": [
+          "SAML and SCIM",
+          "Audit log export",
+          "Data residency",
+          "Dedicated support"
+        ],
+        "cta": "Talk to sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Common questions",
+    "items": [
+      {
+        "q": "How does the migration work?",
+        "a": "Import from Jira, Asana, GitHub Issues or a CSV. Identifiers, comments, attachments and status history are preserved, and a dry run shows exactly what will be created before anything is written."
+      },
+      {
+        "q": "Does it work offline?",
+        "a": "Yes. The workspace is held locally and reconciled when the connection returns, so reading and writing continue on a plane or a bad hotel network."
+      },
+      {
+        "q": "Can we self-host?",
+        "a": "Self-hosting is available on Enterprise. Most teams choose the managed service with data residency in their region instead."
+      },
+      {
+        "q": "What happens when a member leaves?",
+        "a": "Billing is based on members active in the period, so removing someone stops the charge on the next invoice with no seat reconciliation."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start your first cycle this week",
+    "sub": "Free for up to ten members. No card, no sales call, no implementation project.",
+    "btn1": "Create a workspace",
+    "btn2": "Compare plans"
+  },
+  "footer": {
+    "tagline": "A planning tool for teams that would rather be building than reporting.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Features",
+          "Integrations",
+          "Changelog",
+          "Download"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Documentation",
+          "API reference",
+          "Method",
+          "Status"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Blog",
+          "Contact"
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          "Privacy",
+          "Terms",
+          "Security",
+          "DPA"
+        ]
+      }
+    ],
+    "legal": "© 2026 Vector Software"
+  },
+  "specimen": "Ship it on Thursday",
+  "notes": [
+    "The canvas is the whitespace. Separate sections by lifting content onto surface-1 panels rather than by adding gaps.",
+    "Use the lavender accent on the brand mark, focus rings and one CTA per view. A second accent colour breaks the system.",
+    "Depth comes from the surface ladder plus a hairline border — resist drop shadows on the dark canvas.",
+    "Display tracking runs aggressively negative (about -4% of the size); the eyebrow deliberately runs positive to read as taxonomy.",
+    "Substitute Inter or Geist for the proprietary Linear cut, and JetBrains Mono for Linear Mono."
+  ]
+}

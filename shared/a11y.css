@@ -1,0 +1,58 @@
+/* ===========================================================================
+   a11y.css — appended AFTER the design layer so a design cannot undercut it.
+   Enforces the ui-ux-pro-max floor: 44px touch targets, visible focus.
+   ========================================================================= */
+
+@media (pointer: coarse), (max-width: 959px) {
+  /* every interactive element gets a finger-sized hit area */
+  .btn, .nav-act .btn, .tabs button, .theme, .lb-jump, .lb-back {
+    min-height: 44px;
+  }
+  /* NB: never list an element that a design hides at this width — forcing
+     display here would resurrect it (.nav-signin lives in the burger menu). */
+  .brand,
+  .nav-links a,
+  .fcol a,
+  .foot-legal a,
+  .logos-list a,
+  .btn-ghost,
+  .skip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  /* the nav row must be able to shrink rather than push past the viewport */
+  .nav-in { gap: 10px; }
+  .brand { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .nav-act { gap: 6px; flex: none; }
+  .nav-act .btn { padding-inline: 14px; }
+  .nav-burger { margin-right: -6px; flex: none; }
+
+  /* legibility floor: body copy never drops below 16px on a phone, even when
+     the source system documents a smaller UI scale */
+  body { font-size: max(16px, var(--fs-body)); }
+  .feat-body, .sc-body, .tier-desc, .faq-a, .lede { font-size: max(15px, var(--fs-body-sm)); }
+  .fcol li { margin-bottom: 2px; }
+  .foot-socials a { width: 44px; height: 44px; }
+  .sw { min-height: 60px; }
+  .faq-item summary { min-height: 56px; }
+}
+
+/* focus is never removed, only restyled — a design may recolour the ring,
+   it may not delete it */
+:where(a, button, summary, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--c-primary, currentColor);
+  outline-offset: 3px;
+}
+
+/* honour the OS motion preference regardless of what a design declares */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}

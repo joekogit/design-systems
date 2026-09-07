@@ -1,0 +1,49 @@
+/* Stripe — gradient mesh in the upper third, weight-300 display, indigo pills. */
+:root { --maxw: 1220px; --sect: clamp(60px, 8vw, 100px);
+  --shadow-1: 0 2px 5px rgba(50,50,93,.06), 0 1px 2px rgba(0,0,0,.04);
+  --shadow-2: 0 13px 27px -5px rgba(50,50,93,.16), 0 8px 16px -8px rgba(0,0,0,.20); }
+
+/* the mesh is the brand — one wash, upper third only */
+.hero::before {
+  content: ""; position: absolute; inset: -160px 0 auto 0; height: 720px; z-index: 0;
+  background:
+    radial-gradient(closest-side at 12% 32%, #fff1e0 0%, transparent 72%),
+    radial-gradient(closest-side at 34% 8%,  #ffd6c2 0%, transparent 70%),
+    radial-gradient(closest-side at 56% 40%, #c8b6ff 0%, transparent 72%),
+    radial-gradient(closest-side at 78% 12%, #7a73ff 0%, transparent 68%),
+    radial-gradient(closest-side at 96% 44%, #ff5c8a 0%, transparent 66%);
+  filter: blur(6px); opacity: .82;
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+}
+.hero > * { position: relative; z-index: 1; }
+.hero-title { font-weight: 300; }
+.hero-title em { color: var(--c-primary); font-weight: 300; }
+
+.btn { border-radius: var(--r-pill); padding: 10px 18px; font-weight: 500; }
+.btn-primary { box-shadow: var(--shadow-1); }
+.btn-secondary { background: #fff; color: var(--c-primary); border-color: rgba(0,0,0,.08); box-shadow: var(--shadow-1); }
+.btn-ghost { font-weight: 600; }
+
+.nav { --nav-bg: transparent; border-bottom: 0; }
+.nav-in { min-height: 68px; }
+.eyebrow { color: var(--c-primary); font-weight: 600; letter-spacing: .04em; }
+
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title, .metric-v, .tier-num { font-weight: 300; }
+.feat-title, .tier-name { font-weight: 600; }
+
+/* cream interlude — warms a long white stretch without a new hue */
+.features { background: #fbf7f4; }
+.feat-card { background: #fff; border-color: transparent; border-radius: var(--r-lg); }
+.feat-ico { border-radius: var(--r-pill); background: color-mix(in srgb, var(--c-primary) 12%, #fff); }
+
+/* money is always tabular */
+.metric-v, .tier-num, .hstat b, table.tbl td { font-variant-numeric: tabular-nums; }
+
+.hero-media img, .sc-media img { border-radius: var(--r-lg); box-shadow: var(--shadow-2); border: 0; }
+.metrics { --metrics-bg: #0a2540; border-block: 0; }
+.metrics .metric-v { color: #fff; }
+.metrics .metric-l, .metrics .logos-lead { color: #8fa4bd; }
+.tier-feat { border-width: 2px; }
+.cta-band { background: linear-gradient(120deg, #f6f9fc 0%, #eef2f7 100%); border-color: transparent; }
+.quote-card { box-shadow: var(--shadow-2); border-color: transparent; }
+.spec { --spec-bg: #f6f9fc; }

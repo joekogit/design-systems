@@ -1,0 +1,86 @@
+{
+  "slug": "nike", "name": "Nike", "category": "E-commerce & retail",
+  "look": "Monochrome chrome, massive uppercase display burned into full-bleed photography, pill CTAs, zero-radius product cards.",
+  "scheme": "light", "icon_weights": ["bold", "regular"],
+  "fonts": {
+    "display": "\"Jost\", \"Futura\", \"Trebuchet MS\", -apple-system, sans-serif",
+    "body": "\"Jost\", -apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Arial, sans-serif",
+    "mono": "ui-monospace, SFMono-Regular, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap"
+  },
+  "variants": { "nav": "minimal", "hero": "full-bleed", "features": "list", "cards": "flat", "gallery": "grid" },
+  "brand": { "mark": "ph-lightning-bold", "name": "KINETIC" },
+  "nav": { "links": [{"label":"New","href":"gallery"},{"label":"Men","href":"features"},{"label":"Women","href":"features"},{"label":"Kids","href":"features"},{"label":"Sale","href":"pricing"}], "cta": "Shop", "cta2": "Join us" },
+  "hero": {
+    "eyebrow": "Kinetic Vapour 04",
+    "title": "NOTHING<br>BEATS A<br><em>LONDONER</em>",
+    "sub": "The lightest plate we have ever moulded, under the most aggressive foam we have ever poured.",
+    "cta1": "Shop the drop", "cta2": "See the tech",
+    "image": "photo-1517649763962-0c623066013b", "ratio": 0.58,
+    "stats": [{"v":"178g","l":"Weight, UK9"},{"v":"4%","l":"Return on energy"},{"v":"8mm","l":"Heel-toe drop"}]
+  },
+  "logo_lead": "Worn at",
+  "logos": ["LONDON", "BERLIN", "TOKYO", "CHICAGO", "VALENCIA", "BOSTON"],
+  "features": {
+    "eyebrow": "The build",
+    "title": "ENGINEERED TO RETURN",
+    "sub": "Four years of prototypes, twelve thousand kilometres of testing, one plate.",
+    "items": [
+      {"icon":"ph-lightning-bold","title":"CARBON PLATE","body":"A full-length spoon-shaped plate that stiffens the toe-off and cuts the energy lost to ankle flex."},
+      {"icon":"ph-feather-bold","title":"178 GRAMS","body":"A supercritical foam midsole poured at a density we could not reach two seasons ago."},
+      {"icon":"ph-arrows-out-bold","title":"WIDER BASE","body":"A broader forefoot platform that holds the line through the last five kilometres."},
+      {"icon":"ph-drop-bold","title":"ENGINEERED MESH","body":"A single-layer upper with zoned venting and no overlays to hold water."},
+      {"icon":"ph-recycle-bold","title":"20% RECYCLED","body":"By weight, across the upper, the sockliner and the packaging."},
+      {"icon":"ph-timer-bold","title":"400KM RATED","body":"Foam that holds its rebound to four hundred kilometres, verified on the treadmill rig."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"The plate","title":"STIFFER WHERE IT COUNTS","body":"A spoon-shaped carbon plate runs the full length of the shoe, stiff through the forefoot and compliant at the heel, so the toe-off returns energy instead of absorbing it.","points":["Full-length spoon geometry","Tuned per size, not scaled","Independently lab verified"],"image":"photo-1542291026-7eec264c27ff","cta":"Read the lab notes","ratio":0.66},
+    {"eyebrow":"The foam","title":"POURED, NOT MOULDED","body":"A supercritical process foams the midsole under pressure, producing a finer, more uniform cell structure that rebounds harder and holds its shape for longer.","points":["87% energy return at the lab bench","Rebound held to 400km","Lighter at equal stack height"],"image":"photo-1571902943202-507ec2618e8f","cta":"Inside the process","ratio":0.66}
+  ],
+  "metric_lead": "Measured in the Kinetic Sport Research Lab",
+  "metrics": [{"v":"178g","l":"UK9 weight"},{"v":"87%","l":"Energy return"},{"v":"400km","l":"Rated foam life"},{"v":"20%","l":"Recycled by weight"}],
+  "gallery": {
+    "title": "THE CAMPAIGN",
+    "sub": "Shot across four cities over one winter.",
+    "items": [
+      {"id":"photo-1571019613454-1cb2f99b2d8b","tag":"Training","ratio":1.25},
+      {"id":"photo-1517649763962-0c623066013b","tag":"Race day","ratio":1.25},
+      {"id":"photo-1571902943202-507ec2618e8f","tag":"The gym","ratio":1.25},
+      {"id":"photo-1542291026-7eec264c27ff","tag":"Product","ratio":1.25},
+      {"id":"photo-1449824913935-59a10b8d2000","tag":"The city","ratio":1.25},
+      {"id":"photo-1469334031218-e382a71b716b","tag":"Off duty","ratio":1.25}
+    ]
+  },
+  "testimonial": {"quote":"I ran a personal best in them six days after they arrived. I have been running for nineteen years. That does not happen because of a shoe, except this time it did.","name":"Adaeze Nwosu","role":"Marathon, 2:31","avatar":"photo-1534528741775-53994a69daeb"},
+  "pricing": {
+    "title": "THE RANGE",
+    "sub": "Three builds on the same plate. Free returns within sixty days, worn or unworn.",
+    "tiers": [
+      {"name":"VAPOUR","price":"$140","period":"","desc":"The everyday trainer on the same platform.","features":["Standard foam midsole","Engineered mesh upper","400km rated","Six colourways"],"cta":"Add to bag"},
+      {"name":"VAPOUR PRO","price":"$220","period":"","desc":"The race shoe. Full carbon plate.","features":["Full-length carbon plate","Supercritical foam","178g at UK9","Three colourways"],"cta":"Add to bag","featured":true,"badge":"Race day"},
+      {"name":"VAPOUR ELITE","price":"$290","period":"","desc":"Team-issue spec, limited run.","features":["Team-issue plate tune","Lightest upper","Custom sizing","One colourway"],"cta":"Join the waitlist"}
+    ]
+  },
+  "faq": {"title":"NEED TO KNOW","items":[
+    {"q":"How do they fit?","a":"True to size for most runners, with a slightly wider forefoot than the previous generation. If you sized up half a size in the 03, order your true size in the 04."},
+    {"q":"Can I return them after running in them?","a":"Yes. Sixty days, worn or unworn, no questions. Take them out on a real run — that is the only way to know."},
+    {"q":"How long does the foam last?","a":"Rated to four hundred kilometres of rebound on the lab rig. Most runners report the shoe feels flat somewhere between 350 and 500km depending on surface and weight."},
+    {"q":"Are they legal for competition?","a":"Yes. Stack height and plate count are within World Athletics limits for road racing, and the model is on the approved list."}
+  ]},
+  "cta": {"title":"JUST GO","sub":"Free delivery over $50. Sixty-day returns, worn or unworn.","btn1":"Shop the drop","btn2":"Find a store"},
+  "footer": {"tagline":"Sport is not a category. It is the whole point.","columns":[
+    {"title":"Shop","links":["New arrivals","Running","Training","Sale"]},
+    {"title":"Help","links":["Order status","Delivery","Returns","Size guide"]},
+    {"title":"About","links":["News","Careers","Sustainability","Investors"]},
+    {"title":"Join","links":["Membership","Student discount","Gift cards","App"]}
+  ],"legal":"© 2026 Kinetic Athletic"},
+  "specimen": "JUST GO",
+  "notes": [
+    "Display type is uppercase at line-height 0.9 and burned directly into full-bleed photography. The photograph is the layout.",
+    "The palette is pure black, white and one soft grey across roughly 95% of the chrome. Colour arrives only through the imagery.",
+    "Every CTA, search field, filter chip and badge is a pill. There are no sharp-cornered interactive elements in the system.",
+    "Product cards have zero radius and zero shadow — they sit directly on a soft-grey swatch, because the photograph is the card.",
+    "Two-tone CTA hierarchy: black on light, soft-grey on bright. Never both on the same surface."
+  ]
+}

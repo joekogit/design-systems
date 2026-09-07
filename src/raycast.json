@@ -1,0 +1,334 @@
+{
+  "slug": "raycast",
+  "name": "Raycast",
+  "category": "Developer tools & IDEs",
+  "look": "Four-step dark surface ladder, a white pill as the only bright element, hairline borders and no shadows anywhere.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "body": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "centered",
+    "features": "bento",
+    "cards": "bordered",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-magic-wand-fill",
+    "name": "Beacon"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Extensions",
+        "href": "gallery"
+      },
+      {
+        "label": "Pro",
+        "href": "pricing"
+      },
+      {
+        "label": "Teams",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Changelog",
+        "href": "features"
+      },
+      {
+        "label": "Developers",
+        "href": "faq"
+      }
+    ],
+    "cta": "Download",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "Beacon 2.0 for macOS",
+    "title": "Your shortcut to <em>everything</em>",
+    "sub": "A launcher that replaces Spotlight, your clipboard history, your snippet manager and half the apps you open twice a day. One hotkey, everything behind it.",
+    "cta1": "Download for Mac",
+    "cta2": "Browse extensions",
+    "image": "photo-1555066931-4365d14bab8c",
+    "ratio": 0.58,
+    "stats": [
+      {
+        "v": "1,900+",
+        "l": "Extensions"
+      },
+      {
+        "v": "18ms",
+        "l": "Cold launch"
+      },
+      {
+        "v": "⌥ Space",
+        "l": "Default hotkey"
+      }
+    ]
+  },
+  "logo_lead": "Used at",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Basisplan",
+    "Tessera",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "The basics",
+    "title": "Everything behind one hotkey",
+    "sub": "Built for people who would rather type four characters than move a mouse across two monitors.",
+    "items": [
+      {
+        "icon": "ph-magnifying-glass",
+        "title": "Search everything",
+        "body": "Applications, files, browser tabs, calendar events and every command from every installed extension, ranked by what you actually pick."
+      },
+      {
+        "icon": "ph-clipboard-text",
+        "title": "Clipboard history",
+        "body": "Every copy, searchable, with images and formatting preserved."
+      },
+      {
+        "icon": "ph-brackets-curly",
+        "title": "Snippets",
+        "body": "Expand boilerplate anywhere, with placeholders and dynamic dates."
+      },
+      {
+        "icon": "ph-app-window",
+        "title": "Window management",
+        "body": "Halves, thirds and displays from the keyboard."
+      },
+      {
+        "icon": "ph-plugs",
+        "title": "Extensions",
+        "body": "Nineteen hundred of them, written in React, installed in one keystroke."
+      },
+      {
+        "icon": "ph-command",
+        "title": "Script commands",
+        "body": "Wrap any shell script as a first-class command with arguments, so the thing you already automated becomes something you can actually find at the moment you need it."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "Extensions",
+      "title": "Written in React, installed in a keystroke",
+      "body": "Extensions are React components with a typed API for lists, forms, details and actions. There is no manifest to hand-write and no packaging step — write the component, run the dev command, and it is in your launcher.",
+      "points": [
+        "Typed React API with hot reload",
+        "Publish to the store from the CLI",
+        "Local development against real data"
+      ],
+      "image": "photo-1498050108023-c5249f4df085",
+      "cta": "Read the API docs"
+    },
+    {
+      "eyebrow": "Teams",
+      "title": "A shared command set",
+      "body": "Publish internal extensions to a private store your team can install from. Runbooks, deploy commands and on-call lookups stop living in a wiki page nobody opens.",
+      "points": [
+        "Private store scoped to your organisation",
+        "Shared snippets and quicklinks",
+        "SSO and centralised billing"
+      ],
+      "image": "photo-1519389950473-47ba0277781c",
+      "cta": "See Beacon for Teams"
+    }
+  ],
+  "metric_lead": "Measured across the extension store this quarter",
+  "metrics": [
+    {
+      "v": "1,900+",
+      "l": "Extensions published"
+    },
+    {
+      "v": "18ms",
+      "l": "Median cold launch"
+    },
+    {
+      "v": "640k",
+      "l": "Commands run daily"
+    },
+    {
+      "v": "4.9/5",
+      "l": "Store rating"
+    }
+  ],
+  "gallery": {
+    "title": "Extension store",
+    "sub": "Nineteen hundred extensions, all open source, all installable from the launcher.",
+    "items": [
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Developer",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Productivity",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "Snippets",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "DevOps",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1487017159836-4e23ece2e4cf",
+        "tag": "Notes",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "System",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "I uninstalled four menu bar apps the week I switched. The one that surprised me was the clipboard history — I did not know how often I was digging back three copies until it stopped being work.",
+    "name": "Ivan Petrov",
+    "role": "Infrastructure, Corva",
+    "avatar": "photo-1633332755192-727a05c4013d"
+  },
+  "pricing": {
+    "title": "Free to use. Pro when you need more.",
+    "sub": "The launcher and every community extension are free, permanently.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "forever",
+        "desc": "The full launcher and the whole store.",
+        "features": [
+          "All core commands",
+          "1,900+ extensions",
+          "Clipboard history",
+          "Window management"
+        ],
+        "cta": "Download"
+      },
+      {
+        "name": "Pro",
+        "price": "$8",
+        "period": "/month",
+        "desc": "Adds cloud sync and the AI commands.",
+        "features": [
+          "Cloud sync across Macs",
+          "AI commands",
+          "Custom themes",
+          "Unlimited clipboard history"
+        ],
+        "cta": "Start free trial",
+        "featured": true,
+        "badge": "Most popular"
+      },
+      {
+        "name": "Teams",
+        "price": "$12",
+        "period": "/user/mo",
+        "desc": "A private store for your organisation.",
+        "features": [
+          "Everything in Pro",
+          "Private extension store",
+          "Shared snippets",
+          "SSO and central billing"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "Is it really free?",
+        "a": "The launcher and every community extension are free forever, with no command limits and no advertising. Pro adds cloud sync, AI commands and themes for people who want them."
+      },
+      {
+        "q": "Does it work offline?",
+        "a": "Everything except the AI commands and cloud sync runs entirely locally. Search indexes live on your machine and no query leaves it."
+      },
+      {
+        "q": "Can I write my own extensions?",
+        "a": "Yes. Extensions are React components against a typed API. `beacon dev` gives hot reload against real data, and publishing is a single CLI command."
+      },
+      {
+        "q": "What about Windows and Linux?",
+        "a": "A Windows build is in beta. Linux is not currently on the roadmap, mostly because the window management layer would need rewriting per desktop environment."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Press the hotkey",
+    "sub": "Free for macOS 13 and later. About nine megabytes, and no account needed to start.",
+    "btn1": "Download for Mac",
+    "btn2": "See what's new"
+  },
+  "footer": {
+    "tagline": "A launcher for people who would rather type than click.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Extensions",
+          "Pro",
+          "Teams",
+          "Changelog"
+        ]
+      },
+      {
+        "title": "Developers",
+        "links": [
+          "API reference",
+          "Getting started",
+          "Examples",
+          "CLI"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Blog",
+          "Community",
+          "Support",
+          "Status"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Press",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Beacon Labs"
+  },
+  "specimen": "Press the hotkey",
+  "notes": [
+    "A four-step surface ladder does all the hierarchy: canvas → surface → elevated → card. There are no drop shadows anywhere in this system.",
+    "The white pill is the universal primary action. Everything else in the chrome is monochrome dark.",
+    "Hairline 1px borders carry every card edge — if an element needs to separate, it gets a border, not a shadow.",
+    "The radius vocabulary is deliberately multi-step: 6px keycaps, 8px buttons, 10px feature cards, 16px for the hero mockup container.",
+    "Saturated category accents belong inside extension tile imagery only, never on chrome. Putting one on a button breaks the system."
+  ]
+}

@@ -1,0 +1,88 @@
+/* ===========================================================================
+   Linear — character layer.
+   Depth is carried by the surface ladder + hairline borders. No drop shadows,
+   no atmospheric gradients, no second accent.
+   ========================================================================= */
+
+:root {
+  --maxw: 1280px;
+  --gut: 24px;
+  --sect: clamp(64px, 9vw, 96px);
+  --nav-bg: rgba(1, 1, 2, .78);
+  --shadow-1: none;
+  --shadow-2: none;
+}
+
+.nav { backdrop-filter: blur(12px); }
+.nav-in { min-height: 56px; }
+.brand { font-size: 16px; letter-spacing: -.02em; }
+.brand-ico { font-size: 15px; }
+.nav-links a { font-weight: 500; }
+
+/* the eyebrow is taxonomy, not decoration — subtle, not lavender */
+.eyebrow { color: var(--c-ink-subtle); text-transform: none; }
+.hero .eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 5px 12px 5px 6px; margin-bottom: var(--s-lg);
+  border: 1px solid var(--c-hairline); border-radius: var(--r-pill);
+  background: var(--c-surface); color: var(--c-ink-muted);
+}
+.hero .eyebrow::before {
+  content: "New"; padding: 2px 8px; border-radius: var(--r-pill);
+  background: var(--c-primary); color: var(--c-on-primary);
+  font-size: 11px; font-weight: 600;
+}
+
+/* faint top-edge highlight on lifted panels — Linear's "pixel rendered" feel */
+.feat-card, .tier, .quote-card, .hero-media img, .sc-media img, .cta-band {
+  position: relative;
+}
+.feat-card::before, .tier::before, .cta-band::before {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.09) 30%, rgba(255,255,255,.09) 70%, transparent);
+  border-radius: inherit; pointer-events: none;
+}
+
+.btn-primary { font-weight: 500; }
+.btn-secondary { background: var(--c-surface-2); }
+.btn { padding: 10px 16px; min-height: 40px; }
+.hero-cta .btn { min-height: 44px; padding: 12px 20px; }
+
+.hero-media img { border-radius: var(--r-xl); }
+.hero-stats { border-top-color: var(--c-hairline); }
+
+.logos { border-block-color: var(--c-hairline); }
+.logo-item { font-size: clamp(14px, 2vw, 17px); font-weight: 600; letter-spacing: -.01em; color: var(--c-ink-tertiary, var(--c-ink-subtle)); }
+
+.feat-ico {
+  width: 36px; height: 36px; font-size: 18px; border-radius: var(--r-md);
+  background: var(--c-surface-2); color: var(--c-ink-muted);
+  border: 1px solid var(--c-hairline);
+}
+.feat-card:hover .feat-ico { color: var(--c-primary); }
+
+.sc-media img { border-radius: var(--r-xl); }
+.metrics { --metrics-bg: var(--c-canvas); }
+.metric-v { color: var(--c-ink); }
+
+.g-item { border: 1px solid var(--c-hairline); border-radius: var(--r-lg); }
+.g-item figcaption {
+  background: rgba(15,16,17,.86); border: 1px solid var(--c-hairline);
+  font-family: var(--font-mono); font-size: 11px;
+}
+
+.quote-card { --quote-align: left; --quote-by-just: flex-start; border-radius: var(--r-lg); }
+.quote-mark { color: var(--c-ink-tertiary, var(--c-ink-subtle)); }
+
+.tier-feat { background: var(--c-surface-2); border-color: var(--c-hairline-strong); }
+.tier-badge { background: var(--c-primary); }
+
+.cta-band { --cta-align: left; --cta-just: flex-start; border-radius: var(--r-xl); background: var(--c-surface); }
+
+.spec { --spec-bg: var(--c-canvas); }
+.foot { --foot-bg: var(--c-canvas); }
+
+@media (min-width: 960px) {
+  .cta-band { display: grid; grid-template-columns: 1.4fr auto; align-items: center; gap: var(--s-xl); }
+  .cta-btns { margin-top: 0; }
+}

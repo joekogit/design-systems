@@ -1,0 +1,72 @@
+/* Starbucks — warm cream, four greens by role, pills everywhere, gold for ceremony only. */
+:root { --maxw: 1200px; --sect: clamp(48px, 6vw, 76px);
+  --green-brand: #006241; --green-accent: #00754a; --green-house: #1e3932;
+  --green-uplift: #2b5148; --green-light: #d4e9e2;
+  --gold: #cba258; --gold-lightest: #faf6ee; --ceramic: #edebe9;
+  --shadow-1: 0 1px 2px rgba(0,0,0,.05), 0 4px 14px rgba(0,0,0,.05);
+  --shadow-2: 0 2px 6px rgba(0,0,0,.07), 0 10px 28px rgba(0,0,0,.09); }
+
+.nav { --nav-bg: rgba(255,255,255,.94); backdrop-filter: blur(10px); }
+.brand { font-weight: 700; color: var(--green-brand); }
+.brand-ico { color: var(--green-brand); }
+.nav-links a { font-weight: 600; }
+
+/* pills everywhere, with the signature press */
+.btn { border-radius: 50px; font-weight: 600; padding: 12px 24px; }
+.btn:active { transform: scale(.95); }
+.btn-primary { background: var(--green-accent); }
+.btn-primary:hover { background: var(--green-brand); }
+.btn-secondary { background: transparent; color: var(--green-brand); border-color: var(--green-brand); }
+.btn-secondary:hover { background: var(--green-light); border-color: var(--green-brand); }
+@media (prefers-reduced-motion: reduce) { .btn:active { transform: none; } }
+
+/* headings take the historic brand green */
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title, .tier-name, .feat-title { color: var(--green-brand); }
+.hero-title em { color: var(--green-accent); }
+.eyebrow { color: var(--green-accent); letter-spacing: .06em; }
+
+.logos { border-block-color: var(--c-hairline); background: var(--ceramic); }
+.logo-item { color: var(--green-house); letter-spacing: .14em; font-size: 12px; font-weight: 600; }
+
+.feat-card { border-radius: 12px; border-color: transparent; box-shadow: var(--shadow-1); background: #fff; }
+.feat-card:hover { box-shadow: var(--shadow-2); transform: translateY(-2px); background: #fff; }
+.feat-ico { border-radius: 50%; background: var(--green-light); color: var(--green-brand); border: 0;
+  width: 48px; height: 48px; font-size: 22px; }
+.hero-media img, .sc-media img { border-radius: 12px; border: 0; box-shadow: var(--shadow-1); }
+
+/* House Green carries the dark bands */
+.metrics { --metrics-bg: var(--green-house); border-block: 0; }
+.metrics .metric-v { color: #fff; }
+.metrics .metric-l, .metrics .logos-lead { color: rgba(255,255,255,.7); }
+.g-item { border-radius: 12px; box-shadow: var(--shadow-1); }
+.g-item figcaption { background: rgba(30,57,50,.86); border-radius: 50px; }
+
+.quote-card { background: var(--green-light); border: 0; border-radius: 16px; }
+.quote-mark { color: var(--green-accent); }
+.q-av { border-radius: 50%; }
+
+/* gold is Rewards ceremony only — the featured tier is the one place it appears */
+.pricing { background: var(--gold-lightest); }
+.tier { background: #fff; border-radius: 12px; border-color: transparent; box-shadow: var(--shadow-1); }
+.tier-feat { border: 2px solid var(--gold); }
+.tier-badge { background: var(--gold); color: #3a2c10; border-radius: 50px; }
+.tier-feats i { color: var(--green-accent); }
+.sc-points i { color: var(--green-accent); }
+.faq-mk { color: var(--green-accent); }
+
+.cta-band { background: var(--green-house); color: #fff; border: 0; border-radius: 24px; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: rgba(255,255,255,.75); }
+.cta-band .btn-secondary { color: #fff; border-color: rgba(255,255,255,.6); background: transparent; }
+.cta-band .btn-secondary:hover { background: rgba(255,255,255,.12); }
+
+.foot { background: var(--green-house); color: #fff; --foot-bg: var(--green-house); border-top: 0; }
+.foot .brand, .foot .brand-ico { color: #fff; }
+.fcol h4 { color: rgba(255,255,255,.62); }
+.fcol a, .foot-tag { color: rgba(255,255,255,.86); }
+.fcol a:hover { color: #fff; }
+.foot-legal { color: rgba(255,255,255,.6); border-top-color: rgba(255,255,255,.18); }
+.foot-socials a { border-color: rgba(255,255,255,.28); color: rgba(255,255,255,.86); border-radius: 50%; }
+.spec { --spec-bg: var(--ceramic); }
+.input { border-radius: 50px; }
+.badge2, .tabs, .tabs button { border-radius: 50px; }

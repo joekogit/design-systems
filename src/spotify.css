@@ -1,0 +1,66 @@
+/* Spotify — content-first darkness. Pill and circle geometry, functional green. */
+:root { --maxw: 1240px; --sect: clamp(56px, 8vw, 88px);
+  --shadow-1: rgba(0,0,0,.3) 0 8px 8px; --shadow-2: rgba(0,0,0,.5) 0 8px 24px; }
+
+.btn { border-radius: var(--r-pill); text-transform: uppercase; font-weight: 700;
+  letter-spacing: .1em; padding: 14px 30px; font-size: 13px; }
+.btn-primary { color: #000; }
+.btn-primary:hover { transform: scale(1.04); }
+.btn-secondary { background: transparent; color: #fff; border-color: #7c7c7c; }
+.btn-secondary:hover { background: transparent; border-color: #fff; transform: scale(1.04); }
+.btn-ghost { text-transform: none; letter-spacing: 0; padding-inline: 0; }
+.nav-act .btn { padding: 10px 22px; }
+@media (prefers-reduced-motion: reduce) { .btn-primary:hover, .btn-secondary:hover { transform: none; } }
+
+.nav { --nav-bg: rgba(18,18,18,.92); backdrop-filter: blur(14px); border-bottom-color: transparent; }
+.brand { font-weight: 800; letter-spacing: -.02em; }
+.nav-links a { font-weight: 700; font-size: 14px; }
+.eyebrow { color: var(--c-ink-subtle); }
+.hero-title { font-weight: 900; }
+.hero-title em { color: var(--c-primary); }
+
+/* a circular play control — the brand's most recognisable shape */
+.hero-media { position: relative; }
+.hero-media::after {
+  content: ""; position: absolute; right: 22px; bottom: 22px;
+  width: 62px; height: 62px; border-radius: 50%;
+  background: var(--c-primary); box-shadow: var(--shadow-2); transition: transform .2s ease;
+  /* play triangle drawn in CSS — no dependency on an icon-font codepoint */
+  background-image: linear-gradient(transparent, transparent);
+  clip-path: none;
+}
+.hero-media::before {
+  content: ""; position: absolute; right: 42px; bottom: 41px; z-index: 2;
+  width: 0; height: 0; border-style: solid; border-width: 11px 0 11px 18px;
+  border-color: transparent transparent transparent #000; transition: transform .2s ease;
+  transform-origin: -20px 0;
+}
+.hero-media:hover::after, .hero-media:hover::before { transform: scale(1.06); }
+.hero-media img { border-radius: var(--r-xl); border: 0; }
+
+.feat-card { background: var(--c-surface); border: 0; border-radius: var(--r-xl); box-shadow: none; }
+.feat-card:hover { background: var(--c-surface-3); box-shadow: var(--shadow-2); }
+.feat-ico { border-radius: 50%; background: var(--c-primary); color: #000; border: 0; width: 48px; height: 48px; font-size: 22px; }
+
+.logos { border-block-color: #2a2a2a; }
+.logo-item { font-weight: 700; color: var(--c-ink-subtle); }
+.metrics { --metrics-bg: var(--c-surface); border-block: 0; }
+.metric-v { color: var(--c-primary); }
+
+.g-item { border-radius: var(--r-xl); }
+.g-item figcaption { background: rgba(0,0,0,.78); text-transform: uppercase; letter-spacing: .1em; font-weight: 700; font-size: 10px; }
+
+.quote-card { background: var(--c-surface); border: 0; border-radius: var(--r-xxl); box-shadow: var(--shadow-2); }
+.q-av { border-radius: 50%; }
+.tier { background: var(--c-surface); border: 0; border-radius: var(--r-xl); }
+.tier-feat { background: linear-gradient(150deg, #1ed760 0%, #0f8f42 100%); color: #000; }
+.tier-feat .tier-desc, .tier-feat .tier-feats li, .tier-feat .tier-per { color: rgba(0,0,0,.72); }
+.tier-feat .tier-feats i { color: #000; }
+.tier-feat .btn-primary { background: #000; color: #fff; }
+.tier-badge { background: #000; color: #fff; }
+.cta-band { background: linear-gradient(150deg, #1ed760 0%, #0f8f42 100%); border: 0; color: #000; border-radius: var(--r-xxl); }
+.cta-band .lede { color: rgba(0,0,0,.75); }
+.cta-band .btn-primary { background: #000; color: #fff; }
+.cta-band .btn-secondary { border-color: rgba(0,0,0,.45); color: #000; }
+.input { border-radius: var(--r-pill); }
+.spec { --spec-bg: var(--c-surface); }

@@ -1,0 +1,333 @@
+{
+  "slug": "tesla",
+  "name": "Tesla",
+  "category": "Automotive",
+  "look": "Radical subtraction — full-viewport photography, no shadows or borders anywhere, one blue reserved for the primary action.",
+  "scheme": "light",
+  "icon_weights": [
+    "thin",
+    "regular"
+  ],
+  "fonts": {
+    "google": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+  },
+  "variants": {
+    "nav": "minimal",
+    "hero": "full-bleed",
+    "features": "list",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-lightning",
+    "name": "LUMEN"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Model S",
+        "href": "features"
+      },
+      {
+        "label": "Model E",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Energy",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Charging",
+        "href": "gallery"
+      },
+      {
+        "label": "Discover",
+        "href": "faq"
+      }
+    ],
+    "cta": "Order Now",
+    "cta2": "Account"
+  },
+  "hero": {
+    "eyebrow": "",
+    "title": "Lumen S",
+    "sub": "643km of range. Order online for delivery in six weeks.",
+    "cta1": "Order Now",
+    "cta2": "Demo Drive",
+    "image": "photo-1552519507-da3b142c6e3d",
+    "ratio": 0.56,
+    "stats": [
+      {
+        "v": "643km",
+        "l": "Range (est.)"
+      },
+      {
+        "v": "2.1s",
+        "l": "0–100 km/h"
+      },
+      {
+        "v": "322km/h",
+        "l": "Top speed"
+      }
+    ]
+  },
+  "logo_lead": "Safety ratings",
+  "logos": [
+    "EURO NCAP",
+    "NHTSA",
+    "IIHS",
+    "ANCAP",
+    "C-NCAP",
+    "LATIN NCAP"
+  ],
+  "features": {
+    "eyebrow": "",
+    "title": "Designed for range",
+    "sub": "Every decision in the car was made to move a kilometre further on the same energy.",
+    "items": [
+      {
+        "icon": "ph-battery-full",
+        "title": "643km of range",
+        "body": "A structural pack with larger cells carries more energy in less mass, because the pack is part of the body rather than bolted beneath it."
+      },
+      {
+        "icon": "ph-lightning",
+        "title": "Charge in 15 minutes",
+        "body": "Up to 275km of range added in a quarter of an hour at a Lumen charger, with the route planner preconditioning the pack on approach."
+      },
+      {
+        "icon": "ph-wind",
+        "title": "0.208 drag coefficient",
+        "body": "Flush handles, a sealed underbody and active cooling shutters. Aerodynamics buy more range than a bigger battery would."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "Five-star rated",
+        "body": "The lowest rollover risk recorded for a production saloon, and a front crumple zone with no engine in it."
+      },
+      {
+        "icon": "ph-broadcast",
+        "title": "Updates overnight",
+        "body": "The car improves while it is parked. Range, ride and driver assistance have all been revised since delivery."
+      },
+      {
+        "icon": "ph-armchair",
+        "title": "Room for five",
+        "body": "A flat floor, no transmission tunnel, and 793 litres of storage across two compartments."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "",
+      "title": "The pack is the floor",
+      "body": "Cells are bonded into a structural pack that forms the floor of the car. It is stiffer than a conventional body, lighter than a pack plus a floor, and it puts the mass under the axle line where it belongs.",
+      "points": [
+        "4,680 cells bonded structurally",
+        "Torsional stiffness up 22 percent",
+        "Centre of gravity 89mm lower"
+      ],
+      "image": "photo-1493238792000-8113da705763",
+      "cta": "Read about the platform",
+      "ratio": 0.6
+    },
+    {
+      "eyebrow": "",
+      "title": "Charging that plans itself",
+      "body": "Enter a destination and the car routes through chargers, preconditions the pack before each stop, and tells you how long to stay. You do not think about charging; you think about arriving.",
+      "points": [
+        "68,000 chargers worldwide",
+        "Automatic route and stop planning",
+        "Billing handled in the car"
+      ],
+      "image": "photo-1503376780353-7e6692767b70",
+      "cta": "Find charging",
+      "ratio": 0.6
+    }
+  ],
+  "metric_lead": "",
+  "metrics": [
+    {
+      "v": "643km",
+      "l": "Range"
+    },
+    {
+      "v": "2.1s",
+      "l": "0–100 km/h"
+    },
+    {
+      "v": "0.208",
+      "l": "Drag coefficient"
+    },
+    {
+      "v": "68,000",
+      "l": "Chargers worldwide"
+    }
+  ],
+  "gallery": {
+    "title": "Gallery",
+    "sub": "",
+    "items": [
+      {
+        "id": "photo-1552519507-da3b142c6e3d",
+        "tag": "Exterior",
+        "ratio": 0.66
+      },
+      {
+        "id": "photo-1503376780353-7e6692767b70",
+        "tag": "Rear",
+        "ratio": 0.66
+      },
+      {
+        "id": "photo-1493238792000-8113da705763",
+        "tag": "Night",
+        "ratio": 0.66
+      },
+      {
+        "id": "photo-1492144534655-ae79c964c9d7",
+        "tag": "Studio",
+        "ratio": 0.66
+      },
+      {
+        "id": "photo-1553440569-bcc63803a83d",
+        "tag": "Touring",
+        "ratio": 0.66
+      },
+      {
+        "id": "photo-1449824913935-59a10b8d2000",
+        "tag": "City",
+        "ratio": 0.66
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "I have not been to a petrol station in four years. That is the part nobody mentions in the reviews, and it is the part that actually changed my week.",
+    "name": "Anders Holm",
+    "role": "Owner since 2022",
+    "avatar": "photo-1573496359142-b8d87734a5a2"
+  },
+  "pricing": {
+    "title": "Order online",
+    "sub": "No dealership, no negotiation. The price is the price.",
+    "tiers": [
+      {
+        "name": "Long Range",
+        "price": "€79,990",
+        "period": "",
+        "desc": "Dual motor, all-wheel drive.",
+        "features": [
+          "643km range",
+          "3.6s to 100 km/h",
+          "Dual motor AWD",
+          "19-inch wheels"
+        ],
+        "cta": "Order Now"
+      },
+      {
+        "name": "Performance",
+        "price": "€94,990",
+        "period": "",
+        "desc": "Tri motor, adaptive suspension.",
+        "features": [
+          "598km range",
+          "2.1s to 100 km/h",
+          "Tri motor AWD",
+          "Carbon-ceramic brakes"
+        ],
+        "cta": "Order Now",
+        "featured": true,
+        "badge": "Most ordered"
+      },
+      {
+        "name": "Plaid",
+        "price": "€119,990",
+        "period": "",
+        "desc": "The full performance package.",
+        "features": [
+          "Everything in Performance",
+          "322km/h top speed",
+          "Track mode",
+          "21-inch forged wheels"
+        ],
+        "cta": "Order Now"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Ordering",
+    "items": [
+      {
+        "q": "How long is delivery?",
+        "a": "Six weeks for Long Range and Performance from a European build slot. Plaid is currently ten to twelve weeks. The estimate updates on your order page as the slot is confirmed."
+      },
+      {
+        "q": "Can I trade in my current car?",
+        "a": "Yes, online. Answer six questions, receive a firm offer within a day, and the value is deducted from the balance due at delivery."
+      },
+      {
+        "q": "What is the warranty?",
+        "a": "Four years or 80,000km on the vehicle, and eight years or 240,000km on the battery and drive unit with a minimum 70 percent capacity retention."
+      },
+      {
+        "q": "Do I need a home charger?",
+        "a": "No, but most owners install one. A standard socket adds about 15km per hour of charging; a wall connector adds about 70km per hour."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Order Lumen S",
+    "sub": "Delivery in six weeks. Order online in about four minutes.",
+    "btn1": "Order Now",
+    "btn2": "Demo Drive"
+  },
+  "footer": {
+    "tagline": "",
+    "columns": [
+      {
+        "title": "Vehicles",
+        "links": [
+          "Model S",
+          "Model E",
+          "Model X",
+          "Pre-owned"
+        ]
+      },
+      {
+        "title": "Energy",
+        "links": [
+          "Solar roof",
+          "Powerwall",
+          "Commercial",
+          "Utilities"
+        ]
+      },
+      {
+        "title": "Charging",
+        "links": [
+          "Charging network",
+          "Home charging",
+          "Trip planner",
+          "Find a charger"
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          "Service",
+          "Roadside",
+          "Warranty",
+          "Contact"
+        ]
+      }
+    ],
+    "legal": "© 2026 Lumen Motors"
+  },
+  "specimen": "Lumen S",
+  "notes": [
+    "Full-viewport photography carries the page. Sections stack as edge-to-edge image bands with the UI floating on top.",
+    "There are no shadows, gradients, borders or patterns anywhere. If an element needs separating, use space or a change of image.",
+    "One blue, used exclusively for the primary action. Secondary buttons are translucent white or grey — never a second hue.",
+    "The nav floats over the hero with no background, border or shadow, trusting the photography to provide contrast.",
+    "Button labels are uppercase with light tracking, and the radius stays at 4px throughout — soft, but never a pill."
+  ]
+}

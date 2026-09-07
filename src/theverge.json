@@ -1,0 +1,403 @@
+{
+  "slug": "theverge",
+  "name": "The Verge",
+  "category": "Media & consumer tech",
+  "look": "Near-black editorial canvas with acid-mint and ultraviolet as hazard tape, brutally heavy display type, saturated colour-block story tiles.",
+  "scheme": "dark",
+  "icon_weights": [
+    "bold",
+    "fill"
+  ],
+  "fonts": {
+    "google": "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "chrome",
+    "hero": "split",
+    "features": "list",
+    "cards": "flat",
+    "gallery": "masonry"
+  },
+  "brand": {
+    "mark": "ph-lightning-fill",
+    "name": "VOLTAGE"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Tech",
+        "href": "features"
+      },
+      {
+        "label": "Reviews",
+        "href": "gallery"
+      },
+      {
+        "label": "Science",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Policy",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Podcasts",
+        "href": "faq"
+      }
+    ],
+    "cta": "Subscribe",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "09:42 · STORYSTREAM",
+    "title": "THE SYNTH THAT ATE THE INTERNET",
+    "sub": "A €400 box from a four-person workshop in Ghent has a fourteen-month waiting list, and the people running it are not sure they want the orders.",
+    "cta1": "Read the review",
+    "cta2": "All reviews",
+    "image": "photo-1550745165-9bc0b252726f",
+    "ratio": 0.66,
+    "stats": [
+      {
+        "v": "9.1",
+        "l": "Verge score"
+      },
+      {
+        "v": "14 mo",
+        "l": "Waiting list"
+      },
+      {
+        "v": "€400",
+        "l": "Price"
+      }
+    ]
+  },
+  "logo_lead": "Reporting from",
+  "logos": [
+    "NEW YORK",
+    "LONDON",
+    "TOKYO",
+    "BERLIN",
+    "SEOUL",
+    "SAN FRANCISCO"
+  ],
+  "features": {
+    "eyebrow": "STORYSTREAM",
+    "title": "TODAY ON VOLTAGE",
+    "sub": "Everything we published in the last twelve hours, newest first.",
+    "items": [
+      {
+        "icon": "ph-cpu-fill",
+        "title": "The chip nobody can buy",
+        "body": "Allocation for the new accelerator was spoken for eighteen months before tape-out. We asked eleven buyers how that happened."
+      },
+      {
+        "icon": "ph-gavel-fill",
+        "title": "The hearing, annotated",
+        "body": "Four hours of testimony, condensed to the nine minutes where somebody said something new."
+      },
+      {
+        "icon": "ph-rocket-launch-fill",
+        "title": "Launch delayed again",
+        "body": "The third slip this year, and the first one where the company gave an actual reason."
+      },
+      {
+        "icon": "ph-headphones-fill",
+        "title": "Reviewed: the €400 synth",
+        "body": "It has one knob too few and we do not care. Nine point one."
+      },
+      {
+        "icon": "ph-broadcast-fill",
+        "title": "The cable landing fight",
+        "body": "A town of 4,000 people is deciding where a third of a continent's bandwidth comes ashore."
+      },
+      {
+        "icon": "ph-robot-fill",
+        "title": "What the demo left out",
+        "body": "We ran the same prompts on stage hardware. Here is where the numbers diverge from the keynote."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "SCIENCE",
+      "title": "THE CABLE LANDING FIGHT",
+      "body": "A fishing town of four thousand people on the Irish coast is deciding where a third of a continent's internet traffic comes ashore. The hearings have been running for nine months, and almost nobody outside the town has been watching.",
+      "points": [
+        "Nine months of hearings, attended in person",
+        "Interviews with eleven residents and four operators",
+        "Route maps obtained under freedom of information"
+      ],
+      "image": "photo-1558494949-ef010cbdcc31",
+      "cta": "READ THE FEATURE"
+    },
+    {
+      "eyebrow": "POLICY",
+      "title": "WHAT THE DEMO LEFT OUT",
+      "body": "We ran the keynote prompts on the same hardware configuration, in the same order, and recorded the wall-clock time for each. Three of the eight results do not reproduce, and one is off by a factor of four.",
+      "points": [
+        "Same hardware, same prompts, same order",
+        "Full methodology and raw timings published",
+        "Vendor given seventy-two hours to respond"
+      ],
+      "image": "photo-1526374965328-7f61d4dc18c5",
+      "cta": "SEE THE NUMBERS"
+    }
+  ],
+  "metric_lead": "VOLTAGE, THIS MONTH",
+  "metrics": [
+    {
+      "v": "412",
+      "l": "Stories published"
+    },
+    {
+      "v": "38",
+      "l": "Reviews scored"
+    },
+    {
+      "v": "11",
+      "l": "Bureaus"
+    },
+    {
+      "v": "0",
+      "l": "Sponsored posts"
+    }
+  ],
+  "gallery": {
+    "title": "REVIEWS",
+    "sub": "Everything we scored this quarter, with the full testing notes attached.",
+    "items": [
+      {
+        "id": "photo-1505740420928-5e560c06d30e",
+        "tag": "AUDIO · 9.1",
+        "ratio": 1.0
+      },
+      {
+        "id": "photo-1523275335684-37898b6baf30",
+        "tag": "WEARABLES · 7.4",
+        "ratio": 1.25
+      },
+      {
+        "id": "photo-1526170375885-4d8ecf77b99f",
+        "tag": "CAMERAS · 8.8",
+        "ratio": 0.85
+      },
+      {
+        "id": "photo-1550745165-9bc0b252726f",
+        "tag": "RETRO · 9.4",
+        "ratio": 1.1
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "SILICON · 8.0",
+        "ratio": 0.9
+      },
+      {
+        "id": "photo-1502920917128-1aa500764cbd",
+        "tag": "CAMERAS · 8.2",
+        "ratio": 1.2
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "They gave a €400 synthesizer from a four-person workshop the same eleven hundred words they would give a flagship phone, and scored it higher. That is the whole editorial position, right there.",
+    "name": "Devon Marsh",
+    "role": "Reader since 2011",
+    "avatar": "photo-1500648767791-00dcc994a43e"
+  },
+  "pricing": {
+    "title": "SUBSCRIBE",
+    "sub": "Ad-light reading, the full archive, and no sponsored posts. Ever.",
+    "tiers": [
+      {
+        "name": "FREE",
+        "price": "$0",
+        "period": "",
+        "desc": "Everything we publish, with advertising.",
+        "features": [
+          "All articles",
+          "Newsletters",
+          "Podcasts",
+          "Comments"
+        ],
+        "cta": "KEEP READING"
+      },
+      {
+        "name": "MEMBER",
+        "price": "$7",
+        "period": "/month",
+        "desc": "Ad-light, plus the archive and members' threads.",
+        "features": [
+          "Ad-light reading",
+          "Full archive since 2011",
+          "Members' comment threads",
+          "Early podcast drops"
+        ],
+        "cta": "BECOME A MEMBER",
+        "featured": true,
+        "badge": "BEST VALUE"
+      },
+      {
+        "name": "FOUNDING",
+        "price": "$120",
+        "period": "/year",
+        "desc": "Everything, plus the annual print edition.",
+        "features": [
+          "Everything in Member",
+          "Annual print edition",
+          "Live event access",
+          "Founding member badge"
+        ],
+        "cta": "GO FOUNDING"
+      }
+    ]
+  },
+  "faq": {
+    "title": "ABOUT VOLTAGE",
+    "items": [
+      {
+        "q": "How do you score reviews?",
+        "a": "Out of ten, in tenths, against the category rather than against the price. A cheap product does not get graded on a curve, and an expensive one does not get credit for costing more."
+      },
+      {
+        "q": "Do you take review units?",
+        "a": "Yes, and we return them. Loaned hardware is disclosed at the top of every review, and no company sees a score or a draft before publication."
+      },
+      {
+        "q": "Do you run sponsored posts?",
+        "a": "No. Advertising appears as advertising, clearly marked and separated from editorial, and no advertiser has ever been given a say in coverage."
+      },
+      {
+        "q": "Can I read without subscribing?",
+        "a": "Yes. Everything we publish is free to read with advertising. Membership removes most of the advertising and opens the archive."
+      }
+    ]
+  },
+  "cta": {
+    "title": "READ EVERYTHING",
+    "sub": "Seven dollars a month. Cancel in two clicks from the account page.",
+    "btn1": "BECOME A MEMBER",
+    "btn2": "SEE ALL PLANS"
+  },
+  "footer": {
+    "tagline": "Technology, science and the culture around them, covered loudly.",
+    "columns": [
+      {
+        "title": "SECTIONS",
+        "links": [
+          "Tech",
+          "Reviews",
+          "Science",
+          "Policy"
+        ]
+      },
+      {
+        "title": "MORE",
+        "links": [
+          "Podcasts",
+          "Newsletters",
+          "Video",
+          "Live"
+        ]
+      },
+      {
+        "title": "MEMBERSHIP",
+        "links": [
+          "Subscribe",
+          "Gift",
+          "Redeem",
+          "Manage"
+        ]
+      },
+      {
+        "title": "ABOUT",
+        "links": [
+          "Masthead",
+          "Ethics",
+          "Contact",
+          "Careers"
+        ]
+      }
+    ],
+    "legal": "© 2026 Voltage Media"
+  },
+  "specimen": "READ EVERYTHING",
+  "palette": [
+    {
+      "name": "Jelly Mint",
+      "value": "#3cffd0",
+      "note": "Signature acid-mint accent — CTA fill, link underlines, active tab borders, high-attention tiles"
+    },
+    {
+      "name": "Verge Ultraviolet",
+      "value": "#5200ff",
+      "note": "The complementary brand hazard — secondary colour-block tiles and outlined buttons"
+    },
+    {
+      "name": "Console Mint Border",
+      "value": "#309875",
+      "note": "Darker mint for card outlines and button borders where pure mint over-saturates"
+    },
+    {
+      "name": "Deep Link Blue",
+      "value": "#3860be",
+      "note": "The link hover colour — the one moment blue appears on the site"
+    },
+    {
+      "name": "Focus Cyan",
+      "value": "#1eaedb",
+      "note": "Button focus rings. Never shown outside a keyboard-focus state"
+    },
+    {
+      "name": "Purple Rule",
+      "value": "#3d00bf",
+      "note": "Darker ultraviolet used as the vertical border on StoryStream items"
+    },
+    {
+      "name": "Canvas Black",
+      "value": "#131313",
+      "note": "The default dark surface — warm enough to read as a newsprint negative, not an OLED void"
+    },
+    {
+      "name": "Surface Slate",
+      "value": "#2d2d2d",
+      "note": "Secondary card background when a tile does not need to be a colour block"
+    },
+    {
+      "name": "Image Frame",
+      "value": "#313131",
+      "note": "The 1px border wrapping inline imagery"
+    },
+    {
+      "name": "Hazard White",
+      "value": "#ffffff",
+      "note": "Story-tile fill, button border and primary text — a white block is an editorial spotlight"
+    },
+    {
+      "name": "Absolute Black",
+      "value": "#000000",
+      "note": "Text on mint, yellow and white tiles — the only place it appears"
+    },
+    {
+      "name": "Secondary Text",
+      "value": "#949494",
+      "note": "Bylines, timestamps, photo credits — the metadata layer"
+    },
+    {
+      "name": "Muted Text",
+      "value": "#e9e9e9",
+      "note": "Button text on dark slate buttons, slightly off-white to reduce glare"
+    },
+    {
+      "name": "Dim Gray",
+      "value": "#8c8c8c",
+      "note": "Active and pressed button background"
+    }
+  ],
+  "notes": [
+    "There is no light mode. The dark canvas is the product; the palette only inverts when a single tile takes a mint, yellow or white fill.",
+    "Mint and ultraviolet are hazard tape, not background wash. One saturated block per screen region, never two competing.",
+    "Story tiles are rounded 20–40px and filled edge to edge with colour, stacked on a dashed vertical rule like commits in a log.",
+    "Depth is entirely flat — 1px hairlines in white, mint or ultraviolet do the work shadows would do elsewhere.",
+    "Black text appears only on mint, yellow or white tiles. Everywhere else text is white or the #949494 metadata grey."
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "slug": "sanity", "name": "Sanity", "category": "Backend, database & DevOps",
+  "look": "Nocturnal command centre — 112px display type with extreme negative tracking, pure achromatic greys, coral CTA against electric-blue hover.",
+  "scheme": "dark", "icon_weights": ["regular", "bold"],
+  "fonts": { "google": "https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" },
+  "variants": { "nav": "bar", "hero": "centered", "features": "numbered", "cards": "bordered", "gallery": "grid" },
+  "brand": { "mark": "ph-cube", "name": "Lexicon" },
+  "nav": { "links": [{"label":"Platform","href":"features"},{"label":"Docs","href":"gallery"},{"label":"Enterprise","href":"showcase-1"},{"label":"Pricing","href":"pricing"},{"label":"Blog","href":"faq"}], "cta": "Get started", "cta2": "Log in" },
+  "hero": {
+    "eyebrow": "STRUCTURED CONTENT PLATFORM",
+    "title": "Content is <em>data</em>",
+    "sub": "Lexicon treats your content as a queryable dataset with a schema you define in code, not as pages in a database you cannot reach.",
+    "cta1": "Get started free", "cta2": "Read the docs",
+    "image": "photo-1555066931-4365d14bab8c", "ratio": 0.56,
+    "stats": [{"v":"200k+","l":"Projects"},{"v":"99.99%","l":"API uptime"},{"v":"< 40ms","l":"Median query"}]
+  },
+  "logo_lead": "Content infrastructure for",
+  "logos": ["Northwind", "Corva", "Tessera", "Basisplan", "Perigee", "Halyard"],
+  "features": {
+    "eyebrow": "THE PLATFORM",
+    "title": "A backend your editors can actually use",
+    "sub": "Schema in code, a real query language, and an editing surface you can bend to the team using it.",
+    "items": [
+      {"icon":"ph-tree-structure","title":"Schema as code","body":"Content types are TypeScript objects in your repository, versioned and reviewed like everything else you ship."},
+      {"icon":"ph-magnifying-glass","title":"A query language","body":"Ask for exactly the shape your component needs in one request, with joins, filters and projections."},
+      {"icon":"ph-users-three","title":"Real-time editing","body":"Multiplayer editing with presence and per-field history, so two editors on one document is normal rather than a conflict."},
+      {"icon":"ph-arrows-split","title":"Content releases","body":"Stage a set of changes across many documents and publish them together at a scheduled time."},
+      {"icon":"ph-image","title":"Asset pipeline","body":"Uploads are transformed on request — crop, format, quality — with a CDN in front and no build step."},
+      {"icon":"ph-plugs-connected","title":"Everything is an API","body":"The editing environment is a React application you own. Add a field, a widget or a whole workflow."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"QUERYING","title":"Ask for the shape you need","body":"One request returns exactly the fields your component renders, joined across references, filtered and ordered. No over-fetching, no assembling three responses in the client, no waiting on a backend team to add an endpoint.","points":["Joins and projections in a single query","Typed results generated from your schema","Live queries that push updates over a socket"],"image":"photo-1498050108023-c5249f4df085","cta":"Read the query docs"},
+    {"eyebrow":"ENTERPRISE","title":"Governance without a second system","body":"Roles are defined per document type and per field, audit history is retained for every change, and content can be pinned to a region for residency requirements.","points":["Field-level roles and permissions","Full audit history with per-field diffs","Regional data residency"],"image":"photo-1558494949-ef010cbdcc31","cta":"See enterprise"}
+  ],
+  "metric_lead": "PLATFORM, TRAILING TWELVE MONTHS",
+  "metrics": [{"v":"200k+","l":"Projects"},{"v":"99.99%","l":"API uptime"},{"v":"< 40ms","l":"Median query"},{"v":"18B","l":"Requests served"}],
+  "gallery": {
+    "title": "Documentation",
+    "sub": "Reference, guides and starter templates for every framework we support.",
+    "items": [
+      {"id":"photo-1555066931-4365d14bab8c","tag":"Quickstart","ratio":0.7},
+      {"id":"photo-1551288049-bebda4e38f71","tag":"Studio","ratio":0.7},
+      {"id":"photo-1526374965328-7f61d4dc18c5","tag":"Queries","ratio":0.7},
+      {"id":"photo-1558494949-ef010cbdcc31","tag":"Hosting","ratio":0.7},
+      {"id":"photo-1518770660439-4636190af475","tag":"Webhooks","ratio":0.7},
+      {"id":"photo-1547658719-da2b51169166","tag":"Templates","ratio":0.7}
+    ]
+  },
+  "testimonial": {"quote":"The editors stopped filing tickets asking us to change a field label, because they can change it themselves now. That is a strange thing to put in a case study and it is also the whole return on the migration.","name":"Nora Fitzgerald","role":"Platform Lead, Tessera","avatar":"photo-1494790108377-be9c29b29330"},
+  "pricing": {
+    "title": "Pricing",
+    "sub": "Free while you build. Usage-based once you are live.",
+    "tiers": [
+      {"name":"Free","price":"$0","period":"/month","desc":"For side projects and evaluation.","features":["3 users","10k documents","100k API requests","Community support"],"cta":"Start free"},
+      {"name":"Growth","price":"$99","period":"/month","desc":"For teams running production content.","features":["20 users","1M API requests","Content releases","Email support"],"cta":"Start free trial","featured":true,"badge":"Most teams"},
+      {"name":"Enterprise","price":"Custom","period":"","desc":"For organisations with governance needs.","features":["Unlimited users","Field-level roles","Data residency","SSO and audit export"],"cta":"Contact sales"}
+    ]
+  },
+  "faq": {"title":"Common questions","items":[
+    {"q":"Can we self-host?","a":"The editing environment is a React application that runs anywhere you like. The content backend is a hosted service; a self-hosted backend is available on Enterprise agreements only."},
+    {"q":"How is usage measured?","a":"By API requests and stored documents. Queries served from the CDN cache do not count, which for most production sites is the large majority of traffic."},
+    {"q":"What happens to our content if we leave?","a":"Export the full dataset as newline-delimited JSON plus the original assets, at any time, from the CLI. There is no proprietary format to unpick."},
+    {"q":"Does it work with our framework?","a":"There are typed clients for JavaScript, Python, PHP, Go and Swift, plus a plain HTTP API. Nothing about the platform assumes a particular front end."}
+  ]},
+  "cta": {"title":"Start building","sub":"Free while you build, and no card required to create a project.","btn1":"Get started free","btn2":"Talk to us"},
+  "footer": {"tagline":"Structured content infrastructure for teams that treat content as data.","columns":[
+    {"title":"Product","links":["Platform","Studio","Assets","Releases"]},
+    {"title":"Developers","links":["Documentation","Query reference","CLI","Changelog"]},
+    {"title":"Resources","links":["Guides","Templates","Community","Support"]},
+    {"title":"Company","links":["About","Careers","Blog","Legal"]}
+  ],"legal":"© 2026 Lexicon Content"},
+  "specimen": "Content is data",
+  "palette": [
+    {"name":"Sanity Black","value":"#0b0b0b","note":"The primary canvas and dominant surface. Not pure black, but close enough to feel absolute"},
+    {"name":"Pure Black","value":"#000000","note":"Maximum-contrast moments, deep overlays, certain border accents"},
+    {"name":"Sanity Red","value":"#f36458","note":"Primary CTA and brand accent — a warm coral-red for conversion points"},
+    {"name":"Electric Blue","value":"#0052ef","note":"The universal hover and active state across the entire system"},
+    {"name":"Light Blue","value":"#55beff","note":"Secondary blue for accent backgrounds and badges"},
+    {"name":"Pale Blue","value":"#afe3ff","note":"Dimmed blue surface variant"},
+    {"name":"Neon Green","value":"#19d600","note":"Success states and premium feature highlights (sRGB fallback for display-p3)"},
+    {"name":"Dark Gray","value":"#212121","note":"Elevated surface for cards, inputs and subtle layering above the canvas"},
+    {"name":"Medium Dark","value":"#353535","note":"Tertiary surface and border colour, creating depth between dark layers"},
+    {"name":"Medium Gray","value":"#797979","note":"Tertiary text, metadata, timestamps, de-emphasised content"},
+    {"name":"Silver","value":"#b9b9b9","note":"Secondary text and body copy on dark surfaces"},
+    {"name":"Light Gray","value":"#ededed","note":"Light surface for inverted sections and subtle background tints"},
+    {"name":"Pure White","value":"#ffffff","note":"Primary text on dark surfaces, maximum legibility"},
+    {"name":"Error Red","value":"#dd0000","note":"Destructive actions, validation errors, critical warnings"},
+    {"name":"GPC Green","value":"#37cd84","note":"Privacy and compliance indicator"}
+  ],
+  "notes": [
+    "The near-black canvas is the identity, not a dark mode. There is no light counterpart to design.",
+    "Display type runs to 112px with roughly -4% tracking. That compression is the brand voice — do not loosen it to be safe.",
+    "The grey ramp is strictly achromatic. Introducing a warm or cool grey undoes the discipline the whole system rests on.",
+    "Coral is the CTA; electric blue is the hover state for every interactive element. They are two roles, not two accents.",
+    "IBM Plex Mono carries code and technical labels, giving the editorial display type a developer counter-register."
+  ]
+}

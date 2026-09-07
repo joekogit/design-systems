@@ -1,0 +1,70 @@
+/* Tesla — radical subtraction. No shadow, no border, no gradient. Photography only. */
+:root { --maxw: 1240px; --sect: clamp(64px, 9vw, 120px); --shadow-1: none; --shadow-2: none;
+  /* The reference wants a nav with no bar, no border and no shadow, trusting the
+     photograph for contrast. A pale sky breaks that, so a top scrim carries the
+     legibility instead of a background — the chrome stays invisible. */
+  --hero-scrim: linear-gradient(180deg, rgba(0,0,0,.46) 0%, rgba(0,0,0,.16) 18%,
+                rgba(0,0,0,.02) 40%, rgba(0,0,0,.50) 100%); }
+
+/* the nav simply exists in the space above the photograph */
+.nav { --nav-bg: transparent; border-bottom: 0; position: absolute; left: 0; right: 0; top: 41px; }
+.nav-in { min-height: 56px; }
+.brand { color: #fff; font-weight: 600; letter-spacing: .34em; font-size: 15px;
+  text-shadow: 0 1px 12px rgba(0,0,0,.55); }
+.brand-ico { display: none; }
+.nav-links a, .nav-signin { text-shadow: 0 1px 10px rgba(0,0,0,.5); }
+.nav-links a { color: #fff; font-weight: 600; font-size: 13px; }
+.nav-links a:hover { color: #fff; opacity: .75; }
+.nav-signin { color: #fff; font-weight: 600; font-size: 13px; }
+.nav-burger { color: #fff; }
+.nav-act .btn { background: rgba(255,255,255,.65); color: var(--c-ink); border: 0; backdrop-filter: blur(6px); }
+.nav-panel { background: rgba(255,255,255,.96); backdrop-filter: blur(14px); }
+
+.btn { border-radius: var(--r-md); text-transform: uppercase; letter-spacing: .08em;
+  font-weight: 600; font-size: 12px; padding: 13px 30px; border: 0; }
+.btn-primary:hover { background: var(--c-primary-hover); }
+.btn-secondary { background: rgba(244,244,244,.75); color: var(--c-ink); backdrop-filter: blur(6px); }
+.btn-secondary:hover { background: rgba(244,244,244,.92); }
+.btn-ghost { color: var(--c-primary); text-transform: none; letter-spacing: 0; font-size: 14px; }
+
+/* nothing has an edge */
+.feat-card, .tier, .quote-card, .cta-band, .g-item, .hero-media img, .sc-media img, .metrics, .logos, .section {
+  border: 0; box-shadow: none; }
+.hero-media img, .sc-media img, .g-item { border-radius: var(--r-md); }
+
+.hero { padding: 0; }
+.hero .eyebrow { display: none; }
+.hero-title { color: #fff; font-weight: 500; text-align: center; }
+.hero-sub { color: #fff; text-align: center; margin-inline: auto; font-weight: 500; }
+.hero-cta { justify-content: center; }
+.hero-stats { justify-content: center; border-top: 0; }
+.hstat { align-items: center; }
+.hstat b, .hstat span { color: #fff; }
+.hero.v-full-bleed .hero-in { text-align: center; }
+
+.eyebrow { display: none; }
+.section-head { text-align: center; margin-inline: auto; }
+.lede { margin-inline: auto; text-align: center; }
+.logos { border-block: 0; background: var(--c-surface-2); }
+.logo-item { letter-spacing: .14em; font-size: 11px; font-weight: 600; }
+
+.feat-grid.v-list { gap: var(--s-xl); }
+.v-list .feat-card { border: 0; padding: 0; grid-template-columns: 40px 1fr; }
+.feat-ico { background: transparent; border: 0; color: var(--c-primary); width: auto; height: auto; font-size: 26px; }
+.feat-title { font-weight: 500; }
+
+.metrics { --metrics-bg: var(--c-surface-2); border-block: 0; }
+.metric { align-items: center; text-align: center; }
+.metric-v { font-weight: 500; }
+.g-item figcaption { background: rgba(23,26,32,.62); border-radius: var(--r-md); backdrop-filter: blur(4px); }
+.quote-card { background: transparent; }
+.quote-text { font-weight: 400; }
+.quote-mark { color: var(--c-primary); }
+.tier { background: var(--c-surface-2); text-align: center; }
+.tier-price { justify-content: center; }
+.tier-feat { background: var(--c-surface-3); }
+.tier-badge { background: var(--c-primary); }
+.faq-item { border-bottom-color: var(--c-hairline); }
+.cta-band { background: var(--c-surface-2); border-radius: var(--r-xxl); }
+.spec { --spec-bg: var(--c-surface-2); border-top: 0; }
+.foot { border-top: 1px solid var(--c-hairline); }

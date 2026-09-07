@@ -1,0 +1,72 @@
+/* WIRED — paper-white broadsheet. Three faces, square corners, ink-blue links only. */
+:root { --maxw: 1200px; --sect: clamp(48px, 6vw, 76px);
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --shadow-1: none; --shadow-2: none; }
+
+/* the masthead band — the only decorative move in the system */
+.nav { --nav-bg: #fff; border-bottom: 3px solid #000; }
+.nav::before { content: ""; display: block; height: 30px; background: #000; }
+.nav-in { min-height: 56px; }
+.brand { font-family: var(--font-display); font-weight: 900; font-size: 26px; letter-spacing: -.01em; text-transform: uppercase; }
+.brand-ico { color: #000; }
+.nav-links a { font-family: var(--sans); font-weight: 700; text-transform: uppercase; font-size: 12px; letter-spacing: .09em; color: #000; }
+.nav-signin { font-family: var(--sans); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+
+/* sans is for metadata and buttons only; serif carries everything editorial */
+.btn, .eyebrow, .logos-lead, .fcol h4, .g-item figcaption, .hstat span, .metric-l,
+.tier-per, .badge2, .zoo-cell h4, .foot-legal, .sw-name, .tabs button, .quote-by span {
+  font-family: var(--sans); }
+.btn { border-radius: 0; text-transform: uppercase; font-weight: 700; letter-spacing: .09em; font-size: 12px; padding: 14px 24px; }
+.btn-primary { background: #000; color: #fff; }
+.btn-primary:hover { background: #333; }
+.btn-secondary { background: #fff; color: #000; border: 2px solid #000; }
+.btn-secondary:hover { background: #000; color: #fff; }
+.btn-ghost { font-family: var(--sans); color: var(--c-primary); }
+.eyebrow { text-transform: uppercase; letter-spacing: .14em; font-weight: 700; font-size: 11px; color: #000; }
+
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title, .quote-text, .faq-item summary, .tier-name, .feat-title {
+  font-family: var(--font-display); font-weight: 800; }
+.hero-title { letter-spacing: -.02em; }
+.hero-title em { color: var(--c-primary); font-style: italic; }
+.hero-sub { font-size: clamp(18px, 2.2vw, 22px); line-height: 1.5; }
+.lede, .sc-body, .feat-body, .faq-a { font-family: var(--font-body); }
+
+/* broadsheet rules — hairlines do the separating, not gaps */
+.section { border-top: 1px solid #000; }
+.hero, .logos, .nav { border-top: 0; }
+.feat-grid { gap: 0; }
+.feat-card { border: 0; border-top: 1px solid #cfcfcf; border-radius: 0; padding: var(--s-md) var(--s-md) var(--s-lg) 0; background: transparent; }
+.feat-ico { background: transparent; border: 0; color: #000; width: auto; height: auto; font-size: 20px; margin-bottom: 6px; }
+.feat-title { font-size: clamp(19px, 2.2vw, 23px); }
+
+.logos { border-block: 1px solid #000; }
+.logo-item { font-family: var(--sans); font-weight: 700; text-transform: uppercase; letter-spacing: .1em; font-size: 13px; color: #000; }
+.hero-media img, .sc-media img, .g-item, .quote-card, .tier, .cta-band, .input, .feat-card { border-radius: 0; }
+.hero-media img, .sc-media img { border: 1px solid #000; }
+.g-item figcaption { border-radius: 0; background: #000; text-transform: uppercase; letter-spacing: .1em; font-size: 10px; font-weight: 700; }
+
+.metrics { --metrics-bg: #000; border-block: 0; }
+.metrics .metric-v { color: #fff; font-family: var(--font-display); }
+.metrics .metric-l, .metrics .logos-lead { color: #b0b0b0; }
+
+.quote-card { background: transparent; border: 0; border-top: 4px solid #000; border-bottom: 4px solid #000;
+  --quote-align: left; --quote-by-just: flex-start; padding-inline: 0; }
+.quote-text { font-size: clamp(24px, 3.4vw, 38px); line-height: 1.16; font-style: italic; }
+.quote-mark { display: none; }
+.q-av { border-radius: 0; }
+
+.tier { background: #fff; border: 1px solid #000; }
+.tier-feat { background: #000; color: #fff; border-color: #000; }
+.tier-feat .tier-desc, .tier-feat .tier-feats li, .tier-feat .tier-per { color: #c4c4c4; }
+.tier-feat .tier-feats i { color: #fff; }
+.tier-feat .btn-primary { background: #fff; color: #000; }
+.tier-badge { border-radius: 0; background: #000; color: #fff; text-transform: uppercase; letter-spacing: .1em; }
+.faq-item summary { font-family: var(--font-display); }
+.cta-band { background: #f2f0ec; border: 0; border-top: 4px solid #000; --cta-align: left; --cta-just: flex-start; }
+.foot { background: #000; color: #fff; border-top: 0; }
+.foot a, .fcol a { color: #c4c4c4; }
+.foot a:hover, .fcol a:hover { color: #fff; }
+.fcol h4, .foot-tag, .foot-legal { color: #8f8f8f; }
+.foot .brand { color: #fff; }
+.foot-socials a { border-color: #3a3a3a; color: #c4c4c4; border-radius: 0; }
+.spec { --spec-bg: #f7f5f2; }

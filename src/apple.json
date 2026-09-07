@@ -1,0 +1,86 @@
+{
+  "slug": "apple", "name": "Apple", "category": "Media & consumer tech",
+  "look": "Photography-first tiles alternating light and near-black, one blue accent, tight negative tracking.",
+  "scheme": "light", "icon_weights": ["thin", "regular"],
+  "fonts": {
+    "display": "-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Inter\", \"Helvetica Neue\", sans-serif",
+    "body": "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Inter\", \"Helvetica Neue\", sans-serif",
+    "mono": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+  },
+  "variants": { "nav": "bar", "hero": "centered", "features": "grid", "cards": "flat", "gallery": "feature-left" },
+  "brand": { "mark": "ph-circles-four", "name": "Aperture" },
+  "nav": { "links": [{"label":"Overview","href":"top"},{"label":"Design","href":"showcase-0"},{"label":"Camera","href":"features"},{"label":"Gallery","href":"gallery"},{"label":"Tech Specs","href":"spec"}], "cta": "Buy", "cta2": "Compare" },
+  "hero": {
+    "eyebrow": "Aperture Pro",
+    "title": "Light, <em>rewritten</em>.",
+    "sub": "A ten-element lens, a sensor that sees three stops further into the dark, and a body milled from a single block of aluminium.",
+    "cta1": "Buy from $1,299", "cta2": "Watch the film",
+    "image": "photo-1526170375885-4d8ecf77b99f", "ratio": 0.62,
+    "stats": [{"v":"48MP","l":"Main sensor"},{"v":"f/1.4","l":"Maximum aperture"},{"v":"8K","l":"Video capture"}]
+  },
+  "logo_lead": "Recognised by",
+  "logos": ["Design Awards", "Photo Annual", "IF Gold", "Red Dot", "Wallpaper*", "Monocle"],
+  "features": {
+    "eyebrow": "Engineering",
+    "title": "Every part considered.",
+    "sub": "Nothing added that could be removed. Nothing removed that earns its place.",
+    "items": [
+      {"icon":"ph-aperture","title":"Ten-element lens","body":"A stacked aspherical group corrects for coma and field curvature edge to edge, wide open."},
+      {"icon":"ph-cpu","title":"Silicon that sees","body":"A dedicated image pipeline processes fourteen frames before the shutter sound finishes."},
+      {"icon":"ph-battery-charging","title":"All-day power","body":"A thirty-two hour capture cycle from a battery that charges to eighty percent in twenty minutes."},
+      {"icon":"ph-drop","title":"Sealed throughout","body":"Twelve gaskets and a machined labyrinth seal rate the body to two metres for thirty minutes."},
+      {"icon":"ph-device-mobile","title":"Continuity","body":"Every frame lands on your other devices before you have lowered the camera."},
+      {"icon":"ph-recycle","title":"Made responsibly","body":"The enclosure is milled from certified recycled aluminium in a facility running on renewable power."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"Design","title":"Milled from a single block.","body":"The enclosure begins as a solid billet of recycled aluminium and ends 41 minutes of machining later as a body with no seams, no fasteners and no flex.","points":["Bead-blasted and anodised in four finishes","0.02mm tolerance across the lens mount","Sapphire crystal over every optical surface"],"image":"photo-1523275335684-37898b6baf30","cta":"Explore the design"},
+    {"eyebrow":"Low light","title":"Three stops further into the dark.","body":"A back-illuminated sensor with larger photosites gathers more of what little light there is, then a computational pipeline stacks frames without smearing anything that moved.","points":["Usable frames at ISO 51,200","Motion-aware frame stacking","Astrophotography mode to 30 seconds handheld"],"image":"photo-1502920917128-1aa500764cbd","cta":"See sample images"}
+  ],
+  "metric_lead": "Measured in Apertures Labs against the previous generation",
+  "metrics": [{"v":"3 stops","l":"Improvement in low light"},{"v":"41 min","l":"Machining time per body"},{"v":"32 hrs","l":"Capture battery life"},{"v":"100%","l":"Recycled aluminium"}],
+  "gallery": {
+    "title": "Shot on Aperture.",
+    "sub": "A selection from photographers working in the field this season.",
+    "items": [
+      {"id":"photo-1506905925346-21bda4d32df4","tag":"Landscape","ratio":0.75},
+      {"id":"photo-1470071459604-3b5ec3a7fe05","tag":"Dawn","ratio":0.75},
+      {"id":"photo-1493246507139-91e8fad9978e","tag":"Still water","ratio":0.75},
+      {"id":"photo-1518791841217-8f162f1e1131","tag":"Portrait","ratio":0.75},
+      {"id":"photo-1449824913935-59a10b8d2000","tag":"Street","ratio":0.75},
+      {"id":"photo-1487958449943-2429e8be8625","tag":"Architecture","ratio":0.75}
+    ]
+  },
+  "testimonial": {"quote":"I stopped carrying a second body. That is the whole review — there is nothing this one cannot do that I used to need two bags for.","name":"Marta Lindqvist","role":"Documentary photographer","avatar":"photo-1438761681033-6461ffad8d80"},
+  "pricing": {
+    "title": "Choose your Aperture.",
+    "sub": "Three bodies. One lens mount. Trade in your current camera and pay less.",
+    "tiers": [
+      {"name":"Aperture","price":"$1,299","period":"","desc":"The full sensor and lens system in an aluminium body.","features":["48MP main sensor","4K video","24-hour battery","Two finishes"],"cta":"Buy"},
+      {"name":"Aperture Pro","price":"$1,799","period":"","desc":"Adds the pro pipeline and 8K capture.","features":["Everything in Aperture","8K video capture","32-hour battery","Four finishes","ProRAW"],"cta":"Buy","featured":true,"badge":"Most popular"},
+      {"name":"Aperture Studio","price":"$2,499","period":"","desc":"For tethered and commercial work.","features":["Everything in Pro","Medium-format sensor","Tethered capture","Studio sync","Three-year care"],"cta":"Buy"}
+    ]
+  },
+  "faq": {"title":"Frequently asked","items":[
+    {"q":"Will my existing lenses fit?","a":"Every lens made for the previous mount fits without an adapter and retains autofocus and stabilisation. Third-party lenses on the same mount are supported but not calibrated at the factory."},
+    {"q":"What is included in the box?","a":"The body, a braided charge cable, the strap and the printed guide. A power adapter is sold separately, which keeps roughly 600 tonnes of material out of the supply chain each year."},
+    {"q":"How does trade-in work?","a":"Answer four questions about the camera you own, receive an estimate immediately, and the credit is applied at checkout. The value is confirmed when the device arrives."},
+    {"q":"Is it repairable?","a":"Yes. The battery, sensor assembly, card door and rear screen are all serviceable modules, and the parts and manuals are sold to independent repair shops."}
+  ]},
+  "cta": {"title":"Aperture Pro. Available now.","sub":"Order today for delivery within two business days, or find it at a store near you.","btn1":"Buy from $1,299","btn2":"Find a store"},
+  "footer": {"tagline":"Designed in a small studio. Made responsibly.","columns":[
+    {"title":"Shop","links":["Aperture Pro","Lenses","Accessories","Trade in"]},
+    {"title":"Learn","links":["Tech specs","Compare models","Photography guides","Workshops"]},
+    {"title":"Support","links":["Repairs","Manuals","Warranty","Contact"]},
+    {"title":"Company","links":["Environment","Accessibility","Privacy","Newsroom"]}
+  ],"legal":"© 2026 Aperture Optical"},
+  "specimen": "Light, rewritten.",
+  "notes": [
+    "The section rhythm is the layout: light hero → dark product tile → light utility tile → dark tile → parchment footer. The colour change is the divider; do not add rules between sections.",
+    "One blue accent carries every interactive element. There is no second brand colour anywhere in the system.",
+    "Two button grammars only — small blue pills for calls to action, compact rounded rectangles for utility.",
+    "Exactly one drop shadow exists in the whole system, and it is reserved for a product image that needs to breathe.",
+    "Negative tracking at display sizes produces the tight headline feel; body text stays at normal tracking."
+  ]
+}

@@ -1,0 +1,25 @@
+# Netlify configuration for the design template library.
+# The site is fully static — no build step, no dependencies to install.
+
+[build]
+  publish = "."
+  command = ""
+
+# Long-lived caching for generated pages' assets is unnecessary (everything is
+# inlined), but the pages themselves should revalidate so a rebuild shows up.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+
+[[headers]]
+  for = "/designs/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

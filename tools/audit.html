@@ -1,0 +1,46 @@
+<!doctype html><meta charset=utf-8><title>audit</title>
+<style>body{margin:0;font:12px system-ui;background:#111;color:#eee}
+#f{display:flex;gap:8px;overflow-x:auto;padding:8px}
+iframe{width:375px;height:760px;border:0;background:#fff;flex:none}</style>
+<div id=f></div>
+<script>
+const SLUGS=["apple", "bugatti", "ferrari", "kraken", "linear.app", "mastercard", "nike", "nintendo-2001", "notion", "raycast", "sanity", "spotify", "starbucks", "stripe", "supabase", "tesla", "theverge", "vercel", "warp", "wired"];
+const box=document.getElementById('f');
+window.ready=new Promise(res=>{
+  let left=SLUGS.length;
+  SLUGS.forEach(s=>{
+    const i=document.createElement('iframe');
+    i.dataset.slug=s; i.src='../designs/'+s+'.html';
+    i.onload=()=>{ if(--left===0) res(true); };
+    box.appendChild(i);
+  });
+});
+window.audit=function(){
+  return [...document.querySelectorAll('iframe')].map(f=>{
+    const d=f.contentDocument, w=f.contentWindow, de=d.documentElement, o={slug:f.dataset.slug};
+    o.vw=de.clientWidth;
+    o.hscroll=de.scrollWidth-de.clientWidth;
+    let worst=null;
+    d.querySelectorAll('body *').forEach(el=>{const r=el.getBoundingClientRect();
+      if(r.width>0&&r.right>de.clientWidth+1){if(!worst||r.right>worst.r)worst={s:(el.className||el.tagName).toString().slice(0,40),r:Math.round(r.right)};}});
+    o.overflow=worst;
+    o.noAlt=[...d.images].filter(i=>!i.alt||!i.alt.trim()).length;
+    o.imgs=d.images.length;
+    const small=[];
+    d.querySelectorAll('a,button,summary,input').forEach(el=>{const r=el.getBoundingClientRect();
+      if(!r.height||el.closest('.libbar'))return;
+      if(r.height<44-.5)small.push((el.className||el.tagName).toString().slice(0,26)+':'+Math.round(r.height));});
+    o.small=small.length; o.smallEg=[...new Set(small)].slice(0,5);
+    o.bodyPx=parseFloat(w.getComputedStyle(d.body).fontSize);
+    // every Phosphor <i> must actually resolve a glyph
+    const ics=[...d.querySelectorAll('i[class*="ph"]')];
+    const dead=ics.filter(i=>{const c=w.getComputedStyle(i,'::before').content;
+      return !c||c==='none'||c==='normal';});
+    o.icons=ics.length; o.deadIcons=dead.length;
+    o.deadEg=[...new Set(dead.map(i=>i.className))].slice(0,3);
+    o.burger=w.getComputedStyle(d.querySelector('.nav-burger')).display;
+    o.navLinks=w.getComputedStyle(d.querySelector('.nav-links')).display;
+    return o;
+  });
+};
+</script>

@@ -1,0 +1,404 @@
+{
+  "slug": "starbucks",
+  "name": "Starbucks",
+  "category": "E-commerce & retail",
+  "look": "Warm cream canvas with a four-tier green system, full-pill buttons, gold reserved for rewards ceremony only.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "google": "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "elevated",
+    "gallery": "masonry"
+  },
+  "brand": {
+    "mark": "ph-coffee-fill",
+    "name": "Alder Coffee"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Menu",
+        "href": "gallery"
+      },
+      {
+        "label": "Rewards",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Gift cards",
+        "href": "features"
+      },
+      {
+        "label": "Find a store",
+        "href": "faq"
+      }
+    ],
+    "cta": "Join now",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "ALDER REWARDS",
+    "title": "Free coffee is just <em>the beginning</em>",
+    "sub": "Earn a star on every purchase. Redeem for drinks, food and merchandise — and get your birthday drink on us, no minimum spend.",
+    "cta1": "Join Alder Rewards",
+    "cta2": "See the menu",
+    "image": "photo-1509042239860-f550ce710b93",
+    "ratio": 0.72,
+    "stats": [
+      {
+        "v": "2 stars",
+        "l": "Per £1 spent"
+      },
+      {
+        "v": "50",
+        "l": "Stars for a drink"
+      },
+      {
+        "v": "1,240",
+        "l": "Stores"
+      }
+    ]
+  },
+  "logo_lead": "Sourced from",
+  "logos": [
+    "ETHIOPIA",
+    "COLOMBIA",
+    "GUATEMALA",
+    "RWANDA",
+    "SUMATRA",
+    "COSTA RICA"
+  ],
+  "features": {
+    "eyebrow": "HOW IT WORKS",
+    "title": "Three steps, then free coffee",
+    "sub": "Join, order and earn. No card to carry and no points that quietly expire on you.",
+    "items": [
+      {
+        "icon": "ph-user-circle",
+        "title": "Join for free",
+        "body": "Create an account in the app or in store. There is no fee, no minimum spend and no card to keep in your wallet."
+      },
+      {
+        "icon": "ph-star",
+        "title": "Earn stars",
+        "body": "Two stars for every pound, doubled on Wednesdays and on any drink you bring your own cup for."
+      },
+      {
+        "icon": "ph-gift",
+        "title": "Redeem how you like",
+        "body": "Fifty stars for a handcrafted drink, a hundred and fifty for food, four hundred for merchandise."
+      },
+      {
+        "icon": "ph-clock",
+        "title": "Order ahead",
+        "body": "Order from the app and collect from the counter without queueing. Most orders are ready in four minutes."
+      },
+      {
+        "icon": "ph-cake",
+        "title": "Birthday drink",
+        "body": "Any handcrafted drink, any size, free on your birthday. No minimum spend and no stars required."
+      },
+      {
+        "icon": "ph-leaf",
+        "title": "Bring your own cup",
+        "body": "Twenty-five pence off and double stars, every time, on every drink in every store."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "REWARDS",
+      "title": "Stars that do not quietly expire",
+      "body": "Stars stay on the account for twelve months from the day they are earned, and the app tells you which ones are closest to expiring rather than letting them lapse and hoping you do not notice.",
+      "points": [
+        "Twelve months from the day earned",
+        "Expiry dates shown per star batch",
+        "A reminder before any batch lapses"
+      ],
+      "image": "photo-1453614512568-c4024d13c247",
+      "cta": "See the full terms"
+    },
+    {
+      "eyebrow": "SOURCING",
+      "title": "Paid above the market, verified",
+      "body": "Every bean is bought at or above the market rate through a verified programme, and the farm-level payment data is published annually rather than summarised in a brochure.",
+      "points": [
+        "Verified above-market purchase price",
+        "Farm-level payment data published",
+        "Full traceability on single-origin lots"
+      ],
+      "image": "photo-1442512595331-e89e73853f31",
+      "cta": "Read the sourcing report"
+    }
+  ],
+  "metric_lead": "ALDER, THIS YEAR",
+  "metrics": [
+    {
+      "v": "1,240",
+      "l": "Stores"
+    },
+    {
+      "v": "4.1M",
+      "l": "Rewards members"
+    },
+    {
+      "v": "98%",
+      "l": "Ethically sourced"
+    },
+    {
+      "v": "31%",
+      "l": "Orders in reusable cups"
+    }
+  ],
+  "gallery": {
+    "title": "The menu",
+    "sub": "Seasonal drinks, everyday favourites and the food that goes with them.",
+    "items": [
+      {
+        "id": "photo-1509042239860-f550ce710b93",
+        "tag": "Espresso",
+        "ratio": 1.0
+      },
+      {
+        "id": "photo-1554118811-1e0d58224f24",
+        "tag": "In store",
+        "ratio": 1.25
+      },
+      {
+        "id": "photo-1546069901-ba9599a7e63c",
+        "tag": "Food",
+        "ratio": 0.85
+      },
+      {
+        "id": "photo-1504674900247-0877df9cc836",
+        "tag": "Lunch",
+        "ratio": 1.15
+      },
+      {
+        "id": "photo-1521017432531-fbd92d768814",
+        "tag": "At home",
+        "ratio": 0.9
+      },
+      {
+        "id": "photo-1501339847302-ac426a4a7cbb",
+        "tag": "Seasonal",
+        "ratio": 1.05
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "I brought my own cup for a month to see whether the discount was real. It was twenty-five pence and double stars every single time, including the two mornings I forgot to mention it.",
+    "name": "Grace Whitfield",
+    "role": "Member since 2019",
+    "avatar": "photo-1494790108377-be9c29b29330"
+  },
+  "pricing": {
+    "title": "Gift cards",
+    "sub": "Physical or digital, delivered instantly, and they never expire.",
+    "tiers": [
+      {
+        "name": "Digital",
+        "price": "£10",
+        "period": "and up",
+        "desc": "Delivered by email in seconds.",
+        "features": [
+          "Any amount from £10",
+          "Delivered instantly",
+          "Add a message",
+          "Never expires"
+        ],
+        "cta": "Send a digital card"
+      },
+      {
+        "name": "Physical",
+        "price": "£15",
+        "period": "and up",
+        "desc": "Posted first class, illustrated seasonally.",
+        "features": [
+          "Twelve seasonal designs",
+          "First class delivery",
+          "Gift packaging",
+          "Never expires"
+        ],
+        "cta": "Order a card",
+        "featured": true,
+        "badge": "Most gifted"
+      },
+      {
+        "name": "Business",
+        "price": "Custom",
+        "period": "",
+        "desc": "Bulk orders for teams and clients.",
+        "features": [
+          "Bulk pricing from 50",
+          "Custom branding",
+          "Invoiced billing",
+          "Named account contact"
+        ],
+        "cta": "Contact us"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Rewards questions",
+    "items": [
+      {
+        "q": "Do stars expire?",
+        "a": "Stars stay on the account for twelve months from the day they are earned. The app shows the expiry date for each batch and reminds you before any batch lapses."
+      },
+      {
+        "q": "Can I earn stars on gift card purchases?",
+        "a": "You earn stars when you pay with a registered gift card, not when you buy one. That avoids earning twice on the same money."
+      },
+      {
+        "q": "Does bring-your-own-cup work with order ahead?",
+        "a": "Yes. Select it in the app when ordering and hand the cup over at collection. The discount and the double stars apply the same way."
+      },
+      {
+        "q": "What happens to my stars if I do not visit for a while?",
+        "a": "Nothing for twelve months. Individual star batches expire on their own dates rather than the whole balance being wiped after a period of inactivity."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Join Alder Rewards",
+    "sub": "Free to join, two stars per pound, and a free drink on your birthday.",
+    "btn1": "Join now",
+    "btn2": "See the rewards"
+  },
+  "footer": {
+    "tagline": "Coffee sourced above the market rate, served in 1,240 stores.",
+    "columns": [
+      {
+        "title": "About us",
+        "links": [
+          "Our company",
+          "Our coffee",
+          "Stories",
+          "Investors"
+        ]
+      },
+      {
+        "title": "Careers",
+        "links": [
+          "Working here",
+          "Benefits",
+          "Apply",
+          "Culture"
+        ]
+      },
+      {
+        "title": "Social impact",
+        "links": [
+          "Sourcing",
+          "Environment",
+          "Communities",
+          "Reports"
+        ]
+      },
+      {
+        "title": "For business",
+        "links": [
+          "Gift cards",
+          "Office coffee",
+          "Franchising",
+          "Contact"
+        ]
+      }
+    ],
+    "legal": "© 2026 Alder Coffee Company"
+  },
+  "specimen": "Free coffee",
+  "palette": [
+    {
+      "name": "Starbucks Green",
+      "value": "#006241",
+      "note": "The historic brand green — h1 headings and the main brand signal"
+    },
+    {
+      "name": "Green Accent",
+      "value": "#00754a",
+      "note": "The primary filled-CTA colour and the floating circular button fill"
+    },
+    {
+      "name": "House Green",
+      "value": "#1e3932",
+      "note": "Deep near-black brand green — footer, feature bands, dark reward surfaces"
+    },
+    {
+      "name": "Green Uplift",
+      "value": "#2b5148",
+      "note": "Secondary mid-dark green, used sparingly on decorative accents"
+    },
+    {
+      "name": "Green Light",
+      "value": "#d4e9e2",
+      "note": "Pale mint wash for form valid states and light utility surfaces"
+    },
+    {
+      "name": "Gold",
+      "value": "#cba258",
+      "note": "Reserved for Rewards-status ceremony. Never a general-purpose brand colour"
+    },
+    {
+      "name": "Gold Light",
+      "value": "#dfc49d",
+      "note": "Softer gold for background washes on gold-tier sections"
+    },
+    {
+      "name": "Gold Lightest",
+      "value": "#faf6ee",
+      "note": "Cream-gold wash tying gold back into the warm neutral system"
+    },
+    {
+      "name": "White",
+      "value": "#ffffff",
+      "note": "Primary card and modal surface"
+    },
+    {
+      "name": "Neutral Warm",
+      "value": "#f2f0eb",
+      "note": "The warm cream primary page canvas"
+    },
+    {
+      "name": "Ceramic",
+      "value": "#edebe9",
+      "note": "Slightly warmer cream for zone separators and section washes"
+    },
+    {
+      "name": "Neutral Cool",
+      "value": "#f9f9f9",
+      "note": "Subtle cool-grey surface for dropdowns and quiet utility containers"
+    },
+    {
+      "name": "Text Black",
+      "value": "rgba(0,0,0,0.87)",
+      "note": "Primary heading and body text — 87% black reads warmer than pure"
+    },
+    {
+      "name": "Text Black Soft",
+      "value": "rgba(0,0,0,0.58)",
+      "note": "Secondary and metadata text on light surfaces"
+    },
+    {
+      "name": "Black",
+      "value": "#000000",
+      "note": "Reserved for the dark top-of-page CTA strip and high-contrast sign-in"
+    }
+  ],
+  "notes": [
+    "There is no single 'brand green'. Four greens map to four surface roles — Starbucks for headings, Accent for filled CTAs, House for dark bands and footer, Uplift for decorative moments.",
+    "Gold is Rewards-status ceremony only. Using it as a general accent is the fastest way to break this system.",
+    "The canvas is warm cream, never cold white — it references café materials, and every neutral is tinted to match.",
+    "Buttons are full pills at 50px radius, universally. The signature micro-interaction is scale(0.95) on active press.",
+    "Cards sit at 12px with whisper-soft shadows: flat, plus a hint of lift, never a floating panel."
+  ]
+}
