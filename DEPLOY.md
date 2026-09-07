@@ -45,23 +45,24 @@ Post-processing minifies markup and turns on **pretty URLs**, so `href="designs/
 built file is served as `href='/designs/x'`. Both forms resolve; don't be alarmed when the live
 HTML doesn't match the local build byte for byte.
 
-## Continuous deploys are NOT set up yet
+## Continuous deploys
 
-The first deploy was a direct upload, not a Git-linked build, so **pushing to GitHub will not
-redeploy the site**. Two ways to fix that:
+Wired via a read-only **deploy key** plus a repo **webhook**, rather than the Netlify GitHub App
+(which needs an interactive browser authorisation).
 
-**Link the repo (recommended).** Site configuration → Build & deploy → Continuous deployment →
-link `joekogit/design-systems`. Build command empty, publish directory `.`. This needs the
-Netlify GitHub app authorisation, which is a browser flow. After that, `git push` deploys.
+- Deploy key: `Netlify joekonet-systems` on the repo, read-only
+- Webhook: `https://api.netlify.com/hooks/github`, events `push`, `pull_request`, `delete`
+- Build command empty, publish directory `.`, branch `main`
 
-**Or deploy manually** with the Netlify CLI:
+`git push origin main` deploys. To deploy without pushing:
 
 ```bash
-npm i -g netlify-cli
-netlify login
-netlify link --id 9a161ed6-7881-4b6c-8ee7-864d7fccd50d
 netlify deploy --prod --dir .
 ```
+
+If a build ever fails at *"preparing repo: Unable to access repository"*, the deploy key was
+removed or rotated — recreate it with `netlify api createDeployKey`, add the public key to the
+repo, and set `deploy_key_id` in the site's build settings.
 
 ## Before any deploy
 
