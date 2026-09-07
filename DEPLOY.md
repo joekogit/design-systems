@@ -45,20 +45,30 @@ Post-processing minifies markup and turns on **pretty URLs**, so `href="designs/
 built file is served as `href='/designs/x'`. Both forms resolve; don't be alarmed when the live
 HTML doesn't match the local build byte for byte.
 
-## Continuous deploys
+## Continuous deploys — still blocked
 
-Configured with `netlify init --force --git-remote-name origin`, which installs a read-only deploy
-key and the Netlify notification hooks through the CLI's authenticated GitHub session. `git push`
-deploys `main`.
+A push reaches Netlify and creates a deploy, which then fails with:
 
-`netlify.toml` is the source of truth for build settings (`publish = "."`, empty build command) and
-overrides whatever the site's own settings say.
+> Build blocked: Unrecognized Git contributor. This plan allows only verified account members
+> to push to private repos.
 
-To deploy without pushing:
+**`netlify init` does not fix this.** Its output says it plainly — *"Adding deploy key to
+repository... Creating Netlify GitHub Notification Hooks"*. That is the deploy-key path, which
+gives Netlify read access to the code but no GitHub **identity** mapping, so it cannot verify who
+pushed. On a private repo that means every webhook build is refused. Verified twice, and a commit
+with no `Co-Authored-By` trailer fails identically, so the trailer is not the cause.
 
-```bash
-netlify deploy --prod --dir .
-```
+Only the **Netlify GitHub App** creates that identity mapping, and it can only be installed from
+the web UI:
+
+> Site configuration -> Build & deploy -> Continuous deployment -> Manage repository ->
+> Link to a different repository -> GitHub -> authorise the Netlify GitHub App
+
+Alternatives:
+
+- **Make the repo public** — `gh repo edit joekogit/design-systems --visibility public`. The
+  restriction applies only to private repos.
+- **Deploy manually** — `netlify deploy --prod --dir .`, a few seconds, works today.
 
 ## Before any deploy
 
