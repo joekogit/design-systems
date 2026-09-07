@@ -1,0 +1,46 @@
+/* PostHog — one cream sheet, a single yellow-orange pill, mascots as decoration. */
+:root { --maxw: 1200px; --sect: clamp(52px, 6.5vw, 88px); --shadow-1: none; --shadow-2: none;
+  --olive: #2d2905; --blue-soft: #e0edf7; --green-soft: #e2f2e6; --red-soft: #fbe6e4; --purple-soft: #ece4f7; }
+
+.nav { --nav-bg: rgba(238,239,233,.94); backdrop-filter: blur(8px); border-bottom-color: rgba(0,0,0,.1); }
+.brand { font-weight: 700; letter-spacing: -.02em; }
+.brand-ico { color: var(--c-primary); }
+.btn { border-radius: var(--r-pill); font-weight: 700; padding: 12px 24px; }
+.btn-primary { background: var(--c-primary); color: var(--olive); border-color: var(--olive); border-width: 2px; }
+.btn-primary:hover { background: #ffb524; }
+.btn-secondary { background: transparent; border-color: var(--olive); border-width: 2px; color: var(--olive); }
+.btn-secondary:hover { background: rgba(0,0,0,.05); }
+.eyebrow { color: var(--c-ink-subtle); text-transform: none; letter-spacing: 0; font-weight: 600; }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; letter-spacing: -.028em; }
+.hero-title em { color: var(--c-primary); -webkit-text-stroke: 1px var(--olive); paint-order: stroke fill; }
+
+.logos { border-block-color: rgba(0,0,0,.1); }
+/* 6px cards with a hard 2px border — the brand's sketchbook chrome */
+.feat-card { background: transparent; border: 2px solid var(--olive); border-radius: 6px; }
+.feat-card:hover { background: rgba(0,0,0,.03); border-color: var(--olive); }
+.feat-ico { background: var(--c-primary); color: var(--olive); border: 2px solid var(--olive); border-radius: 6px; }
+.hero-media img, .sc-media img, .g-item { border-radius: 8px; border: 2px solid var(--olive); }
+/* pastel callouts with a tinted side rail */
+.sc-points li { background: var(--blue-soft); border-left: 4px solid #6aa9d8; padding: 10px 12px; border-radius: 4px; }
+.sc-points li:nth-child(2) { background: var(--green-soft); border-left-color: #6fb583; }
+.sc-points li:nth-child(3) { background: var(--purple-soft); border-left-color: #9b7ac4; }
+.sc-points i { color: var(--olive); }
+.metrics { --metrics-bg: transparent; border-block: 2px solid var(--olive); }
+.metric-v { color: var(--olive); }
+.g-item figcaption { background: var(--c-primary); color: var(--olive); border: 2px solid var(--olive);
+  border-radius: var(--r-pill); font-weight: 700; }
+.quote-card { background: transparent; border: 2px solid var(--olive); border-radius: 8px;
+  --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--c-primary); }
+.tier { background: transparent; border: 2px solid var(--olive); border-radius: 8px; }
+.tier-feat { background: var(--c-primary); }
+.tier-feat .tier-desc, .tier-feat .tier-feats li { color: var(--olive); }
+.tier-badge { background: var(--olive); color: #eeefe9; border-radius: var(--r-pill); }
+.tier-feats i, .faq-mk { color: var(--olive); }
+.faq-item { border-bottom: 2px solid rgba(45,41,5,.18); }
+.cta-band { background: var(--c-primary); border: 2px solid var(--olive); border-radius: 8px; color: var(--olive); }
+.cta-band .lede { color: rgba(45,41,5,.78); }
+.cta-band .btn-primary { background: var(--olive); color: var(--c-primary); }
+.spec { --spec-bg: transparent; border-top: 2px solid var(--olive); }
+.input, .sw { border-radius: 6px; border-color: var(--olive); }
+.badge2, .tabs, .tabs button { border-radius: var(--r-pill); }

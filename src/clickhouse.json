@@ -1,0 +1,334 @@
+{
+  "slug": "clickhouse",
+  "name": "ClickHouse",
+  "category": "Backend, database & DevOps",
+  "look": "Near-black canvas with electric yellow on CTAs and huge stat numbers, dark cards barely lighter than the ground.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "bold"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "terminal",
+    "features": "grid",
+    "cards": "bordered",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-lightning",
+    "name": "Tachyon"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Product",
+        "href": "features"
+      },
+      {
+        "label": "Cloud",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Docs",
+        "href": "gallery"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Community",
+        "href": "faq"
+      }
+    ],
+    "cta": "Start free",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "Tachyon 25.4",
+    "title": "The fastest <em>analytical database</em>",
+    "sub": "Columnar storage, vectorised execution and aggressive compression. Billions of rows scanned per second on hardware you already have.",
+    "cta1": "Start free",
+    "cta2": "Read the docs",
+    "image": "photo-1551288049-bebda4e38f71",
+    "ratio": 0.58,
+    "stats": [
+      {
+        "v": "2.8k+",
+        "l": "Contributors"
+      },
+      {
+        "v": "47k+",
+        "l": "Stars"
+      },
+      {
+        "v": "100×",
+        "l": "Faster than row stores"
+      }
+    ]
+  },
+  "logo_lead": "Running Tachyon in production",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "Why it is fast",
+    "title": "Columnar, vectorised, compressed",
+    "sub": "Three decisions made at the storage layer that no amount of query tuning elsewhere can match.",
+    "items": [
+      {
+        "icon": "ph-columns",
+        "title": "Columnar storage",
+        "body": "Only the columns a query touches are read from disk, which for wide analytical tables is most of the win."
+      },
+      {
+        "icon": "ph-lightning",
+        "title": "Vectorised execution",
+        "body": "Operations run over blocks of thousands of values, keeping the CPU pipeline full."
+      },
+      {
+        "icon": "ph-archive",
+        "title": "10× compression",
+        "body": "Sorted columnar data compresses hard. Typical deployments store a tenth of the raw bytes."
+      },
+      {
+        "icon": "ph-arrows-out",
+        "title": "Scales horizontally",
+        "body": "Shard and replicate across nodes, with distributed queries planned automatically."
+      },
+      {
+        "icon": "ph-plugs",
+        "title": "Speaks SQL",
+        "body": "Ordinary SQL with analytical extensions. Your BI tool connects over the existing wire protocols."
+      },
+      {
+        "icon": "ph-cloud",
+        "title": "Cloud or self-hosted",
+        "body": "The same engine, managed by us or running on your own tin. Open source either way."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "Benchmarks",
+      "title": "Reproducible, not marketing",
+      "body": "Every published benchmark ships with the dataset, the queries and the hardware specification. A result you cannot reproduce is a result we should not have published.",
+      "points": [
+        "Dataset and queries published",
+        "Hardware specification stated",
+        "Competitor configurations included"
+      ],
+      "image": "photo-1560472354-b33ff0c44a43",
+      "cta": "See the benchmarks"
+    },
+    {
+      "eyebrow": "Cloud",
+      "title": "Managed, without the lock-in",
+      "body": "The managed service runs the same open-source engine. Export your data as Parquet at any time and stand it up yourself — the migration path out is documented, not hypothetical.",
+      "points": [
+        "Same open-source engine",
+        "Parquet export at any time",
+        "Documented path to self-hosting"
+      ],
+      "image": "photo-1558494949-ef010cbdcc31",
+      "cta": "Explore Cloud"
+    }
+  ],
+  "metric_lead": "Community",
+  "metrics": [
+    {
+      "v": "47k+",
+      "l": "GitHub stars"
+    },
+    {
+      "v": "2.8k+",
+      "l": "Contributors"
+    },
+    {
+      "v": "100×",
+      "l": "Faster than row stores"
+    },
+    {
+      "v": "10×",
+      "l": "Compression ratio"
+    }
+  ],
+  "gallery": {
+    "title": "Documentation",
+    "sub": "Getting started, SQL reference, deployment and tuning.",
+    "items": [
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Quickstart",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "SQL",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Deploying",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1560472354-b33ff0c44a43",
+        "tag": "Tuning",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "Storage",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Integrations",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "A dashboard that took ninety seconds now takes under one. We did not rewrite the queries — we moved the table.",
+    "name": "Priya Venkatesh",
+    "role": "Data Platform Lead, Corva",
+    "avatar": "photo-1534528741775-53994a69daeb"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "sub": "Open source is free. Cloud is priced on compute and storage.",
+    "tiers": [
+      {
+        "name": "Open source",
+        "price": "$0",
+        "period": "forever",
+        "desc": "Run it yourself.",
+        "features": [
+          "Full engine",
+          "Apache 2.0",
+          "Community support",
+          "No feature gating"
+        ],
+        "cta": "Download"
+      },
+      {
+        "name": "Cloud",
+        "price": "$0.20",
+        "period": "/compute-hour",
+        "desc": "Managed, scales to zero.",
+        "features": [
+          "Automatic scaling",
+          "Backups and PITR",
+          "99.9% SLA",
+          "Email support"
+        ],
+        "cta": "Start free",
+        "featured": true,
+        "badge": "Most teams"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "desc": "Dedicated and compliant.",
+        "features": [
+          "Dedicated clusters",
+          "SOC 2 and HIPAA",
+          "Private networking",
+          "Named engineer"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "Is the open-source version crippled?",
+        "a": "No. The managed service runs the same Apache 2.0 engine with no proprietary query features. You are paying for operations, not capability."
+      },
+      {
+        "q": "Can it replace my transactional database?",
+        "a": "No, and it should not try. It is built for analytical scans over large tables, not high-concurrency single-row writes."
+      },
+      {
+        "q": "How does it compress so well?",
+        "a": "Columnar layout plus sorting means adjacent values are similar, which general-purpose compressors exploit heavily. Ten-to-one is typical on real data."
+      },
+      {
+        "q": "What if we outgrow Cloud?",
+        "a": "Export to Parquet and stand up your own cluster. The path is documented and customers do take it — that is the point of keeping the engine open."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Query a billion rows",
+    "sub": "Free to start, and the open-source engine is the same one.",
+    "btn1": "Start free",
+    "btn2": "Read the docs"
+  },
+  "footer": {
+    "tagline": "The fastest analytical database.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Engine",
+          "Cloud",
+          "Integrations",
+          "Pricing"
+        ]
+      },
+      {
+        "title": "Docs",
+        "links": [
+          "Quickstart",
+          "SQL reference",
+          "Deploying",
+          "Tuning"
+        ]
+      },
+      {
+        "title": "Community",
+        "links": [
+          "GitHub",
+          "Slack",
+          "Blog",
+          "Meetups"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Support",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Tachyon Labs"
+  },
+  "specimen": "Billions of rows",
+  "notes": [
+    "Near-pure black with white type. There is no light-mode marketing surface in this system.",
+    "Electric yellow carries primary CTAs, the large stat-callout numbers, and full-bleed yellow bands — nothing else.",
+    "Cards sit barely lighter than the canvas. The colour-block contrast is deliberately subtle.",
+    "Huge yellow stat numbers in a heavy sans carry the credibility moment. That is the pattern, not a decorative flourish.",
+    "Radius is hierarchical: 8px buttons, 12px content cards, and pills only on tag badges."
+  ]
+}

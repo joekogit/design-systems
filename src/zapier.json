@@ -1,0 +1,334 @@
+{
+  "slug": "zapier",
+  "name": "Zapier",
+  "category": "Productivity & SaaS",
+  "look": "Warm cream canvas and deep coffee ink, one saturated orange CTA, and a 12px middle radius throughout.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Bricolage Grotesque\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-lightning",
+    "name": "Relayline"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Product",
+        "href": "features"
+      },
+      {
+        "label": "Integrations",
+        "href": "gallery"
+      },
+      {
+        "label": "Solutions",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Docs",
+        "href": "faq"
+      }
+    ],
+    "cta": "Start free",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "AUTOMATION FOR EVERYONE",
+    "title": "Connect your apps and <em>automate the boring parts</em>",
+    "sub": "Eight thousand apps, joined together by anyone who can describe what they want to happen. No developer required, and no ticket to raise.",
+    "cta1": "Start free",
+    "cta2": "Book a demo",
+    "image": "photo-1547658719-da2b51169166",
+    "ratio": 0.64,
+    "stats": [
+      {
+        "v": "8,000+",
+        "l": "Apps"
+      },
+      {
+        "v": "No code",
+        "l": "Required"
+      },
+      {
+        "v": "2 min",
+        "l": "To first automation"
+      }
+    ]
+  },
+  "logo_lead": "AUTOMATING WORK AT",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "HOW IT WORKS",
+    "title": "A trigger, then some steps",
+    "sub": "Every automation is the same shape, which is why non-developers can build them and still trust them.",
+    "items": [
+      {
+        "icon": "ph-lightning",
+        "title": "Triggers",
+        "body": "Something happens in one app — a form is submitted, a deal moves, a file lands."
+      },
+      {
+        "icon": "ph-arrow-bend-down-right",
+        "title": "Actions",
+        "body": "Then things happen in others, in order, with the data mapped between them."
+      },
+      {
+        "icon": "ph-git-branch",
+        "title": "Paths and filters",
+        "body": "Branch on a condition so one automation handles several cases without duplicating it."
+      },
+      {
+        "icon": "ph-clock",
+        "title": "Schedules and delays",
+        "body": "Run on a timer, or wait a day before the follow-up so it does not arrive at midnight."
+      },
+      {
+        "icon": "ph-warning",
+        "title": "Errors you can see",
+        "body": "Failed runs held with the data attached, replayable once you have fixed the cause."
+      },
+      {
+        "icon": "ph-users-three",
+        "title": "Shared with the team",
+        "body": "Automations owned by a team rather than by whoever happened to build them."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "SOLUTIONS",
+      "title": "Built by the person with the problem",
+      "body": "The people who know a process is tedious are rarely the people who can write a script. Handing them a builder they can actually use removes months of queueing behind an engineering backlog.",
+      "points": [
+        "No developer or ticket required",
+        "Built by the person who owns the process",
+        "Handed over cleanly when they leave"
+      ],
+      "image": "photo-1552664730-d307ca884978",
+      "cta": "See solutions"
+    },
+    {
+      "eyebrow": "RELIABILITY",
+      "title": "Failures are held, not dropped",
+      "body": "When a step fails the run is held with its data intact rather than discarded. Fix the cause, replay it, and nothing is lost — which is the difference between an automation you trust and one you check every morning.",
+      "points": [
+        "Failed runs held with data intact",
+        "Replay after fixing the cause",
+        "Alerts on repeated failure"
+      ],
+      "image": "photo-1551288049-bebda4e38f71",
+      "cta": "How reliability works"
+    }
+  ],
+  "metric_lead": "ACROSS RELAYLINE",
+  "metrics": [
+    {
+      "v": "8,000+",
+      "l": "APPS CONNECTED"
+    },
+    {
+      "v": "2 min",
+      "l": "TO FIRST AUTOMATION"
+    },
+    {
+      "v": "2.5M+",
+      "l": "TEAMS"
+    },
+    {
+      "v": "0",
+      "l": "CODE REQUIRED"
+    }
+  ],
+  "gallery": {
+    "title": "INTEGRATIONS",
+    "sub": "Eight thousand apps, and the popular ones are properly supported.",
+    "items": [
+      {
+        "id": "photo-1547658719-da2b51169166",
+        "tag": "Productivity",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1487017159836-4e23ece2e4cf",
+        "tag": "Email",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Analytics",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1556742049-0cfed4f6a45d",
+        "tag": "Payments",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1552664730-d307ca884978",
+        "tag": "Chat",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1454165804606-c3d57bc86b40",
+        "tag": "CRM",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "Our operations manager automated the thing she had been asking engineering for since January. It took her an afternoon and she has since built nine more.",
+    "name": "Daniel Reyes",
+    "role": "COO, Perigee",
+    "avatar": "photo-1500648767791-00dcc994a43e"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Free to start. Priced on tasks, not on people.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "/month",
+        "desc": "For trying it.",
+        "features": [
+          "100 tasks monthly",
+          "Two-step automations",
+          "8,000+ apps",
+          "Community support"
+        ],
+        "cta": "Start free"
+      },
+      {
+        "name": "Professional",
+        "price": "$29",
+        "period": "/month",
+        "desc": "For real automation.",
+        "features": [
+          "2,000 tasks monthly",
+          "Multi-step and paths",
+          "Custom logic",
+          "Email support"
+        ],
+        "cta": "Start free",
+        "featured": true,
+        "badge": "MOST TEAMS"
+      },
+      {
+        "name": "Team",
+        "price": "$103",
+        "period": "/month",
+        "desc": "For teams sharing automations.",
+        "features": [
+          "Everything in Professional",
+          "Shared workspaces",
+          "Unlimited users",
+          "Priority support"
+        ],
+        "cta": "Book a demo"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "What counts as a task?",
+        "a": "Each successful action a step performs. Triggers and filtered-out runs are not counted, so a heavily filtered automation is cheap to run."
+      },
+      {
+        "q": "Do you charge per user?",
+        "a": "No. Team plans include unlimited users; you pay for tasks. That is deliberate — automation gets more valuable the more people can build it."
+      },
+      {
+        "q": "What if an app I need is not supported?",
+        "a": "There are webhook and HTTP steps for anything with an API, and a developer platform for publishing a proper integration."
+      },
+      {
+        "q": "What happens when a step fails?",
+        "a": "The run is held with its data rather than discarded. Fix the cause and replay it; nothing is lost in the meantime."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Automate something today",
+    "sub": "A hundred tasks a month free, and the first one takes about two minutes.",
+    "btn1": "Start free",
+    "btn2": "Book a demo"
+  },
+  "footer": {
+    "tagline": "Connect your apps and automate the boring parts.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Automation",
+          "Integrations",
+          "Tables",
+          "Interfaces"
+        ]
+      },
+      {
+        "title": "Solutions",
+        "links": [
+          "Marketing",
+          "Sales",
+          "Support",
+          "IT"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Help",
+          "Community",
+          "Blog",
+          "Templates"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Pricing",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Relayline"
+  },
+  "specimen": "Automate the boring",
+  "notes": [
+    "The canvas is warm cream, not pure white. The temperature is the brand voice.",
+    "Ink is a deep coffee rather than black, and that warmth carries through every neutral in the ladder.",
+    "One saturated orange is the conversion signature and appears nowhere decorative.",
+    "12px is the middle-radius signature for both buttons and cards — neither sharp nor pill.",
+    "Every neutral in the greyscale carries warmth; introducing a cool grey anywhere breaks the temperature."
+  ]
+}

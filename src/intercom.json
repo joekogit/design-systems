@@ -1,0 +1,334 @@
+{
+  "slug": "intercom",
+  "name": "Intercom",
+  "category": "Productivity & SaaS",
+  "look": "Cream canvas with charcoal as the system primary, product screenshots leading every section, and one orange reserved for the AI product.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Plus Jakarta Sans\", -apple-system, sans-serif",
+    "body": "\"Plus Jakarta Sans\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "elevated",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-chat-circle-dots",
+    "name": "Parley"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Product",
+        "href": "features"
+      },
+      {
+        "label": "AI Agent",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Customers",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Docs",
+        "href": "gallery"
+      }
+    ],
+    "cta": "Start free trial",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "CUSTOMER SERVICE",
+    "title": "The AI-first <em>customer service</em> platform",
+    "sub": "An AI agent that resolves most conversations on its own, a helpdesk for the ones it cannot, and a shared inbox where both live together.",
+    "cta1": "Start free trial",
+    "cta2": "See a demo",
+    "image": "photo-1552664730-d307ca884978",
+    "ratio": 0.66,
+    "stats": [
+      {
+        "v": "52%",
+        "l": "Resolved by AI"
+      },
+      {
+        "v": "< 1 min",
+        "l": "Median first reply"
+      },
+      {
+        "v": "45",
+        "l": "Languages"
+      }
+    ]
+  },
+  "logo_lead": "SUPPORTING CUSTOMERS AT",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "THE PLATFORM",
+    "title": "One inbox, human and machine",
+    "sub": "The AI agent and your team work the same conversations, with the handover visible to everyone.",
+    "items": [
+      {
+        "icon": "ph-robot",
+        "title": "AI agent",
+        "body": "Resolves routine questions from your help centre content, and says it does not know rather than inventing an answer."
+      },
+      {
+        "icon": "ph-tray",
+        "title": "Shared inbox",
+        "body": "One queue for email, chat, social and in-app, with assignment rules and SLAs."
+      },
+      {
+        "icon": "ph-books",
+        "title": "Help centre",
+        "body": "Articles that feed the AI agent, so improving the docs improves resolution directly."
+      },
+      {
+        "icon": "ph-arrows-left-right",
+        "title": "Clean handover",
+        "body": "When the agent escalates, the human sees the full attempt rather than starting cold."
+      },
+      {
+        "icon": "ph-chart-bar",
+        "title": "Resolution reporting",
+        "body": "What was resolved, by whom or what, and where the agent gave up."
+      },
+      {
+        "icon": "ph-users",
+        "title": "Customer context",
+        "body": "Plan, usage and history alongside the conversation, from your own systems."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "AI AGENT",
+      "title": "It knows when to give up",
+      "body": "The agent answers from your help centre and its own resolution history, and escalates the moment confidence drops rather than guessing. The rate at which it hands over is reported honestly, because that number is what you tune.",
+      "points": [
+        "Answers grounded in your own content",
+        "Escalates rather than guessing",
+        "Handover rate reported per topic"
+      ],
+      "image": "photo-1522202176988-66273c2fd55f",
+      "cta": "See the AI agent"
+    },
+    {
+      "eyebrow": "CUSTOMERS",
+      "title": "Measured on resolution, not deflection",
+      "body": "Deflection counts people who gave up. Resolution counts people whose problem was actually solved. The reporting distinguishes them, which changes what you optimise for.",
+      "points": [
+        "Resolution measured, not deflection",
+        "Per-topic breakdown of failures",
+        "Customer satisfaction attached to each"
+      ],
+      "image": "photo-1521737604893-d14cc237f11d",
+      "cta": "Read customer stories"
+    }
+  ],
+  "metric_lead": "ACROSS PARLEY CUSTOMERS",
+  "metrics": [
+    {
+      "v": "52%",
+      "l": "RESOLVED BY AI"
+    },
+    {
+      "v": "< 1 min",
+      "l": "MEDIAN FIRST REPLY"
+    },
+    {
+      "v": "45",
+      "l": "LANGUAGES"
+    },
+    {
+      "v": "25k+",
+      "l": "TEAMS"
+    }
+  ],
+  "gallery": {
+    "title": "RESOURCES",
+    "sub": "Guides, integrations and the developer API.",
+    "items": [
+      {
+        "id": "photo-1552664730-d307ca884978",
+        "tag": "Inbox",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1522202176988-66273c2fd55f",
+        "tag": "AI agent",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1487017159836-4e23ece2e4cf",
+        "tag": "Help centre",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Reporting",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1521737604893-d14cc237f11d",
+        "tag": "Teams",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "API",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "Half our conversations never reach a person, and the half that do arrive with the whole attempted answer attached. Our team stopped starting every ticket from zero.",
+    "name": "Marcus Lindgren",
+    "role": "Head of Support, Tessera",
+    "avatar": "photo-1573496359142-b8d87734a5a2"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Per seat, plus a published rate per AI resolution.",
+    "tiers": [
+      {
+        "name": "Essential",
+        "price": "$29",
+        "period": "/seat/mo",
+        "desc": "For small teams.",
+        "features": [
+          "Shared inbox",
+          "Help centre",
+          "Basic reporting",
+          "Email support"
+        ],
+        "cta": "Start free trial"
+      },
+      {
+        "name": "Advanced",
+        "price": "$85",
+        "period": "/seat/mo",
+        "desc": "Adds automation and the AI agent.",
+        "features": [
+          "Everything in Essential",
+          "AI agent",
+          "Workflow automation",
+          "Priority support"
+        ],
+        "cta": "Start free trial",
+        "featured": true,
+        "badge": "MOST TEAMS"
+      },
+      {
+        "name": "Expert",
+        "price": "$132",
+        "period": "/seat/mo",
+        "desc": "For larger service organisations.",
+        "features": [
+          "Everything in Advanced",
+          "SLAs and routing",
+          "Advanced reporting",
+          "Named manager"
+        ],
+        "cta": "Talk to sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "How is the AI agent priced?",
+        "a": "At a published rate per resolution, charged only when the conversation actually ends without a human. Escalated conversations are not billed as resolutions."
+      },
+      {
+        "q": "What does it answer from?",
+        "a": "Your help centre articles, past resolved conversations and any content you connect. It does not answer from general world knowledge."
+      },
+      {
+        "q": "What happens when it does not know?",
+        "a": "It says so and hands over, passing the full attempt to the agent who picks it up. The handover rate is reported per topic so you can see where your content is thin."
+      },
+      {
+        "q": "Can we start without the AI agent?",
+        "a": "Yes. Essential is a straightforward shared inbox and help centre; the agent is added on Advanced when you want it."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start resolving faster",
+    "sub": "Fourteen-day trial, no card, and the AI agent included.",
+    "btn1": "Start free trial",
+    "btn2": "See a demo"
+  },
+  "footer": {
+    "tagline": "The AI-first customer service platform.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Inbox",
+          "AI agent",
+          "Help centre",
+          "Reporting"
+        ]
+      },
+      {
+        "title": "Solutions",
+        "links": [
+          "Support",
+          "Sales",
+          "Onboarding",
+          "Engagement"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Docs",
+          "API",
+          "Community",
+          "Academy"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Customers",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Parley Support"
+  },
+  "specimen": "Resolved, not deflected",
+  "notes": [
+    "The cream canvas is the defining surface — neither white nor grey, deliberately warm.",
+    "Every section centres a product mockup card; the marketing chrome around it stays minimal.",
+    "Charcoal is the system primary. Buttons, headlines and body type all sit on it rather than on a brand hue.",
+    "The orange belongs to the AI product only — its CTA and its badge. Using it decoratively would dilute the signal.",
+    "Display tracking pulls aggressively negative at large sizes while body copy stays at zero."
+  ]
+}

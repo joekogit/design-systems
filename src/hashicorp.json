@@ -1,0 +1,334 @@
+{
+  "slug": "hashicorp",
+  "name": "HashiCorp",
+  "category": "Backend, database & DevOps",
+  "look": "Black canvas throughout with a per-product colour identity, tight display against relaxed body, and hairlines felt more than seen.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "bold"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "bordered",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-hexagon",
+    "name": "Keystone"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Products",
+        "href": "features"
+      },
+      {
+        "label": "Solutions",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Docs",
+        "href": "gallery"
+      },
+      {
+        "label": "Community",
+        "href": "faq"
+      }
+    ],
+    "cta": "Try Cloud",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "INFRASTRUCTURE AUTOMATION",
+    "title": "Provision, secure and run <em>any infrastructure</em>",
+    "sub": "Seven products that each do one thing properly, with a shared workflow across every cloud you happen to be on.",
+    "cta1": "Try Cloud",
+    "cta2": "Talk to sales",
+    "image": "photo-1558494949-ef010cbdcc31",
+    "ratio": 0.64,
+    "stats": [
+      {
+        "v": "7",
+        "l": "Products"
+      },
+      {
+        "v": "3,000+",
+        "l": "Providers"
+      },
+      {
+        "v": "Every cloud",
+        "l": "Supported"
+      }
+    ]
+  },
+  "logo_lead": "AUTOMATING INFRASTRUCTURE AT",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "THE SUITE",
+    "title": "Seven products, one workflow",
+    "sub": "Each carries its own colour identity, and each replaces a category of bespoke scripts.",
+    "items": [
+      {
+        "icon": "ph-stack",
+        "title": "Provision",
+        "body": "Declarative infrastructure across three thousand providers, with a plan you review before anything changes."
+      },
+      {
+        "icon": "ph-vault",
+        "title": "Secrets",
+        "body": "Dynamic, short-lived credentials issued on request instead of long-lived keys in a config file."
+      },
+      {
+        "icon": "ph-graph",
+        "title": "Service mesh",
+        "body": "Service discovery, mTLS and traffic policy across clusters and clouds."
+      },
+      {
+        "icon": "ph-cube",
+        "title": "Scheduling",
+        "body": "One scheduler for containers, virtual machines and plain binaries."
+      },
+      {
+        "icon": "ph-lock-key",
+        "title": "Access",
+        "body": "Identity-based access to hosts and databases, with every session recorded."
+      },
+      {
+        "icon": "ph-package",
+        "title": "Images",
+        "body": "Reproducible machine images built once and promoted through environments."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "WORKFLOW",
+      "title": "The plan is the product",
+      "body": "Every change is proposed as a plan before it is applied. Reviewing a diff of infrastructure changes turns a risky operation into an ordinary code review, which is the whole reason the category exists.",
+      "points": [
+        "Plan reviewed before any change is applied",
+        "State stored, locked and versioned",
+        "Policy checks run before apply"
+      ],
+      "image": "photo-1526374965328-7f61d4dc18c5",
+      "cta": "How the workflow works"
+    },
+    {
+      "eyebrow": "SECRETS",
+      "title": "Credentials that expire on their own",
+      "body": "Instead of a long-lived key sitting in an environment variable, a service requests a credential when it needs one and that credential expires shortly afterwards. Leaked secrets stop being an emergency.",
+      "points": [
+        "Dynamic, short-lived credentials",
+        "Full audit trail per issuance",
+        "Automatic rotation and revocation"
+      ],
+      "image": "photo-1518770660439-4636190af475",
+      "cta": "Explore secrets"
+    }
+  ],
+  "metric_lead": "ACROSS THE ECOSYSTEM",
+  "metrics": [
+    {
+      "v": "7",
+      "l": "PRODUCTS"
+    },
+    {
+      "v": "3,000+",
+      "l": "PROVIDERS"
+    },
+    {
+      "v": "100M+",
+      "l": "DOWNLOADS"
+    },
+    {
+      "v": "MPL 2.0",
+      "l": "CORE LICENCE"
+    }
+  ],
+  "gallery": {
+    "title": "DOCUMENTATION",
+    "sub": "Tutorials, references and reference architectures for each product.",
+    "items": [
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Provision",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "Secrets",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Mesh",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "Scheduling",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Access",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1547658719-da2b51169166",
+        "tag": "Images",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "We deleted eleven thousand lines of bash. The scripts had worked, technically, but nobody could tell you what state the account was actually in.",
+    "name": "Karl Bergman",
+    "role": "Platform Architect, Northwind",
+    "avatar": "photo-1573496359142-b8d87734a5a2"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Open source is free. Cloud is priced per resource under management.",
+    "tiers": [
+      {
+        "name": "Open source",
+        "price": "$0",
+        "period": "forever",
+        "desc": "Self-managed, all products.",
+        "features": [
+          "All seven products",
+          "MPL 2.0 licence",
+          "Community support",
+          "No feature gating"
+        ],
+        "cta": "Download"
+      },
+      {
+        "name": "Cloud",
+        "price": "$0.10",
+        "period": "/resource/hr",
+        "desc": "Managed, with state and policy.",
+        "features": [
+          "Managed state and locking",
+          "Policy as code",
+          "Audit logging",
+          "Email support"
+        ],
+        "cta": "Try Cloud",
+        "featured": true,
+        "badge": "MOST TEAMS"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "desc": "Self-managed with governance.",
+        "features": [
+          "Everything in Cloud",
+          "Self-managed clusters",
+          "SSO and SCIM",
+          "Named engineer"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "Is the open-source version limited?",
+        "a": "The core of every product is open under MPL 2.0 with no feature gating. The paid tiers add governance, managed state and support rather than capability."
+      },
+      {
+        "q": "Do the products require each other?",
+        "a": "No. Each is usable on its own, and most teams adopt one first. They share a workflow and an identity model when you do run several."
+      },
+      {
+        "q": "What clouds are supported?",
+        "a": "All the major ones, plus three thousand community providers covering everything from DNS registrars to SaaS tools."
+      },
+      {
+        "q": "How is state handled?",
+        "a": "Stored, versioned and locked so two engineers cannot apply conflicting changes. Self-managed users choose their own backend; Cloud manages it for you."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start with one product",
+    "sub": "Free and open source, or try the managed workflow.",
+    "btn1": "Try Cloud",
+    "btn2": "Download"
+  },
+  "footer": {
+    "tagline": "Provision, secure and run any infrastructure.",
+    "columns": [
+      {
+        "title": "Products",
+        "links": [
+          "Provision",
+          "Secrets",
+          "Mesh",
+          "Scheduling"
+        ]
+      },
+      {
+        "title": "Solutions",
+        "links": [
+          "Multi-cloud",
+          "Zero trust",
+          "Migration",
+          "Compliance"
+        ]
+      },
+      {
+        "title": "Developers",
+        "links": [
+          "Documentation",
+          "Tutorials",
+          "Registry",
+          "Status"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Blog",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Keystone Systems"
+  },
+  "specimen": "Plan, then apply",
+  "notes": [
+    "The black canvas carries hero, body, pricing, comparison tables and footer alike — there is no light interlude.",
+    "Each product owns a colour identity with its own button and card variant. Mixing two product colours in one component breaks the system.",
+    "The typographic voice is the proportional gap: display at tight 1.17–1.21 line-height, body in the same family at a relaxed 1.5–1.7.",
+    "CTAs sit at 8px, not pills, which keeps the system reading as developer-tool rather than consumer app.",
+    "Elevation is a charcoal surface lift rather than shadow, and 1px translucent hairlines define cards — felt more than seen."
+  ]
+}

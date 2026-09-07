@@ -1,0 +1,62 @@
+/* MongoDB — deep teal bands, bright green pills, white doc surfaces, tagged tiles. */
+:root { --maxw: 1220px; --sect: clamp(56px, 7vw, 92px);
+  --teal-deep: #0e3b3a; --green: #00ed64; --green-ink: #00302a; --mint: #c3f4d7;
+  --tag-purple: #b45af2; --tag-orange: #ff8a3d; --tag-green: #00c26e; --tag-teal: #16a5a5;
+  --shadow-1: 0 1px 2px rgba(14,59,58,.06), 0 6px 20px rgba(14,59,58,.08);
+  --shadow-2: 0 2px 8px rgba(14,59,58,.09), 0 16px 40px rgba(14,59,58,.12); }
+
+.nav { --nav-bg: rgba(255,255,255,.94); backdrop-filter: blur(10px); }
+.brand { font-weight: 800; letter-spacing: -.03em; color: var(--teal-deep); }
+.brand-ico { color: var(--tag-green); }
+.btn { border-radius: var(--r-pill); font-weight: 700; padding: 13px 26px; }
+.btn-primary { background: var(--green); color: var(--green-ink); }
+.btn-primary:hover { background: #00d75a; }
+.btn-secondary { background: #fff; color: var(--teal-deep); border-color: var(--teal-deep); }
+.btn-secondary:hover { background: #eef5f4; }
+.eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 700; }
+.eyebrow { color: var(--green); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 800; letter-spacing: -.035em; }
+
+/* the deep teal hero band */
+.hero { background: var(--teal-deep); color: #fff; }
+.hero-title { color: #fff; }
+.hero-title em { color: var(--green); }
+.hero-sub { color: rgba(255,255,255,.8); }
+.hero-stats { border-top-color: rgba(255,255,255,.24); }
+.hstat b { color: #fff; } .hstat span { color: rgba(255,255,255,.62); }
+.hero .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.45); }
+.hero-media img { border: 0; border-radius: 12px; }
+
+.logos { background: #f7faf9; border-block: 0; }
+.logo-item { color: var(--teal-deep); font-weight: 700; }
+.feat-card { background: #fff; border: 0; border-radius: 12px; box-shadow: var(--shadow-1); }
+.feat-card:hover { box-shadow: var(--shadow-2); transform: translateY(-2px); background: #fff; }
+.feat-ico { background: #e6f9ef; color: var(--green-ink); border: 0; border-radius: var(--r-pill); width: 46px; height: 46px; }
+.sc-media img, .g-item { border-radius: 12px; border: 0; box-shadow: var(--shadow-1); }
+.metrics { --metrics-bg: var(--teal-deep); border-block: 0; }
+.metrics .metric-v { color: var(--green); }
+.metrics .metric-l, .metrics .logos-lead { color: rgba(255,255,255,.66); }
+/* colour category tags on the resource tiles */
+.g-item figcaption { border-radius: var(--r-pill); color: #fff; font-weight: 700; background: var(--tag-teal); }
+.g-item:nth-child(2) figcaption { background: var(--tag-purple); }
+.g-item:nth-child(3) figcaption { background: var(--tag-orange); }
+.g-item:nth-child(4) figcaption { background: var(--tag-green); }
+.g-item:nth-child(5) figcaption { background: var(--tag-purple); }
+.quote-card { background: #f7faf9; border: 0; border-radius: 16px; --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--tag-green); }
+.q-av { border-radius: var(--r-pill); }
+.tier { background: #fff; border: 0; border-radius: 12px; box-shadow: var(--shadow-1); }
+.tier-feat { background: var(--mint); }
+.tier-badge { background: var(--teal-deep); border-radius: var(--r-pill); letter-spacing: .08em; font-size: 10px; }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--tag-green); }
+.cta-band { background: var(--teal-deep); color: #fff; border: 0; border-radius: 16px; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: rgba(255,255,255,.78); }
+.cta-band .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.45); }
+.foot { background: var(--teal-deep); --foot-bg: var(--teal-deep); border-top: 0; }
+.foot .brand { color: #fff; }
+.fcol h4 { color: rgba(255,255,255,.6); } .fcol a, .foot-tag { color: rgba(255,255,255,.86); }
+.foot-legal { color: rgba(255,255,255,.6); border-top-color: rgba(255,255,255,.18); }
+.foot-socials a { border-color: rgba(255,255,255,.26); color: rgba(255,255,255,.86); border-radius: var(--r-pill); }
+.spec { --spec-bg: #f7faf9; }
+.input, .badge2, .tabs, .tabs button { border-radius: var(--r-pill); }

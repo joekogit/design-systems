@@ -1,0 +1,334 @@
+{
+  "slug": "cal",
+  "name": "Cal.com",
+  "category": "Productivity & SaaS",
+  "look": "White canvas with a black CTA, light-grey cards, real product fragments embedded, and a pill-group nav switcher.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-calendar-check",
+    "name": "Timeslot"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Product",
+        "href": "features"
+      },
+      {
+        "label": "Enterprise",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Docs",
+        "href": "gallery"
+      },
+      {
+        "label": "Blog",
+        "href": "faq"
+      }
+    ],
+    "cta": "Get started",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "Open-source scheduling",
+    "title": "Scheduling infrastructure <em>for everyone</em>",
+    "sub": "The open-source scheduling layer. Use the hosted booking pages, or embed the whole engine in your own product and never send anyone to a third-party link again.",
+    "cta1": "Get started",
+    "cta2": "Talk to sales",
+    "image": "photo-1487017159836-4e23ece2e4cf",
+    "ratio": 0.66,
+    "stats": [
+      {
+        "v": "Open",
+        "l": "Source"
+      },
+      {
+        "v": "60+",
+        "l": "Integrations"
+      },
+      {
+        "v": "Self-host",
+        "l": "Supported"
+      }
+    ]
+  },
+  "logo_lead": "Scheduling with Timeslot",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "The platform",
+    "title": "Booking pages, or the engine underneath",
+    "sub": "Most people want the booking page. Some want the availability engine inside their own product. Both are supported.",
+    "items": [
+      {
+        "icon": "ph-calendar-blank",
+        "title": "Booking pages",
+        "body": "A shareable link that respects your real availability across every connected calendar."
+      },
+      {
+        "icon": "ph-users-three",
+        "title": "Round robin",
+        "body": "Distribute bookings across a team by availability, load or priority."
+      },
+      {
+        "icon": "ph-plugs-connected",
+        "title": "60+ integrations",
+        "body": "Calendars, video tools, payments and CRMs, connected rather than reimplemented."
+      },
+      {
+        "icon": "ph-code",
+        "title": "Embeddable",
+        "body": "Drop the booker into your own product as a component, styled to your design system."
+      },
+      {
+        "icon": "ph-globe",
+        "title": "Timezone sanity",
+        "body": "Slots shown in the visitor's timezone with daylight-saving handled correctly on both sides."
+      },
+      {
+        "icon": "ph-house",
+        "title": "Self-hostable",
+        "body": "Run the entire platform on your own infrastructure under an open licence."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "Embedding",
+      "title": "Your product, not our subdomain",
+      "body": "The booker is a component you can embed and theme, so customers schedule inside your product rather than being handed off to a link that looks like somebody else's brand.",
+      "points": [
+        "React component or plain script embed",
+        "Themed with your own tokens",
+        "White-label on paid plans"
+      ],
+      "image": "photo-1547658719-da2b51169166",
+      "cta": "See the embed docs"
+    },
+    {
+      "eyebrow": "Enterprise",
+      "title": "Self-host the whole thing",
+      "body": "For teams where calendar data cannot leave the perimeter, the entire platform runs on your own infrastructure with the same feature set as the hosted service.",
+      "points": [
+        "Full platform, self-hosted",
+        "SAML SSO and SCIM",
+        "Audit logging and data residency"
+      ],
+      "image": "photo-1558494949-ef010cbdcc31",
+      "cta": "Enterprise options"
+    }
+  ],
+  "metric_lead": "",
+  "metrics": [
+    {
+      "v": "60+",
+      "l": "Integrations"
+    },
+    {
+      "v": "100%",
+      "l": "Open source"
+    },
+    {
+      "v": "0",
+      "l": "Vendor lock-in"
+    },
+    {
+      "v": "30k+",
+      "l": "Self-hosted instances"
+    }
+  ],
+  "gallery": {
+    "title": "Documentation",
+    "sub": "Setup, embedding, the API and self-hosting.",
+    "items": [
+      {
+        "id": "photo-1487017159836-4e23ece2e4cf",
+        "tag": "Quickstart",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1547658719-da2b51169166",
+        "tag": "Embedding",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "API",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Self-hosting",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1552664730-d307ca884978",
+        "tag": "Teams",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1521737604893-d14cc237f11d",
+        "tag": "Round robin",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "We embedded the booker in our onboarding flow in an afternoon. Customers never leave our product, which was the entire reason we stopped using the alternative.",
+    "name": "Laura Simmons",
+    "role": "Product Manager, Perigee",
+    "avatar": "photo-1494790108377-be9c29b29330"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "sub": "Free for individuals. Paid for teams and embedding.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "forever",
+        "desc": "For individuals.",
+        "features": [
+          "Unlimited bookings",
+          "All calendars",
+          "Basic integrations",
+          "Community support"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "name": "Teams",
+        "price": "$15",
+        "period": "/user/mo",
+        "desc": "For teams sharing availability.",
+        "features": [
+          "Round robin",
+          "Collective events",
+          "Routing forms",
+          "Email support"
+        ],
+        "cta": "Start free trial",
+        "featured": true,
+        "badge": "Most teams"
+      },
+      {
+        "name": "Platform",
+        "price": "Custom",
+        "period": "",
+        "desc": "Embedding and white-label.",
+        "features": [
+          "Embeddable booker",
+          "White-label",
+          "Self-hosting support",
+          "Named engineer"
+        ],
+        "cta": "Talk to sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "Is it really open source?",
+        "a": "Yes, and self-hostable in full rather than as a limited community edition. The paid plans add team features and support, not core capability."
+      },
+      {
+        "q": "Which calendars are supported?",
+        "a": "Google, Outlook, Office 365, iCloud and CalDAV, with multiple calendars per person merged for availability checking."
+      },
+      {
+        "q": "Can I white-label it?",
+        "a": "Yes, on Platform. Your domain, your branding, and no reference to us anywhere in the booking flow."
+      },
+      {
+        "q": "What happens to bookings if I self-host later?",
+        "a": "Export and import are supported both ways. Moving between hosted and self-hosted keeps your event types and history intact."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start scheduling",
+    "sub": "Free for individuals, open source, and self-hostable.",
+    "btn1": "Get started",
+    "btn2": "Talk to sales"
+  },
+  "footer": {
+    "tagline": "Scheduling infrastructure for everyone.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Booking pages",
+          "Teams",
+          "Embedding",
+          "Integrations"
+        ]
+      },
+      {
+        "title": "Docs",
+        "links": [
+          "Quickstart",
+          "API",
+          "Self-hosting",
+          "Embed"
+        ]
+      },
+      {
+        "title": "Community",
+        "links": [
+          "GitHub",
+          "Slack",
+          "Roadmap",
+          "Contribute"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Pricing",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Timeslot"
+  },
+  "specimen": "Book a time",
+  "notes": [
+    "White canvas with a confident black CTA at 8px and weight-600 labels — the friendly-SaaS button, done precisely.",
+    "The display face is geometric and slightly condensed with negative tracking; body stays in a neutral sans.",
+    "Light-grey card surfaces carry features, testimonials and non-featured pricing. The featured tier flips to dark — the only dark card on a light page.",
+    "Real product fragments — schedule pickers, calendar widgets, integration grids — sit inside marketing cards. The voltage comes from actual product chrome at small scale.",
+    "The nav pill-group wrapper around grouped segments is one of the system's signature interactive components."
+  ]
+}

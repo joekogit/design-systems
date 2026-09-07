@@ -1,0 +1,334 @@
+{
+  "slug": "mintlify",
+  "name": "Mintlify",
+  "category": "Productivity & SaaS",
+  "look": "Atmospheric sky-to-cream gradient bands, black pill CTAs, mint reserved for accents and confirmations.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "centered",
+    "features": "grid",
+    "cards": "elevated",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-book-bookmark",
+    "name": "Marginalia"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Product",
+        "href": "features"
+      },
+      {
+        "label": "Customers",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Docs",
+        "href": "gallery"
+      },
+      {
+        "label": "Blog",
+        "href": "faq"
+      }
+    ],
+    "cta": "Get started",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "DOCUMENTATION PLATFORM",
+    "title": "Documentation your developers <em>actually read</em>",
+    "sub": "Write in Markdown, get a fast searchable site with a generated API reference, and stop maintaining a docs framework nobody wanted to own.",
+    "cta1": "Get started",
+    "cta2": "Book a demo",
+    "image": "photo-1544716278-ca5e3f4abd8c",
+    "ratio": 0.58,
+    "stats": [
+      {
+        "v": "< 1s",
+        "l": "Page load"
+      },
+      {
+        "v": "MDX",
+        "l": "Authoring"
+      },
+      {
+        "v": "OpenAPI",
+        "l": "Auto-generated"
+      }
+    ]
+  },
+  "logo_lead": "DOCUMENTATION BUILT WITH MARGINALIA",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "THE PLATFORM",
+    "title": "Docs without a docs team",
+    "sub": "The things every documentation site needs, without building any of them yourself.",
+    "items": [
+      {
+        "icon": "ph-file-md",
+        "title": "Write in MDX",
+        "body": "Markdown with components. Version it in the repo alongside the code it documents."
+      },
+      {
+        "icon": "ph-code",
+        "title": "API reference generated",
+        "body": "Point at an OpenAPI spec and get a reference with a working request playground."
+      },
+      {
+        "icon": "ph-magnifying-glass",
+        "title": "Search that works",
+        "body": "Instant full-text search with keyboard navigation, indexed on every deploy."
+      },
+      {
+        "icon": "ph-git-pull-request",
+        "title": "Preview per branch",
+        "body": "Every pull request gets a live docs preview to review before merge."
+      },
+      {
+        "icon": "ph-translate",
+        "title": "Localisation",
+        "body": "Multiple languages with fallback, so a partial translation is still useful."
+      },
+      {
+        "icon": "ph-chart-line",
+        "title": "See what people read",
+        "body": "Which pages, which searches returned nothing, and where readers give up."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "AUTHORING",
+      "title": "It lives with the code",
+      "body": "Docs are MDX files in your repository. They review in the same pull request as the change they describe, which is the only mechanism that reliably keeps documentation current.",
+      "points": [
+        "MDX in your own repository",
+        "Reviewed in the same pull request",
+        "Preview deploy per branch"
+      ],
+      "image": "photo-1526374965328-7f61d4dc18c5",
+      "cta": "Read the authoring guide"
+    },
+    {
+      "eyebrow": "CUSTOMERS",
+      "title": "The failed-search report",
+      "body": "The most useful analytics page is the list of searches that returned nothing. It is a queue of documentation your readers wanted and could not find, ordered by demand.",
+      "points": [
+        "Searches that returned no results",
+        "Pages where readers abandon",
+        "Per-page helpfulness feedback"
+      ],
+      "image": "photo-1551288049-bebda4e38f71",
+      "cta": "Read customer stories"
+    }
+  ],
+  "metric_lead": "ACROSS DOCUMENTATION SITES",
+  "metrics": [
+    {
+      "v": "< 1s",
+      "l": "MEDIAN PAGE LOAD"
+    },
+    {
+      "v": "98",
+      "l": "LIGHTHOUSE"
+    },
+    {
+      "v": "MDX",
+      "l": "AUTHORING FORMAT"
+    },
+    {
+      "v": "0",
+      "l": "FRAMEWORKS TO MAINTAIN"
+    }
+  ],
+  "gallery": {
+    "title": "DOCUMENTATION",
+    "sub": "Setup, components, API references and analytics.",
+    "items": [
+      {
+        "id": "photo-1544716278-ca5e3f4abd8c",
+        "tag": "Quickstart",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "MDX",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "API reference",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Analytics",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1547658719-da2b51169166",
+        "tag": "Theming",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1487017159836-4e23ece2e4cf",
+        "tag": "Localisation",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "The failed-search report is the only documentation roadmap we have ever actually followed. It is a list of things people wanted and could not find, in demand order.",
+    "name": "Ana Petrova",
+    "role": "Developer Advocate, Corva",
+    "avatar": "photo-1438761681033-6461ffad8d80"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Free for open source. Paid for private docs and analytics.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "/month",
+        "desc": "For open-source projects.",
+        "features": [
+          "Public docs",
+          "MDX authoring",
+          "Search",
+          "Community support"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "name": "Pro",
+        "price": "$150",
+        "period": "/month",
+        "desc": "For companies.",
+        "features": [
+          "Private docs",
+          "API playground",
+          "Analytics",
+          "Email support"
+        ],
+        "cta": "Start free trial",
+        "featured": true,
+        "badge": "MOST TEAMS"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "desc": "For scale and compliance.",
+        "features": [
+          "SSO and SAML",
+          "Multiple sites",
+          "Localisation",
+          "Named support"
+        ],
+        "cta": "Book a demo"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "Where do the docs live?",
+        "a": "In your repository as MDX files. We build and host them; you keep the source and can walk away with it at any time."
+      },
+      {
+        "q": "How is the API reference generated?",
+        "a": "From an OpenAPI or AsyncAPI spec, regenerated on every deploy, with an interactive playground that sends real requests."
+      },
+      {
+        "q": "Can I use my own domain?",
+        "a": "Yes, on every paid plan, with the certificate issued and renewed automatically."
+      },
+      {
+        "q": "What about search quality?",
+        "a": "Full-text search indexed on each deploy, with a report of queries that returned nothing so you can see the gaps."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ship documentation today",
+    "sub": "Free for open source, and your Markdown stays in your repository.",
+    "btn1": "Get started",
+    "btn2": "Book a demo"
+  },
+  "footer": {
+    "tagline": "Documentation your developers actually read.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Authoring",
+          "API reference",
+          "Search",
+          "Analytics"
+        ]
+      },
+      {
+        "title": "Docs",
+        "links": [
+          "Quickstart",
+          "Components",
+          "Theming",
+          "API"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Blog",
+          "Customers",
+          "Changelog",
+          "Status"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Pricing",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Marginalia Docs"
+  },
+  "specimen": "Docs people read",
+  "notes": [
+    "Atmospheric gradient bands — sky-blue into cream — provide the cinematic marketing presentation.",
+    "Mint green is reserved for accent CTAs, active states and confirmations. The primary button stays black.",
+    "One sans for all prose and a mono for code, inline code and type signatures.",
+    "The documentation layout is three columns — sidebar, prose, table of contents — with dense 14px body for long reading.",
+    "The radius scale is deliberately gapped: 12px for marketing surfaces and full pills for buttons, with nothing in between."
+  ]
+}

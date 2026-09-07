@@ -1,0 +1,45 @@
+/* Intercom — cream canvas, charcoal primary, product screenshots lead, orange = AI only. */
+:root { --maxw: 1200px; --sect: clamp(56px, 7vw, 92px);
+  --cream: #f5f1ec; --fin: #ff5600;
+  --shadow-1: 0 1px 3px rgba(17,17,17,.06), 0 10px 30px rgba(17,17,17,.08);
+  --shadow-2: 0 2px 8px rgba(17,17,17,.08), 0 18px 46px rgba(17,17,17,.12); }
+.nav { --nav-bg: rgba(245,241,236,.94); backdrop-filter: blur(10px); border-bottom-color: rgba(17,17,17,.1); }
+.brand { font-weight: 800; letter-spacing: -.03em; }
+.brand-ico { color: #111; }
+.btn { border-radius: var(--r-md); font-weight: 700; }
+.btn-primary { background: #111; color: #fff; }
+.btn-primary:hover { background: #333; }
+.btn-secondary { background: #fff; border-color: rgba(17,17,17,.16); box-shadow: var(--shadow-1); }
+.eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 700; }
+.eyebrow { color: var(--c-ink-subtle); }
+.t-display-xl { letter-spacing: -.032em; font-weight: 800; }
+.t-display-lg, .t-display-md, .sc-title { letter-spacing: -.028em; font-weight: 800; }
+.lede, .feat-body, .sc-body { letter-spacing: 0; }
+/* orange belongs to the AI product only */
+.hero-title em { color: var(--fin); }
+.logos { border-block-color: rgba(17,17,17,.1); }
+.feat-card { background: #fff; border: 0; border-radius: var(--r-xl); box-shadow: var(--shadow-1); padding: 26px; }
+.feat-card:hover { box-shadow: var(--shadow-2); transform: translateY(-2px); background: #fff; }
+.feat-ico { background: var(--cream); color: #111; border: 0; border-radius: var(--r-md); }
+.feat-card:nth-child(1) .feat-ico { background: rgba(255,86,0,.14); color: var(--fin); }
+/* every section centres a product mockup */
+.hero-media img, .sc-media img, .g-item { border-radius: var(--r-xl); border: 0; box-shadow: var(--shadow-2); }
+.metrics { --metrics-bg: #111; border-block: 0; }
+.metrics .metric-v { color: #fff; }
+.metrics .metric-l, .metrics .logos-lead { color: #8a8a8a; }
+.g-item figcaption { background: rgba(17,17,17,.86); border-radius: var(--r-pill); }
+.quote-card { background: #fff; border: 0; border-radius: var(--r-xxl); box-shadow: var(--shadow-1);
+  --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--fin); }
+.q-av { border-radius: 50%; }
+.tier { background: #fff; border: 0; border-radius: var(--r-xl); box-shadow: var(--shadow-1); }
+.tier-feat { outline: 2px solid #111; outline-offset: -2px; }
+.tier-badge { background: #111; border-radius: var(--r-pill); font-size: 10px; letter-spacing: .1em; }
+.tier-feats i, .sc-points i, .faq-mk { color: #111; }
+.faq-item { border-bottom-color: rgba(17,17,17,.12); }
+.cta-band { background: #111; color: #fff; border: 0; border-radius: var(--r-xxl); }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: #a8a8a8; }
+.cta-band .btn-primary { background: var(--fin); color: #fff; }
+.cta-band .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.34); box-shadow: none; }
+.spec { --spec-bg: #fff; }

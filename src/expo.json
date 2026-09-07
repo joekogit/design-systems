@@ -1,0 +1,334 @@
+{
+  "slug": "expo",
+  "name": "Expo",
+  "category": "Developer tools & IDEs",
+  "look": "Pure white with a sky-blue gradient in the hero only, a black pill CTA, and device mockups as the whole chrome.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "bold"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "centered",
+    "features": "grid",
+    "cards": "bordered",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-device-mobile",
+    "name": "Anvil"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Docs",
+        "href": "gallery"
+      },
+      {
+        "label": "Tools",
+        "href": "features"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Blog",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Changelog",
+        "href": "faq"
+      }
+    ],
+    "cta": "Get started",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "Anvil SDK 54",
+    "title": "Build one app, <em>ship to everywhere</em>",
+    "sub": "React Native with the build pipeline, updates and native modules already solved. Write once, ship to iOS, Android and web from the same codebase.",
+    "cta1": "Get started",
+    "cta2": "Read the docs",
+    "image": "photo-1580910051074-3eb694886505",
+    "ratio": 0.56,
+    "stats": [
+      {
+        "v": "3",
+        "l": "Platforms"
+      },
+      {
+        "v": "< 60s",
+        "l": "Over-the-air update"
+      },
+      {
+        "v": "0",
+        "l": "Xcode required"
+      }
+    ]
+  },
+  "logo_lead": "Shipping with Anvil",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "The toolkit",
+    "title": "Everything between your code and the store",
+    "sub": "The unglamorous parts of shipping a mobile app, handled.",
+    "items": [
+      {
+        "icon": "ph-cloud-arrow-up",
+        "title": "Cloud builds",
+        "body": "Build signed iOS and Android binaries without owning a Mac or maintaining a signing keychain."
+      },
+      {
+        "icon": "ph-arrows-clockwise",
+        "title": "Over-the-air updates",
+        "body": "Ship a JavaScript fix in under a minute without waiting on review."
+      },
+      {
+        "icon": "ph-package",
+        "title": "Native modules",
+        "body": "Hundreds of native APIs already wrapped, with an escape hatch to write your own."
+      },
+      {
+        "icon": "ph-devices",
+        "title": "Runs on device instantly",
+        "body": "Scan a code and your app is running on a real phone, with hot reload."
+      },
+      {
+        "icon": "ph-test-tube",
+        "title": "Preview builds",
+        "body": "Every pull request gets an installable build reviewers can actually tap."
+      },
+      {
+        "icon": "ph-storefront",
+        "title": "Store submission",
+        "body": "Automated submission to both stores with credentials managed for you."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "Updates",
+      "title": "Fix it before the review queue",
+      "body": "A JavaScript-only change ships as an over-the-air update in under a minute, with staged rollout and instant rollback. Native changes still go through review, and the tooling tells you which kind you have made.",
+      "points": [
+        "Staged rollout with instant rollback",
+        "Tells you when a change needs a native build",
+        "Per-channel update targeting"
+      ],
+      "image": "photo-1512499617640-c74ae3a79d37",
+      "cta": "How updates work"
+    },
+    {
+      "eyebrow": "Builds",
+      "title": "No Mac required",
+      "body": "Cloud builds handle signing, provisioning and the whole Xcode toolchain. Credentials are generated and stored for you, or you can bring your own and keep them.",
+      "points": [
+        "Signed iOS builds without a Mac",
+        "Credentials managed or bring your own",
+        "Build logs retained and shareable"
+      ],
+      "image": "photo-1519389950473-47ba0277781c",
+      "cta": "Explore builds"
+    }
+  ],
+  "metric_lead": "Across apps built with Anvil",
+  "metrics": [
+    {
+      "v": "3",
+      "l": "Platforms from one codebase"
+    },
+    {
+      "v": "< 60s",
+      "l": "Update delivery"
+    },
+    {
+      "v": "900+",
+      "l": "Native modules"
+    },
+    {
+      "v": "0",
+      "l": "Macs required"
+    }
+  ],
+  "gallery": {
+    "title": "Documentation",
+    "sub": "Getting started, native modules, builds and updates.",
+    "items": [
+      {
+        "id": "photo-1580910051074-3eb694886505",
+        "tag": "Quickstart",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "Modules",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Builds",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1547658719-da2b51169166",
+        "tag": "Updates",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1519389950473-47ba0277781c",
+        "tag": "Testing",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1487017159836-4e23ece2e4cf",
+        "tag": "Deploying",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "We shipped a crash fix on a Saturday afternoon and it was on every device before the evening. Previously that was a three-day review and a lot of apologising.",
+    "name": "Tomás Ferreira",
+    "role": "Mobile Lead, Tessera",
+    "avatar": "photo-1573496359142-b8d87734a5a2"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "sub": "Free to develop. Pay for build minutes and update bandwidth.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "/month",
+        "desc": "For side projects.",
+        "features": [
+          "30 build credits",
+          "Unlimited OTA updates",
+          "All native modules",
+          "Community support"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "name": "Production",
+        "price": "$99",
+        "period": "/month",
+        "desc": "For shipping apps.",
+        "features": [
+          "Unlimited builds",
+          "Priority build queue",
+          "Staged rollouts",
+          "Email support"
+        ],
+        "cta": "Start free trial",
+        "featured": true,
+        "badge": "Most teams"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "desc": "For larger organisations.",
+        "features": [
+          "Everything in Production",
+          "SSO and SAML",
+          "On-premise builds",
+          "Named support"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "Do I still need a Mac?",
+        "a": "No. Cloud builds produce signed iOS binaries without one. A Mac is only needed if you want to run the iOS simulator locally."
+      },
+      {
+        "q": "What can be shipped over the air?",
+        "a": "Anything JavaScript, including most UI and logic changes. Adding or upgrading a native module needs a new binary, and the CLI tells you which case you are in."
+      },
+      {
+        "q": "Can I eject to bare React Native?",
+        "a": "Yes, at any time, and the generated native projects are ordinary Xcode and Gradle projects with no proprietary wrapper."
+      },
+      {
+        "q": "How are credentials handled?",
+        "a": "Generated and encrypted at rest by default, or bring your own and keep them in your own keychain — both paths are fully supported."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ship your first build today",
+    "sub": "Free to develop, and no Mac required to produce a signed iOS binary.",
+    "btn1": "Get started",
+    "btn2": "Read the docs"
+  },
+  "footer": {
+    "tagline": "Build one app, ship it everywhere.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "SDK",
+          "Builds",
+          "Updates",
+          "Modules"
+        ]
+      },
+      {
+        "title": "Docs",
+        "links": [
+          "Quickstart",
+          "Guides",
+          "API",
+          "Changelog"
+        ]
+      },
+      {
+        "title": "Community",
+        "links": [
+          "Discord",
+          "GitHub",
+          "Forums",
+          "Showcase"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Blog",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Anvil Mobile"
+  },
+  "specimen": "Ship to everywhere",
+  "notes": [
+    "Pure white canvas with a sky-blue atmospheric gradient in the hero only — nowhere else on the page.",
+    "A single black pill CTA at a compact 8px radius. That tightness is the developer-tool dialect.",
+    "Text-link blue is for inline links only and never appears on a call to action.",
+    "One sans family throughout, with a mono face on every code surface. There is no custom display typeface.",
+    "Device mockups showing real product surfaces are the brand chrome; there is no atmospheric decoration outside the hero."
+  ]
+}

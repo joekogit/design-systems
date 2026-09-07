@@ -1,0 +1,58 @@
+/* Slack — cream-lavender mesh hero, one aubergine, over-padded pills. */
+:root { --maxw: 1220px; --sect: clamp(56px, 7vw, 92px);
+  --aubergine: #4a154b; --link: #1264a3; --cream: #f8f4f0; --lav: #ece5f2;
+  --shadow-1: 0 1px 3px rgba(74,21,75,.07), 0 10px 30px rgba(74,21,75,.09);
+  --shadow-2: 0 2px 8px rgba(74,21,75,.09), 0 18px 46px rgba(74,21,75,.13); }
+.nav { --nav-bg: rgba(255,255,255,.94); backdrop-filter: blur(10px); }
+.brand { font-weight: 800; letter-spacing: -.03em; color: var(--aubergine); }
+.brand-ico { color: var(--aubergine); }
+/* deliberately over-padded pills */
+.btn { border-radius: 90px; font-weight: 700; padding: 15px 30px; }
+.btn-primary { background: var(--aubergine); color: #fff; }
+.btn-primary:hover { background: #611f69; }
+.btn-secondary { background: #fff; color: var(--aubergine); border-color: var(--aubergine); }
+.btn-secondary:hover { background: var(--lav); }
+.eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .13em; font-size: 11px; font-weight: 700; }
+.eyebrow { color: var(--aubergine); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 800; letter-spacing: -.032em; }
+.hero-title em { color: var(--aubergine); }
+/* pastel mesh behind the hero; product UI sits on top of it, never inside */
+.hero { background: var(--cream); overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: -140px -12% auto -12%; height: 620px; z-index: 0;
+  pointer-events: none; opacity: .7; filter: blur(70px);
+  background: radial-gradient(closest-side at 18% 36%, #f6d9c8 0%, transparent 70%),
+              radial-gradient(closest-side at 48% 14%, #ddd0ec 0%, transparent 68%),
+              radial-gradient(closest-side at 80% 40%, #cfe3d6 0%, transparent 70%); }
+.hero > * { position: relative; z-index: 1; }
+.hero-media img { border: 0; border-radius: 14px; box-shadow: var(--shadow-2); }
+a:not(.btn):not(.brand):not(.card) { color: var(--link); }
+.logos { border-block-color: rgba(74,21,75,.12); }
+.logo-item { color: var(--aubergine); font-weight: 700; }
+.feat-card { background: #fff; border: 0; border-radius: 14px; box-shadow: var(--shadow-1); padding: 26px; }
+.feat-card:hover { box-shadow: var(--shadow-2); transform: translateY(-2px); background: #fff; }
+.feat-ico { background: var(--lav); color: var(--aubergine); border: 0; border-radius: 90px; width: 46px; height: 46px; }
+.sc-media img, .g-item { border-radius: 14px; border: 0; box-shadow: var(--shadow-1); }
+.metrics { --metrics-bg: var(--aubergine); border-block: 0; }
+.metrics .metric-v { color: #fff; }
+.metrics .metric-l, .metrics .logos-lead { color: rgba(255,255,255,.7); }
+.g-item figcaption { background: rgba(74,21,75,.88); border-radius: 90px; }
+.quote-card { background: var(--lav); border: 0; border-radius: 20px; --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--aubergine); }
+.q-av { border-radius: 90px; }
+.tier { background: #fff; border: 0; border-radius: 14px; box-shadow: var(--shadow-1); }
+.tier-feat { background: var(--aubergine); color: #fff; }
+.tier-feat .tier-name, .tier-feat .tier-num { color: #fff; }
+.tier-feat .tier-desc, .tier-feat .tier-feats li { color: rgba(255,255,255,.78); }
+.tier-feat .tier-feats i { color: #fff; }
+.tier-feat .btn-primary { background: #fff; color: var(--aubergine); }
+.tier-badge { background: var(--aubergine); border-radius: 90px; font-size: 10px; letter-spacing: .1em; }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--aubergine); }
+.faq-item { border-bottom-color: rgba(74,21,75,.14); }
+.cta-band { background: var(--lav); border: 0; border-radius: 20px; }
+.foot { background: var(--aubergine); --foot-bg: var(--aubergine); border-top: 0; }
+.foot .brand, .foot .brand-ico { color: #fff; }
+.fcol h4 { color: rgba(255,255,255,.6); } .fcol a, .foot-tag { color: rgba(255,255,255,.88); }
+.foot-legal { color: rgba(255,255,255,.6); border-top-color: rgba(255,255,255,.2); }
+.foot-socials a { border-color: rgba(255,255,255,.26); color: rgba(255,255,255,.88); border-radius: 90px; }
+.spec { --spec-bg: var(--cream); }
+.input, .badge2, .tabs, .tabs button { border-radius: 90px; }

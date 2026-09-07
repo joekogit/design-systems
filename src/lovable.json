@@ -1,0 +1,386 @@
+{
+  "slug": "lovable",
+  "name": "Lovable",
+  "category": "Developer tools & IDEs",
+  "look": "Warm parchment canvas, an opacity-derived neutral system, full-pill actions and inset-shadow buttons.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Fraunces\", Georgia, serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "floating-pill",
+    "hero": "centered",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "masonry"
+  },
+  "brand": {
+    "mark": "ph-heart",
+    "name": "Kindly"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Product",
+        "href": "features"
+      },
+      {
+        "label": "Templates",
+        "href": "gallery"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Community",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Docs",
+        "href": "faq"
+      }
+    ],
+    "cta": "Start building",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "Idea to app",
+    "title": "Describe it, and <em>watch it get built</em>",
+    "sub": "Type what you want in plain language and get a working full-stack application — database, auth and deployment included — that you can then edit like ordinary code.",
+    "cta1": "Start building",
+    "cta2": "See examples",
+    "image": "photo-1547658719-da2b51169166",
+    "ratio": 0.58,
+    "stats": [
+      {
+        "v": "2 min",
+        "l": "To first deploy"
+      },
+      {
+        "v": "Full stack",
+        "l": "Not a mockup"
+      },
+      {
+        "v": "Yours",
+        "l": "Export any time"
+      }
+    ]
+  },
+  "logo_lead": "Built with Kindly",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "How it works",
+    "title": "A real application, not a prototype",
+    "sub": "Everything it generates is code you own, in a repository you control.",
+    "items": [
+      {
+        "icon": "ph-chat-teardrop-text",
+        "title": "Describe it",
+        "body": "Plain language in, working application out. Iterate by talking rather than by opening a config file."
+      },
+      {
+        "icon": "ph-database",
+        "title": "Database included",
+        "body": "Schema, migrations and row-level security generated and wired up, not left as an exercise."
+      },
+      {
+        "icon": "ph-lock-simple",
+        "title": "Auth that works",
+        "body": "Email, social and magic links configured properly on the first attempt."
+      },
+      {
+        "icon": "ph-git-branch",
+        "title": "Real code",
+        "body": "A repository you own, with ordinary commits. Clone it and keep going without us."
+      },
+      {
+        "icon": "ph-rocket-launch",
+        "title": "Deployed instantly",
+        "body": "A live URL from the first message, with a custom domain when you are ready."
+      },
+      {
+        "icon": "ph-pencil-simple",
+        "title": "Edit visually or in code",
+        "body": "Nudge the layout by clicking, or open the file. Both edit the same thing."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "Ownership",
+      "title": "It is your repository, not our platform",
+      "body": "Everything generated lands in a Git repository you own. Connect your own GitHub account from the first message, clone it, and carry on in your usual editor whenever you like.",
+      "points": [
+        "Your GitHub account from message one",
+        "Ordinary code with no proprietary wrapper",
+        "Leave at any point and keep everything"
+      ],
+      "image": "photo-1526374965328-7f61d4dc18c5",
+      "cta": "How ownership works"
+    },
+    {
+      "eyebrow": "Community",
+      "title": "Fork what someone else already built",
+      "body": "Thousands of published projects you can open, read and fork. Starting from something working and changing it is usually faster than starting from a blank prompt.",
+      "points": [
+        "Thousands of forkable projects",
+        "Full source visible before you fork",
+        "Remix credit preserved"
+      ],
+      "image": "photo-1557804506-669a67965ba0",
+      "cta": "Browse the community"
+    }
+  ],
+  "metric_lead": "Across projects built with Kindly",
+  "metrics": [
+    {
+      "v": "2 min",
+      "l": "To first deploy"
+    },
+    {
+      "v": "140k+",
+      "l": "Projects built"
+    },
+    {
+      "v": "100%",
+      "l": "Code exportable"
+    },
+    {
+      "v": "0",
+      "l": "Proprietary runtime"
+    }
+  ],
+  "gallery": {
+    "title": "Templates",
+    "sub": "Start from something that already works.",
+    "items": [
+      {
+        "id": "photo-1547658719-da2b51169166",
+        "tag": "Dashboard",
+        "ratio": 0.9
+      },
+      {
+        "id": "photo-1557804506-669a67965ba0",
+        "tag": "Marketplace",
+        "ratio": 1.15
+      },
+      {
+        "id": "photo-1487017159836-4e23ece2e4cf",
+        "tag": "Blog",
+        "ratio": 1.0
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Analytics",
+        "ratio": 0.88
+      },
+      {
+        "id": "photo-1554118811-1e0d58224f24",
+        "tag": "Booking",
+        "ratio": 1.1
+      },
+      {
+        "id": "photo-1441986300917-64674bd600d8",
+        "tag": "Storefront",
+        "ratio": 0.95
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "I described an internal tool over a coffee and had it running before the coffee was finished. Then I opened the repo and it was code I would have written.",
+    "name": "Nina Halvorsen",
+    "role": "Operations Lead, Tessera",
+    "avatar": "photo-1494790108377-be9c29b29330"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "sub": "Free to build. Pay when you want it live on your own domain.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "/month",
+        "desc": "For trying it.",
+        "features": [
+          "5 projects",
+          "Kindly subdomain",
+          "Community templates",
+          "Public projects"
+        ],
+        "cta": "Start building"
+      },
+      {
+        "name": "Pro",
+        "price": "$25",
+        "period": "/month",
+        "desc": "For real projects.",
+        "features": [
+          "Unlimited projects",
+          "Custom domains",
+          "Private projects",
+          "Email support"
+        ],
+        "cta": "Start free trial",
+        "featured": true,
+        "badge": "Most builders"
+      },
+      {
+        "name": "Team",
+        "price": "$50",
+        "period": "/user/mo",
+        "desc": "For teams building together.",
+        "features": [
+          "Everything in Pro",
+          "Shared workspaces",
+          "Roles and permissions",
+          "Priority support"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "Is it real code or a no-code wrapper?",
+        "a": "Real code, in a repository you own, using ordinary frameworks. There is no proprietary runtime and nothing stops working if you leave."
+      },
+      {
+        "q": "Can I edit what it generates?",
+        "a": "Yes, visually or in the code, and both edit the same underlying files. Changes you make by hand are not overwritten by later prompts."
+      },
+      {
+        "q": "What happens if I cancel?",
+        "a": "Your repositories are yours and stay in your Git account. Custom domains stop resolving; the code does not go anywhere."
+      },
+      {
+        "q": "Does it handle the database properly?",
+        "a": "Schema, migrations and row-level security are generated and wired up. You can review and edit all of it before anything goes live."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Describe your first app",
+    "sub": "Free to build, and the code is yours from the first message.",
+    "btn1": "Start building",
+    "btn2": "See examples"
+  },
+  "footer": {
+    "tagline": "Describe it, and watch it get built.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Editor",
+          "Templates",
+          "Integrations",
+          "Pricing"
+        ]
+      },
+      {
+        "title": "Learn",
+        "links": [
+          "Docs",
+          "Guides",
+          "Community",
+          "Blog"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Press",
+          "Contact"
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          "Privacy",
+          "Terms",
+          "Security",
+          "Status"
+        ]
+      }
+    ],
+    "legal": "© 2026 Kindly Software"
+  },
+  "specimen": "Idea to app",
+  "notes": [
+    "The parchment background is a deliberate cream — not white and not beige. It is the foundation of the warmth.",
+    "Every grey derives from one charcoal at a transparency level rather than being picked separately. That is what keeps the neutrals coherent.",
+    "Buttons carry a double inset shadow — a light top edge and a dark hairline ring — which is what gives them their tactile quality.",
+    "Full-pill radius is used extensively for actions and icon containers; cards step back to a softer rounding.",
+    "Focus states use a soft warm shadow rather than a hard ring, in keeping with the rest of the system."
+  ],
+  "palette": [
+    {
+      "name": "Cream",
+      "value": "#f7f4ed",
+      "note": "Page background, card and button surfaces — warm, paper-like, human"
+    },
+    {
+      "name": "Charcoal",
+      "value": "#1c1c1c",
+      "note": "Primary text, headings, dark button backgrounds. Not pure black"
+    },
+    {
+      "name": "Off-White",
+      "value": "#fcfbf8",
+      "note": "Button text on dark backgrounds, subtle highlight"
+    },
+    {
+      "name": "Charcoal 83%",
+      "value": "rgba(28,28,28,0.83)",
+      "note": "Strong secondary text"
+    },
+    {
+      "name": "Charcoal 82%",
+      "value": "rgba(28,28,28,0.82)",
+      "note": "Body copy"
+    },
+    {
+      "name": "Muted Gray",
+      "value": "#5f5f5d",
+      "note": "Secondary text, descriptions, captions"
+    },
+    {
+      "name": "Charcoal 40%",
+      "value": "rgba(28,28,28,0.4)",
+      "note": "Interactive borders and button outlines"
+    },
+    {
+      "name": "Charcoal 4%",
+      "value": "rgba(28,28,28,0.04)",
+      "note": "Subtle hover backgrounds and micro-tints"
+    },
+    {
+      "name": "Charcoal 3%",
+      "value": "rgba(28,28,28,0.03)",
+      "note": "Barely-visible overlays, background depth"
+    },
+    {
+      "name": "Warm Border",
+      "value": "#eceae4",
+      "note": "Subtle borders and dividers"
+    }
+  ]
+}

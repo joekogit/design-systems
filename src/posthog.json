@@ -1,0 +1,334 @@
+{
+  "slug": "posthog",
+  "name": "PostHog",
+  "category": "Backend, database & DevOps",
+  "look": "One continuous warm cream sheet, a single yellow-orange pill with olive text, and hand-drawn mascots as the whole decorative system.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"IBM Plex Sans\", -apple-system, sans-serif",
+    "body": "\"IBM Plex Sans\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "bordered",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-chart-donut",
+    "name": "Bellwether"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Products",
+        "href": "features"
+      },
+      {
+        "label": "Docs",
+        "href": "gallery"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Community",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Blog",
+        "href": "faq"
+      }
+    ],
+    "cta": "Get started free",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "All the tools, one platform",
+    "title": "Product analytics <em>without the four vendors</em>",
+    "sub": "Analytics, session replay, feature flags, experiments and surveys on one set of events. Generous free tier, and the whole thing is open source.",
+    "cta1": "Get started free",
+    "cta2": "Read the docs",
+    "image": "photo-1551288049-bebda4e38f71",
+    "ratio": 0.64,
+    "stats": [
+      {
+        "v": "6",
+        "l": "Products"
+      },
+      {
+        "v": "1M",
+        "l": "Free events/mo"
+      },
+      {
+        "v": "Open",
+        "l": "Source"
+      }
+    ]
+  },
+  "logo_lead": "Used by product teams at",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "The suite",
+    "title": "Six products, one event stream",
+    "sub": "Every tool reads the same events, so a flag, a replay and a funnel all agree about what happened.",
+    "items": [
+      {
+        "icon": "ph-chart-line",
+        "title": "Product analytics",
+        "body": "Funnels, retention and paths over your own events, with SQL underneath when the UI runs out."
+      },
+      {
+        "icon": "ph-video",
+        "title": "Session replay",
+        "body": "Watch the actual session behind a drop-off, with console and network attached."
+      },
+      {
+        "icon": "ph-toggle-right",
+        "title": "Feature flags",
+        "body": "Roll out by cohort, kill instantly, and see the effect in the same tool."
+      },
+      {
+        "icon": "ph-flask",
+        "title": "Experiments",
+        "body": "A/B tests using the flags you already have, with significance calculated honestly."
+      },
+      {
+        "icon": "ph-chat-teardrop",
+        "title": "Surveys",
+        "body": "Ask the users who did the thing, targeted by the same cohorts."
+      },
+      {
+        "icon": "ph-database",
+        "title": "Your data warehouse",
+        "body": "Sync to or from your warehouse; the events are yours in a queryable table."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "Why one platform",
+      "title": "The tools stop disagreeing",
+      "body": "Four vendors means four definitions of an active user and four SDKs racing on page load. One event stream means the funnel, the replay and the flag are all describing the same session.",
+      "points": [
+        "One SDK and one event definition",
+        "Replay linked from any funnel step",
+        "Flags and experiments share cohorts"
+      ],
+      "image": "photo-1560472354-b33ff0c44a43",
+      "cta": "Why one platform"
+    },
+    {
+      "eyebrow": "Open source",
+      "title": "Read it, run it, or leave with it",
+      "body": "The whole platform is open source and self-hostable. Most teams use the cloud, but the option is what makes the pricing honest — the exit is real rather than theoretical.",
+      "points": [
+        "Full platform, not an open core",
+        "Self-host with Docker or Kubernetes",
+        "Export every event at any time"
+      ],
+      "image": "photo-1558494949-ef010cbdcc31",
+      "cta": "View the source"
+    }
+  ],
+  "metric_lead": "",
+  "metrics": [
+    {
+      "v": "6",
+      "l": "Products in one"
+    },
+    {
+      "v": "1M",
+      "l": "Free events monthly"
+    },
+    {
+      "v": "100%",
+      "l": "Open source"
+    },
+    {
+      "v": "0",
+      "l": "Vendors to reconcile"
+    }
+  ],
+  "gallery": {
+    "title": "Documentation",
+    "sub": "Getting started, SDKs, self-hosting and the SQL layer.",
+    "items": [
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Analytics",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "SDKs",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Self-hosting",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1560472354-b33ff0c44a43",
+        "tag": "SQL",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "Flags",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1547658719-da2b51169166",
+        "tag": "Replay",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "We cancelled three subscriptions and stopped arguing in standup about whose dashboard was right. That second thing was worth more than the money.",
+    "name": "Ellie Mbeki",
+    "role": "Product Lead, Basisplan",
+    "avatar": "photo-1534528741775-53994a69daeb"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "sub": "Generous free tier, then usage-based with the rates published.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "/month",
+        "desc": "Everything, up to the limits.",
+        "features": [
+          "1M events monthly",
+          "5k replays",
+          "All six products",
+          "Community support"
+        ],
+        "cta": "Get started free"
+      },
+      {
+        "name": "Pay as you go",
+        "price": "Usage",
+        "period": "based",
+        "desc": "Beyond the free tier.",
+        "features": [
+          "Everything free",
+          "Volume discounts",
+          "Priority support",
+          "No seat pricing"
+        ],
+        "cta": "Get started free",
+        "featured": true,
+        "badge": "Most teams"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "desc": "Compliance and scale.",
+        "features": [
+          "SSO and SAML",
+          "Audit logs",
+          "Custom SLA",
+          "Named support"
+        ],
+        "cta": "Talk to us"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "Is the free tier a trial?",
+        "a": "No. A million events a month, permanently, across all six products. Plenty of small products never pay anything."
+      },
+      {
+        "q": "Do you charge per seat?",
+        "a": "No. Invite your whole company; you pay for events and replays, not for people looking at them."
+      },
+      {
+        "q": "Can I self-host?",
+        "a": "Yes, the entire platform, not an open-core subset. Docker Compose for small deployments and Kubernetes charts for larger ones."
+      },
+      {
+        "q": "Where is my data stored?",
+        "a": "In the cloud region you pick, EU or US, and it never moves between them. Self-hosting keeps it entirely on your own infrastructure."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start with a million free events",
+    "sub": "No card, no seat pricing, all six products.",
+    "btn1": "Get started free",
+    "btn2": "Read the docs"
+  },
+  "footer": {
+    "tagline": "Product analytics without the four vendors.",
+    "columns": [
+      {
+        "title": "Products",
+        "links": [
+          "Analytics",
+          "Replay",
+          "Flags",
+          "Experiments"
+        ]
+      },
+      {
+        "title": "Docs",
+        "links": [
+          "Quickstart",
+          "SDKs",
+          "Self-hosting",
+          "SQL"
+        ]
+      },
+      {
+        "title": "Community",
+        "links": [
+          "GitHub",
+          "Slack",
+          "Roadmap",
+          "Careers"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Pricing",
+          "Blog",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Bellwether Analytics"
+  },
+  "specimen": "One event stream",
+  "notes": [
+    "The warm cream canvas runs end to end with no surface alternation — the page is one continuous sheet.",
+    "A single yellow-orange pill with deep olive text is the only saturated colour in the system.",
+    "One typeface across every text role, at five weights. There is no second family.",
+    "Hand-drawn mascots scattered through the layout are the entire decorative system — no gradients, no mesh, no atmospherics.",
+    "Pastel callout banners with soft tinted side rails break up long documentation copy for tips and warnings."
+  ]
+}

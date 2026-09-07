@@ -1,0 +1,334 @@
+{
+  "slug": "resend",
+  "name": "Resend",
+  "category": "Productivity & SaaS",
+  "look": "Pure black with a serif-led display, low-opacity accent glows used only as atmosphere, and a small white button as the brightest pixel.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Instrument Serif\", Georgia, serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "centered",
+    "features": "grid",
+    "cards": "bordered",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-envelope-simple-open",
+    "name": "Dispatch"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Docs",
+        "href": "gallery"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Changelog",
+        "href": "features"
+      },
+      {
+        "label": "Blog",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Contact",
+        "href": "faq"
+      }
+    ],
+    "cta": "Get started",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "EMAIL FOR DEVELOPERS",
+    "title": "Email <em>reimagined</em>",
+    "sub": "A transactional email API built by people who have debugged a deliverability problem at two in the morning. React components for templates, and logs that tell you what actually happened.",
+    "cta1": "Get started",
+    "cta2": "Read the docs",
+    "image": "photo-1487017159836-4e23ece2e4cf",
+    "ratio": 0.56,
+    "stats": [
+      {
+        "v": "99.9%",
+        "l": "Delivery rate"
+      },
+      {
+        "v": "React",
+        "l": "Templates"
+      },
+      {
+        "v": "< 100ms",
+        "l": "API latency"
+      }
+    ]
+  },
+  "logo_lead": "SENDING WITH DISPATCH",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "THE PLATFORM",
+    "title": "Deliverability is the product",
+    "sub": "Sending an email is easy. Landing in the inbox, and knowing when you did not, is the hard part.",
+    "items": [
+      {
+        "icon": "ph-code",
+        "title": "React templates",
+        "body": "Write emails as React components with a preview server. No table layouts and no nested font tags."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "Domain setup",
+        "body": "SPF, DKIM and DMARC configured with a checker that tells you exactly what is wrong."
+      },
+      {
+        "icon": "ph-list-magnifying-glass",
+        "title": "Real logs",
+        "body": "Every message with its delivery events — accepted, delivered, bounced, complained — and the provider's reason."
+      },
+      {
+        "icon": "ph-arrows-split",
+        "title": "Dedicated IPs",
+        "body": "Warm-up handled automatically, with reputation monitored per IP."
+      },
+      {
+        "icon": "ph-webhooks-logo",
+        "title": "Webhooks",
+        "body": "Delivery events pushed to you, signed, with replay for the last thirty days."
+      },
+      {
+        "icon": "ph-broadcast",
+        "title": "Broadcasts",
+        "body": "Marketing sends on the same infrastructure, kept on a separate reputation pool."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "DELIVERABILITY",
+      "title": "We tell you when it bounced, and why",
+      "body": "Every message carries its full delivery event history including the receiving server's own reason string. When something lands in spam you get a diagnosis rather than a dashboard number.",
+      "points": [
+        "Provider reason strings surfaced verbatim",
+        "Per-domain reputation monitoring",
+        "Suppression list managed automatically"
+      ],
+      "image": "photo-1526374965328-7f61d4dc18c5",
+      "cta": "How deliverability works"
+    },
+    {
+      "eyebrow": "TEMPLATES",
+      "title": "Emails as React components",
+      "body": "A component library and preview server for email, so templates are reviewed in a pull request like the rest of your code, rather than edited in a drag-and-drop tool nobody has access to.",
+      "points": [
+        "React components with a preview server",
+        "Rendered to compatible HTML",
+        "Reviewed in a pull request"
+      ],
+      "image": "photo-1555066931-4365d14bab8c",
+      "cta": "See the components"
+    }
+  ],
+  "metric_lead": "ACROSS THE PLATFORM",
+  "metrics": [
+    {
+      "v": "99.9%",
+      "l": "DELIVERY RATE"
+    },
+    {
+      "v": "< 100ms",
+      "l": "API LATENCY"
+    },
+    {
+      "v": "30 days",
+      "l": "EVENT RETENTION"
+    },
+    {
+      "v": "100%",
+      "l": "EVENTS SURFACED"
+    }
+  ],
+  "gallery": {
+    "title": "DOCUMENTATION",
+    "sub": "Quickstart, templates, domains and webhooks.",
+    "items": [
+      {
+        "id": "photo-1487017159836-4e23ece2e4cf",
+        "tag": "Quickstart",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "Templates",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Domains",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Webhooks",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Logs",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1547658719-da2b51169166",
+        "tag": "SDKs",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "The first time an email bounced it told me the receiving server's exact reason string. I had spent two years with a provider that just said 'failed'.",
+    "name": "Owen Trent",
+    "role": "Founding Engineer, Basisplan",
+    "avatar": "photo-1633332755192-727a05c4013d"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Free to 3,000 a month, then priced per thousand.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "/month",
+        "desc": "For side projects.",
+        "features": [
+          "3,000 emails monthly",
+          "1 domain",
+          "Full event logs",
+          "Community support"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "name": "Pro",
+        "price": "$20",
+        "period": "/month",
+        "desc": "For production sending.",
+        "features": [
+          "50,000 emails monthly",
+          "Unlimited domains",
+          "Webhooks",
+          "Email support"
+        ],
+        "cta": "Get started",
+        "featured": true,
+        "badge": "MOST TEAMS"
+      },
+      {
+        "name": "Scale",
+        "price": "Custom",
+        "period": "",
+        "desc": "High volume and dedicated IPs.",
+        "features": [
+          "Dedicated IPs",
+          "Managed warm-up",
+          "99.9% SLA",
+          "Named support"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "Do I need a dedicated IP?",
+        "a": "Below roughly a hundred thousand a month, no — shared pools are well maintained and usually deliver better. Above that a dedicated IP with managed warm-up makes sense."
+      },
+      {
+        "q": "How long are logs kept?",
+        "a": "Thirty days of full event history on every plan including free, with the receiving server's reason string preserved rather than summarised."
+      },
+      {
+        "q": "Can I use my own domain?",
+        "a": "Yes, and you should. The setup flow checks SPF, DKIM and DMARC and tells you precisely which record is wrong rather than saying verification failed."
+      },
+      {
+        "q": "Are marketing and transactional separated?",
+        "a": "Yes, on separate reputation pools, so a broadcast campaign cannot damage delivery of your password reset emails."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Send your first email",
+    "sub": "Three thousand a month free, and full event logs from the start.",
+    "btn1": "Get started",
+    "btn2": "Read the docs"
+  },
+  "footer": {
+    "tagline": "Email for developers.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "API",
+          "Templates",
+          "Broadcasts",
+          "Domains"
+        ]
+      },
+      {
+        "title": "Docs",
+        "links": [
+          "Quickstart",
+          "SDKs",
+          "Webhooks",
+          "Deliverability"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Blog",
+          "Changelog",
+          "Status",
+          "Support"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Pricing",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Dispatch Email"
+  },
+  "specimen": "Email reimagined",
+  "notes": [
+    "Pure black on every public page, with off-white text carrying the whole read.",
+    "The type system is serif-led: a display serif at hero scale, a sans for marketing body, and a mono for code.",
+    "Six accent colours exist only as low-opacity atmospheric washes. None of them ever becomes a button or a solid surface.",
+    "Translucent white borders replace shadows entirely — there is no drop-shadow elevation language in this system.",
+    "The primary button is a small white rectangle with black text, deliberately the brightest pixel on the page and the single visual anchor."
+  ]
+}

@@ -1,0 +1,42 @@
+/* Lovable — warm parchment, opacity-derived neutrals, inset-shadow pills. */
+:root { --maxw: 1140px; --sect: clamp(52px, 6.5vw, 88px);
+  --inset: rgba(255,255,255,.2) 0 .5px 0 0 inset, rgba(0,0,0,.2) 0 0 0 .5px inset;
+  --shadow-1: rgba(0,0,0,.04) 0 2px 8px; --shadow-2: rgba(0,0,0,.08) 0 6px 20px; }
+
+.nav.v-floating-pill .nav-in { background: var(--c-surface); border-color: var(--c-hairline);
+  border-radius: var(--r-pill); box-shadow: var(--shadow-1); min-height: 60px; padding-inline: 20px; }
+.brand { font-family: var(--font-display); font-weight: 600; letter-spacing: -.02em; }
+.brand-ico { color: var(--c-ink); }
+/* the inset-shadow button is the tactile signature */
+.btn { border-radius: var(--r-pill); font-weight: 600; padding: 12px 24px; box-shadow: var(--inset); }
+.btn-primary { background: var(--c-ink); color: #fcfbf8; }
+.btn-primary:hover { background: #333331; }
+.btn-secondary { background: var(--c-surface); color: var(--c-ink); border-color: rgba(28,28,28,.4); }
+.btn-secondary:hover { background: rgba(28,28,28,.04); border-color: var(--c-ink); }
+.btn:focus-visible { box-shadow: var(--inset), rgba(0,0,0,.1) 0 4px 12px; }
+.eyebrow { color: var(--c-ink-subtle); text-transform: none; letter-spacing: 0; font-weight: 600; }
+.hero { text-align: center; }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title, .quote-text {
+  font-family: var(--font-display); font-weight: 500; }
+.hero-title em { font-style: italic; }
+.hero-media img, .sc-media img, .g-item { border-radius: var(--r-xl); border: 0; box-shadow: var(--shadow-1); }
+
+.logos { border-block-color: var(--c-hairline); }
+.feat-card { background: var(--c-surface); border: 1px solid var(--c-hairline); border-radius: var(--r-lg); padding: 26px; }
+.feat-card:hover { background: var(--c-surface); box-shadow: var(--shadow-1); }
+.feat-ico { background: rgba(28,28,28,.04); border: 0; color: var(--c-ink); border-radius: var(--r-pill); width: 46px; height: 46px; }
+.metrics { --metrics-bg: var(--c-surface); border-block: 0; }
+.g-item figcaption { background: var(--c-surface); color: var(--c-ink); border-radius: var(--r-pill);
+  box-shadow: var(--shadow-1); font-weight: 600; backdrop-filter: none; }
+.quote-card { background: var(--c-surface); border: 1px solid var(--c-hairline); border-radius: var(--r-xxl);
+  --quote-align: left; --quote-by-just: flex-start; }
+.q-av { border-radius: var(--r-pill); }
+.tier { background: var(--c-surface); border-color: var(--c-hairline); border-radius: var(--r-xl); }
+.tier-feat { border-color: rgba(28,28,28,.4); }
+.tier-badge { background: var(--c-ink); border-radius: var(--r-pill); }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--c-ink); }
+.faq-item { border-bottom-color: var(--c-hairline); }
+.cta-band { background: var(--c-surface); border-color: var(--c-hairline); border-radius: var(--r-xxl); }
+.spec { --spec-bg: var(--c-surface); }
+.input, .badge2, .tabs, .tabs button { border-radius: var(--r-pill); }
+.sw { border-radius: var(--r-lg); }

@@ -1,0 +1,334 @@
+{
+  "slug": "sentry",
+  "name": "Sentry",
+  "category": "Backend, database & DevOps",
+  "look": "Two-polarity canvas — violet midnight for marketing, white for reference — with a lime keyword highlight used as a typographic device.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Rubik\", -apple-system, sans-serif",
+    "body": "\"Rubik\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "bordered",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-warning-octagon",
+    "name": "Beacon"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Product",
+        "href": "features"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Docs",
+        "href": "gallery"
+      },
+      {
+        "label": "Customers",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Blog",
+        "href": "faq"
+      }
+    ],
+    "cta": "Try free",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "APPLICATION MONITORING",
+    "title": "Code breaks. <em>Fix it faster.</em>",
+    "sub": "Errors with the stack trace, the release, the commit and the user session attached — so triage is reading rather than reconstructing.",
+    "cta1": "Try free",
+    "cta2": "Book a demo",
+    "image": "photo-1526374965328-7f61d4dc18c5",
+    "ratio": 0.64,
+    "stats": [
+      {
+        "v": "4M+",
+        "l": "Developers"
+      },
+      {
+        "v": "100+",
+        "l": "Platforms"
+      },
+      {
+        "v": "Every error",
+        "l": "With context"
+      }
+    ]
+  },
+  "logo_lead": "MONITORING PRODUCTION AT",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "THE PRODUCT",
+    "title": "Context, not just a count",
+    "sub": "An error is only useful with the release, the commit, the environment and the session that produced it.",
+    "items": [
+      {
+        "icon": "ph-bug",
+        "title": "Error monitoring",
+        "body": "Grouped by root cause rather than by message, with the stack trace mapped back to your source."
+      },
+      {
+        "icon": "ph-git-commit",
+        "title": "Suspect commits",
+        "body": "The commit most likely to have caused it, identified from the stack frames and blame data."
+      },
+      {
+        "icon": "ph-gauge",
+        "title": "Performance",
+        "body": "Slow transactions traced end to end, from the browser through to the query."
+      },
+      {
+        "icon": "ph-video",
+        "title": "Session replay",
+        "body": "Watch what the user did in the thirty seconds before it broke."
+      },
+      {
+        "icon": "ph-broadcast",
+        "title": "Alerts that behave",
+        "body": "Route by ownership, escalate on volume, and stay quiet for known noise."
+      },
+      {
+        "icon": "ph-code",
+        "title": "100+ platforms",
+        "body": "Every major language and framework, with the SDK doing the context gathering."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "TRIAGE",
+      "title": "The commit, not just the line",
+      "body": "When an error appears, the release that introduced it and the commit most likely responsible are already attached. Triage becomes reading a page rather than bisecting a deploy history at midnight.",
+      "points": [
+        "Suspect commit identified automatically",
+        "Release and environment attached",
+        "Ownership routed from CODEOWNERS"
+      ],
+      "image": "photo-1555066931-4365d14bab8c",
+      "cta": "How triage works"
+    },
+    {
+      "eyebrow": "CUSTOMERS",
+      "title": "Quiet by default, loud when it matters",
+      "body": "Alert fatigue kills monitoring tools. Issues are grouped by root cause, known noise is suppressed, and escalation is driven by volume and user impact rather than by every individual event.",
+      "points": [
+        "Grouped by root cause, not message",
+        "Known noise suppressed permanently",
+        "Escalation on user impact"
+      ],
+      "image": "photo-1551288049-bebda4e38f71",
+      "cta": "Read customer stories"
+    }
+  ],
+  "metric_lead": "ACROSS THE PLATFORM",
+  "metrics": [
+    {
+      "v": "4M+",
+      "l": "DEVELOPERS"
+    },
+    {
+      "v": "100+",
+      "l": "PLATFORMS"
+    },
+    {
+      "v": "90k+",
+      "l": "ORGANISATIONS"
+    },
+    {
+      "v": "Open",
+      "l": "SOURCE SDKS"
+    }
+  ],
+  "gallery": {
+    "title": "DOCUMENTATION",
+    "sub": "SDK setup, source maps, alerting and performance.",
+    "items": [
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Setup",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "Source maps",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Performance",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Alerting",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "Platforms",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1547658719-da2b51169166",
+        "tag": "Replay",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "It told us which commit broke it before anyone had opened the repository. We fixed a production error in eleven minutes on a Sunday, which used to be a whole afternoon.",
+    "name": "Jamie Okoro",
+    "role": "SRE, Corva",
+    "avatar": "photo-1633332755192-727a05c4013d"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "A free tier that is genuinely usable, then priced per event.",
+    "tiers": [
+      {
+        "name": "Developer",
+        "price": "$0",
+        "period": "/month",
+        "desc": "For one developer.",
+        "features": [
+          "5k errors monthly",
+          "1 user",
+          "30-day retention",
+          "Community support"
+        ],
+        "cta": "Try free"
+      },
+      {
+        "name": "Team",
+        "price": "$26",
+        "period": "/month",
+        "desc": "For a working team.",
+        "features": [
+          "50k errors monthly",
+          "Unlimited users",
+          "90-day retention",
+          "Email support"
+        ],
+        "cta": "Try free",
+        "featured": true,
+        "badge": "MOST TEAMS"
+      },
+      {
+        "name": "Business",
+        "price": "$80",
+        "period": "/month",
+        "desc": "For scale and insight.",
+        "features": [
+          "Everything in Team",
+          "Advanced quotas",
+          "Custom dashboards",
+          "Priority support"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "How are errors grouped?",
+        "a": "By root cause using the stack trace, not by message text. A single bug producing twenty different messages stays one issue rather than twenty."
+      },
+      {
+        "q": "Will it be noisy?",
+        "a": "Grouping, suppression of known noise and impact-based escalation are the defaults. You can also mute an issue permanently rather than repeatedly dismissing it."
+      },
+      {
+        "q": "Are the SDKs open source?",
+        "a": "Yes, all of them, on GitHub with public issue trackers. The server is source-available and self-hostable."
+      },
+      {
+        "q": "Does session replay capture sensitive data?",
+        "a": "Text and inputs are masked by default. You opt in to unmasking specific elements rather than opting out of capturing everything."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Stop reconstructing bugs",
+    "sub": "Free to start, five thousand errors a month, no card.",
+    "btn1": "Try free",
+    "btn2": "Read the docs"
+  },
+  "footer": {
+    "tagline": "Code breaks. Fix it faster.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Errors",
+          "Performance",
+          "Replay",
+          "Alerts"
+        ]
+      },
+      {
+        "title": "Docs",
+        "links": [
+          "Platforms",
+          "Source maps",
+          "Alerting",
+          "API"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Blog",
+          "Customers",
+          "Community",
+          "Support"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Open source",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Beacon Monitoring"
+  },
+  "specimen": "Fix it faster",
+  "notes": [
+    "Two polarities that never blur: violet midnight for marketing and product pages, white for pricing and dense reference content.",
+    "The lime highlight is a typographic device, not a swatch — it wraps single words inside a headline like syntax highlighting.",
+    "Sticker illustrations appear at section junctions and never inside cards. They create rhythm between dense blocks.",
+    "Uppercase eyebrows and button caps with a slight tracking lift give the system its developer-console cadence.",
+    "Card chrome follows the canvas: dark sections nest dark cards, light sections nest white ones. Only the polarity flips."
+  ]
+}

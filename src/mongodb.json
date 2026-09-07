@@ -1,0 +1,334 @@
+{
+  "slug": "mongodb",
+  "name": "MongoDB",
+  "category": "Backend, database & DevOps",
+  "look": "Deep teal hero bands with bright green pill CTAs, stark white documentation surfaces and colour-tagged course tiles.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Manrope\", -apple-system, sans-serif",
+    "body": "\"Manrope\", -apple-system, sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "elevated",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-leaf",
+    "name": "Verdant"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Products",
+        "href": "features"
+      },
+      {
+        "label": "Solutions",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Resources",
+        "href": "gallery"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Docs",
+        "href": "faq"
+      }
+    ],
+    "cta": "Try free",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "VERDANT ATLAS",
+    "title": "The developer data platform <em>built for change</em>",
+    "sub": "A document database that does not make you write a migration every time the shape of your data moves. Search, vectors and analytics on the same records.",
+    "cta1": "Try free",
+    "cta2": "Talk to sales",
+    "image": "photo-1558494949-ef010cbdcc31",
+    "ratio": 0.64,
+    "stats": [
+      {
+        "v": "100+",
+        "l": "Regions"
+      },
+      {
+        "v": "99.995%",
+        "l": "Uptime SLA"
+      },
+      {
+        "v": "Free",
+        "l": "Forever tier"
+      }
+    ]
+  },
+  "logo_lead": "BUILDING ON VERDANT",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "THE PLATFORM",
+    "title": "One database, several workloads",
+    "sub": "Documents, full-text search, vector similarity and analytics — on the same data, without a pipeline between them.",
+    "items": [
+      {
+        "icon": "ph-file-text",
+        "title": "Document model",
+        "body": "Store the shape your application actually uses. Adding a field is not a schema migration and a maintenance window."
+      },
+      {
+        "icon": "ph-magnifying-glass",
+        "title": "Search built in",
+        "body": "Full-text search on the same records, so there is no index to keep in sync with a second system."
+      },
+      {
+        "icon": "ph-vector-three",
+        "title": "Vector search",
+        "body": "Embeddings stored beside the documents they describe, queried in the same statement."
+      },
+      {
+        "icon": "ph-chart-line",
+        "title": "Analytics nodes",
+        "body": "Run heavy aggregations on separate nodes without touching operational latency."
+      },
+      {
+        "icon": "ph-globe-hemisphere-west",
+        "title": "100+ regions",
+        "body": "Deploy across three clouds, with data pinned to a region for residency requirements."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "Encrypted in use",
+        "body": "Queryable encryption keeps sensitive fields encrypted even while being searched."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "FLEXIBILITY",
+      "title": "Schema changes that are not events",
+      "body": "A document database lets the shape of a record evolve with the application. Adding an optional field is a code change rather than a coordinated migration, a maintenance window and a rollback plan.",
+      "points": [
+        "Add fields without a migration",
+        "Schema validation when you want it enforced",
+        "Versioned documents handled in application code"
+      ],
+      "image": "photo-1551288049-bebda4e38f71",
+      "cta": "Read about the model"
+    },
+    {
+      "eyebrow": "SEARCH",
+      "title": "One system instead of two",
+      "body": "Full-text and vector search run against the same documents as your operational queries. There is no extract step, no sync lag and no second cluster to keep alive at three in the morning.",
+      "points": [
+        "No separate search cluster to operate",
+        "No sync lag between stores",
+        "Hybrid text and vector ranking"
+      ],
+      "image": "photo-1560472354-b33ff0c44a43",
+      "cta": "Explore search"
+    }
+  ],
+  "metric_lead": "ACROSS ATLAS",
+  "metrics": [
+    {
+      "v": "100+",
+      "l": "REGIONS"
+    },
+    {
+      "v": "99.995%",
+      "l": "UPTIME SLA"
+    },
+    {
+      "v": "3",
+      "l": "CLOUD PROVIDERS"
+    },
+    {
+      "v": "512MB",
+      "l": "FREE FOREVER"
+    }
+  ],
+  "gallery": {
+    "title": "LEARN",
+    "sub": "Courses, tutorials and reference architectures.",
+    "items": [
+      {
+        "id": "photo-1522202176988-66273c2fd55f",
+        "tag": "Courses",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "Tutorials",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Deploying",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1560472354-b33ff0c44a43",
+        "tag": "Search",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Drivers",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1454165804606-c3d57bc86b40",
+        "tag": "Architecture",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "We removed a search cluster and a nightly sync job in the same sprint. The nightly job had woken someone up eleven times that year.",
+    "name": "Femi Adeyemi",
+    "role": "Backend Lead, Halyard",
+    "avatar": "photo-1472099645785-5658abf4ff4e"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "A free tier that stays free, then priced on the cluster you run.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "forever",
+        "desc": "For learning and small projects.",
+        "features": [
+          "512MB storage",
+          "Shared cluster",
+          "Full document model",
+          "Community support"
+        ],
+        "cta": "Try free"
+      },
+      {
+        "name": "Flex",
+        "price": "$0.08",
+        "period": "/hour",
+        "desc": "Scales with what you use.",
+        "features": [
+          "Auto-scaling storage",
+          "Search included",
+          "Daily backups",
+          "Email support"
+        ],
+        "cta": "Start free",
+        "featured": true,
+        "badge": "MOST TEAMS"
+      },
+      {
+        "name": "Dedicated",
+        "price": "From $57",
+        "period": "/month",
+        "desc": "Isolated and tunable.",
+        "features": [
+          "Dedicated cluster",
+          "Analytics nodes",
+          "99.995% SLA",
+          "Named support"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "Is the free tier really free?",
+        "a": "Yes, permanently, with 512MB of storage on a shared cluster. It is not a trial and it does not expire — plenty of small production apps live on it."
+      },
+      {
+        "q": "Do I lose transactions with a document model?",
+        "a": "No. Multi-document ACID transactions are supported across collections and shards, with the same guarantees you would expect."
+      },
+      {
+        "q": "Can I enforce a schema?",
+        "a": "Yes, when you want it. Schema validation rules are opt-in per collection, so early development stays flexible and production stays strict."
+      },
+      {
+        "q": "Which clouds can I deploy to?",
+        "a": "AWS, Azure and Google Cloud, across more than a hundred regions, including multi-cloud clusters spanning providers."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start with the free tier",
+    "sub": "512MB free forever, no card, no expiry.",
+    "btn1": "Try free",
+    "btn2": "Read the docs"
+  },
+  "footer": {
+    "tagline": "The developer data platform built for change.",
+    "columns": [
+      {
+        "title": "Products",
+        "links": [
+          "Atlas",
+          "Search",
+          "Vector",
+          "Analytics"
+        ]
+      },
+      {
+        "title": "Solutions",
+        "links": [
+          "Startups",
+          "Enterprise",
+          "Migration",
+          "Compliance"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Docs",
+          "Courses",
+          "Blog",
+          "Community"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Press",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Verdant Data"
+  },
+  "specimen": "Built for change",
+  "notes": [
+    "Deep teal hero bands with bright green pill CTAs are the opening signature; the documentation surfaces below are stark white.",
+    "Buttons are full pills and cards sit at 12px — the contrast between the two radii is deliberate.",
+    "Course and resource tiles carry colour category tags in purple, orange, green and teal.",
+    "One sans family carries every UI surface, with a mono face only inside code mockups.",
+    "The featured pricing tier takes a mint highlight rather than the deep brand green, keeping the CTA green distinct."
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "slug": "composio",
+  "name": "Composio",
+  "category": "Backend, database & DevOps",
+  "look": "Dark monolithic canvas with a single deep-blue accent, a radial spotlight glow, and a 2×2 terminal grid as the hero.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "terminal",
+    "features": "bento",
+    "cards": "bordered",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-plugs-connected",
+    "name": "Conduit"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Tools",
+        "href": "features"
+      },
+      {
+        "label": "Docs",
+        "href": "gallery"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Blog",
+        "href": "showcase-1"
+      },
+      {
+        "label": "GitHub",
+        "href": "faq"
+      }
+    ],
+    "cta": "Get API key",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "250+ TOOLS, ONE AUTH LAYER",
+    "title": "Give your agent <em>real tools</em>",
+    "sub": "Authentication, rate limits and schemas for two hundred and fifty SaaS APIs, behind one interface your agent can actually call.",
+    "cta1": "Get API key",
+    "cta2": "Browse tools",
+    "image": "photo-1526374965328-7f61d4dc18c5",
+    "ratio": 0.58,
+    "stats": [
+      {
+        "v": "250+",
+        "l": "Tools"
+      },
+      {
+        "v": "1",
+        "l": "Auth layer"
+      },
+      {
+        "v": "OAuth",
+        "l": "Handled"
+      }
+    ]
+  },
+  "logo_lead": "AGENTS BUILT WITH CONDUIT",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "THE PROBLEM",
+    "title": "Auth is the hard part, not the calling",
+    "sub": "Every integration is an OAuth dance, a token refresh and a rate limit. That is the work Conduit does.",
+    "items": [
+      {
+        "icon": "ph-key",
+        "title": "Managed OAuth",
+        "body": "We hold the flow, the refresh and the revocation for every connected account, per end user."
+      },
+      {
+        "icon": "ph-list-checks",
+        "title": "Typed schemas",
+        "body": "Every tool exposes a JSON schema the model can be constrained to, so calls are valid before they are sent."
+      },
+      {
+        "icon": "ph-gauge",
+        "title": "Rate limits handled",
+        "body": "Backoff, retry and per-provider quotas managed for you rather than rediscovered in production."
+      },
+      {
+        "icon": "ph-users",
+        "title": "Per-user connections",
+        "body": "Each of your users connects their own accounts; tokens never mingle."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "Scoped and revocable",
+        "body": "Least-privilege scopes by default, revocable per connection from a dashboard."
+      },
+      {
+        "icon": "ph-code",
+        "title": "Framework agnostic",
+        "body": "Works with any agent framework, or with plain function calling and no framework at all."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "INTEGRATIONS",
+      "title": "Two hundred and fifty, kept current",
+      "body": "APIs change. Endpoints move, scopes get renamed and auth flows are revised. Keeping up with that across two hundred and fifty providers is the ongoing work, and it is the actual product.",
+      "points": [
+        "Schemas updated as providers change",
+        "Breaking changes versioned, not silent",
+        "New tools added weekly"
+      ],
+      "image": "photo-1518770660439-4636190af475",
+      "cta": "Browse the tools"
+    },
+    {
+      "eyebrow": "SECURITY",
+      "title": "Tokens you can see and revoke",
+      "body": "Every connection is scoped to the minimum permission the tool needs, listed in a dashboard, and revocable individually. Nothing is a long-lived all-scopes token sitting in an environment variable.",
+      "points": [
+        "Least-privilege scopes by default",
+        "Per-connection revocation",
+        "SOC 2 Type II"
+      ],
+      "image": "photo-1558494949-ef010cbdcc31",
+      "cta": "Read about security"
+    }
+  ],
+  "metric_lead": "",
+  "metrics": [
+    {
+      "v": "250+",
+      "l": "TOOLS"
+    },
+    {
+      "v": "1",
+      "l": "AUTH LAYER"
+    },
+    {
+      "v": "99.9%",
+      "l": "UPTIME"
+    },
+    {
+      "v": "SOC 2",
+      "l": "CERTIFIED"
+    }
+  ],
+  "gallery": {
+    "title": "DOCUMENTATION",
+    "sub": "Quickstart, tool reference, auth flows and framework guides.",
+    "items": [
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Quickstart",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "Tools",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "Auth",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Security",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Dashboard",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1498050108023-c5249f4df085",
+        "tag": "Frameworks",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "We had written four OAuth integrations and were dreading the next twenty. This removed the entire category of work from the roadmap.",
+    "name": "Elena Cruz",
+    "role": "Founding Engineer, Perigee",
+    "avatar": "photo-1494790108377-be9c29b29330"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Free while you build. Per-connection once you are live.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "",
+        "desc": "For building.",
+        "features": [
+          "10 connections",
+          "All 250+ tools",
+          "Community support",
+          "Test mode"
+        ],
+        "cta": "Get API key"
+      },
+      {
+        "name": "Growth",
+        "price": "$99",
+        "period": "/month",
+        "desc": "For production agents.",
+        "features": [
+          "1,000 connections",
+          "Managed OAuth",
+          "Webhooks",
+          "Email support"
+        ],
+        "cta": "Start free trial",
+        "featured": true,
+        "badge": "MOST TEAMS"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "desc": "For scale and compliance.",
+        "features": [
+          "Unlimited connections",
+          "Self-hosted option",
+          "SSO and audit",
+          "Named engineer"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "Do you store my users' tokens?",
+        "a": "Yes, encrypted at rest and scoped per connection, so your agent can act on a user's behalf without you building token storage. Self-hosting is available on Enterprise if that is unacceptable."
+      },
+      {
+        "q": "What happens when a provider changes its API?",
+        "a": "We update the schema and version the change. Breaking changes are versioned rather than shipped silently, so your agent does not start failing overnight."
+      },
+      {
+        "q": "Does it lock me into a framework?",
+        "a": "No. It is an HTTP API with typed schemas. Use it with an agent framework, or with plain function calling and no framework at all."
+      },
+      {
+        "q": "Can I add a tool that is not listed?",
+        "a": "Yes — define it with a schema and an auth config and it behaves like a built-in, including the managed OAuth flow."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Give your agent real tools",
+    "sub": "Ten connections free, no card, two hundred and fifty tools.",
+    "btn1": "Get API key",
+    "btn2": "Browse tools"
+  },
+  "footer": {
+    "tagline": "Authentication and schemas for the tools your agent needs.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Tools",
+          "Auth",
+          "Dashboard",
+          "Pricing"
+        ]
+      },
+      {
+        "title": "Docs",
+        "links": [
+          "Quickstart",
+          "Reference",
+          "Frameworks",
+          "Self-hosting"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Blog",
+          "Examples",
+          "Status",
+          "Support"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Security",
+          "Careers",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Conduit Labs"
+  },
+  "specimen": "One auth layer",
+  "notes": [
+    "A single deep-blue accent carries the CTAs, the wordmark and the spotlight glow. There is no second accent.",
+    "One sans family carries everything except code, which is monospace. No display face.",
+    "The dark canvas runs top to bottom; depth comes from brightness steps between card surfaces, not shadow.",
+    "The hero is a 2×2 grid of code and output panes — the brand signature, and it should stay a terminal rather than becoming an illustration.",
+    "CTAs sit at a compact 8px rather than full pills — the developer-tool dialect again."
+  ]
+}

@@ -1,0 +1,38 @@
+/* Zapier — warm cream, coffee ink, one saturated orange, 12px everywhere. */
+:root { --maxw: 1200px; --sect: clamp(56px, 7vw, 92px); --shadow-1: none; --shadow-2: none;
+  --cream-soft: #f8f4f0; --mute: #c5c0b1; --body-mid: #939084; }
+.nav { --nav-bg: rgba(255,254,251,.94); backdrop-filter: blur(10px); border-bottom-color: #ece7e0; }
+.brand { font-family: var(--font-display); font-weight: 800; letter-spacing: -.03em; font-size: 20px; }
+.brand-ico { color: var(--c-primary); }
+/* 12px is the middle-radius signature for buttons and cards alike */
+.btn, .feat-card, .tier, .quote-card, .g-item, .cta-band, .input, .hero-media img, .sc-media img { border-radius: 12px; }
+.btn { font-weight: 600; padding: 13px 24px; }
+.btn-secondary { background: var(--cream-soft); border-color: #e2dcd3; }
+.btn-secondary:hover { background: #f1ebe4; border-color: var(--mute); }
+.eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 700; }
+.eyebrow { color: var(--c-primary); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-family: var(--font-display); font-weight: 800; letter-spacing: -.035em; }
+.hero-title em { color: var(--c-primary); }
+.logos { border-block-color: #ece7e0; background: var(--cream-soft); }
+.logo-item { color: var(--c-ink); font-weight: 700; }
+.feat-card { background: var(--cream-soft); border: 0; padding: 26px; }
+.feat-card:hover { background: #f1ebe4; }
+.feat-ico { background: rgba(255,79,0,.12); color: var(--c-primary); border: 0; border-radius: 12px; }
+.hero-media img, .sc-media img, .g-item { border: 1px solid #ece7e0; }
+.metrics { --metrics-bg: var(--c-ink); border-block: 0; }
+.metrics .metric-v { color: var(--c-primary); }
+.metrics .metric-l, .metrics .logos-lead { color: var(--mute); }
+.g-item figcaption { background: rgba(32,21,21,.86); border-radius: 12px; }
+.quote-card { background: var(--cream-soft); border: 0; --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--c-primary); }
+.tier { background: var(--cream-soft); border: 0; }
+.tier-feat { outline: 2px solid var(--c-primary); outline-offset: -2px; background: #fff; }
+.tier-badge { background: var(--c-primary); border-radius: 12px; font-size: 10px; letter-spacing: .1em; }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--c-primary); }
+.faq-item { border-bottom-color: #ece7e0; }
+.cta-band { background: var(--c-primary); color: #fff; border: 0; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: rgba(255,255,255,.88); }
+.cta-band .btn-primary { background: var(--c-ink); color: #fff; }
+.cta-band .btn-secondary { background: rgba(0,0,0,.14); color: #fff; border-color: transparent; }
+.spec { --spec-bg: var(--cream-soft); }

@@ -1,0 +1,44 @@
+/* HashiCorp — black throughout, per-product colour, hairlines felt not seen. */
+:root { --maxw: 1220px; --sect: clamp(56px, 7vw, 96px); --shadow-1: none; --shadow-2: none;
+  --hairline-t: rgba(178,182,189,.1); --s1: #14161a; --s2: #1c1f24;
+  --p-terraform: #7b42bc; --p-vault: #ffd814; --p-consul: #e03875; --p-nomad: #00ca8e;
+  --p-boundary: #f24c53; --p-packer: #02a8ef; }
+
+.nav { --nav-bg: rgba(0,0,0,.88); backdrop-filter: blur(12px); border-bottom-color: var(--hairline-t); }
+.brand { font-weight: 700; letter-spacing: -.025em; }
+.btn { border-radius: var(--r-md); font-weight: 600; }
+.btn-secondary { background: var(--s1); border-color: var(--hairline-t); }
+.btn-secondary:hover { background: var(--s2); border-color: rgba(178,182,189,.25); }
+/* eyebrow marks every section as a category label */
+.eyebrow { text-transform: uppercase; letter-spacing: .05em; font-size: 12px; font-weight: 600; color: var(--c-ink-subtle); }
+/* the proportional gap is the voice: tight display, relaxed body */
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; line-height: 1.18; letter-spacing: -.025em; }
+.lede, .sc-body, .feat-body, .faq-a { line-height: 1.62; font-weight: 500; }
+.hero-title em { color: var(--p-nomad); }
+
+.logos { border-block-color: var(--hairline-t); }
+/* per-product colour identity, one per card */
+.feat-card { background: var(--s1); border-color: var(--hairline-t); border-radius: var(--r-md); }
+.feat-card:hover { background: var(--s2); border-color: rgba(178,182,189,.25); }
+.feat-ico { background: var(--s2); border: 0; border-radius: var(--r-md); }
+.feat-card:nth-child(1) .feat-ico { color: var(--p-terraform); }
+.feat-card:nth-child(2) .feat-ico { color: var(--p-vault); }
+.feat-card:nth-child(3) .feat-ico { color: var(--p-consul); }
+.feat-card:nth-child(4) .feat-ico { color: var(--p-nomad); }
+.feat-card:nth-child(5) .feat-ico { color: var(--p-boundary); }
+.feat-card:nth-child(6) .feat-ico { color: var(--p-packer); }
+.hero-media img, .sc-media img, .g-item { border-radius: var(--r-md); border-color: var(--hairline-t); }
+.metrics { --metrics-bg: var(--s1); border-block: 0; }
+.metric-v { color: #fff; }
+.g-item figcaption { background: rgba(0,0,0,.86); border: 1px solid var(--hairline-t); border-radius: var(--r-sm); }
+.quote-card { background: var(--s1); border-color: var(--hairline-t); border-radius: var(--r-md);
+  --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--p-nomad); }
+.tier { background: var(--s1); border-color: var(--hairline-t); border-radius: var(--r-md); }
+.tier-feat { border-color: var(--p-nomad); }
+.tier-badge { background: var(--p-nomad); color: #04231a; border-radius: var(--r-sm);
+  text-transform: uppercase; letter-spacing: .06em; font-size: 10px; }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--p-nomad); }
+.faq-item { border-bottom-color: var(--hairline-t); }
+.cta-band { background: var(--s1); border-color: var(--hairline-t); border-radius: var(--r-md); }
+.spec { --spec-bg: var(--s1); border-top-color: var(--hairline-t); }

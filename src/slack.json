@@ -1,0 +1,334 @@
+{
+  "slug": "slack",
+  "name": "Slack",
+  "category": "Productivity & SaaS",
+  "look": "Cream-lavender hero with pastel mesh atmospherics, one aubergine reused everywhere, and deliberately over-padded pills.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Manrope\", -apple-system, sans-serif",
+    "body": "\"Manrope\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "elevated",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-hash",
+    "name": "Huddle"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Product",
+        "href": "features"
+      },
+      {
+        "label": "Solutions",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Enterprise",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Resources",
+        "href": "gallery"
+      }
+    ],
+    "cta": "Get started",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "WHERE WORK HAPPENS",
+    "title": "Made for people, <em>built for productivity</em>",
+    "sub": "Channels instead of inboxes, searchable history instead of forwarded threads, and a place where the decision and the reason for it stay together.",
+    "cta1": "Get started",
+    "cta2": "Talk to sales",
+    "image": "photo-1552664730-d307ca884978",
+    "ratio": 0.66,
+    "stats": [
+      {
+        "v": "200k+",
+        "l": "Organisations"
+      },
+      {
+        "v": "90%",
+        "l": "Feel more connected"
+      },
+      {
+        "v": "47%",
+        "l": "More productive"
+      }
+    ]
+  },
+  "logo_lead": "WORKING IN HUDDLE",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "THE PLATFORM",
+    "title": "Channels, not inboxes",
+    "sub": "Conversation organised by topic rather than by who happened to be on the original email.",
+    "items": [
+      {
+        "icon": "ph-hash",
+        "title": "Channels",
+        "body": "One per project or topic, open by default, so joining a team means reading rather than being briefed."
+      },
+      {
+        "icon": "ph-magnifying-glass",
+        "title": "Searchable history",
+        "body": "Every decision and the discussion around it, findable months later by anyone who joins."
+      },
+      {
+        "icon": "ph-users-three",
+        "title": "Connect other companies",
+        "body": "Shared channels with partners and customers without either side leaving their own workspace."
+      },
+      {
+        "icon": "ph-microphone-stage",
+        "title": "Huddles",
+        "body": "Audio in a channel with one click, for the conversations that should not have been a meeting."
+      },
+      {
+        "icon": "ph-robot",
+        "title": "Workflows",
+        "body": "Automate the routine requests — leave, access, onboarding — with a builder rather than a script."
+      },
+      {
+        "icon": "ph-plugs-connected",
+        "title": "2,600+ apps",
+        "body": "Your tracker, your deploys, your alerts, in the channel where the work is discussed."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "SOLUTIONS",
+      "title": "The reason survives the decision",
+      "body": "In an inbox, the reasoning behind a decision lives in someone's sent folder. In a channel, it stays next to the decision, searchable by the person who joins in eight months and asks why.",
+      "points": [
+        "Discussion and decision stay together",
+        "Searchable by anyone who joins later",
+        "Open by default, private when needed"
+      ],
+      "image": "photo-1521737604893-d14cc237f11d",
+      "cta": "See solutions"
+    },
+    {
+      "eyebrow": "ENTERPRISE",
+      "title": "Governed without being locked down",
+      "body": "Retention policies, legal hold, data residency and enterprise key management — the controls a large organisation needs, without turning the tool into something people avoid using.",
+      "points": [
+        "Configurable retention and legal hold",
+        "Regional data residency",
+        "Enterprise key management"
+      ],
+      "image": "photo-1454165804606-c3d57bc86b40",
+      "cta": "Enterprise overview"
+    }
+  ],
+  "metric_lead": "REPORTED BY CUSTOMERS",
+  "metrics": [
+    {
+      "v": "200k+",
+      "l": "ORGANISATIONS"
+    },
+    {
+      "v": "47%",
+      "l": "MORE PRODUCTIVE"
+    },
+    {
+      "v": "2,600+",
+      "l": "APPS"
+    },
+    {
+      "v": "90%",
+      "l": "FEEL MORE CONNECTED"
+    }
+  ],
+  "gallery": {
+    "title": "RESOURCES",
+    "sub": "Guides, templates and the developer platform.",
+    "items": [
+      {
+        "id": "photo-1552664730-d307ca884978",
+        "tag": "Channels",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1521737604893-d14cc237f11d",
+        "tag": "Teams",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1522202176988-66273c2fd55f",
+        "tag": "Onboarding",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1454165804606-c3d57bc86b40",
+        "tag": "Enterprise",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Developers",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1497215728101-856f4ea42174",
+        "tag": "Templates",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "Someone joined in March and answered a question about a decision made the previous August, by searching. That is the whole value proposition and it took two minutes.",
+    "name": "Grace Chen",
+    "role": "Chief of Staff, Northwind",
+    "avatar": "photo-1494790108377-be9c29b29330"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Free to try properly, then per active member.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "",
+        "desc": "For small teams starting out.",
+        "features": [
+          "90 days of history",
+          "10 app integrations",
+          "1:1 huddles",
+          "Community support"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "name": "Pro",
+        "price": "$8",
+        "period": "/member/mo",
+        "desc": "For teams working together.",
+        "features": [
+          "Unlimited history",
+          "Unlimited apps",
+          "Group huddles",
+          "Workflow builder"
+        ],
+        "cta": "Get started",
+        "featured": true,
+        "badge": "MOST TEAMS"
+      },
+      {
+        "name": "Business+",
+        "price": "$15",
+        "period": "/member/mo",
+        "desc": "For larger organisations.",
+        "features": [
+          "Everything in Pro",
+          "SAML SSO",
+          "Data exports",
+          "99.99% SLA"
+        ],
+        "cta": "Talk to sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "What happens to messages older than 90 days on Free?",
+        "a": "They are hidden rather than deleted, and become visible again if you upgrade. Nothing is destroyed by staying on the free plan."
+      },
+      {
+        "q": "Do you charge for inactive members?",
+        "a": "No. Billing is based on members active in the period, and credit is applied automatically for anyone who was not."
+      },
+      {
+        "q": "Can we work with people outside the company?",
+        "a": "Yes, through shared channels. Both sides stay in their own workspace with their own policies, which is what makes it usable across organisations."
+      },
+      {
+        "q": "Where is our data stored?",
+        "a": "In the region you select, with residency available on Business+ for organisations that require it contractually."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Try it with your team",
+    "sub": "Free to start, and the first channel takes about a minute.",
+    "btn1": "Get started",
+    "btn2": "Talk to sales"
+  },
+  "footer": {
+    "tagline": "Where work happens.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Channels",
+          "Huddles",
+          "Workflows",
+          "Apps"
+        ]
+      },
+      {
+        "title": "Solutions",
+        "links": [
+          "Engineering",
+          "Sales",
+          "Support",
+          "IT"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Help centre",
+          "Community",
+          "Developers",
+          "Blog"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Newsroom",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Huddle Communications"
+  },
+  "specimen": "Where work happens",
+  "notes": [
+    "A single aubergine is reused across CTAs, the featured pricing tier, the footer band and the wordmark — chromatic monotheism.",
+    "The hero canvas is cream-lavender with a diffused pastel mesh behind it, and product UI composited on top of the gradient, never inside it.",
+    "Pills carry 28–30px of horizontal padding — deliberately over-padded by SaaS-default standards.",
+    "Display sizes take tight negative tracking for editorial density.",
+    "Blue inline links are the only non-aubergine chromatic accent anywhere in body type."
+  ]
+}
