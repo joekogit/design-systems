@@ -1,0 +1,87 @@
+{
+  "slug": "miro", "name": "Miro", "category": "Design & creative tools",
+  "look": "Stark white canvas, canary-yellow wordmark, black pill CTAs, pastel sticky-note feature cards and a massive dark footer.",
+  "scheme": "light", "icon_weights": ["regular", "bold"],
+  "fonts": {
+    "display": "\"Outfit\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "body": "\"Outfit\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "mono": "ui-monospace, SFMono-Regular, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+  },
+  "variants": { "nav": "bar", "hero": "centered", "features": "grid", "cards": "flat", "gallery": "masonry" },
+  "brand": { "mark": "ph-squares-four-fill", "name": "Corkboard" },
+  "nav": { "links": [{"label":"Product","href":"features"},{"label":"Solutions","href":"showcase-0"},{"label":"Templates","href":"gallery"},{"label":"Pricing","href":"pricing"},{"label":"Resources","href":"faq"}], "cta": "Sign up free", "cta2": "Log in" },
+  "hero": {
+    "eyebrow": "The visual workspace",
+    "title": "Where teams <em>actually</em> think together",
+    "sub": "An infinite canvas for workshops, diagrams, planning and the messy middle of any project. Sixty million people use one, mostly because the alternative is a photograph of a whiteboard.",
+    "cta1": "Sign up free", "cta2": "Watch a demo",
+    "image": "photo-1557804506-669a67965ba0", "ratio": 0.58,
+    "stats": [{"v":"60M+","l":"Users"},{"v":"300k","l":"Organisations"},{"v":"2,500+","l":"Templates"}]
+  },
+  "logo_lead": "Used by teams at",
+  "logos": ["Northwind", "Corva", "Basisplan", "Tessera", "Perigee", "Halyard"],
+  "features": {
+    "eyebrow": "What it does",
+    "title": "One canvas, all the messy bits",
+    "sub": "The parts of the work that never fit in a document or a ticket.",
+    "items": [
+      {"icon":"ph-note","title":"Sticky notes","body":"The obvious one, done properly — bulk create, cluster by colour, and convert a cluster into a list when the workshop ends."},
+      {"icon":"ph-flow-arrow","title":"Diagrams","body":"Flowcharts, architecture and sequence diagrams with connectors that stay attached when you move the box."},
+      {"icon":"ph-users-three","title":"Live collaboration","body":"Cursors, follow-me presenting, and a timer that everyone can see. Up to three hundred people on one board."},
+      {"icon":"ph-timer","title":"Workshop tools","body":"Voting, timers and private mode, so a workshop can run without a separate facilitation stack."},
+      {"icon":"ph-squares-four","title":"Templates","body":"Two and a half thousand of them — retros, story maps, service blueprints — most contributed by users."},
+      {"icon":"ph-plugs-connected","title":"Integrations","body":"Two-way sync with your tracker, so a sticky note becomes a ticket and the ticket's status comes back to the board."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"Workshops","title":"Facilitation without a second toolkit","body":"Timers, dot voting, private mode and follow-me presenting are on the board itself. You stop switching between a whiteboard, a timer app and a poll, and the workshop stops stalling every time you do.","points":["Dot voting with configurable budgets","Private mode so nobody anchors on the first idea","Follow-me presenting for remote rooms"],"image":"photo-1552664730-d307ca884978","cta":"See workshop tools"},
+    {"eyebrow":"Integrations","title":"Sticky notes that become tickets","body":"Two-way sync with your tracker. Convert a cluster into issues, and status changes flow back onto the board so the retro board does not quietly go stale the week after the retro.","points":["Convert clusters to issues in bulk","Status syncs back onto the card","Jira, Linear, Asana and Azure Boards"],"image":"photo-1454165804606-c3d57bc86b40","cta":"Browse integrations"}
+  ],
+  "metric_lead": "Corkboard, this year",
+  "metrics": [{"v":"60M+","l":"Users"},{"v":"300k","l":"Organisations"},{"v":"2,500+","l":"Templates"},{"v":"300","l":"Max people per board"}],
+  "gallery": {
+    "title": "Templates",
+    "sub": "Two and a half thousand, most of them contributed by the people who use them.",
+    "items": [
+      {"id":"photo-1557804506-669a67965ba0","tag":"Workshop","ratio":0.85},
+      {"id":"photo-1552664730-d307ca884978","tag":"Retro","ratio":1.15},
+      {"id":"photo-1454165804606-c3d57bc86b40","tag":"Roadmap","ratio":0.95},
+      {"id":"photo-1519389950473-47ba0277781c","tag":"Story map","ratio":1.1},
+      {"id":"photo-1521737604893-d14cc237f11d","tag":"Kickoff","ratio":0.9},
+      {"id":"photo-1547658719-da2b51169166","tag":"Design review","ratio":1.05}
+    ]
+  },
+  "testimonial": {"quote":"We ran a three-day workshop across four time zones on one board. The board is still open eight months later and people still add to it, which is not something a whiteboard photo has ever done.",
+    "name":"Nadia Haddad", "role":"Principal Designer, Corva", "avatar":"photo-1534528741775-53994a69daeb"},
+  "pricing": {
+    "title": "Plans for every team",
+    "sub": "Free forever for three boards. Paid plans unlock unlimited boards and admin controls.",
+    "tiers": [
+      {"name":"Free","price":"$0","period":"forever","desc":"For trying it and small projects.","features":["3 editable boards","2,500+ templates","Core integrations","Unlimited team members"],"cta":"Sign up free"},
+      {"name":"Starter","price":"$8","period":"/member/mo","desc":"Unlimited boards for a small team.","features":["Unlimited boards","Private boards","Voting and timers","Custom templates"],"cta":"Start free trial","featured":true,"badge":"Most popular"},
+      {"name":"Business","price":"$16","period":"/member/mo","desc":"For companies with governance needs.","features":["Everything in Starter","SSO and SCIM","Private teamspaces","Advanced permissions"],"cta":"Contact sales"}
+    ]
+  },
+  "faq": {"title":"Questions","items":[
+    {"q":"Is the free plan really free?","a":"Yes, permanently, with three editable boards and unlimited collaborators on them. Older boards become view-only rather than being deleted if you go over."},
+    {"q":"How many people can be on one board?","a":"Three hundred concurrent editors. Beyond about fifty, follow-me presenting and private mode are what keep it usable rather than chaotic."},
+    {"q":"Can we export a board?","a":"As PDF, image, or CSV of the notes and their groupings. Boards can also be backed up in bulk from the admin console on Business."},
+    {"q":"Does it work offline?","a":"Partially. Recently opened boards are cached and edits queue locally, syncing when you reconnect. Creating a new board needs a connection."}
+  ]},
+  "cta": {"title":"Open a board and see","sub":"Free forever for three boards. No card, and your team can join without an account.","btn1":"Sign up free","btn2":"Browse templates"},
+  "footer": {"tagline":"An infinite canvas for the parts of the work that never fit in a document.","columns":[
+    {"title":"Product","links":["Canvas","Diagrams","Workshops","Integrations"]},
+    {"title":"Templates","links":["Retros","Roadmaps","Brainstorms","Browse all"]},
+    {"title":"Resources","links":["Help centre","Community","Academy","Blog"]},
+    {"title":"Company","links":["About","Careers","Press","Contact"]}
+  ],"legal":"© 2026 Corkboard Inc"},
+  "specimen": "Think together",
+  "notes": [
+    "A stark white canvas with the wordmark in canary yellow is the opening signature. The yellow is brand, not a UI accent.",
+    "Black pills are the dominant interactive element — the primary CTA is black, never yellow.",
+    "Feature cards draw from the actual sticky-note palette: yellow, rose, coral, teal and mint.",
+    "Real board mockups are the feature imagery. Abstract illustration would undercut the whole premise.",
+    "The footer is a massive dark band with multi-column links — the one heavy surface in an otherwise white system."
+  ]
+}

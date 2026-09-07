@@ -1,0 +1,72 @@
+/* Airbnb — photography first, one Rausch accent, a single elevation tier. */
+:root { --maxw: 1280px; --sect: clamp(48px, 6vw, 64px);
+  --shadow-1: rgba(0,0,0,.02) 0 0 0 1px, rgba(0,0,0,.04) 0 2px 6px, rgba(0,0,0,.10) 0 4px 8px;
+  --shadow-2: rgba(0,0,0,.02) 0 0 0 1px, rgba(0,0,0,.06) 0 4px 12px, rgba(0,0,0,.12) 0 8px 18px; }
+
+.nav { --nav-bg: #fff; border-bottom-color: #ebebeb; }
+.nav-in { min-height: 76px; }
+.brand { font-weight: 800; letter-spacing: -.03em; color: var(--c-primary); font-size: 19px; }
+.brand-ico { color: var(--c-primary); font-size: 26px; }
+.nav-links a { font-weight: 600; color: var(--c-ink); }
+/* the active product tab takes an underline rule, not a fill */
+.nav-links a:hover { color: var(--c-ink); box-shadow: inset 0 -2px 0 var(--c-ink); }
+.btn { border-radius: var(--r-pill); font-weight: 600; }
+.btn-secondary { background: #fff; border-color: #dddddd; }
+.btn-secondary:hover { background: #f7f7f7; border-color: #b0b0b0; }
+.nav-act .btn { border-radius: var(--r-pill); }
+.eyebrow { color: var(--c-ink-subtle); text-transform: none; letter-spacing: 0; font-weight: 600; }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; letter-spacing: -.03em; }
+.hero-title em { color: var(--c-primary); }
+
+/* the pill search bar — the brand's most recognisable component */
+.hero-cta { position: relative; }
+.hero-cta::before {
+  content: "Where to?  ·  Any week  ·  Add guests";
+  display: flex; align-items: center; gap: 10px; flex: 1 1 340px;
+  min-height: 62px; padding: 0 8px 0 26px; margin-right: 8px;
+  background: #fff; border: 1px solid #dddddd; border-radius: var(--r-pill);
+  box-shadow: var(--shadow-1); color: var(--c-ink-subtle); font-size: 14px; font-weight: 600;
+}
+.hero-cta::after {
+  content: ""; position: absolute; left: calc(100% - 100%); top: 50%; transform: translateY(-50%);
+  margin-left: 0; width: 0; height: 0;
+}
+@media (max-width: 700px) { .hero-cta::before { display: none; } }
+
+.logos { border-block-color: #ebebeb; }
+.logo-item { font-weight: 600; }
+.feat-card { background: transparent; border: 0; padding-inline: 0; }
+.feat-ico { background: transparent; border: 0; color: var(--c-primary); width: auto; height: auto; font-size: 30px; }
+.feat-title { font-weight: 600; }
+
+/* photo-first cards with a floating badge and a heart */
+.hero-media img, .sc-media img, .g-item { border-radius: var(--r-lg); border: 0; }
+.g-item { position: relative; background: transparent; }
+.g-item::before {
+  content: "Guest favourite"; position: absolute; z-index: 2; left: 12px; top: 12px;
+  padding: 5px 11px; border-radius: var(--r-pill); background: #fff; color: var(--c-ink);
+  font-size: 11px; font-weight: 700; box-shadow: var(--shadow-1); }
+.g-item::after {
+  content: "\2661"; position: absolute; z-index: 2; right: 14px; top: 9px;
+  color: #fff; font-size: 25px; line-height: 1; text-shadow: 0 1px 3px rgba(0,0,0,.4); }
+.g-item figcaption { position: static; margin-top: 10px; padding: 0; background: transparent;
+  color: var(--c-ink); font-weight: 600; font-size: 14px; backdrop-filter: none; }
+
+.metrics { --metrics-bg: #f7f7f7; border-block: 0; }
+.metric-v { color: var(--c-ink); }
+.quote-card { background: #f7f7f7; border: 0; border-radius: var(--r-xl);
+  --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--c-primary); }
+.q-av { border-radius: 50%; }
+.tier { border-radius: var(--r-lg); border-color: #dddddd; }
+.tier:hover { box-shadow: var(--shadow-1); }
+.tier-feat { border-color: var(--c-ink); border-width: 2px; }
+.tier-badge { background: var(--c-ink); border-radius: var(--r-pill); }
+.tier-feats i { color: var(--c-ink); }
+.sc-points i { color: var(--c-primary); }
+.faq-item { border-bottom-color: #ebebeb; }
+.faq-mk { color: var(--c-ink); }
+.cta-band { background: #f7f7f7; border: 0; border-radius: var(--r-xl); }
+/* footer is plain text columns — no card surface, no shadow */
+.foot { border-top-color: #ebebeb; }
+.spec { --spec-bg: #f7f7f7; }

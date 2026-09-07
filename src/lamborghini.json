@@ -1,0 +1,82 @@
+{
+  "slug": "lamborghini", "name": "Lamborghini", "category": "Automotive",
+  "look": "True black with gold as the sole accent, extreme uppercase display, zero radius, hexagonal motifs and ghost-outline secondaries.",
+  "scheme": "dark", "icon_weights": ["regular", "bold"],
+  "fonts": { "google": "https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap" },
+  "variants": { "nav": "minimal", "hero": "full-bleed", "features": "grid", "cards": "flat", "gallery": "filmstrip" },
+  "brand": { "mark": "ph-hexagon", "name": "TAURUS" },
+  "nav": { "links": [{"label":"MODELS","href":"features"},{"label":"MOTORSPORT","href":"showcase-0"},{"label":"AD PERSONAM","href":"showcase-1"},{"label":"GALLERY","href":"gallery"},{"label":"CONFIGURE","href":"pricing"}], "cta": "CONFIGURE", "cta2": "DEALERS" },
+  "hero": {
+    "eyebrow": "TAURUS VENTO — SANT'AGATA",
+    "title": "VENTO",
+    "sub": "A naturally aspirated V12 mounted longitudinally behind the driver, in a carbon monocoque weighing 1,510 kilograms. Two hundred and fifty examples.",
+    "cta1": "START CONFIGURATION", "cta2": "DISCOVER MORE",
+    "image": "photo-1552519507-da3b142c6e3d", "ratio": 0.54,
+    "stats": [{"v":"6.5 L","l":"V12"},{"v":"820 CV","l":"OUTPUT"},{"v":"2.8 S","l":"0–100 KM/H"}]
+  },
+  "logo_lead": "SANT'AGATA BOLOGNESE",
+  "logos": ["GENEVA", "PEBBLE BEACH", "GOODWOOD", "MONTEREY", "VILLA D'ESTE", "SHANGHAI"],
+  "features": {
+    "eyebrow": "TECHNOLOGY",
+    "title": "UNCOMPROMISING",
+    "sub": "Every system built for one purpose, and not adapted from anything else.",
+    "items": [
+      {"icon":"ph-engine","title":"V12 ASPIRATED","body":"Six and a half litres, no forced induction, 820 CV at 8,500 revolutions. The sound is a design requirement, not a by-product."},
+      {"icon":"ph-hexagon","title":"CARBON MONOCOQUE","body":"A single-piece cell produced in Sant'Agata using a forged composite process developed with an aerospace partner."},
+      {"icon":"ph-wind","title":"ALA AERODYNAMICS","body":"Active flaps redirect airflow across the rear wing in under half a second, cutting drag on the straight and adding load in the corner."},
+      {"icon":"ph-scales","title":"1,510 KG","body":"Dry weight, with a titanium exhaust, magnesium wheels and a carbon-shelled seat as standard."},
+      {"icon":"ph-steering-wheel","title":"FOUR-WHEEL STEERING","body":"Rear-axle steering that shortens the wheelbase in slow corners and lengthens it above 120 km/h."},
+      {"icon":"ph-flag-checkered","title":"SQUADRA CORSE","body":"Developed alongside the racing division at Nardò and Estoril across two seasons."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"MOTORSPORT","title":"DEVELOPED ON CIRCUIT","body":"The aerodynamic package, the brake cooling and the gearbox calibration all arrived on the road car because the racing division needed them first. Two seasons of testing at Nardò and Estoril preceded the first customer delivery.","points":["Two seasons of circuit development","Shared aerodynamic package with the GT3 car","Gearbox calibration from the racing programme"],"image":"photo-1553440569-bcc63803a83d","cta":"SQUADRA CORSE","ratio":0.6},
+    {"eyebrow":"AD PERSONAM","title":"NO TWO ARE THE SAME","body":"Four hundred paint finishes, any of which can be matched to a physical sample you bring. Stitching, badging and even the instrument graphics are specified with a designer over two days in Sant'Agata.","points":["Over 400 finishes, plus matching to sample","Two days with a designer in Sant'Agata","Configuration recorded and never repeated"],"image":"photo-1493238792000-8113da705763","cta":"AD PERSONAM","ratio":0.6}
+  ],
+  "metric_lead": "VENTO — TECHNICAL DATA",
+  "metrics": [{"v":"820 CV","l":"OUTPUT"},{"v":"1,510 KG","l":"DRY WEIGHT"},{"v":"355 KM/H","l":"TOP SPEED"},{"v":"250","l":"EXAMPLES"}],
+  "gallery": {
+    "title": "GALLERY",
+    "sub": "Photographed at Sant'Agata Bolognese and on the Passo del Bracco.",
+    "items": [
+      {"id":"photo-1552519507-da3b142c6e3d","tag":"PROFILE","ratio":0.6},
+      {"id":"photo-1503376780353-7e6692767b70","tag":"REAR","ratio":0.6},
+      {"id":"photo-1553440569-bcc63803a83d","tag":"BRACCO","ratio":0.6},
+      {"id":"photo-1493238792000-8113da705763","tag":"NIGHT","ratio":0.6},
+      {"id":"photo-1492144534655-ae79c964c9d7","tag":"STUDIO","ratio":0.6},
+      {"id":"photo-1518770660439-4636190af475","tag":"DETAIL","ratio":0.6}
+    ]
+  },
+  "testimonial": {"quote":"I asked whether the exhaust could be a little louder above six thousand. Four months later a technician came to my house with two cars and asked me to choose between them.",
+    "name":"Alessandro Ferri", "role":"Ad Personam client", "avatar":"photo-1573496359142-b8d87734a5a2"},
+  "pricing": {
+    "title": "CONFIGURE",
+    "sub": "Two hundred and fifty examples. Enquiries are handled by your dealer.",
+    "tiers": [
+      {"name":"VENTO","price":"€420,000","period":"","desc":"The car as homologated.","features":["6.5L V12, 820 CV","Carbon monocoque","ALA aerodynamics","Five-year service"],"cta":"CONFIGURE"},
+      {"name":"VENTO PERFORMANTE","price":"€498,000","period":"","desc":"Lightweight specification.","features":["Everything in Vento","Magnesium wheels, −22 kg","Carbon-shelled seats","Track telemetry"],"cta":"CONFIGURE","featured":true,"badge":"150 EXAMPLES"},
+      {"name":"AD PERSONAM","price":"ON APPLICATION","period":"","desc":"Specified with a designer.","features":["400+ finishes","Matching to physical sample","Two days in Sant'Agata","Configuration retired"],"cta":"ENQUIRE"}
+    ]
+  },
+  "faq": {"title":"ENQUIRIES","items":[
+    {"q":"How is an allocation obtained?","a":"Through your dealer, in consultation with Sant'Agata. Ownership history is the primary factor, and the Vento allocation closed nineteen days after the announcement."},
+    {"q":"How long is the build?","a":"Approximately five months from confirmed specification for Vento and Performante. An Ad Personam commission runs to roughly nine months."},
+    {"q":"Is the V12 really not turbocharged?","a":"It is naturally aspirated. Forced induction was evaluated and rejected because the throttle response and the sound above six thousand revolutions were considered non-negotiable."},
+    {"q":"What is included in servicing?","a":"Five years of scheduled maintenance including fluids, filters and collection from an address of your choosing. Track-day consumables are excluded."}
+  ]},
+  "cta": {"title":"START CONFIGURATION","sub":"Two hundred and fifty examples. Speak to your dealer about allocation.","btn1":"CONFIGURE YOURS","btn2":"FIND A DEALER"},
+  "footer": {"tagline":"Sant'Agata Bolognese. Since 1963.","columns":[
+    {"title":"MODELS","links":["Vento","Performante","Squadra Corse","Heritage"]},
+    {"title":"THE MARQUE","links":["History","Museum","Sant'Agata","Sustainability"]},
+    {"title":"OWNERSHIP","links":["Ad Personam","Servicing","Polo Storico","Accademia"]},
+    {"title":"CONTACT","links":["Dealers","Enquiries","Press","Careers"]}
+  ],"legal":"© 2026 Automobili Taurus S.p.A."},
+  "specimen": "VENTO",
+  "notes": [
+    "True black dominates every surface. White and gold are the only relief colours, and gold is the sole chromatic accent in the entire interface.",
+    "Gold is reserved exclusively for primary action buttons. Using it on a heading or a background dissolves its function as a signal.",
+    "Display type is all-uppercase at extreme scales — 120px, 80px, 54px — with tight line-heights below 1.0.",
+    "Zero border-radius on everything. Sharp rectangles are the brand's angular geometry, and a rounded corner reads as a different marque entirely.",
+    "The secondary CTA is a transparent ghost button with a white border at 50% opacity. Hexagonal motifs echo the brand geometry in icons and controls."
+  ]
+}

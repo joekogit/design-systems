@@ -1,0 +1,82 @@
+{
+  "slug": "runwayml", "name": "Runway", "category": "AI & LLM platforms",
+  "look": "Editorial film-festival — cinematic dark heroes, paper-white reading bands, cool-toned neutrals and no shadows anywhere.",
+  "scheme": "dark", "icon_weights": ["thin", "regular"],
+  "fonts": { "google": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;450;500;600&display=swap" },
+  "variants": { "nav": "minimal", "hero": "full-bleed", "features": "list", "cards": "flat", "gallery": "masonry" },
+  "brand": { "mark": "ph-film-strip", "name": "Nightshift" },
+  "nav": { "links": [{"label":"TOOLS","href":"features"},{"label":"STUDIOS","href":"showcase-0"},{"label":"FESTIVAL","href":"gallery"},{"label":"RESEARCH","href":"showcase-1"},{"label":"PRICING","href":"pricing"}], "cta": "Get started", "cta2": "Sign in" },
+  "hero": {
+    "eyebrow": "NIGHTSHIFT 04 — GENERAL RELEASE",
+    "title": "Tools for <em>human imagination</em>",
+    "sub": "Generative video, motion tracking, rotoscoping and colour, in one browser tab. Used on eleven features and around four hundred commercials last year.",
+    "cta1": "Start creating", "cta2": "Watch the reel",
+    "image": "photo-1516035069371-29a1b244cc32", "ratio": 0.54,
+    "stats": [{"v":"11","l":"FEATURE FILMS"},{"v":"4M+","l":"CREATORS"},{"v":"18s","l":"MAX GENERATION"}]
+  },
+  "logo_lead": "SEEN AT",
+  "logos": ["SUNDANCE", "TRIBECA", "SXSW", "VENICE", "TIFF", "BERLINALE"],
+  "features": {
+    "eyebrow": "THE TOOLKIT",
+    "title": "Thirty tools, one timeline",
+    "sub": "Each one does a job that used to need its own licence, its own machine and its own specialist.",
+    "items": [
+      {"icon":"ph-video-camera","title":"GENERATIVE VIDEO","body":"Up to eighteen seconds at 24fps from a prompt, an image, or a rough animatic you shot on a phone."},
+      {"icon":"ph-scissors","title":"ROTOSCOPING","body":"Track and isolate a subject across a shot in about nine seconds. It used to be an afternoon."},
+      {"icon":"ph-palette","title":"COLOUR","body":"Match a grade across shots from a single reference frame, with the LUT exported for your finishing suite."},
+      {"icon":"ph-crosshair","title":"MOTION TRACKING","body":"Planar and point tracking that survives motion blur, with data that exports to the usual compositors."},
+      {"icon":"ph-waveform","title":"AUDIO CLEANUP","body":"Separate dialogue from location noise, and remove a specific recurring sound without touching the rest."},
+      {"icon":"ph-users-three","title":"COLLABORATION","body":"Frame-accurate comments on a shared timeline, with versions kept rather than overwritten."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"STUDIOS","title":"On eleven features last year","body":"Not as a novelty in the credits — as rotoscoping, cleanup and previsualisation on shots that made the final cut. Three of those films took the work through a full theatrical grade afterwards.","points":["Rotoscoping and cleanup on final-cut shots","Previsualisation used in principal photography","Frame-accurate versioning for finishing"],"image":"photo-1526170375885-4d8ecf77b99f","cta":"READ THE CASE STUDIES"},
+    {"eyebrow":"RESEARCH","title":"We publish what we build","body":"Model cards, evaluation methodology and known failure modes are published alongside each release. Where a model does badly, that is documented too, because you will find it in production otherwise.","points":["Model cards with evaluation methodology","Failure modes documented per release","Training data provenance stated"],"image":"photo-1518770660439-4636190af475","cta":"READ THE RESEARCH"}
+  ],
+  "metric_lead": "NIGHTSHIFT, LAST TWELVE MONTHS",
+  "metrics": [{"v":"11","l":"FEATURE FILMS"},{"v":"400+","l":"COMMERCIALS"},{"v":"4M+","l":"CREATORS"},{"v":"30","l":"TOOLS"}],
+  "gallery": {
+    "title": "THE FESTIVAL",
+    "sub": "Selected work from this year's programme, all made with Nightshift.",
+    "items": [
+      {"id":"photo-1516035069371-29a1b244cc32","tag":"SHORT","ratio":1.2},
+      {"id":"photo-1567095761054-7a02e69e5c43","tag":"EXPERIMENTAL","ratio":0.85},
+      {"id":"photo-1541701494587-cb58502866ab","tag":"MUSIC VIDEO","ratio":1.1},
+      {"id":"photo-1550684376-efcbd6e3f031","tag":"DOCUMENTARY","ratio":0.9},
+      {"id":"photo-1502920917128-1aa500764cbd","tag":"COMMERCIAL","ratio":1.15},
+      {"id":"photo-1470071459604-3b5ec3a7fe05","tag":"LANDSCAPE","ratio":0.95}
+    ]
+  },
+  "testimonial": {"quote":"We rotoscoped a fourteen-shot sequence in an afternoon that would have gone to an outside vendor for three weeks. The director watched it happen and asked for two more takes, which is the actual point.",
+    "name":"Camille Duroc", "role":"VFX Supervisor", "avatar":"photo-1534528741775-53994a69daeb"},
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Credits are used only on generation. Editing tools are unlimited on every plan.",
+    "tiers": [
+      {"name":"FREE","price":"$0","period":"","desc":"For trying the toolkit.","features":["125 one-time credits","Unlimited editing tools","720p exports","Watermarked"],"cta":"Start free"},
+      {"name":"STANDARD","price":"$15","period":"/month","desc":"For working creators.","features":["625 credits monthly","1080p exports","No watermark","Custom voices"],"cta":"Get Standard","featured":true,"badge":"MOST CREATORS"},
+      {"name":"STUDIO","price":"Custom","period":"","desc":"For production teams.","features":["Pooled credits","4K exports","Shared workspaces","Named support"],"cta":"Talk to us"}
+    ]
+  },
+  "faq": {"title":"QUESTIONS","items":[
+    {"q":"Who owns what I generate?","a":"You do, on every paid plan, including commercial use. Free-plan output is watermarked and licensed for non-commercial use only."},
+    {"q":"How are credits consumed?","a":"Only by generation, priced per second of output and per model. Rotoscoping, tracking, colour and audio tools do not consume credits on any plan."},
+    {"q":"What was the model trained on?","a":"Licensed footage libraries and public data, with provenance stated per model in the research pages. Customer projects are never used for training."},
+    {"q":"Can I use it in a commercial production?","a":"Yes, on Standard and above. Studio adds pooled credits, 4K exports and an indemnity clause that most productions' legal teams ask for."}
+  ]},
+  "cta": {"title":"START CREATING","sub":"A hundred and twenty-five credits free, and the editing tools are unlimited from the start.","btn1":"Start free","btn2":"See pricing"},
+  "footer": {"tagline":"Tools for human imagination.","columns":[
+    {"title":"PRODUCT","links":["Tools","Models","Pricing","Changelog"]},
+    {"title":"COMPANY","links":["About","Research","Careers","Newsroom"]},
+    {"title":"RESOURCES","links":["Documentation","Tutorials","Community","Support"]},
+    {"title":"FESTIVAL","links":["Programme","Submit","Past years","Jury"]}
+  ],"legal":"© 2026 Nightshift Studios"},
+  "specimen": "Human imagination",
+  "notes": [
+    "Cinematic full-bleed photography and video are the primary UI elements. The interface is intentionally close to invisible.",
+    "One typeface does everything from 92px display to 11px labels. Hierarchy comes from weight and tracking, not from a second family.",
+    "Zero shadows and almost no borders — a single hairline (#27272a) is the only containment in the dark sections.",
+    "Display sits at line-height 1.0 with negative tracking; uppercase labels invert that with generous positive tracking at weight 450.",
+    "Dark cinematic bands alternate with paper-white reading sections. The white is cool-tinted (#e9ecf2), never pure."
+  ]
+}

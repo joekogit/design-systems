@@ -1,0 +1,82 @@
+/* Runway — editorial film festival. Cinematic dark, cool paper-white bands, no shadows. */
+:root { --maxw: 1320px; --sect: clamp(64px, 8vw, 104px); --shadow-1: none; --shadow-2: none;
+  --paper: #e9ecf2; --ink-on-paper: #404040;
+  --hero-scrim: linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.14) 42%, rgba(0,0,0,.9) 100%); }
+
+.nav { --nav-bg: rgba(0,0,0,.72); backdrop-filter: blur(10px); border-bottom: 1px solid var(--c-hairline); }
+.nav-in { min-height: 58px; }
+.brand { font-weight: 500; letter-spacing: -.02em; font-size: 17px; }
+.brand-ico { color: #fff; }
+/* uppercase labels at weight 450 with generous positive tracking */
+.nav-links a, .eyebrow, .logos-lead, .metric-l, .g-item figcaption, .fcol h4, .hstat span, .tier-per, .zoo-cell h4 {
+  text-transform: uppercase; letter-spacing: .13em; font-weight: 450; font-size: 11px; }
+.nav-links a { color: var(--c-ink-subtle); }
+.nav-links a:hover { color: #fff; }
+
+.btn { border-radius: var(--r-sm); text-transform: uppercase; letter-spacing: .08em;
+  font-weight: 450; font-size: 12px; padding: 13px 22px; }
+.btn-primary { background: #fff; color: #000; }
+.btn-primary:hover { background: var(--paper); }
+.btn-secondary { background: transparent; color: #fff; border-color: var(--c-hairline-strong); }
+.btn-secondary:hover { background: rgba(255,255,255,.06); border-color: #fff; }
+
+.eyebrow { color: var(--c-ink-subtle); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 500; }
+.hero-title em { color: var(--c-ink-subtle); }
+.hero-sub { color: rgba(255,255,255,.84); }
+.hero-stats { border-top-color: rgba(255,255,255,.26); }
+.hstat b { font-weight: 500; }
+.hstat span { color: var(--c-ink-subtle); }
+
+.logos { border-block-color: var(--c-hairline); }
+.logo-item { text-transform: uppercase; letter-spacing: .14em; font-size: 11px; font-weight: 450; color: var(--c-ink-subtle); }
+
+/* the paper-white reading band */
+.features { background: var(--paper); color: var(--ink-on-paper); }
+.features .t-display-lg { color: #000; }
+.features .lede, .features .feat-body { color: #4a4a4a; }
+.features .eyebrow { color: #6b7280; }
+.feat-grid.v-list { gap: 0; }
+.v-list .feat-card { background: transparent; border: 0; border-top: 1px solid #c9ccd1;
+  border-radius: 0; padding: var(--s-lg) 0; grid-template-columns: 34px 1fr; }
+.feat-ico { background: transparent; border: 0; color: #000; width: auto; height: auto; font-size: 21px; }
+.feat-title { color: #000; text-transform: uppercase; letter-spacing: .1em; font-size: 12px; font-weight: 450; }
+
+.hero-media img, .sc-media img, .g-item { border-radius: 0; border: 0; }
+.sc-media img { border: 1px solid var(--c-hairline); }
+.sc-points i { color: var(--c-ink-subtle); }
+.metrics { --metrics-bg: transparent; border-block: 1px solid var(--c-hairline); }
+.metric-v { font-weight: 500; }
+.g-item { background: var(--c-surface); }
+.g-item figcaption { background: rgba(0,0,0,.82); border-radius: 0; font-size: 9.5px; letter-spacing: .16em; }
+
+.quote-card { background: transparent; border: 0; border-top: 1px solid var(--c-hairline);
+  border-radius: 0; --quote-align: left; --quote-by-just: flex-start; padding-inline: 0; }
+.quote-text { font-weight: 400; font-size: clamp(20px, 2.8vw, 32px); line-height: 1.2; }
+.quote-mark { display: none; }
+.q-av { border-radius: 0; }
+
+/* pricing sits on paper */
+.pricing { background: var(--paper); color: var(--ink-on-paper); }
+.pricing .t-display-lg { color: #000; }
+.pricing .lede { color: #4a4a4a; }
+.tier { background: #fefefe; border: 1px solid #c9ccd1; border-radius: 0; }
+.tier-name, .tier-num { color: #000; text-transform: uppercase; letter-spacing: .1em; }
+.tier-num { letter-spacing: -.01em; }
+.tier-desc, .tier-feats li { color: #4a4a4a; }
+.tier-feats i { color: #000; }
+.tier-feat { background: #000; border-color: #000; }
+.tier-feat .tier-name, .tier-feat .tier-num { color: #fff; }
+.tier-feat .tier-desc, .tier-feat .tier-feats li { color: var(--c-ink-muted); }
+.tier-feat .tier-feats i { color: #fff; }
+.tier-badge { background: #000; color: #fff; border-radius: 0; letter-spacing: .12em; }
+.tier .btn-secondary { color: #000; border-color: #c9ccd1; }
+.tier .btn-secondary:hover { background: rgba(0,0,0,.05); border-color: #000; }
+
+.faq-item { border-bottom-color: var(--c-hairline); }
+.faq-item summary { font-weight: 500; }
+.faq-mk { color: var(--c-ink-subtle); }
+.cta-band { background: transparent; border: 0; border-top: 1px solid var(--c-hairline);
+  border-bottom: 1px solid var(--c-hairline); border-radius: 0; }
+.spec { --spec-bg: #030303; border-top-color: var(--c-hairline); }
+.input, .badge2, .tabs, .tabs button, .sw { border-radius: 0; }

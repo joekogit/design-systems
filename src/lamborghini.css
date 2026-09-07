@@ -1,0 +1,77 @@
+/* Lamborghini — true black, gold as the only chromatic signal, zero radius, hexagons. */
+:root { --maxw: 1340px; --gut: 26px; --sect: clamp(60px, 8vw, 112px);
+  --gold: #ffc000; --gold-dark: #917300; --gold-text: #ffce3e;
+  /* Two layers: a vertical scrim for the nav and stat rail, plus a left-hand
+     wedge so the copy column always has a dark ground while the car stays lit. */
+  --hero-scrim:
+    linear-gradient(90deg, rgba(0,0,0,.86) 0%, rgba(0,0,0,.62) 32%, rgba(0,0,0,.10) 62%, transparent 80%),
+    linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.10) 40%, rgba(0,0,0,.88) 100%);
+  --shadow-1: none; --shadow-2: none; }
+
+/* nothing is rounded, anywhere */
+.btn, .feat-card, .tier, .quote-card, .g-item, .cta-band, .input, .hero-media img, .sc-media img,
+.badge2, .tabs, .tabs button, .q-av, .g-item figcaption, .tier-badge, .sw, .feat-ico, .foot-socials a {
+  border-radius: 0; }
+
+.nav { --nav-bg: rgba(0,0,0,.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,.14); }
+.nav-in { min-height: 68px; }
+.brand { font-family: var(--font-display); font-weight: 600; letter-spacing: .3em; font-size: 15px; }
+.brand-ico { color: var(--gold); font-size: 19px; }
+.nav-links a { text-transform: uppercase; letter-spacing: .16em; font-size: 11px; font-weight: 500; }
+.nav-links a:hover { color: var(--gold-text); }
+
+/* gold is only ever a primary action; the secondary is a 50% white ghost */
+.btn { text-transform: uppercase; padding: 16px 34px; }
+.btn-primary { background: var(--gold); color: #000; }
+.btn-primary:hover { background: var(--gold-dark); color: #fff; }
+.btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.5); }
+.btn-secondary:hover { background: transparent; border-color: #fff; }
+.btn-ghost { color: var(--gold-text); text-transform: uppercase; letter-spacing: .14em; font-size: 11px; }
+
+.eyebrow { text-transform: uppercase; color: rgba(255,255,255,.5); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title, .feat-title, .tier-name, .metric-v, .hstat b, .faq-item summary {
+  font-family: var(--font-display); text-transform: uppercase; }
+.hero-title { color: #fff; letter-spacing: .04em; }
+.hero-sub { color: rgba(255,255,255,.82); max-width: 46ch; }
+.hero-stats { border-top-color: rgba(255,255,255,.24); }
+.hstat span { color: rgba(255,255,255,.5); text-transform: uppercase; letter-spacing: .16em; font-size: 10px; }
+
+.logos { border-block-color: rgba(255,255,255,.14); }
+.logo-item { text-transform: uppercase; letter-spacing: .2em; font-size: 10.5px; font-weight: 500; color: rgba(255,255,255,.5); }
+
+/* hexagonal icon containers echo the brand geometry */
+.feat-card { background: var(--c-surface); border: 0; padding: 30px 26px; }
+.feat-card:hover { background: var(--c-surface-3); }
+.feat-ico { background: var(--gold); color: #000; border: 0; width: 46px; height: 46px; font-size: 21px;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); }
+.feat-title { font-size: 13px; letter-spacing: .14em; font-weight: 500; }
+.feat-body { color: rgba(255,255,255,.62); }
+
+.sc-media img, .hero-media img { border: 0; }
+.sc-points i { color: var(--gold); }
+.metrics { --metrics-bg: transparent; border-block: 1px solid rgba(255,255,255,.14); }
+.metric-v { color: var(--gold); font-size: clamp(28px, 3.8vw, 46px); }
+.metric-l { color: rgba(255,255,255,.5); letter-spacing: .16em; font-size: 10px; }
+.g-item { background: var(--c-surface-2); }
+.g-item figcaption { background: rgba(0,0,0,.84); letter-spacing: .2em; font-size: 9.5px; }
+
+.quote-card { background: transparent; border: 0; border-top: 2px solid var(--gold);
+  --quote-align: left; --quote-by-just: flex-start; padding-inline: 0; }
+.quote-text { font-weight: 300; text-transform: none; font-size: clamp(19px, 2.6vw, 30px); line-height: 1.35; }
+.quote-mark { color: var(--gold); }
+
+.tier { background: var(--c-surface); border: 1px solid rgba(255,255,255,.14); }
+.tier-feat { border-color: var(--gold); }
+.tier-badge { background: var(--gold); color: #000; letter-spacing: .16em; font-size: 9.5px; }
+.tier-name { font-size: 14px; letter-spacing: .2em; }
+.tier-num { font-family: var(--font-display); font-weight: 500; letter-spacing: .02em; }
+.tier-feats i { color: var(--gold); }
+.faq-item { border-bottom-color: rgba(255,255,255,.14); }
+.faq-item summary { font-size: 13px; letter-spacing: .14em; font-weight: 500; }
+.faq-mk { color: var(--gold); }
+.cta-band { background: transparent; border: 0; border-top: 1px solid rgba(255,255,255,.14);
+  border-bottom: 1px solid rgba(255,255,255,.14); }
+.cta-band .t-display-md { font-size: clamp(34px, 6.4vw, 78px); letter-spacing: .04em; }
+.foot { background: var(--c-surface-2); --foot-bg: var(--c-surface-2); border-top-color: rgba(255,255,255,.14); }
+.fcol h4 { color: var(--gold); letter-spacing: .18em; }
+.spec { --spec-bg: #0d0d0d; border-top-color: rgba(255,255,255,.14); }

@@ -1,0 +1,67 @@
+/* Miro — white canvas, canary wordmark, black pills, sticky-note cards, dark footer. */
+:root { --maxw: 1220px; --sect: clamp(56px, 7vw, 92px);
+  --canary: #ffd02f; --footer-bg: #050038;
+  --sn-yellow: #fff5cc; --sn-rose: #ffe1ec; --sn-coral: #ffe0d6;
+  --sn-teal: #d5f2ef; --sn-mint: #ddf5e3; --sn-lilac: #e8e2fb;
+  --shadow-1: 0 1px 2px rgba(5,0,56,.06), 0 6px 20px rgba(5,0,56,.07);
+  --shadow-2: 0 2px 6px rgba(5,0,56,.08), 0 14px 34px rgba(5,0,56,.12); }
+
+.nav { --nav-bg: rgba(255,255,255,.94); backdrop-filter: blur(10px); }
+/* the wordmark is the one place canary appears */
+.brand { font-weight: 800; letter-spacing: -.03em; font-size: 21px; }
+.brand-ico { color: var(--canary); font-size: 24px; }
+.nav-links a { font-weight: 600; }
+
+/* black pills are the dominant interactive element */
+.btn { border-radius: var(--r-pill); font-weight: 600; padding: 13px 24px; }
+.btn-primary { background: #050038; color: #fff; }
+.btn-primary:hover { background: #1a1450; }
+.btn-secondary { background: #fff; color: #050038; border-color: #050038; }
+.btn-secondary:hover { background: #f4f3fb; border-color: #050038; }
+.eyebrow { color: var(--c-ink-subtle); text-transform: none; letter-spacing: 0; font-weight: 600; }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; letter-spacing: -.035em; }
+.hero { text-align: center; }
+/* the accent lands on the headline, not on a button */
+.hero-title em { position: relative; z-index: 0; color: var(--c-ink); }
+.hero-title em::after { content: ""; position: absolute; inset: auto 0 6%; height: 34%; z-index: -1;
+  background: var(--canary); border-radius: 3px; }
+
+.logos { border-block-color: #e6e5ef; }
+.logo-item { font-weight: 700; color: #050038; opacity: .55; }
+
+/* sticky-note palette on the feature cards */
+.feat-card { border: 0; border-radius: var(--r-lg); padding: 26px 24px; }
+.feat-card:nth-child(1) { background: var(--sn-yellow); }
+.feat-card:nth-child(2) { background: var(--sn-teal); }
+.feat-card:nth-child(3) { background: var(--sn-rose); }
+.feat-card:nth-child(4) { background: var(--sn-mint); }
+.feat-card:nth-child(5) { background: var(--sn-lilac); }
+.feat-card:nth-child(6) { background: var(--sn-coral); }
+.feat-card:hover { transform: translateY(-3px) rotate(-.6deg); box-shadow: var(--shadow-1); }
+@media (prefers-reduced-motion: reduce) { .feat-card:hover { transform: none; } }
+.feat-ico { background: rgba(255,255,255,.7); border: 0; border-radius: var(--r-md); color: #050038; }
+.feat-title, .feat-body { color: #050038; }
+
+.hero-media img, .sc-media img, .g-item { border-radius: var(--r-lg); border: 0; box-shadow: var(--shadow-1); }
+.metrics { --metrics-bg: var(--sn-yellow); border-block: 0; }
+.metric-v { color: #050038; }
+.g-item figcaption { background: #fff; color: #050038; font-weight: 700; border-radius: var(--r-pill); }
+.quote-card { background: var(--sn-lilac); border: 0; border-radius: var(--r-xl); }
+.quote-mark { color: #050038; }
+.tier { border-radius: var(--r-lg); border-color: #e6e5ef; }
+.tier-feat { border-color: #050038; border-width: 2px; }
+.tier-badge { background: var(--canary); color: #050038; }
+.tier-feats i { color: #050038; }
+.sc-points i { color: #050038; }
+.faq-mk { color: #050038; }
+.cta-band { background: var(--sn-teal); border: 0; border-radius: var(--r-xxl); }
+
+/* the one heavy surface in an otherwise white system */
+.foot { background: var(--footer-bg); --foot-bg: var(--footer-bg); border-top: 0; padding-block: clamp(52px,7vw,80px) var(--s-xl); }
+.foot .brand { color: #fff; }
+.fcol h4 { color: rgba(255,255,255,.55); }
+.fcol a, .foot-tag { color: rgba(255,255,255,.84); }
+.fcol a:hover { color: var(--canary); }
+.foot-legal { color: rgba(255,255,255,.5); border-top-color: rgba(255,255,255,.14); }
+.foot-socials a { border-color: rgba(255,255,255,.22); color: rgba(255,255,255,.84); }
+.spec { --spec-bg: #faf9fd; }

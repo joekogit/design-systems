@@ -1,0 +1,87 @@
+{
+  "slug": "airbnb", "name": "Airbnb", "category": "E-commerce & retail",
+  "look": "Photography-first marketplace on 90% white, one Rausch accent used scarcely, a pill search bar and a single elevation tier.",
+  "scheme": "light", "icon_weights": ["regular", "fill"],
+  "fonts": {
+    "display": "\"Manrope\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "body": "\"Manrope\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "mono": "ui-monospace, SFMono-Regular, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+  },
+  "variants": { "nav": "bar", "hero": "split", "features": "grid", "cards": "flat", "gallery": "grid" },
+  "brand": { "mark": "ph-house-line-fill", "name": "Wayfare" },
+  "nav": { "links": [{"label":"Homes","href":"gallery"},{"label":"Experiences","href":"features"},{"label":"Services","href":"showcase-1"},{"label":"Host","href":"pricing"}], "cta": "Sign up", "cta2": "Log in" },
+  "hero": {
+    "eyebrow": "Stays anywhere",
+    "title": "Not just a place to stay. <em>A place to be.</em>",
+    "sub": "Seven million homes, hosted by people who live there. Book a whole house, a spare room, or a boat moored in a harbour you have never heard of.",
+    "cta1": "Search stays", "cta2": "Become a host",
+    "image": "photo-1497215728101-856f4ea42174", "ratio": 0.74,
+    "stats": [{"v":"7M+","l":"Homes worldwide"},{"v":"220","l":"Countries and regions"},{"v":"4.8","l":"Average stay rating"}]
+  },
+  "logo_lead": "Featured in",
+  "logos": ["Condé Nast", "Monocle", "Wallpaper*", "Cereal", "Kinfolk", "AFAR"],
+  "features": {
+    "eyebrow": "Why Wayfare",
+    "title": "Booked by people, hosted by people",
+    "sub": "Every listing has someone behind it who has answered a message at eleven at night.",
+    "items": [
+      {"icon":"ph-house-line","title":"Whole homes","body":"Not a hotel room with a kitchenette. An actual house, with a kettle that belongs to someone and a note about the bins."},
+      {"icon":"ph-shield-check","title":"Guest favourite","body":"A badge only given to listings in the top ten percent by rating, reliability and how often the host answers."},
+      {"icon":"ph-chat-circle","title":"Real hosts","body":"Median first reply is eleven minutes. Response rate and time are shown on every profile, not just the good ones."},
+      {"icon":"ph-calendar-check","title":"Flexible cancellation","body":"Filter by cancellation policy before you search, so you are not reading small print at checkout."},
+      {"icon":"ph-map-pin","title":"Neighbourhood notes","body":"Written by the host, about the actual street — where the bread is good and which door sticks."},
+      {"icon":"ph-currency-circle-dollar","title":"The price is the price","body":"Cleaning and service fees are in the headline number from the first search result. No reveal at checkout."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"Guest favourite","title":"The top ten percent, and why","body":"A listing earns the badge on rating, cancellation history and response rate together — not on reviews alone. The three components are shown on the listing, so you can see which one carried it.","points":["Top 10% by combined score","Components shown individually","Recalculated monthly, and can be lost"],"image":"photo-1554118811-1e0d58224f24","cta":"How the badge works"},
+    {"eyebrow":"Hosting","title":"Hosting, without guessing","body":"Set a nightly rate and the dashboard shows what comparable homes nearby actually charged last month, with occupancy. You keep control of the price; you just stop guessing at it.","points":["Comparable rates from real bookings","Occupancy by week for your area","Payouts released the morning after check-in"],"image":"photo-1521737604893-d14cc237f11d","cta":"Learn about hosting"}
+  ],
+  "metric_lead": "Wayfare, last twelve months",
+  "metrics": [{"v":"7M+","l":"Active homes"},{"v":"220","l":"Countries and regions"},{"v":"11 min","l":"Median host reply"},{"v":"4.8","l":"Average stay rating"}],
+  "gallery": {
+    "title": "Places people are booking",
+    "sub": "A selection from this week, across five continents.",
+    "items": [
+      {"id":"photo-1497215728101-856f4ea42174","tag":"Lisbon","ratio":0.72},
+      {"id":"photo-1493246507139-91e8fad9978e","tag":"Banff","ratio":0.72},
+      {"id":"photo-1470071459604-3b5ec3a7fe05","tag":"Snowdonia","ratio":0.72},
+      {"id":"photo-1506905925346-21bda4d32df4","tag":"Dolomites","ratio":0.72},
+      {"id":"photo-1487958449943-2429e8be8625","tag":"Copenhagen","ratio":0.72},
+      {"id":"photo-1521017432531-fbd92d768814","tag":"Melbourne","ratio":0.72}
+    ]
+  },
+  "testimonial": {"quote":"The host left a hand-drawn map of which bakery opens on a Sunday. I have stayed in hotels that cost four times as much and remembered none of them.",
+    "name":"Sofia Marchetti", "role":"Guest, 34 stays", "avatar":"photo-1438761681033-6461ffad8d80"},
+  "pricing": {
+    "title": "Hosting on Wayfare",
+    "sub": "Free to list. You are charged only when someone actually books.",
+    "tiers": [
+      {"name":"Standard","price":"3%","period":"per booking","desc":"For hosts with one or two places.","features":["Free listing","Damage protection","Payouts next morning","24/7 support"],"cta":"Start hosting"},
+      {"name":"Plus","price":"5%","period":"per booking","desc":"Adds photography and placement.","features":["Everything in Standard","Professional photography","Higher search placement","Priority support"],"cta":"Start hosting","featured":true,"badge":"Most hosts"},
+      {"name":"Managed","price":"14%","period":"per booking","desc":"We handle guests and turnovers.","features":["Everything in Plus","Guest messaging handled","Cleaning coordination","Dedicated manager"],"cta":"Talk to us"}
+    ]
+  },
+  "faq": {"title":"Common questions","items":[
+    {"q":"Are fees included in the price I see?","a":"Yes. Cleaning and service fees are in the headline number from the first search result onwards, so the total at checkout is the number you have been looking at all along."},
+    {"q":"What is the cancellation policy?","a":"It is set per listing and shown as a filter before you search. Flexible allows free cancellation up to 24 hours before check-in; the stricter tiers are labelled plainly on the listing."},
+    {"q":"How does damage protection work?","a":"Hosts are covered up to three million per booking. Claims are filed through the resolution centre with photographs, and the guest is contacted before anything is charged."},
+    {"q":"When do hosts get paid?","a":"The morning after check-in, to the account on file. Longer stays are paid monthly rather than in a lump at the end."}
+  ]},
+  "cta": {"title":"Find somewhere worth staying","sub":"Seven million homes, and every one of them has someone behind it.","btn1":"Search stays","btn2":"Become a host"},
+  "footer": {"tagline":"A marketplace for places people actually live in.","columns":[
+    {"title":"Support","links":["Help centre","Safety","Cancellation options","Report a concern"]},
+    {"title":"Hosting","links":["List your home","Host resources","Community forum","Responsible hosting"]},
+    {"title":"Wayfare","links":["Newsroom","Careers","Investors","Gift cards"]},
+    {"title":"Legal","links":["Privacy","Terms","Sitemap","Company details"]}
+  ],"legal":"© 2026 Wayfare Travel"},
+  "specimen": "A place to be",
+  "notes": [
+    "One accent — Rausch — carries every primary CTA, the search orb and the save state. Most of the page is white and ink with one or two Rausch moments.",
+    "Display weights sit at 500–700 and body at 400. The modest weight is deliberate: the system trusts photography for visual heft.",
+    "The global search is a fully-rounded white pill divided by 1px hairlines into segments, terminated by a circular accent orb.",
+    "Property cards are photo-first — a clipped aspect-ratio image, a floating badge top-left, a heart top-right, then four or five lines of meta.",
+    "Elevation caps at a single shadow tier used on hover-floated cards and dropdowns. Footer and language menus are plain text columns with no card surface at all."
+  ]
+}
