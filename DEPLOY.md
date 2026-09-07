@@ -45,24 +45,31 @@ Post-processing minifies markup and turns on **pretty URLs**, so `href="designs/
 built file is served as `href='/designs/x'`. Both forms resolve; don't be alarmed when the live
 HTML doesn't match the local build byte for byte.
 
-## Continuous deploys
+## Continuous deploys — blocked by the plan, not by the setup
 
-Wired via a read-only **deploy key** plus a repo **webhook**, rather than the Netlify GitHub App
-(which needs an interactive browser authorisation).
+The wiring is done and working:
 
-- Deploy key: `Netlify joekonet-systems` on the repo, read-only
-- Webhook: `https://api.netlify.com/hooks/github`, events `push`, `pull_request`, `delete`
+- Deploy key `Netlify joekonet-systems` on the repo (read-only)
+- Webhook to `https://api.netlify.com/hooks/github` (push, pull_request, delete)
 - Build command empty, publish directory `.`, branch `main`
 
-`git push origin main` deploys. To deploy without pushing:
+A push **does** reach Netlify and **does** create a deploy. It then fails with:
 
-```bash
-netlify deploy --prod --dir .
-```
+> Build blocked: Unrecognized Git contributor. This plan allows only verified account members
+> to push to private repos.
 
-If a build ever fails at *"preparing repo: Unable to access repository"*, the deploy key was
-removed or rotated — recreate it with `netlify api createDeployKey`, add the public key to the
-repo, and set `deploy_key_id` in the site's build settings.
+This is not the deploy key and not the commit trailer — a commit with no `Co-Authored-By` line
+fails identically. The manual deploy-key link gives Netlify read access to the code but not the
+GitHub API access it needs to *verify* contributors, so on a **private** repo every webhook build
+is refused. Builds triggered by hand (`netlify api createSiteBuild`) succeed, because they skip
+the contributor check.
+
+Three ways out:
+
+1. **Link through the Netlify GitHub App** — Site configuration -> Build & deploy -> link
+   repository. Needs a browser authorisation. This is the proper fix and keeps the repo private.
+2. **Make the repo public** — the restriction only applies to private repos.
+3. **Keep deploying manually** — `netlify deploy --prod --dir .` works and takes seconds.
 
 ## Before any deploy
 
@@ -72,4 +79,3 @@ python3 build.py all     # regenerate all pages + index
 
 Then check `tools/audit.html` over a local server (`python3 -m http.server 8899`) — it needs
 HTTP, not `file://`.
-
