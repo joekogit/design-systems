@@ -1,0 +1,89 @@
+{
+  "slug": "pinterest", "name": "Pinterest", "category": "Media & consumer tech",
+  "look": "Masonry pin grid on warm-cream chrome, one red CTA, a two-radius shape system and a sticky always-red sign-up.",
+  "scheme": "light", "icon_weights": ["bold", "fill"],
+  "fonts": {
+    "display": "\"Plus Jakarta Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "body": "\"Plus Jakarta Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "mono": "ui-monospace, SFMono-Regular, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+  },
+  "variants": { "nav": "bar", "hero": "split", "features": "grid", "cards": "flat", "gallery": "masonry" },
+  "brand": { "mark": "ph-push-pin-fill", "name": "Moodboard" },
+  "nav": { "links": [{"label":"Explore","href":"gallery"},{"label":"Ideas","href":"features"},{"label":"Business","href":"showcase-1"},{"label":"Create","href":"showcase-0"}], "cta": "Sign up", "cta2": "Log in" },
+  "hero": {
+    "eyebrow": "Search for an idea",
+    "title": "Get your next idea <em>from someone who tried it</em>",
+    "sub": "Save what you like, group it into boards, and get recommendations from four hundred million people saving the same kind of thing.",
+    "cta1": "Sign up free", "cta2": "Explore ideas",
+    "image": "photo-1541961017774-22349e4a1262", "ratio": 1.15,
+    "stats": [{"v":"400M+","l":"Monthly people"},{"v":"5B","l":"Boards created"},{"v":"1.5T","l":"Ideas saved"}]
+  },
+  "logo_lead": "Popular right now",
+  "logos": ["Interiors", "Recipes", "Travel", "Style", "Gardens", "Design"],
+  "features": {
+    "eyebrow": "How it works",
+    "title": "Save it now, find it later",
+    "sub": "A visual bookmark that actually resurfaces when you need it.",
+    "items": [
+      {"icon":"ph-push-pin","title":"Save anything","body":"From the app or from any website with the browser button. The original link comes with it, always."},
+      {"icon":"ph-squares-four","title":"Boards","body":"Group saves by room, trip or project, with sections inside a board once it gets unwieldy."},
+      {"icon":"ph-magnifying-glass","title":"Visual search","body":"Circle part of an image and find that chair, that tile, that plant — not the whole photo again."},
+      {"icon":"ph-users-three","title":"Shared boards","body":"Invite people to add to a board. Useful for a kitchen renovation, dangerous for a wedding."},
+      {"icon":"ph-lightbulb","title":"Recommendations","body":"Based on what you save rather than what you linger on, so the feed stays about your actual project."},
+      {"icon":"ph-arrow-square-out","title":"Links that work","body":"Every pin keeps its source. If a link rots, we say so rather than quietly showing a dead end."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"Visual search","title":"Find the chair, not the room","body":"Circle any part of an image and search on that region alone. It is the difference between finding the same photograph again and finding the thing inside it you actually wanted.","points":["Search a selected region, not the whole image","Works on your own saves and on the web","Shows the source and where to buy it"],"image":"photo-1497215728101-856f4ea42174","cta":"Try visual search"},
+    {"eyebrow":"For business","title":"People arrive already deciding","body":"Someone saving kitchen tiles is nine months from a renovation and already choosing. Product pins carry live price and stock, and click through to your site rather than keeping the customer here.","points":["Live price and stock on product pins","Clicks go to your site, not an in-app checkout","Attribution over a longer window than social"],"image":"photo-1441986300917-64674bd600d8","cta":"Moodboard for business"}
+  ],
+  "metric_lead": "Across Moodboard this year",
+  "metrics": [{"v":"400M+","l":"Monthly people"},{"v":"5B","l":"Boards created"},{"v":"1.5T","l":"Ideas saved"},{"v":"9 mo","l":"Median save-to-purchase"}],
+  "gallery": {
+    "title": "Explore",
+    "sub": "A slice of what people are saving this week.",
+    "items": [
+      {"id":"photo-1541961017774-22349e4a1262","tag":"Art","ratio":1.3},
+      {"id":"photo-1497215728101-856f4ea42174","tag":"Interiors","ratio":0.85},
+      {"id":"photo-1546069901-ba9599a7e63c","tag":"Recipes","ratio":1.1},
+      {"id":"photo-1490481651871-ab68de25d43d","tag":"Style","ratio":0.9},
+      {"id":"photo-1493246507139-91e8fad9978e","tag":"Travel","ratio":1.2},
+      {"id":"photo-1521017432531-fbd92d768814","tag":"Cafés","ratio":0.95},
+      {"id":"photo-1470071459604-3b5ec3a7fe05","tag":"Gardens","ratio":1.15},
+      {"id":"photo-1504674900247-0877df9cc836","tag":"Food","ratio":0.88}
+    ]
+  },
+  "testimonial": {"quote":"I planned an entire kitchen renovation on one shared board with my partner and the fitter. Eleven months of decisions, and every one of them still links back to where it came from.",
+    "name":"Hannah Okonkwo", "role":"Saving since 2016", "avatar":"photo-1534528741775-53994a69daeb"},
+  "pricing": {
+    "title": "Moodboard for business",
+    "sub": "Free to publish. You pay only if you advertise.",
+    "tiers": [
+      {"name":"Business","price":"$0","period":"forever","desc":"Publish pins and see how they perform.","features":["Business profile","Product pins","Analytics","Bulk upload"],"cta":"Create an account"},
+      {"name":"Ads","price":"CPM","period":"or CPC","desc":"Promote pins to people already searching.","features":["Everything in Business","Keyword targeting","Conversion tracking","Longer attribution window"],"cta":"Start advertising","featured":true,"badge":"Most retailers"},
+      {"name":"Managed","price":"Custom","period":"","desc":"For larger advertisers.","features":["Everything in Ads","Named account team","Creative studio","API access"],"cta":"Contact sales"}
+    ]
+  },
+  "faq": {"title":"Questions","items":[
+    {"q":"Is it free?","a":"Yes, entirely, for personal use and for publishing as a business. The only thing you pay for is advertising, and that is optional."},
+    {"q":"Do you sell my data?","a":"No. Advertising is targeted on what you search and save on Moodboard, not on data bought from elsewhere. Personalisation can be turned off in settings."},
+    {"q":"What happens when a link breaks?","a":"The pin is marked as having a broken source rather than silently linking nowhere, and it stops being recommended in the feed."},
+    {"q":"Can I make a board private?","a":"Yes — a secret board is visible only to you and anyone you explicitly invite, and it never appears in search or recommendations."}
+  ]},
+  "cta": {"title":"Start your first board","sub":"Free forever, and everything you save keeps its original source.","btn1":"Sign up free","btn2":"Explore first"},
+  "footer": {"tagline":"A visual bookmark that resurfaces when you need it.","columns":[
+    {"title":"Explore","links":["Today","Interiors","Recipes","Style"]},
+    {"title":"Create","links":["Boards","Pins","Collages","Publish"]},
+    {"title":"Business","links":["Advertise","Product pins","Analytics","Case studies"]},
+    {"title":"Company","links":["About","Newsroom","Careers","Policy"]}
+  ],"legal":"© 2026 Moodboard"},
+  "specimen": "Save it for later",
+  "notes": [
+    "The masonry pin grid is the load-bearing visual element. Each pin keeps its natural aspect ratio; forcing a uniform crop destroys the whole system.",
+    "One red carries every primary action. Everything else in the chrome is monochrome on warm cream.",
+    "Two radii do all the work: 16px for most components, 32px for large cards and modals, plus full circles for avatars and icon buttons.",
+    "The chrome is warm cream (#f6f6f3), chosen to recede behind imagery rather than compete with it. Pure white would fight the pins.",
+    "The sign-up CTA is red and anchored top-right at every breakpoint. It never moves and it never changes colour."
+  ]
+}

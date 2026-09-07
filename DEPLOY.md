@@ -45,31 +45,20 @@ Post-processing minifies markup and turns on **pretty URLs**, so `href="designs/
 built file is served as `href='/designs/x'`. Both forms resolve; don't be alarmed when the live
 HTML doesn't match the local build byte for byte.
 
-## Continuous deploys — blocked by the plan, not by the setup
+## Continuous deploys
 
-The wiring is done and working:
+Configured with `netlify init --force --git-remote-name origin`, which installs a read-only deploy
+key and the Netlify notification hooks through the CLI's authenticated GitHub session. `git push`
+deploys `main`.
 
-- Deploy key `Netlify joekonet-systems` on the repo (read-only)
-- Webhook to `https://api.netlify.com/hooks/github` (push, pull_request, delete)
-- Build command empty, publish directory `.`, branch `main`
+`netlify.toml` is the source of truth for build settings (`publish = "."`, empty build command) and
+overrides whatever the site's own settings say.
 
-A push **does** reach Netlify and **does** create a deploy. It then fails with:
+To deploy without pushing:
 
-> Build blocked: Unrecognized Git contributor. This plan allows only verified account members
-> to push to private repos.
-
-This is not the deploy key and not the commit trailer — a commit with no `Co-Authored-By` line
-fails identically. The manual deploy-key link gives Netlify read access to the code but not the
-GitHub API access it needs to *verify* contributors, so on a **private** repo every webhook build
-is refused. Builds triggered by hand (`netlify api createSiteBuild`) succeed, because they skip
-the contributor check.
-
-Three ways out:
-
-1. **Link through the Netlify GitHub App** — Site configuration -> Build & deploy -> link
-   repository. Needs a browser authorisation. This is the proper fix and keeps the repo private.
-2. **Make the repo public** — the restriction only applies to private repos.
-3. **Keep deploying manually** — `netlify deploy --prod --dir .` works and takes seconds.
+```bash
+netlify deploy --prod --dir .
+```
 
 ## Before any deploy
 

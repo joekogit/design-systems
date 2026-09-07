@@ -1,0 +1,87 @@
+{
+  "slug": "cursor", "name": "Cursor", "category": "Developer tools & IDEs",
+  "look": "Warm cream canvas with warm ink, one orange CTA used scarcely, weight-400 magazine display and hairline-only depth.",
+  "scheme": "light", "icon_weights": ["regular", "bold"],
+  "fonts": {
+    "display": "\"Newsreader\", Georgia, \"Times New Roman\", serif",
+    "body": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": { "nav": "bar", "hero": "split", "features": "grid", "cards": "bordered", "gallery": "grid" },
+  "brand": { "mark": "ph-cursor", "name": "Caret" },
+  "nav": { "links": [{"label":"Features","href":"features"},{"label":"Enterprise","href":"showcase-1"},{"label":"Pricing","href":"pricing"},{"label":"Docs","href":"gallery"},{"label":"Blog","href":"faq"}], "cta": "Download", "cta2": "Sign in" },
+  "hero": {
+    "eyebrow": "Caret 1.4 — agent mode",
+    "title": "The editor that <em>reads the whole repository</em>",
+    "sub": "Caret indexes your codebase, understands how the pieces relate, and edits across files the way someone who already knows the project would.",
+    "cta1": "Download for Mac", "cta2": "See how it works",
+    "image": "photo-1555066931-4365d14bab8c", "ratio": 0.62,
+    "stats": [{"v":"2.1M","l":"Developers"},{"v":"180ms","l":"Median completion"},{"v":"40+","l":"Languages indexed"}]
+  },
+  "logo_lead": "Used at",
+  "logos": ["Northwind", "Corva", "Basisplan", "Tessera", "Perigee", "Halyard"],
+  "features": {
+    "eyebrow": "How it works",
+    "title": "Context, not autocomplete",
+    "sub": "The difference between a model that has seen your file and one that has read your project.",
+    "items": [
+      {"icon":"ph-brain","title":"Whole-repo index","body":"Every file embedded and kept current, so a question about one function knows about the three places that call it."},
+      {"icon":"ph-pencil-line","title":"Multi-file edits","body":"Describe a refactor and get a reviewable diff across every file it touches, not a snippet to paste."},
+      {"icon":"ph-terminal","title":"Agent mode","body":"Runs commands, reads the output, and fixes what it broke — with every step shown and revertible."},
+      {"icon":"ph-git-diff","title":"Reviewable by default","body":"Nothing is applied silently. Changes arrive as a diff you accept hunk by hunk."},
+      {"icon":"ph-shield-check","title":"Privacy mode","body":"Code is never stored or trained on. In privacy mode nothing touches disk on our side at all."},
+      {"icon":"ph-plug","title":"Your extensions","body":"A fork of the editor you already use, so your themes, keybindings and extensions carry over untouched."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"Agent mode","title":"It runs the tests too","body":"Agent mode does not stop at proposing a change. It runs the test suite, reads the failures, and iterates — showing each command and its output, so you can stop it the moment it heads somewhere you did not intend.","points":["Every command and its output shown","Stoppable and revertible at any step","Diffs accepted hunk by hunk"],"image":"photo-1526374965328-7f61d4dc18c5","cta":"Watch agent mode"},
+    {"eyebrow":"Enterprise","title":"Your code stays yours","point_icon":"ph-check","body":"Privacy mode is enforced at the account level and cannot be overridden by an individual. Code is never persisted on our infrastructure and never used for training, and the SOC 2 report says so in writing.","points":["Privacy mode enforced org-wide","No persistence, no training","SOC 2 Type II, audited annually"],"image":"photo-1558494949-ef010cbdcc31","cta":"Read about enterprise"}
+  ],
+  "metric_lead": "Measured across the user base this quarter",
+  "metrics": [{"v":"2.1M","l":"Developers"},{"v":"180ms","l":"Median completion latency"},{"v":"46%","l":"Of edits accepted unmodified"},{"v":"40+","l":"Languages indexed"}],
+  "gallery": {
+    "title": "Documentation",
+    "sub": "Getting started, keybindings, the agent protocol and the privacy model.",
+    "items": [
+      {"id":"photo-1498050108023-c5249f4df085","tag":"Install","ratio":0.72},
+      {"id":"photo-1555066931-4365d14bab8c","tag":"Agent mode","ratio":0.72},
+      {"id":"photo-1526374965328-7f61d4dc18c5","tag":"Indexing","ratio":0.72},
+      {"id":"photo-1558494949-ef010cbdcc31","tag":"Privacy","ratio":0.72},
+      {"id":"photo-1487017159836-4e23ece2e4cf","tag":"Keybindings","ratio":0.72},
+      {"id":"photo-1547658719-da2b51169166","tag":"Extensions","ratio":0.72}
+    ]
+  },
+  "testimonial": {"quote":"I asked it to move a module and update the callers. It found eleven, including two in a test fixture I had forgotten existed, and showed me the diff before touching anything.",
+    "name":"Ben Aldous", "role":"Staff Engineer, Perigee", "avatar":"photo-1633332755192-727a05c4013d"},
+  "pricing": {
+    "title": "Pricing",
+    "sub": "Free to try. Paid plans add the larger models and unlimited agent runs.",
+    "tiers": [
+      {"name":"Hobby","price":"$0","period":"/month","desc":"For trying it out.","features":["2,000 completions","50 agent requests","Whole-repo indexing","Community support"],"cta":"Download"},
+      {"name":"Pro","price":"$20","period":"/month","desc":"For daily work.","features":["Unlimited completions","500 agent requests","Frontier models","Email support"],"cta":"Start free trial","featured":true,"badge":"Most developers"},
+      {"name":"Business","price":"$40","period":"/user/mo","desc":"For teams with policy needs.","features":["Everything in Pro","Org-wide privacy mode","SSO and SCIM","Usage analytics"],"cta":"Contact sales"}
+    ]
+  },
+  "faq": {"title":"Questions","items":[
+    {"q":"Is my code used for training?","a":"No. In privacy mode nothing is persisted on our infrastructure at all, and outside it code is used only to answer your request and then discarded. Neither mode contributes to training data."},
+    {"q":"Will my extensions work?","a":"Yes. Caret is a fork of the editor you already use, so extensions, themes, keybindings and settings carry across on first launch."},
+    {"q":"How large a repository can it index?","a":"Repositories into the millions of lines. Indexing is incremental after the first pass, so day-to-day it keeps up with your branch without noticeable cost."},
+    {"q":"Can I use my own API key?","a":"Yes, on any plan. Bring a key from a supported provider and requests bill to you directly, bypassing our quotas entirely."}
+  ]},
+  "cta": {"title":"Try it on a real repository","sub":"Free to download, and your extensions and keybindings come with you.","btn1":"Download Caret","btn2":"Read the docs"},
+  "footer": {"tagline":"An editor that has read the whole project.","columns":[
+    {"title":"Product","links":["Download","Features","Changelog","Roadmap"]},
+    {"title":"Resources","links":["Documentation","Keybindings","Blog","Status"]},
+    {"title":"Company","links":["About","Careers","Security","Privacy"]},
+    {"title":"Community","links":["Forum","Discord","GitHub","Feedback"]}
+  ],"legal":"© 2026 Caret Editor"},
+  "specimen": "Read the whole repo",
+  "notes": [
+    "The canvas is warm cream, not white, and the ink is warm too (#26251e) rather than pure black. That warmth is the entire mood.",
+    "One orange CTA, used scarcely. It is the only saturated colour on a marketing page and it appears roughly once per view.",
+    "Display type stays at weight 400 — never bold. The voice is magazine, not product launch.",
+    "Depth is hairlines only. There are no drop shadows anywhere in this system.",
+    "CTA radius is a compact 8px — the developer dialect against an otherwise editorial page."
+  ]
+}

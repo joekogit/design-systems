@@ -1,0 +1,64 @@
+/* Superhuman — three canvases: indigo navy, white, deep teal. Sub-default weights. */
+:root { --maxw: 1200px; --sect: clamp(56px, 7vw, 92px);
+  --navy: #2b2a6b; --teal-deep: #123f3f; --violet-soft: #d7ccff; --violet-sky: #6f61c0;
+  --ink-warm: #292827;
+  --shadow-1: 0 1px 3px rgba(41,40,39,.06), 0 8px 26px rgba(41,40,39,.08);
+  --shadow-2: 0 2px 8px rgba(41,40,39,.08), 0 18px 44px rgba(41,40,39,.12); }
+
+.nav { --nav-bg: rgba(255,255,255,.92); backdrop-filter: blur(10px); }
+.brand { font-weight: 600; letter-spacing: -.02em; }
+.brand-ico { color: var(--navy); }
+.btn { border-radius: var(--r-md); font-weight: 600; }
+.btn-primary { background: var(--navy); color: #fff; }
+.btn-primary:hover { background: #38367f; }
+.btn-secondary { background: #fff; border-color: rgba(41,40,39,.18); }
+.eyebrow { color: var(--c-ink-subtle); text-transform: none; letter-spacing: 0; font-weight: 500; }
+
+/* tight line-heights and sub-default weights are the voice */
+.t-display-xl, .t-display-lg { line-height: .96; font-weight: 600; letter-spacing: -.035em; }
+.t-display-md, .sc-title { line-height: 1.02; font-weight: 600; letter-spacing: -.03em; }
+.feat-title, .tier-name { font-weight: 540; }
+body { color: var(--ink-warm); }
+
+/* canvas one: indigo navy hero with a violet-sky backdrop and a pale-violet pill */
+.hero { background: linear-gradient(165deg, var(--navy) 0%, var(--violet-sky) 100%); color: #fff; }
+.hero .eyebrow { color: var(--violet-soft); }
+.hero-title { color: #fff; }
+.hero-title em { color: var(--violet-soft); }
+.hero-sub { color: rgba(255,255,255,.86); }
+.hero .btn-primary { background: var(--violet-soft); color: var(--navy); border-radius: var(--r-pill); }
+.hero .btn-primary:hover { background: #e6dfff; }
+.hero .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.42); border-radius: var(--r-pill); }
+.hero-stats { border-top-color: rgba(255,255,255,.28); }
+.hstat b { color: #fff; } .hstat span { color: rgba(255,255,255,.7); }
+/* the half-bleed portrait */
+.hero-media img { border: 0; border-radius: var(--r-xl); aspect-ratio: 1; object-fit: cover; box-shadow: var(--shadow-2); }
+
+/* canvas two: white body */
+.logos { border-block-color: rgba(41,40,39,.1); }
+.logo-item { font-weight: 540; }
+.feat-card { background: transparent; border: 0; padding-inline: 0; }
+.feat-ico { background: #f0eefb; border: 0; color: var(--navy); border-radius: var(--r-md); width: 44px; height: 44px; }
+.hero-media img, .sc-media img, .g-item { border-radius: var(--r-xl); }
+.sc-media img { border: 0; box-shadow: var(--shadow-1); }
+.metrics { --metrics-bg: #f7f6fb; border-block: 0; }
+.metric-v { color: var(--navy); }
+.g-item figcaption { background: rgba(43,42,107,.86); border-radius: var(--r-pill); }
+.quote-card { background: #f7f6fb; border: 0; border-radius: var(--r-xl);
+  --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--violet-sky); }
+.q-av { border-radius: var(--r-pill); }
+.tier { background: #fff; border-color: rgba(41,40,39,.12); border-radius: var(--r-xl); box-shadow: var(--shadow-1); }
+.tier-feat { border-color: var(--navy); border-width: 2px; }
+.tier-badge { background: var(--navy); }
+.tier-feats i { color: var(--violet-sky); }
+.sc-points i { color: var(--violet-sky); }
+.faq-mk { color: var(--violet-sky); }
+
+/* canvas three: deep teal closing band */
+.cta-band { background: var(--teal-deep); color: #fff; border: 0; border-radius: var(--r-xxl); }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: rgba(255,255,255,.78); }
+.cta-band .btn-primary { background: var(--violet-soft); color: var(--teal-deep); border-radius: var(--r-pill); }
+.cta-band .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.42); border-radius: var(--r-pill); }
+.spec { --spec-bg: #f7f6fb; }

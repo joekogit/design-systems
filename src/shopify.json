@@ -1,0 +1,87 @@
+{
+  "slug": "shopify", "name": "Shopify", "category": "E-commerce & retail",
+  "look": "Two-canvas system — cinematic night for marketing, cream for transactional — with weight-330 display type and pill-only buttons.",
+  "scheme": "dark", "icon_weights": ["regular", "fill"],
+  "fonts": {
+    "display": "\"Figtree\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "body": "\"Figtree\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "mono": "ui-monospace, SFMono-Regular, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap"
+  },
+  "variants": { "nav": "bar", "hero": "centered", "features": "grid", "cards": "flat", "gallery": "grid" },
+  "brand": { "mark": "ph-storefront", "name": "Marketside" },
+  "nav": { "links": [{"label":"Start","href":"features"},{"label":"Sell","href":"showcase-0"},{"label":"Market","href":"showcase-1"},{"label":"Manage","href":"gallery"},{"label":"Pricing","href":"pricing"}], "cta": "Start free trial", "cta2": "Log in" },
+  "hero": {
+    "eyebrow": "COMMERCE PLATFORM",
+    "title": "Everything you need to <em>sell anywhere</em>",
+    "sub": "One back office for your online store, your market stall, your Instagram and your wholesale orders. Set up in an afternoon, and keep the inventory in one place.",
+    "cta1": "Start free trial", "cta2": "Talk to sales",
+    "image": "photo-1441986300917-64674bd600d8", "ratio": 0.56,
+    "stats": [{"v":"2.1M","l":"Merchants"},{"v":"175","l":"Countries"},{"v":"99.99%","l":"Checkout uptime"}]
+  },
+  "logo_lead": "SELLING ON MARKETSIDE",
+  "logos": ["Northwind", "Corva", "Tessera", "Halyard", "Perigee", "Basisplan"],
+  "features": {
+    "eyebrow": "THE PLATFORM",
+    "title": "One back office, every channel",
+    "sub": "Inventory, orders and customers in one place, wherever the sale actually happened.",
+    "items": [
+      {"icon":"ph-storefront","title":"Online store","body":"A themed storefront you can edit without code, on a CDN, with checkout that converts."},
+      {"icon":"ph-device-mobile","title":"Point of sale","body":"The same inventory on a card reader at a market stall or a permanent shop floor."},
+      {"icon":"ph-instagram-logo","title":"Social selling","body":"Product tags on social posts that check out in the app, syncing stock back automatically."},
+      {"icon":"ph-package","title":"Inventory","body":"One stock count across every channel and location, reserved at checkout rather than at fulfilment."},
+      {"icon":"ph-truck","title":"Shipping","body":"Discounted labels, tracked from the admin, with returns your customer can start themselves."},
+      {"icon":"ph-chart-line-up","title":"Analytics","body":"Which channel, which product, which margin — including the shipping and fee costs most reports quietly omit."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"CHECKOUT","title":"The checkout is the product","body":"Accelerated wallets, address autofill from a network of returning shoppers, and a one-page flow that removes the steps where carts get abandoned. Merchants moving from a generic cart typically see a mid-single-digit conversion lift.","points":["One-page flow with accelerated wallets","Address autofill across the network","Fraud scoring in the same round trip"],"image":"photo-1556742049-0cfed4f6a45d","cta":"See the checkout"},
+    {"eyebrow":"IN PERSON","title":"The market stall and the website agree","body":"Point of sale runs on the same inventory as the online store, so a sale at a Saturday market decrements the stock a customer sees online that afternoon. No reconciliation, no spreadsheet on Monday.","points":["One stock count across channels","Card reader with offline mode","Staff permissions per location"],"image":"photo-1554118811-1e0d58224f24","cta":"Explore point of sale"}
+  ],
+  "metric_lead": "ACROSS THE PLATFORM",
+  "metrics": [{"v":"2.1M","l":"MERCHANTS"},{"v":"175","l":"COUNTRIES"},{"v":"99.99%","l":"CHECKOUT UPTIME"},{"v":"$240B","l":"PROCESSED ANNUALLY"}],
+  "gallery": {
+    "title": "Merchants",
+    "sub": "A few of the businesses running on Marketside this year.",
+    "items": [
+      {"id":"photo-1441986300917-64674bd600d8","tag":"Apparel","ratio":0.72},
+      {"id":"photo-1554118811-1e0d58224f24","tag":"Hospitality","ratio":0.72},
+      {"id":"photo-1483985988355-763728e1935b","tag":"Retail","ratio":0.72},
+      {"id":"photo-1521017432531-fbd92d768814","tag":"Speciality","ratio":0.72},
+      {"id":"photo-1546069901-ba9599a7e63c","tag":"Food","ratio":0.72},
+      {"id":"photo-1490481651871-ab68de25d43d","tag":"Studio","ratio":0.72}
+    ]
+  },
+  "testimonial": {"quote":"We sold at a market on Saturday and the website stock was right on Sunday morning without anyone touching a spreadsheet. That is the entire reason we moved.",
+    "name":"Aoife Brennan", "role":"Founder, Tessera Goods", "avatar":"photo-1494790108377-be9c29b29330"},
+  "pricing": {
+    "title": "Pricing",
+    "sub": "Three days free, then one month for a pound. Card rates published per plan.",
+    "tiers": [
+      {"name":"BASIC","price":"$29","period":"/month","desc":"For a new business selling online.","features":["Online store","2 staff accounts","2.9% + 30¢ online","Basic reports"],"cta":"Start free trial"},
+      {"name":"GROW","price":"$79","period":"/month","desc":"For a growing business with a shop floor.","features":["Everything in Basic","5 staff accounts","2.6% + 30¢ online","Professional reports"],"cta":"Start free trial","featured":true,"badge":"MOST MERCHANTS"},
+      {"name":"ADVANCED","price":"$299","period":"/month","desc":"For scaling operations.","features":["Everything in Grow","15 staff accounts","2.4% + 30¢ online","Custom report builder"],"cta":"Start free trial"}
+    ]
+  },
+  "faq": {"title":"Common questions","items":[
+    {"q":"What are the card fees?","a":"Published per plan and per region — 2.9% plus 30¢ online on Basic, dropping to 2.4% on Advanced. In-person rates are lower and listed on the same page."},
+    {"q":"Can I use my own domain?","a":"Yes, on every plan. Buy it through us or connect one you already own; the certificate is issued and renewed automatically either way."},
+    {"q":"What happens to my data if I leave?","a":"Products, customers and orders export as CSV at any time. Theme files are yours to download. There is no export fee and no notice period."},
+    {"q":"Do I need a developer?","a":"No, for a standard store — themes are edited visually. A developer helps for bespoke checkout logic or a custom storefront, and there is a full API for both."}
+  ]},
+  "cta": {"title":"Start selling today","sub":"Three days free, then one month for a pound. No card to start the trial.","btn1":"Start free trial","btn2":"Talk to sales"},
+  "footer": {"tagline":"One back office for every way you sell.","columns":[
+    {"title":"Sell","links":["Online store","Point of sale","Social","Wholesale"]},
+    {"title":"Manage","links":["Inventory","Orders","Customers","Analytics"]},
+    {"title":"Support","links":["Help centre","Community","Hire a partner","Contact"]},
+    {"title":"Company","links":["About","Careers","Press","Legal"]}
+  ],"legal":"© 2026 Marketside Commerce"},
+  "specimen": "Sell anywhere",
+  "notes": [
+    "Two canvases that never blend: cinematic night for marketing storytelling, cream and light for transactional surfaces.",
+    "The pill is the only button shape across both tracks. Rounded rectangles do not exist for buttons in this system.",
+    "Thin-weight (330) display type is the signature — 96px at weight 330 is the brand's loudest visual, and bolding it destroys the effect.",
+    "Aloe and pistachio greens belong to the light track only, where they signal commerce and transactional success.",
+    "Photography is full-bleed and edge-to-edge on the cinematic track, never inset into cards. Merchants do the visual lifting that gradients would do elsewhere."
+  ]
+}

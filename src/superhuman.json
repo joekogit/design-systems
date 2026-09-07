@@ -1,0 +1,87 @@
+{
+  "slug": "superhuman", "name": "Superhuman", "category": "Developer tools & IDEs",
+  "look": "Three-canvas system — indigo navy hero, white body, deep teal closing band — with sub-default type weights and 0.96 line-heights.",
+  "scheme": "light", "icon_weights": ["regular", "fill"],
+  "fonts": {
+    "display": "\"Instrument Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "body": "\"Instrument Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "mono": "ui-monospace, SFMono-Regular, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap"
+  },
+  "variants": { "nav": "bar", "hero": "split", "features": "grid", "cards": "flat", "gallery": "grid" },
+  "brand": { "mark": "ph-envelope-simple", "name": "Swift" },
+  "nav": { "links": [{"label":"Product","href":"features"},{"label":"Teams","href":"showcase-1"},{"label":"Pricing","href":"pricing"},{"label":"Blog","href":"faq"}], "cta": "Get started", "cta2": "Sign in" },
+  "hero": {
+    "eyebrow": "Swift Mail",
+    "title": "The fastest email experience <em>ever made</em>",
+    "sub": "Blazingly fast, keyboard-first, and built so that reaching inbox zero takes twenty minutes rather than the whole morning. Most people save four hours a week.",
+    "cta1": "Get started", "cta2": "See a demo",
+    "image": "photo-1573496359142-b8d87734a5a2", "ratio": 1.0,
+    "stats": [{"v":"4 hrs","l":"Saved per week"},{"v":"< 100ms","l":"Every interaction"},{"v":"2×","l":"Faster replies"}]
+  },
+  "logo_lead": "Used by teams at",
+  "logos": ["Northwind", "Corva", "Basisplan", "Perigee", "Tessera", "Halyard"],
+  "features": {
+    "eyebrow": "Why it is faster",
+    "title": "Designed around the keyboard",
+    "sub": "Every hundred milliseconds you spend waiting is a hundred milliseconds of attention you do not get back.",
+    "items": [
+      {"icon":"ph-keyboard","title":"Command palette","body":"Every action two keystrokes away. The mouse becomes optional rather than merely discouraged."},
+      {"icon":"ph-lightning","title":"Under 100ms","body":"Every interaction, measured at the ninety-fifth percentile — not the median on a good connection."},
+      {"icon":"ph-clock-countdown","title":"Split inbox","body":"Important mail separated from newsletters and automated noise, by rules you can actually read."},
+      {"icon":"ph-arrow-bend-up-left","title":"Snippets","body":"Expand a whole reply from three characters, with placeholders you tab between."},
+      {"icon":"ph-eye","title":"Read statuses","body":"See whether a message was opened, and on what, without a third-party tracker."},
+      {"icon":"ph-users","title":"Team comments","body":"Discuss a thread alongside it, without a forward chain or a separate channel."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"Speed","title":"A hundred milliseconds, every time","body":"The target is not an average — it is the ninety-fifth percentile of every interaction, on ordinary hardware. Mail is prefetched, the index is local, and rendering never waits on the network.","points":["95th percentile under 100ms","Local index, prefetched threads","Works on a plane, syncs on landing"],"image":"photo-1487017159836-4e23ece2e4cf","cta":"How we measure it"},
+    {"eyebrow":"Teams","title":"Discuss a thread beside it","body":"Comments live alongside the message rather than in a forward chain nobody can reconstruct later. The person who inherits the account in six months can still see why the decision was made.","points":["Comments attached to the thread","Shared snippets and templates","Delegated access without password sharing"],"image":"photo-1552664730-d307ca884978","cta":"Swift for teams"}
+  ],
+  "metric_lead": "Reported by users after ninety days",
+  "metrics": [{"v":"4 hrs","l":"Saved per week"},{"v":"< 100ms","l":"95th percentile"},{"v":"2×","l":"Faster replies"},{"v":"71%","l":"Reach inbox zero daily"}],
+  "gallery": {
+    "title": "Inside Swift",
+    "sub": "A look at the surfaces you will spend your morning in.",
+    "items": [
+      {"id":"photo-1487017159836-4e23ece2e4cf","tag":"Inbox","ratio":0.72},
+      {"id":"photo-1552664730-d307ca884978","tag":"Comments","ratio":0.72},
+      {"id":"photo-1551288049-bebda4e38f71","tag":"Analytics","ratio":0.72},
+      {"id":"photo-1521737604893-d14cc237f11d","tag":"Teams","ratio":0.72},
+      {"id":"photo-1497215728101-856f4ea42174","tag":"Focus","ratio":0.72},
+      {"id":"photo-1547658719-da2b51169166","tag":"Setup","ratio":0.72}
+    ]
+  },
+  "testimonial": {"quote":"I stopped dreading Monday mornings. That is an absurd thing to say about an email client and it is also the honest reason I still pay for it three years later.",
+    "name":"Elena Vasquez", "role":"VP Sales, Basisplan", "avatar":"photo-1438761681033-6461ffad8d80"},
+  "pricing": {
+    "title": "Pricing",
+    "sub": "One plan for individuals, one for teams. Thirty days free, no card.",
+    "tiers": [
+      {"name":"Starter","price":"$25","period":"/month","desc":"For individuals.","features":["Split inbox","Snippets and shortcuts","Read statuses","Email support"],"cta":"Start free trial"},
+      {"name":"Business","price":"$33","period":"/user/mo","desc":"For teams working the same inboxes.","features":["Everything in Starter","Team comments","Shared snippets","Delegated access"],"cta":"Start free trial","featured":true,"badge":"Most teams"},
+      {"name":"Enterprise","price":"Custom","period":"","desc":"For organisations with compliance needs.","features":["Everything in Business","SSO and SCIM","Audit logging","Named support"],"cta":"Contact sales"}
+    ]
+  },
+  "faq": {"title":"Questions","items":[
+    {"q":"Does it work with my email?","a":"Gmail and Outlook, including Workspace and Microsoft 365 accounts. Other IMAP providers are not supported, because the speed depends on provider-specific sync behaviour."},
+    {"q":"Do you read my email?","a":"No. Mail is indexed on your device. Server-side we hold metadata needed for sync and search, encrypted at rest, and the security page states exactly what that includes."},
+    {"q":"What about read statuses?","a":"They use a pixel, and they are off by default per-message. Recipients running standard image blocking will not register — we do not attempt to work around that."},
+    {"q":"Is there a mobile app?","a":"Yes, for iOS and Android, with the same split inbox and snippets. The keyboard-first parts obviously matter less there."}
+  ]},
+  "cta": {"title":"Get four hours back this week","sub":"Thirty days free, no card required, and your existing mail stays exactly where it is.","btn1":"Get started","btn2":"Talk to sales"},
+  "footer": {"tagline":"The fastest email experience ever made.","columns":[
+    {"title":"Product","links":["Features","Mobile","Teams","Changelog"]},
+    {"title":"Resources","links":["Help centre","Shortcuts","Blog","Status"]},
+    {"title":"Company","links":["About","Careers","Security","Press"]},
+    {"title":"Legal","links":["Privacy","Terms","DPA","Sub-processors"]}
+  ],"legal":"© 2026 Swift Mail"},
+  "specimen": "Inbox zero by nine",
+  "notes": [
+    "Three canvases carry the page: indigo navy for the hero, white for the body, deep teal for the closing CTA. They are never blended into each other.",
+    "The hero uses a half-bleed portrait against a violet-sky backdrop — a person looking off-frame is the recurring brand image.",
+    "One CTA per band. The marketing pages never put two competing actions in the same section.",
+    "Type sits at sub-default weights (460, 540, 600), which is where the typographic warmth comes from. Rounding those to 500/600/700 loses it.",
+    "Display line-height compresses to 0.96, and body ink is a warm off-grey (#292827) rather than black."
+  ]
+}

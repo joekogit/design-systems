@@ -1,0 +1,87 @@
+{
+  "slug": "framer", "name": "Framer", "category": "Design & creative tools",
+  "look": "Black canvas throughout with no light interludes, poster-grade negative tracking, white pill CTAs and oversized gradient spotlight cards.",
+  "scheme": "dark", "icon_weights": ["regular", "fill"],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "body": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400&display=swap"
+  },
+  "variants": { "nav": "floating-pill", "hero": "centered", "features": "bento", "cards": "elevated", "gallery": "grid" },
+  "brand": { "mark": "ph-lightning-fill", "name": "Loom" },
+  "nav": { "links": [{"label":"Features","href":"features"},{"label":"Templates","href":"gallery"},{"label":"Pricing","href":"pricing"},{"label":"Learn","href":"faq"}], "cta": "Start for free", "cta2": "Sign in" },
+  "hero": {
+    "eyebrow": "LOOM 4",
+    "title": "Design and ship <em>in one place</em>",
+    "sub": "A canvas that publishes. Draw the site, wire the interactions, press publish — and get a real CDN-hosted page rather than an export you have to rebuild.",
+    "cta1": "Start for free", "cta2": "Browse templates",
+    "image": "photo-1547658719-da2b51169166", "ratio": 0.58,
+    "stats": [{"v":"98","l":"Lighthouse median"},{"v":"320k","l":"Sites published"},{"v":"< 1s","l":"Median load"}]
+  },
+  "logo_lead": "PUBLISHED WITH LOOM",
+  "logos": ["Northwind", "Corva", "Tessera", "Perigee", "Basisplan", "Halyard"],
+  "features": {
+    "eyebrow": "THE CANVAS",
+    "title": "Design tools that actually publish",
+    "sub": "The gap between the mockup and the live site is the whole problem. This closes it.",
+    "items": [
+      {"icon":"ph-cursor-click","title":"Real interactions","body":"Scroll effects, hover states and page transitions authored on the canvas and shipped exactly as designed — no handoff, no reimplementation, no drift between the file and the site."},
+      {"icon":"ph-devices","title":"Responsive by default","body":"Breakpoints inherit, so a change at desktop propagates unless you override it."},
+      {"icon":"ph-gauge","title":"Fast by construction","body":"Images optimised, fonts subset, CSS generated. Median published site scores 98."},
+      {"icon":"ph-database","title":"CMS built in","body":"Collections, references and dynamic pages without a separate service."},
+      {"icon":"ph-users-three","title":"Multiplayer","body":"Cursors, comments and version history on the same canvas."},
+      {"icon":"ph-globe","title":"Publish anywhere","body":"A custom domain, a staging URL, or an export of clean React components if you would rather take the code and go."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"INTERACTIONS","title":"Authored once, shipped as-is","body":"Scroll-linked effects, hover states and page transitions are built on the same canvas as the layout and published without reimplementation. The prototype and the site stop being two different artefacts that slowly disagree.","points":["Scroll, hover and page transitions on canvas","No handoff step and no drift","Reduced-motion honoured automatically"],"image":"photo-1618005182384-a83a8bd57fbe","cta":"See interactions"},
+    {"eyebrow":"PERFORMANCE","title":"Fast because of how it builds","body":"Images are optimised and served responsively, fonts are subset to the glyphs actually used, and the CSS is generated from the canvas rather than accumulated by hand. The median published site scores 98 on Lighthouse.","points":["Responsive images generated per breakpoint","Fonts subset to used glyphs","CSS generated, never accumulated"],"image":"photo-1551288049-bebda4e38f71","cta":"Read the benchmarks"}
+  ],
+  "metric_lead": "ACROSS PUBLISHED SITES",
+  "metrics": [{"v":"98","l":"MEDIAN LIGHTHOUSE"},{"v":"320k","l":"SITES PUBLISHED"},{"v":"< 1s","l":"MEDIAN LOAD"},{"v":"1,400+","l":"TEMPLATES"}],
+  "gallery": {
+    "title": "Templates",
+    "sub": "Fourteen hundred, all editable on the canvas and publishable in a click.",
+    "items": [
+      {"id":"photo-1547658719-da2b51169166","tag":"Portfolio","ratio":0.7},
+      {"id":"photo-1620641788421-7a1c342ea42e","tag":"Agency","ratio":0.7},
+      {"id":"photo-1614850523459-c2f4c699c52e","tag":"Startup","ratio":0.7},
+      {"id":"photo-1635776062127-d379bfcba9f8","tag":"Blog","ratio":0.7},
+      {"id":"photo-1618005182384-a83a8bd57fbe","tag":"Product","ratio":0.7},
+      {"id":"photo-1579546929518-9e396f3cc809","tag":"Event","ratio":0.7}
+    ]
+  },
+  "testimonial": {"quote":"We shipped a marketing site in four days that would have been four weeks of design, handoff and front-end. The designer published it herself and nobody opened a code editor.",
+    "name":"Priya Anand", "role":"Head of Brand, Corva", "avatar":"photo-1494790108377-be9c29b29330"},
+  "pricing": {
+    "title": "Pricing",
+    "sub": "Free while you build. Pay when you attach a domain.",
+    "tiers": [
+      {"name":"Free","price":"$0","period":"/month","desc":"Build and preview.","features":["Unlimited projects","Loom subdomain","1,400+ templates","Community support"],"cta":"Start for free"},
+      {"name":"Pro","price":"$25","period":"/site/mo","desc":"Publish to your own domain.","features":["Custom domain","CMS with 10k items","Password protection","Email support"],"cta":"Start free trial","featured":true,"badge":"MOST SITES"},
+      {"name":"Enterprise","price":"Custom","period":"","desc":"For larger teams.","features":["Everything in Pro","SSO and SCIM","Staging environments","Named support"],"cta":"Contact sales"}
+    ]
+  },
+  "faq": {"title":"Questions","items":[
+    {"q":"Can I export the code?","a":"Yes — clean React components with the styles attached. Most people never do, but the export exists so choosing Loom is not a one-way door."},
+    {"q":"Is it actually fast, or fast in a demo?","a":"The median published site scores 98 on Lighthouse against real field data, not lab runs. The benchmarks page shows the distribution rather than just the median."},
+    {"q":"What happens to my site if I stop paying?","a":"The custom domain stops resolving and the site reverts to its Loom subdomain. Nothing is deleted, and reattaching the domain restores it."},
+    {"q":"Does it handle reduced motion?","a":"Yes, automatically. Scroll and transition effects are suppressed when the visitor's system asks for reduced motion — you do not have to remember to do it."}
+  ]},
+  "cta": {"title":"Start building","sub":"Free while you build. You only pay when you attach a domain.","btn1":"Start for free","btn2":"Browse templates"},
+  "footer": {"tagline":"A canvas that publishes.","columns":[
+    {"title":"Product","links":["Canvas","CMS","Interactions","Hosting"]},
+    {"title":"Templates","links":["Portfolio","Agency","Startup","Browse all"]},
+    {"title":"Learn","links":["Documentation","Academy","Blog","Community"]},
+    {"title":"Company","links":["About","Careers","Press","Legal"]}
+  ],"legal":"© 2026 Loom Design"},
+  "specimen": "Design and ship",
+  "notes": [
+    "The black canvas carries hero, body, pricing, FAQ and footer alike. There are no light interludes in this system.",
+    "Display tracking runs aggressively negative — around -5.5px at the largest size. That poster-grade cadence is the typographic signature.",
+    "The white pill is the only primary CTA shape on the site. Secondary actions are charcoal pills or plain text links.",
+    "Gradient spotlight cards are individual tiles inside the dark grid — never section backgrounds. Turning one into a band collapses the effect.",
+    "One chromatic accent is reserved for links, focus and selection. It is never decorative."
+  ]
+}

@@ -1,0 +1,63 @@
+/* Pinterest — masonry pins on warm cream, one red, two radii, sticky red sign-up. */
+:root { --maxw: 1300px; --sect: clamp(48px, 6vw, 80px);
+  --cream: #f6f6f3;
+  --shadow-1: 0 1px 2px rgba(0,0,0,.05), 0 6px 18px rgba(0,0,0,.07);
+  --shadow-2: 0 2px 6px rgba(0,0,0,.07), 0 14px 34px rgba(0,0,0,.11); }
+body { background: var(--cream); }
+
+.nav { --nav-bg: rgba(246,246,243,.94); backdrop-filter: blur(10px); border-bottom-color: transparent; }
+.nav-in { min-height: 68px; }
+.brand { font-weight: 800; letter-spacing: -.03em; color: var(--c-primary); font-size: 21px; }
+.brand-ico { color: var(--c-primary); font-size: 26px; }
+.nav-links a { font-weight: 700; }
+.nav-links a:hover { background: rgba(0,0,0,.06); border-radius: var(--r-pill); }
+
+/* the sign-up is always red, always top-right */
+.btn { border-radius: var(--r-pill); font-weight: 700; padding: 13px 24px; }
+.btn-secondary { background: rgba(0,0,0,.06); color: var(--c-ink); border-color: transparent; }
+.btn-secondary:hover { background: rgba(0,0,0,.12); border-color: transparent; }
+.eyebrow { color: var(--c-ink-subtle); text-transform: none; letter-spacing: 0; font-weight: 700; }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 800; letter-spacing: -.035em; }
+.hero-title em { color: var(--c-primary); }
+
+.logos { border-block: 0; }
+.logo-item { background: #fff; padding: 9px 20px; border-radius: var(--r-pill); font-weight: 700;
+  font-size: 14px; color: var(--c-ink); opacity: 1; box-shadow: var(--shadow-1); }
+
+/* two radii: 16px components, 32px large cards, circles for avatars */
+.feat-card { background: #fff; border: 0; border-radius: 16px; padding: 24px; box-shadow: none; }
+.feat-card:hover { box-shadow: var(--shadow-1); transform: translateY(-2px); }
+.feat-ico { background: rgba(230,0,35,.1); color: var(--c-primary); border: 0; border-radius: 50%;
+  width: 48px; height: 48px; font-size: 22px; }
+.feat-title { font-weight: 700; }
+.hero-media img, .sc-media img { border-radius: 32px; border: 0; }
+
+/* the masonry pin grid — natural aspect ratios preserved */
+.gal-grid.v-masonry { column-gap: 16px; }
+.v-masonry .g-item { margin-bottom: 16px; border-radius: 16px; background: transparent; }
+.g-item img { border-radius: 16px; }
+.g-item figcaption { border-radius: var(--r-pill); background: #fff; color: var(--c-ink);
+  font-weight: 700; box-shadow: var(--shadow-1); backdrop-filter: none; }
+.g-item::after { content: "Save"; position: absolute; top: 12px; right: 12px; z-index: 2;
+  padding: 8px 16px; border-radius: var(--r-pill); background: var(--c-primary); color: #fff;
+  font-size: 13px; font-weight: 700; opacity: 0; transition: opacity .15s ease; }
+.g-item:hover::after { opacity: 1; }
+
+.metrics { --metrics-bg: #fff; border-block: 0; }
+.metric-v { color: var(--c-primary); }
+.quote-card { background: #fff; border: 0; border-radius: 32px; box-shadow: var(--shadow-1);
+  --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--c-primary); }
+.q-av { border-radius: 50%; }
+.tier { background: #fff; border: 0; border-radius: 32px; box-shadow: var(--shadow-1); }
+.tier-feat { outline: 3px solid var(--c-primary); outline-offset: -3px; }
+.tier-badge { background: var(--c-primary); border-radius: var(--r-pill); }
+.tier-feats i { color: var(--c-primary); }
+.sc-points i { color: var(--c-primary); }
+.faq-item { border-bottom-color: rgba(0,0,0,.1); }
+.faq-mk { color: var(--c-primary); }
+.cta-band { background: #fff; border: 0; border-radius: 32px; box-shadow: var(--shadow-1); }
+.foot { border-top-color: rgba(0,0,0,.08); }
+.spec { --spec-bg: #fff; }
+.input, .badge2, .tabs, .tabs button { border-radius: var(--r-pill); }
+.sw { border-radius: 16px; }

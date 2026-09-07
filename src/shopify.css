@@ -1,0 +1,75 @@
+/* Shopify — two canvases: cinematic night and transactional cream. Pills only, weight 330. */
+:root { --maxw: 1260px; --sect: clamp(56px, 7vw, 100px);
+  --night: #0a0a0a; --cream: #f3f3f1; --light: #ffffff;
+  --aloe: #d3f4e2; --pistachio: #cfe8a9; --aloe-ink: #0b4b2c;
+  --shadow-1: none; --shadow-2: none; }
+body { font-feature-settings: "ss03"; }
+
+.nav { --nav-bg: rgba(10,10,10,.86); backdrop-filter: blur(12px); border-bottom-color: rgba(255,255,255,.12); }
+.brand { font-weight: 600; letter-spacing: -.02em; }
+.brand-ico { color: #fff; }
+
+/* the pill is the only button shape on either track */
+.btn { border-radius: var(--r-pill); font-weight: 600; padding: 13px 26px; }
+.btn-primary { background: #fff; color: var(--night); }
+.btn-primary:hover { background: #e4e4e4; }
+.btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.42); }
+.btn-secondary:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+
+.eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: 11px; font-weight: 600; color: var(--c-ink-subtle); }
+/* thin-weight display is the signature — never bold it */
+.t-display-xl { font-weight: 300; letter-spacing: .022em; }
+.t-display-lg, .t-display-md, .sc-title { font-weight: 300; letter-spacing: .012em; }
+.hero { text-align: center; }
+.hero-title em { color: var(--pistachio); font-weight: 300; }
+.hero-sub { color: rgba(255,255,255,.82); }
+.hero-stats { border-top-color: rgba(255,255,255,.22); }
+.hstat b { font-weight: 300; } .hstat span { color: rgba(255,255,255,.6); }
+/* photography is full-bleed on the cinematic track, never inset in a card */
+.hero.v-centered .hero-media img { border: 0; border-radius: 0; }
+.sc-media img, .g-item { border-radius: 0; border: 0; }
+
+.logos { border-block-color: rgba(255,255,255,.12); }
+.logo-item { letter-spacing: .1em; font-size: 12px; font-weight: 600; }
+
+/* the light transactional track */
+.features { background: var(--cream); color: #1a1a1a; }
+.features .lede, .features .feat-body { color: #4a4a4a; }
+.features .eyebrow { color: var(--aloe-ink); }
+.features .t-display-lg { color: #1a1a1a; }
+.feat-card { background: transparent; border: 0; padding-inline: 0; }
+.feat-ico { background: var(--aloe); color: var(--aloe-ink); border: 0; border-radius: var(--r-pill); width: 46px; height: 46px; }
+.feat-title { color: #1a1a1a; font-weight: 600; }
+
+.metrics { --metrics-bg: transparent; border-block: 1px solid rgba(255,255,255,.12); }
+.metric-v { font-weight: 300; }
+.metric-l, .logos-lead { text-transform: uppercase; letter-spacing: .12em; font-size: 10px; }
+.g-item figcaption { background: rgba(10,10,10,.8); border-radius: var(--r-pill); }
+.quote-card { background: #141414; border: 0; border-radius: 0; --quote-align: left; --quote-by-just: flex-start; }
+.quote-text { font-weight: 300; }
+.quote-mark { color: var(--pistachio); }
+
+/* pricing sits on the light track */
+.pricing { background: var(--cream); color: #1a1a1a; }
+.pricing .t-display-lg { color: #1a1a1a; }
+.pricing .lede { color: #4a4a4a; }
+.tier { background: var(--light); border: 0; border-radius: var(--r-xl); }
+.tier-name { color: #1a1a1a; letter-spacing: .08em; font-weight: 600; }
+.tier-num { color: #1a1a1a; font-weight: 300; }
+.tier-desc, .tier-feats li { color: #4a4a4a; }
+.tier-feats i { color: var(--aloe-ink); }
+.tier-feat { background: var(--aloe); }
+.tier-badge { background: var(--aloe-ink); color: #fff; letter-spacing: .1em; font-size: 10px; }
+.tier .btn-primary { background: var(--night); color: #fff; }
+.tier .btn-secondary { background: transparent; color: #1a1a1a; border-color: rgba(0,0,0,.3); }
+.tier .btn-secondary:hover { background: rgba(0,0,0,.05); border-color: #1a1a1a; }
+.sc-points i { color: var(--pistachio); }
+.faq-item { border-bottom-color: rgba(255,255,255,.12); }
+.faq-mk { color: var(--pistachio); }
+.cta-band { background: var(--aloe); color: #0b2b1c; border: 0; border-radius: var(--r-xxl); }
+.cta-band .t-display-md { color: #0b2b1c; }
+.cta-band .lede { color: #1f4c38; }
+.cta-band .btn-primary { background: var(--night); color: #fff; }
+.cta-band .btn-secondary { color: #0b2b1c; border-color: rgba(11,43,28,.4); }
+.spec { --spec-bg: #111; }
+.input, .badge2, .tabs, .tabs button { border-radius: var(--r-pill); }

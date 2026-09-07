@@ -1,0 +1,70 @@
+/* Framer — black throughout. Poster tracking, white pills, gradient spotlight tiles. */
+:root { --maxw: 1240px; --sect: clamp(60px, 8vw, 104px);
+  --shadow-1: none; --shadow-2: none;
+  --g-violet: linear-gradient(150deg, #7c3aed 0%, #c026d3 100%);
+  --g-magenta: linear-gradient(150deg, #db2777 0%, #f97316 100%);
+  --g-orange: linear-gradient(150deg, #f97316 0%, #fbbf24 100%);
+  --g-coral: linear-gradient(150deg, #fb7185 0%, #a855f7 100%); }
+
+.nav.v-floating-pill .nav-in { background: rgba(20,20,20,.82); border-color: rgba(255,255,255,.12);
+  backdrop-filter: blur(16px); border-radius: 100px; padding-inline: 20px; min-height: 58px; }
+.brand { font-weight: 700; letter-spacing: -.035em; }
+.brand-ico { color: #fff; }
+
+/* the white pill is the only primary CTA shape */
+.btn { border-radius: 100px; font-weight: 600; padding: 12px 22px; }
+.btn-primary { background: #fff; color: #0a0a0a; }
+.btn-primary:hover { background: #e4e4e7; }
+.btn-secondary { background: #1f1f22; color: #fff; border-color: transparent; }
+.btn-secondary:hover { background: #2b2b30; border-color: transparent; }
+
+.eyebrow { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .12em;
+  font-size: 11px; color: var(--c-ink-subtle); }
+.hero { text-align: center; }
+/* poster-grade negative tracking */
+.t-display-xl { letter-spacing: -.052em; font-weight: 800; }
+.t-display-lg { letter-spacing: -.045em; font-weight: 800; }
+.t-display-md, .sc-title { letter-spacing: -.038em; font-weight: 700; }
+.hero-title em { color: var(--c-ink-subtle); }
+.hero-media img, .sc-media img { border-radius: 20px; border-color: rgba(255,255,255,.1); }
+
+.logos { border-block-color: rgba(255,255,255,.1); }
+.logo-item { font-weight: 600; letter-spacing: -.02em; }
+
+/* gradient spotlight cards are individual tiles, never section backgrounds */
+.feat-card { background: #141416; border: 1px solid rgba(255,255,255,.09); border-radius: 20px; padding: 28px; }
+.feat-card:hover { background: #1a1a1d; border-color: rgba(255,255,255,.18); transform: none; }
+.feat-card:nth-child(1) { background: var(--g-violet); border-color: transparent; border-radius: 30px; }
+.feat-card:nth-child(6) { background: var(--g-magenta); border-color: transparent; border-radius: 30px; }
+.feat-card:nth-child(1):hover, .feat-card:nth-child(6):hover { filter: brightness(1.08); }
+.feat-card:nth-child(1) .feat-body, .feat-card:nth-child(6) .feat-body { color: rgba(255,255,255,.88); }
+.feat-card:nth-child(1) .feat-ico, .feat-card:nth-child(6) .feat-ico {
+  background: rgba(255,255,255,.2); border-color: transparent; color: #fff; }
+.feat-ico { background: #1f1f22; border: 1px solid rgba(255,255,255,.09); color: #fff;
+  border-radius: 12px; width: 42px; height: 42px; font-size: 19px; }
+.feat-title { font-weight: 600; letter-spacing: -.025em; }
+
+.metrics { --metrics-bg: #141416; border-block: 0; }
+.metric-l, .logos-lead { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .1em; font-size: 10.5px; }
+.g-item { border-radius: 20px; background: #141416; }
+.g-item figcaption { border-radius: 100px; background: rgba(10,10,10,.82); border: 1px solid rgba(255,255,255,.14); }
+.quote-card { background: var(--g-coral); border: 0; border-radius: 30px; }
+.quote-text { color: #fff; font-weight: 600; letter-spacing: -.03em; }
+.quote-by b { color: #fff; } .quote-by span { color: rgba(255,255,255,.78); }
+.quote-mark { color: rgba(255,255,255,.9); }
+.q-av { border-radius: 100px; }
+
+.tier { background: #141416; border-color: rgba(255,255,255,.09); border-radius: 20px; }
+.tier-feat { background: #1c1c1f; border-color: rgba(255,255,255,.24); }
+.tier-badge { background: #fff; color: #0a0a0a; border-radius: 100px; font-family: var(--font-mono);
+  text-transform: uppercase; letter-spacing: .08em; font-size: 10px; }
+.tier-feats i { color: #fff; }
+.sc-points i { color: var(--c-primary); }
+.faq-item { border-bottom-color: rgba(255,255,255,.1); }
+.faq-mk { color: #fff; }
+.cta-band { background: var(--g-violet); border: 0; border-radius: 30px; }
+.cta-band .lede { color: rgba(255,255,255,.86); }
+.cta-band .btn-secondary { background: rgba(0,0,0,.28); color: #fff; }
+.spec { --spec-bg: #0d0d0f; border-top-color: rgba(255,255,255,.1); }
+.input, .badge2, .tabs, .tabs button { border-radius: 100px; }
+.sw { border-radius: 12px; }

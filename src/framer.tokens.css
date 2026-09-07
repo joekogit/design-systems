@@ -1,0 +1,87 @@
+/* AUTO-DERIVED from design-md/framer.md — hand-tune freely. */
+:root{
+/* ---- colors ---- */
+  --c-primary: #ffffff;
+  --c-on-primary: #000000;
+  --c-canvas: #090909;
+  --c-surface: #141414;
+  --c-surface-2: #1c1c1c;
+  --c-ink: #ffffff;
+  --c-ink-muted: #999999;
+  --c-hairline: #262626;
+  --c-success: #22c55e;
+  --c-inverse-canvas: #ffffff;
+  --c-inverse-ink: #000000;
+  --c-surface-3: #1c1c1c;
+  --c-ink-subtle: #999999;
+  --c-hairline-strong: #262626;
+  --c-primary-hover: #ffffff;
+  --c-primary-soft: #ffffff;
+  --c-accent-2: #ffffff;
+  --c-warning: #f08c00;
+  --c-danger: #e03131;
+/* ---- raw palette (spec appendix) ---- */
+  --raw-primary: #ffffff;
+  --raw-on-primary: #000000;
+  --raw-accent-blue: #0099ff;
+  --raw-ink: #ffffff;
+  --raw-ink-muted: #999999;
+  --raw-canvas: #090909;
+  --raw-surface-1: #141414;
+  --raw-surface-2: #1c1c1c;
+  --raw-hairline: #262626;
+  --raw-hairline-soft: #1a1a1a;
+  --raw-inverse-canvas: #ffffff;
+  --raw-inverse-ink: #000000;
+  --raw-gradient-magenta: #d44df0;
+  --raw-gradient-violet: #6a4cf5;
+  --raw-gradient-orange: #ff7a3d;
+  --raw-gradient-coral: #ff5577;
+  --raw-semantic-success: #22c55e;
+/* ---- typography ---- */
+  --font-display: "GT Walsheim Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Inter Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --t-display-xl: 85px; --t-display-xl-m: 37.4px; --fs-display-xl: clamp(37.4px, calc(20.639px + 4.4695vw), 85px);
+  --t-display-xl-w: 500; --t-display-xl-lh: 0.95; --t-display-xl-ls: -0.05em;
+  --t-display-lg: 62px; --t-display-lg-m: 36px; --fs-display-lg: clamp(36px, calc(26.845px + 2.4413vw), 62px);
+  --t-display-lg-w: 500; --t-display-lg-lh: 1; --t-display-lg-ls: -0.05em;
+  --t-display-md: 32px; --t-display-md-m: 23.7px; --fs-display-md: clamp(23.7px, calc(20.777px + 0.7793vw), 32px);
+  --t-display-md-w: 500; --t-display-md-lh: 1.13; --t-display-md-ls: -0.0312em;
+  --t-headline: 22px; --t-headline-m: 19.4px; --fs-headline: clamp(19.4px, calc(18.485px + 0.2441vw), 22px);
+  --t-headline-w: 700; --t-headline-lh: 1.2; --t-headline-ls: -0.0364em;
+  --t-card-title: 21px; --t-card-title-m: 18.5px; --fs-card-title: clamp(18.5px, calc(17.62px + 0.2347vw), 21px);
+  --t-card-title-w: 600; --t-card-title-lh: 1.28; --t-card-title-ls: -0.0143em;
+  --t-subhead: 24px; --t-subhead-m: 21.1px; --fs-subhead: clamp(21.1px, calc(20.079px + 0.2723vw), 24px);
+  --t-subhead-w: 400; --t-subhead-lh: 1.3; --t-subhead-ls: -0.0004em;
+  --t-body-lg: 18px; --t-body-lg-m: 18px; --fs-body-lg: 18px;
+  --t-body-lg-w: 400; --t-body-lg-lh: 1.3; --t-body-lg-ls: -0.01em;
+  --t-body: 15px; --t-body-m: 15px; --fs-body: 15px;
+  --t-body-w: 400; --t-body-lh: 1.3; --t-body-ls: -0.01em;
+  --t-body-sm: 14px; --t-body-sm-m: 14px; --fs-body-sm: 14px;
+  --t-body-sm-w: 500; --t-body-sm-lh: 1.4; --t-body-sm-ls: -0.01em;
+  --t-caption: 13px; --t-caption-m: 13px; --fs-caption: 13px;
+  --t-caption-w: 500; --t-caption-lh: 1.2; --t-caption-ls: -0.01em;
+  --t-button: 14px; --t-button-m: 14px; --fs-button: 14px;
+  --t-button-w: 500; --t-button-lh: 1; --t-button-ls: -0.01em;
+  --t-eyebrow: 13px; --t-eyebrow-m: 13px; --fs-eyebrow: 13px;
+  --t-eyebrow-w: 600; --t-eyebrow-lh: 1.3; --t-eyebrow-ls: 0.0462em;
+  --t-mono: 13px; --t-mono-m: 13px; --fs-mono: 13px;
+  --t-mono-w: 400; --t-mono-lh: 1.5; --t-mono-ls: 0em;
+/* ---- shape & space ---- */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 15px;
+  --r-xl: 20px;
+  --r-xxl: 30px;
+  --r-pill: 100px;
+  --s-xxs: 4px;
+  --s-xs: 8px;
+  --s-sm: 12px;
+  --s-md: 15px;
+  --s-lg: 20px;
+  --s-xl: 30px;
+  --s-xxl: 40px;
+  --s-section: 96px;
+}
