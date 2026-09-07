@@ -1,0 +1,334 @@
+{
+  "slug": "cohere",
+  "name": "Cohere",
+  "category": "AI & LLM platforms",
+  "look": "Monumental display on white editorial canvases, interrupted by deep green and dark navy bands, with near-black pill CTAs.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Manrope\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "elevated",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-circles-three",
+    "name": "Cadre"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Platform",
+        "href": "features"
+      },
+      {
+        "label": "Models",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Solutions",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Research",
+        "href": "gallery"
+      }
+    ],
+    "cta": "Start building",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "ENTERPRISE AI",
+    "title": "AI built for <em>the enterprise</em>",
+    "sub": "Retrieval, reranking and generation that run inside your own cloud, grounded in your documents, with citations on every answer.",
+    "cta1": "Start building",
+    "cta2": "Talk to sales",
+    "image": "photo-1454165804606-c3d57bc86b40",
+    "ratio": 0.66,
+    "stats": [
+      {
+        "v": "100+",
+        "l": "Languages"
+      },
+      {
+        "v": "VPC",
+        "l": "Deployment"
+      },
+      {
+        "v": "Every answer",
+        "l": "Cited"
+      }
+    ]
+  },
+  "logo_lead": "DEPLOYED BY",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "THE PLATFORM",
+    "title": "Grounded, not guessing",
+    "sub": "Retrieval-augmented generation with the retrieval done properly, because that is where accuracy actually comes from.",
+    "items": [
+      {
+        "icon": "ph-magnifying-glass",
+        "title": "Retrieval",
+        "body": "Semantic search across your corpus, tuned for enterprise documents rather than web pages."
+      },
+      {
+        "icon": "ph-sort-ascending",
+        "title": "Reranking",
+        "body": "A dedicated rerank model that reorders candidates by relevance — the cheapest accuracy you can buy."
+      },
+      {
+        "icon": "ph-quotes",
+        "title": "Citations",
+        "body": "Every generated claim points at the passage it came from, so a reviewer can check it."
+      },
+      {
+        "icon": "ph-buildings",
+        "title": "In your VPC",
+        "body": "Deploy the whole stack inside your own cloud account. Nothing leaves your perimeter."
+      },
+      {
+        "icon": "ph-translate",
+        "title": "100+ languages",
+        "body": "Multilingual embeddings that put a French query and an English document in the same space."
+      },
+      {
+        "icon": "ph-plugs-connected",
+        "title": "Connectors",
+        "body": "Your wiki, your drive, your ticketing system — indexed and kept current."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "RETRIEVAL",
+      "title": "Accuracy comes from the retrieval step",
+      "body": "Most failures blamed on the model are retrieval failures. A dedicated rerank pass over a wide candidate set fixes more errors, more cheaply, than moving to a larger generator does.",
+      "points": [
+        "Rerank over a wide candidate set",
+        "Tuned for enterprise document structure",
+        "Measured on your own corpus, not a public benchmark"
+      ],
+      "image": "photo-1560472354-b33ff0c44a43",
+      "cta": "How retrieval works"
+    },
+    {
+      "eyebrow": "DEPLOYMENT",
+      "title": "Inside your perimeter",
+      "body": "The full stack runs in your own VPC on AWS, Azure, GCP or bare metal. No data egress, no shared tenancy, and the same models as the hosted service.",
+      "points": [
+        "AWS, Azure, GCP or on-premise",
+        "No data egress",
+        "Air-gapped deployments supported"
+      ],
+      "image": "photo-1558494949-ef010cbdcc31",
+      "cta": "Deployment options"
+    }
+  ],
+  "metric_lead": "ACROSS ENTERPRISE DEPLOYMENTS",
+  "metrics": [
+    {
+      "v": "100+",
+      "l": "LANGUAGES"
+    },
+    {
+      "v": "4×",
+      "l": "RETRIEVAL ACCURACY LIFT"
+    },
+    {
+      "v": "VPC",
+      "l": "DEPLOYMENT"
+    },
+    {
+      "v": "0",
+      "l": "DATA EGRESS"
+    }
+  ],
+  "gallery": {
+    "title": "Research",
+    "sub": "Papers, model cards and evaluation methodology.",
+    "items": [
+      {
+        "id": "photo-1581091226033-d5c48150dbaa",
+        "tag": "Retrieval",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1560472354-b33ff0c44a43",
+        "tag": "Evaluation",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Infrastructure",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1544716278-ca5e3f4abd8c",
+        "tag": "Multilingual",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Embeddings",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1454165804606-c3d57bc86b40",
+        "tag": "Case studies",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "The citations were the thing that got it past legal. Not accuracy claims — the fact that every sentence points at a paragraph somebody can go and read.",
+    "name": "Ingrid Solberg",
+    "role": "Head of Knowledge, Northwind",
+    "avatar": "photo-1438761681033-6461ffad8d80"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "sub": "Per token on the hosted API, per node in your own cloud.",
+    "tiers": [
+      {
+        "name": "Trial",
+        "price": "$0",
+        "period": "",
+        "desc": "Evaluate on your own documents.",
+        "features": [
+          "Rate-limited API",
+          "All models",
+          "Community support",
+          "Non-production use"
+        ],
+        "cta": "Start free"
+      },
+      {
+        "name": "Production",
+        "price": "Usage",
+        "period": "based",
+        "desc": "Hosted, with an SLA.",
+        "features": [
+          "Production rate limits",
+          "99.9% SLA",
+          "Email and chat support",
+          "Fine-tuning"
+        ],
+        "cta": "Start building",
+        "featured": true,
+        "badge": "MOST TEAMS"
+      },
+      {
+        "name": "Private",
+        "price": "Custom",
+        "period": "",
+        "desc": "In your own cloud.",
+        "features": [
+          "VPC or on-premise",
+          "No data egress",
+          "Dedicated engineer",
+          "Air-gap supported"
+        ],
+        "cta": "Talk to sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Common questions",
+    "items": [
+      {
+        "q": "Why does reranking matter so much?",
+        "a": "Because most wrong answers come from retrieving the wrong passage, not from the generator. Reranking a wide candidate set fixes more errors per pound than upgrading the generator."
+      },
+      {
+        "q": "Can it run without internet access?",
+        "a": "Yes. Air-gapped deployments are supported, with model updates delivered as signed artefacts you install on your own schedule."
+      },
+      {
+        "q": "Do you train on our data?",
+        "a": "No. Enterprise data is never used for training, and in a VPC deployment we have no access to it at all."
+      },
+      {
+        "q": "How are citations produced?",
+        "a": "The generator is constrained to attribute each claim to a retrieved span. Answers it cannot ground are returned as an explicit inability rather than an unattributed guess."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Build on your own documents",
+    "sub": "Start on the hosted API, move into your VPC when you are ready.",
+    "btn1": "Start building",
+    "btn2": "Talk to sales"
+  },
+  "footer": {
+    "tagline": "Enterprise AI that runs where your data lives.",
+    "columns": [
+      {
+        "title": "Platform",
+        "links": [
+          "Generate",
+          "Retrieve",
+          "Rerank",
+          "Fine-tune"
+        ]
+      },
+      {
+        "title": "Solutions",
+        "links": [
+          "Search",
+          "Support",
+          "Research",
+          "Compliance"
+        ]
+      },
+      {
+        "title": "Developers",
+        "links": [
+          "Docs",
+          "API",
+          "SDKs",
+          "Status"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Research",
+          "Careers",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Cadre AI"
+  },
+  "specimen": "Grounded, not guessing",
+  "notes": [
+    "Monumental display headlines with very tight line-height and negative tracking set the tone.",
+    "White editorial canvases are interrupted by deep green and dark navy bands — the interruption is the rhythm.",
+    "Pill CTAs in near-black or white; most secondary actions are underlined text links rather than buttons.",
+    "Trust-logo strips are monochrome with very wide vertical spacing around them.",
+    "Product mockups are dark agent-console panels with small status chips, not abstract illustration."
+  ]
+}

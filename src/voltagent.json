@@ -1,0 +1,334 @@
+{
+  "slug": "voltagent",
+  "name": "VoltAgent",
+  "category": "AI & LLM platforms",
+  "look": "Void-black canvas with one electric-green accent, hairline-bordered cards and a dashed rule as the only ornament.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "terminal",
+    "features": "grid",
+    "cards": "bordered",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-lightning-fill",
+    "name": "Voltway"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Docs",
+        "href": "gallery"
+      },
+      {
+        "label": "Framework",
+        "href": "features"
+      },
+      {
+        "label": "Observability",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "GitHub",
+        "href": "faq"
+      }
+    ],
+    "cta": "Get started",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "v2.1 — observability built in",
+    "title": "The TypeScript framework for <em>AI agents</em>",
+    "sub": "Define agents, tools and workflows in typed code, then watch every step execute in a console that shows the actual reasoning rather than a spinner.",
+    "cta1": "npm install voltway",
+    "cta2": "Read the docs",
+    "image": "photo-1526374965328-7f61d4dc18c5",
+    "ratio": 0.6,
+    "stats": [
+      {
+        "v": "TS",
+        "l": "First class"
+      },
+      {
+        "v": "12k",
+        "l": "GitHub stars"
+      },
+      {
+        "v": "MIT",
+        "l": "Licence"
+      }
+    ]
+  },
+  "logo_lead": "Building agents with Voltway",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "The framework",
+    "title": "Typed agents, visible execution",
+    "sub": "Everything an agent does is a typed call you can trace, replay and test.",
+    "items": [
+      {
+        "icon": "ph-brackets-curly",
+        "title": "Typed end to end",
+        "body": "Tools declare Zod schemas; the agent's inputs and outputs are typed and validated at the boundary."
+      },
+      {
+        "icon": "ph-eye",
+        "title": "Visual console",
+        "body": "Every step, tool call and token streamed into a local console. No print-statement debugging."
+      },
+      {
+        "icon": "ph-arrows-split",
+        "title": "Workflows",
+        "body": "Compose agents into supervised workflows with retries, branching and human approval steps."
+      },
+      {
+        "icon": "ph-plugs-connected",
+        "title": "Any provider",
+        "body": "OpenAI, Anthropic, Google or a local endpoint, swapped with one line."
+      },
+      {
+        "icon": "ph-repeat",
+        "title": "Replay",
+        "body": "Every run is recorded and replayable against a different model, so you can compare without re-running side effects."
+      },
+      {
+        "icon": "ph-test-tube",
+        "title": "Testable",
+        "body": "Agents are ordinary functions. Mock a tool and assert on the result in your existing test runner."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "Observability",
+      "title": "See what the agent actually did",
+      "body": "The console shows the reasoning, every tool call with its arguments and result, token counts and latency per step. When an agent goes wrong you can see the exact step where it did.",
+      "points": [
+        "Per-step reasoning, arguments and results",
+        "Token and latency accounting per call",
+        "Runs recorded and replayable"
+      ],
+      "image": "photo-1551288049-bebda4e38f71",
+      "cta": "See the console"
+    },
+    {
+      "eyebrow": "Production",
+      "title": "Deploy it like any Node service",
+      "body": "There is no proprietary runtime. A Voltway agent is a TypeScript module that runs anywhere Node does — a container, a serverless function, or a long-lived worker.",
+      "points": [
+        "Runs anywhere Node runs",
+        "No proprietary runtime or hosted dependency",
+        "OpenTelemetry traces exported"
+      ],
+      "image": "photo-1558494949-ef010cbdcc31",
+      "cta": "Deployment guide"
+    }
+  ],
+  "metric_lead": "",
+  "metrics": [
+    {
+      "v": "12k",
+      "l": "GitHub stars"
+    },
+    {
+      "v": "MIT",
+      "l": "Licence"
+    },
+    {
+      "v": "0",
+      "l": "Proprietary runtime"
+    },
+    {
+      "v": "100%",
+      "l": "TypeScript"
+    }
+  ],
+  "gallery": {
+    "title": "Documentation",
+    "sub": "Quickstart, tool authoring, workflows and the observability protocol.",
+    "items": [
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Quickstart",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "Tools",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Console",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "Workflows",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Deploying",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1498050108023-c5249f4df085",
+        "tag": "Testing",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "The console paid for itself the first afternoon. We found an agent silently retrying a failing tool eleven times, which no amount of log reading had surfaced.",
+    "name": "Jonas Lindqvist",
+    "role": "Staff Engineer, Corva",
+    "avatar": "photo-1633332755192-727a05c4013d"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "sub": "The framework is MIT. The hosted console is optional.",
+    "tiers": [
+      {
+        "name": "Open source",
+        "price": "$0",
+        "period": "forever",
+        "desc": "The full framework.",
+        "features": [
+          "Complete framework",
+          "Local console",
+          "All providers",
+          "Community support"
+        ],
+        "cta": "npm install"
+      },
+      {
+        "name": "Cloud",
+        "price": "$29",
+        "period": "/month",
+        "desc": "Hosted console and traces.",
+        "features": [
+          "Everything free",
+          "Hosted trace history",
+          "Team sharing",
+          "Email support"
+        ],
+        "cta": "Start free trial",
+        "featured": true,
+        "badge": "Most teams"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "desc": "Self-hosted console.",
+        "features": [
+          "Everything in Cloud",
+          "Self-hosted console",
+          "SSO and audit",
+          "Named support"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "Is the framework really free?",
+        "a": "MIT licensed, including commercial use, with no feature gating. The paid tiers add hosted trace storage and team features, not framework capability."
+      },
+      {
+        "q": "Does it lock me into a provider?",
+        "a": "No. Providers are adapters; switching between OpenAI, Anthropic, Google or a local endpoint is a one-line change and the rest of the agent is untouched."
+      },
+      {
+        "q": "How do I test an agent?",
+        "a": "Agents are plain functions. Mock the tools, call the agent, assert on the output — no special harness and no network required."
+      },
+      {
+        "q": "Where do traces go?",
+        "a": "Locally by default, to disk, with nothing transmitted. The hosted console is opt-in and exports standard OpenTelemetry spans."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Build your first agent",
+    "sub": "MIT licensed, TypeScript native, console included.",
+    "btn1": "npm install voltway",
+    "btn2": "Read the docs"
+  },
+  "footer": {
+    "tagline": "The TypeScript framework for AI agents.",
+    "columns": [
+      {
+        "title": "Framework",
+        "links": [
+          "Agents",
+          "Tools",
+          "Workflows",
+          "Providers"
+        ]
+      },
+      {
+        "title": "Observability",
+        "links": [
+          "Console",
+          "Traces",
+          "Replay",
+          "OpenTelemetry"
+        ]
+      },
+      {
+        "title": "Docs",
+        "links": [
+          "Quickstart",
+          "Guides",
+          "API",
+          "Examples"
+        ]
+      },
+      {
+        "title": "Community",
+        "links": [
+          "GitHub",
+          "Discord",
+          "Blog",
+          "Contribute"
+        ]
+      }
+    ],
+    "legal": "© 2026 Voltway"
+  },
+  "specimen": "npm install voltway",
+  "notes": [
+    "One electric-green accent carries every CTA, status pill and the logo mark. There is no second accent anywhere.",
+    "The dark canvas is the only page surface — no light-mode rhythm, no alternating bands.",
+    "Hairline-bordered cards are the primary chrome: no shadows, no fills, just precise 1px rectangles.",
+    "A dashed rule between sections is the brand's only ornamental line. Use it sparingly as a rhythm cue.",
+    "Buttons are tight 6px rounded rectangles, never pills. Full pills are reserved for inline status tags."
+  ]
+}

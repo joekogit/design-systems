@@ -5,7 +5,7 @@ A reference library that renders each design system from the
 responsive page — so you can see what a design language actually does to a pricing table, a
 form field and a data table, not just to a hero.
 
-Open `index.html` to browse. 74 systems catalogued, 30 built out so far.
+Open `index.html` to browse. 74 systems catalogued, 41 built out so far.
 Live at **https://systems.joeko.net**. See `DEPLOY.md`.
 
 ## Why this exists
@@ -59,6 +59,8 @@ python3 build.py catalog           # list all 74 with scheme and canvas colour
    `cards`, `gallery`). **The variants are what stop the pages looking like recolours of each
    other**, so pick them from the reference's layout notes rather than defaulting.
 3. Write `src/<slug>.css` — the character layer. This is where the look actually lives.
+   `tools/mkdesign.py` assembles the content JSON from just the distinctive parts, so the
+   repetitive scaffolding (nav link objects, metric objects, gallery items) is not retyped.
 4. `python3 build.py page <slug>` and check it in `tools/audit.html`.
 
 ## Checking your work
@@ -69,7 +71,7 @@ python3 -m http.server 8899        # the audit harness needs http, not file://
 
 Then open `http://127.0.0.1:8899/tools/audit.html` and run `window.ready.then(()=>console.table(window.audit()))`.
 It reports, per page: horizontal scroll, images missing alt text, computed body size,
-interactive targets under 44px, and icons that fail to resolve a glyph. All thirty current
+interactive targets under 44px, and icons that fail to resolve a glyph. All forty-one current
 pages report zero on every count.
 
 ## Conventions

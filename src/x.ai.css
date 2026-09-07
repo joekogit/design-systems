@@ -1,0 +1,55 @@
+/* xAI — near-black, white outline pills as the whole interactive vocabulary. */
+:root { --maxw: 1200px; --sect: clamp(60px, 8vw, 100px); --shadow-1: none; --shadow-2: none;
+  --card: #191919; }
+
+.nav { --nav-bg: rgba(10,10,10,.86); backdrop-filter: blur(12px); border-bottom-color: transparent; }
+.brand { font-weight: 500; letter-spacing: -.02em; }
+.brand-ico { color: #fff; }
+/* mono uppercase tracked labels against a weight-400 display — the brand voice */
+.nav-links a, .eyebrow, .logos-lead, .metric-l, .g-item figcaption, .fcol h4, .tier-per,
+.hstat span, .btn, .zoo-cell h4, .logo-item {
+  font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .12em; }
+.nav-links a { font-size: 11px; color: rgba(255,255,255,.66); }
+.nav-links a:hover { color: #fff; }
+/* every button is an outline pill; one filled variant exists, for sign-up */
+.btn { border-radius: var(--r-pill); font-size: 11px; font-weight: 500; padding: 13px 26px;
+  background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.35); }
+.btn:hover { border-color: #fff; background: rgba(255,255,255,.06); }
+.nav-act .btn-primary, .cta-band .btn-primary { background: #fff; color: #0a0a0a; border-color: #fff; }
+.nav-act .btn-primary:hover, .cta-band .btn-primary:hover { background: #e0e0e0; }
+.eyebrow { color: rgba(255,255,255,.5); font-size: 11px; }
+.hero { text-align: center; }
+.t-display-xl { font-weight: 400; letter-spacing: -.025em; }
+.t-display-lg, .t-display-md, .sc-title { font-weight: 400; letter-spacing: -.022em; }
+.hero-title em { color: rgba(255,255,255,.5); }
+.hero-media img { border-radius: 8px; border-color: #242424; }
+
+.logos { border-block-color: #1f1f1f; }
+.logo-item { font-size: 11px; color: rgba(255,255,255,.4); }
+.feat-card { background: var(--card); border-color: #242424; border-radius: 8px; }
+.feat-card:hover { background: #1f1f1f; border-color: #3a3a3a; }
+.feat-ico { background: transparent; border: 1px solid #303030; color: #fff; border-radius: 8px; }
+.feat-title { font-weight: 500; }
+.sc-media img, .g-item { border-radius: 8px; border-color: #242424; }
+.metrics { --metrics-bg: transparent; border-block-color: #1f1f1f; }
+.metric-v { font-weight: 400; }
+.g-item figcaption { background: rgba(10,10,10,.88); border: 1px solid #242424; border-radius: 999px; font-size: 10px; }
+.quote-card { background: var(--card); border-color: #242424; border-radius: 8px;
+  --quote-align: left; --quote-by-just: flex-start; }
+.quote-text { font-weight: 400; }
+.quote-mark { color: rgba(255,255,255,.4); }
+.tier { background: var(--card); border-color: #242424; border-radius: 8px; }
+.tier-feat { border-color: rgba(255,255,255,.5); }
+.tier-name { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .12em; font-size: 12px; }
+.tier-num { font-weight: 400; }
+.tier-badge { background: #fff; color: #0a0a0a; border-radius: 999px; font-family: var(--font-mono);
+  text-transform: uppercase; letter-spacing: .1em; font-size: 9.5px; }
+.tier-feats i { color: rgba(255,255,255,.6); }
+.sc-points i { color: rgba(255,255,255,.6); }
+.faq-item { border-bottom-color: #1f1f1f; }
+.faq-item summary { font-weight: 400; }
+.faq-mk { color: rgba(255,255,255,.6); }
+.cta-band { background: var(--card); border-color: #242424; border-radius: 8px; }
+.spec { --spec-bg: #0d0d0d; border-top-color: #1f1f1f; }
+.input, .sw { border-radius: 8px; }
+.badge2, .tabs, .tabs button { border-radius: 999px; }

@@ -1,0 +1,334 @@
+{
+  "slug": "replicate",
+  "name": "Replicate",
+  "category": "AI & LLM platforms",
+  "look": "Warm cream canvas with 128px display type, hot orange reserved for the CTA and hero band, and dark code wells as pull-quotes.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "bold"
+  ],
+  "fonts": {
+    "display": "\"Archivo\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "bordered",
+    "gallery": "masonry"
+  },
+  "brand": {
+    "mark": "ph-repeat",
+    "name": "Rerun"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Explore",
+        "href": "gallery"
+      },
+      {
+        "label": "Docs",
+        "href": "faq"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Blog",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Changelog",
+        "href": "features"
+      }
+    ],
+    "cta": "Sign in with GitHub",
+    "cta2": "Docs"
+  },
+  "hero": {
+    "eyebrow": "Run models with an API",
+    "title": "Run open-source models with <em>one line of code</em>",
+    "sub": "Thousands of community models, packaged and versioned, callable from any language. You pay by the second and only while a model is actually running.",
+    "cta1": "Start building",
+    "cta2": "Explore models",
+    "image": "photo-1555066931-4365d14bab8c",
+    "ratio": 0.62,
+    "stats": [
+      {
+        "v": "40k+",
+        "l": "Models"
+      },
+      {
+        "v": "Per second",
+        "l": "Billing"
+      },
+      {
+        "v": "0",
+        "l": "Idle cost"
+      }
+    ]
+  },
+  "logo_lead": "Built with Rerun",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "The platform",
+    "title": "Someone else already packaged it",
+    "sub": "Every model arrives containerised, versioned and with a typed input schema, so running it is an API call rather than a weekend.",
+    "items": [
+      {
+        "icon": "ph-package",
+        "title": "Packaged models",
+        "body": "Each model is a container with a declared schema. No dependency hell, no CUDA archaeology."
+      },
+      {
+        "icon": "ph-clock",
+        "title": "Per-second billing",
+        "body": "You pay while the model runs and nothing while it does not. Cold starts are not billed."
+      },
+      {
+        "icon": "ph-git-branch",
+        "title": "Versioned",
+        "body": "Every model has an immutable version hash, so a result you got last year is reproducible today."
+      },
+      {
+        "icon": "ph-upload-simple",
+        "title": "Push your own",
+        "body": "Wrap any model with a small config file and deploy it with one command."
+      },
+      {
+        "icon": "ph-arrows-out",
+        "title": "Scales to zero",
+        "body": "Traffic spikes scale out automatically and back to nothing. No cluster to keep warm."
+      },
+      {
+        "icon": "ph-webhooks-logo",
+        "title": "Webhooks",
+        "body": "Long-running predictions call you back rather than holding a connection open."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "Reproducibility",
+      "title": "A version hash, not a moving target",
+      "body": "Models are pinned to an immutable version. When a maintainer ships an update it becomes a new version rather than silently changing the behaviour of the one you already shipped against.",
+      "points": [
+        "Immutable version hashes",
+        "Old versions stay callable",
+        "Full input and output logged per prediction"
+      ],
+      "image": "photo-1518770660439-4636190af475",
+      "cta": "Read about versioning"
+    },
+    {
+      "eyebrow": "Deploying",
+      "title": "Push your own model in an afternoon",
+      "body": "Write a small config declaring your inputs and a predict function. One command builds the container, pushes it, and gives you an API endpoint with a generated schema and playground.",
+      "points": [
+        "One config file and one command",
+        "Generated schema and playground",
+        "Private models supported"
+      ],
+      "image": "photo-1526374965328-7f61d4dc18c5",
+      "cta": "Deploy a model"
+    }
+  ],
+  "metric_lead": "Across the platform",
+  "metrics": [
+    {
+      "v": "40k+",
+      "l": "Models"
+    },
+    {
+      "v": "Per second",
+      "l": "Billing granularity"
+    },
+    {
+      "v": "0",
+      "l": "Cost while idle"
+    },
+    {
+      "v": "18ms",
+      "l": "API overhead"
+    }
+  ],
+  "gallery": {
+    "title": "Explore",
+    "sub": "A slice of what the community has published this month.",
+    "items": [
+      {
+        "id": "photo-1541701494587-cb58502866ab",
+        "tag": "Image",
+        "ratio": 1.15
+      },
+      {
+        "id": "photo-1567095761054-7a02e69e5c43",
+        "tag": "Video",
+        "ratio": 0.85
+      },
+      {
+        "id": "photo-1505740420928-5e560c06d30e",
+        "tag": "Audio",
+        "ratio": 1.05
+      },
+      {
+        "id": "photo-1614850523459-c2f4c699c52e",
+        "tag": "Diffusion",
+        "ratio": 0.9
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Language",
+        "ratio": 1.2
+      },
+      {
+        "id": "photo-1620641788421-7a1c342ea42e",
+        "tag": "Upscaling",
+        "ratio": 0.95
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "We shipped an image feature in two days because somebody had already packaged the model properly. The alternative was three weeks and a GPU cluster nobody wanted to own.",
+    "name": "Rosa Delgado",
+    "role": "Engineering Lead, Tessera",
+    "avatar": "photo-1494790108377-be9c29b29330"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "sub": "Pay by the second of compute. Nothing while idle.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "",
+        "desc": "Enough credit to evaluate.",
+        "features": [
+          "$10 of credit",
+          "All public models",
+          "Community support",
+          "Public predictions"
+        ],
+        "cta": "Sign in with GitHub"
+      },
+      {
+        "name": "Pay as you go",
+        "price": "Per second",
+        "period": "of compute",
+        "desc": "For production.",
+        "features": [
+          "No commitment",
+          "Private models",
+          "Webhooks",
+          "Email support"
+        ],
+        "cta": "Start building",
+        "featured": true,
+        "badge": "Most teams"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "desc": "Dedicated capacity.",
+        "features": [
+          "Reserved GPUs",
+          "Private deployment",
+          "SSO and audit",
+          "Named support"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "How does per-second billing work?",
+        "a": "You are billed for the seconds a prediction actually runs on hardware. Cold-start time is not billed, and an idle model costs nothing."
+      },
+      {
+        "q": "Can I run a private model?",
+        "a": "Yes. Push it with the same tooling as a public one and it stays visible only to your account, with the same API shape."
+      },
+      {
+        "q": "What happens when a model updates?",
+        "a": "Nothing to your integration. Updates become new immutable versions; the version you pinned keeps working indefinitely."
+      },
+      {
+        "q": "Which hardware runs my model?",
+        "a": "The maintainer declares the requirement and we schedule accordingly, from a T4 up to an H100. The tier used is shown on every prediction."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Run your first model",
+    "sub": "Sign in with GitHub and get $10 of credit. No card.",
+    "btn1": "Start building",
+    "btn2": "Explore models"
+  },
+  "footer": {
+    "tagline": "Run open-source models with an API.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Explore",
+          "Deploy",
+          "Pricing",
+          "Changelog"
+        ]
+      },
+      {
+        "title": "Docs",
+        "links": [
+          "Quickstart",
+          "API reference",
+          "Deploying",
+          "Webhooks"
+        ]
+      },
+      {
+        "title": "Community",
+        "links": [
+          "Discord",
+          "GitHub",
+          "Blog",
+          "Showcase"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Support",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Rerun Labs"
+  },
+  "specimen": "One line of code",
+  "notes": [
+    "Warm cream replaces white as the canvas, with a bone tint for inset cards.",
+    "Hot orange is reserved for the primary CTA, the hero band and inline links. It is never decorative.",
+    "Display headlines run enormous — up to 128px in hero bands — at line-height 1.0 with negative tracking.",
+    "Every interactive element is fully rounded; content cards step back to a modest 10px.",
+    "Dark code wells sit inside the cream canvas as full-bleed reading surfaces, functioning like print pull-quotes."
+  ]
+}

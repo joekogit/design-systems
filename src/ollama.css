@@ -1,0 +1,53 @@
+/* Ollama — one continuous white sheet, pills everywhere, black CTAs. */
+:root { --maxw: 1080px; --sect: clamp(52px, 6.5vw, 88px); --shadow-1: none; --shadow-2: none; }
+
+.nav { --nav-bg: rgba(255,255,255,.94); backdrop-filter: blur(8px); border-bottom-color: transparent; }
+.brand { font-weight: 800; letter-spacing: -.03em; }
+.brand-ico { color: var(--c-ink); }
+.btn { border-radius: var(--r-pill); font-weight: 700; padding: 13px 26px; }
+.btn-primary { background: #000; color: #fff; }
+.btn-primary:hover { background: #333; }
+.btn-secondary { background: #f4f4f4; border-color: transparent; }
+.btn-secondary:hover { background: #e8e8e8; border-color: transparent; }
+.eyebrow { display: none; }
+.hero { text-align: center; }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 800; letter-spacing: -.035em; }
+.hero-title em { color: var(--c-ink-subtle); }
+/* the signature: an inline install snippet directly under the headline */
+.hero-sub::after {
+  content: "$ localhost run llama3"; display: block; width: fit-content; margin: 20px auto 0;
+  padding: 13px 24px; border-radius: var(--r-pill); background: #f4f4f4;
+  font-family: var(--font-mono); font-size: 14px; color: #111; }
+/* the one product preview: a terminal card with traffic lights */
+.hero.v-centered .hero-media { border: 1px solid #e6e6e6; border-radius: var(--r-lg); overflow: hidden; }
+.hero.v-centered .hero-media::before {
+  content: ""; display: block; height: 32px; background: #f4f4f4; border-bottom: 1px solid #e6e6e6;
+  background-image: radial-gradient(4px 4px at 16px 16px, #ff5f57 99%, transparent),
+                    radial-gradient(4px 4px at 34px 16px, #febc2e 99%, transparent),
+                    radial-gradient(4px 4px at 52px 16px, #28c840 99%, transparent); }
+.hero-media img { border: 0; border-radius: 0; }
+
+.logos { border-block-color: #ededed; }
+.logo-item { font-weight: 700; }
+.feat-card { background: transparent; border: 0; padding-inline: 0; }
+.feat-ico { background: #f4f4f4; border: 0; border-radius: var(--r-pill); color: #000; width: 46px; height: 46px; }
+.sc-media img, .g-item { border-radius: var(--r-lg); border-color: #e6e6e6; }
+.metrics { --metrics-bg: transparent; border-block-color: #ededed; }
+.g-item figcaption { background: rgba(0,0,0,.8); border-radius: var(--r-pill); }
+.quote-card { background: #f9f9f9; border: 0; border-radius: var(--r-xl); }
+.q-av { border-radius: var(--r-pill); }
+.tier { background: #f9f9f9; border: 0; border-radius: var(--r-xl); }
+.tier-feat { outline: 2px solid #000; outline-offset: -2px; background: #fff; }
+/* the dark card breaks the flat white exactly once */
+.tier:last-child { background: #111; color: #fff; }
+.tier:last-child .tier-name, .tier:last-child .tier-num { color: #fff; }
+.tier:last-child .tier-desc, .tier:last-child .tier-feats li { color: #a8a8a8; }
+.tier:last-child .tier-feats i { color: #fff; }
+.tier:last-child .btn-secondary { background: #fff; color: #000; }
+.tier-badge { background: #000; border-radius: var(--r-pill); }
+.faq-item { border-bottom-color: #ededed; }
+.faq-mk { color: #000; }
+.cta-band { background: #f9f9f9; border: 0; border-radius: var(--r-xxl); }
+.spec { --spec-bg: #f9f9f9; }
+.input, .badge2, .tabs, .tabs button { border-radius: var(--r-pill); }
+.sw-val, .ts-meta code { font-family: var(--font-mono); }

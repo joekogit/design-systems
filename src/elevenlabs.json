@@ -1,0 +1,82 @@
+{
+  "slug": "elevenlabs", "name": "ElevenLabs", "category": "AI & LLM platforms",
+  "look": "Off-white canvas with warm near-black ink, no saturated CTA colour, and pastel gradient orbs carrying all the brand voltage.",
+  "scheme": "light", "icon_weights": ["regular", "fill"],
+  "fonts": { "google": "https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&family=Inter:wght@400;500;600&display=swap",
+    "display": "\"Archivo\", -apple-system, BlinkMacSystemFont, sans-serif",
+    "body": "\"Inter\", -apple-system, BlinkMacSystemFont, sans-serif",
+    "mono": "ui-monospace, SFMono-Regular, Menlo, monospace" },
+  "variants": { "nav": "bar", "hero": "centered", "features": "grid", "cards": "flat", "gallery": "masonry" },
+  "brand": { "mark": "ph-waveform", "name": "Timbre" },
+  "nav": { "links": [{"label":"Products","href":"features"},{"label":"Voices","href":"gallery"},{"label":"Enterprise","href":"showcase-1"},{"label":"Pricing","href":"pricing"},{"label":"Docs","href":"faq"}], "cta": "Get started", "cta2": "Sign in" },
+  "hero": {
+    "eyebrow": "Timbre Audio",
+    "title": "The most realistic <em>voice AI</em> platform",
+    "sub": "Text to speech in thirty-two languages, voice cloning from sixty seconds of audio, and dubbing that keeps the performance rather than flattening it.",
+    "cta1": "Start free", "cta2": "Hear a sample",
+    "image": "photo-1505740420928-5e560c06d30e", "ratio": 0.6,
+    "stats": [{"v":"32","l":"Languages"},{"v":"75ms","l":"Streaming latency"},{"v":"60s","l":"To clone a voice"}]
+  },
+  "logo_lead": "Trusted by studios and publishers",
+  "logos": ["Northwind", "Corva", "Tessera", "Perigee", "Basisplan", "Halyard"],
+  "features": {
+    "eyebrow": "The platform",
+    "title": "Voice that carries the performance",
+    "sub": "Prosody, emphasis and breath — the parts that make synthesis stop sounding synthetic.",
+    "items": [
+      {"icon":"ph-microphone","title":"Text to speech","body":"Thirty-two languages with emotion and pacing inferred from the text rather than dictated by tags."},
+      {"icon":"ph-user-sound","title":"Voice cloning","body":"A usable clone from sixty seconds of clean audio, with consent verification built into the flow."},
+      {"icon":"ph-translate","title":"Dubbing","body":"Translate and re-voice a video while keeping the original speaker's timbre and timing."},
+      {"icon":"ph-broadcast","title":"Streaming","body":"Seventy-five millisecond first-byte latency, fast enough for a live conversational agent."},
+      {"icon":"ph-sliders","title":"Fine control","body":"Stability, similarity and style exposed as dials, with the defaults tuned for narration."},
+      {"icon":"ph-shield-check","title":"Provenance","body":"Every generation is watermarked and traceable, and cloning requires verified consent."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"Dubbing","title":"The same performance, another language","body":"Dubbing preserves the speaker's timbre and the timing of the original delivery, so a translated documentary still sounds like the person who made it rather than a stock narrator reading a transcript.","points":["Speaker timbre preserved across languages","Timing matched to the original delivery","Per-speaker separation on multi-voice audio"],"image":"photo-1516035069371-29a1b244cc32","cta":"Explore dubbing"},
+    {"eyebrow":"Enterprise","title":"Consent and provenance, by design","body":"Voice cloning requires verified consent from the speaker, every generation carries an inaudible watermark, and there is a public tool for checking whether a clip came from us.","points":["Verified consent required to clone","Inaudible watermark on every generation","Public detection tool"],"image":"photo-1558494949-ef010cbdcc31","cta":"Read about safety"}
+  ],
+  "metric_lead": "Across the platform",
+  "metrics": [{"v":"32","l":"Languages"},{"v":"75ms","l":"Streaming latency"},{"v":"1.2M","l":"Creators"},{"v":"100%","l":"Generations watermarked"}],
+  "gallery": {
+    "title": "Voice library",
+    "sub": "Thousands of voices shared by their owners, each with the licence terms attached.",
+    "items": [
+      {"id":"photo-1505740420928-5e560c06d30e","tag":"Narration","ratio":0.9},
+      {"id":"photo-1516035069371-29a1b244cc32","tag":"Documentary","ratio":1.2},
+      {"id":"photo-1567095761054-7a02e69e5c43","tag":"Character","ratio":0.85},
+      {"id":"photo-1541701494587-cb58502866ab","tag":"Advertising","ratio":1.1},
+      {"id":"photo-1550684376-efcbd6e3f031","tag":"Audiobook","ratio":0.95},
+      {"id":"photo-1579546929518-9e396f3cc809","tag":"Conversational","ratio":1.05}
+    ]
+  },
+  "testimonial": {"quote":"We dubbed a forty-minute documentary into six languages in an afternoon. The director's note was that the Portuguese version sounded more like him than the English one did.",
+    "name":"Léa Moreau", "role":"Post Supervisor, Corva Films", "avatar":"photo-1438761681033-6461ffad8d80"},
+  "pricing": { "title": "Pricing", "sub": "Free to start. Characters roll over on paid plans.",
+    "tiers": [
+      {"name":"Free","price":"$0","period":"/month","desc":"For trying it out.","features":["10k characters","Voice library access","Non-commercial licence","Community support"],"cta":"Start free"},
+      {"name":"Creator","price":"$22","period":"/month","desc":"For working creators.","features":["100k characters","Voice cloning","Commercial licence","Priority rendering"],"cta":"Get Creator","featured":true,"badge":"Most creators"},
+      {"name":"Scale","price":"Custom","period":"","desc":"For studios and platforms.","features":["Pooled characters","Dedicated capacity","SSO and audit logs","Named support"],"cta":"Contact sales"}
+    ]},
+  "faq": {"title":"Questions","items":[
+    {"q":"Can I clone anyone's voice?","a":"No. Cloning requires verified consent from the speaker, captured through a recorded confirmation phrase. Uploading someone else's audio without it will not produce a clone."},
+    {"q":"Who owns the audio I generate?","a":"You do, on any paid plan, including commercial use. Free-tier output is licensed for non-commercial use and must credit the platform."},
+    {"q":"How do the watermarks work?","a":"Every generation carries an inaudible signal that survives normal compression. A public tool checks whether a clip originated here, and it is free to use."},
+    {"q":"What is the real latency?","a":"Seventy-five milliseconds to first byte on the streaming endpoint, measured from the nearest region. Full-file generation is slower and depends on length."}
+  ]},
+  "cta": {"title":"Hear it for yourself","sub":"Ten thousand characters free, no card, and the voice library is open from the start.","btn1":"Start free","btn2":"Read the docs"},
+  "footer": {"tagline":"Voice AI that carries the performance.","columns":[
+    {"title":"Products","links":["Text to speech","Voice cloning","Dubbing","Streaming"]},
+    {"title":"Developers","links":["API reference","SDKs","Changelog","Status"]},
+    {"title":"Resources","links":["Voice library","Guides","Blog","Support"]},
+    {"title":"Company","links":["About","Safety","Careers","Legal"]}
+  ],"legal":"© 2026 Timbre Audio"},
+  "specimen": "Hear the difference",
+  "notes": [
+    "There is no saturated CTA colour. The single primary action is an ink pill, and all the brand voltage comes from the atmospheric gradients.",
+    "Pastel gradient orbs — mint, peach, lavender, sky, rose — are decoration only. Putting one behind a button breaks the system.",
+    "Display runs at weight 300 for an editorial magazine voice; body is a sans at 400 with slightly positive tracking.",
+    "Geometry is soft: pills for CTAs, generous rounding on cards, nothing sharp.",
+    "Section rhythm is 96px throughout, which is what keeps the page feeling unhurried."
+  ]
+}

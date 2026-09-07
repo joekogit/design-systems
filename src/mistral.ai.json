@@ -1,0 +1,334 @@
+{
+  "slug": "mistral.ai",
+  "name": "Mistral",
+  "category": "AI & LLM platforms",
+  "look": "Atmospheric sunset photography, cream-yellow surfaces and a saturated orange CTA, closing on a horizontal sunset stripe.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Instrument Serif\", Georgia, serif",
+    "body": "\"Inter\", -apple-system, BlinkMacSystemFont, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-mountains",
+    "name": "Sierra"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Models",
+        "href": "features"
+      },
+      {
+        "label": "Platform",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Research",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Docs",
+        "href": "gallery"
+      }
+    ],
+    "cta": "Try the API",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "Sierra Large 3",
+    "title": "Frontier models, <em>open weights</em>",
+    "sub": "Open-weight models you can run on your own hardware, and a hosted API for when you would rather not. Same weights either way — no distilled 'community edition'.",
+    "cta1": "Try the API",
+    "cta2": "Download weights",
+    "image": "photo-1493246507139-91e8fad9978e",
+    "ratio": 0.7,
+    "stats": [
+      {
+        "v": "123B",
+        "l": "Parameters"
+      },
+      {
+        "v": "128k",
+        "l": "Context"
+      },
+      {
+        "v": "Apache 2.0",
+        "l": "Licence"
+      }
+    ]
+  },
+  "logo_lead": "Deployed by",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "The models",
+    "title": "Open where it counts",
+    "sub": "Weights you can inspect, fine-tune and run in your own data centre.",
+    "items": [
+      {
+        "icon": "ph-brain",
+        "title": "Open weights",
+        "body": "The published weights are the production weights. Download, fine-tune, and run them anywhere without asking permission."
+      },
+      {
+        "icon": "ph-cpu",
+        "title": "Runs on your hardware",
+        "body": "Quantised builds fit on a single 80GB card; the smaller line runs on a laptop."
+      },
+      {
+        "icon": "ph-code",
+        "title": "Strong at code",
+        "body": "Trained heavily on code, with fill-in-the-middle for editor integrations."
+      },
+      {
+        "icon": "ph-translate",
+        "title": "Genuinely multilingual",
+        "body": "European languages treated as first class rather than as an English model's afterthought."
+      },
+      {
+        "icon": "ph-function",
+        "title": "Function calling",
+        "body": "Structured output and tool use with a schema the model actually respects."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "Data stays in Europe",
+        "body": "The hosted API runs in EU regions, with residency guaranteed contractually."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "Platform",
+      "title": "Hosted when you want it, local when you do not",
+      "body": "The same model runs behind our API or inside your own VPC. Teams typically prototype on the API and move the sensitive workloads in-house later, without changing a line of the prompt.",
+      "points": [
+        "Identical weights hosted and self-hosted",
+        "OpenAI-compatible endpoint",
+        "EU data residency contractually guaranteed"
+      ],
+      "image": "photo-1558494949-ef010cbdcc31",
+      "cta": "Explore the platform"
+    },
+    {
+      "eyebrow": "Research",
+      "title": "We publish the weights, not just the paper",
+      "body": "Every frontier release ships with downloadable weights under a permissive licence. The benchmarks are reproducible because you can run them yourself on the same artefact we evaluated.",
+      "points": [
+        "Apache 2.0 on the open line",
+        "Reproducible evaluation harness",
+        "Model cards with known weaknesses"
+      ],
+      "image": "photo-1581091226033-d5c48150dbaa",
+      "cta": "Read the research"
+    }
+  ],
+  "metric_lead": "Sierra Large 3",
+  "metrics": [
+    {
+      "v": "123B",
+      "l": "Parameters"
+    },
+    {
+      "v": "128k",
+      "l": "Context window"
+    },
+    {
+      "v": "8",
+      "l": "Languages at parity"
+    },
+    {
+      "v": "Apache 2.0",
+      "l": "Open licence"
+    }
+  ],
+  "gallery": {
+    "title": "Documentation",
+    "sub": "Quickstarts, deployment guides and the fine-tuning cookbook.",
+    "items": [
+      {
+        "id": "photo-1498050108023-c5249f4df085",
+        "tag": "Quickstart",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "Fine-tuning",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Self-hosting",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Inference",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "Quantisation",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1547658719-da2b51169166",
+        "tag": "Integrations",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "We ran the benchmark ourselves on the downloaded weights and got the published number. That sounds like a low bar until you try it with anyone else.",
+    "name": "Thomas Girard",
+    "role": "ML Lead, Basisplan",
+    "avatar": "photo-1573496359142-b8d87734a5a2"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "sub": "Per token on the API. Free to download and self-host.",
+    "tiers": [
+      {
+        "name": "Open",
+        "price": "€0",
+        "period": "",
+        "desc": "Download and run it yourself.",
+        "features": [
+          "Apache 2.0 licence",
+          "Full weights",
+          "Community support",
+          "Commercial use"
+        ],
+        "cta": "Download weights"
+      },
+      {
+        "name": "API",
+        "price": "€0.40",
+        "period": "/M tokens",
+        "desc": "Hosted, in EU regions.",
+        "features": [
+          "No infrastructure",
+          "EU data residency",
+          "Function calling",
+          "Email support"
+        ],
+        "cta": "Get an API key",
+        "featured": true,
+        "badge": "Most teams"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "desc": "Dedicated capacity or in your VPC.",
+        "features": [
+          "Dedicated throughput",
+          "VPC deployment",
+          "Fine-tuning support",
+          "Named engineer"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Common questions",
+    "items": [
+      {
+        "q": "Are the open weights the same as the API model?",
+        "a": "Yes, on the open line. There is no distilled 'community edition' — the artefact you download is the one the published benchmarks were run against."
+      },
+      {
+        "q": "What licence are they under?",
+        "a": "Apache 2.0 on the open line, including commercial use, with no revenue threshold and no usage reporting requirement."
+      },
+      {
+        "q": "Where does the hosted API run?",
+        "a": "In EU regions only, with residency guaranteed contractually rather than as a best-effort setting."
+      },
+      {
+        "q": "Can I fine-tune?",
+        "a": "Yes, locally with the published weights, or through the hosted fine-tuning API which returns a private model you alone can call."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start with the weights",
+    "sub": "Download and run them today, or get an API key in about two minutes.",
+    "btn1": "Try the API",
+    "btn2": "Download weights"
+  },
+  "footer": {
+    "tagline": "Frontier models with open weights.",
+    "columns": [
+      {
+        "title": "Models",
+        "links": [
+          "Sierra Large",
+          "Sierra Small",
+          "Embeddings",
+          "Code"
+        ]
+      },
+      {
+        "title": "Platform",
+        "links": [
+          "API",
+          "Fine-tuning",
+          "Self-hosting",
+          "Pricing"
+        ]
+      },
+      {
+        "title": "Developers",
+        "links": [
+          "Documentation",
+          "Cookbook",
+          "SDKs",
+          "Status"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Research",
+          "Careers",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Sierra AI"
+  },
+  "specimen": "Open where it counts",
+  "notes": [
+    "Atmospheric sunset photography carries the hero — orange through red to yellow, never a flat colour field.",
+    "The horizontal sunset stripe closes every page. It is the brand's signature and it belongs at the bottom, not repeated mid-page.",
+    "Cream-yellow surfaces carry form panels and feature cards, warming an otherwise white page.",
+    "A near-serif display pairs with a sans for everything else — editorial geometry rather than playful.",
+    "The saturated orange CTA carries every action call. Buttons stay at 8px and cards at 12px."
+  ]
+}

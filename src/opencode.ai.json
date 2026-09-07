@@ -1,0 +1,333 @@
+{
+  "slug": "opencode.ai",
+  "name": "opencode",
+  "category": "AI & LLM platforms",
+  "look": "Monospace across every text role on one warm cream sheet, ASCII bracket bullets, and a single dark TUI mockup.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular"
+  ],
+  "fonts": {
+    "display": "\"JetBrains Mono\", ui-monospace, Menlo, monospace",
+    "body": "\"JetBrains Mono\", ui-monospace, Menlo, monospace",
+    "mono": "\"JetBrains Mono\", ui-monospace, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "terminal",
+    "features": "list",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-terminal",
+    "name": "opencode"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "docs",
+        "href": "gallery"
+      },
+      {
+        "label": "models",
+        "href": "features"
+      },
+      {
+        "label": "pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "github",
+        "href": "faq"
+      },
+      {
+        "label": "blog",
+        "href": "showcase-1"
+      }
+    ],
+    "cta": "install",
+    "cta2": "log in"
+  },
+  "hero": {
+    "eyebrow": "v0.9.4 — terminal native",
+    "title": "the coding agent that <em>lives in your terminal</em>",
+    "sub": "no editor fork, no extension, no browser tab. a TUI that reads your repo, runs your tests, and shows every command before it runs it.",
+    "cta1": "install",
+    "cta2": "read the docs",
+    "image": "photo-1526374965328-7f61d4dc18c5",
+    "ratio": 0.6,
+    "stats": [
+      {
+        "v": "18mb",
+        "l": "binary"
+      },
+      {
+        "v": "0",
+        "l": "telemetry"
+      },
+      {
+        "v": "mit",
+        "l": "licence"
+      }
+    ]
+  },
+  "logo_lead": "works with",
+  "logos": [
+    "zsh",
+    "bash",
+    "fish",
+    "tmux",
+    "neovim",
+    "ssh"
+  ],
+  "features": {
+    "eyebrow": "[ features ]",
+    "title": "built for people who already live in a terminal",
+    "sub": "no gui, no account, no cloud state. it reads the repo on disk and edits files in place.",
+    "items": [
+      {
+        "icon": "ph-terminal-window",
+        "title": "tui first",
+        "body": "a full-screen terminal interface with panes, scrollback and vim keybindings. runs fine over ssh."
+      },
+      {
+        "icon": "ph-git-diff",
+        "title": "diffs before writes",
+        "body": "every edit is shown as a diff and applied only when you accept it. nothing is written silently."
+      },
+      {
+        "icon": "ph-plugs",
+        "title": "any model",
+        "body": "openai, anthropic, google, or a local endpoint. bring your own key and it never touches ours."
+      },
+      {
+        "icon": "ph-file-magnifying-glass",
+        "title": "repo aware",
+        "body": "builds a local index of the tree, so a question about one file knows about its callers."
+      },
+      {
+        "icon": "ph-play",
+        "title": "runs your tests",
+        "body": "executes the command you configure, reads the failure, and iterates until it passes or you stop it."
+      },
+      {
+        "icon": "ph-lock-simple",
+        "title": "no telemetry",
+        "body": "zero network calls except to the model provider you configured. verify it with tcpdump."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "[ workflow ]",
+      "title": "every command shown before it runs",
+      "body": "the agent proposes a command, you see it, you approve or reject. no hidden shell execution, and a full transcript of what ran is written to the session log.",
+      "points": [
+        "[+] every command shown before execution",
+        "[+] full session transcript on disk",
+        "[-] no hidden shell access"
+      ],
+      "image": "photo-1555066931-4365d14bab8c",
+      "cta": "read the workflow docs"
+    },
+    {
+      "eyebrow": "[ open source ]",
+      "title": "mit licensed, all of it",
+      "body": "the whole binary is open source under mit, including the agent loop. there is no hosted component and no paid core — the paid tier is a managed model proxy, and it is optional.",
+      "points": [
+        "[+] mit licence, commercial use fine",
+        "[+] no hosted component required",
+        "[+] reproducible builds"
+      ],
+      "image": "photo-1518770660439-4636190af475",
+      "cta": "view on github"
+    }
+  ],
+  "metric_lead": "[ at a glance ]",
+  "metrics": [
+    {
+      "v": "18mb",
+      "l": "binary size"
+    },
+    {
+      "v": "0",
+      "l": "telemetry calls"
+    },
+    {
+      "v": "mit",
+      "l": "licence"
+    },
+    {
+      "v": "3",
+      "l": "platforms"
+    }
+  ],
+  "gallery": {
+    "title": "[ docs ]",
+    "sub": "install, configuration, keybindings and the agent protocol.",
+    "items": [
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "install",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "config",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1498050108023-c5249f4df085",
+        "tag": "keybindings",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "protocol",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "ssh",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1487017159836-4e23ece2e4cf",
+        "tag": "recipes",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "i ran it over ssh on a box with no gui and it just worked. that is a low bar that almost nothing else in this category clears.",
+    "name": "sam okafor",
+    "role": "platform engineer",
+    "avatar": "photo-1472099645785-5658abf4ff4e"
+  },
+  "pricing": {
+    "title": "[ pricing ]",
+    "sub": "the tool is free. the optional proxy is not.",
+    "tiers": [
+      {
+        "name": "oss",
+        "price": "$0",
+        "period": "forever",
+        "desc": "bring your own key.",
+        "features": [
+          "[+] full tui",
+          "[+] any provider",
+          "[+] mit licence",
+          "[+] github issues"
+        ],
+        "cta": "install"
+      },
+      {
+        "name": "pro",
+        "price": "$15",
+        "period": "/month",
+        "desc": "managed model proxy.",
+        "features": [
+          "[+] everything in oss",
+          "[+] managed proxy",
+          "[+] usage dashboard",
+          "[+] email support"
+        ],
+        "cta": "get pro",
+        "featured": true,
+        "badge": "[ most users ]"
+      },
+      {
+        "name": "team",
+        "price": "$30",
+        "period": "/user/mo",
+        "desc": "shared config and audit.",
+        "features": [
+          "[+] everything in pro",
+          "[+] shared configs",
+          "[+] audit log",
+          "[+] sso"
+        ],
+        "cta": "contact us"
+      }
+    ]
+  },
+  "faq": {
+    "title": "[ faq ]",
+    "items": [
+      {
+        "q": "does it need an account?",
+        "a": "no. the oss build reads a provider key from your environment and never contacts us. an account exists only for the optional managed proxy."
+      },
+      {
+        "q": "will it work over ssh?",
+        "a": "yes, that is the point. it is a terminal program with no gui dependency, so it runs on a headless box the same as on a laptop."
+      },
+      {
+        "q": "can it use a local model?",
+        "a": "yes. point it at any openai-compatible endpoint, including a local runtime, and it works identically."
+      },
+      {
+        "q": "what gets written to disk?",
+        "a": "a session transcript and a local index under the project directory, both gitignored by default. nothing else."
+      }
+    ]
+  },
+  "cta": {
+    "title": "[ install ]",
+    "sub": "one binary, no account, mit licensed.",
+    "btn1": "install",
+    "btn2": "read the docs"
+  },
+  "footer": {
+    "tagline": "a coding agent that lives in your terminal.",
+    "columns": [
+      {
+        "title": "product",
+        "links": [
+          "install",
+          "models",
+          "config",
+          "changelog"
+        ]
+      },
+      {
+        "title": "docs",
+        "links": [
+          "quickstart",
+          "keybindings",
+          "protocol",
+          "faq"
+        ]
+      },
+      {
+        "title": "community",
+        "links": [
+          "github",
+          "discord",
+          "issues",
+          "contribute"
+        ]
+      },
+      {
+        "title": "legal",
+        "links": [
+          "licence",
+          "privacy",
+          "terms",
+          "security"
+        ]
+      }
+    ],
+    "legal": "© 2026 opencode"
+  },
+  "specimen": "cd ~/src && opencode",
+  "notes": [
+    "Every text role is monospace. There is no sans-serif anywhere in the chrome, and introducing one breaks the entire identity.",
+    "One warm cream body background across the whole page — no surface alternation between sections.",
+    "A single dark surface exists, reserved exclusively for the hero TUI mockup.",
+    "ASCII bracket markers ([+], [-], [x]) serve as bullet glyphs in feature lists and FAQ rows.",
+    "Interactive elements take a 4px radius; sections themselves are sharp rectangles separated by 1px hairlines with no decorative dividers."
+  ]
+}

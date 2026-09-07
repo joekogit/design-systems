@@ -1,0 +1,334 @@
+{
+  "slug": "x.ai",
+  "name": "xAI",
+  "category": "AI & LLM platforms",
+  "look": "Near-black canvas where white outline pills are the entire interactive vocabulary, with mono uppercase labels against weight-400 display.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "bold"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "minimal",
+    "hero": "centered",
+    "features": "grid",
+    "cards": "bordered",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-x",
+    "name": "Axiom"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "MODELS",
+        "href": "features"
+      },
+      {
+        "label": "API",
+        "href": "gallery"
+      },
+      {
+        "label": "COMPANY",
+        "href": "showcase-1"
+      },
+      {
+        "label": "CAREERS",
+        "href": "faq"
+      },
+      {
+        "label": "NEWS",
+        "href": "showcase-0"
+      }
+    ],
+    "cta": "SIGN UP",
+    "cta2": "SIGN IN"
+  },
+  "hero": {
+    "eyebrow": "AXIOM 3",
+    "title": "Understand the <em>universe</em>",
+    "sub": "A frontier model trained for reasoning and real-time knowledge, with an API that does not pretend the world stopped at the training cutoff.",
+    "cta1": "SIGN UP",
+    "cta2": "READ THE DOCS",
+    "image": "photo-1446776653964-20c1d3a81b06",
+    "ratio": 0.56,
+    "stats": [
+      {
+        "v": "314B",
+        "l": "PARAMETERS"
+      },
+      {
+        "v": "Real time",
+        "l": "KNOWLEDGE"
+      },
+      {
+        "v": "1M",
+        "l": "CONTEXT"
+      }
+    ]
+  },
+  "logo_lead": "BUILT WITH AXIOM",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "CAPABILITIES",
+    "title": "Reasoning, and knowing what happened today",
+    "sub": "Two things most models are bad at, treated as the primary design targets.",
+    "items": [
+      {
+        "icon": "ph-brain",
+        "title": "Reasoning",
+        "body": "Extended chain-of-thought with the intermediate steps available, so you can audit how a conclusion was reached."
+      },
+      {
+        "icon": "ph-clock-clockwise",
+        "title": "Real-time knowledge",
+        "body": "Grounded in a live index rather than frozen at a training cutoff months ago."
+      },
+      {
+        "icon": "ph-function",
+        "title": "Tool use",
+        "body": "Structured function calling with schema adherence measured and published."
+      },
+      {
+        "icon": "ph-image",
+        "title": "Vision",
+        "body": "Reads charts, diagrams and screenshots at full resolution rather than a downsampled thumbnail."
+      },
+      {
+        "icon": "ph-code",
+        "title": "Code",
+        "body": "Strong on long-context refactors where the relevant callers are hundreds of files away."
+      },
+      {
+        "icon": "ph-gauge",
+        "title": "Fast",
+        "body": "Speculative decoding and a custom serving stack keep first-token latency under two hundred milliseconds."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "REASONING",
+      "title": "The steps are available, not hidden",
+      "body": "Extended reasoning is exposed rather than summarised away. When the model reaches a wrong conclusion you can see which step turned, which is the only way to fix a prompt rather than guess at it.",
+      "points": [
+        "Intermediate reasoning exposed",
+        "Configurable reasoning budget",
+        "Audit trail per response"
+      ],
+      "image": "photo-1526374965328-7f61d4dc18c5",
+      "cta": "READ THE MODEL CARD"
+    },
+    {
+      "eyebrow": "COMPANY",
+      "title": "Built by a small team, on purpose",
+      "body": "A deliberately small research organisation with a single frontier model line rather than a portfolio. Everything published — model cards, evaluations, safety framework — covers that one line properly.",
+      "points": [
+        "One model line, documented properly",
+        "Evaluations published with methodology",
+        "Safety framework public"
+      ],
+      "image": "photo-1581091226033-d5c48150dbaa",
+      "cta": "ABOUT THE COMPANY"
+    }
+  ],
+  "metric_lead": "AXIOM 3",
+  "metrics": [
+    {
+      "v": "314B",
+      "l": "PARAMETERS"
+    },
+    {
+      "v": "1M",
+      "l": "CONTEXT WINDOW"
+    },
+    {
+      "v": "< 200ms",
+      "l": "FIRST TOKEN"
+    },
+    {
+      "v": "Live",
+      "l": "KNOWLEDGE INDEX"
+    }
+  ],
+  "gallery": {
+    "title": "API",
+    "sub": "Reference, quickstarts and the tool-calling schema.",
+    "items": [
+      {
+        "id": "photo-1446776653964-20c1d3a81b06",
+        "tag": "OVERVIEW",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "QUICKSTART",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "REASONING",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "TOOLS",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "LIMITS",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1502920917128-1aa500764cbd",
+        "tag": "VISION",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "Being able to read the reasoning steps changed how we write prompts. We stopped guessing at what confused it and started reading where it turned.",
+    "name": "Nadia Rahman",
+    "role": "Research Engineer, Perigee",
+    "avatar": "photo-1534528741775-53994a69daeb"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Per token, published, with no enterprise tier hiding the number.",
+    "tiers": [
+      {
+        "name": "FREE",
+        "price": "$0",
+        "period": "",
+        "desc": "Rate-limited evaluation.",
+        "features": [
+          "$5 of credit",
+          "Full model access",
+          "Community support",
+          "Standard rate limits"
+        ],
+        "cta": "SIGN UP"
+      },
+      {
+        "name": "PRO",
+        "price": "$25",
+        "period": "/month",
+        "desc": "For individuals and small teams.",
+        "features": [
+          "Higher rate limits",
+          "Reasoning traces",
+          "Priority routing",
+          "Email support"
+        ],
+        "cta": "SIGN UP",
+        "featured": true,
+        "badge": "MOST USERS"
+      },
+      {
+        "name": "SCALE",
+        "price": "Custom",
+        "period": "",
+        "desc": "Dedicated throughput.",
+        "features": [
+          "Reserved capacity",
+          "99.9% SLA",
+          "Fine-tuning access",
+          "Named support"
+        ],
+        "cta": "CONTACT US"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "What does real-time knowledge mean?",
+        "a": "Responses are grounded in a live index updated continuously, rather than only in weights frozen at a training cutoff. Sources are cited so you can check them."
+      },
+      {
+        "q": "Can I see the reasoning?",
+        "a": "Yes, on Pro and above. Intermediate steps are returned as a separate field rather than folded into the answer."
+      },
+      {
+        "q": "Do you train on API data?",
+        "a": "No. API inputs and outputs are excluded from training, and there is no setting to remember or form to submit."
+      },
+      {
+        "q": "What is the context window?",
+        "a": "One million tokens, evaluated at depth with the per-depth results published, including where accuracy falls off."
+      }
+    ]
+  },
+  "cta": {
+    "title": "START BUILDING",
+    "sub": "Five dollars of credit, no card, full model access.",
+    "btn1": "SIGN UP",
+    "btn2": "READ THE DOCS"
+  },
+  "footer": {
+    "tagline": "Understand the universe.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Models",
+          "API",
+          "Pricing",
+          "Changelog"
+        ]
+      },
+      {
+        "title": "Developers",
+        "links": [
+          "Documentation",
+          "Reference",
+          "SDKs",
+          "Status"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "News",
+          "Safety"
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          "Privacy",
+          "Terms",
+          "Acceptable use",
+          "Security"
+        ]
+      }
+    ],
+    "legal": "© 2026 Axiom Research"
+  },
+  "specimen": "Understand the universe",
+  "notes": [
+    "White outline pills are the entire interactive vocabulary. Filled buttons appear once, for sign-up, and nowhere else.",
+    "The two-face contrast is the brand voice: weight-400 display against mono uppercase tracked labels.",
+    "Cards are tight 8px rectangles on a slightly lighter fill with a hairline border. There are no shadows.",
+    "A muted accent palette exists in the tokens but stays off the marketing surface, reserved for product illustration.",
+    "Display headlines carry heavy negative tracking — around -2.4px at 96px — for a precise, gathered look."
+  ]
+}

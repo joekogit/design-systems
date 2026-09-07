@@ -1,0 +1,51 @@
+/* Replicate — cream canvas, 128px display, hot orange, dark code wells. */
+:root { --maxw: 1220px; --sect: clamp(56px, 7vw, 96px); --shadow-1: none; --shadow-2: none;
+  --bone: #f2efe8; --dark-well: #1c1a17; }
+
+.nav { --nav-bg: rgba(249,247,243,.94); border-bottom-color: rgba(0,0,0,.1); }
+.brand { font-weight: 800; letter-spacing: -.03em; }
+.brand-ico { color: var(--c-primary); }
+/* every interactive element is fully rounded; cards step back to 10px */
+.btn, .input, .badge2, .tabs, .tabs button, .q-av { border-radius: var(--r-pill); }
+.btn { font-weight: 600; padding: 12px 24px; }
+.btn-secondary { background: var(--bone); border-color: transparent; }
+.btn-secondary:hover { background: #e9e5db; border-color: transparent; }
+.eyebrow { color: var(--c-primary); text-transform: none; letter-spacing: 0; font-weight: 600; }
+.t-display-xl { font-size: clamp(44px, 9vw, 116px); line-height: 1; letter-spacing: -.045em; font-weight: 800; }
+.t-display-lg, .t-display-md, .sc-title { line-height: 1.02; letter-spacing: -.04em; font-weight: 800; }
+.hero-title em { color: var(--c-primary); }
+a:not(.btn):not(.brand) { color: var(--c-primary); }
+
+.logos { border-block-color: rgba(0,0,0,.1); }
+.feat-card { background: var(--bone); border: 0; border-radius: 10px; padding: 24px; }
+.feat-card:hover { background: #ece7dd; }
+.feat-ico { background: rgba(234,40,4,.12); color: var(--c-primary); border: 0; border-radius: var(--r-pill); }
+.hero-media img, .sc-media img, .g-item { border-radius: 10px; border: 0; }
+/* dark code wells as print-style pull quotes */
+.metrics { --metrics-bg: var(--dark-well); border-block: 0; }
+.metrics .metric-v { color: var(--c-primary); font-family: var(--font-mono); }
+.metrics .metric-l, .metrics .logos-lead { color: #8f877c; }
+.g-item figcaption { background: rgba(28,26,23,.86); border-radius: var(--r-pill); font-family: var(--font-mono); font-size: 11px; }
+.quote-card { background: var(--dark-well); color: #f9f7f3; border: 0; border-radius: 10px;
+  --quote-align: left; --quote-by-just: flex-start; }
+.quote-text { color: #f9f7f3; }
+.quote-by b { color: #f9f7f3; } .quote-by span { color: #8f877c; }
+.quote-mark { color: var(--c-primary); }
+.tier { background: var(--bone); border: 0; border-radius: 10px; }
+.tier-feat { outline: 2px solid var(--c-primary); outline-offset: -2px; }
+.tier-badge { background: var(--c-primary); }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--c-primary); }
+.faq-item { border-bottom-color: rgba(0,0,0,.1); }
+/* the orange hero band role, used once at the close */
+.cta-band { background: var(--c-primary); color: #fff; border: 0; border-radius: 10px; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: rgba(255,255,255,.86); }
+.cta-band .btn-primary { background: #fff; color: var(--c-primary); }
+.cta-band .btn-secondary { background: rgba(0,0,0,.16); color: #fff; }
+.foot { background: #111; --foot-bg: #111; border-top: 0; }
+.foot .brand { color: #fff; }
+.fcol h4 { color: #8f877c; } .fcol a, .foot-tag { color: #d8d3c9; }
+.foot-legal { color: #8f877c; border-top-color: #2e2b27; }
+.foot-socials a { border-color: #2e2b27; color: #d8d3c9; }
+.spec { --spec-bg: var(--bone); }
+.sw-val, .ts-meta code { font-family: var(--font-mono); }

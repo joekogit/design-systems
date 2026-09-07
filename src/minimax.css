@@ -1,0 +1,53 @@
+/* MiniMax — stark monochrome broken by saturated per-line gradient cards. */
+:root { --maxw: 1200px; --sect: clamp(56px, 7vw, 96px); --shadow-1: none; --shadow-2: none;
+  --l-text: linear-gradient(150deg,#ff6b5e,#ff3d71); --l-music: linear-gradient(150deg,#e250d8,#9b30d9);
+  --l-video: linear-gradient(150deg,#3d8bff,#2f4dff); --l-speech: linear-gradient(150deg,#ffa53d,#ff6b1f); }
+
+.nav { --nav-bg: rgba(255,255,255,.94); backdrop-filter: blur(10px); }
+/* the black promo band above the nav — a time-bound moment, not standing chrome */
+.nav::before { content: "Vantage 3 is live — 1M token context, out now"; display: block;
+  background: #000; color: #fff; text-align: center; font-size: 12px; font-weight: 500;
+  padding: 9px 16px; letter-spacing: .01em; }
+.brand { font-weight: 700; letter-spacing: -.03em; }
+.btn { border-radius: var(--r-pill); font-weight: 500; padding: 12px 24px; }
+.btn-secondary { background: #f2f2f2; border-color: transparent; }
+.btn-secondary:hover { background: #e6e6e6; border-color: transparent; }
+.eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 700; color: var(--c-ink-subtle); }
+.hero { text-align: center; }
+.t-display-xl { line-height: 1.1; letter-spacing: -.042em; font-weight: 700; }
+.t-display-lg, .t-display-md, .sc-title { letter-spacing: -.035em; font-weight: 700; }
+.hero-title em { background: var(--l-text); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+.logos { border-block-color: #ececec; }
+.logo-item { font-weight: 700; }
+/* one saturated colour per product line */
+.feat-card { background: #f6f6f6; border: 0; border-radius: 20px; padding: 26px; }
+.feat-card:nth-child(1) { background: var(--l-text); color: #fff; }
+.feat-card:nth-child(2) { background: var(--l-music); color: #fff; }
+.feat-card:nth-child(3) { background: var(--l-video); color: #fff; }
+.feat-card:nth-child(4) { background: var(--l-speech); color: #fff; }
+.feat-card:nth-child(-n+4) .feat-body { color: rgba(255,255,255,.88); }
+.feat-card:nth-child(-n+4) .feat-ico { background: rgba(255,255,255,.22); color: #fff; }
+.feat-ico { background: #fff; color: #111; border: 0; border-radius: var(--r-pill); width: 44px; height: 44px; }
+.hero-media img, .sc-media img, .g-item { border-radius: 20px; border: 0; }
+.metrics { --metrics-bg: #000; border-block: 0; }
+.metrics .metric-v { color: #fff; }
+.metrics .metric-l, .metrics .logos-lead { color: #8a8a8a; }
+.g-item figcaption { background: rgba(0,0,0,.82); border-radius: var(--r-pill); }
+.quote-card { background: #f6f6f6; border: 0; border-radius: 24px; --quote-align: left; --quote-by-just: flex-start; }
+.q-av { border-radius: var(--r-pill); }
+.tier { background: #f6f6f6; border: 0; border-radius: 20px; }
+.tier-feat { background: #000; color: #fff; }
+.tier-feat .tier-name, .tier-feat .tier-num { color: #fff; }
+.tier-feat .tier-desc, .tier-feat .tier-feats li, .tier-feat .tier-per { color: #9a9a9a; }
+.tier-feat .tier-feats i { color: #fff; }
+.tier-feat .btn-primary { background: #fff; color: #000; }
+.tier-badge { background: #fff; color: #000; border-radius: var(--r-pill); letter-spacing: .1em; font-size: 10px; }
+.faq-item { border-bottom-color: #ececec; }
+.cta-band { background: #000; color: #fff; border: 0; border-radius: 24px; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: #9a9a9a; }
+.cta-band .btn-primary { background: #fff; color: #000; }
+.cta-band .btn-secondary { background: #1c1c1c; color: #fff; }
+.spec { --spec-bg: #f6f6f6; }
+.input, .badge2, .tabs, .tabs button { border-radius: var(--r-pill); }

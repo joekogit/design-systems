@@ -1,0 +1,334 @@
+{
+  "slug": "together.ai",
+  "name": "Together AI",
+  "category": "AI & LLM platforms",
+  "look": "Alternating dark and light bands with no in-between greys, mono-caps labels throughout, and a three-colour gradient ribbon as the only decoration.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "bold"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "centered",
+    "features": "grid",
+    "cards": "bordered",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-graph",
+    "name": "Confluence"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "MODELS",
+        "href": "gallery"
+      },
+      {
+        "label": "PRODUCTS",
+        "href": "features"
+      },
+      {
+        "label": "PRICING",
+        "href": "pricing"
+      },
+      {
+        "label": "RESEARCH",
+        "href": "showcase-1"
+      },
+      {
+        "label": "DOCS",
+        "href": "faq"
+      }
+    ],
+    "cta": "START BUILDING",
+    "cta2": "SIGN IN"
+  },
+  "hero": {
+    "eyebrow": "INFERENCE PLATFORM",
+    "title": "Run and fine-tune <em>open models</em> at scale",
+    "sub": "Two hundred open models on an inference stack built for throughput, plus GPU clusters when you need to train something of your own.",
+    "cta1": "START BUILDING",
+    "cta2": "VIEW PRICING",
+    "image": "photo-1558494949-ef010cbdcc31",
+    "ratio": 0.56,
+    "stats": [
+      {
+        "v": "200+",
+        "l": "MODELS"
+      },
+      {
+        "v": "4×",
+        "l": "FASTER INFERENCE"
+      },
+      {
+        "v": "H100",
+        "l": "CLUSTERS"
+      }
+    ]
+  },
+  "logo_lead": "RUNNING ON CONFLUENCE",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "PLATFORM",
+    "title": "Inference, fine-tuning and clusters",
+    "sub": "The three things you need to actually ship with open models, priced per token or per GPU-hour.",
+    "items": [
+      {
+        "icon": "ph-lightning",
+        "title": "Fast inference",
+        "body": "A custom kernel stack that serves open models several times faster than a naive deployment."
+      },
+      {
+        "icon": "ph-sliders",
+        "title": "Fine-tuning",
+        "body": "LoRA or full fine-tunes on your data, returning weights you can download and run elsewhere."
+      },
+      {
+        "icon": "ph-hard-drives",
+        "title": "GPU clusters",
+        "body": "Reserved H100 and H200 capacity with InfiniBand, by the week or by the month."
+      },
+      {
+        "icon": "ph-code",
+        "title": "OpenAI-compatible",
+        "body": "A drop-in endpoint, so switching costs one base-URL change."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "Your weights are yours",
+        "body": "Fine-tuned weights are downloadable. There is no lock-in on the artefact you paid to create."
+      },
+      {
+        "icon": "ph-chart-bar",
+        "title": "Transparent pricing",
+        "body": "Per-token rates published per model, and per-GPU-hour rates published per instance type."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "INFERENCE",
+      "title": "Throughput is the whole product",
+      "body": "A custom serving stack with speculative decoding and continuous batching. The published benchmarks include the configuration and the harness, so you can reproduce them rather than take our word for it.",
+      "points": [
+        "Speculative decoding and continuous batching",
+        "Benchmarks published with the harness",
+        "Per-model latency and throughput listed"
+      ],
+      "image": "photo-1560472354-b33ff0c44a43",
+      "cta": "See the benchmarks"
+    },
+    {
+      "eyebrow": "RESEARCH",
+      "title": "We contribute back",
+      "body": "The kernels and the training recipes are published. Several of the optimisations in this stack started as papers we released, and the reference implementations stay open.",
+      "points": [
+        "Open kernels and training recipes",
+        "Reference implementations maintained",
+        "Datasets released where licensing allows"
+      ],
+      "image": "photo-1581091226033-d5c48150dbaa",
+      "cta": "Read the research"
+    }
+  ],
+  "metric_lead": "PLATFORM BENCHMARKS",
+  "metrics": [
+    {
+      "v": "200+",
+      "l": "MODELS SERVED"
+    },
+    {
+      "v": "4×",
+      "l": "INFERENCE SPEEDUP"
+    },
+    {
+      "v": "H100",
+      "l": "CLUSTER HARDWARE"
+    },
+    {
+      "v": "100%",
+      "l": "WEIGHTS DOWNLOADABLE"
+    }
+  ],
+  "gallery": {
+    "title": "MODELS",
+    "sub": "Two hundred open models, served and benchmarked.",
+    "items": [
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "LANGUAGE",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1541701494587-cb58502866ab",
+        "tag": "IMAGE",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1505740420928-5e560c06d30e",
+        "tag": "AUDIO",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "CODE",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "EMBEDDING",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "VISION",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "They published the benchmark harness, so we ran it ourselves and got their number within two percent. Nobody else we evaluated would even tell us the batch size.",
+    "name": "Aditi Sharma",
+    "role": "ML Platform, Northwind",
+    "avatar": "photo-1534528741775-53994a69daeb"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Per token for inference, per GPU-hour for clusters. All published.",
+    "tiers": [
+      {
+        "name": "BUILD",
+        "price": "$0",
+        "period": "",
+        "desc": "Credit to evaluate.",
+        "features": [
+          "$25 of credit",
+          "All 200+ models",
+          "Community support",
+          "Shared capacity"
+        ],
+        "cta": "START BUILDING"
+      },
+      {
+        "name": "SCALE",
+        "price": "Per token",
+        "period": "published",
+        "desc": "Production inference.",
+        "features": [
+          "Dedicated endpoints",
+          "99.9% SLA",
+          "Fine-tuning included",
+          "Email support"
+        ],
+        "cta": "START BUILDING",
+        "featured": true,
+        "badge": "MOST TEAMS"
+      },
+      {
+        "name": "CLUSTER",
+        "price": "Per GPU-hour",
+        "period": "",
+        "desc": "Reserved training capacity.",
+        "features": [
+          "H100 and H200",
+          "InfiniBand fabric",
+          "Weekly or monthly",
+          "Named engineer"
+        ],
+        "cta": "CONTACT SALES"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "Can I download a model I fine-tuned?",
+        "a": "Yes, always. Fine-tuned weights are yours to download and run anywhere, including on hardware that is not ours."
+      },
+      {
+        "q": "How do the speed claims hold up?",
+        "a": "The benchmark harness and configuration are published alongside the numbers. Run it yourself — customers regularly do, and the numbers hold."
+      },
+      {
+        "q": "Is the endpoint OpenAI-compatible?",
+        "a": "Yes. Changing the base URL and the model name is usually the whole migration."
+      },
+      {
+        "q": "What is the minimum cluster commitment?",
+        "a": "One week. Most training runs take longer, but there is no annual contract required to get InfiniBand-connected H100s."
+      }
+    ]
+  },
+  "cta": {
+    "title": "START BUILDING",
+    "sub": "Twenty-five dollars of credit, no card, two hundred models.",
+    "btn1": "START BUILDING",
+    "btn2": "VIEW PRICING"
+  },
+  "footer": {
+    "tagline": "Run and fine-tune open models at scale.",
+    "columns": [
+      {
+        "title": "Products",
+        "links": [
+          "Inference",
+          "Fine-tuning",
+          "Clusters",
+          "Embeddings"
+        ]
+      },
+      {
+        "title": "Models",
+        "links": [
+          "Language",
+          "Image",
+          "Audio",
+          "Code"
+        ]
+      },
+      {
+        "title": "Developers",
+        "links": [
+          "Docs",
+          "API",
+          "Benchmarks",
+          "Status"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Research",
+          "Careers",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Confluence Compute"
+  },
+  "specimen": "Open models at scale",
+  "notes": [
+    "A single black CTA pill carries every conversion target. Mint and white pill variants belong to hero contexts only.",
+    "A three-colour gradient ribbon is the entire decorative system — used once as the hero graphic and never reduced to a swatch elsewhere.",
+    "All-caps mono labels appear everywhere: eyebrows, button labels, section titles and table headers.",
+    "Card chrome is lightly rounded at 4px. Full pills appear only on the floating chat launcher.",
+    "Dual surface mode alternates dark and light bands with no in-between greys; the one soft surface marks table-header rows."
+  ]
+}

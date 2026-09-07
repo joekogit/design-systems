@@ -1,0 +1,334 @@
+{
+  "slug": "ollama",
+  "name": "Ollama",
+  "category": "AI & LLM platforms",
+  "look": "One continuous paper-white sheet, pill geometry everywhere, black CTAs and an inline curl snippet as the signature element.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Nunito\", -apple-system, BlinkMacSystemFont, sans-serif",
+    "body": "\"Nunito\", -apple-system, BlinkMacSystemFont, sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "centered",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-cube",
+    "name": "Localhost"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Models",
+        "href": "gallery"
+      },
+      {
+        "label": "Docs",
+        "href": "faq"
+      },
+      {
+        "label": "Blog",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Download",
+        "href": "cta"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      }
+    ],
+    "cta": "Download",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "",
+    "title": "Run large language models <em>locally</em>",
+    "sub": "One command to pull a model, one to run it. No API key, no account, and nothing leaves your machine.",
+    "cta1": "Download for Mac",
+    "cta2": "Browse models",
+    "image": "photo-1555066931-4365d14bab8c",
+    "ratio": 0.58,
+    "stats": [
+      {
+        "v": "180+",
+        "l": "Models"
+      },
+      {
+        "v": "1 cmd",
+        "l": "To get running"
+      },
+      {
+        "v": "0",
+        "l": "Data sent anywhere"
+      }
+    ]
+  },
+  "logo_lead": "Runs on",
+  "logos": [
+    "macOS",
+    "Linux",
+    "Windows",
+    "Docker",
+    "Kubernetes",
+    "Raspberry Pi"
+  ],
+  "features": {
+    "eyebrow": "Why local",
+    "title": "Your machine, your models",
+    "sub": "Everything runs on hardware you own, which changes what you are willing to paste into a prompt.",
+    "items": [
+      {
+        "icon": "ph-download-simple",
+        "title": "One command",
+        "body": "`localhost pull llama3` and you are running. No key, no console, no billing page."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "Nothing leaves",
+        "body": "Prompts and outputs never touch a network. Air-gap the machine and it still works."
+      },
+      {
+        "icon": "ph-cube",
+        "title": "180+ models",
+        "body": "Every major open-weight family, quantised into builds that fit real hardware."
+      },
+      {
+        "icon": "ph-plugs",
+        "title": "OpenAI-compatible",
+        "body": "Drop-in endpoint, so existing code points at localhost and keeps working."
+      },
+      {
+        "icon": "ph-gauge",
+        "title": "GPU when there is one",
+        "body": "Metal, CUDA and ROCm used automatically, with a graceful CPU fallback."
+      },
+      {
+        "icon": "ph-stack",
+        "title": "Modelfiles",
+        "body": "Pin a system prompt, parameters and adapter into one reproducible file you can commit."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "Getting started",
+      "title": "Two commands, then you are talking to it",
+      "body": "Install, pull a model, run it. The first pull downloads a quantised build sized for your hardware; after that, startup is a couple of seconds and everything is local.",
+      "points": [
+        "Automatic quantisation for your hardware",
+        "Models cached and shared between projects",
+        "Runs offline once pulled"
+      ],
+      "image": "photo-1526374965328-7f61d4dc18c5",
+      "cta": "Read the quickstart"
+    },
+    {
+      "eyebrow": "Integrations",
+      "title": "A drop-in replacement endpoint",
+      "body": "The server speaks the OpenAI chat API, so an existing application points at localhost and works unchanged. Useful for testing prompts without spending anything, and for shipping software that must run without a network.",
+      "points": [
+        "OpenAI-compatible chat and embeddings",
+        "Python and JavaScript clients",
+        "Runs as a service or in Docker"
+      ],
+      "image": "photo-1498050108023-c5249f4df085",
+      "cta": "See the API"
+    }
+  ],
+  "metric_lead": "",
+  "metrics": [
+    {
+      "v": "180+",
+      "l": "Models available"
+    },
+    {
+      "v": "2s",
+      "l": "Warm start"
+    },
+    {
+      "v": "0",
+      "l": "Bytes sent off-device"
+    },
+    {
+      "v": "MIT",
+      "l": "Licence"
+    }
+  ],
+  "gallery": {
+    "title": "Model library",
+    "sub": "Open-weight families, quantised and ready to pull.",
+    "items": [
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "General",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1498050108023-c5249f4df085",
+        "tag": "Code",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Embedding",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "Vision",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Small",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1547658719-da2b51169166",
+        "tag": "Tools",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "I put a client contract into a prompt for the first time, because the machine was on my desk and the wifi was off. That is the entire product.",
+    "name": "Dana Whitfield",
+    "role": "Solicitor",
+    "avatar": "photo-1494790108377-be9c29b29330"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "sub": "The runtime is free and open source, forever.",
+    "tiers": [
+      {
+        "name": "Open source",
+        "price": "$0",
+        "period": "forever",
+        "desc": "The full runtime.",
+        "features": [
+          "All 180+ models",
+          "OpenAI-compatible API",
+          "Modelfiles",
+          "Community support"
+        ],
+        "cta": "Download"
+      },
+      {
+        "name": "Pro",
+        "price": "$20",
+        "period": "/month",
+        "desc": "Sync and hosted overflow.",
+        "features": [
+          "Everything free",
+          "Model sync across machines",
+          "Hosted overflow capacity",
+          "Email support"
+        ],
+        "cta": "Get Pro",
+        "featured": true,
+        "badge": "Most users"
+      },
+      {
+        "name": "Max",
+        "price": "$80",
+        "period": "/month",
+        "desc": "For heavy local and hosted use.",
+        "features": [
+          "Everything in Pro",
+          "Priority hosted capacity",
+          "Larger model access",
+          "Direct support"
+        ],
+        "cta": "Get Max"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "Do I need a GPU?",
+        "a": "No. Smaller models run acceptably on a modern laptop CPU. A GPU is used automatically when present and makes larger models practical."
+      },
+      {
+        "q": "Does anything get sent to you?",
+        "a": "No. The runtime makes no network calls except to pull a model you asked for. Verify it with a packet capture — people have."
+      },
+      {
+        "q": "How much disk will it use?",
+        "a": "A 7B model in a common quantisation is roughly 4GB. Models are cached once and shared across every project on the machine."
+      },
+      {
+        "q": "Is it really open source?",
+        "a": "MIT licensed, including commercial use. The paid tiers add sync and hosted capacity, not runtime features."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Run your first model in a minute",
+    "sub": "Free and open source. No account, no key, no telemetry.",
+    "btn1": "Download",
+    "btn2": "Browse models"
+  },
+  "footer": {
+    "tagline": "Run large language models locally.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Download",
+          "Models",
+          "Modelfiles",
+          "API"
+        ]
+      },
+      {
+        "title": "Docs",
+        "links": [
+          "Quickstart",
+          "CLI reference",
+          "Deployment",
+          "FAQ"
+        ]
+      },
+      {
+        "title": "Community",
+        "links": [
+          "GitHub",
+          "Discord",
+          "Blog",
+          "Contribute"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Pricing",
+          "Careers",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Localhost Labs"
+  },
+  "specimen": "localhost run",
+  "notes": [
+    "The whole page is one continuous paper-white sheet — no surface alternation, no section shading.",
+    "Pill geometry everywhere: every button and input is fully rounded, cards are softly rounded, nothing is sharp.",
+    "A single black CTA carries every action. The pricing card variants are the only deviation.",
+    "The inline curl-style install snippet sits directly under the hero headline and is the most signature element on the page.",
+    "The dark inverted pricing card breaks the flat-white rhythm exactly once per page. Twice would ruin it."
+  ]
+}

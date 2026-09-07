@@ -1,0 +1,87 @@
+{
+  "slug": "claude", "name": "Claude", "category": "AI & LLM platforms",
+  "look": "Warm cream canvas with slab-serif display, a coral accent used scarcely on buttons and generously on callout bands.",
+  "scheme": "light", "icon_weights": ["regular", "bold"],
+  "fonts": {
+    "display": "\"Newsreader\", Georgia, \"Times New Roman\", serif",
+    "body": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, Menlo, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "variants": { "nav": "bar", "hero": "split", "features": "grid", "cards": "flat", "gallery": "grid" },
+  "brand": { "mark": "ph-asterisk", "name": "Lumen AI" },
+  "nav": { "links": [{"label":"Product","href":"features"},{"label":"Research","href":"showcase-1"},{"label":"Enterprise","href":"showcase-0"},{"label":"Pricing","href":"pricing"},{"label":"Docs","href":"gallery"}], "cta": "Try Lumen", "cta2": "Sign in" },
+  "hero": {
+    "eyebrow": "Lumen 4 is available",
+    "title": "AI research and products that <em>put safety first</em>",
+    "sub": "Lumen is a model built to be useful, honest and harmless — and an assistant that says when it does not know something rather than inventing an answer.",
+    "cta1": "Try Lumen", "cta2": "Read the research",
+    "image": "photo-1555066931-4365d14bab8c", "ratio": 0.68,
+    "stats": [{"v":"200k","l":"Token context"},{"v":"1.1M","l":"Developers"},{"v":"64","l":"Languages"}]
+  },
+  "logo_lead": "Building with Lumen",
+  "logos": ["Northwind", "Corva", "Tessera", "Basisplan", "Perigee", "Halyard"],
+  "features": {
+    "eyebrow": "What it does",
+    "title": "A model you can hand real work to",
+    "sub": "Long documents, messy codebases and questions where being wrong quietly would be expensive.",
+    "items": [
+      {"icon":"ph-book-open-text","title":"200k of context","body":"A whole codebase, a full contract set, or a year of meeting notes — held in one conversation without chunking."},
+      {"icon":"ph-code","title":"Writes real code","body":"Multi-file changes with the reasoning shown, and a willingness to say a plan is wrong before writing it."},
+      {"icon":"ph-scales","title":"Calibrated","body":"Trained to express uncertainty rather than assert fluently. It will tell you when it is guessing."},
+      {"icon":"ph-shield-check","title":"Safety as design","body":"Constitutional training rather than a filter bolted on afterwards, with the principles published."},
+      {"icon":"ph-plugs-connected","title":"Tools and MCP","body":"Calls your functions, reads your systems, and connects to services through an open protocol."},
+      {"icon":"ph-lock-simple","title":"Your data is yours","body":"API inputs and outputs are not used for training. Zero-retention is available on request."}
+    ]
+  },
+  "showcases": [
+    {"eyebrow":"Enterprise","title":"Deployed where the stakes are real","body":"Legal review, clinical documentation and financial analysis — settings where a confident wrong answer costs more than no answer at all. Calibration is the feature that matters most, and it is the one we optimise hardest for.","points":["Zero data retention available","SOC 2 Type II and HIPAA-eligible","Deployable on your cloud region"],"image":"photo-1454165804606-c3d57bc86b40","cta":"Enterprise overview"},
+    {"eyebrow":"Research","title":"We publish the uncomfortable results too","body":"Interpretability work, evaluations where the model does badly, and the reasoning behind the safety framework. Where our results are weaker than a competitor's, that is in the paper as well.","points":["Interpretability and evaluation papers","Model cards including failure modes","Responsible scaling policy published"],"image":"photo-1581091226033-d5c48150dbaa","cta":"Read the research"}
+  ],
+  "metric_lead": "Lumen 4, on published benchmarks",
+  "metrics": [{"v":"200k","l":"Token context window"},{"v":"1.1M","l":"Developers building"},{"v":"64","l":"Languages supported"},{"v":"0","l":"API data used for training"}],
+  "gallery": {
+    "title": "Documentation",
+    "sub": "Quickstarts, the API reference, prompt guidance and the tool-use protocol.",
+    "items": [
+      {"id":"photo-1498050108023-c5249f4df085","tag":"Quickstart","ratio":0.72},
+      {"id":"photo-1555066931-4365d14bab8c","tag":"Tool use","ratio":0.72},
+      {"id":"photo-1526374965328-7f61d4dc18c5","tag":"Prompting","ratio":0.72},
+      {"id":"photo-1544716278-ca5e3f4abd8c","tag":"Guides","ratio":0.72},
+      {"id":"photo-1558494949-ef010cbdcc31","tag":"Deployment","ratio":0.72},
+      {"id":"photo-1581091226033-d5c48150dbaa","tag":"Research","ratio":0.72}
+    ]
+  },
+  "testimonial": {"quote":"It told us our proposed schema had a problem before writing any of it. Every other assistant we trialled cheerfully wrote the broken version and let us find out in review.",
+    "name":"Marcus Owens", "role":"Principal Engineer, Halyard", "avatar":"photo-1472099645785-5658abf4ff4e"},
+  "pricing": {
+    "title": "Pricing",
+    "sub": "Free to try. Pay per token on the API, or per seat for teams.",
+    "tiers": [
+      {"name":"Free","price":"$0","period":"","desc":"For trying Lumen on real work.","features":["Daily message limit","Latest model","Web and mobile","Community support"],"cta":"Try Lumen"},
+      {"name":"Pro","price":"$20","period":"/month","desc":"For people using it every day.","features":["5× the usage","Priority at peak times","Projects and memory","Early access to features"],"cta":"Get Pro","featured":true,"badge":"Most people"},
+      {"name":"Team","price":"$30","period":"/user/mo","desc":"For teams and organisations.","features":["Everything in Pro","Central billing","Admin controls","Zero data retention option"],"cta":"Contact sales"}
+    ]
+  },
+  "faq": {"title":"Common questions","items":[
+    {"q":"Do you train on my data?","a":"Not on API inputs or outputs. Consumer conversations are used to improve the product unless you opt out, and the setting is in preferences rather than buried in a policy page."},
+    {"q":"What is the context window really?","a":"200,000 tokens, roughly 500 pages, and it holds across the whole conversation rather than degrading after the first few exchanges."},
+    {"q":"How is safety handled?","a":"Through constitutional training — the model is trained against a published set of principles, rather than having a filter applied to its output afterwards. The principles are public."},
+    {"q":"Can it browse or run code?","a":"It can call tools you define, including search and code execution, through an open protocol. Nothing runs unless you have wired it up and permitted it."}
+  ]},
+  "cta": {"title":"Start with a real task","sub":"Free to try, no card. Give it something you would otherwise put off.","btn1":"Try Lumen","btn2":"Read the docs"},
+  "footer": {"tagline":"AI research and products that put safety first.","columns":[
+    {"title":"Product","links":["Lumen","API","Enterprise","Pricing"]},
+    {"title":"Research","links":["Papers","Interpretability","Safety","Model cards"]},
+    {"title":"Developers","links":["Documentation","Cookbook","Status","Support"]},
+    {"title":"Company","links":["About","Careers","News","Policy"]}
+  ],"legal":"© 2026 Lumen Research"},
+  "specimen": "Useful, honest, harmless",
+  "notes": [
+    "The warm cream canvas with warm dark ink is the defining choice. Pure white would make this a different brand entirely.",
+    "Coral is used scarcely on individual buttons but generously on full-bleed callout cards — two very different doses of the same accent.",
+    "Slab-serif display at weight 400 with negative tracking, paired with a humanist sans body. That pairing is the literary editorial voice.",
+    "Product mockups are dark navy cards carrying real code blocks and terminal panels — the brand shows product chrome rather than abstract illustration.",
+    "Radius is hierarchical: 8px for buttons and inputs, 12px for content cards, 16px for the hero container, pill for badges."
+  ]
+}

@@ -1,0 +1,35 @@
+/* Mistral — sunset photography, cream-yellow surfaces, one saturated orange. */
+:root { --maxw: 1180px; --sect: clamp(56px, 7vw, 92px); --shadow-1: none; --shadow-2: none;
+  --cream: #fdf6e3; --cream-soft: #fffaf0; --sun-1: #ff7000; --sun-2: #ffa300; --sun-3: #ffd000; }
+
+.nav { --nav-bg: rgba(255,255,255,.92); backdrop-filter: blur(10px); }
+.brand { font-family: var(--font-display); font-weight: 400; font-size: 22px; letter-spacing: -.01em; }
+.brand-ico { color: var(--c-primary); }
+.btn { border-radius: var(--r-md); font-weight: 600; }
+.btn-secondary { background: var(--cream); border-color: rgba(0,0,0,.12); }
+.eyebrow { color: var(--c-primary); text-transform: none; letter-spacing: 0; font-weight: 600; }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title, .quote-text {
+  font-family: var(--font-display); font-weight: 400; letter-spacing: -.02em; }
+.hero-title em { font-style: italic; color: var(--c-primary); }
+.hero-media img { border-radius: var(--r-lg); border: 0; }
+
+.logos { background: var(--cream); border-block: 0; }
+.feat-card { background: var(--cream-soft); border: 0; border-radius: var(--r-lg); padding: 26px; }
+.feat-card:hover { background: var(--cream); }
+.feat-ico { background: var(--sun-3); color: #5a3200; border: 0; border-radius: var(--r-md); }
+.sc-media img, .g-item { border-radius: var(--r-lg); border: 0; }
+.metrics { --metrics-bg: var(--cream); border-block: 0; }
+.metric-v { color: var(--c-primary); }
+.g-item figcaption { background: rgba(0,0,0,.78); border-radius: var(--r-md); }
+.quote-card { background: var(--cream); border: 0; border-radius: var(--r-lg); --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--c-primary); }
+.tier { background: var(--cream-soft); border: 0; border-radius: var(--r-lg); }
+.tier-feat { outline: 2px solid var(--c-primary); outline-offset: -2px; }
+.tier-badge { background: var(--c-primary); }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--c-primary); }
+.cta-band { background: var(--cream); border: 0; border-radius: var(--r-lg); }
+.spec { --spec-bg: var(--cream-soft); }
+/* the sunset stripe closes the page — once, at the bottom */
+.foot { position: relative; padding-top: calc(clamp(40px,6vw,64px) + 10px); }
+.foot::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 10px;
+  background: linear-gradient(90deg, var(--sun-1) 0%, var(--sun-2) 38%, var(--sun-3) 68%, var(--cream) 100%); }

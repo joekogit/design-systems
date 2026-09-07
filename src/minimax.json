@@ -1,0 +1,334 @@
+{
+  "slug": "minimax",
+  "name": "MiniMax",
+  "category": "AI & LLM platforms",
+  "look": "Stark monochrome broken open by saturated gradient cards, one vibrant colour per product line, pills everywhere.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"DM Sans\", \"Inter\", -apple-system, sans-serif",
+    "body": "\"DM Sans\", \"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "centered",
+    "features": "bento",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-infinity",
+    "name": "Vantage"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Models",
+        "href": "features"
+      },
+      {
+        "label": "Playground",
+        "href": "gallery"
+      },
+      {
+        "label": "Docs",
+        "href": "faq"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Company",
+        "href": "showcase-1"
+      }
+    ],
+    "cta": "Get API key",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "VANTAGE 3 IS LIVE",
+    "title": "One platform, <em>four model lines</em>",
+    "sub": "Text, music, video and speech — each with its own frontier model, one API key, and pricing you can read on a single page.",
+    "cta1": "Get API key",
+    "cta2": "Open playground",
+    "image": "photo-1614850523459-c2f4c699c52e",
+    "ratio": 0.56,
+    "stats": [
+      {
+        "v": "4",
+        "l": "Model lines"
+      },
+      {
+        "v": "1M",
+        "l": "Token context"
+      },
+      {
+        "v": "42",
+        "l": "Languages"
+      }
+    ]
+  },
+  "logo_lead": "BUILDING ON VANTAGE",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "THE LINES",
+    "title": "Four models, four jobs",
+    "sub": "Each line is trained for one modality rather than bolted onto a text model as an afterthought.",
+    "items": [
+      {
+        "icon": "ph-chat-circle-text",
+        "title": "Vantage Text",
+        "body": "A one-million-token context window that holds a whole codebase or a year of transcripts without chunking."
+      },
+      {
+        "icon": "ph-music-notes",
+        "title": "Vantage Music",
+        "body": "Full arrangements from a text brief, stems delivered separately."
+      },
+      {
+        "icon": "ph-video-camera",
+        "title": "Vantage Video",
+        "body": "Six seconds at 1080p from a prompt or a still, with camera motion you specify."
+      },
+      {
+        "icon": "ph-microphone",
+        "title": "Vantage Speech",
+        "body": "Forty-two languages with cloning from thirty seconds."
+      },
+      {
+        "icon": "ph-function",
+        "title": "Tool calling",
+        "body": "Structured output and function calls across every line."
+      },
+      {
+        "icon": "ph-currency-circle-dollar",
+        "title": "One price page",
+        "body": "Per-token, per-second and per-character rates, all published, no sales call required."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "CONTEXT",
+      "title": "A million tokens, used properly",
+      "body": "Long context is only useful if retrieval across it stays accurate. Vantage Text is evaluated on needle-in-haystack at full length, and the score is published at every depth rather than only the best one.",
+      "points": [
+        "Evaluated at full context depth",
+        "Per-depth scores published",
+        "No silent truncation"
+      ],
+      "image": "photo-1526374965328-7f61d4dc18c5",
+      "cta": "See the evaluations"
+    },
+    {
+      "eyebrow": "COMPANY",
+      "title": "Priced without a conversation",
+      "body": "Every rate is on one page — per token, per second of video, per character of speech. There is no enterprise tier that hides the number behind a form.",
+      "points": [
+        "All rates published",
+        "No minimum commitment",
+        "Volume discounts applied automatically"
+      ],
+      "image": "photo-1560472354-b33ff0c44a43",
+      "cta": "See pricing"
+    }
+  ],
+  "metric_lead": "ACROSS THE PLATFORM",
+  "metrics": [
+    {
+      "v": "1M",
+      "l": "TOKEN CONTEXT"
+    },
+    {
+      "v": "4",
+      "l": "MODEL LINES"
+    },
+    {
+      "v": "42",
+      "l": "LANGUAGES"
+    },
+    {
+      "v": "1",
+      "l": "PRICE PAGE"
+    }
+  ],
+  "gallery": {
+    "title": "Playground",
+    "sub": "Try every line in the browser before writing any code.",
+    "items": [
+      {
+        "id": "photo-1614850523459-c2f4c699c52e",
+        "tag": "Text",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1541701494587-cb58502866ab",
+        "tag": "Music",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1567095761054-7a02e69e5c43",
+        "tag": "Video",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1505740420928-5e560c06d30e",
+        "tag": "Speech",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1620641788421-7a1c342ea42e",
+        "tag": "Vision",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1635776062127-d379bfcba9f8",
+        "tag": "Embeddings",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "We replaced three vendors with one key. The part I did not expect was that the billing page finally made sense to our finance team.",
+    "name": "Wei Zhang",
+    "role": "CTO, Perigee",
+    "avatar": "photo-1633332755192-727a05c4013d"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Pay per unit. Every rate on this page, no sales call.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "",
+        "desc": "For evaluation.",
+        "features": [
+          "$5 of credit",
+          "All four lines",
+          "Playground access",
+          "Community support"
+        ],
+        "cta": "Get API key"
+      },
+      {
+        "name": "Pay as you go",
+        "price": "Usage",
+        "period": "based",
+        "desc": "For production.",
+        "features": [
+          "No commitment",
+          "Volume discounts automatic",
+          "99.9% SLA",
+          "Email support"
+        ],
+        "cta": "Get API key",
+        "featured": true,
+        "badge": "MOST TEAMS"
+      },
+      {
+        "name": "Committed",
+        "price": "Custom",
+        "period": "",
+        "desc": "For predictable spend.",
+        "features": [
+          "Discounted committed rate",
+          "Dedicated throughput",
+          "Priority routing",
+          "Named support"
+        ],
+        "cta": "Contact us"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "Is the million-token context real?",
+        "a": "It is evaluated at full depth and the per-depth scores are published, including the depths where accuracy dips. Nothing is silently truncated."
+      },
+      {
+        "q": "Can I use one key for all four lines?",
+        "a": "Yes. One key, one billing account, one dashboard across text, music, video and speech."
+      },
+      {
+        "q": "What are the commercial terms on generated media?",
+        "a": "You own the output on any paid tier, including commercial use. Free-tier output is watermarked and non-commercial."
+      },
+      {
+        "q": "Do you train on my inputs?",
+        "a": "No. API inputs and outputs are excluded from training by default, with no setting to remember and no opt-out form to file."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start with $5 of credit",
+    "sub": "One key across all four lines. No card to begin.",
+    "btn1": "Get API key",
+    "btn2": "Open playground"
+  },
+  "footer": {
+    "tagline": "Four frontier model lines, one API key.",
+    "columns": [
+      {
+        "title": "Models",
+        "links": [
+          "Text",
+          "Music",
+          "Video",
+          "Speech"
+        ]
+      },
+      {
+        "title": "Developers",
+        "links": [
+          "Documentation",
+          "Playground",
+          "SDKs",
+          "Status"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Guides",
+          "Cookbook",
+          "Blog",
+          "Support"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Press",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Vantage AI"
+  },
+  "specimen": "Four lines, one key",
+  "notes": [
+    "A stark monochrome palette is broken open by saturated gradient cards. The monochrome is the default; the colour is the event.",
+    "Each product line owns a vibrant colour — coral for text, magenta for music, blue for video, orange for speech. Never mix them on one card.",
+    "Pills everywhere for buttons and tabs. Rectangles appear only inside data tables and dense documentation.",
+    "Hero type runs at 1.10 line-height with heavy negative tracking for impact.",
+    "Black promo banners above the nav are reserved for time-bound moments — they are not part of the standing chrome."
+  ]
+}

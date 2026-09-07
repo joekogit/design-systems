@@ -1,0 +1,70 @@
+/* Together AI — alternating dark and light bands, mono-caps labels, gradient ribbon. */
+:root { --maxw: 1240px; --sect: clamp(56px, 7vw, 96px); --shadow-1: none; --shadow-2: none;
+  --mint: #7ef2c4; --g1: #ff8a3d; --g2: #e0409a; --g3: #7b7ef5; --light: #ffffff; }
+
+.nav { --nav-bg: rgba(10,10,10,.88); backdrop-filter: blur(12px); border-bottom-color: #262626; }
+.brand { font-weight: 700; letter-spacing: -.025em; }
+.brand-ico { color: var(--mint); }
+/* mono-caps labels everywhere */
+.nav-links a, .eyebrow, .logos-lead, .metric-l, .g-item figcaption, .fcol h4, .tier-per,
+.tier-name, .btn, .zoo-cell h4, .logo-item {
+  font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .1em; }
+.nav-links a { font-size: 11px; }
+.btn { border-radius: var(--r-sm); font-size: 11px; font-weight: 500; padding: 13px 22px; }
+.btn-primary { background: #000; color: #fff; border-color: #000; }
+.btn-primary:hover { background: #1c1c1c; }
+.btn-secondary { background: transparent; color: #fff; border-color: #3a3a3a; }
+.hero { text-align: center; }
+.hero .btn-primary { background: var(--mint); color: #06251a; border-color: var(--mint); }
+.hero .btn-secondary { background: #fff; color: #0a0a0a; border-color: #fff; }
+.eyebrow { color: var(--mint); font-size: 11px; }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; letter-spacing: -.035em; }
+.hero-title em { background: linear-gradient(90deg,var(--g1),var(--g2),var(--g3));
+  -webkit-background-clip: text; background-clip: text; color: transparent; }
+/* the gradient ribbon — once, as the hero graphic */
+.hero-media { position: relative; }
+.hero-media::before { content: ""; position: absolute; inset: -14px -14px auto -14px; height: 6px;
+  background: linear-gradient(90deg,var(--g1),var(--g2),var(--g3)); }
+.hero-media img { border-radius: var(--r-sm); border-color: #262626; }
+
+/* alternating bands, no in-between greys */
+.logos { background: var(--light); border-block: 0; }
+.logos .logos-lead { color: #6b6b6b; }
+.logo-item { color: #0a0a0a; font-size: 11px; opacity: 1; }
+.features { background: var(--light); color: #0a0a0a; }
+.features .lede, .features .feat-body { color: #4a4a4a; }
+.features .t-display-lg { color: #0a0a0a; }
+.feat-card { background: #fff; border-color: #e4e4e4; border-radius: var(--r-sm); }
+.feat-card:hover { background: #fafafa; border-color: #b8b8b8; }
+.feat-ico { background: #f2f2f2; border: 0; color: #0a0a0a; border-radius: var(--r-sm); }
+.feat-title { color: #0a0a0a; font-weight: 600; }
+.sc-media img, .g-item { border-radius: var(--r-sm); border-color: #262626; }
+.sc-points i { color: var(--mint); }
+.metrics { --metrics-bg: transparent; border-block-color: #262626; }
+.metric-v { color: var(--mint); }
+.g-item figcaption { background: rgba(10,10,10,.86); border-radius: var(--r-xs); font-size: 10px; }
+.quote-card { background: #141414; border-color: #262626; border-radius: var(--r-sm);
+  --quote-align: left; --quote-by-just: flex-start; }
+.pricing { background: var(--light); color: #0a0a0a; }
+.pricing .t-display-lg { color: #0a0a0a; } .pricing .lede { color: #4a4a4a; }
+.tier { background: #fff; border-color: #e4e4e4; border-radius: var(--r-sm); }
+.tier-name { color: #0a0a0a; font-size: 12px; }
+.tier-num, .tier-desc, .tier-feats li { color: #0a0a0a; }
+.tier-desc, .tier-feats li { color: #4a4a4a; }
+.tier-feats i { color: #0a0a0a; }
+.tier-feat { background: #0a0a0a; border-color: #0a0a0a; }
+.tier-feat .tier-name, .tier-feat .tier-num { color: #fff; }
+.tier-feat .tier-desc, .tier-feat .tier-feats li { color: #9a9a9a; }
+.tier-feat .tier-feats i { color: var(--mint); }
+.tier-feat .btn-primary { background: var(--mint); color: #06251a; border-color: var(--mint); }
+.tier-badge { background: #0a0a0a; color: #fff; border-radius: var(--r-xs); font-size: 9.5px; }
+.tier .btn-secondary { color: #0a0a0a; border-color: #cfcfcf; }
+.faq-item { border-bottom-color: #262626; }
+.faq-mk { color: var(--mint); }
+.cta-band { background: transparent; border-color: #262626; border-radius: var(--r-sm); }
+/* the wordmark sign-off, tinted nearly into the canvas */
+.foot { position: relative; overflow: hidden; padding-bottom: clamp(90px,13vw,150px); }
+.foot::after { content: "confluence"; position: absolute; left: 50%; bottom: -.22em;
+  transform: translateX(-50%); font-size: clamp(64px, 15vw, 210px); font-weight: 700;
+  letter-spacing: -.05em; color: #171717; line-height: 1; pointer-events: none; white-space: nowrap; }
+.spec { --spec-bg: #111; }

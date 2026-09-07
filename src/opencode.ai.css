@@ -1,0 +1,53 @@
+/* opencode — monospace everywhere, one cream sheet, ASCII bullets, 4px radius. */
+:root { --maxw: 1040px; --sect: clamp(56px, 7vw, 96px); --shadow-1: none; --shadow-2: none;
+  --dark: #201d1d; }
+body { font-feature-settings: normal; }
+
+.nav { --nav-bg: rgba(253,252,252,.94); border-bottom: 1px solid var(--c-hairline); }
+.brand { font-weight: 700; letter-spacing: -.02em; font-size: 17px; }
+.brand-ico { color: var(--c-ink); }
+.nav-links a { font-size: 13px; }
+.btn { border-radius: var(--r-sm); font-weight: 500; padding: 10px 18px; }
+.btn-secondary { background: transparent; border-color: var(--c-hairline-strong); }
+.btn-secondary:hover { background: rgba(0,0,0,.04); border-color: var(--c-ink); }
+.eyebrow { color: var(--c-ink-subtle); text-transform: none; letter-spacing: 0; }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; letter-spacing: -.03em; }
+
+/* the one dark surface: the hero TUI */
+.hero.v-terminal .hero-media { background: var(--dark); border: 1px solid var(--c-hairline-strong); border-radius: var(--r-sm); }
+.hero.v-terminal .hero-media::before { content: "opencode ─ ~/src/project ─ 120x40"; display: block;
+  padding: 9px 12px; font-size: 11px; color: #8a807d; border-bottom: 1px solid #3a3432; }
+.hero.v-terminal .hero-media img { border-radius: 0; border: 0; }
+
+/* ASCII bracket bullets */
+.sc-points li { grid-template-columns: 1fr; }
+.sc-points i { display: none; }
+.feat-grid.v-list { gap: 0; }
+.v-list .feat-card { background: transparent; border: 0; border-top: 1px solid var(--c-hairline);
+  border-radius: 0; padding: var(--s-md) 0; grid-template-columns: 32px 1fr; }
+.feat-ico { background: transparent; border: 0; color: var(--c-ink); width: auto; height: auto; font-size: 16px; }
+.feat-title { font-weight: 700; font-size: 14px; }
+.feat-body { font-size: 13px; }
+.faq-item summary::before { content: "[+] "; color: var(--c-ink-subtle); }
+.faq-item[open] summary::before { content: "[-] "; }
+.faq-mk { display: none; }
+.faq-item summary { font-size: 14px; font-weight: 700; }
+
+.logos { border-block-color: var(--c-hairline); }
+.logo-item { font-size: 13px; font-weight: 400; }
+.hero-media img, .sc-media img, .g-item { border-radius: var(--r-sm); border-color: var(--c-hairline); }
+.metrics { --metrics-bg: transparent; border-block-color: var(--c-hairline); }
+.g-item figcaption { background: rgba(32,29,29,.9); border-radius: var(--r-xs); font-size: 11px; }
+.quote-card { background: transparent; border: 0; border-top: 1px solid var(--c-hairline);
+  border-bottom: 1px solid var(--c-hairline); border-radius: 0; padding-inline: 0;
+  --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { display: none; }
+.q-av { border-radius: var(--r-sm); }
+.tier { background: transparent; border-color: var(--c-hairline); border-radius: var(--r-sm); }
+.tier-feat { border-color: var(--c-ink); }
+.tier-feats i { display: none; }
+.tier-feats li { grid-template-columns: 1fr; }
+.tier-badge { background: var(--c-ink); border-radius: var(--r-xs); }
+.cta-band { background: transparent; border-color: var(--c-hairline); border-radius: var(--r-sm); }
+.spec { --spec-bg: transparent; border-top-color: var(--c-hairline); }
+.input, .badge2, .tabs, .tabs button, .sw { border-radius: var(--r-sm); }
