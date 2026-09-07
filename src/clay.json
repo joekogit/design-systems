@@ -1,0 +1,334 @@
+{
+  "slug": "clay",
+  "name": "Clay",
+  "category": "Design & creative tools",
+  "look": "Cream-tinted white with six saturated feature cards, generous radii and rounded display type at weight 500.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Baloo 2\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "masonry"
+  },
+  "brand": {
+    "mark": "ph-shapes",
+    "name": "Kiln"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Product",
+        "href": "features"
+      },
+      {
+        "label": "Templates",
+        "href": "gallery"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Customers",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Docs",
+        "href": "faq"
+      }
+    ],
+    "cta": "Start free",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "GO-TO-MARKET DATA",
+    "title": "Find the right people, <em>with the right context</em>",
+    "sub": "Enrich a list from fifty data providers in one pass, then write outreach that references something true rather than a merge field.",
+    "cta1": "Start free",
+    "cta2": "Book a demo",
+    "image": "photo-1541961017774-22349e4a1262",
+    "ratio": 0.68,
+    "stats": [
+      {
+        "v": "50+",
+        "l": "Data providers"
+      },
+      {
+        "v": "1 pass",
+        "l": "To enrich"
+      },
+      {
+        "v": "No",
+        "l": "Per-provider contracts"
+      }
+    ]
+  },
+  "logo_lead": "PROSPECTING WITH KILN",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "THE PLATFORM",
+    "title": "Fifty providers, one waterfall",
+    "sub": "Ask for an email once and we try providers in order until one has it — you pay for the hit, not the attempt.",
+    "items": [
+      {
+        "icon": "ph-funnel",
+        "title": "Waterfall enrichment",
+        "body": "Providers tried in sequence until one returns a result. Coverage goes up and cost goes down."
+      },
+      {
+        "icon": "ph-database",
+        "title": "Fifty sources",
+        "body": "Contact, firmographic, technographic and intent data behind one interface and one bill."
+      },
+      {
+        "icon": "ph-magic-wand",
+        "title": "Research agents",
+        "body": "Ask a question about each row in plain language and get a researched answer, with the source."
+      },
+      {
+        "icon": "ph-envelope",
+        "title": "Outreach that lands",
+        "body": "Messages built from what you actually found rather than a first-name merge field."
+      },
+      {
+        "icon": "ph-arrows-clockwise",
+        "title": "Keeps itself current",
+        "body": "Re-enrich on a schedule so the list does not quietly rot between campaigns."
+      },
+      {
+        "icon": "ph-plugs-connected",
+        "title": "Syncs both ways",
+        "body": "Push to your CRM and read back what happened, so the list reflects reality."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "ENRICHMENT",
+      "title": "Pay for the hit, not the attempt",
+      "body": "A waterfall tries each provider in order and charges only when one returns data. Coverage typically lands well above any single vendor, at a fraction of holding contracts with all of them.",
+      "points": [
+        "Only successful lookups are charged",
+        "Provider order configurable per field",
+        "Coverage reported per provider"
+      ],
+      "image": "photo-1560472354-b33ff0c44a43",
+      "cta": "How the waterfall works"
+    },
+    {
+      "eyebrow": "CUSTOMERS",
+      "title": "Research, not merge fields",
+      "body": "An agent reads each company's site and answers your question per row — whether they run a particular stack, whether they are hiring, whether they just moved office. Outreach then references something real.",
+      "points": [
+        "Plain-language question per row",
+        "Source link on every answer",
+        "Runs on a schedule as the list changes"
+      ],
+      "image": "photo-1454165804606-c3d57bc86b40",
+      "cta": "Read customer stories"
+    }
+  ],
+  "metric_lead": "ACROSS KILN",
+  "metrics": [
+    {
+      "v": "50+",
+      "l": "DATA PROVIDERS"
+    },
+    {
+      "v": "2.3×",
+      "l": "COVERAGE VS SINGLE VENDOR"
+    },
+    {
+      "v": "0",
+      "l": "PER-PROVIDER CONTRACTS"
+    },
+    {
+      "v": "Per hit",
+      "l": "BILLING"
+    }
+  ],
+  "gallery": {
+    "title": "TEMPLATES",
+    "sub": "Prospecting workflows people have already made work.",
+    "items": [
+      {
+        "id": "photo-1541961017774-22349e4a1262",
+        "tag": "Enrichment",
+        "ratio": 1.1
+      },
+      {
+        "id": "photo-1560472354-b33ff0c44a43",
+        "tag": "Scoring",
+        "ratio": 0.85
+      },
+      {
+        "id": "photo-1454165804606-c3d57bc86b40",
+        "tag": "Outbound",
+        "ratio": 1.0
+      },
+      {
+        "id": "photo-1552664730-d307ca884978",
+        "tag": "Research",
+        "ratio": 1.15
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Reporting",
+        "ratio": 0.9
+      },
+      {
+        "id": "photo-1521737604893-d14cc237f11d",
+        "tag": "Handover",
+        "ratio": 1.05
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "We cancelled three data contracts and got better coverage. The finance team asked me to explain it twice because it sounded wrong.",
+    "name": "Priya Nair",
+    "role": "RevOps Lead, Tessera",
+    "avatar": "photo-1534528741775-53994a69daeb"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Credits for successful lookups. Nothing for misses.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "/month",
+        "desc": "For evaluating coverage.",
+        "features": [
+          "100 credits",
+          "All providers",
+          "Research agents",
+          "Community support"
+        ],
+        "cta": "Start free"
+      },
+      {
+        "name": "Pro",
+        "price": "$149",
+        "period": "/month",
+        "desc": "For running campaigns.",
+        "features": [
+          "2,000 credits",
+          "CRM sync",
+          "Scheduled re-enrichment",
+          "Email support"
+        ],
+        "cta": "Start free",
+        "featured": true,
+        "badge": "MOST TEAMS"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "desc": "For larger revenue teams.",
+        "features": [
+          "Pooled credits",
+          "SSO and roles",
+          "Custom providers",
+          "Named manager"
+        ],
+        "cta": "Book a demo"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "What is a credit?",
+        "a": "One successful lookup that returned data. Failed attempts across the waterfall are not charged, which is the point of running providers in sequence."
+      },
+      {
+        "q": "Do I need contracts with the providers?",
+        "a": "No. That is the value — one bill and one interface across fifty sources, without negotiating fifty agreements."
+      },
+      {
+        "q": "Is the data compliant?",
+        "a": "Providers are vetted for lawful basis and the source is recorded per field, so you can answer a subject access request without guessing."
+      },
+      {
+        "q": "Can I bring my own provider?",
+        "a": "Yes, on Enterprise. Add an existing contract into the waterfall and use your own rates alongside ours."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Enrich your first list",
+    "sub": "A hundred credits free, and you only pay for the rows that return data.",
+    "btn1": "Start free",
+    "btn2": "Book a demo"
+  },
+  "footer": {
+    "tagline": "Find the right people, with the right context.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Enrichment",
+          "Research",
+          "Outreach",
+          "Integrations"
+        ]
+      },
+      {
+        "title": "Solutions",
+        "links": [
+          "Outbound",
+          "RevOps",
+          "Recruiting",
+          "Research"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Templates",
+          "Guides",
+          "Community",
+          "Support"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Pricing",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Kiln Data"
+  },
+  "specimen": "The right people",
+  "notes": [
+    "The canvas is cream-tinted white. That warmth is what separates it from every cool-grey competitor.",
+    "A six-colour saturated palette carries the feature cards — pink, teal, lavender, peach, ochre and cream.",
+    "3D claymation artefacts are the most recognisable visual element and belong at full bleed in the hero.",
+    "The display face is rounded at weight 500 with heavy negative tracking, which is what the generous radii are matching.",
+    "Radii step up deliberately: 12px buttons and inputs, 16px content cards, 24px feature cards."
+  ]
+}

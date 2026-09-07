@@ -1,0 +1,334 @@
+{
+  "slug": "renault",
+  "name": "Renault",
+  "category": "Automotive",
+  "look": "Two-tone canvas switched in full-bleed bands, sunlight yellow used scarcely, and square geometry with condensed stacked headlines.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Archivo\", -apple-system, sans-serif",
+    "body": "\"Archivo\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-diamond",
+    "name": "ÉCLAT"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Vehicles",
+        "href": "gallery"
+      },
+      {
+        "label": "Electric",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Configure",
+        "href": "pricing"
+      },
+      {
+        "label": "Services",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Dealers",
+        "href": "faq"
+      }
+    ],
+    "cta": "Configure",
+    "cta2": "My Éclat"
+  },
+  "hero": {
+    "eyebrow": "THE NEW ÉCLAT 5",
+    "title": "Small car, <em>big personality</em>",
+    "sub": "An electric city car with 400 kilometres of range, a design that references our own back catalogue rather than someone else's, and a price that starts under thirty thousand.",
+    "cta1": "Configure yours",
+    "cta2": "Book a test drive",
+    "image": "photo-1552519507-da3b142c6e3d",
+    "ratio": 0.66,
+    "stats": [
+      {
+        "v": "400 KM",
+        "l": "RANGE"
+      },
+      {
+        "v": "€28,900",
+        "l": "FROM"
+      },
+      {
+        "v": "30 MIN",
+        "l": "10–80% CHARGE"
+      }
+    ]
+  },
+  "logo_lead": "AWARDED",
+  "logos": [
+    "Car of the Year",
+    "Euro NCAP",
+    "Red Dot",
+    "IF Design",
+    "What Car?",
+    "Auto Express"
+  ],
+  "features": {
+    "eyebrow": "THE CAR",
+    "title": "Designed for cities",
+    "sub": "Compact enough to park, with the range and charging speed to leave one.",
+    "items": [
+      {
+        "icon": "ph-lightning",
+        "title": "400 km range",
+        "body": "On the combined cycle, from a 52 kWh pack sized for a city car rather than a motorway cruiser."
+      },
+      {
+        "icon": "ph-plug",
+        "title": "30-minute charging",
+        "body": "Ten to eighty percent on a 130 kW charger, which is a coffee rather than a lunch."
+      },
+      {
+        "icon": "ph-arrows-in",
+        "title": "Genuinely compact",
+        "body": "Under four metres, with a turning circle that makes a multi-storey unremarkable."
+      },
+      {
+        "icon": "ph-armchair",
+        "title": "Five real seats",
+        "body": "A flat floor and no transmission tunnel, so the middle seat is usable by an adult."
+      },
+      {
+        "icon": "ph-house",
+        "title": "Vehicle to grid",
+        "body": "Sell power back when the grid needs it, with the tariff shown in the app."
+      },
+      {
+        "icon": "ph-recycle",
+        "title": "Recycled interior",
+        "body": "Seat fabric from recovered material, with the recycled content stated per component."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "ELECTRIC",
+      "title": "Charging that fits a day",
+      "body": "A 130 kW peak on a pack this size means ten to eighty percent in half an hour. For a car mostly charged at home overnight, that is enough for the occasional long trip without over-specifying the battery.",
+      "points": [
+        "10–80% in 30 minutes",
+        "Home charging as the default",
+        "Vehicle-to-grid on supported tariffs"
+      ],
+      "image": "photo-1493238792000-8113da705763",
+      "cta": "ELECTRIC RANGE"
+    },
+    {
+      "eyebrow": "SERVICES",
+      "title": "Priced before you agree",
+      "body": "Servicing, warranty extension and battery health checks all quoted as fixed prices published on the site, rather than estimated at the counter after the car is already on the ramp.",
+      "points": [
+        "Fixed-price servicing published",
+        "Battery health report annually",
+        "Eight-year battery warranty"
+      ],
+      "image": "photo-1454165804606-c3d57bc86b40",
+      "cta": "OWNERSHIP"
+    }
+  ],
+  "metric_lead": "ÉCLAT 5 — TECHNICAL DATA",
+  "metrics": [
+    {
+      "v": "400 KM",
+      "l": "RANGE"
+    },
+    {
+      "v": "€28,900",
+      "l": "FROM"
+    },
+    {
+      "v": "30 MIN",
+      "l": "10–80% CHARGE"
+    },
+    {
+      "v": "3.9 M",
+      "l": "LENGTH"
+    }
+  ],
+  "gallery": {
+    "title": "VEHICLES",
+    "sub": "The current range.",
+    "items": [
+      {
+        "id": "photo-1552519507-da3b142c6e3d",
+        "tag": "ÉCLAT 5",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1493238792000-8113da705763",
+        "tag": "ÉCLAT 4",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1503376780353-7e6692767b70",
+        "tag": "ÉCLAT SPORT",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1553440569-bcc63803a83d",
+        "tag": "ÉCLAT ESTATE",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1492144534655-ae79c964c9d7",
+        "tag": "ÉCLAT VAN",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1449824913935-59a10b8d2000",
+        "tag": "IN THE CITY",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "I bought it because it is small and I kept it because the charging genuinely fits a normal day. The design being lovely was a bonus.",
+    "name": "Camille Bernard",
+    "role": "Owner since 2024",
+    "avatar": "photo-1438761681033-6461ffad8d80"
+  },
+  "pricing": {
+    "title": "CONFIGURE",
+    "sub": "Three trims. Fixed-price servicing published.",
+    "tiers": [
+      {
+        "name": "EVOLUTION",
+        "price": "€28,900",
+        "period": "",
+        "desc": "The standard trim.",
+        "features": [
+          "40 kWh, 300 km",
+          "Ten-inch display",
+          "Heat pump",
+          "Three-year warranty"
+        ],
+        "cta": "CONFIGURE"
+      },
+      {
+        "name": "TECHNO",
+        "price": "€32,400",
+        "period": "",
+        "desc": "More range and equipment.",
+        "features": [
+          "52 kWh, 400 km",
+          "130 kW charging",
+          "Heated seats",
+          "Vehicle-to-grid"
+        ],
+        "cta": "CONFIGURE",
+        "featured": true,
+        "badge": "MOST ORDERED"
+      },
+      {
+        "name": "ICONIC",
+        "price": "€35,900",
+        "period": "",
+        "desc": "Top specification.",
+        "features": [
+          "Everything in Techno",
+          "Panoramic roof",
+          "Premium audio",
+          "20-inch wheels"
+        ],
+        "cta": "CONFIGURE"
+      }
+    ]
+  },
+  "faq": {
+    "title": "OWNERSHIP",
+    "items": [
+      {
+        "q": "Is 400 km realistic?",
+        "a": "On the combined cycle. Expect roughly 320 in cold weather at motorway speed, which is stated in the brochure rather than left to be discovered."
+      },
+      {
+        "q": "How long does the battery last?",
+        "a": "Warranted for eight years or 160,000 km to 70 percent capacity, with an annual health report included in servicing."
+      },
+      {
+        "q": "What does servicing cost?",
+        "a": "Fixed prices published per interval on the site. There is no estimate at the counter after the car is on the ramp."
+      },
+      {
+        "q": "Can it power my house?",
+        "a": "On supported tariffs, yes. Vehicle-to-grid is included on Techno and above, with the export rate shown in the app before you opt in."
+      }
+    ]
+  },
+  "cta": {
+    "title": "CONFIGURE YOURS",
+    "sub": "From €28,900, with fixed-price servicing published up front.",
+    "btn1": "Configure yours",
+    "btn2": "Find a dealer"
+  },
+  "footer": {
+    "tagline": "Small car, big personality.",
+    "columns": [
+      {
+        "title": "VEHICLES",
+        "links": [
+          "Éclat 5",
+          "Éclat 4",
+          "Estate",
+          "Van"
+        ]
+      },
+      {
+        "title": "ELECTRIC",
+        "links": [
+          "Range",
+          "Charging",
+          "Battery",
+          "Incentives"
+        ]
+      },
+      {
+        "title": "SERVICES",
+        "links": [
+          "Servicing",
+          "Warranty",
+          "Finance",
+          "Accessories"
+        ]
+      },
+      {
+        "title": "COMPANY",
+        "links": [
+          "About",
+          "Careers",
+          "Press",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Éclat Automobiles"
+  },
+  "specimen": "Big personality",
+  "notes": [
+    "Two canvases switched in full-bleed bands: white for browsing, black for storytelling. Never a subtle gradation between them.",
+    "Sunlight yellow is a single accent used scarcely — primary CTAs, NEW badges and configurator indicators.",
+    "Headlines run at line-height 0.95 so condensed multi-line stacks sit cleanly on top of each other.",
+    "Geometry is square: 2px on buttons, nothing on tiles and product cards. Pills are reserved for sub-nav chips and badges.",
+    "Product tiles are photography-first — the vehicle full bleed inside an otherwise neutral card, with copy stacked beneath rather than overlaid."
+  ]
+}

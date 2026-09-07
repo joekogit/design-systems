@@ -1,0 +1,50 @@
+/* SpaceX — pure black, full-bleed imagery, uppercase tracked display, ghost pills. */
+:root { --maxw: 1320px; --sect: clamp(56px, 7vw, 96px); --shadow-1: none; --shadow-2: none;
+  --hero-scrim: linear-gradient(180deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.08) 40%, rgba(0,0,0,.82) 100%); }
+.nav { --nav-bg: transparent; border-bottom: 0; position: absolute; left: 0; right: 0; top: 41px; }
+.brand { font-family: var(--font-display); font-weight: 600; letter-spacing: .42em; font-size: 17px; color: #fff; }
+.brand-ico { display: none; }
+.nav-links a { color: #fff; text-transform: uppercase; letter-spacing: .14em; font-size: 12px; font-weight: 600; }
+.nav-signin { color: #fff; text-transform: uppercase; letter-spacing: .12em; font-size: 11px; }
+.nav-burger { color: #fff; }
+/* one ghost-outlined pill per band — never filled, never coloured */
+.btn { border-radius: 32px; background: transparent; color: #fff; border: 1px solid #fff;
+  text-transform: uppercase; letter-spacing: .14em; font-size: 12px; font-weight: 600; padding: 14px 32px; }
+.btn:hover { background: #fff; color: #000; }
+.btn-secondary { border-color: rgba(255,255,255,.5); }
+.eyebrow, .logos-lead, .metric-l, .hstat span, .g-item figcaption, .fcol h4, .tier-per, .tier-name {
+  text-transform: uppercase; letter-spacing: .16em; font-size: 10.5px; font-weight: 600; }
+.eyebrow { color: rgba(255,255,255,.7); }
+/* uppercase display with positive tracking is the signature */
+.t-display-xl { font-family: var(--font-display); text-transform: uppercase; letter-spacing: .06em;
+  font-weight: 700; font-size: clamp(48px, 11vw, 140px); }
+.t-display-lg, .t-display-md, .sc-title, .feat-title, .faq-item summary {
+  font-family: var(--font-display); text-transform: uppercase; letter-spacing: .08em; font-weight: 600; }
+/* type sits directly on the image, no scrim panel */
+.hero-sub { color: rgba(255,255,255,.88); max-width: 44ch; }
+.hero-stats { border-top-color: rgba(255,255,255,.24); }
+.hstat b { font-family: var(--font-display); text-transform: uppercase; letter-spacing: .04em; }
+.logos { border-block-color: rgba(255,255,255,.16); }
+.logo-item { text-transform: uppercase; letter-spacing: .2em; font-size: 11px; color: rgba(255,255,255,.55); }
+.feat-grid.v-list { gap: 0; }
+.v-list .feat-card { background: transparent; border: 0; border-top: 1px solid rgba(255,255,255,.16);
+  border-radius: 0; padding: var(--s-lg) 0; }
+.feat-ico { background: transparent; border: 0; color: rgba(255,255,255,.6); width: auto; height: auto; font-size: 22px; }
+.feat-title { font-size: 13px; }
+.hero-media img, .sc-media img, .g-item, .quote-card, .tier, .cta-band, .input { border-radius: 0; border: 0; }
+.metrics { --metrics-bg: transparent; border-block: 1px solid rgba(255,255,255,.16); }
+.metric-v { font-family: var(--font-display); text-transform: uppercase; letter-spacing: .04em; }
+.g-item figcaption { background: rgba(0,0,0,.7); border-radius: 0; }
+.quote-card { background: transparent; border-top: 1px solid rgba(255,255,255,.16);
+  --quote-align: left; --quote-by-just: flex-start; padding-inline: 0; }
+.quote-text { font-family: var(--font-body); text-transform: none; font-weight: 300; }
+.quote-mark { display: none; }
+.q-av { border-radius: 0; }
+.tier { border: 1px solid rgba(255,255,255,.2); }
+.tier-feat { border-color: #fff; }
+.tier-num { font-family: var(--font-display); }
+.tier-badge { background: transparent; border: 1px solid #fff; color: #fff; border-radius: 32px; }
+.faq-item { border-bottom-color: rgba(255,255,255,.16); }
+.faq-item summary { font-size: 13px; }
+.cta-band { border-top: 1px solid rgba(255,255,255,.16); border-bottom: 1px solid rgba(255,255,255,.16); }
+.spec { --spec-bg: #050505; border-top-color: rgba(255,255,255,.16); }

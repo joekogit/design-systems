@@ -1,0 +1,49 @@
+/* Webflow — two-colour conversion, five-stop category fills, tight 4px buttons. */
+:root { --maxw: 1200px; --sect: clamp(56px, 7vw, 92px);
+  --c-purple: #4353ff; --c-pink: #e04ba0; --c-blue: #2b7fff; --c-orange: #ff8a3d; --c-green: #24b47e;
+  --shadow-1: 0 1px 2px rgba(0,0,0,.05), 0 4px 10px rgba(0,0,0,.05), 0 12px 30px rgba(0,0,0,.07);
+  --shadow-2: 0 2px 4px rgba(0,0,0,.06), 0 8px 20px rgba(0,0,0,.07), 0 22px 50px rgba(0,0,0,.1); }
+.nav { --nav-bg: rgba(255,255,255,.94); backdrop-filter: blur(10px); }
+.brand { font-weight: 700; letter-spacing: -.03em; }
+.brand-ico { color: var(--c-purple); }
+/* tight 4px buttons; never pills */
+.btn { border-radius: 4px; font-weight: 600; padding: 12px 22px; }
+.btn-primary { background: #12141a; color: #fff; }
+.btn-primary:hover { background: #2b2f38; }
+.btn-secondary { background: #fff; border-color: #dcdfe4; }
+.btn-secondary:hover { background: #fafbfc; border-color: #12141a; }
+.eyebrow, .logos-lead, .metric-l { font-family: var(--font-mono); text-transform: uppercase;
+  letter-spacing: .1em; font-size: 11px; }
+.eyebrow { color: var(--c-purple); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 600; letter-spacing: -.01em; }
+.hero-title em { color: var(--c-purple); }
+.logos { border-block-color: #e6e8ec; }
+/* the five-stop category palette, as full card fills only */
+.feat-card { background: var(--c-purple); color: #fff; border: 0; border-radius: 8px; box-shadow: var(--shadow-1); padding: 26px; }
+.feat-card:nth-child(2) { background: var(--c-pink); }
+.feat-card:nth-child(3) { background: var(--c-blue); }
+.feat-card:nth-child(4) { background: var(--c-orange); }
+.feat-card:nth-child(5) { background: var(--c-green); }
+.feat-card:nth-child(6) { background: #12141a; }
+.feat-card:hover { box-shadow: var(--shadow-2); transform: translateY(-2px); }
+.feat-body { color: rgba(255,255,255,.86); }
+.feat-ico { background: rgba(255,255,255,.22); color: #fff; border: 0; border-radius: 6px; }
+.hero-media img, .sc-media img, .g-item { border-radius: 8px; border: 0; box-shadow: var(--shadow-1); }
+.metrics { --metrics-bg: #12141a; border-block: 0; }
+.metrics .metric-v { color: #fff; }
+.metrics .metric-l, .metrics .logos-lead { color: #8a90a0; }
+.g-item figcaption { background: rgba(18,20,26,.86); border-radius: 4px; font-family: var(--font-mono); font-size: 11px; }
+.quote-card { background: #f6f7f9; border: 0; border-radius: 8px; --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--c-purple); }
+.tier { background: #fff; border-color: #e6e8ec; border-radius: 8px; box-shadow: var(--shadow-1); }
+.tier-feat { border-color: var(--c-purple); border-width: 2px; box-shadow: var(--shadow-2); }
+.tier-badge { background: var(--c-purple); border-radius: 4px; font-family: var(--font-mono); font-size: 10px; }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--c-purple); }
+.faq-item { border-bottom-color: #e6e8ec; }
+.cta-band { background: #12141a; color: #fff; border: 0; border-radius: 8px; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: #8a90a0; }
+.cta-band .btn-primary { background: #fff; color: #12141a; }
+.cta-band .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.3); }
+.spec { --spec-bg: #f6f7f9; }
+.input, .badge2, .tabs, .tabs button, .sw { border-radius: 4px; }

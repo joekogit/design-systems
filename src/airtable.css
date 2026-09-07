@@ -1,0 +1,49 @@
+/* Airtable — plain white hero, the button pair, signature colour cards between resets. */
+:root { --maxw: 1200px; --sect: clamp(56px, 7vw, 92px); --shadow-1: none; --shadow-2: none;
+  --coral: #ff6b57; --forest: #17513f; --navy: #101828; --peach: #ffe6dd; --mint: #dff3ea; --cream: #f8f2e6; }
+.nav { --nav-bg: rgba(255,255,255,.94); backdrop-filter: blur(10px); }
+.brand { font-family: var(--font-display); font-weight: 800; letter-spacing: -.03em; }
+.brand-ico { color: var(--coral); }
+/* the signature button pair */
+.btn { border-radius: 12px; font-weight: 700; padding: 13px 24px; }
+.btn-primary { background: #101828; color: #fff; }
+.btn-primary:hover { background: #2a3441; }
+.btn-secondary { background: #fff; color: #101828; border-color: #d6dae0; }
+.btn-secondary:hover { background: #fafbfc; border-color: #101828; }
+.eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 700; }
+.eyebrow { color: var(--coral); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-family: var(--font-display); font-weight: 800; letter-spacing: -.035em; }
+.hero-title em { color: var(--coral); }
+.logos { border-block-color: #e6e9ed; }
+/* demo grids on warm pastel surfaces */
+.feat-card { background: var(--peach); border: 0; border-radius: 16px; padding: 26px; }
+.feat-card:nth-child(2) { background: var(--mint); }
+.feat-card:nth-child(3) { background: var(--cream); }
+.feat-card:nth-child(4) { background: var(--mint); }
+.feat-card:nth-child(5) { background: var(--cream); }
+.feat-card:nth-child(6) { background: var(--peach); }
+.feat-ico { background: rgba(255,255,255,.72); color: #101828; border: 0; border-radius: 12px; }
+.hero-media img, .sc-media img, .g-item { border-radius: 16px; border: 1px solid #e6e9ed; }
+/* full-bleed signature surfaces; the canvas resets between them */
+.metrics { --metrics-bg: var(--coral); border-block: 0; }
+.metrics .metric-v { color: #fff; }
+.metrics .metric-l, .metrics .logos-lead { color: rgba(255,255,255,.82); }
+.g-item figcaption { background: rgba(16,24,40,.86); border-radius: 10px; }
+.quote-card { background: var(--forest); color: #fff; border: 0; border-radius: 20px;
+  --quote-align: left; --quote-by-just: flex-start; }
+.quote-text { color: #fff; }
+.quote-by b { color: #fff; } .quote-by span { color: rgba(255,255,255,.72); }
+.quote-mark { color: #9fd8c2; }
+.q-av { border-radius: 50%; }
+.pricing { background: var(--cream); }
+.tier { background: #fff; border: 0; border-radius: 16px; }
+.tier-feat { outline: 2px solid #101828; outline-offset: -2px; }
+.tier-badge { background: #101828; border-radius: 10px; font-size: 10px; letter-spacing: .1em; }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--coral); }
+.faq-item { border-bottom-color: #e6e9ed; }
+.cta-band { background: var(--navy); color: #fff; border: 0; border-radius: 20px; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: #98a2b3; }
+.cta-band .btn-primary { background: #fff; color: var(--navy); }
+.cta-band .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.34); }
+.spec { --spec-bg: #f7f8f9; }

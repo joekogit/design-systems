@@ -1,0 +1,49 @@
+/* BMW — light base, navy only in hero bands, one corporate blue, rectangular buttons. */
+:root { --maxw: 1300px; --sect: clamp(56px, 7vw, 92px); --shadow-1: none; --shadow-2: none;
+  --navy: #16212e;
+  --hero-scrim: linear-gradient(180deg, rgba(22,33,46,.55) 0%, rgba(22,33,46,.15) 42%, rgba(22,33,46,.86) 100%); }
+/* rectangular corporate dialect */
+.btn, .feat-card, .tier, .quote-card, .g-item, .cta-band, .input, .hero-media img, .sc-media img,
+.tier-badge, .badge2, .tabs, .tabs button, .sw { border-radius: 0; }
+.nav { --nav-bg: rgba(255,255,255,.96); border-bottom-color: #e4e7ea; }
+.brand { font-weight: 700; letter-spacing: .16em; font-size: 15px; }
+.brand-ico { color: var(--c-primary); }
+.nav-links a { text-transform: uppercase; letter-spacing: .1em; font-size: 12px; font-weight: 500; }
+.btn { text-transform: uppercase; letter-spacing: .1em; font-size: 12px; font-weight: 500; padding: 15px 30px; }
+.btn-secondary { background: transparent; border-color: var(--c-primary); color: var(--c-primary); }
+.btn-secondary:hover { background: #eaf1fc; }
+.eyebrow, .logos-lead, .metric-l, .hstat span { text-transform: uppercase; letter-spacing: .16em; font-size: 10.5px; font-weight: 500; }
+.eyebrow { color: rgba(255,255,255,.75); }
+/* weight 700 display against weight 300 body is the signature */
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title, .feat-title, .tier-name, .metric-v, .hstat b { font-weight: 700; }
+.lede, .sc-body, .feat-body, .faq-a, .tier-desc, .hero-sub { font-weight: 300; }
+.hero-title { color: #fff; }
+.hero-title em { color: var(--c-primary); }
+.hero-sub { color: rgba(255,255,255,.9); }
+.hero-stats { border-top-color: rgba(255,255,255,.28); }
+.hstat b { color: #fff; } .hstat span { color: rgba(255,255,255,.68); }
+.hero .btn-secondary { color: #fff; border-color: rgba(255,255,255,.6); }
+.logos { border-block-color: #e4e7ea; background: #f5f7f9; }
+.logo-item { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 500; }
+/* model cards: white plate, photo, title — no border */
+.feat-card { background: #f5f7f9; border: 0; padding: 26px; }
+.feat-ico { background: transparent; border: 0; color: var(--c-primary); width: auto; height: auto; font-size: 26px; }
+.g-item { background: #f5f7f9; }
+.g-item figcaption { background: rgba(22,33,46,.88); letter-spacing: .12em; font-size: 10px; }
+.metrics { --metrics-bg: var(--navy); border-block: 0; }
+.metrics .metric-v { color: #fff; }
+.metrics .metric-l, .metrics .logos-lead { color: #93a3b3; }
+.quote-card { background: #f5f7f9; border: 0; --quote-align: left; --quote-by-just: flex-start; }
+.quote-text { font-weight: 300; }
+.quote-mark { color: var(--c-primary); }
+.tier { background: #f5f7f9; border: 0; }
+.tier-feat { outline: 2px solid var(--c-primary); outline-offset: -2px; background: #fff; }
+.tier-badge { background: var(--c-primary); letter-spacing: .1em; font-size: 10px; }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--c-primary); }
+.faq-item { border-bottom-color: #e4e7ea; }
+.cta-band { background: var(--navy); color: #fff; border: 0; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: #93a3b3; }
+.cta-band .btn-primary { background: #fff; color: var(--navy); }
+.cta-band .btn-secondary { color: #fff; border-color: rgba(255,255,255,.5); }
+.spec { --spec-bg: #f5f7f9; }

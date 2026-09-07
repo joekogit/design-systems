@@ -1,0 +1,334 @@
+{
+  "slug": "figma",
+  "name": "Figma",
+  "category": "Design & creative tools",
+  "look": "Monochrome core with oversized pastel colour-block sections, pills as the only button shape, and mono eyebrows flagging taxonomy.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "centered",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-pen-nib",
+    "name": "Palette"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Product",
+        "href": "features"
+      },
+      {
+        "label": "Community",
+        "href": "gallery"
+      },
+      {
+        "label": "Enterprise",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Learn",
+        "href": "faq"
+      }
+    ],
+    "cta": "Get started",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "DESIGN, TOGETHER",
+    "title": "Nothing great is made <em>alone</em>",
+    "sub": "A design tool that runs in the browser, so the file is a URL and the version everyone is looking at is the same one.",
+    "cta1": "Get started",
+    "cta2": "Watch a demo",
+    "image": "photo-1547658719-da2b51169166",
+    "ratio": 0.58,
+    "stats": [
+      {
+        "v": "Browser",
+        "l": "Native"
+      },
+      {
+        "v": "Multiplayer",
+        "l": "By default"
+      },
+      {
+        "v": "One",
+        "l": "File version"
+      }
+    ]
+  },
+  "logo_lead": "DESIGNING WITH PALETTE",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "THE PLATFORM",
+    "title": "One file, everyone in it",
+    "sub": "Multiplayer stopped being a feature the moment the file became a URL.",
+    "items": [
+      {
+        "icon": "ph-users-three",
+        "title": "Multiplayer",
+        "body": "Cursors, selection and edits in real time. No merge, no export, no 'final v3'."
+      },
+      {
+        "icon": "ph-squares-four",
+        "title": "Components",
+        "body": "Build once and reuse, with variants and properties, updated everywhere at once."
+      },
+      {
+        "icon": "ph-code",
+        "title": "Handoff built in",
+        "body": "Developers open the same file and read spacing, tokens and generated code."
+      },
+      {
+        "icon": "ph-cursor-click",
+        "title": "Prototyping",
+        "body": "Wire flows and interactions in the same file as the design, testable on a device."
+      },
+      {
+        "icon": "ph-palette",
+        "title": "Design systems",
+        "body": "Published libraries with versioning, so a token change is a reviewable release."
+      },
+      {
+        "icon": "ph-globe",
+        "title": "Browser native",
+        "body": "No install, no sync client, no file that lives on one laptop."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "COLLABORATION",
+      "title": "The file is a URL",
+      "body": "Once the file lives at an address, sharing it is sending a link and reviewing it is leaving a comment on the thing itself. The whole category of exporting flat images for feedback disappears.",
+      "points": [
+        "Comments anchored to the object",
+        "Version history with named checkpoints",
+        "Branching for larger explorations"
+      ],
+      "image": "photo-1552664730-d307ca884978",
+      "cta": "How collaboration works"
+    },
+    {
+      "eyebrow": "ENTERPRISE",
+      "title": "Design systems as releases",
+      "body": "A published library is versioned. Updating a component is a release consumers choose to take, with a diff, rather than a change that silently appears in everyone's file overnight.",
+      "points": [
+        "Versioned library publishing",
+        "Diff before consumers update",
+        "Usage analytics per component"
+      ],
+      "image": "photo-1454165804606-c3d57bc86b40",
+      "cta": "Enterprise overview"
+    }
+  ],
+  "metric_lead": "ACROSS PALETTE",
+  "metrics": [
+    {
+      "v": "4M+",
+      "l": "DESIGNERS"
+    },
+    {
+      "v": "Browser",
+      "l": "NATIVE"
+    },
+    {
+      "v": "0",
+      "l": "FILES TO SYNC"
+    },
+    {
+      "v": "1",
+      "l": "SOURCE OF TRUTH"
+    }
+  ],
+  "gallery": {
+    "title": "COMMUNITY",
+    "sub": "Files, plugins and templates published by the people who use them.",
+    "items": [
+      {
+        "id": "photo-1547658719-da2b51169166",
+        "tag": "UI kits",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1541961017774-22349e4a1262",
+        "tag": "Illustration",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1557804506-669a67965ba0",
+        "tag": "Workshops",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1552664730-d307ca884978",
+        "tag": "Templates",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1487017159836-4e23ece2e4cf",
+        "tag": "Presentations",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Plugins",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "We stopped exporting PNGs for review, and about a week later realised nobody had asked which file was the current one since.",
+    "name": "Yuki Tanaka",
+    "role": "Design Director, Corva",
+    "avatar": "photo-1534528741775-53994a69daeb"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Free for individuals. Paid per editor, not per viewer.",
+    "tiers": [
+      {
+        "name": "Starter",
+        "price": "$0",
+        "period": "forever",
+        "desc": "For individuals and small files.",
+        "features": [
+          "3 design files",
+          "Unlimited viewers",
+          "Plugins and templates",
+          "Community support"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "name": "Professional",
+        "price": "$15",
+        "period": "/editor/mo",
+        "desc": "For teams shipping work.",
+        "features": [
+          "Unlimited files",
+          "Shared libraries",
+          "Version history",
+          "Email support"
+        ],
+        "cta": "Get started",
+        "featured": true,
+        "badge": "MOST TEAMS"
+      },
+      {
+        "name": "Organisation",
+        "price": "$45",
+        "period": "/editor/mo",
+        "desc": "For design systems at scale.",
+        "features": [
+          "Everything in Professional",
+          "Library analytics",
+          "Branching",
+          "SSO and admin"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "Do viewers cost anything?",
+        "a": "No. You pay per editor. Anyone can be invited to view and comment for free, which is what makes sharing work across a company practical."
+      },
+      {
+        "q": "Does it work offline?",
+        "a": "Recently opened files are cached and editable offline, syncing when you reconnect. Opening a file you have never viewed needs a connection."
+      },
+      {
+        "q": "Can I export my files?",
+        "a": "Yes, in an open format plus flat assets. Nothing is trapped, though the collaboration is obviously what you lose by leaving."
+      },
+      {
+        "q": "How do libraries version?",
+        "a": "A publish creates a release with a diff. Consuming files choose when to accept it, so a token change never silently rewrites someone's work in progress."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Open a file",
+    "sub": "Free to start, browser native, and nothing to install.",
+    "btn1": "Get started",
+    "btn2": "Watch a demo"
+  },
+  "footer": {
+    "tagline": "Nothing great is made alone.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Design",
+          "Prototyping",
+          "Dev mode",
+          "Libraries"
+        ]
+      },
+      {
+        "title": "Community",
+        "links": [
+          "Files",
+          "Plugins",
+          "Templates",
+          "Events"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Learn",
+          "Blog",
+          "Support",
+          "Best practices"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Pricing",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Palette Design"
+  },
+  "specimen": "Made together",
+  "notes": [
+    "The system core is monochrome — black and white carry every CTA, every body line and every footer link.",
+    "Oversized pastel colour-block sections define the narrative rhythm of a long page. They are sections, not cards.",
+    "The pill is the only button shape. There are no square buttons anywhere in this system.",
+    "The variable typeface is used at unusually fine weight increments, so the type reads as one voice flexing rather than a multi-weight family.",
+    "A mono face is reserved for category labels, eyebrows and captions — always uppercase with positive tracking, flagging taxonomy without competing with the display."
+  ]
+}

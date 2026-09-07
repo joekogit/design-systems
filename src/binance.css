@@ -1,0 +1,43 @@
+/* Binance — yellow does all the voltage, flat dark surfaces, light footer closes it. */
+:root { --maxw: 1240px; --sect: clamp(56px, 7vw, 92px); --shadow-1: none; --shadow-2: none;
+  --yellow: #fcd535; --card: #1e2329; --up: #0ecb81; --down: #f6465d; --light: #fafafa; }
+.nav { --nav-bg: rgba(11,14,17,.94); border-bottom-color: #2b3139; }
+.brand { font-weight: 800; letter-spacing: -.02em; }
+.brand-ico { color: var(--yellow); }
+.btn { border-radius: 6px; font-weight: 600; }
+.btn-primary { background: var(--yellow); color: #0b0e11; }
+.btn-primary:hover { background: #f0b90b; }
+.btn-secondary { background: var(--card); border-color: #2b3139; }
+.btn-secondary:hover { background: #2b3139; border-color: #474d57; }
+.eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 600; }
+.eyebrow { color: var(--yellow); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; letter-spacing: -.03em; }
+.hero-title em { color: var(--yellow); }
+/* numbers take the mono face so columns of figures align */
+.metric-v, .tier-num, .hstat b, table.tbl td { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.logos { border-block-color: #2b3139; }
+.feat-card { background: var(--card); border-color: #2b3139; border-radius: 8px; }
+.feat-card:hover { background: #262d35; border-color: #474d57; }
+.feat-ico { background: rgba(252,213,53,.14); color: var(--yellow); border: 0; border-radius: 6px; }
+.hero-media img, .sc-media img, .g-item { border-radius: 8px; border-color: #2b3139; }
+.metrics { --metrics-bg: var(--card); border-block: 0; }
+.metrics .metric-v { color: var(--yellow); }
+.g-item figcaption { background: rgba(11,14,17,.9); border-radius: 4px; font-family: var(--font-mono); font-size: 11px; }
+.quote-card { background: var(--card); border-color: #2b3139; border-radius: 8px; --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--yellow); }
+.tier { background: var(--card); border-color: #2b3139; border-radius: 8px; }
+.tier-feat { border-color: var(--yellow); }
+.tier-name { font-family: var(--font-mono); letter-spacing: .06em; }
+.tier-badge { background: var(--yellow); color: #0b0e11; border-radius: 4px; font-size: 10px; letter-spacing: .08em; }
+.tier-feats i, .sc-points i { color: var(--up); }
+.faq-item { border-bottom-color: #2b3139; }
+.faq-mk { color: var(--yellow); }
+.cta-band { background: var(--card); border-color: #2b3139; border-radius: 8px; }
+/* the deliberate inversion: a light footer under a dark body */
+.foot { background: var(--light); --foot-bg: var(--light); color: #1e2329; border-top: 0; }
+.foot .brand { color: #1e2329; }
+.fcol h4 { color: #707a8a; } .fcol a, .foot-tag { color: #474d57; }
+.fcol a:hover { color: #1e2329; }
+.foot-legal { color: #707a8a; border-top-color: #eaecef; }
+.foot-socials a { border-color: #eaecef; color: #474d57; }
+.spec { --spec-bg: var(--card); }

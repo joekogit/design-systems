@@ -1,0 +1,334 @@
+{
+  "slug": "hp",
+  "name": "HP",
+  "category": "Media & consumer tech",
+  "look": "Pure white with alternating fog bands, one electric blue appearing at most twice per viewport, and blue chevrons framing the hero.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Archivo\", -apple-system, sans-serif",
+    "body": "\"Archivo\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "elevated",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-printer",
+    "name": "Halcyon"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Laptops",
+        "href": "features"
+      },
+      {
+        "label": "Printers",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Business",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Support",
+        "href": "gallery"
+      },
+      {
+        "label": "Shop",
+        "href": "pricing"
+      }
+    ],
+    "cta": "Shop now",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "HALCYON BOOK 14",
+    "title": "Work that <em>keeps up</em>",
+    "sub": "A fourteen-inch aluminium laptop with a fifteen-hour battery, a repairable design, and a keyboard somebody clearly tested for a full working day.",
+    "cta1": "Shop now",
+    "cta2": "Compare models",
+    "image": "photo-1487017159836-4e23ece2e4cf",
+    "ratio": 0.66,
+    "stats": [
+      {
+        "v": "15 hrs",
+        "l": "Battery"
+      },
+      {
+        "v": "1.24 kg",
+        "l": "Weight"
+      },
+      {
+        "v": "5 yrs",
+        "l": "Parts availability"
+      }
+    ]
+  },
+  "logo_lead": "RECOGNISED BY",
+  "logos": [
+    "IF Design",
+    "Red Dot",
+    "EPEAT Gold",
+    "Energy Star",
+    "TCO",
+    "Green Seal"
+  ],
+  "features": {
+    "eyebrow": "THE MACHINE",
+    "title": "Made to be kept",
+    "sub": "Repairability, parts availability and a battery that lasts the day — the things that decide whether a laptop is still in use in year four.",
+    "items": [
+      {
+        "icon": "ph-battery-full",
+        "title": "Fifteen-hour battery",
+        "body": "Measured on real mixed use, not a video loop with the screen at minimum brightness."
+      },
+      {
+        "icon": "ph-wrench",
+        "title": "Repairable",
+        "body": "Standard screws, a replaceable battery, and service manuals published free."
+      },
+      {
+        "icon": "ph-package",
+        "title": "Five years of parts",
+        "body": "Committed parts availability, so a repair in year four is possible rather than theoretical."
+      },
+      {
+        "icon": "ph-keyboard",
+        "title": "A keyboard for typing",
+        "body": "1.5mm travel and a layout that survives a full working day without adaptation."
+      },
+      {
+        "icon": "ph-recycle",
+        "title": "Recycled materials",
+        "body": "Ninety percent recycled aluminium in the chassis, with the recycled content stated per component."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "Business ready",
+        "body": "Firmware protection, remote management and a three-year on-site warranty option."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "PRINTERS",
+      "title": "Ink you can buy from anyone",
+      "body": "Cartridges are not region-locked, third-party ink does not disable the printer, and firmware updates never remove a feature you paid for. That policy is written down.",
+      "points": [
+        "No region locking on cartridges",
+        "Third-party ink permitted",
+        "Firmware never removes paid features"
+      ],
+      "image": "photo-1591696205602-2f950c417cb9",
+      "cta": "Printer range"
+    },
+    {
+      "eyebrow": "BUSINESS",
+      "title": "Managed without being locked",
+      "body": "Fleet management, firmware policy and remote wipe for organisations, without preventing an individual machine from being repaired or resold at end of life.",
+      "points": [
+        "Remote management and firmware policy",
+        "Repairable while under management",
+        "Documented end-of-life unlock"
+      ],
+      "image": "photo-1454165804606-c3d57bc86b40",
+      "cta": "Business range"
+    }
+  ],
+  "metric_lead": "HALCYON BOOK 14",
+  "metrics": [
+    {
+      "v": "15 HRS",
+      "l": "BATTERY"
+    },
+    {
+      "v": "1.24 KG",
+      "l": "WEIGHT"
+    },
+    {
+      "v": "5 YRS",
+      "l": "PARTS AVAILABILITY"
+    },
+    {
+      "v": "90%",
+      "l": "RECYCLED ALUMINIUM"
+    }
+  ],
+  "gallery": {
+    "title": "SUPPORT",
+    "sub": "Manuals, drivers, parts and repair guides.",
+    "items": [
+      {
+        "id": "photo-1487017159836-4e23ece2e4cf",
+        "tag": "Laptops",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1591696205602-2f950c417cb9",
+        "tag": "Printers",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1454165804606-c3d57bc86b40",
+        "tag": "Business",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "Parts",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1504384308090-c894fdcc538d",
+        "tag": "Workspaces",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1521737604893-d14cc237f11d",
+        "tag": "Fleet",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "I replaced the battery myself in eleven minutes with a manual they published for free. That is why we are buying forty more.",
+    "name": "Peter Nowak",
+    "role": "IT Manager, Basisplan",
+    "avatar": "photo-1573496359142-b8d87734a5a2"
+  },
+  "pricing": {
+    "title": "SHOP",
+    "sub": "Three configurations, with free next-day delivery.",
+    "tiers": [
+      {
+        "name": "BOOK 14",
+        "price": "$899",
+        "period": "",
+        "desc": "The standard configuration.",
+        "features": [
+          "16GB memory",
+          "512GB storage",
+          "15-hour battery",
+          "One-year warranty"
+        ],
+        "cta": "Shop now"
+      },
+      {
+        "name": "BOOK 14 PRO",
+        "price": "$1,199",
+        "period": "",
+        "desc": "More memory and a brighter panel.",
+        "features": [
+          "32GB memory",
+          "1TB storage",
+          "500-nit display",
+          "Two-year warranty"
+        ],
+        "cta": "Shop now",
+        "featured": true,
+        "badge": "MOST POPULAR"
+      },
+      {
+        "name": "BOOK 14 BUSINESS",
+        "price": "$1,399",
+        "period": "",
+        "desc": "Managed and covered on site.",
+        "features": [
+          "Everything in Pro",
+          "Remote management",
+          "Firmware protection",
+          "Three-year on-site"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "SUPPORT",
+    "items": [
+      {
+        "q": "Can I repair it myself?",
+        "a": "Yes. Standard screws, a replaceable battery, and service manuals published free. Self-repair does not void the warranty on unrelated components."
+      },
+      {
+        "q": "How long will parts be available?",
+        "a": "Five years from the end of sale, committed in writing rather than offered as a best effort."
+      },
+      {
+        "q": "Is third-party ink allowed?",
+        "a": "Yes. Cartridges are not region-locked and third-party ink does not disable the printer. That policy is published and we do not change it by firmware update."
+      },
+      {
+        "q": "What is the real battery life?",
+        "a": "Fifteen hours on mixed use at 150 nits — office work, browsing and video calls. The test methodology is published alongside the figure."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Built to be kept",
+    "sub": "Five years of parts, free service manuals, and a battery you can replace.",
+    "btn1": "Shop now",
+    "btn2": "Compare models"
+  },
+  "footer": {
+    "tagline": "Work that keeps up.",
+    "columns": [
+      {
+        "title": "Products",
+        "links": [
+          "Laptops",
+          "Printers",
+          "Monitors",
+          "Accessories"
+        ]
+      },
+      {
+        "title": "Business",
+        "links": [
+          "Fleet",
+          "Managed print",
+          "Security",
+          "Contact"
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          "Manuals",
+          "Drivers",
+          "Parts",
+          "Repair"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Sustainability",
+          "Careers",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Halcyon"
+  },
+  "specimen": "Work that keeps up",
+  "notes": [
+    "Pure white with deep ink running every body surface; light fog bands alternate to set the section rhythm.",
+    "The electric blue is the lone CTA fill and link colour, and it appears at most twice per viewport.",
+    "One bespoke face covers display, body, button and caption at four weights.",
+    "Cards round at 16px while buttons stay tight at 4px with capitalised labels — the gap between those radii is deliberate.",
+    "Geometric blue chevrons, rectangles cut at 45 degrees, frame the hero photography and echo the wordmark."
+  ]
+}

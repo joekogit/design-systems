@@ -1,0 +1,44 @@
+/* IBM — Carbon chrome. Square everything, weight-300 display, one blue, charcoal footer. */
+:root { --maxw: 1240px; --sect: clamp(56px, 7vw, 92px); --shadow-1: none; --shadow-2: none; --s1: #f4f4f4; }
+/* corners stay at 0 throughout */
+.btn, .feat-card, .tier, .quote-card, .g-item, .cta-band, .input, .badge2, .tabs, .tabs button,
+.hero-media img, .sc-media img, .q-av, .sw, .feat-ico, .tier-badge, .g-item figcaption { border-radius: 0; }
+.nav { --nav-bg: #fff; border-bottom-color: #e0e0e0; }
+.brand { font-weight: 600; letter-spacing: -.01em; }
+.brand-ico { color: var(--c-primary); }
+.btn { font-weight: 400; padding: 15px 60px 15px 16px; text-align: left; justify-content: flex-start; }
+.btn-secondary { background: transparent; border: 1px solid var(--c-primary); color: var(--c-primary); }
+.btn-secondary:hover { background: #e8f1ff; }
+.eyebrow, .logos-lead, .metric-l { text-transform: none; letter-spacing: 0; font-weight: 600; font-size: 14px; }
+.eyebrow { color: var(--c-ink); }
+/* weight 300 display is the signature */
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title, .quote-text, .metric-v, .tier-num, .hstat b {
+  font-weight: 300; letter-spacing: 0; }
+.hero-title em { color: var(--c-primary); }
+.logos { border-block-color: #e0e0e0; background: var(--s1); }
+.feat-card { background: var(--s1); border: 0; padding: 26px; }
+.feat-card:hover { background: #e8e8e8; }
+.feat-ico { background: transparent; border: 0; color: var(--c-primary); width: auto; height: auto; font-size: 26px; }
+.hero-media img, .sc-media img, .g-item { border: 0; }
+.metrics { --metrics-bg: var(--s1); border-block: 0; }
+.g-item figcaption { background: rgba(22,22,22,.9); }
+.quote-card { background: var(--s1); border: 0; --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--c-primary); }
+.tier { background: var(--s1); border: 0; }
+.tier-feat { background: #fff; outline: 1px solid var(--c-primary); outline-offset: -1px; }
+.tier-badge { background: var(--c-primary); }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--c-primary); }
+.faq-item { border-bottom-color: #e0e0e0; }
+.cta-band { background: var(--c-primary); color: #fff; border: 0; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: rgba(255,255,255,.86); }
+.cta-band .btn-primary { background: #fff; color: var(--c-primary); }
+.cta-band .btn-secondary { color: #fff; border-color: #fff; }
+/* the only dark surface above the page break */
+.foot { background: #161616; --foot-bg: #161616; border-top: 0; }
+.foot .brand { color: #fff; }
+.fcol h4 { color: #8d8d8d; } .fcol a, .foot-tag { color: #c6c6c6; }
+.fcol a:hover { color: #fff; }
+.foot-legal { color: #8d8d8d; border-top-color: #393939; }
+.foot-socials a { border-color: #393939; color: #c6c6c6; border-radius: 0; }
+.spec { --spec-bg: var(--s1); }

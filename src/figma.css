@@ -1,0 +1,47 @@
+/* Figma — monochrome core, oversized pastel colour blocks, pills only. */
+:root { --maxw: 1220px; --sect: clamp(56px, 7vw, 100px); --shadow-1: none; --shadow-2: none;
+  --lime: #e6f7a0; --lilac: #ded4f5; --cream: #f7efe0; --mint: #cfeee0; --pink: #fbdce8; --coral: #ffd9cc; --navy: #16183f; }
+.nav { --nav-bg: rgba(255,255,255,.94); backdrop-filter: blur(10px); }
+.brand { font-weight: 700; letter-spacing: -.03em; }
+.brand-ico { color: #000; }
+/* the pill is the only button shape */
+.btn, .badge2, .tabs, .tabs button, .input { border-radius: var(--r-pill); }
+.btn { font-weight: 500; padding: 13px 26px; }
+.btn-primary { background: #000; color: #fff; }
+.btn-primary:hover { background: #333; }
+.btn-secondary { background: #fff; border-color: #d6d6d6; }
+.btn-secondary:hover { background: #f4f4f4; border-color: #000; }
+/* mono flags taxonomy without competing with the display */
+.eyebrow, .logos-lead, .metric-l, .g-item figcaption, .fcol h4, .tier-per, .zoo-cell h4 {
+  font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .1em; font-size: 11px; }
+.eyebrow { color: var(--c-ink-subtle); }
+.hero { text-align: center; }
+.t-display-xl { letter-spacing: -.02em; font-weight: 500; }
+.t-display-lg, .t-display-md, .sc-title { letter-spacing: -.015em; font-weight: 500; }
+.hero-media img, .sc-media img, .g-item { border-radius: 18px; border: 0; }
+.logos { background: var(--lime); border-block: 0; }
+.logo-item { color: #16183f; font-weight: 600; opacity: 1; }
+/* oversized colour-block sections define the rhythm */
+.features { background: var(--lilac); }
+.gallery { background: var(--cream); }
+.faq { background: var(--mint); }
+.feat-card { background: #fff; border: 0; border-radius: 18px; padding: 26px; }
+.feat-ico { background: var(--pink); color: #000; border: 0; border-radius: var(--r-pill); width: 46px; height: 46px; }
+.metrics { --metrics-bg: var(--navy); border-block: 0; }
+.metrics .metric-v { color: #fff; }
+.metrics .metric-l, .metrics .logos-lead { color: #a5a8cf; }
+.g-item figcaption { background: #fff; color: #000; border-radius: var(--r-pill); font-weight: 500; }
+.quote-card { background: var(--coral); border: 0; border-radius: 26px; --quote-align: left; --quote-by-just: flex-start; }
+.q-av { border-radius: var(--r-pill); }
+.tier { background: #fff; border: 0; border-radius: 18px; }
+.pricing { background: var(--pink); }
+.tier-feat { outline: 2px solid #000; outline-offset: -2px; }
+.tier-badge { background: #000; border-radius: var(--r-pill); font-family: var(--font-mono); font-size: 10px; }
+.tier-feats i, .sc-points i, .faq-mk { color: #000; }
+.faq-item { border-bottom-color: rgba(0,0,0,.14); }
+.cta-band { background: var(--navy); color: #fff; border: 0; border-radius: 26px; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: #a5a8cf; }
+.cta-band .btn-primary { background: #fff; color: var(--navy); }
+.cta-band .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.4); }
+.spec { --spec-bg: #fafafa; }

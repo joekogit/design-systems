@@ -1,0 +1,97 @@
+/* Dell 1996 — a literal page frame, flat ribbon cards, Arial Black over Times, GIF stickers. */
+:root { --maxw: 1080px; --gut: 20px; --sect: clamp(36px, 4.5vw, 56px);
+  --shadow-1: none; --shadow-2: none;
+  --frame: #000000; --red: #cc0000;
+  --sage: #cfd8c4; --salmon: #f2c4b0; --peri: #c9cbe8; --sky: #bcd8ea; --butter: #f2e3ab; --stone: #dcd8cf; }
+
+/* the browser window treated as a printed picture frame */
+body { border: 8px solid var(--frame); background: #ffffff; }
+.libbar { margin: -8px -8px 0; }
+
+.nav { --nav-bg: #ffffff; border-bottom: 3px solid var(--frame); }
+.nav::before { content: ""; display: block; height: 22px; background: var(--frame); }
+.nav-in { min-height: 52px; }
+.brand { font-family: var(--font-display); font-weight: 400; font-size: 19px; letter-spacing: -.01em; }
+.brand-ico { color: var(--red); }
+.nav-links a { font-family: var(--font-body); font-weight: 700; font-size: 13px; letter-spacing: .04em; color: #000; }
+.nav-links a:hover { color: var(--red); text-decoration: underline; }
+
+/* flat colour blocks: no gradients, no shadows, no opacity */
+.btn { border-radius: 0; font-family: var(--font-body); font-weight: 700; letter-spacing: .06em;
+  font-size: 13px; padding: 12px 22px; border: 2px solid var(--frame); }
+.btn-primary { background: var(--red); color: #fff; }
+.btn-primary:hover { background: #a30000; }
+.btn-secondary { background: var(--butter); color: #000; }
+.btn-secondary:hover { background: #ecd88f; }
+.eyebrow { font-family: var(--font-body); font-weight: 700; text-transform: uppercase;
+  letter-spacing: .1em; font-size: 11px; color: #000; background: var(--butter);
+  display: inline-block; padding: 3px 10px; border: 2px solid var(--frame); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title, .cta-band .t-display-md {
+  font-family: var(--font-display); font-weight: 400; text-transform: uppercase; letter-spacing: -.01em; }
+.hero-title em { color: var(--red); }
+.feat-title, .tier-name, .faq-item summary { font-family: var(--font-body); font-weight: 700; }
+.lede, .sc-body, .feat-body, .faq-a, .tier-desc, .hero-sub, .quote-text { font-family: var(--font-body); }
+
+/* the yellow BUY tab sticker, top right of the hero */
+.hero { position: relative; border-bottom: 3px solid var(--frame); }
+.hero::after { content: "BUY a AXION"; position: absolute; right: 0; top: 18px; z-index: 3;
+  background: var(--butter); border: 2px solid var(--frame); border-right: 0;
+  padding: 7px 14px; font-family: var(--font-body); font-weight: 700; font-size: 12px;
+  letter-spacing: .06em; transform: none; }
+.hero-media img { border: 3px solid var(--frame); border-radius: 0; }
+
+.logos { background: var(--stone); border-block: 3px solid var(--frame); }
+.logos-lead { font-family: var(--font-body); font-weight: 700; letter-spacing: .12em; color: #000; }
+.logo-item { font-family: var(--font-body); font-weight: 700; font-size: 12px; letter-spacing: .06em; color: #000; opacity: 1; }
+
+/* ribbon cards, one catalogue tint per family */
+.feat-grid.v-list { gap: 10px; }
+.v-list .feat-card { background: var(--sage); border: 3px solid var(--frame); border-radius: 0;
+  padding: 14px 16px; grid-template-columns: 40px 1fr; }
+.v-list .feat-card:nth-child(2) { background: var(--salmon); }
+.v-list .feat-card:nth-child(3) { background: var(--peri); }
+.v-list .feat-card:nth-child(4) { background: var(--sky); }
+.v-list .feat-card:nth-child(5) { background: var(--butter); }
+.v-list .feat-card:nth-child(6) { background: var(--stone); }
+.feat-ico { background: transparent; border: 0; color: #000; width: auto; height: auto; font-size: 22px; }
+.feat-title { font-size: 15px; letter-spacing: .02em; }
+
+.sc-media img, .g-item { border: 3px solid var(--frame); border-radius: 0; }
+.sc-points i { color: var(--red); }
+.metrics { --metrics-bg: var(--sky); border-block: 3px solid var(--frame); }
+.metric-v { font-family: var(--font-display); color: #000; }
+.metric-l { font-family: var(--font-body); font-weight: 700; }
+.g-item { background: var(--stone); }
+.g-item figcaption { background: var(--frame); color: #fff; border-radius: 0;
+  font-family: var(--font-body); font-weight: 700; letter-spacing: .06em; }
+.quote-card { background: var(--butter); border: 3px solid var(--frame); border-radius: 0;
+  --quote-align: left; --quote-by-just: flex-start; }
+.quote-text { font-style: italic; }
+.quote-mark { color: var(--red); }
+.q-av { border: 3px solid var(--frame); border-radius: 0; }
+
+.pricing { background: var(--stone); }
+.tier { background: #fff; border: 3px solid var(--frame); border-radius: 0; }
+/* the round award seal sticker on the best seller */
+.tier-feat { background: var(--salmon); position: relative; }
+.tier-feat::after { content: "EDITORS' CHOICE"; position: absolute; right: -10px; top: -14px; z-index: 3;
+  width: 76px; height: 76px; display: grid; place-items: center; text-align: center;
+  border-radius: 50%; background: var(--red); color: #fff; border: 3px solid var(--frame);
+  font-family: var(--font-body); font-weight: 700; font-size: 9px; letter-spacing: .04em; line-height: 1.2; padding: 6px; }
+.tier-badge { position: static; display: inline-block; align-self: flex-start; margin-bottom: 10px;
+  background: var(--frame); color: #fff; border-radius: 0; font-family: var(--font-body); letter-spacing: .08em; }
+.tier-num { font-family: var(--font-display); }
+.tier-feats i { color: var(--red); }
+.faq-item { border-bottom: 2px solid var(--frame); }
+.faq-mk { color: var(--red); }
+.cta-band { background: var(--red); color: #fff; border: 3px solid var(--frame); border-radius: 0; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: rgba(255,255,255,.9); }
+.cta-band .btn-primary { background: #fff; color: var(--red); }
+.cta-band .btn-secondary { background: var(--butter); }
+.foot { background: var(--stone); border-top: 3px solid var(--frame); --foot-bg: var(--stone); }
+.fcol h4 { font-family: var(--font-body); font-weight: 700; color: #000; letter-spacing: .1em; }
+.fcol a, .foot-tag { color: #000; }
+.foot-socials a { border: 2px solid var(--frame); border-radius: 0; color: #000; }
+.spec { --spec-bg: #fff; border-top: 3px solid var(--frame); }
+.input, .sw, .badge2, .tabs, .tabs button { border-radius: 0; border-color: var(--frame); }

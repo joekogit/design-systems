@@ -5,8 +5,10 @@ A reference library that renders each design system from the
 responsive page — so you can see what a design language actually does to a pricing table, a
 form field and a data table, not just to a hero.
 
-Open `index.html` to browse. 74 systems catalogued, 55 built out so far.
+Open `index.html` to browse. **All 74 systems are built.**
 Live at **https://systems.joeko.net**. See `DEPLOY.md`.
+
+74 pages, ~6MB, no build step, no dependencies.
 
 ## Why this exists
 
@@ -71,8 +73,7 @@ python3 -m http.server 8899        # the audit harness needs http, not file://
 
 Then open `http://127.0.0.1:8899/tools/audit.html` and run `window.ready.then(()=>console.table(window.audit()))`.
 It reports, per page: horizontal scroll, images missing alt text, computed body size,
-interactive targets under 44px, and icons that fail to resolve a glyph. All fifty-five current
-pages report zero on every count.
+interactive targets under 44px, and icons that fail to resolve a glyph. All seventy-four pages report zero on every count.
 
 ## Conventions
 

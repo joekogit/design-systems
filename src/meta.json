@@ -1,0 +1,334 @@
+{
+  "slug": "meta",
+  "name": "Meta",
+  "category": "E-commerce & retail",
+  "look": "Stark white with full-bleed product photography at 32px softening, two-tier pill CTAs and saturated banners used sparingly.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-infinity",
+    "name": "Horizon"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Devices",
+        "href": "features"
+      },
+      {
+        "label": "Experiences",
+        "href": "gallery"
+      },
+      {
+        "label": "Developers",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Support",
+        "href": "faq"
+      },
+      {
+        "label": "Shop",
+        "href": "pricing"
+      }
+    ],
+    "cta": "Buy now",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "HORIZON VISOR 3",
+    "title": "Presence, <em>without the cables</em>",
+    "sub": "A standalone headset with pancake optics, inside-out tracking and hand recognition accurate enough that controllers become optional.",
+    "cta1": "Buy from $499",
+    "cta2": "Watch the film",
+    "image": "photo-1512499617640-c74ae3a79d37",
+    "ratio": 0.68,
+    "stats": [
+      {
+        "v": "4K",
+        "l": "Per eye"
+      },
+      {
+        "v": "110°",
+        "l": "Field of view"
+      },
+      {
+        "v": "3 hrs",
+        "l": "Battery"
+      }
+    ]
+  },
+  "logo_lead": "AWARDED BY",
+  "logos": [
+    "IF Design",
+    "Red Dot",
+    "CES",
+    "Wired",
+    "Edge",
+    "Ars Technica"
+  ],
+  "features": {
+    "eyebrow": "THE DEVICE",
+    "title": "Hardware that gets out of the way",
+    "sub": "The comfort and tracking problems are what kept the previous generation on a shelf.",
+    "items": [
+      {
+        "icon": "ph-eye",
+        "title": "Pancake optics",
+        "body": "Half the depth of the previous lens stack, which is most of why it is comfortable for an hour."
+      },
+      {
+        "icon": "ph-hand",
+        "title": "Hand tracking",
+        "body": "Accurate enough that controllers become optional for most experiences."
+      },
+      {
+        "icon": "ph-cube",
+        "title": "Inside-out tracking",
+        "body": "No base stations. Set it down in any room and it maps the space in seconds."
+      },
+      {
+        "icon": "ph-broadcast",
+        "title": "Standalone",
+        "body": "No PC and no cable. It runs everything on-device."
+      },
+      {
+        "icon": "ph-users-three",
+        "title": "Shared spaces",
+        "body": "Two people in the same room see the same virtual objects in the same places."
+      },
+      {
+        "icon": "ph-battery-charging",
+        "title": "Three-hour battery",
+        "body": "In a rear-mounted pack that also balances the weight off your face."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "EXPERIENCES",
+      "title": "Built by people, not by us",
+      "body": "An open store with a published revenue split and a review process that publishes its criteria. The best experiences on the platform were not made here, and the economics are set up to keep it that way.",
+      "points": [
+        "Published revenue split",
+        "Review criteria public",
+        "Sideloading permitted"
+      ],
+      "image": "photo-1550745165-9bc0b252726f",
+      "cta": "Browse experiences"
+    },
+    {
+      "eyebrow": "DEVELOPERS",
+      "title": "An SDK you can read",
+      "body": "Native and engine SDKs with the tracking APIs documented rather than wrapped. Performance profiling on device, so you can see which frame budget you blew and where.",
+      "points": [
+        "Native, Unity and Unreal SDKs",
+        "On-device performance profiling",
+        "Tracking APIs documented, not wrapped"
+      ],
+      "image": "photo-1526374965328-7f61d4dc18c5",
+      "cta": "Developer platform"
+    }
+  ],
+  "metric_lead": "HORIZON VISOR 3",
+  "metrics": [
+    {
+      "v": "4K",
+      "l": "PER EYE"
+    },
+    {
+      "v": "110°",
+      "l": "FIELD OF VIEW"
+    },
+    {
+      "v": "3 HRS",
+      "l": "BATTERY"
+    },
+    {
+      "v": "515 G",
+      "l": "WEIGHT"
+    }
+  ],
+  "gallery": {
+    "title": "EXPERIENCES",
+    "sub": "A selection from the store this month.",
+    "items": [
+      {
+        "id": "photo-1512499617640-c74ae3a79d37",
+        "tag": "Devices",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1550745165-9bc0b252726f",
+        "tag": "Gaming",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1567095761054-7a02e69e5c43",
+        "tag": "Creative",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1552664730-d307ca884978",
+        "tag": "Collaboration",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1571019613454-1cb2f99b2d8b",
+        "tag": "Fitness",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1580910051074-3eb694886505",
+        "tag": "Companion",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "I wore it for an hour and took it off because I was finished, not because my face hurt. That has never happened with a headset before.",
+    "name": "Ravi Chandra",
+    "role": "Reviewer",
+    "avatar": "photo-1633332755192-727a05c4013d"
+  },
+  "pricing": {
+    "title": "SHOP",
+    "sub": "Three configurations. Free returns within thirty days.",
+    "tiers": [
+      {
+        "name": "VISOR 3",
+        "price": "$499",
+        "period": "",
+        "desc": "128GB, the standard package.",
+        "features": [
+          "4K per eye",
+          "128GB storage",
+          "Two controllers",
+          "One-year warranty"
+        ],
+        "cta": "Buy now"
+      },
+      {
+        "name": "VISOR 3 PRO",
+        "price": "$699",
+        "period": "",
+        "desc": "256GB and the comfort strap.",
+        "features": [
+          "Everything in Visor 3",
+          "256GB storage",
+          "Comfort head strap",
+          "Extended battery"
+        ],
+        "cta": "Buy now",
+        "featured": true,
+        "badge": "MOST POPULAR"
+      },
+      {
+        "name": "VISOR 3 STUDIO",
+        "price": "$1,099",
+        "period": "",
+        "desc": "For developers and studios.",
+        "features": [
+          "Everything in Pro",
+          "512GB storage",
+          "Developer mode",
+          "Three-year support"
+        ],
+        "cta": "Buy now"
+      }
+    ]
+  },
+  "faq": {
+    "title": "SUPPORT",
+    "items": [
+      {
+        "q": "Do I need a PC?",
+        "a": "No. Everything runs on the headset. It can connect to a PC for higher-fidelity content, but nothing about the standard experience requires one."
+      },
+      {
+        "q": "How comfortable is it really?",
+        "a": "515 grams with the battery mounted at the rear to balance the load. Most reviewers report an hour of comfortable use, which is roughly a session."
+      },
+      {
+        "q": "Can I sideload my own software?",
+        "a": "Yes. Developer mode is a setting, not an unlock process, and sideloading does not void the warranty."
+      },
+      {
+        "q": "What is the return policy?",
+        "a": "Thirty days, used or unused, with free return shipping. Headsets are unusually hard to evaluate in a shop, so the window is deliberately generous."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Try it for thirty days",
+    "sub": "Free returns, used or unused, because you cannot judge this in a shop.",
+    "btn1": "Buy from $499",
+    "btn2": "Find a store"
+  },
+  "footer": {
+    "tagline": "Presence, without the cables.",
+    "columns": [
+      {
+        "title": "Devices",
+        "links": [
+          "Visor 3",
+          "Controllers",
+          "Accessories",
+          "Compare"
+        ]
+      },
+      {
+        "title": "Experiences",
+        "links": [
+          "Store",
+          "Gaming",
+          "Creative",
+          "Fitness"
+        ]
+      },
+      {
+        "title": "Developers",
+        "links": [
+          "SDKs",
+          "Documentation",
+          "Publishing",
+          "Forums"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Press",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Horizon Devices"
+  },
+  "specimen": "Presence",
+  "notes": [
+    "A stark white canvas carries full-bleed product photography with generous 32px corner softening on showcase tiles.",
+    "Two tiers of primary button: ink pills for marketing CTAs, cobalt pills for commerce actions inside buy-now panels.",
+    "Pills and heavily-rounded cards are the dominant geometric signature throughout.",
+    "One variable face covers display and body with consistent stylistic-set features enabled.",
+    "Saturated promotional banners above the nav are reserved for time-bound offers and are not part of the standing chrome."
+  ]
+}

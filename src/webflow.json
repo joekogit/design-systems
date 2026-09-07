@@ -1,0 +1,334 @@
+{
+  "slug": "webflow",
+  "name": "Webflow",
+  "category": "Design & creative tools",
+  "look": "Two-colour conversion hierarchy with a five-stop chromatic category palette used only as full card fills, and tight 4px buttons.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"Inconsolata\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inconsolata:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "elevated",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-browsers",
+    "name": "Loomcraft"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Platform",
+        "href": "features"
+      },
+      {
+        "label": "Solutions",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Enterprise",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Resources",
+        "href": "gallery"
+      }
+    ],
+    "cta": "Get started",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "VISUAL DEVELOPMENT",
+    "title": "The site your marketing team <em>can actually edit</em>",
+    "sub": "Design visually, publish real HTML and CSS, and hand editing to the people who write the copy without giving them the codebase.",
+    "cta1": "Get started",
+    "cta2": "Contact sales",
+    "image": "photo-1547658719-da2b51169166",
+    "ratio": 0.64,
+    "stats": [
+      {
+        "v": "Real",
+        "l": "HTML output"
+      },
+      {
+        "v": "CMS",
+        "l": "Built in"
+      },
+      {
+        "v": "0",
+        "l": "Deploys to request"
+      }
+    ]
+  },
+  "logo_lead": "PUBLISHED WITH LOOMCRAFT",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "THE PLATFORM",
+    "title": "Design, content and hosting",
+    "sub": "The three things a marketing site needs, without three vendors and a handover between them.",
+    "items": [
+      {
+        "icon": "ph-browsers",
+        "title": "Visual canvas",
+        "body": "A real box model, not a page builder. What you build maps to the CSS that ships."
+      },
+      {
+        "icon": "ph-database",
+        "title": "CMS",
+        "body": "Collections with typed fields and reference relationships, editable by non-developers."
+      },
+      {
+        "icon": "ph-pencil-simple",
+        "title": "On-page editing",
+        "body": "Editors change copy on the live page, in place, without touching structure."
+      },
+      {
+        "icon": "ph-cloud",
+        "title": "Hosting included",
+        "body": "Global CDN, automatic SSL and one-click publishing with rollback."
+      },
+      {
+        "icon": "ph-code",
+        "title": "Clean export",
+        "body": "Export the HTML, CSS and assets whenever you like. There is no proprietary runtime."
+      },
+      {
+        "icon": "ph-users-three",
+        "title": "Roles",
+        "body": "Designers build, editors edit, and the two cannot break each other's work."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "SOLUTIONS",
+      "title": "Marketing stops queueing",
+      "body": "Copy changes become copy changes rather than engineering tickets. The design system stays locked down while the words stay editable, which is the split every marketing site actually needs.",
+      "points": [
+        "Editors change copy, not structure",
+        "Component library stays locked",
+        "Publish without a deploy pipeline"
+      ],
+      "image": "photo-1552664730-d307ca884978",
+      "cta": "See solutions"
+    },
+    {
+      "eyebrow": "ENTERPRISE",
+      "title": "Governed at scale",
+      "body": "Multiple sites under one workspace, with shared components, SSO, page-level permissions and an audit trail of who published what.",
+      "points": [
+        "Shared component libraries across sites",
+        "Page-level publishing permissions",
+        "Audit trail per publish"
+      ],
+      "image": "photo-1454165804606-c3d57bc86b40",
+      "cta": "Enterprise overview"
+    }
+  ],
+  "metric_lead": "ACROSS LOOMCRAFT SITES",
+  "metrics": [
+    {
+      "v": "99",
+      "l": "MEDIAN LIGHTHOUSE"
+    },
+    {
+      "v": "Real",
+      "l": "HTML AND CSS"
+    },
+    {
+      "v": "0",
+      "l": "DEPLOY TICKETS"
+    },
+    {
+      "v": "300k+",
+      "l": "SITES PUBLISHED"
+    }
+  ],
+  "gallery": {
+    "title": "RESOURCES",
+    "sub": "Templates, courses and the component marketplace.",
+    "items": [
+      {
+        "id": "photo-1547658719-da2b51169166",
+        "tag": "Templates",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1541961017774-22349e4a1262",
+        "tag": "Design",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1552664730-d307ca884978",
+        "tag": "Courses",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1487017159836-4e23ece2e4cf",
+        "tag": "CMS",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Developers",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1454165804606-c3d57bc86b40",
+        "tag": "Enterprise",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "Our content lead publishes three times a week now. She used to file a ticket and wait for the next sprint, which meant she mostly did not bother.",
+    "name": "Adam Croft",
+    "role": "Head of Marketing, Basisplan",
+    "avatar": "photo-1500648767791-00dcc994a43e"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Free to build. Pay when you publish to a domain.",
+    "tiers": [
+      {
+        "name": "Starter",
+        "price": "$0",
+        "period": "",
+        "desc": "Build and preview.",
+        "features": [
+          "Loomcraft subdomain",
+          "2 pages",
+          "Visual canvas",
+          "Community support"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "name": "CMS",
+        "price": "$29",
+        "period": "/site/mo",
+        "desc": "For content-driven sites.",
+        "features": [
+          "Custom domain",
+          "CMS collections",
+          "3 editors",
+          "Email support"
+        ],
+        "cta": "Get started",
+        "featured": true,
+        "badge": "MOST SITES"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "desc": "For multi-site organisations.",
+        "features": [
+          "Unlimited sites",
+          "SSO and roles",
+          "Shared libraries",
+          "Named support"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "Is the output real HTML?",
+        "a": "Yes — semantic HTML and CSS you can read and export. There is no runtime and no framework wrapper around what ships."
+      },
+      {
+        "q": "Can editors break the design?",
+        "a": "No. Editors change content in place; structure and styles are locked to designers. That separation is the reason the model works."
+      },
+      {
+        "q": "Can I export and self-host?",
+        "a": "Yes, including the CSS and assets. You lose the CMS and hosting by leaving, but nothing about the markup is proprietary."
+      },
+      {
+        "q": "How fast are published sites?",
+        "a": "Median Lighthouse of 99, because the generated CSS is scoped to what the page uses and assets are optimised at publish time."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Build your first page",
+    "sub": "Free to build, and you only pay when you publish to a domain.",
+    "btn1": "Get started",
+    "btn2": "Contact sales"
+  },
+  "footer": {
+    "tagline": "The site your marketing team can actually edit.",
+    "columns": [
+      {
+        "title": "Platform",
+        "links": [
+          "Designer",
+          "CMS",
+          "Hosting",
+          "Interactions"
+        ]
+      },
+      {
+        "title": "Solutions",
+        "links": [
+          "Marketing",
+          "Agencies",
+          "Ecommerce",
+          "Enterprise"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Templates",
+          "University",
+          "Blog",
+          "Support"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Pricing",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Loomcraft"
+  },
+  "specimen": "Design, then publish",
+  "notes": [
+    "The conversion hierarchy is two colours: near-black for every primary CTA, white-on-hairline for every secondary. Chromatic accents never become button backgrounds.",
+    "The signature is a five-stop category palette — purple, pink, blue, orange, green — used at full saturation as card fills, each tied to a product surface.",
+    "Hero type is restrained: around 80px at weight 600 with slight negative tracking. Confident rather than billboard-loud.",
+    "One variable family covers display and body; a mono appears only on technical captions.",
+    "Buttons stay tight at 4px and cards at 8px. The brand never uses pill CTAs, and layered multi-offset shadows are its only elevation cue."
+  ]
+}

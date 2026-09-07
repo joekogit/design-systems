@@ -1,0 +1,334 @@
+{
+  "slug": "coinbase",
+  "name": "Coinbase",
+  "category": "Fintech & crypto",
+  "look": "Full-bleed dark heroes with floating product cards, one blue used scarcely, and editorial pill geometry with no sharp corners.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "full-bleed",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-currency-circle-dollar",
+    "name": "Harbour"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Products",
+        "href": "features"
+      },
+      {
+        "label": "Institutional",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Learn",
+        "href": "gallery"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Company",
+        "href": "faq"
+      }
+    ],
+    "cta": "Get started",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "",
+    "title": "The trusted place to <em>buy and hold</em>",
+    "sub": "Regulated custody, audited reserves and a fee schedule you can read before you sign up. Built for holding, not for churning.",
+    "cta1": "Get started",
+    "cta2": "See pricing",
+    "image": "photo-1451187580459-43490279c0fa",
+    "ratio": 0.54,
+    "stats": [
+      {
+        "v": "Regulated",
+        "l": "In 12 markets"
+      },
+      {
+        "v": "98%",
+        "l": "Held offline"
+      },
+      {
+        "v": "Audited",
+        "l": "Quarterly"
+      }
+    ]
+  },
+  "logo_lead": "TRUSTED BY",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "PRODUCTS",
+    "title": "Custody first, trading second",
+    "sub": "Most people want to buy something and still own it in five years. That is the product this is built around.",
+    "items": [
+      {
+        "icon": "ph-vault",
+        "title": "Qualified custody",
+        "body": "Assets held under a qualified custodian arrangement, segregated and bankruptcy-remote."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "Audited reserves",
+        "body": "Holdings attested quarterly by an independent auditor, with the report published."
+      },
+      {
+        "icon": "ph-arrows-left-right",
+        "title": "Simple buying",
+        "body": "Buy, hold and sell without a trading interface, at a fee stated before you confirm."
+      },
+      {
+        "icon": "ph-chart-line",
+        "title": "Advanced trading",
+        "body": "A full order book with limit and stop orders for people who want one."
+      },
+      {
+        "icon": "ph-wallet",
+        "title": "Self-custody wallet",
+        "body": "Move to a wallet you control, with the keys never touching our infrastructure."
+      },
+      {
+        "icon": "ph-graduation-cap",
+        "title": "Learn",
+        "body": "Plain explanations of what you are buying, including the ways it can go wrong."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "SECURITY",
+      "title": "Boring, on purpose",
+      "body": "Ninety-eight percent of assets sit offline in geographically distributed cold storage with multi-party signing. The remainder is insured. None of that is exciting, which is the point.",
+      "points": [
+        "98% in offline cold storage",
+        "Multi-party signing across regions",
+        "Hot wallet balance insured"
+      ],
+      "image": "photo-1558494949-ef010cbdcc31",
+      "cta": "Read about security"
+    },
+    {
+      "eyebrow": "INSTITUTIONAL",
+      "title": "Custody an auditor will accept",
+      "body": "Segregated, bankruptcy-remote accounts with attestation reports issued directly to your auditors, plus same-day settlement in eight fiat currencies.",
+      "points": [
+        "Segregated and bankruptcy-remote",
+        "Reports issued to your auditor",
+        "Same-day fiat settlement"
+      ],
+      "image": "photo-1454165804606-c3d57bc86b40",
+      "cta": "Institutional overview"
+    }
+  ],
+  "metric_lead": "",
+  "metrics": [
+    {
+      "v": "12",
+      "l": "REGULATED MARKETS"
+    },
+    {
+      "v": "98%",
+      "l": "HELD OFFLINE"
+    },
+    {
+      "v": "Quarterly",
+      "l": "INDEPENDENT AUDIT"
+    },
+    {
+      "v": "8",
+      "l": "FIAT CURRENCIES"
+    }
+  ],
+  "gallery": {
+    "title": "LEARN",
+    "sub": "What you are buying, and how it can go wrong.",
+    "items": [
+      {
+        "id": "photo-1451187580459-43490279c0fa",
+        "tag": "Basics",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1579621970563-ebec7560ff3e",
+        "tag": "Custody",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1611974789855-9c2a0a7236a3",
+        "tag": "Trading",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Security",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1454165804606-c3d57bc86b40",
+        "tag": "Institutional",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1560472354-b33ff0c44a43",
+        "tag": "Taxes",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "The learn pages explain how you can lose money. I have never seen another platform in this industry lead with that, and it is why I trusted the rest.",
+    "name": "Sarah Lindqvist",
+    "role": "Long-term holder",
+    "avatar": "photo-1438761681033-6461ffad8d80"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Stated before you confirm. Always.",
+    "tiers": [
+      {
+        "name": "Simple",
+        "price": "1.49%",
+        "period": "per trade",
+        "desc": "Buy and hold without an order book.",
+        "features": [
+          "Instant buying",
+          "Qualified custody",
+          "Recurring purchases",
+          "24/7 support"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "name": "Advanced",
+        "price": "0.40%",
+        "period": "taker",
+        "desc": "A full order book.",
+        "features": [
+          "Limit and stop orders",
+          "Maker rebates by volume",
+          "API access",
+          "Priority support"
+        ],
+        "cta": "Get started",
+        "featured": true,
+        "badge": "MOST TRADERS"
+      },
+      {
+        "name": "Institutional",
+        "price": "Custom",
+        "period": "",
+        "desc": "For funds and treasuries.",
+        "features": [
+          "Negotiated fees",
+          "Segregated custody",
+          "OTC desk",
+          "Named coverage"
+        ],
+        "cta": "Contact us"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "What does qualified custody mean?",
+        "a": "Assets are held by a regulated custodian in segregated, bankruptcy-remote accounts — legally separate from the company's own balance sheet."
+      },
+      {
+        "q": "Are fees really shown before I confirm?",
+        "a": "Yes, as a currency amount on the confirmation screen, not a percentage you have to compute. The spread is included in that number."
+      },
+      {
+        "q": "Can I move assets to my own wallet?",
+        "a": "Yes, at any time, with the self-custody wallet or any external address. Withdrawal is not gated behind a support conversation."
+      },
+      {
+        "q": "What happens if the company fails?",
+        "a": "Customer assets are segregated and bankruptcy-remote, which means they are not available to creditors. The legal structure is described in full on the custody page."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start with what you understand",
+    "sub": "Regulated custody, audited reserves, and fees stated up front.",
+    "btn1": "Get started",
+    "btn2": "See pricing"
+  },
+  "footer": {
+    "tagline": "The trusted place to buy and hold.",
+    "columns": [
+      {
+        "title": "Products",
+        "links": [
+          "Buy",
+          "Trade",
+          "Custody",
+          "Wallet"
+        ]
+      },
+      {
+        "title": "Learn",
+        "links": [
+          "Basics",
+          "Security",
+          "Taxes",
+          "Glossary"
+        ]
+      },
+      {
+        "title": "Institutional",
+        "links": [
+          "Custody",
+          "OTC desk",
+          "Prime",
+          "Reports"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Licences",
+          "Careers",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Harbour Digital"
+  },
+  "specimen": "Buy and hold",
+  "notes": [
+    "A single blue carries every primary CTA, the wordmark and inline brand links — and it is used scarcely.",
+    "Display weights stay modest at 400, never heavy. The restraint is the trust signal.",
+    "Editorial pill geometry throughout: pills for CTAs, circles for asset glyphs, generous rounding on cards. No sharp corners anywhere.",
+    "The strongest signature is a full-bleed dark hero with floating product-UI cards composited over it.",
+    "Trading semantics are text colour only — green up, red down — and never a background fill."
+  ]
+}

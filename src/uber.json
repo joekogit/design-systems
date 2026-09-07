@@ -1,0 +1,334 @@
+{
+  "slug": "uber",
+  "name": "Uber",
+  "category": "Media & consumer tech",
+  "look": "Two-colour pill hierarchy on a white ground, sentence-case display at weight 700, and alternating white and black bands mid-page.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-car",
+    "name": "Wayfarer"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Ride",
+        "href": "features"
+      },
+      {
+        "label": "Drive",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Business",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Deliver",
+        "href": "gallery"
+      },
+      {
+        "label": "Help",
+        "href": "faq"
+      }
+    ],
+    "cta": "Sign up",
+    "cta2": "Log in"
+  },
+  "hero": {
+    "eyebrow": "",
+    "title": "Go anywhere with <em>Wayfarer</em>",
+    "sub": "Request a ride, hop in, and go. Fares quoted before you book, drivers paid transparently, and a receipt that itemises where the money went.",
+    "cta1": "Sign up to ride",
+    "cta2": "Sign up to drive",
+    "image": "photo-1449824913935-59a10b8d2000",
+    "ratio": 0.66,
+    "stats": [
+      {
+        "v": "70",
+        "l": "Countries"
+      },
+      {
+        "v": "Upfront",
+        "l": "Fares"
+      },
+      {
+        "v": "24/7",
+        "l": "Support"
+      }
+    ]
+  },
+  "logo_lead": "Operating in 70 countries",
+  "logos": [
+    "London",
+    "New York",
+    "Tokyo",
+    "São Paulo",
+    "Lagos",
+    "Sydney"
+  ],
+  "features": {
+    "eyebrow": "Riding",
+    "title": "A fare you agreed to",
+    "sub": "The number you see when you book is the number you pay, and the receipt shows how it was made up.",
+    "items": [
+      {
+        "icon": "ph-car",
+        "title": "Upfront fares",
+        "body": "Quoted before you confirm, held unless the route changes materially — and then you are asked."
+      },
+      {
+        "icon": "ph-receipt",
+        "title": "Itemised receipts",
+        "body": "Base fare, distance, time and fees broken out, including what the driver received."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "Safety features",
+        "body": "Trip sharing, an in-app emergency button and driver verification on every trip."
+      },
+      {
+        "icon": "ph-users-three",
+        "title": "Options that differ",
+        "body": "Cheaper shared rides, larger vehicles, and accessible options where available."
+      },
+      {
+        "icon": "ph-calendar",
+        "title": "Schedule ahead",
+        "body": "Book up to thirty days out with a driver assigned in advance for airport runs."
+      },
+      {
+        "icon": "ph-globe",
+        "title": "Works abroad",
+        "body": "The same account in seventy countries, with local payment methods supported."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "Driving",
+      "title": "Earnings shown before you accept",
+      "body": "Drivers see the fare, the pickup distance and the destination before accepting, rather than after. Transparency on the driver side is what makes transparency on the rider side credible.",
+      "points": [
+        "Fare and destination shown before accepting",
+        "Weekly earnings breakdown per trip",
+        "No penalty for declining a trip"
+      ],
+      "image": "photo-1493238792000-8113da705763",
+      "cta": "Drive with Wayfarer"
+    },
+    {
+      "eyebrow": "Business",
+      "title": "Travel that reconciles itself",
+      "body": "Company accounts with policy limits, automatic receipt capture and a monthly export that matches your expense system without anyone photographing anything.",
+      "points": [
+        "Policy limits per employee",
+        "Receipts captured automatically",
+        "Monthly export in your accounting format"
+      ],
+      "image": "photo-1454165804606-c3d57bc86b40",
+      "cta": "Wayfarer for Business"
+    }
+  ],
+  "metric_lead": "Across Wayfarer",
+  "metrics": [
+    {
+      "v": "70",
+      "l": "Countries"
+    },
+    {
+      "v": "Upfront",
+      "l": "Fares quoted"
+    },
+    {
+      "v": "Itemised",
+      "l": "Every receipt"
+    },
+    {
+      "v": "24/7",
+      "l": "Support"
+    }
+  ],
+  "gallery": {
+    "title": "Products",
+    "sub": "Rides, deliveries and business travel.",
+    "items": [
+      {
+        "id": "photo-1449824913935-59a10b8d2000",
+        "tag": "Rides",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1493238792000-8113da705763",
+        "tag": "Drivers",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1546069901-ba9599a7e63c",
+        "tag": "Delivery",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1454165804606-c3d57bc86b40",
+        "tag": "Business",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1552519507-da3b142c6e3d",
+        "tag": "Premium",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1521737604893-d14cc237f11d",
+        "tag": "Teams",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "The receipt showed what the driver was paid. I had assumed that number would never be published, and seeing it changed how I felt about the fare.",
+    "name": "Tolu Adeyinka",
+    "role": "Rider since 2018",
+    "avatar": "photo-1472099645785-5658abf4ff4e"
+  },
+  "pricing": {
+    "title": "Fares",
+    "sub": "Quoted upfront. Itemised afterwards.",
+    "tiers": [
+      {
+        "name": "Standard",
+        "price": "From $8",
+        "period": "typical trip",
+        "desc": "Everyday rides.",
+        "features": [
+          "Upfront fare",
+          "Itemised receipt",
+          "Trip sharing",
+          "24/7 support"
+        ],
+        "cta": "Sign up to ride"
+      },
+      {
+        "name": "Wayfarer One",
+        "price": "$9.99",
+        "period": "/month",
+        "desc": "For frequent riders.",
+        "features": [
+          "5% off every ride",
+          "Priority matching",
+          "No surge on eligible trips",
+          "Free delivery"
+        ],
+        "cta": "Join Wayfarer One",
+        "featured": true,
+        "badge": "Most riders"
+      },
+      {
+        "name": "Business",
+        "price": "Custom",
+        "period": "",
+        "desc": "For company travel.",
+        "features": [
+          "Policy controls",
+          "Central billing",
+          "Automatic receipts",
+          "Reporting"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "Is the upfront fare guaranteed?",
+        "a": "Yes, unless the route changes materially — an added stop or a significantly different destination. In that case you are asked to confirm a new fare rather than surprised by one."
+      },
+      {
+        "q": "What does the driver actually receive?",
+        "a": "It is on your receipt. Publishing it was a deliberate choice; a fare split you cannot see is a fare split nobody trusts."
+      },
+      {
+        "q": "What happens if I feel unsafe?",
+        "a": "Share your trip in one tap, or use the in-app emergency button which passes your live location to the local service. Every driver is verified before their first trip."
+      },
+      {
+        "q": "Does my account work abroad?",
+        "a": "Yes, in seventy countries, with local payment methods and local pricing. There is no separate account to create when you land."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Get where you are going",
+    "sub": "Fares quoted before you book, and a receipt that explains itself.",
+    "btn1": "Sign up to ride",
+    "btn2": "Sign up to drive"
+  },
+  "footer": {
+    "tagline": "Go anywhere with Wayfarer.",
+    "columns": [
+      {
+        "title": "Ride",
+        "links": [
+          "Request",
+          "Schedule",
+          "Wayfarer One",
+          "Safety"
+        ]
+      },
+      {
+        "title": "Drive",
+        "links": [
+          "Requirements",
+          "Earnings",
+          "Support",
+          "Vehicle"
+        ]
+      },
+      {
+        "title": "Business",
+        "links": [
+          "Travel",
+          "Delivery",
+          "Reporting",
+          "Contact"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Newsroom",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Wayfarer Mobility"
+  },
+  "specimen": "Go anywhere",
+  "notes": [
+    "A two-colour CTA hierarchy: black pill for primary, white pill for secondary, soft grey pill for tertiary and chips.",
+    "The pill is the single signature shape on every interactive element, except the tab toggle and the larger product cards.",
+    "Every headline is sentence case at weight 700. There is no all-caps display anywhere in this system.",
+    "Editorial illustrations of riders, drivers and cars are the only consistent decorative system — no gradients, no atmospherics.",
+    "The band rhythm alternates white feature card, black promo card, white feature card, black footer. The black bands appear mid-page, not only in the hero."
+  ]
+}

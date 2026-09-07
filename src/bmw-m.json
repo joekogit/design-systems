@@ -1,0 +1,336 @@
+{
+  "slug": "bmw-m",
+  "name": "BMW M",
+  "category": "Automotive",
+  "look": "Near-black with uppercase display, the M tricolour used only as stripe dividers, and flat zero-radius buttons.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "bold"
+  ],
+  "fonts": {
+    "display": "\"Archivo\", -apple-system, sans-serif",
+    "body": "\"Archivo\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "minimal",
+    "hero": "full-bleed",
+    "features": "list",
+    "cards": "flat",
+    "gallery": "filmstrip"
+  },
+  "brand": {
+    "mark": "ph-flag-checkered",
+    "name": "AXIOM M"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "MODELS",
+        "href": "gallery"
+      },
+      {
+        "label": "MOTORSPORT",
+        "href": "showcase-0"
+      },
+      {
+        "label": "TECHNOLOGY",
+        "href": "features"
+      },
+      {
+        "label": "EXPERIENCE",
+        "href": "showcase-1"
+      },
+      {
+        "label": "CONFIGURE",
+        "href": "pricing"
+      }
+    ],
+    "cta": "CONFIGURE",
+    "cta2": "OWNERS"
+  },
+  "hero": {
+    "eyebrow": "AXIOM M5 COMPETITION",
+    "title": "THE MOST POWERFUL LETTER <em>IN THE WORLD</em>",
+    "sub": "Twin-turbocharged V8, all-wheel drive with a rear-only mode, and a chassis validated over eight thousand kilometres at the Nürburgring.",
+    "cta1": "CONFIGURE",
+    "cta2": "VIEW MOTORSPORT",
+    "image": "photo-1503376780353-7e6692767b70",
+    "ratio": 0.54,
+    "stats": [
+      {
+        "v": "460 KW",
+        "l": "OUTPUT"
+      },
+      {
+        "v": "3.3 S",
+        "l": "0–100 KM/H"
+      },
+      {
+        "v": "8,000 KM",
+        "l": "NÜRBURGRING TESTING"
+      }
+    ]
+  },
+  "logo_lead": "MOTORSPORT HERITAGE",
+  "logos": [
+    "LE MANS",
+    "DTM",
+    "NÜRBURGRING",
+    "SPA",
+    "BATHURST",
+    "DAYTONA"
+  ],
+  "features": {
+    "eyebrow": "TECHNOLOGY",
+    "title": "Developed on circuit",
+    "sub": "Every system on this car exists because the racing programme needed it first.",
+    "items": [
+      {
+        "icon": "ph-engine",
+        "title": "TWIN-TURBO V8",
+        "body": "460 kilowatts with a cross-bank exhaust manifold taken directly from the competition engine."
+      },
+      {
+        "icon": "ph-car-profile",
+        "title": "M XDRIVE",
+        "body": "All-wheel drive with a rear-biased default and a genuine rear-only mode for circuit use."
+      },
+      {
+        "icon": "ph-gauge",
+        "title": "ADAPTIVE M CHASSIS",
+        "body": "Dampers, steering and differential mapped together rather than configured independently."
+      },
+      {
+        "icon": "ph-disc",
+        "title": "CARBON BRAKES",
+        "body": "Carbon-ceramic discs rated for repeated track use without fade or a warning message."
+      },
+      {
+        "icon": "ph-flag-checkered",
+        "title": "M TRACK MODE",
+        "body": "Traction thresholds you set yourself, with the lap timer and telemetry recording."
+      },
+      {
+        "icon": "ph-scales",
+        "title": "LIGHTWEIGHT",
+        "body": "A carbon roof, bucket seats and a titanium exhaust, together removing 52 kilograms."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "MOTORSPORT",
+      "title": "The road car came second",
+      "body": "The cooling package, the differential mapping and the brake ducting were developed for the GT car and then adapted for the road. That order matters, and it is why the road car survives a track day.",
+      "points": [
+        "Cooling package from the GT programme",
+        "Differential mapping shared with competition",
+        "8,000 km of Nürburgring validation"
+      ],
+      "image": "photo-1553440569-bcc63803a83d",
+      "cta": "MOTORSPORT PROGRAMME",
+      "ratio": 0.6
+    },
+    {
+      "eyebrow": "EXPERIENCE",
+      "title": "Learn to drive it properly",
+      "body": "Owners are invited to a two-day driving course at a circuit with an instructor per two cars. Most of what this car can do is inaccessible without being shown.",
+      "points": [
+        "Two-day circuit course included",
+        "One instructor per two cars",
+        "Telemetry review after every session"
+      ],
+      "image": "photo-1552519507-da3b142c6e3d",
+      "cta": "M DRIVING EXPERIENCE",
+      "ratio": 0.6
+    }
+  ],
+  "metric_lead": "AXIOM M5 COMPETITION",
+  "metrics": [
+    {
+      "v": "460 KW",
+      "l": "OUTPUT"
+    },
+    {
+      "v": "3.3 S",
+      "l": "0–100 KM/H"
+    },
+    {
+      "v": "305 KM/H",
+      "l": "TOP SPEED"
+    },
+    {
+      "v": "52 KG",
+      "l": "REMOVED"
+    }
+  ],
+  "gallery": {
+    "title": "MODELS",
+    "sub": "The current M range.",
+    "items": [
+      {
+        "id": "photo-1503376780353-7e6692767b70",
+        "tag": "M5",
+        "ratio": 0.62
+      },
+      {
+        "id": "photo-1553440569-bcc63803a83d",
+        "tag": "M4",
+        "ratio": 0.62
+      },
+      {
+        "id": "photo-1552519507-da3b142c6e3d",
+        "tag": "M3",
+        "ratio": 0.62
+      },
+      {
+        "id": "photo-1492144534655-ae79c964c9d7",
+        "tag": "M2",
+        "ratio": 0.62
+      },
+      {
+        "id": "photo-1493238792000-8113da705763",
+        "tag": "M8",
+        "ratio": 0.62
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "CS",
+        "ratio": 0.62
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "The instructor put me in rear-only mode on the third session and I finally understood what the car had been holding back all morning.",
+    "name": "Sofia Andersson",
+    "role": "M Driving Experience",
+    "avatar": "photo-1534528741775-53994a69daeb"
+  },
+  "pricing": {
+    "title": "CONFIGURE",
+    "sub": "Three specifications, each with the driving course included.",
+    "tiers": [
+      {
+        "name": "M5",
+        "price": "€128,000",
+        "period": "",
+        "desc": "The standard M specification.",
+        "features": [
+          "Twin-turbo V8, 440 kW",
+          "M xDrive",
+          "Adaptive M chassis",
+          "Driving course included"
+        ],
+        "cta": "CONFIGURE"
+      },
+      {
+        "name": "M5 COMPETITION",
+        "price": "€142,500",
+        "period": "",
+        "desc": "More power, firmer chassis.",
+        "features": [
+          "460 kW output",
+          "Competition chassis tune",
+          "Carbon roof",
+          "Track telemetry"
+        ],
+        "cta": "CONFIGURE",
+        "featured": true,
+        "badge": "MOST ORDERED"
+      },
+      {
+        "name": "M5 CS",
+        "price": "€186,000",
+        "period": "",
+        "desc": "The lightweight edition.",
+        "features": [
+          "Everything in Competition",
+          "−52 kg",
+          "Carbon-ceramic brakes",
+          "Limited production"
+        ],
+        "cta": "ENQUIRE"
+      }
+    ]
+  },
+  "faq": {
+    "title": "OWNERSHIP",
+    "items": [
+      {
+        "q": "Is rear-wheel-drive mode a gimmick?",
+        "a": "No. It fully disconnects the front axle rather than reducing torque to it, which is why it is only selectable with stability control off."
+      },
+      {
+        "q": "Can it be used on track without modification?",
+        "a": "Yes. The cooling and brake packages are rated for repeated track use, and doing so does not affect the warranty."
+      },
+      {
+        "q": "Is the driving course really included?",
+        "a": "Two days at a circuit with an instructor per two cars, included with every M purchase. Most of the car's capability is inaccessible otherwise."
+      },
+      {
+        "q": "What does the CS remove?",
+        "a": "Fifty-two kilograms via a carbon roof, bucket seats, a titanium exhaust and lighter wheels. Rear seats are a no-cost option rather than deleted."
+      }
+    ]
+  },
+  "cta": {
+    "title": "CONFIGURE YOURS",
+    "sub": "Every specification includes two days on circuit with an instructor.",
+    "btn1": "CONFIGURE",
+    "btn2": "FIND A DEALER"
+  },
+  "footer": {
+    "tagline": "The most powerful letter in the world.",
+    "columns": [
+      {
+        "title": "MODELS",
+        "links": [
+          "M2",
+          "M3",
+          "M4",
+          "M5"
+        ]
+      },
+      {
+        "title": "MOTORSPORT",
+        "links": [
+          "GT programme",
+          "Heritage",
+          "Drivers",
+          "Calendar"
+        ]
+      },
+      {
+        "title": "EXPERIENCE",
+        "links": [
+          "Driving course",
+          "Track days",
+          "Owners club",
+          "Events"
+        ]
+      },
+      {
+        "title": "COMPANY",
+        "links": [
+          "About",
+          "Press",
+          "Careers",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Axiom M GmbH"
+  },
+  "specimen": "M POWER",
+  "notes": [
+    "A near-pure black canvas with white type. The system inverts almost nothing — there is no light marketing surface.",
+    "Display headlines are uppercase at weight 700; sub-heads stay sentence case at a lighter weight.",
+    "The M tricolour appears only as 4px stripe dividers and motorsport chrome. It is never a button or a fill.",
+    "Photography fills entire bands edge to edge, with the car as the subject and UI chrome reduced to small white labels.",
+    "Buttons are flat with zero radius and uppercase letterspaced labels. That rectangular silhouette is the brand."
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "slug": "binance",
+  "name": "Binance",
+  "category": "Fintech & crypto",
+  "look": "Binance Yellow doing all the brand voltage on a flat dark canvas, with a deliberately light footer closing the page.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "bordered",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-diamonds-four",
+    "name": "Meridian Exchange"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Trade",
+        "href": "features"
+      },
+      {
+        "label": "Markets",
+        "href": "gallery"
+      },
+      {
+        "label": "Earn",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Derivatives",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Fees",
+        "href": "pricing"
+      }
+    ],
+    "cta": "Sign up",
+    "cta2": "Log in"
+  },
+  "hero": {
+    "eyebrow": "SPOT · MARGIN · DERIVATIVES",
+    "title": "Trade on the <em>deepest books</em>",
+    "sub": "Six hundred pairs, sub-millisecond matching, and a fee schedule that drops as your volume rises. Published maker rebates from the first tier.",
+    "cta1": "Sign up",
+    "cta2": "View markets",
+    "image": "photo-1611974789855-9c2a0a7236a3",
+    "ratio": 0.62,
+    "stats": [
+      {
+        "v": "600+",
+        "l": "Pairs"
+      },
+      {
+        "v": "0.02%",
+        "l": "Maker at VIP 1"
+      },
+      {
+        "v": "< 1ms",
+        "l": "Matching"
+      }
+    ]
+  },
+  "logo_lead": "LIQUIDITY PARTNERS",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "THE EXCHANGE",
+    "title": "Built for people who watch the spread",
+    "sub": "Depth, latency and fees — the three numbers an active trader checks before funding anything.",
+    "items": [
+      {
+        "icon": "ph-chart-line-up",
+        "title": "Deep order books",
+        "body": "Six hundred pairs with market-maker programmes keeping spreads tight through volatility."
+      },
+      {
+        "icon": "ph-lightning",
+        "title": "Sub-millisecond matching",
+        "body": "A matching engine measured in microseconds, with latency published per region."
+      },
+      {
+        "icon": "ph-percent",
+        "title": "Maker rebates",
+        "body": "Negative maker fees from the first VIP tier rather than the fifth, published in full."
+      },
+      {
+        "icon": "ph-vault",
+        "title": "Proof of reserves",
+        "body": "Merkle-tree attestations published quarterly with a self-verification tool."
+      },
+      {
+        "icon": "ph-code",
+        "title": "Trading API",
+        "body": "REST and WebSocket with documented rate limits and a testnet mirroring production."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "Cold storage",
+        "body": "Ninety-five percent held offline across geographically separated vaults."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "DERIVATIVES",
+      "title": "Funding rates you can read",
+      "body": "Perpetual funding, mark price and the index composition are all published, updated live. When a position gets liquidated you can see exactly which inputs produced it rather than filing a support ticket.",
+      "points": [
+        "Index composition published per contract",
+        "Funding history downloadable",
+        "Liquidation engine documented"
+      ],
+      "image": "photo-1560472354-b33ff0c44a43",
+      "cta": "Derivatives overview"
+    },
+    {
+      "eyebrow": "EARN",
+      "title": "The mechanism, before the number",
+      "body": "Every earn product states where the yield comes from, the counterparty, the lock-up and what happens under stress — on the product page, before you opt in.",
+      "points": [
+        "Source of yield stated per product",
+        "Counterparty exposure published",
+        "Unbonding periods shown up front"
+      ],
+      "image": "photo-1579621970563-ebec7560ff3e",
+      "cta": "See earn products"
+    }
+  ],
+  "metric_lead": "PLATFORM, TRAILING TWELVE MONTHS",
+  "metrics": [
+    {
+      "v": "600+",
+      "l": "TRADING PAIRS"
+    },
+    {
+      "v": "< 1ms",
+      "l": "MATCHING LATENCY"
+    },
+    {
+      "v": "$1.4T",
+      "l": "VOLUME TRADED"
+    },
+    {
+      "v": "4",
+      "l": "RESERVE ATTESTATIONS"
+    }
+  ],
+  "gallery": {
+    "title": "MARKETS",
+    "sub": "Spot, margin and perpetual futures across six hundred pairs.",
+    "items": [
+      {
+        "id": "photo-1611974789855-9c2a0a7236a3",
+        "tag": "Spot",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1560472354-b33ff0c44a43",
+        "tag": "Futures",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1579621970563-ebec7560ff3e",
+        "tag": "Earn",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Analytics",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1454165804606-c3d57bc86b40",
+        "tag": "Institutional",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1591696205602-2f950c417cb9",
+        "tag": "Reports",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "The funding-rate page tells you the index composition. I have used four exchanges and this is the only one where a liquidation was explainable afterwards.",
+    "name": "Marco Ferretti",
+    "role": "Derivatives Trader",
+    "avatar": "photo-1573496359142-b8d87734a5a2"
+  },
+  "pricing": {
+    "title": "FEES",
+    "sub": "Thirteen VIP tiers by 30-day volume. All published.",
+    "tiers": [
+      {
+        "name": "REGULAR",
+        "price": "0.10%",
+        "period": "taker",
+        "desc": "Under $1M in 30-day volume.",
+        "features": [
+          "0.10% maker fee",
+          "Spot and margin",
+          "Instant fiat deposit",
+          "24/7 support"
+        ],
+        "cta": "Sign up"
+      },
+      {
+        "name": "VIP 1",
+        "price": "0.04%",
+        "period": "taker",
+        "desc": "$1M or more in 30-day volume.",
+        "features": [
+          "0.02% maker rebate",
+          "Futures and options",
+          "Advanced order types",
+          "Priority support"
+        ],
+        "cta": "View all tiers",
+        "featured": true,
+        "badge": "MOST ACTIVE"
+      },
+      {
+        "name": "INSTITUTIONAL",
+        "price": "Custom",
+        "period": "",
+        "desc": "For desks and funds.",
+        "features": [
+          "Negotiated fee schedule",
+          "Sub-accounts",
+          "Colocation available",
+          "Dedicated coverage"
+        ],
+        "cta": "Contact the desk"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "How is proof of reserves verified?",
+        "a": "Balances are hashed into a Merkle tree audited quarterly against on-chain holdings, with a tool that lets you confirm your own balance is included."
+      },
+      {
+        "q": "What are maker rebates?",
+        "a": "At VIP 1 and above the maker fee is negative — you are paid for adding liquidity. The full schedule is published rather than negotiated privately."
+      },
+      {
+        "q": "Where are assets held?",
+        "a": "About ninety-five percent offline in geographically separated vaults with multi-party signing; the rest sits in hot wallets sized for expected withdrawals."
+      },
+      {
+        "q": "Is there an API testnet?",
+        "a": "Yes, mirroring production including the awkward error codes. Rate limits are documented per endpoint rather than discovered under load."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Open an account",
+    "sub": "Verification usually completes within the hour, and the fee schedule is one page.",
+    "btn1": "Sign up",
+    "btn2": "View markets"
+  },
+  "footer": {
+    "tagline": "Trade on the deepest books.",
+    "columns": [
+      {
+        "title": "Trade",
+        "links": [
+          "Spot",
+          "Margin",
+          "Futures",
+          "Options"
+        ]
+      },
+      {
+        "title": "Earn",
+        "links": [
+          "Staking",
+          "Savings",
+          "Liquidity",
+          "Loans"
+        ]
+      },
+      {
+        "title": "Learn",
+        "links": [
+          "Fees",
+          "Proof of reserves",
+          "Academy",
+          "Status"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Licences",
+          "Careers",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Meridian Exchange"
+  },
+  "specimen": "Deepest books",
+  "notes": [
+    "A single yellow does all the brand voltage — CTAs, headlines, the mark and badges. Scarcely on dark, ubiquitously on transactional dialogs.",
+    "Numbers and prices use a separate face from body text so columns of figures align. That tabular consistency is non-negotiable in this system.",
+    "Marketing pages default dark and transactional pages flip light. Yellow CTAs and trading green/red are shared across both.",
+    "The homepage closes with a light footer beneath a dark body — a deliberate inversion that visually shuts the page.",
+    "Trading semantics are text colour only: green up, red down, never as badge backgrounds. Surfaces stay flat with no gradients."
+  ]
+}

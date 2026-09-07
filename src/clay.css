@@ -1,0 +1,40 @@
+/* Clay — cream-tinted white, six saturated cards, generous radii, rounded display. */
+:root { --maxw: 1180px; --sect: clamp(56px, 7vw, 92px); --shadow-1: none; --shadow-2: none;
+  --pink: #ffd9e8; --teal: #c9efe8; --lav: #ddd6f7; --peach: #ffe2cc; --ochre: #f7e1a8; --cream: #fdf3e3; }
+.nav { --nav-bg: rgba(255,250,240,.94); backdrop-filter: blur(10px); border-bottom-color: rgba(10,10,10,.08); }
+.brand { font-family: var(--font-display); font-weight: 700; letter-spacing: -.02em; font-size: 22px; }
+.brand-ico { color: #0a0a0a; }
+.btn { border-radius: 12px; font-weight: 600; padding: 13px 24px; }
+.btn-primary { background: #0a0a0a; color: #fff; }
+.btn-secondary { background: #fff; border-color: rgba(10,10,10,.16); }
+.btn-secondary:hover { background: var(--cream); border-color: #0a0a0a; }
+.eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 700; }
+.eyebrow { color: var(--c-ink-subtle); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-family: var(--font-display);
+  font-weight: 500; letter-spacing: -.03em; }
+.hero-media img { border-radius: 24px; border: 0; }
+.logos { border-block-color: rgba(10,10,10,.1); }
+/* the six-colour feature palette */
+.feat-card { background: var(--pink); border: 0; border-radius: 24px; padding: 28px; }
+.feat-card:nth-child(2) { background: var(--teal); }
+.feat-card:nth-child(3) { background: var(--lav); }
+.feat-card:nth-child(4) { background: var(--peach); }
+.feat-card:nth-child(5) { background: var(--ochre); }
+.feat-card:nth-child(6) { background: var(--cream); }
+.feat-ico { background: rgba(255,255,255,.65); color: #0a0a0a; border: 0; border-radius: 12px; }
+.sc-media img, .g-item { border-radius: 16px; border: 0; }
+.metrics { --metrics-bg: var(--lav); border-block: 0; }
+.metric-v { color: #0a0a0a; }
+.g-item figcaption { background: rgba(10,10,10,.84); border-radius: 12px; }
+.quote-card { background: var(--teal); border: 0; border-radius: 24px; --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: #0a0a0a; }
+.q-av { border-radius: 50%; }
+.tier { background: #fff; border: 0; border-radius: 16px; }
+.pricing { background: var(--cream); }
+.tier-feat { outline: 2px solid #0a0a0a; outline-offset: -2px; }
+.tier-badge { background: #0a0a0a; border-radius: 12px; font-size: 10px; letter-spacing: .1em; }
+.tier-feats i, .sc-points i, .faq-mk { color: #0a0a0a; }
+.faq-item { border-bottom-color: rgba(10,10,10,.12); }
+.cta-band { background: var(--peach); border: 0; border-radius: 24px; }
+.spec { --spec-bg: var(--cream); }
+.input { border-radius: 12px; }

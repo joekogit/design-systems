@@ -1,0 +1,336 @@
+{
+  "slug": "bmw",
+  "name": "BMW",
+  "category": "Automotive",
+  "look": "Light canvas with dark navy only inside hero bands, corporate blue as the single action colour, and rectangular zero-radius buttons.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "thin"
+  ],
+  "fonts": {
+    "display": "\"Archivo\", -apple-system, sans-serif",
+    "body": "\"Archivo\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "full-bleed",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-steering-wheel",
+    "name": "AXIOM MOTORS"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Models",
+        "href": "gallery"
+      },
+      {
+        "label": "Electric",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Configure",
+        "href": "pricing"
+      },
+      {
+        "label": "Owners",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Dealers",
+        "href": "faq"
+      }
+    ],
+    "cta": "Configure",
+    "cta2": "My Axiom"
+  },
+  "hero": {
+    "eyebrow": "THE NEW AXIOM 5",
+    "title": "Sheer <em>driving pleasure</em>",
+    "sub": "A rear-biased chassis, a straight-six that revs to seven thousand, and an interior designed around the person actually steering.",
+    "cta1": "Configure yours",
+    "cta2": "Book a test drive",
+    "image": "photo-1552519507-da3b142c6e3d",
+    "ratio": 0.56,
+    "stats": [
+      {
+        "v": "3.8 s",
+        "l": "0–100 KM/H"
+      },
+      {
+        "v": "50:50",
+        "l": "WEIGHT DISTRIBUTION"
+      },
+      {
+        "v": "620 KM",
+        "l": "RANGE"
+      }
+    ]
+  },
+  "logo_lead": "AWARDED",
+  "logos": [
+    "World Car",
+    "Euro NCAP",
+    "Red Dot",
+    "IF Design",
+    "Car of the Year",
+    "Golden Steering Wheel"
+  ],
+  "features": {
+    "eyebrow": "ENGINEERING",
+    "title": "Balance before power",
+    "sub": "Weight distribution, steering feel and body control decide whether a car is enjoyable. Power only decides how quickly it gets boring.",
+    "items": [
+      {
+        "icon": "ph-scales",
+        "title": "50:50 distribution",
+        "body": "Achieved by placing the drivetrain rather than by adding ballast to compensate."
+      },
+      {
+        "icon": "ph-steering-wheel",
+        "title": "Steering feel",
+        "body": "Hydraulic assistance retained on the driver's package, because the electric system loses information."
+      },
+      {
+        "icon": "ph-engine",
+        "title": "Straight-six",
+        "body": "Inherently balanced, revving to seven thousand, with the induction audible rather than synthesised."
+      },
+      {
+        "icon": "ph-car-profile",
+        "title": "Adaptive chassis",
+        "body": "Dampers reading the road every two milliseconds, with a comfort setting that is genuinely comfortable."
+      },
+      {
+        "icon": "ph-lightning",
+        "title": "Electric option",
+        "body": "The same chassis philosophy with a rear motor and a 620 kilometre range."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "Five-star safety",
+        "body": "Structural design rather than assistance systems doing the work in a real impact."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "ELECTRIC",
+      "title": "The same car, differently powered",
+      "body": "The electric variant shares the chassis, the steering and the seating position. It is the same car with a different power source rather than a separate product built to a different brief.",
+      "points": [
+        "Shared chassis and steering geometry",
+        "620 km range on the combined cycle",
+        "350 kW charging to 80 percent in 22 minutes"
+      ],
+      "image": "photo-1503376780353-7e6692767b70",
+      "cta": "ELECTRIC RANGE",
+      "ratio": 0.6
+    },
+    {
+      "eyebrow": "OWNERS",
+      "title": "Service that comes to you",
+      "body": "Scheduled servicing collected from an address of your choosing, with a courtesy vehicle and an itemised report including photographs of anything replaced.",
+      "points": [
+        "Collection and delivery included",
+        "Courtesy vehicle as standard",
+        "Itemised report with photographs"
+      ],
+      "image": "photo-1493238792000-8113da705763",
+      "cta": "OWNERSHIP",
+      "ratio": 0.6
+    }
+  ],
+  "metric_lead": "AXIOM 5 — TECHNICAL DATA",
+  "metrics": [
+    {
+      "v": "3.8 S",
+      "l": "0–100 KM/H"
+    },
+    {
+      "v": "50:50",
+      "l": "DISTRIBUTION"
+    },
+    {
+      "v": "620 KM",
+      "l": "RANGE"
+    },
+    {
+      "v": "22 MIN",
+      "l": "10–80% CHARGE"
+    }
+  ],
+  "gallery": {
+    "title": "MODELS",
+    "sub": "The current range.",
+    "items": [
+      {
+        "id": "photo-1552519507-da3b142c6e3d",
+        "tag": "AXIOM 5",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1503376780353-7e6692767b70",
+        "tag": "AXIOM 5 ELECTRIC",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1493238792000-8113da705763",
+        "tag": "AXIOM 3",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1553440569-bcc63803a83d",
+        "tag": "AXIOM 8",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1492144534655-ae79c964c9d7",
+        "tag": "AXIOM X",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "M SPORT",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "I drove the electric one expecting to be disappointed and could not tell the difference through a corner. That is the whole engineering argument, demonstrated.",
+    "name": "Klaus Reinhardt",
+    "role": "Owner since 2009",
+    "avatar": "photo-1573496359142-b8d87734a5a2"
+  },
+  "pricing": {
+    "title": "CONFIGURE",
+    "sub": "Three specifications. Delivery from twelve weeks.",
+    "tiers": [
+      {
+        "name": "AXIOM 5",
+        "price": "€52,900",
+        "period": "",
+        "desc": "The standard specification.",
+        "features": [
+          "Straight-six, 275 kW",
+          "Adaptive chassis",
+          "19-inch wheels",
+          "Three-year warranty"
+        ],
+        "cta": "CONFIGURE"
+      },
+      {
+        "name": "AXIOM 5 M SPORT",
+        "price": "€61,400",
+        "period": "",
+        "desc": "The driver's package.",
+        "features": [
+          "Everything in Axiom 5",
+          "Hydraulic steering",
+          "Sport differential",
+          "20-inch wheels"
+        ],
+        "cta": "CONFIGURE",
+        "featured": true,
+        "badge": "MOST ORDERED"
+      },
+      {
+        "name": "AXIOM 5 ELECTRIC",
+        "price": "€68,900",
+        "period": "",
+        "desc": "The same car, electric.",
+        "features": [
+          "Rear motor, 250 kW",
+          "620 km range",
+          "350 kW charging",
+          "Adaptive chassis"
+        ],
+        "cta": "CONFIGURE"
+      }
+    ]
+  },
+  "faq": {
+    "title": "OWNERSHIP",
+    "items": [
+      {
+        "q": "Why keep hydraulic steering?",
+        "a": "Because electric assistance filters out surface information the driver uses. It is retained on the driver's package where that feedback is the point."
+      },
+      {
+        "q": "Is the electric version a different car?",
+        "a": "No. Same chassis, same steering geometry, same seating position. The battery placement preserves the weight distribution rather than compromising it."
+      },
+      {
+        "q": "How long is delivery?",
+        "a": "From twelve weeks for a standard specification. Configured orders are given a build slot at the point of order rather than an estimate."
+      },
+      {
+        "q": "What does servicing include?",
+        "a": "Collection from an address of your choosing, a courtesy vehicle, and an itemised report with photographs of any part replaced."
+      }
+    ]
+  },
+  "cta": {
+    "title": "CONFIGURE YOURS",
+    "sub": "Delivery from twelve weeks, with a build slot confirmed at order.",
+    "btn1": "Configure yours",
+    "btn2": "Find a dealer"
+  },
+  "footer": {
+    "tagline": "Sheer driving pleasure.",
+    "columns": [
+      {
+        "title": "MODELS",
+        "links": [
+          "Axiom 3",
+          "Axiom 5",
+          "Axiom 8",
+          "Axiom X"
+        ]
+      },
+      {
+        "title": "ELECTRIC",
+        "links": [
+          "Range",
+          "Charging",
+          "Battery",
+          "Incentives"
+        ]
+      },
+      {
+        "title": "OWNERS",
+        "links": [
+          "Servicing",
+          "Warranty",
+          "Accessories",
+          "Finance"
+        ]
+      },
+      {
+        "title": "COMPANY",
+        "links": [
+          "About",
+          "Careers",
+          "Press",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Axiom Motors AG"
+  },
+  "specimen": "Driving pleasure",
+  "notes": [
+    "The light canvas is the base surface; dark navy appears only inside hero bands. The page rhythm relies on that contrast.",
+    "Corporate blue is the single primary action colour throughout.",
+    "The typographic signature is weight 700 display against weight 300 body — a wide gap held consistently.",
+    "Buttons are rectangular at 0px radius. That corporate dialect is what distinguishes it from the sportier M sub-brand.",
+    "Model cards run four or five up with no hairline border — just a white plate, the photograph and the title."
+  ]
+}

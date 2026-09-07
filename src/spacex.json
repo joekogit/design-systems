@@ -1,0 +1,336 @@
+{
+  "slug": "spacex",
+  "name": "SpaceX",
+  "category": "Media & consumer tech",
+  "look": "Pure black with full-bleed imagery, uppercase display with positive tracking, and a single ghost-outlined pill per band.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "thin"
+  ],
+  "fonts": {
+    "display": "\"Barlow Condensed\", \"Arial Narrow\", sans-serif",
+    "body": "\"Barlow\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@300;400;500&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "minimal",
+    "hero": "full-bleed",
+    "features": "list",
+    "cards": "flat",
+    "gallery": "filmstrip"
+  },
+  "brand": {
+    "mark": "ph-rocket",
+    "name": "ORBITAL"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "FALCON",
+        "href": "features"
+      },
+      {
+        "label": "STARSHIP",
+        "href": "showcase-0"
+      },
+      {
+        "label": "MISSIONS",
+        "href": "gallery"
+      },
+      {
+        "label": "CONSTELLATION",
+        "href": "showcase-1"
+      },
+      {
+        "label": "CAREERS",
+        "href": "faq"
+      }
+    ],
+    "cta": "LAUNCH WITH US",
+    "cta2": "CREW ACCESS"
+  },
+  "hero": {
+    "eyebrow": "NEXT LAUNCH — 04:21 UTC",
+    "title": "ORBITAL",
+    "sub": "Reusable launch vehicles delivering payloads to orbit at a published price per kilogram. Two hundred and forty consecutive successful landings.",
+    "cta1": "LAUNCH WITH US",
+    "cta2": "VIEW MISSIONS",
+    "image": "photo-1516849841032-87cbac4d88f7",
+    "ratio": 0.54,
+    "stats": [
+      {
+        "v": "240",
+        "l": "CONSECUTIVE LANDINGS"
+      },
+      {
+        "v": "$2,700",
+        "l": "PER KG TO LEO"
+      },
+      {
+        "v": "14 DAYS",
+        "l": "BOOSTER TURNAROUND"
+      }
+    ]
+  },
+  "logo_lead": "PAYLOADS DELIVERED FOR",
+  "logos": [
+    "NASA",
+    "ESA",
+    "JAXA",
+    "CNES",
+    "ISRO",
+    "CSA"
+  ],
+  "features": {
+    "eyebrow": "VEHICLES",
+    "title": "Reuse is the whole economics",
+    "sub": "An expendable rocket throws away the most expensive part of the mission on every flight.",
+    "items": [
+      {
+        "icon": "ph-rocket-launch",
+        "title": "Reusable boosters",
+        "body": "Recovered, inspected and reflown, with individual boosters exceeding twenty flights."
+      },
+      {
+        "icon": "ph-arrows-clockwise",
+        "title": "14-day turnaround",
+        "body": "From landing to the next launch, which is what makes the cadence possible."
+      },
+      {
+        "icon": "ph-package",
+        "title": "Rideshare",
+        "body": "A published slot price per kilogram for smallsats on scheduled missions."
+      },
+      {
+        "icon": "ph-target",
+        "title": "Precision insertion",
+        "body": "Orbital insertion accuracy inside a hundred metres of the target."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "Crew rated",
+        "body": "Human-rated for orbital flight, with abort capability through the whole ascent."
+      },
+      {
+        "icon": "ph-globe",
+        "title": "Constellation",
+        "body": "Low-latency broadband from low earth orbit, serving where fibre will not reach."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "STARSHIP",
+      "title": "Fully reusable, both stages",
+      "body": "The booster and the upper stage both return. Full reuse is the step that moves cost per kilogram by an order of magnitude rather than a percentage, and it is the reason the vehicle looks the way it does.",
+      "points": [
+        "Both stages recovered and reflown",
+        "Stainless construction for thermal reuse",
+        "Designed for rapid turnaround"
+      ],
+      "image": "photo-1614728263952-84ea256f9679",
+      "cta": "STARSHIP PROGRAMME",
+      "ratio": 0.6
+    },
+    {
+      "eyebrow": "CONSTELLATION",
+      "title": "Broadband from low orbit",
+      "body": "Satellites at five hundred kilometres, low enough that latency is comparable to terrestrial broadband, in numbers sufficient for continuous coverage anywhere on the surface.",
+      "points": [
+        "Sub-30ms latency to the ground",
+        "Continuous coverage at any latitude",
+        "Terminals that self-align on power-up"
+      ],
+      "image": "photo-1446776653964-20c1d3a81b06",
+      "cta": "CONSTELLATION",
+      "ratio": 0.6
+    }
+  ],
+  "metric_lead": "PROGRAMME TO DATE",
+  "metrics": [
+    {
+      "v": "240",
+      "l": "CONSECUTIVE LANDINGS"
+    },
+    {
+      "v": "$2,700",
+      "l": "PER KG TO LEO"
+    },
+    {
+      "v": "14 DAYS",
+      "l": "TURNAROUND"
+    },
+    {
+      "v": "100 M",
+      "l": "INSERTION ACCURACY"
+    }
+  ],
+  "gallery": {
+    "title": "MISSIONS",
+    "sub": "Recent launches and recoveries.",
+    "items": [
+      {
+        "id": "photo-1516849841032-87cbac4d88f7",
+        "tag": "ASCENT",
+        "ratio": 0.62
+      },
+      {
+        "id": "photo-1614728263952-84ea256f9679",
+        "tag": "STAGE SEPARATION",
+        "ratio": 0.62
+      },
+      {
+        "id": "photo-1446776653964-20c1d3a81b06",
+        "tag": "ORBIT",
+        "ratio": 0.62
+      },
+      {
+        "id": "photo-1451187580459-43490279c0fa",
+        "tag": "EARTH",
+        "ratio": 0.62
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "RANGE CONTROL",
+        "ratio": 0.62
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "AVIONICS",
+        "ratio": 0.62
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "They published the price per kilogram. Our entire mission architecture changed the week we could actually plan a budget around a number rather than a negotiation.",
+    "name": "Dr Helena Vasquez",
+    "role": "Principal Investigator",
+    "avatar": "photo-1438761681033-6461ffad8d80"
+  },
+  "pricing": {
+    "title": "LAUNCH SERVICES",
+    "sub": "Published pricing. No negotiation required to plan a mission.",
+    "tiers": [
+      {
+        "name": "RIDESHARE",
+        "price": "$6,500",
+        "period": "PER KG",
+        "desc": "Scheduled smallsat missions.",
+        "features": [
+          "Quarterly launch cadence",
+          "Standard deployer",
+          "Insertion to sun-synchronous",
+          "Standard integration"
+        ],
+        "cta": "BOOK A SLOT"
+      },
+      {
+        "name": "DEDICATED",
+        "price": "$67M",
+        "period": "PER LAUNCH",
+        "desc": "The whole vehicle.",
+        "features": [
+          "Full payload capacity",
+          "Orbit of your choosing",
+          "Dedicated integration team",
+          "Priority scheduling"
+        ],
+        "cta": "REQUEST A QUOTE",
+        "featured": true,
+        "badge": "MOST MISSIONS"
+      },
+      {
+        "name": "HEAVY",
+        "price": "$97M",
+        "period": "PER LAUNCH",
+        "desc": "Beyond earth orbit.",
+        "features": [
+          "Maximum lift capacity",
+          "Interplanetary trajectories",
+          "Extended fairing",
+          "Mission design support"
+        ],
+        "cta": "CONTACT US"
+      }
+    ]
+  },
+  "faq": {
+    "title": "LAUNCH FAQ",
+    "items": [
+      {
+        "q": "Is the pricing really published?",
+        "a": "Yes, per kilogram for rideshare and per launch for dedicated missions. Mission-specific integration costs are quoted separately and itemised."
+      },
+      {
+        "q": "How reliable is a reflown booster?",
+        "a": "Reflown boosters have a better record than new ones, because a booster that has flown has demonstrably survived the conditions rather than only been modelled against them."
+      },
+      {
+        "q": "What is the lead time?",
+        "a": "Rideshare slots are typically six to nine months out on the published cadence. Dedicated missions depend on integration complexity and are scheduled individually."
+      },
+      {
+        "q": "What insertion accuracy can I plan for?",
+        "a": "Within a hundred metres of the target orbit. The dispersion statistics from previous missions are published rather than summarised."
+      }
+    ]
+  },
+  "cta": {
+    "title": "BOOK A LAUNCH",
+    "sub": "Published pricing, a scheduled cadence, and slots available within the year.",
+    "btn1": "BOOK A SLOT",
+    "btn2": "VIEW MISSIONS"
+  },
+  "footer": {
+    "tagline": "Reusable launch vehicles.",
+    "columns": [
+      {
+        "title": "VEHICLES",
+        "links": [
+          "Falcon",
+          "Starship",
+          "Dragon",
+          "Fairings"
+        ]
+      },
+      {
+        "title": "SERVICES",
+        "links": [
+          "Rideshare",
+          "Dedicated",
+          "Crew",
+          "Cargo"
+        ]
+      },
+      {
+        "title": "PROGRAMME",
+        "links": [
+          "Missions",
+          "Reuse",
+          "Recovery",
+          "Range"
+        ]
+      },
+      {
+        "title": "COMPANY",
+        "links": [
+          "About",
+          "Careers",
+          "Suppliers",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 ORBITAL LAUNCH SYSTEMS"
+  },
+  "specimen": "ORBITAL",
+  "notes": [
+    "A single pure-black canvas carries every marketing surface. Light appears only on the shop site.",
+    "Display is uppercase with positive horizontal tracking — around 1.6px at 80px — which is the typographic signature.",
+    "Full-bleed photography or video dominates, and type sits directly on the imagery with no scrim.",
+    "One ghost-outlined pill CTA per band. It is never filled and never takes an accent colour.",
+    "All chrome microtext is uppercase with positive tracking. Every small label in this system shouts in caps."
+  ]
+}

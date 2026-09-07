@@ -1,0 +1,49 @@
+/* Wise — sage canvas, one lime CTA, two-face display, 24px everywhere. */
+:root { --maxw: 1180px; --sect: clamp(56px, 7vw, 92px); --shadow-1: none; --shadow-2: none;
+  --lime: #9fe870; --sage: #e8ebe6; --forest: #163300; }
+body { background: var(--sage); }
+.nav { --nav-bg: rgba(232,235,230,.94); backdrop-filter: blur(10px); border-bottom-color: rgba(22,51,0,.1); }
+.brand { font-family: var(--font-display); font-weight: 400; letter-spacing: -.02em; font-size: 20px; color: var(--forest); }
+.brand-ico { color: var(--forest); }
+/* 24px is canonical for both cards and buttons */
+.btn, .feat-card, .tier, .quote-card, .g-item, .cta-band, .input, .hero-media img, .sc-media img { border-radius: 24px; }
+.btn { font-weight: 700; padding: 15px 28px; }
+.btn-primary { background: var(--lime); color: var(--forest); }
+.btn-primary:hover { background: #b0f085; }
+.btn-secondary { background: #fff; color: var(--forest); border-color: transparent; }
+.btn-secondary:hover { background: #f6f8f5; border-color: transparent; }
+.eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .13em; font-size: 11px; font-weight: 700; }
+.eyebrow { color: var(--forest); }
+/* the two-face contrast is the typographic story */
+.t-display-xl, .t-display-lg { font-family: var(--font-display); font-weight: 400; letter-spacing: -.03em; color: var(--forest); }
+.t-display-md, .sc-title, .feat-title, .tier-name { font-weight: 700; letter-spacing: -.02em; color: var(--forest); }
+.hero-title em { color: var(--forest); background: var(--lime); padding: 0 .1em; border-radius: 6px; }
+.logos { border-block-color: rgba(22,51,0,.12); }
+.logo-item { color: var(--forest); font-weight: 700; }
+/* white cards inside the sage band */
+.feat-card { background: #fff; border: 0; padding: 28px; }
+.feat-ico { background: var(--lime); color: var(--forest); border: 0; border-radius: 24px; width: 48px; height: 48px; }
+.metrics { --metrics-bg: var(--forest); border-block: 0; }
+.metrics .metric-v { color: var(--lime); }
+.metrics .metric-l, .metrics .logos-lead { color: rgba(255,255,255,.7); }
+.g-item { background: #fff; }
+.g-item figcaption { background: var(--forest); color: #fff; border-radius: 24px; font-weight: 700; }
+.quote-card { background: #fff; border: 0; --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--forest); }
+.q-av { border-radius: 24px; }
+.tier { background: #fff; border: 0; }
+.tier-feat { outline: 3px solid var(--forest); outline-offset: -3px; }
+.tier-badge { background: var(--forest); color: var(--lime); border-radius: 24px; font-size: 10px; letter-spacing: .1em; }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--forest); }
+.faq-item { border-bottom-color: rgba(22,51,0,.14); }
+.cta-band { background: var(--forest); color: #fff; border: 0; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: rgba(255,255,255,.78); }
+.cta-band .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.4); }
+.foot { background: var(--forest); --foot-bg: var(--forest); border-top: 0; }
+.foot .brand, .foot .brand-ico { color: #fff; }
+.fcol h4 { color: rgba(255,255,255,.6); } .fcol a, .foot-tag { color: rgba(255,255,255,.88); }
+.foot-legal { color: rgba(255,255,255,.6); border-top-color: rgba(255,255,255,.2); }
+.foot-socials a { border-color: rgba(255,255,255,.26); color: rgba(255,255,255,.88); border-radius: 24px; }
+.spec { --spec-bg: #fff; }
+.badge2, .tabs, .tabs button { border-radius: 24px; }

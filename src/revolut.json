@@ -1,0 +1,334 @@
+{
+  "slug": "revolut",
+  "name": "Revolut",
+  "category": "Fintech & crypto",
+  "look": "Two-mode canvas switched in full-bleed bands, a white pill as the brightest pixel, and eight accents confined to product mockups.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Inter\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-credit-card",
+    "name": "Cobalt"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Personal",
+        "href": "features"
+      },
+      {
+        "label": "Business",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Plans",
+        "href": "pricing"
+      },
+      {
+        "label": "Company",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Help",
+        "href": "faq"
+      }
+    ],
+    "cta": "Get the app",
+    "cta2": "Log in"
+  },
+  "hero": {
+    "eyebrow": "ONE APP, EVERY CURRENCY",
+    "title": "Money <em>without the friction</em>",
+    "sub": "Spend in thirty-six currencies at the real exchange rate, split a bill in a tap, and see where it went without exporting a statement.",
+    "cta1": "Get the app",
+    "cta2": "Compare plans",
+    "image": "photo-1556742049-0cfed4f6a45d",
+    "ratio": 0.66,
+    "stats": [
+      {
+        "v": "36",
+        "l": "Currencies"
+      },
+      {
+        "v": "Real",
+        "l": "Exchange rate"
+      },
+      {
+        "v": "< 10s",
+        "l": "To send money"
+      }
+    ]
+  },
+  "logo_lead": "TRUSTED BY 45 MILLION PEOPLE",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "PERSONAL",
+    "title": "Everything in one place",
+    "sub": "The accounts, cards and transfers you would otherwise hold at four institutions.",
+    "items": [
+      {
+        "icon": "ph-globe",
+        "title": "36 currencies",
+        "body": "Hold and spend at the interbank rate, with the markup shown rather than hidden in the rate."
+      },
+      {
+        "icon": "ph-paper-plane-tilt",
+        "title": "Instant transfers",
+        "body": "Between accounts instantly and free; internationally in seconds with the fee stated first."
+      },
+      {
+        "icon": "ph-chart-pie",
+        "title": "Spending insight",
+        "body": "Categorised automatically, with monthly budgets that actually nudge before you overspend."
+      },
+      {
+        "icon": "ph-lock-key",
+        "title": "Disposable cards",
+        "body": "A single-use virtual card for the subscription you suspect you will want to cancel."
+      },
+      {
+        "icon": "ph-piggy-bank",
+        "title": "Savings vaults",
+        "body": "Round up spare change or set a schedule, with the interest rate stated plainly."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "Freeze in a tap",
+        "body": "Lose a card and freeze it instantly; unfreeze when it turns up in a coat pocket."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "COMPANY",
+      "title": "The markup, not just the rate",
+      "body": "Everyone claims a good exchange rate. We show the interbank rate and our markup as separate numbers, so the comparison is possible rather than rhetorical.",
+      "points": [
+        "Interbank rate and markup shown separately",
+        "Weekend surcharge stated in advance",
+        "Fee-free allowance shown as you use it"
+      ],
+      "image": "photo-1579621970563-ebec7560ff3e",
+      "cta": "How our rates work"
+    },
+    {
+      "eyebrow": "BUSINESS",
+      "title": "For companies with the same problem",
+      "body": "Multi-currency accounts, cards with per-person limits, and expense capture that does not require anyone to photograph a receipt in a taxi.",
+      "points": [
+        "Multi-currency business accounts",
+        "Per-employee card limits",
+        "Expenses captured at the point of spend"
+      ],
+      "image": "photo-1454165804606-c3d57bc86b40",
+      "cta": "Cobalt for Business"
+    }
+  ],
+  "metric_lead": "ACROSS COBALT",
+  "metrics": [
+    {
+      "v": "45M",
+      "l": "CUSTOMERS"
+    },
+    {
+      "v": "36",
+      "l": "CURRENCIES"
+    },
+    {
+      "v": "< 10s",
+      "l": "INTERNATIONAL TRANSFER"
+    },
+    {
+      "v": "0",
+      "l": "HIDDEN MARKUP"
+    }
+  ],
+  "gallery": {
+    "title": "THE APP",
+    "sub": "What it looks like in the hand.",
+    "items": [
+      {
+        "id": "photo-1556742049-0cfed4f6a45d",
+        "tag": "Cards",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1580910051074-3eb694886505",
+        "tag": "App",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1579621970563-ebec7560ff3e",
+        "tag": "Savings",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Insights",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1512499617640-c74ae3a79d37",
+        "tag": "Payments",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1454165804606-c3d57bc86b40",
+        "tag": "Business",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "I moved abroad and stopped thinking about currency entirely. The bit that surprised me was seeing the markup as a separate line rather than buried in the rate.",
+    "name": "Ana Ribeiro",
+    "role": "Customer since 2021",
+    "avatar": "photo-1494790108377-be9c29b29330"
+  },
+  "pricing": {
+    "title": "PLANS",
+    "sub": "Free to start. Paid tiers raise the fee-free allowances.",
+    "tiers": [
+      {
+        "name": "Standard",
+        "price": "£0",
+        "period": "/month",
+        "desc": "For everyday spending.",
+        "features": [
+          "36 currencies",
+          "£1,000 fee-free monthly",
+          "Instant transfers",
+          "Virtual cards"
+        ],
+        "cta": "Get the app"
+      },
+      {
+        "name": "Premium",
+        "price": "£7.99",
+        "period": "/month",
+        "desc": "For frequent travel.",
+        "features": [
+          "£5,000 fee-free monthly",
+          "Travel insurance",
+          "Priority support",
+          "Metal card"
+        ],
+        "cta": "Get Premium",
+        "featured": true,
+        "badge": "MOST POPULAR"
+      },
+      {
+        "name": "Metal",
+        "price": "£14.99",
+        "period": "/month",
+        "desc": "For heavy use.",
+        "features": [
+          "Unlimited fee-free",
+          "Cashback on spend",
+          "Airport lounges",
+          "Concierge"
+        ],
+        "cta": "Get Metal"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "What is the real exchange rate?",
+        "a": "The interbank rate, shown alongside our markup as a separate figure. Above your fee-free allowance the markup applies; below it, it does not."
+      },
+      {
+        "q": "Is my money protected?",
+        "a": "Deposits are held at partner banks under the relevant protection scheme in your country, and the specific scheme and limit are stated on the account page."
+      },
+      {
+        "q": "What happens at the weekend?",
+        "a": "Currency markets close, so a small weekend surcharge applies on exchanges. It is shown before you confirm rather than discovered on the statement."
+      },
+      {
+        "q": "Can I use it as my main account?",
+        "a": "Yes — salary can be paid in, direct debits are supported, and the account details are your own rather than pooled."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Get started in minutes",
+    "sub": "Free to open, and you can see the markup before you convert anything.",
+    "btn1": "Get the app",
+    "btn2": "Compare plans"
+  },
+  "footer": {
+    "tagline": "Money without the friction.",
+    "columns": [
+      {
+        "title": "Personal",
+        "links": [
+          "Accounts",
+          "Cards",
+          "Transfers",
+          "Savings"
+        ]
+      },
+      {
+        "title": "Business",
+        "links": [
+          "Accounts",
+          "Expenses",
+          "Payroll",
+          "API"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Newsroom",
+          "Investors"
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          "Terms",
+          "Privacy",
+          "Fees",
+          "Complaints"
+        ]
+      }
+    ],
+    "legal": "© 2026 Cobalt Financial"
+  },
+  "specimen": "Money, unfrictioned",
+  "notes": [
+    "Two canvas modes switched in full-bleed bands: true black for storytelling, white for browsing. Never blended in one section.",
+    "Display type runs tight — line-height 1.0 with heavy negative tracking at large sizes.",
+    "The actual primary CTA is a white pill with black text on the dark canvas, deliberately the brightest pixel. The brand violet is for featured plan cards and secondary actions.",
+    "Eight saturated accents live inside product mockups and illustrations only. None of them is ever a button surface.",
+    "All buttons are pills, content cards take a generous 20px, and inputs and chips step down to 12px."
+  ]
+}

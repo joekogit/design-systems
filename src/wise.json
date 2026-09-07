@@ -1,0 +1,334 @@
+{
+  "slug": "wise",
+  "name": "Wise",
+  "category": "Fintech & crypto",
+  "look": "Sage-tinted canvas with a single lime CTA, a two-face display pairing, and a 24px radius on everything.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Archivo Black\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-arrows-left-right",
+    "name": "Ferry"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Send money",
+        "href": "features"
+      },
+      {
+        "label": "Account",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Business",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Help",
+        "href": "gallery"
+      }
+    ],
+    "cta": "Get started",
+    "cta2": "Log in"
+  },
+  "hero": {
+    "eyebrow": "INTERNATIONAL MONEY",
+    "title": "The real exchange rate, <em>and the fee up front</em>",
+    "sub": "Send money abroad at the mid-market rate with the fee shown as a number before you commit. No spread hidden in the rate, ever.",
+    "cta1": "Get started",
+    "cta2": "See our fees",
+    "image": "photo-1579621970563-ebec7560ff3e",
+    "ratio": 0.66,
+    "stats": [
+      {
+        "v": "Mid-market",
+        "l": "Rate"
+      },
+      {
+        "v": "40+",
+        "l": "Currencies"
+      },
+      {
+        "v": "60%",
+        "l": "Arrive in seconds"
+      }
+    ]
+  },
+  "logo_lead": "MOVING MONEY FOR 16 MILLION PEOPLE",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "HOW IT WORKS",
+    "title": "No spread, just a fee",
+    "sub": "Banks hide their margin inside the exchange rate. We charge a stated fee and use the real rate.",
+    "items": [
+      {
+        "icon": "ph-arrows-left-right",
+        "title": "Mid-market rate",
+        "body": "The rate you see on a search engine, not a marked-up version of it."
+      },
+      {
+        "icon": "ph-receipt",
+        "title": "Fee stated first",
+        "body": "One number, before you confirm, with the breakdown available if you want it."
+      },
+      {
+        "icon": "ph-lightning",
+        "title": "Often instant",
+        "body": "Around six in ten transfers arrive within seconds; the rest show an estimated time."
+      },
+      {
+        "icon": "ph-bank",
+        "title": "Local account details",
+        "body": "Get account details in ten currencies and be paid like a local."
+      },
+      {
+        "icon": "ph-credit-card",
+        "title": "Spend anywhere",
+        "body": "A card that converts at the same rate, with no foreign transaction fee."
+      },
+      {
+        "icon": "ph-buildings",
+        "title": "For business too",
+        "body": "Batch payments, multi-user access and accounting integrations."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "BUSINESS",
+      "title": "Batch payments without the spreadsheet",
+      "body": "Pay a thousand contractors in forty currencies from one file, with each recipient's fee shown before the batch runs and a reconciliation export afterwards.",
+      "points": [
+        "Batch upload with per-row validation",
+        "Fees shown before the batch executes",
+        "Reconciliation export in your accounting format"
+      ],
+      "image": "photo-1454165804606-c3d57bc86b40",
+      "cta": "Ferry for Business"
+    },
+    {
+      "eyebrow": "ACCOUNT",
+      "title": "Be paid like a local",
+      "body": "Local account details in ten currencies means an employer or marketplace can pay you domestically, and you convert when the rate suits rather than when the payment lands.",
+      "points": [
+        "Local details in 10 currencies",
+        "Hold balances and convert when you choose",
+        "Direct debits supported in supported markets"
+      ],
+      "image": "photo-1556742049-0cfed4f6a45d",
+      "cta": "Open an account"
+    }
+  ],
+  "metric_lead": "ACROSS FERRY",
+  "metrics": [
+    {
+      "v": "16M",
+      "l": "CUSTOMERS"
+    },
+    {
+      "v": "40+",
+      "l": "CURRENCIES"
+    },
+    {
+      "v": "60%",
+      "l": "ARRIVE IN SECONDS"
+    },
+    {
+      "v": "0",
+      "l": "HIDDEN SPREAD"
+    }
+  ],
+  "gallery": {
+    "title": "HELP",
+    "sub": "Rates, timings and what to do when something goes wrong.",
+    "items": [
+      {
+        "id": "photo-1579621970563-ebec7560ff3e",
+        "tag": "Rates",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1556742049-0cfed4f6a45d",
+        "tag": "Cards",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1454165804606-c3d57bc86b40",
+        "tag": "Business",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Tracking",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1560472354-b33ff0c44a43",
+        "tag": "Fees",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1521737604893-d14cc237f11d",
+        "tag": "Support",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "I compared it against my bank on a two thousand pound transfer. The bank's 'no fee' cost eighty-one pounds in the rate. That was the last transfer I sent with them.",
+    "name": "Daniel Osei",
+    "role": "Customer since 2019",
+    "avatar": "photo-1500648767791-00dcc994a43e"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "A stated fee per transfer. No subscription.",
+    "tiers": [
+      {
+        "name": "Personal",
+        "price": "From 0.43%",
+        "period": "per transfer",
+        "desc": "For sending and holding.",
+        "features": [
+          "Mid-market rate",
+          "40+ currencies",
+          "Local account details",
+          "No monthly fee"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "name": "Card",
+        "price": "£7",
+        "period": "one-off",
+        "desc": "Adds a card that spends at the same rate.",
+        "features": [
+          "Everything in Personal",
+          "No foreign transaction fee",
+          "Free ATM allowance",
+          "Instant freeze"
+        ],
+        "cta": "Order a card",
+        "featured": true,
+        "badge": "MOST POPULAR"
+      },
+      {
+        "name": "Business",
+        "price": "From 0.41%",
+        "period": "per transfer",
+        "desc": "For companies paying internationally.",
+        "features": [
+          "Batch payments",
+          "Multi-user access",
+          "Accounting integrations",
+          "API"
+        ],
+        "cta": "Open a business account"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "What is the mid-market rate?",
+        "a": "The midpoint between buy and sell prices on the global currency market — the rate a search engine shows. We use it and charge a separate stated fee."
+      },
+      {
+        "q": "Why do banks look cheaper?",
+        "a": "Because many charge nothing visible and take their margin inside the exchange rate. Compare the amount that actually arrives, not the advertised fee."
+      },
+      {
+        "q": "How long does a transfer take?",
+        "a": "About six in ten arrive within seconds. The rest depend on the corridor and the receiving bank, and an estimate is shown before you confirm."
+      },
+      {
+        "q": "Is my money safe?",
+        "a": "Customer funds are safeguarded in segregated accounts at established banks, separate from company money, as required by the regulators we are licensed under."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Send your first transfer",
+    "sub": "The real rate, the fee stated first, and no subscription.",
+    "btn1": "Get started",
+    "btn2": "See our fees"
+  },
+  "footer": {
+    "tagline": "The real exchange rate, and the fee up front.",
+    "columns": [
+      {
+        "title": "Personal",
+        "links": [
+          "Send money",
+          "Account",
+          "Card",
+          "Rates"
+        ]
+      },
+      {
+        "title": "Business",
+        "links": [
+          "Accounts",
+          "Batch payments",
+          "API",
+          "Integrations"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Mission",
+          "Investors"
+        ]
+      },
+      {
+        "title": "Help",
+        "links": [
+          "Support",
+          "Fees",
+          "Security",
+          "Complaints"
+        ]
+      }
+    ],
+    "legal": "© 2026 Ferry Payments"
+  },
+  "specimen": "The real rate",
+  "notes": [
+    "A single lime green is the universal primary action colour. There is no second accent anywhere in the system.",
+    "The typographic story is a two-face contrast: a heavy proprietary display at hero scale against a neutral sans at sub-display.",
+    "24px is the canonical radius for both cards and buttons — generous and friendly, applied consistently.",
+    "The sage-tinted canvas is the hero surface; white is reserved for the cards sitting inside that band.",
+    "A full semantic palette exists for in-product use — positive, warning and negative families each with content, hover and active variants."
+  ]
+}

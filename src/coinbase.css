@@ -1,0 +1,43 @@
+/* Coinbase — dark full-bleed heroes, one blue used scarcely, pills and circles only. */
+:root { --maxw: 1180px; --sect: clamp(64px, 8vw, 96px); --shadow-1: none; --shadow-2: none;
+  --blue: #0052ff; --up: #05b169; --down: #cf202f; --card: #12151c;
+  --hero-scrim: linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.2) 42%, rgba(10,12,16,.94) 100%); }
+.nav { --nav-bg: rgba(10,12,16,.9); backdrop-filter: blur(12px); border-bottom-color: transparent; }
+.brand { font-weight: 600; letter-spacing: -.02em; }
+.brand-ico { color: var(--blue); }
+/* pills for CTAs, circles for glyphs — no sharp corners anywhere */
+.btn { border-radius: 100px; font-weight: 500; padding: 14px 28px; }
+.btn-primary { background: var(--blue); color: #fff; }
+.btn-primary:hover { background: #1a63ff; }
+.btn-secondary { background: rgba(255,255,255,.1); border-color: transparent; color: #fff; }
+.btn-secondary:hover { background: rgba(255,255,255,.18); border-color: transparent; }
+.eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .13em; font-size: 11px; font-weight: 500; }
+/* display stays modest — never heavy */
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 400; letter-spacing: -.025em; }
+.hero-title em { color: var(--blue); }
+.hero-sub { color: rgba(255,255,255,.82); }
+.hero-stats { border-top-color: rgba(255,255,255,.2); }
+.hstat span { color: rgba(255,255,255,.6); }
+.logos { border-block-color: #1c2029; }
+.feat-card { background: var(--card); border: 0; border-radius: 24px; padding: 28px; }
+.feat-card:hover { background: #171b23; }
+.feat-ico { background: rgba(0,82,255,.16); color: #6b9dff; border: 0; border-radius: 100px; width: 48px; height: 48px; }
+.hero-media img, .sc-media img, .g-item { border-radius: 24px; border: 0; }
+.metrics { --metrics-bg: var(--card); border-block: 0; }
+.metric-v { color: #fff; font-weight: 400; }
+.g-item figcaption { background: rgba(10,12,16,.86); border-radius: 100px; }
+.quote-card { background: var(--card); border: 0; border-radius: 24px; --quote-align: left; --quote-by-just: flex-start; }
+.quote-text { font-weight: 400; }
+.quote-mark { color: var(--blue); }
+.q-av { border-radius: 100px; }
+.tier { background: var(--card); border: 0; border-radius: 24px; }
+.tier-feat { outline: 1px solid var(--blue); outline-offset: -1px; }
+.tier-num { font-weight: 400; }
+.tier-badge { background: var(--blue); border-radius: 100px; font-size: 10px; letter-spacing: .1em; }
+.tier-feats i, .sc-points i { color: var(--up); }
+.faq-item { border-bottom-color: #1c2029; }
+.faq-mk { color: var(--blue); }
+.cta-band { background: var(--card); border: 0; border-radius: 24px; }
+.spec { --spec-bg: var(--card); }
+.input, .badge2, .tabs, .tabs button { border-radius: 100px; }
+.sw { border-radius: 16px; }

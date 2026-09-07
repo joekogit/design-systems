@@ -1,0 +1,55 @@
+/* Vodafone — monumental uppercase 800, one red on pills, two-band rhythm. */
+:root { --maxw: 1220px; --sect: clamp(56px, 7vw, 92px); --shadow-1: none; --shadow-2: none;
+  --red: #e60000; --ink: #0d0d0d; }
+.nav { --nav-bg: rgba(255,255,255,.96); border-bottom-color: #e6e6e6; }
+/* the speechmark orb — the only decorative chrome that is not a CTA */
+.brand-ico { background: var(--red); color: #fff; width: 34px; height: 34px; display: inline-grid;
+  place-items: center; border-radius: 6px; font-size: 18px; }
+.brand { font-weight: 800; letter-spacing: .04em; }
+/* pill-filled primary, pill-outline secondary; no third variant */
+.btn { border-radius: 60px; font-weight: 700; padding: 15px 32px; }
+.btn-primary { background: var(--red); color: #fff; }
+.btn-primary:hover { background: #c40000; }
+.btn-secondary { background: transparent; border-color: var(--red); color: var(--red); border-width: 2px; }
+.btn-secondary:hover { background: #fdeaea; }
+.eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .14em; font-size: 11px; font-weight: 700; }
+.eyebrow { color: var(--red); }
+/* monumental uppercase 800; the 300 siblings handle calmer moments */
+.t-display-xl, .t-display-lg { font-family: var(--font-display); text-transform: uppercase;
+  font-weight: 800; letter-spacing: -.01em; line-height: .96; }
+.t-display-md, .sc-title { font-family: var(--font-display); font-weight: 300; letter-spacing: -.01em; }
+.hero-title em { color: var(--red); }
+.logos { background: #f4f4f4; border-block: 0; }
+.logo-item { font-weight: 700; }
+.feat-card { background: #f4f4f4; border: 0; border-radius: 6px; padding: 26px; }
+.feat-ico { background: var(--red); color: #fff; border: 0; border-radius: 32px; width: 46px; height: 46px; }
+.hero-media img, .sc-media img, .g-item { border-radius: 6px; border: 0; }
+/* the dark band */
+.metrics { --metrics-bg: var(--ink); border-block: 0; }
+.metrics .metric-v { color: var(--red); }
+.metrics .metric-l, .metrics .logos-lead { color: #9a9a9a; }
+.g-item figcaption { background: var(--red); color: #fff; border-radius: 32px; font-weight: 700; }
+.quote-card { background: var(--ink); color: #fff; border: 0; border-radius: 6px;
+  --quote-align: left; --quote-by-just: flex-start; }
+.quote-text { color: #fff; }
+.quote-by b { color: #fff; } .quote-by span { color: #9a9a9a; }
+.quote-mark { color: var(--red); }
+.q-av { border-radius: 32px; }
+.tier { background: #f4f4f4; border: 0; border-radius: 6px; }
+.tier-feat { outline: 3px solid var(--red); outline-offset: -3px; background: #fff; }
+.tier-name { font-family: var(--font-display); text-transform: uppercase; font-weight: 800; }
+.tier-badge { background: var(--red); border-radius: 32px; font-size: 10px; letter-spacing: .1em; }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--red); }
+.faq-item { border-bottom-color: #e6e6e6; }
+.cta-band { background: var(--red); color: #fff; border: 0; border-radius: 6px; }
+.cta-band .t-display-md { color: #fff; font-weight: 800; text-transform: uppercase; }
+.cta-band .lede { color: rgba(255,255,255,.88); }
+.cta-band .btn-primary { background: #fff; color: var(--red); }
+.cta-band .btn-secondary { color: #fff; border-color: #fff; }
+.foot { background: var(--ink); --foot-bg: var(--ink); border-top: 0; }
+.foot .brand { color: #fff; }
+.fcol h4 { color: #9a9a9a; } .fcol a, .foot-tag { color: #d8d8d8; }
+.foot-legal { color: #9a9a9a; border-top-color: #2a2a2a; }
+.foot-socials a { border-color: #2a2a2a; color: #d8d8d8; border-radius: 32px; }
+.spec { --spec-bg: #f4f4f4; }
+.input, .badge2, .tabs, .tabs button { border-radius: 32px; }

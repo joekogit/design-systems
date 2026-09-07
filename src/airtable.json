@@ -1,0 +1,334 @@
+{
+  "slug": "airtable",
+  "name": "Airtable",
+  "category": "Design & creative tools",
+  "look": "White canvas with no atmospherics, a near-black and outline button pair, and full-bleed signature colour cards between resets.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Plus Jakarta Sans\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-table",
+    "name": "Gridwork"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Platform",
+        "href": "features"
+      },
+      {
+        "label": "Solutions",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Enterprise",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      },
+      {
+        "label": "Templates",
+        "href": "gallery"
+      }
+    ],
+    "cta": "Sign up for free",
+    "cta2": "Sign in"
+  },
+  "hero": {
+    "eyebrow": "APP PLATFORM",
+    "title": "The database <em>your team can actually use</em>",
+    "sub": "A spreadsheet people already understand, on top of a real relational database, with interfaces and automations for everyone who should not be looking at the raw grid.",
+    "cta1": "Sign up for free",
+    "cta2": "Talk to sales",
+    "image": "photo-1454165804606-c3d57bc86b40",
+    "ratio": 0.66,
+    "stats": [
+      {
+        "v": "500k+",
+        "l": "Organisations"
+      },
+      {
+        "v": "No code",
+        "l": "Required"
+      },
+      {
+        "v": "Real",
+        "l": "Relations"
+      }
+    ]
+  },
+  "logo_lead": "BUILDING ON GRIDWORK",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "THE PLATFORM",
+    "title": "A grid, then everything above it",
+    "sub": "The grid is the honest part. Interfaces, automations and forms are the parts everyone else uses.",
+    "items": [
+      {
+        "icon": "ph-table",
+        "title": "Relational grids",
+        "body": "Linked records, rollups and lookups — a real relational model behind a familiar grid."
+      },
+      {
+        "icon": "ph-layout",
+        "title": "Interfaces",
+        "body": "Purpose-built screens for the people who should never see the raw table."
+      },
+      {
+        "icon": "ph-robot",
+        "title": "Automations",
+        "body": "Trigger on a record change and run steps, with a run history you can inspect."
+      },
+      {
+        "icon": "ph-note-pencil",
+        "title": "Forms",
+        "body": "Collect structured input straight into the base with validation that actually holds."
+      },
+      {
+        "icon": "ph-users-three",
+        "title": "Permissions",
+        "body": "Per-table and per-field access, so finance sees salary and the intern does not."
+      },
+      {
+        "icon": "ph-plugs-connected",
+        "title": "Sync and extend",
+        "body": "Two-way sync with your other systems, plus a scripting block for the rest."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "SOLUTIONS",
+      "title": "The grid is for the owner, not everyone",
+      "body": "Most people should never see the base. Interfaces give them a screen built for their job — a queue, a form, a dashboard — while the owner keeps the grid underneath.",
+      "points": [
+        "Purpose-built screens per role",
+        "Row-level and field-level permissions",
+        "One source of data behind all of them"
+      ],
+      "image": "photo-1551288049-bebda4e38f71",
+      "cta": "See solutions"
+    },
+    {
+      "eyebrow": "ENTERPRISE",
+      "title": "Governed, not shadow IT",
+      "body": "Spreadsheets sprawl because nobody can see them. Admin controls surface every base in the organisation, who can reach it, and where the data goes.",
+      "points": [
+        "Organisation-wide base inventory",
+        "Managed sharing and external access",
+        "Audit log and data residency"
+      ],
+      "image": "photo-1454165804606-c3d57bc86b40",
+      "cta": "Enterprise overview"
+    }
+  ],
+  "metric_lead": "ACROSS GRIDWORK",
+  "metrics": [
+    {
+      "v": "500k+",
+      "l": "ORGANISATIONS"
+    },
+    {
+      "v": "50k",
+      "l": "RECORDS PER BASE"
+    },
+    {
+      "v": "Real",
+      "l": "RELATIONAL MODEL"
+    },
+    {
+      "v": "0",
+      "l": "SQL REQUIRED"
+    }
+  ],
+  "gallery": {
+    "title": "TEMPLATES",
+    "sub": "Start from something someone has already made work.",
+    "items": [
+      {
+        "id": "photo-1454165804606-c3d57bc86b40",
+        "tag": "Projects",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Analytics",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1552664730-d307ca884978",
+        "tag": "CRM",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1487017159836-4e23ece2e4cf",
+        "tag": "Content",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1521737604893-d14cc237f11d",
+        "tag": "HR",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1441986300917-64674bd600d8",
+        "tag": "Inventory",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "Our ops lead built the whole vendor pipeline herself. Engineering's only involvement was pointing at the sync docs once.",
+    "name": "Simone Barrett",
+    "role": "VP Operations, Halyard",
+    "avatar": "photo-1438761681033-6461ffad8d80"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Free for small bases. Priced per editing seat.",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "period": "",
+        "desc": "For small projects.",
+        "features": [
+          "1,000 records per base",
+          "Unlimited bases",
+          "Interfaces",
+          "Community support"
+        ],
+        "cta": "Sign up for free"
+      },
+      {
+        "name": "Team",
+        "price": "$20",
+        "period": "/seat/mo",
+        "desc": "For teams running processes.",
+        "features": [
+          "50,000 records",
+          "Automations",
+          "Sync integrations",
+          "Email support"
+        ],
+        "cta": "Sign up for free",
+        "featured": true,
+        "badge": "MOST TEAMS"
+      },
+      {
+        "name": "Business",
+        "price": "$45",
+        "period": "/seat/mo",
+        "desc": "For governed deployments.",
+        "features": [
+          "Everything in Team",
+          "Admin controls",
+          "Audit log",
+          "SSO"
+        ],
+        "cta": "Talk to sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "Is it really a database?",
+        "a": "Yes — linked records, referential integrity, rollups and lookups. It presents as a grid because that is what makes it usable, not because it is a spreadsheet underneath."
+      },
+      {
+        "q": "Do read-only users cost a seat?",
+        "a": "No. You pay for editors. Interface users and commenters do not consume a paid seat, which is what makes rolling it out across a company affordable."
+      },
+      {
+        "q": "Can I get my data out?",
+        "a": "CSV per table, or the API for a full structured export including relations. There is no export fee and no notice period."
+      },
+      {
+        "q": "What happens at the record limit?",
+        "a": "You are warned well before, and the base stays readable rather than locking. Upgrading raises the limit immediately."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Build your first base",
+    "sub": "Free to start, no card, and interfaces included from the beginning.",
+    "btn1": "Sign up for free",
+    "btn2": "Talk to sales"
+  },
+  "footer": {
+    "tagline": "The database your team can actually use.",
+    "columns": [
+      {
+        "title": "Platform",
+        "links": [
+          "Bases",
+          "Interfaces",
+          "Automations",
+          "Forms"
+        ]
+      },
+      {
+        "title": "Solutions",
+        "links": [
+          "Marketing",
+          "Operations",
+          "Product",
+          "HR"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Templates",
+          "Guides",
+          "Community",
+          "Support"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Careers",
+          "Pricing",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Gridwork"
+  },
+  "specimen": "A grid people use",
+  "notes": [
+    "The hero is a plain white canvas — no gradient, no mesh, no flourish. The strength comes from type and buttons in clean whitespace.",
+    "The signature button pair is a near-black filled CTA beside a canvas-coloured outline button. They travel together.",
+    "Brand voltage lives in full-bleed signature colour cards — coral, forest, dark navy — appearing every few screens.",
+    "Demo grids sit on warm pastel surfaces: peach, mint and cream carrying product UI fragments.",
+    "The canvas resets to white between every signature surface. That reset is what keeps the colour cards from becoming noise."
+  ]
+}

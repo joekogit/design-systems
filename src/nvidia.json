@@ -1,0 +1,334 @@
+{
+  "slug": "nvidia",
+  "name": "NVIDIA",
+  "category": "Media & consumer tech",
+  "look": "Single green accent on an otherwise monochrome page, two-mode surface rhythm, and hyper-angular 2px geometry throughout.",
+  "scheme": "dark",
+  "icon_weights": [
+    "regular",
+    "bold"
+  ],
+  "fonts": {
+    "display": "\"Barlow\", -apple-system, sans-serif",
+    "body": "\"Barlow\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "full-bleed",
+    "features": "grid",
+    "cards": "bordered",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-graphics-card",
+    "name": "Vertex"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Products",
+        "href": "features"
+      },
+      {
+        "label": "Platforms",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Developers",
+        "href": "gallery"
+      },
+      {
+        "label": "Industries",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Support",
+        "href": "faq"
+      }
+    ],
+    "cta": "Get started",
+    "cta2": "Log in"
+  },
+  "hero": {
+    "eyebrow": "ACCELERATED COMPUTING",
+    "title": "The engine of <em>modern AI</em>",
+    "sub": "GPUs, interconnect and a software stack that has been maintained for two decades. The reason a model trains in days rather than months.",
+    "cta1": "Get started",
+    "cta2": "View products",
+    "image": "photo-1518770660439-4636190af475",
+    "ratio": 0.56,
+    "stats": [
+      {
+        "v": "20 yrs",
+        "l": "Software stack"
+      },
+      {
+        "v": "NVLink",
+        "l": "Interconnect"
+      },
+      {
+        "v": "Every",
+        "l": "Major framework"
+      }
+    ]
+  },
+  "logo_lead": "ACCELERATING WORK AT",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "PLATFORM",
+    "title": "Silicon is the easy half",
+    "sub": "The compilers, libraries and framework integrations are what turn a fast chip into a fast training run.",
+    "items": [
+      {
+        "icon": "ph-cpu",
+        "title": "Tensor cores",
+        "body": "Purpose-built matrix units, with mixed precision handled by the libraries rather than by you."
+      },
+      {
+        "icon": "ph-graph",
+        "title": "NVLink",
+        "body": "Hundreds of gigabytes per second between GPUs, so a model larger than one card still trains."
+      },
+      {
+        "icon": "ph-stack",
+        "title": "Mature software",
+        "body": "Two decades of compilers and libraries, still supporting hardware you bought years ago."
+      },
+      {
+        "icon": "ph-cube",
+        "title": "Containers",
+        "body": "Pre-built images for every major framework, versioned against driver releases."
+      },
+      {
+        "icon": "ph-buildings",
+        "title": "Reference designs",
+        "body": "Validated rack-scale configurations, so procurement is a specification rather than a research project."
+      },
+      {
+        "icon": "ph-code",
+        "title": "Developer tools",
+        "body": "Profilers that show which kernel is slow and why, not just that something is."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "PLATFORMS",
+      "title": "The software is the moat",
+      "body": "A fast chip with immature libraries is a slow system. Two decades of compiler and library work is why frameworks target this platform first and why hardware from several generations ago still receives updates.",
+      "points": [
+        "Frameworks target it first",
+        "Multi-generation driver support",
+        "Profilers that identify the slow kernel"
+      ],
+      "image": "photo-1526374965328-7f61d4dc18c5",
+      "cta": "Explore the platform"
+    },
+    {
+      "eyebrow": "INDUSTRIES",
+      "title": "Beyond training runs",
+      "body": "The same acceleration underpins simulation, medical imaging, weather modelling and rendering. The training boom is the visible part of a much older workload set.",
+      "points": [
+        "Simulation and computational science",
+        "Medical imaging and genomics",
+        "Rendering and digital twins"
+      ],
+      "image": "photo-1581091226033-d5c48150dbaa",
+      "cta": "Industry solutions"
+    }
+  ],
+  "metric_lead": "PLATFORM",
+  "metrics": [
+    {
+      "v": "20",
+      "l": "YEARS OF SOFTWARE"
+    },
+    {
+      "v": "Every",
+      "l": "MAJOR FRAMEWORK"
+    },
+    {
+      "v": "Rack",
+      "l": "SCALE DESIGNS"
+    },
+    {
+      "v": "Multi-gen",
+      "l": "DRIVER SUPPORT"
+    }
+  ],
+  "gallery": {
+    "title": "DEVELOPERS",
+    "sub": "SDKs, containers, profilers and reference implementations.",
+    "items": [
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "Hardware",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "SDKs",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Data centre",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1581091226033-d5c48150dbaa",
+        "tag": "Science",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Profiling",
+        "ratio": 0.7
+      },
+      {
+        "id": "photo-1555066931-4365d14bab8c",
+        "tag": "Containers",
+        "ratio": 0.7
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "We ran the same job on hardware two generations old and it still got driver updates. That longevity is worth more to our procurement team than peak numbers.",
+    "name": "Hiro Nakamura",
+    "role": "HPC Lead, Perigee Research",
+    "avatar": "photo-1633332755192-727a05c4013d"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Hardware through partners. Cloud instances by the hour.",
+    "tiers": [
+      {
+        "name": "Cloud",
+        "price": "Per hour",
+        "period": "",
+        "desc": "Rent capacity when you need it.",
+        "features": [
+          "Hourly instances",
+          "Every major cloud",
+          "Pre-built containers",
+          "Community support"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "desc": "On-premise and support.",
+        "features": [
+          "Reference architectures",
+          "Enterprise driver branch",
+          "Priority support",
+          "Named engineer"
+        ],
+        "cta": "Contact sales",
+        "featured": true,
+        "badge": "MOST ORGANISATIONS"
+      },
+      {
+        "name": "Research",
+        "price": "Discounted",
+        "period": "",
+        "desc": "For academic institutions.",
+        "features": [
+          "Academic pricing",
+          "Grant programme",
+          "Teaching resources",
+          "Community access"
+        ],
+        "cta": "Apply"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "Why does the software matter so much?",
+        "a": "Because peak hardware numbers are only reachable through mature compilers and libraries. Frameworks target this platform first, which means fewer surprises in production."
+      },
+      {
+        "q": "How long is hardware supported?",
+        "a": "Driver and library support spans multiple generations, so systems bought years ago continue to receive updates rather than being stranded."
+      },
+      {
+        "q": "Can I try before buying hardware?",
+        "a": "Yes — hourly cloud instances on every major provider, running the same stack, so a benchmark on rented capacity predicts on-premise behaviour."
+      },
+      {
+        "q": "What is included in the enterprise branch?",
+        "a": "A long-lived driver branch with backported fixes and no feature churn, which is what production clusters need rather than the latest release."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start on rented capacity",
+    "sub": "Benchmark on the same stack before committing to hardware.",
+    "btn1": "Get started",
+    "btn2": "View products"
+  },
+  "footer": {
+    "tagline": "The engine of modern AI.",
+    "columns": [
+      {
+        "title": "Products",
+        "links": [
+          "GPUs",
+          "Systems",
+          "Networking",
+          "Software"
+        ]
+      },
+      {
+        "title": "Platforms",
+        "links": [
+          "AI",
+          "HPC",
+          "Graphics",
+          "Robotics"
+        ]
+      },
+      {
+        "title": "Developers",
+        "links": [
+          "SDKs",
+          "Containers",
+          "Forums",
+          "Training"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Research",
+          "Careers",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Vertex Compute"
+  },
+  "specimen": "Accelerated",
+  "notes": [
+    "A single green accent carries every CTA, active state and decorative motif. Everything else is monochrome.",
+    "Two surface modes alternate in a predictable rhythm down the page: dark for hero and footer chapters, light for the body.",
+    "Geometry is hyper-angular — 2px on every interactive element. There are no pills, no rounded cards and no soft chrome.",
+    "One proprietary sans at two weights, scaled across a twelve-tier hierarchy from 10px utility text to 48px display.",
+    "Cards separate with hairline borders and soft-tinted backgrounds rather than shadows."
+  ]
+}

@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="en" data-scheme="light" data-design="meta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meta — Design Template</title>
+<meta name="description" content="Meta design language, rendered as a complete responsive page template.">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400&display=swap"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/fill/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
+<style>
+/* ============================================================================
+   base.css — structural layer. Every value resolves to a design token, so a
+   design's own CSS can restructure without fighting these rules.
+   ========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--c-canvas);
+  color: var(--c-ink);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--t-body-lh);
+  letter-spacing: var(--t-body-ls);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+img, svg, video { display: block; max-width: 100%; height: auto; }
+button, input, select, textarea { font: inherit; color: inherit; }
+a { color: inherit; text-decoration: none; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+/* --- accessibility ------------------------------------------------------- */
+:where(a, button, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--c-primary);
+  outline-offset: 3px;
+  border-radius: var(--r-xs);
+}
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.skip {
+  position: absolute; left: 50%; top: -100px; transform: translateX(-50%);
+  z-index: 100; padding: 12px 20px; background: var(--c-primary);
+  color: var(--c-on-primary); border-radius: var(--r-md); font-weight: 600;
+}
+.skip:focus { top: 8px; }
+
+/* --- type scale ---------------------------------------------------------- */
+.t-display-xl, .t-display-lg, .t-display-md, .t-headline, .t-card-title, .t-subhead {
+  font-family: var(--font-display);
+}
+.t-display-xl { font-size: var(--fs-display-xl); font-weight: var(--t-display-xl-w); line-height: var(--t-display-xl-lh); letter-spacing: var(--t-display-xl-ls); }
+.t-display-lg { font-size: var(--fs-display-lg); font-weight: var(--t-display-lg-w); line-height: var(--t-display-lg-lh); letter-spacing: var(--t-display-lg-ls); }
+.t-display-md { font-size: var(--fs-display-md); font-weight: var(--t-display-md-w); line-height: var(--t-display-md-lh); letter-spacing: var(--t-display-md-ls); }
+.t-headline   { font-size: var(--fs-headline);   font-weight: var(--t-headline-w);   line-height: var(--t-headline-lh);   letter-spacing: var(--t-headline-ls); }
+.t-card-title { font-size: var(--fs-card-title); font-weight: var(--t-card-title-w); line-height: var(--t-card-title-lh); letter-spacing: var(--t-card-title-ls); }
+.t-subhead    { font-size: var(--fs-subhead);    font-weight: var(--t-subhead-w);    line-height: var(--t-subhead-lh);    letter-spacing: var(--t-subhead-ls); }
+.t-body-lg    { font-size: var(--fs-body-lg);    font-weight: var(--t-body-lg-w);    line-height: var(--t-body-lg-lh);    letter-spacing: var(--t-body-lg-ls); }
+.t-body       { font-size: var(--fs-body);       font-weight: var(--t-body-w);       line-height: var(--t-body-lh);       letter-spacing: var(--t-body-ls); }
+.t-body-sm    { font-size: var(--fs-body-sm);    font-weight: var(--t-body-sm-w);    line-height: var(--t-body-sm-lh);    letter-spacing: var(--t-body-sm-ls); }
+.t-caption    { font-size: var(--fs-caption);    font-weight: var(--t-caption-w);    line-height: var(--t-caption-lh);    letter-spacing: var(--t-caption-ls); }
+.t-button     { font-size: var(--fs-button);     font-weight: var(--t-button-w);     line-height: var(--t-button-lh);     letter-spacing: var(--t-button-ls); }
+.t-eyebrow    { font-size: var(--fs-eyebrow);    font-weight: var(--t-eyebrow-w);    line-height: var(--t-eyebrow-lh);    letter-spacing: var(--t-eyebrow-ls); }
+.t-mono       { font-family: var(--font-mono); font-size: var(--fs-mono); font-weight: var(--t-mono-w); line-height: var(--t-mono-lh); letter-spacing: var(--t-mono-ls); }
+
+.eyebrow {
+  font-size: var(--fs-eyebrow); font-weight: var(--t-eyebrow-w);
+  letter-spacing: var(--t-eyebrow-ls); line-height: var(--t-eyebrow-lh);
+  color: var(--c-primary); text-transform: uppercase; margin-bottom: var(--s-sm);
+}
+
+/* --- layout -------------------------------------------------------------- */
+.wrap { width: 100%; max-width: var(--maxw, 1240px); margin-inline: auto; padding-inline: var(--gut, 24px); }
+.section { padding-block: var(--sect, clamp(56px, 8vw, 96px)); position: relative; }
+.section-head { max-width: 60ch; margin-bottom: clamp(28px, 4vw, 48px); }
+.section-head.center { margin-inline: auto; text-align: center; }
+.lede { color: var(--c-ink-muted); margin-top: var(--s-md); max-width: 62ch; }
+
+/* --- buttons ------------------------------------------------------------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 44px; padding: 12px 22px; cursor: pointer;
+  font-family: var(--font-body); font-size: var(--fs-button);
+  font-weight: var(--t-button-w); letter-spacing: var(--t-button-ls);
+  border: 1px solid transparent; border-radius: var(--r-md);
+  background: transparent; text-align: center;
+  transition: background-color .18s ease, color .18s ease, border-color .18s ease, box-shadow .18s ease, opacity .18s ease;
+}
+.btn i { font-size: 1.1em; }
+.btn-primary { background: var(--c-primary); color: var(--c-on-primary); }
+.btn-primary:hover { background: var(--c-primary-hover); }
+.btn-secondary { background: var(--c-surface); color: var(--c-ink); border-color: var(--c-hairline); }
+.btn-secondary:hover { background: var(--c-surface-2); border-color: var(--c-hairline-strong); }
+.btn-ghost { color: var(--c-primary); padding-inline: 0; min-height: 32px; }
+.btn-ghost:hover { opacity: .72; }
+.btn-block { width: 100%; }
+
+/* --- library bar --------------------------------------------------------- */
+.libbar {
+  position: sticky; top: 0; z-index: 60;
+  display: flex; align-items: center; gap: 12px;
+  padding: 8px max(12px, env(safe-area-inset-left)) 8px 12px;
+  background: #0b0b0d; color: #f4f4f5; border-bottom: 1px solid #26262b;
+  font: 500 13px/1.2 ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: 0; overflow-x: auto; scrollbar-width: none;
+}
+.libbar::-webkit-scrollbar { display: none; }
+.libbar a.lb-back { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: 0 10px; border-radius: 6px; background: #1c1c21; white-space: nowrap; }
+.libbar a.lb-back:hover { background: #2a2a31; }
+.lb-name { font-weight: 700; white-space: nowrap; }
+.lb-cat { color: #9a9aa4; white-space: nowrap; }
+.lb-sep { color: #45454f; }
+.lb-spacer { flex: 1 1 auto; min-width: 8px; }
+.lb-jump { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: 0 10px; border-radius: 6px; border: 1px solid #33333b; background: transparent; color: #d4d4d8; cursor: pointer; white-space: nowrap; }
+.lb-jump:hover { background: #1c1c21; color: #fff; }
+
+/* --- nav ----------------------------------------------------------------- */
+.nav { position: sticky; top: 41px; z-index: 50; background: var(--nav-bg, var(--c-canvas)); border-bottom: 1px solid var(--nav-bd, var(--c-hairline)); }
+.nav-in { display: flex; align-items: center; gap: var(--s-lg); min-height: var(--nav-h, 64px); }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 700; font-size: 17px; letter-spacing: -.01em; }
+.brand-ico { font-size: 22px; color: var(--c-primary); }
+.nav-links { display: none; gap: var(--s-lg); margin-left: var(--s-md); }
+.nav-links a { color: var(--c-ink-muted); font-size: var(--fs-body-sm); padding: 8px 0; }
+.nav-links a:hover { color: var(--c-ink); }
+.nav-act { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+.nav-act .btn { min-height: 38px; padding: 8px 16px; }
+.nav-signin { display: none; color: var(--c-ink-muted); font-size: var(--fs-body-sm); }
+.nav-signin:hover { color: var(--c-ink); }
+.nav-burger { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin-right: -8px; background: transparent; border: 0; cursor: pointer; font-size: 24px; color: var(--c-ink); }
+.nav-panel { display: none; border-top: 1px solid var(--c-hairline); background: var(--c-surface); }
+.nav-panel.open { display: block; }
+.nav-panel ul { padding: var(--s-sm) 0 var(--s-md); }
+.nav-panel a { display: block; padding: 14px 0; min-height: 44px; border-bottom: 1px solid var(--c-hairline); color: var(--c-ink); }
+
+/* nav variants */
+.nav.v-floating-pill { top: 49px; background: transparent; border: 0; }
+.nav.v-floating-pill .nav-in { margin-top: 8px; padding-inline: 18px; border: 1px solid var(--c-hairline); border-radius: var(--r-pill); background: var(--nav-bg, var(--c-surface)); backdrop-filter: blur(14px); }
+.nav.v-minimal { background: transparent; border-bottom-color: transparent; }
+.nav.v-chrome .nav-in { min-height: 58px; }
+
+/* --- hero ---------------------------------------------------------------- */
+.hero { position: relative; padding-block: clamp(44px, 7vw, 92px) clamp(48px, 7vw, 96px); overflow: hidden; }
+.hero-in { display: grid; gap: clamp(32px, 5vw, 56px); align-items: center; }
+.hero-title { margin-bottom: var(--s-md); }
+.hero-title em { font-style: normal; color: var(--c-primary); }
+.hero-sub { color: var(--c-ink-muted); max-width: 52ch; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: clamp(24px, 3vw, 34px); }
+.hero-stats { display: flex; flex-wrap: wrap; gap: clamp(20px, 4vw, 44px); margin-top: clamp(28px, 4vw, 44px); padding-top: clamp(20px, 3vw, 30px); border-top: 1px solid var(--c-hairline); }
+.hstat { display: flex; flex-direction: column; gap: 2px; }
+.hstat b { font-family: var(--font-display); font-size: var(--fs-headline); font-weight: var(--t-headline-w); letter-spacing: var(--t-headline-ls); line-height: 1.1; }
+.hstat span { font-size: var(--fs-caption); color: var(--c-ink-subtle); }
+.hero-media { position: relative; }
+.hero-media img { width: 100%; border-radius: var(--r-xl); border: 1px solid var(--c-hairline); }
+
+/* hero variants */
+.hero.v-centered .hero-in { justify-items: center; text-align: center; }
+.hero.v-centered .hero-sub { margin-inline: auto; }
+.hero.v-centered .hero-cta, .hero.v-centered .hero-stats { justify-content: center; }
+.hero.v-centered .hero-media { width: 100%; margin-top: clamp(12px, 3vw, 26px); }
+.hero.v-full-bleed { padding: 0; }
+/* NOT positioned: the media must resolve against .hero (full width), not the .wrap */
+.hero.v-full-bleed .hero-in { min-height: min(86vh, 760px); align-content: end; padding-block: clamp(40px, 8vw, 88px); }
+.hero.v-full-bleed .hero-media { position: absolute; inset: 0; z-index: 0; }
+.hero.v-full-bleed .hero-media img { width: 100%; height: 100%; object-fit: cover; border: 0; border-radius: 0; }
+.hero.v-full-bleed .hero-copy { position: relative; z-index: 2; }
+.hero.v-full-bleed::after { content: ""; position: absolute; inset: 0; z-index: 1; background: var(--hero-scrim, linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.78))); pointer-events: none; }
+.hero.v-product-frame .hero-media { padding: var(--s-sm); background: var(--c-surface); border: 1px solid var(--c-hairline); border-radius: var(--r-xl); }
+.hero.v-product-frame .hero-media img { border-radius: var(--r-lg); }
+.hero.v-terminal .hero-media { background: var(--c-surface); border: 1px solid var(--c-hairline); border-radius: var(--r-lg); overflow: hidden; }
+
+/* --- logo strip ---------------------------------------------------------- */
+.logos { padding-block: clamp(30px, 4vw, 44px); border-block: 1px solid var(--c-hairline); }
+.logos-lead { text-align: center; color: var(--c-ink-subtle); font-size: var(--fs-caption); text-transform: uppercase; letter-spacing: .1em; margin-bottom: var(--s-lg); }
+.logos-list { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(20px, 5vw, 56px); }
+.logo-item { font-family: var(--font-display); font-size: clamp(15px, 2.4vw, 20px); font-weight: 700; letter-spacing: -.01em; color: var(--c-ink-subtle); opacity: .85; }
+
+/* --- features ------------------------------------------------------------ */
+.feat-grid { display: grid; gap: var(--s-lg); grid-template-columns: 1fr; }
+.feat-card { padding: var(--s-lg); border-radius: var(--r-lg); background: var(--c-surface); border: 1px solid var(--c-hairline); transition: border-color .2s ease, background-color .2s ease, transform .2s ease; }
+.feat-card:hover { border-color: var(--c-hairline-strong); background: var(--c-surface-2); }
+.feat-ico { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin-bottom: var(--s-md); border-radius: var(--r-md); background: color-mix(in srgb, var(--c-primary) 14%, transparent); color: var(--c-primary); font-size: 22px; }
+.feat-title { font-family: var(--font-display); font-size: var(--fs-card-title); font-weight: var(--t-card-title-w); letter-spacing: var(--t-card-title-ls); line-height: var(--t-card-title-lh); margin-bottom: 8px; }
+.feat-body { color: var(--c-ink-muted); font-size: var(--fs-body-sm); }
+
+/* card variants */
+.v-flat .feat-card { background: transparent; border-color: transparent; padding-inline: 0; }
+.v-elevated .feat-card { border-color: transparent; box-shadow: var(--shadow-1, 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.08)); }
+.v-elevated .feat-card:hover { box-shadow: var(--shadow-2, 0 2px 6px rgba(0,0,0,.08), 0 16px 40px rgba(0,0,0,.12)); transform: translateY(-2px); }
+
+/* feature layout variants */
+.feat-grid.v-list { grid-template-columns: 1fr; gap: 0; }
+.v-list .feat-card { display: grid; grid-template-columns: 44px 1fr; column-gap: var(--s-md); border: 0; border-bottom: 1px solid var(--c-hairline); border-radius: 0; background: transparent; padding-inline: 0; }
+.v-list .feat-ico { grid-row: span 2; margin-bottom: 0; }
+.v-numbered .feat-ico::after { content: "0" counter(f); counter-increment: f; font-family: var(--font-mono); font-size: 13px; }
+.v-numbered .feat-grid { counter-reset: f; }
+.v-numbered .feat-ico i { display: none; }
+
+/* --- showcase ------------------------------------------------------------ */
+.showcase { display: grid; gap: clamp(28px, 4vw, 52px); align-items: center; padding-block: clamp(44px, 6vw, 76px); }
+.sc-media img { width: 100%; border-radius: var(--r-xl); border: 1px solid var(--c-hairline); }
+.sc-title { font-family: var(--font-display); font-size: var(--fs-display-md); font-weight: var(--t-display-md-w); line-height: var(--t-display-md-lh); letter-spacing: var(--t-display-md-ls); margin-bottom: var(--s-md); }
+.sc-body { color: var(--c-ink-muted); margin-bottom: var(--s-lg); }
+.sc-points { display: grid; gap: 12px; margin-bottom: var(--s-lg); }
+.sc-points li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; align-items: start; font-size: var(--fs-body-sm); color: var(--c-ink-muted); }
+.sc-points i { color: var(--c-primary); font-size: 18px; line-height: 1.4; }
+
+/* --- metrics ------------------------------------------------------------- */
+.metrics { background: var(--metrics-bg, var(--c-surface)); border-block: 1px solid var(--c-hairline); }
+.metrics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(24px, 4vw, 40px); }
+.metric { display: flex; flex-direction: column; gap: 6px; }
+.metric-v { font-family: var(--font-display); font-size: var(--fs-display-md); font-weight: var(--t-display-md-w); letter-spacing: var(--t-display-md-ls); line-height: 1; color: var(--metric-c, var(--c-ink)); }
+.metric-l { font-size: var(--fs-body-sm); color: var(--c-ink-subtle); }
+
+/* --- gallery ------------------------------------------------------------- */
+.gal-grid { display: grid; gap: var(--s-md); grid-template-columns: repeat(2, 1fr); }
+.g-item { position: relative; margin: 0; overflow: hidden; border-radius: var(--r-lg); background: var(--c-surface); }
+.g-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s cubic-bezier(.2,.7,.3,1); }
+.g-item:hover img { transform: scale(1.04); }
+.g-item figcaption { position: absolute; left: 10px; bottom: 10px; padding: 5px 10px; border-radius: var(--r-pill); background: rgba(10,10,12,.72); color: #fff; font-size: var(--fs-caption); backdrop-filter: blur(6px); }
+.gal-grid.v-masonry { display: block; column-count: 2; column-gap: var(--s-md); }
+.v-masonry .g-item { break-inside: avoid; margin-bottom: var(--s-md); }
+.gal-grid.v-filmstrip { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: var(--s-md); padding-bottom: var(--s-sm); grid-template-columns: none; }
+.v-filmstrip .g-item { flex: 0 0 78%; scroll-snap-align: start; }
+
+/* --- testimonial --------------------------------------------------------- */
+.quote-card { max-width: 74ch; margin-inline: auto; padding: clamp(26px, 4vw, 46px); border-radius: var(--r-xl); background: var(--c-surface); border: 1px solid var(--c-hairline); text-align: var(--quote-align, center); }
+.quote-mark { font-size: 34px; color: var(--c-primary); line-height: 1; margin-bottom: var(--s-md); }
+.quote-text { font-family: var(--font-display); font-size: var(--fs-subhead); font-weight: var(--t-subhead-w); line-height: 1.45; letter-spacing: var(--t-subhead-ls); }
+.quote-by { display: flex; align-items: center; justify-content: var(--quote-by-just, center); gap: 12px; margin-top: var(--s-lg); }
+.q-av { width: 46px; height: 46px; border-radius: var(--r-pill); object-fit: cover; }
+.quote-by b { display: block; font-size: var(--fs-body-sm); }
+.quote-by span { display: block; font-size: var(--fs-caption); color: var(--c-ink-subtle); }
+
+/* --- pricing ------------------------------------------------------------- */
+.tiers { display: grid; gap: var(--s-lg); grid-template-columns: 1fr; align-items: start; }
+.tier { position: relative; display: flex; flex-direction: column; padding: clamp(22px, 3vw, 30px); border-radius: var(--r-lg); background: var(--c-surface); border: 1px solid var(--c-hairline); }
+.tier-feat { background: var(--c-surface-2); border-color: var(--c-primary); }
+.tier-badge { position: absolute; top: -11px; left: clamp(22px, 3vw, 30px); padding: 3px 10px; border-radius: var(--r-pill); background: var(--c-primary); color: var(--c-on-primary); font-size: var(--fs-caption); font-weight: 600; }
+.tier-name { font-family: var(--font-display); font-size: var(--fs-card-title); font-weight: var(--t-card-title-w); margin-bottom: var(--s-sm); }
+.tier-price { display: flex; align-items: baseline; gap: 6px; margin-bottom: 6px; }
+.tier-num { font-family: var(--font-display); font-size: var(--fs-display-md); font-weight: var(--t-display-md-w); letter-spacing: var(--t-display-md-ls); line-height: 1; }
+.tier-per { font-size: var(--fs-body-sm); color: var(--c-ink-subtle); }
+.tier-desc { font-size: var(--fs-body-sm); color: var(--c-ink-muted); margin-bottom: var(--s-lg); }
+.tier-feats { display: grid; gap: 10px; margin-bottom: var(--s-lg); }
+.tier-feats li { display: grid; grid-template-columns: 20px 1fr; gap: 10px; font-size: var(--fs-body-sm); color: var(--c-ink-muted); }
+.tier-feats i { color: var(--c-primary); font-size: 16px; line-height: 1.5; }
+.tier .btn { margin-top: auto; width: 100%; }
+
+/* --- faq ----------------------------------------------------------------- */
+.faq-list { max-width: 76ch; margin-inline: auto; }
+.faq-item { border-bottom: 1px solid var(--c-hairline); }
+.faq-item summary { display: flex; align-items: center; justify-content: space-between; gap: var(--s-md); min-height: 56px; padding: var(--s-md) 0; cursor: pointer; list-style: none; font-family: var(--font-display); font-size: var(--fs-card-title); font-weight: var(--t-card-title-w); letter-spacing: var(--t-card-title-ls); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-mk { flex: none; color: var(--c-primary); font-size: 20px; transition: transform .2s ease; }
+.faq-item[open] .faq-mk { transform: rotate(45deg); }
+.faq-a { padding-bottom: var(--s-lg); color: var(--c-ink-muted); font-size: var(--fs-body-sm); max-width: 68ch; }
+
+/* --- cta ----------------------------------------------------------------- */
+.cta-band { padding: clamp(34px, 6vw, 72px) clamp(22px, 5vw, 60px); border-radius: var(--r-xxl); background: var(--cta-bg, var(--c-surface)); border: 1px solid var(--c-hairline); text-align: var(--cta-align, center); }
+.cta-band .lede { margin-inline: auto; }
+.cta-btns { display: flex; flex-wrap: wrap; gap: 12px; justify-content: var(--cta-just, center); margin-top: clamp(22px, 3vw, 32px); }
+
+/* --- footer -------------------------------------------------------------- */
+.foot { border-top: 1px solid var(--c-hairline); padding-block: clamp(40px, 6vw, 64px) var(--s-xl); background: var(--foot-bg, var(--c-canvas)); }
+.foot-top { display: grid; gap: clamp(28px, 4vw, 44px); }
+.foot-cols { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--s-xl) var(--s-lg); }
+.fcol h4 { font-size: var(--fs-caption); text-transform: uppercase; letter-spacing: .1em; color: var(--c-ink-subtle); margin-bottom: var(--s-md); }
+.fcol li { margin-bottom: 10px; }
+.fcol a { font-size: var(--fs-body-sm); color: var(--c-ink-muted); }
+.fcol a:hover { color: var(--c-ink); }
+.foot-tag { color: var(--c-ink-muted); font-size: var(--fs-body-sm); max-width: 34ch; margin-top: var(--s-sm); }
+.foot-socials { display: flex; gap: 8px; margin-top: var(--s-lg); }
+.foot-socials a { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: var(--r-md); border: 1px solid var(--c-hairline); color: var(--c-ink-muted); font-size: 18px; }
+.foot-socials a:hover { color: var(--c-ink); border-color: var(--c-hairline-strong); }
+.foot-legal { display: flex; flex-wrap: wrap; gap: var(--s-md); justify-content: space-between; margin-top: clamp(32px, 5vw, 52px); padding-top: var(--s-lg); border-top: 1px solid var(--c-hairline); font-size: var(--fs-caption); color: var(--c-ink-subtle); }
+
+/* --- spec appendix ------------------------------------------------------- */
+.spec { background: var(--spec-bg, var(--c-surface)); border-top: 1px solid var(--c-hairline); }
+.spec-head { display: flex; flex-wrap: wrap; align-items: end; gap: var(--s-md); justify-content: space-between; margin-bottom: clamp(24px, 4vw, 40px); }
+.spec-block { margin-bottom: clamp(36px, 5vw, 60px); }
+.spec-h { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-size: var(--fs-card-title); font-weight: var(--t-card-title-w); margin-bottom: var(--s-md); padding-bottom: var(--s-sm); border-bottom: 1px solid var(--c-hairline); }
+.spec-h i { color: var(--c-primary); }
+.spec-note { font-size: var(--fs-caption); color: var(--c-ink-subtle); margin-bottom: var(--s-md); }
+
+.sw-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.sw { display: flex; align-items: center; gap: 10px; padding: 8px; min-height: 56px; text-align: left; cursor: pointer; background: var(--c-canvas); border: 1px solid var(--c-hairline); border-radius: var(--r-md); transition: border-color .15s ease; }
+.sw:hover { border-color: var(--c-primary); }
+.sw-chip { flex: none; width: 36px; height: 36px; border-radius: var(--r-sm); border: 1px solid var(--c-hairline); }
+.sw-meta { min-width: 0; }
+.sw-name { display: block; font-size: 11px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sw-val { display: block; font-family: var(--font-mono); font-size: 11px; color: var(--c-ink-subtle); text-transform: uppercase; }
+.sw.copied { border-color: var(--c-success); }
+
+.ts-row { display: grid; gap: 6px; padding-block: var(--s-md); border-bottom: 1px solid var(--c-hairline); }
+.ts-meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; }
+.ts-meta code { font-family: var(--font-mono); font-size: 11px; color: var(--c-primary); }
+.ts-num { font-family: var(--font-mono); font-size: 11px; color: var(--c-ink-subtle); }
+.ts-sample { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.sc-chips { display: flex; flex-wrap: wrap; gap: var(--s-md); }
+.sc-chip { display: grid; gap: 6px; justify-items: center; }
+.sc-box { display: block; width: 60px; height: 60px; background: color-mix(in srgb, var(--c-primary) 20%, transparent); border: 1px solid var(--c-primary); }
+.sc-chip code { font-family: var(--font-mono); font-size: 11px; color: var(--c-ink-subtle); }
+.sp-row { display: grid; grid-template-columns: 110px 1fr; align-items: center; gap: var(--s-md); margin-bottom: 8px; }
+.sp-row code { font-family: var(--font-mono); font-size: 11px; color: var(--c-ink-subtle); }
+.sp-bar { display: block; height: 14px; background: var(--c-primary); border-radius: 2px; }
+
+.zoo { display: grid; gap: var(--s-lg); grid-template-columns: 1fr; }
+.zoo-cell { padding: var(--s-md); background: var(--c-canvas); border: 1px solid var(--c-hairline); border-radius: var(--r-md); }
+.zoo-cell h4 { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--c-ink-subtle); margin-bottom: var(--s-md); }
+.zoo-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.field { display: grid; gap: 6px; max-width: 320px; }
+.field label { font-size: var(--fs-caption); color: var(--c-ink-muted); }
+.input { width: 100%; min-height: 44px; padding: 10px 14px; background: var(--c-canvas); color: var(--c-ink); border: 1px solid var(--c-hairline); border-radius: var(--r-md); }
+.input::placeholder { color: var(--c-ink-subtle); }
+.input:focus { outline: none; border-color: var(--c-primary); box-shadow: 0 0 0 3px color-mix(in srgb, var(--c-primary) 25%, transparent); }
+.badge2 { display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; border-radius: var(--r-pill); font-size: var(--fs-caption); font-weight: 600; background: var(--c-surface-2); color: var(--c-ink-muted); border: 1px solid var(--c-hairline); }
+.badge2.ok { background: color-mix(in srgb, var(--c-success) 16%, transparent); color: var(--c-success); border-color: color-mix(in srgb, var(--c-success) 35%, transparent); }
+.badge2.warn { background: color-mix(in srgb, var(--c-warning) 16%, transparent); color: var(--c-warning); border-color: color-mix(in srgb, var(--c-warning) 35%, transparent); }
+.badge2.err { background: color-mix(in srgb, var(--c-danger) 16%, transparent); color: var(--c-danger); border-color: color-mix(in srgb, var(--c-danger) 35%, transparent); }
+.tabs { display: inline-flex; padding: 4px; gap: 4px; background: var(--c-surface-2); border-radius: var(--r-pill); border: 1px solid var(--c-hairline); }
+.tabs button { min-height: 36px; padding: 6px 16px; border: 0; border-radius: var(--r-pill); background: transparent; color: var(--c-ink-subtle); font-size: var(--fs-body-sm); font-weight: 500; cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--c-canvas); color: var(--c-ink); }
+.swch { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; font-size: var(--fs-body-sm); min-height: 44px; }
+.swch input { position: absolute; opacity: 0; width: 0; height: 0; }
+.swch .track { position: relative; width: 46px; height: 26px; border-radius: var(--r-pill); background: var(--c-surface-2); border: 1px solid var(--c-hairline); transition: background-color .2s ease; }
+.swch .track::after { content: ""; position: absolute; top: 2px; left: 2px; width: 20px; height: 20px; border-radius: 50%; background: var(--c-ink-subtle); transition: transform .2s ease, background-color .2s ease; }
+.swch input:checked + .track { background: var(--c-primary); border-color: var(--c-primary); }
+.swch input:checked + .track::after { transform: translateX(20px); background: var(--c-on-primary); }
+.swch input:focus-visible + .track { outline: 2px solid var(--c-primary); outline-offset: 3px; }
+.tbl-wrap { overflow-x: auto; }
+table.tbl { width: 100%; border-collapse: collapse; font-size: var(--fs-body-sm); min-width: 420px; }
+table.tbl th, table.tbl td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--c-hairline); }
+table.tbl th { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--c-ink-subtle); font-weight: 600; }
+.alert { display: grid; grid-template-columns: 22px 1fr; gap: 10px; padding: 12px 14px; border-radius: var(--r-md); font-size: var(--fs-body-sm); border: 1px solid var(--c-hairline); background: var(--c-surface-2); }
+.alert i { font-size: 18px; }
+.alert.ok i { color: var(--c-success); }
+.alert.err i { color: var(--c-danger); }
+.notes-list { display: grid; gap: 8px; }
+.notes-list li { display: grid; grid-template-columns: 8px 1fr; gap: 12px; font-size: var(--fs-body-sm); color: var(--c-ink-muted); }
+.notes-list li::before { content: ""; width: 5px; height: 5px; margin-top: .6em; border-radius: 50%; background: var(--c-primary); }
+
+/* --- reveal -------------------------------------------------------------- */
+.reveal { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s cubic-bezier(.2,.7,.3,1); transition-delay: calc(var(--i, 0) * 45ms); }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+  .g-item:hover img { transform: none; }
+}
+
+/* --- breakpoints --------------------------------------------------------- */
+@media (min-width: 700px) {
+  .feat-grid { grid-template-columns: repeat(2, 1fr); }
+  .gal-grid { grid-template-columns: repeat(3, 1fr); }
+  .gal-grid.v-masonry { column-count: 3; }
+  .metrics-grid { grid-template-columns: repeat(4, 1fr); }
+  .foot-cols { grid-template-columns: repeat(4, 1fr); }
+  .zoo { grid-template-columns: repeat(2, 1fr); }
+  .v-filmstrip .g-item { flex-basis: 46%; }
+}
+@media (min-width: 960px) {
+  .nav-links, .nav-signin { display: flex; }
+  .nav-burger, .nav-panel { display: none !important; }
+  .hero-in { grid-template-columns: 1.05fr .95fr; }
+  .hero.v-centered .hero-in, .hero.v-full-bleed .hero-in { grid-template-columns: 1fr; }
+  .showcase { grid-template-columns: 1fr 1fr; }
+  .sc-rev .sc-media { order: 2; }
+  .feat-grid { grid-template-columns: repeat(3, 1fr); }
+  .feat-grid.v-list { grid-template-columns: 1fr 1fr; column-gap: var(--s-xl); }
+  .tiers { grid-template-columns: repeat(3, 1fr); }
+  .foot-top { grid-template-columns: 1fr 2fr; }
+  .zoo { grid-template-columns: repeat(3, 1fr); }
+  .v-filmstrip .g-item { flex-basis: 32%; }
+  .gal-grid.v-feature-left { grid-template-columns: repeat(4, 1fr); grid-auto-rows: 190px; }
+  .v-feature-left .g-item:first-child { grid-column: span 2; grid-row: span 2; }
+}
+/* bento — desktop only, collapses to the plain grid below */
+@media (min-width: 960px) {
+  .feat-grid.v-bento { grid-template-columns: repeat(6, 1fr); grid-auto-rows: minmax(180px, auto); }
+  .v-bento .feat-card:nth-child(1) { grid-column: span 4; }
+  .v-bento .feat-card:nth-child(2) { grid-column: span 2; }
+  .v-bento .feat-card:nth-child(3) { grid-column: span 2; }
+  .v-bento .feat-card:nth-child(4) { grid-column: span 2; }
+  .v-bento .feat-card:nth-child(5) { grid-column: span 2; }
+  .v-bento .feat-card:nth-child(6) { grid-column: span 6; }
+}
+
+/* A split hero puts the headline in a ~560px column — display-xl overflows it.
+   Only the centred and full-bleed variants get the largest step. */
+.hero.v-split .hero-title, .hero.v-product-frame .hero-title, .hero.v-terminal .hero-title {
+  font-size: var(--fs-display-lg);
+  font-weight: var(--t-display-lg-w);
+  line-height: var(--t-display-lg-lh);
+  letter-spacing: var(--t-display-lg-ls);
+}
+
+/* swatch usage notes — what the colour is actually for, not just its hex */
+.sw-grid { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+.sw { align-items: flex-start; }
+.sw-note { display: block; margin-top: 3px; font-size: 10.5px; line-height: 1.35; color: var(--c-ink-subtle); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.sw-name { white-space: normal; }
+
+/* AUTO-DERIVED from design-md/meta.md — hand-tune freely. */
+:root{
+/* ---- colors ---- */
+  --c-primary: #0064e0;
+  --c-on-primary: #ffffff;
+  --c-canvas: #ffffff;
+  --c-ink: #1c1e21;
+  --c-hairline: #ced0d4;
+  --c-success: #31a24c;
+  --c-warning: #f7b928;
+  --c-surface: #ffffff;
+  --c-surface-2: #ffffff;
+  --c-surface-3: #ffffff;
+  --c-ink-muted: #1c1e21;
+  --c-ink-subtle: #1c1e21;
+  --c-hairline-strong: #ced0d4;
+  --c-primary-hover: #0064e0;
+  --c-primary-soft: #0064e0;
+  --c-accent-2: #0064e0;
+  --c-danger: #e03131;
+  --c-inverse-canvas: #1c1e21;
+  --c-inverse-ink: #ffffff;
+/* ---- raw palette (spec appendix) ---- */
+  --raw-primary: #0064e0;
+  --raw-primary-deep: #0457cb;
+  --raw-primary-soft: #0091ff;
+  --raw-on-primary: #ffffff;
+  --raw-ink-button: #000000;
+  --raw-on-ink-button: #ffffff;
+  --raw-fb-blue: #1876f2;
+  --raw-meta-link: #385898;
+  --raw-oculus-purple: #a121ce;
+  --raw-success: #31a24c;
+  --raw-success-bg: #24e400;
+  --raw-attention: #f2a918;
+  --raw-warning: #f7b928;
+  --raw-warning-bg: #ffe200;
+  --raw-critical: #e41e3f;
+  --raw-critical-strong: #f0284a;
+  --raw-canvas: #ffffff;
+  --raw-surface-soft: #f1f4f7;
+  --raw-ink-deep: #0a1317;
+  --raw-ink: #1c1e21;
+  --raw-charcoal: #444950;
+  --raw-slate: #4b4c4f;
+  --raw-steel: #5d6c7b;
+  --raw-stone: #8595a4;
+  --raw-hairline: #ced0d4;
+  --raw-hairline-soft: #dee3e9;
+  --raw-disabled-text: #bcc0c4;
+/* ---- typography ---- */
+  --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --t-display-xl: 76px; --t-display-xl-m: 34px; --fs-display-xl: clamp(34px, calc(19.211px + 3.9437vw), 76px);
+  --t-display-xl-w: 700; --t-display-xl-lh: 1.05; --t-display-xl-ls: -0.0316em;
+  --t-display-lg: 48px; --t-display-lg-m: 28px; --fs-display-lg: clamp(28px, calc(20.958px + 1.8779vw), 48px);
+  --t-display-lg-w: 500; --t-display-lg-lh: 1.17; --t-display-lg-ls: -0.0333em;
+  --t-display-md: 38px; --t-display-md-m: 28.1px; --fs-display-md: clamp(28.1px, calc(24.614px + 0.9296vw), 38px);
+  --t-display-md-w: 600; --t-display-md-lh: 1.18; --t-display-md-ls: -0.0237em;
+  --t-headline: 28px; --t-headline-m: 20.7px; --fs-headline: clamp(20.7px, calc(18.13px + 0.6854vw), 28px);
+  --t-headline-w: 600; --t-headline-lh: 1.22; --t-headline-ls: -0.0179em;
+  --t-card-title: 21px; --t-card-title-m: 18.5px; --fs-card-title: clamp(18.5px, calc(17.62px + 0.2347vw), 21px);
+  --t-card-title-w: 600; --t-card-title-lh: 1.28; --t-card-title-ls: -0.0143em;
+  --t-subhead: 20px; --t-subhead-m: 17.6px; --fs-subhead: clamp(17.6px, calc(16.755px + 0.2254vw), 20px);
+  --t-subhead-w: 400; --t-subhead-lh: 1.42; --t-subhead-ls: -0.01em;
+  --t-body-lg: 18px; --t-body-lg-m: 18px; --fs-body-lg: 18px;
+  --t-body-lg-w: 400; --t-body-lg-lh: 1.55; --t-body-lg-ls: 0em;
+  --t-body: 16px; --t-body-m: 16px; --fs-body: 16px;
+  --t-body-w: 400; --t-body-lh: 1.6; --t-body-ls: 0em;
+  --t-body-sm: 14px; --t-body-sm-m: 14px; --fs-body-sm: 14px;
+  --t-body-sm-w: 400; --t-body-sm-lh: 1.43; --t-body-sm-ls: -0.01em;
+  --t-caption: 12px; --t-caption-m: 12px; --fs-caption: 12px;
+  --t-caption-w: 400; --t-caption-lh: 1.33; --t-caption-ls: 0em;
+  --t-button: 15px; --t-button-m: 15px; --fs-button: 15px;
+  --t-button-w: 600; --t-button-lh: 1.2; --t-button-ls: 0em;
+  --t-eyebrow: 13px; --t-eyebrow-m: 13px; --fs-eyebrow: 13px;
+  --t-eyebrow-w: 600; --t-eyebrow-lh: 1.3; --t-eyebrow-ls: 0.0462em;
+  --t-mono: 13px; --t-mono-m: 13px; --fs-mono: 13px;
+  --t-mono-w: 400; --t-mono-lh: 1.5; --t-mono-ls: 0em;
+/* ---- shape & space ---- */
+  --r-xs: 2px;
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 8px;
+  --r-xl: 16px;
+  --r-xxl: 24px;
+  --r-pill: 9999px;
+  --s-xxs: 4px;
+  --s-xs: 8px;
+  --s-sm: 10px;
+  --s-md: 12px;
+  --s-lg: 20px;
+  --s-xl: 24px;
+  --s-xxl: 32px;
+  --s-section: 64px;
+}
+
+:root{
+  --font-display: "Inter", -apple-system, sans-serif;
+  --font-body: "Inter", -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+/* Meta — stark white, 32px softened product tiles, two-tier pill CTAs. */
+:root { --maxw: 1240px; --sect: clamp(56px, 7vw, 96px); --shadow-1: none; --shadow-2: none;
+  --cobalt: #0064e0; --ink-btn: #1c2b33; }
+.nav { --nav-bg: rgba(255,255,255,.94); backdrop-filter: blur(10px); }
+/* the saturated promo banner above the nav — time-bound, not standing chrome */
+.nav::before { content: "Free shipping and 30-day returns on Visor 3 — ends Sunday";
+  display: block; background: #ffd233; color: #1c2b33; text-align: center;
+  font-size: 12px; font-weight: 600; padding: 9px 16px; }
+.brand { font-weight: 800; letter-spacing: -.03em; }
+.brand-ico { color: var(--cobalt); }
+/* two tiers of primary: ink for marketing, cobalt for commerce */
+.btn { border-radius: 999px; font-weight: 600; padding: 14px 28px; }
+.btn-primary { background: var(--ink-btn); color: #fff; }
+.btn-primary:hover { background: #2c3f4a; }
+.btn-secondary { background: #f0f2f5; border-color: transparent; }
+.btn-secondary:hover { background: #e4e6eb; border-color: transparent; }
+.tier .btn-primary, .nav-act .btn-primary { background: var(--cobalt); }
+.tier .btn-primary:hover, .nav-act .btn-primary:hover { background: #1a75f0; }
+.eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 700; }
+.eyebrow { color: var(--cobalt); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 800; letter-spacing: -.035em; }
+.hero-title em { color: var(--cobalt); }
+/* generous 32px softening on showcase tiles */
+.hero-media img, .sc-media img, .g-item { border-radius: 32px; border: 0; }
+.logos { border-block-color: #e4e6eb; }
+.feat-card { background: #f0f2f5; border: 0; border-radius: 24px; padding: 28px; }
+.feat-ico { background: #fff; color: var(--cobalt); border: 0; border-radius: 999px; width: 48px; height: 48px; }
+.metrics { --metrics-bg: var(--ink-btn); border-block: 0; }
+.metrics .metric-v { color: #fff; }
+.metrics .metric-l, .metrics .logos-lead { color: #9db0bb; }
+.g-item figcaption { background: rgba(28,43,51,.86); border-radius: 999px; }
+.quote-card { background: #f0f2f5; border: 0; border-radius: 32px; --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--cobalt); }
+.q-av { border-radius: 999px; }
+.tier { background: #f0f2f5; border: 0; border-radius: 24px; }
+.tier-feat { background: #fff; outline: 2px solid var(--cobalt); outline-offset: -2px; }
+.tier-badge { background: var(--cobalt); border-radius: 999px; font-size: 10px; letter-spacing: .1em; }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--cobalt); }
+.faq-item { border-bottom-color: #e4e6eb; }
+.cta-band { background: var(--ink-btn); color: #fff; border: 0; border-radius: 32px; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: #9db0bb; }
+.cta-band .btn-primary { background: #fff; color: var(--ink-btn); }
+.cta-band .btn-secondary { background: rgba(255,255,255,.14); color: #fff; }
+.spec { --spec-bg: #f7f8fa; }
+.input, .badge2, .tabs, .tabs button { border-radius: 999px; }
+
+/* ===========================================================================
+   a11y.css — appended AFTER the design layer so a design cannot undercut it.
+   Enforces the ui-ux-pro-max floor: 44px touch targets, visible focus.
+   ========================================================================= */
+
+@media (pointer: coarse), (max-width: 959px) {
+  /* every interactive element gets a finger-sized hit area */
+  .btn, .nav-act .btn, .tabs button, .theme, .lb-jump, .lb-back {
+    min-height: 44px;
+  }
+  /* NB: never list an element that a design hides at this width — forcing
+     display here would resurrect it (.nav-signin lives in the burger menu). */
+  .brand,
+  .nav-links a,
+  .fcol a,
+  .foot-legal a,
+  .logos-list a,
+  .btn-ghost,
+  .skip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  /* the nav row must be able to shrink rather than push past the viewport */
+  .nav-in { gap: 10px; }
+  .brand { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .nav-act { gap: 6px; flex: none; }
+  .nav-act .btn { padding-inline: 14px; }
+  .nav-burger { margin-right: -6px; flex: none; }
+
+  /* legibility floor: body copy never drops below 16px on a phone, even when
+     the source system documents a smaller UI scale */
+  body { font-size: max(16px, var(--fs-body)); }
+  .feat-body, .sc-body, .tier-desc, .faq-a, .lede { font-size: max(15px, var(--fs-body-sm)); }
+  .fcol li { margin-bottom: 2px; }
+  .foot-socials a { width: 44px; height: 44px; }
+  .sw { min-height: 60px; }
+  .faq-item summary { min-height: 56px; }
+}
+
+/* focus is never removed, only restyled — a design may recolour the ring,
+   it may not delete it */
+:where(a, button, summary, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--c-primary, currentColor);
+  outline-offset: 3px;
+}
+
+/* honour the OS motion preference regardless of what a design declares */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ library bar ============ -->
+<div class="libbar">
+  <a class="lb-back" href="../index.html"><i class="ph ph-arrow-left" aria-hidden="true"></i>Library</a>
+  <span class="lb-name">Meta</span>
+  <span class="lb-sep">/</span>
+  <span class="lb-cat">E-commerce & retail</span>
+  <span class="lb-spacer"></span>
+  <button class="lb-jump" type="button" data-jump="#spec">
+    <i class="ph ph-swatches" aria-hidden="true"></i>Design spec
+  </button>
+</div>
+
+<!-- ============ nav ============ -->
+<header class="nav v-bar">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top"><i class="ph ph-infinity brand-ico" aria-hidden="true"></i><span>Horizon</span></a>
+    <nav aria-label="Primary"><ul class="nav-links"><li><a href="#features">Devices</a></li><li><a href="#gallery">Experiences</a></li><li><a href="#showcase-1">Developers</a></li><li><a href="#faq">Support</a></li><li><a href="#pricing">Shop</a></li></ul></nav>
+    <div class="nav-act">
+      <a class="nav-signin" href="#f">Sign in</a>
+      <a class="btn btn-primary" href="#cta">Buy now</a>
+      <button class="nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+        <i class="ph ph-list" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div class="nav-panel" id="mnav">
+    <div class="wrap"><ul><li><a href="#features">Devices</a></li><li><a href="#gallery">Experiences</a></li><li><a href="#showcase-1">Developers</a></li><li><a href="#faq">Support</a></li><li><a href="#pricing">Shop</a></li></ul></div>
+  </div>
+</header>
+
+<main id="main">
+<!-- ============ hero ============ -->
+<section class="hero v-split" id="top">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow">HORIZON VISOR 3</p>
+      <h1 class="hero-title t-display-xl">Presence, <em>without the cables</em></h1>
+      <p class="hero-sub t-body-lg">A standalone headset with pancake optics, inside-out tracking and hand recognition accurate enough that controllers become optional.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#cta">Buy from $499<i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a class="btn btn-secondary" href="#features">Watch the film</a>
+      </div>
+      <div class="hero-stats"><div class="hstat"><b>4K</b><span>Per eye</span></div><div class="hstat"><b>110°</b><span>Field of view</span></div><div class="hstat"><b>3 hrs</b><span>Battery</span></div></div>
+    </div>
+    <div class="hero-media"><img class="" src="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?w=1400&q=80&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?w=700&q=80&auto=format&fit=crop 700w, https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?w=1400&q=80&auto=format&fit=crop 1400w, https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?w=2100&q=80&auto=format&fit=crop 2100w" sizes="(max-width: 900px) 100vw, 60vw" width="1400" height="952" alt="Smartphones displaying colourful abstract wallpapers under blue lighting"></div>
+  </div>
+</section>
+
+<!-- ============ logos ============ -->
+<section class="logos">
+  <div class="wrap">
+    <p class="logos-lead">AWARDED BY</p>
+    <ul class="logos-list"><li class="logo-item">IF Design</li><li class="logo-item">Red Dot</li><li class="logo-item">CES</li><li class="logo-item">Wired</li><li class="logo-item">Edge</li><li class="logo-item">Ars Technica</li></ul>
+  </div>
+</section>
+
+<!-- ============ features ============ -->
+<section class="section features v-flat" id="features">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow">THE DEVICE</p>
+      <h2 class="t-display-lg">Hardware that gets out of the way</h2>
+      <p class="lede t-body-lg">The comfort and tracking problems are what kept the previous generation on a shelf.</p>
+    </div>
+    <div class="feat-grid v-grid"><article class="feat-card reveal" style="--i:0"><span class="feat-ico"><i class="ph ph-eye " aria-hidden="true"></i></span><h3 class="feat-title">Pancake optics</h3><p class="feat-body">Half the depth of the previous lens stack, which is most of why it is comfortable for an hour.</p></article><article class="feat-card reveal" style="--i:1"><span class="feat-ico"><i class="ph ph-hand " aria-hidden="true"></i></span><h3 class="feat-title">Hand tracking</h3><p class="feat-body">Accurate enough that controllers become optional for most experiences.</p></article><article class="feat-card reveal" style="--i:2"><span class="feat-ico"><i class="ph ph-cube " aria-hidden="true"></i></span><h3 class="feat-title">Inside-out tracking</h3><p class="feat-body">No base stations. Set it down in any room and it maps the space in seconds.</p></article><article class="feat-card reveal" style="--i:3"><span class="feat-ico"><i class="ph ph-broadcast " aria-hidden="true"></i></span><h3 class="feat-title">Standalone</h3><p class="feat-body">No PC and no cable. It runs everything on-device.</p></article><article class="feat-card reveal" style="--i:4"><span class="feat-ico"><i class="ph ph-users-three " aria-hidden="true"></i></span><h3 class="feat-title">Shared spaces</h3><p class="feat-body">Two people in the same room see the same virtual objects in the same places.</p></article><article class="feat-card reveal" style="--i:5"><span class="feat-ico"><i class="ph ph-battery-charging " aria-hidden="true"></i></span><h3 class="feat-title">Three-hour battery</h3><p class="feat-body">In a rear-mounted pack that also balances the weight off your face.</p></article></div>
+  </div>
+</section>
+
+<!-- ============ showcases ============ -->
+<div class="wrap"><section class="showcase  reveal" id="showcase-0"><div class="sc-media"><img class="" src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1000&q=80&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500&q=80&auto=format&fit=crop 500w, https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1000&q=80&auto=format&fit=crop 1000w, https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1500&q=80&auto=format&fit=crop 1500w" sizes="(max-width: 760px) 100vw, 50vw" width="1000" height="720" alt="A collection of vintage home computers lit in pink and blue neon" loading="lazy" decoding="async"></div><div class="sc-copy"><p class="eyebrow">EXPERIENCES</p><h2 class="sc-title">Built by people, not by us</h2><p class="sc-body">An open store with a published revenue split and a review process that publishes its criteria. The best experiences on the platform were not made here, and the economics are set up to keep it that way.</p><ul class="sc-points"><li><i class="ph ph-check " aria-hidden="true"></i><span>Published revenue split</span></li><li><i class="ph ph-check " aria-hidden="true"></i><span>Review criteria public</span></li><li><i class="ph ph-check " aria-hidden="true"></i><span>Sideloading permitted</span></li></ul><a class="btn btn-ghost" href="#pricing">Browse experiences <i class="ph ph-arrow-right " aria-hidden="true"></i></a></div></section><section class="showcase sc-rev reveal" id="showcase-1"><div class="sc-media"><img class="" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1000&q=80&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500&q=80&auto=format&fit=crop 500w, https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1000&q=80&auto=format&fit=crop 1000w, https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1500&q=80&auto=format&fit=crop 1500w" sizes="(max-width: 760px) 100vw, 50vw" width="1000" height="720" alt="Cascading green characters on a black background, a digital rain effect" loading="lazy" decoding="async"></div><div class="sc-copy"><p class="eyebrow">DEVELOPERS</p><h2 class="sc-title">An SDK you can read</h2><p class="sc-body">Native and engine SDKs with the tracking APIs documented rather than wrapped. Performance profiling on device, so you can see which frame budget you blew and where.</p><ul class="sc-points"><li><i class="ph ph-check " aria-hidden="true"></i><span>Native, Unity and Unreal SDKs</span></li><li><i class="ph ph-check " aria-hidden="true"></i><span>On-device performance profiling</span></li><li><i class="ph ph-check " aria-hidden="true"></i><span>Tracking APIs documented, not wrapped</span></li></ul><a class="btn btn-ghost" href="#pricing">Developer platform <i class="ph ph-arrow-right " aria-hidden="true"></i></a></div></section></div>
+
+<!-- ============ metrics ============ -->
+<section class="section metrics" id="metrics">
+  <div class="wrap">
+    <p class="logos-lead">HORIZON VISOR 3</p>
+    <div class="metrics-grid"><div class="metric reveal" style="--i:0"><span class="metric-v">4K</span><span class="metric-l">PER EYE</span></div><div class="metric reveal" style="--i:1"><span class="metric-v">110°</span><span class="metric-l">FIELD OF VIEW</span></div><div class="metric reveal" style="--i:2"><span class="metric-v">3 HRS</span><span class="metric-l">BATTERY</span></div><div class="metric reveal" style="--i:3"><span class="metric-v">515 G</span><span class="metric-l">WEIGHT</span></div></div>
+  </div>
+</section>
+
+<!-- ============ gallery ============ -->
+<section class="section gallery" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="t-display-md">EXPERIENCES</h2>
+      <p class="lede">A selection from the store this month.</p>
+    </div>
+    <div class="gal-grid v-grid"><figure class="g-item reveal" style="--i:0"><img class="" src="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?w=900&q=80&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?w=450&q=80&auto=format&fit=crop 450w, https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?w=900&q=80&auto=format&fit=crop 900w, https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?w=1350&q=80&auto=format&fit=crop 1350w" sizes="(max-width: 760px) 100vw, 50vw" width="900" height="648" alt="Smartphones displaying colourful abstract wallpapers under blue lighting" loading="lazy" decoding="async"><figcaption>Devices</figcaption></figure><figure class="g-item reveal" style="--i:1"><img class="" src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=900&q=80&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=450&q=80&auto=format&fit=crop 450w, https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=900&q=80&auto=format&fit=crop 900w, https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1350&q=80&auto=format&fit=crop 1350w" sizes="(max-width: 760px) 100vw, 50vw" width="900" height="648" alt="A collection of vintage home computers lit in pink and blue neon" loading="lazy" decoding="async"><figcaption>Gaming</figcaption></figure><figure class="g-item reveal" style="--i:2"><img class="" src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=900&q=80&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=450&q=80&auto=format&fit=crop 450w, https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=900&q=80&auto=format&fit=crop 900w, https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=1350&q=80&auto=format&fit=crop 1350w" sizes="(max-width: 760px) 100vw, 50vw" width="900" height="648" alt="Dark red and blue smoke curling against black" loading="lazy" decoding="async"><figcaption>Creative</figcaption></figure><figure class="g-item reveal" style="--i:3"><img class="" src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&q=80&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1552664730-d307ca884978?w=450&q=80&auto=format&fit=crop 450w, https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&q=80&auto=format&fit=crop 900w, https://images.unsplash.com/photo-1552664730-d307ca884978?w=1350&q=80&auto=format&fit=crop 1350w" sizes="(max-width: 760px) 100vw, 50vw" width="900" height="648" alt="A team collaborating around a whiteboard covered in sticky notes" loading="lazy" decoding="async"><figcaption>Collaboration</figcaption></figure><figure class="g-item reveal" style="--i:4"><img class="" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=450&q=80&auto=format&fit=crop 450w, https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80&auto=format&fit=crop 900w, https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1350&q=80&auto=format&fit=crop 1350w" sizes="(max-width: 760px) 100vw, 50vw" width="900" height="648" alt="A person doing sit-ups on a mat outdoors" loading="lazy" decoding="async"><figcaption>Fitness</figcaption></figure><figure class="g-item reveal" style="--i:5"><img class="" src="https://images.unsplash.com/photo-1580910051074-3eb694886505?w=900&q=80&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1580910051074-3eb694886505?w=450&q=80&auto=format&fit=crop 450w, https://images.unsplash.com/photo-1580910051074-3eb694886505?w=900&q=80&auto=format&fit=crop 900w, https://images.unsplash.com/photo-1580910051074-3eb694886505?w=1350&q=80&auto=format&fit=crop 1350w" sizes="(max-width: 760px) 100vw, 50vw" width="900" height="648" alt="Two smartphones side by side on a soft fabric surface, one screen glowing" loading="lazy" decoding="async"><figcaption>Companion</figcaption></figure></div>
+  </div>
+</section>
+
+<!-- ============ testimonial ============ -->
+<section class="section" id="quote">
+  <div class="wrap">
+    <figure class="quote-card reveal">
+      <div class="quote-mark"><i class="ph ph-quotes" aria-hidden="true"></i></div>
+      <blockquote class="quote-text">I wore it for an hour and took it off because I was finished, not because my face hurt. That has never happened with a headset before.</blockquote>
+      <figcaption class="quote-by">
+        <img class="q-av" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=160&q=80&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=80&q=80&auto=format&fit=crop 80w, https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=160&q=80&auto=format&fit=crop 160w, https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=240&q=80&auto=format&fit=crop 240w" sizes="72px" width="160" height="160" alt="Portrait of Ravi Chandra" loading="lazy" decoding="async">
+        <span><b>Ravi Chandra</b><span>Reviewer</span></span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ pricing ============ -->
+<section class="section pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2 class="t-display-lg">SHOP</h2>
+      <p class="lede t-body-lg">Three configurations. Free returns within thirty days.</p>
+    </div>
+    <div class="tiers"><article class="tier  reveal"><h3 class="tier-name">VISOR 3</h3><p class="tier-price"><span class="tier-num">$499</span><span class="tier-per"></span></p><p class="tier-desc">128GB, the standard package.</p><ul class="tier-feats"><li><i class="ph ph-check " aria-hidden="true"></i><span>4K per eye</span></li><li><i class="ph ph-check " aria-hidden="true"></i><span>128GB storage</span></li><li><i class="ph ph-check " aria-hidden="true"></i><span>Two controllers</span></li><li><i class="ph ph-check " aria-hidden="true"></i><span>One-year warranty</span></li></ul><a class="btn btn-secondary" href="#cta">Buy now</a></article><article class="tier tier-feat reveal"><span class="tier-badge">MOST POPULAR</span><h3 class="tier-name">VISOR 3 PRO</h3><p class="tier-price"><span class="tier-num">$699</span><span class="tier-per"></span></p><p class="tier-desc">256GB and the comfort strap.</p><ul class="tier-feats"><li><i class="ph ph-check " aria-hidden="true"></i><span>Everything in Visor 3</span></li><li><i class="ph ph-check " aria-hidden="true"></i><span>256GB storage</span></li><li><i class="ph ph-check " aria-hidden="true"></i><span>Comfort head strap</span></li><li><i class="ph ph-check " aria-hidden="true"></i><span>Extended battery</span></li></ul><a class="btn btn-primary" href="#cta">Buy now</a></article><article class="tier  reveal"><h3 class="tier-name">VISOR 3 STUDIO</h3><p class="tier-price"><span class="tier-num">$1,099</span><span class="tier-per"></span></p><p class="tier-desc">For developers and studios.</p><ul class="tier-feats"><li><i class="ph ph-check " aria-hidden="true"></i><span>Everything in Pro</span></li><li><i class="ph ph-check " aria-hidden="true"></i><span>512GB storage</span></li><li><i class="ph ph-check " aria-hidden="true"></i><span>Developer mode</span></li><li><i class="ph ph-check " aria-hidden="true"></i><span>Three-year support</span></li></ul><a class="btn btn-secondary" href="#cta">Buy now</a></article></div>
+  </div>
+</section>
+
+<!-- ============ faq ============ -->
+<section class="section faq" id="faq">
+  <div class="wrap">
+    <div class="section-head center"><h2 class="t-display-md">SUPPORT</h2></div>
+    <div class="faq-list"><details class="faq-item" open><summary><span>Do I need a PC?</span><span class="faq-mk"><i class="ph ph-plus " aria-hidden="true"></i></span></summary><div class="faq-a"><p>No. Everything runs on the headset. It can connect to a PC for higher-fidelity content, but nothing about the standard experience requires one.</p></div></details><details class="faq-item"><summary><span>How comfortable is it really?</span><span class="faq-mk"><i class="ph ph-plus " aria-hidden="true"></i></span></summary><div class="faq-a"><p>515 grams with the battery mounted at the rear to balance the load. Most reviewers report an hour of comfortable use, which is roughly a session.</p></div></details><details class="faq-item"><summary><span>Can I sideload my own software?</span><span class="faq-mk"><i class="ph ph-plus " aria-hidden="true"></i></span></summary><div class="faq-a"><p>Yes. Developer mode is a setting, not an unlock process, and sideloading does not void the warranty.</p></div></details><details class="faq-item"><summary><span>What is the return policy?</span><span class="faq-mk"><i class="ph ph-plus " aria-hidden="true"></i></span></summary><div class="faq-a"><p>Thirty days, used or unused, with free return shipping. Headsets are unusually hard to evaluate in a shop, so the window is deliberately generous.</p></div></details></div>
+  </div>
+</section>
+
+<!-- ============ cta ============ -->
+<section class="section" id="cta">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <h2 class="t-display-md">Try it for thirty days</h2>
+      <p class="lede t-body-lg">Free returns, used or unused, because you cannot judge this in a shop.</p>
+      <div class="cta-btns">
+        <a class="btn btn-primary" href="#top">Buy from $499</a>
+        <a class="btn btn-secondary" href="#pricing">Find a store</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ design spec appendix ============ -->
+<section class="section spec" id="spec">
+  <div class="wrap">
+    <div class="spec-head">
+      <div>
+        <p class="eyebrow">Reference</p>
+        <h2 class="t-display-md">Meta design spec</h2>
+        <p class="lede">Stark white with full-bleed product photography at 32px softening, two-tier pill CTAs and saturated banners used sparingly.</p>
+      </div>
+      <code class="t-mono">design-md / meta</code>
+    </div>
+
+    <div class="spec-block">
+      <h3 class="spec-h"><i class="ph ph-palette" aria-hidden="true"></i>Colour tokens</h3>
+      <p class="spec-note">Click any swatch to copy its value.</p>
+      <div class="sw-grid"><button class="sw" type="button" data-copy="#0064e0" aria-label="Copy Cobalt Primary, #0064e0" title="The buy-now CTA color. Used on every &quot;Add to cart&quot;, &quot;Configure&quot;, &quot;Pre-order&quot; button inside the commerce flow and the right-rail purchase panel"><span class="sw-chip" style="background:#0064e0"></span><span class="sw-meta"><span class="sw-name">Cobalt Primary</span><span class="sw-val">#0064e0</span><span class="sw-note">The buy-now CTA color. Used on every &quot;Add to cart&quot;, &quot;Configure&quot;, &quot;Pre-order&quot; button inside the commerce flow and the right-rail purchase panel</span></span></button><button class="sw" type="button" data-copy="#0457cb" aria-label="Copy Deep Cobalt, #0457cb" title="Pressed-state and dark-surface variant of the cobalt primary; also the active link color"><span class="sw-chip" style="background:#0457cb"></span><span class="sw-meta"><span class="sw-name">Deep Cobalt</span><span class="sw-val">#0457cb</span><span class="sw-note">Pressed-state and dark-surface variant of the cobalt primary; also the active link color</span></span></button><button class="sw" type="button" data-copy="#0091ff" aria-label="Copy Soft Cobalt, #0091ff" title="Translucent background tint for informational callouts (`primary-soft` at 15% alpha)"><span class="sw-chip" style="background:#0091ff"></span><span class="sw-meta"><span class="sw-name">Soft Cobalt</span><span class="sw-val">#0091ff</span><span class="sw-note">Translucent background tint for informational callouts (`primary-soft` at 15% alpha)</span></span></button><button class="sw" type="button" data-copy="#ffffff" aria-label="Copy on-primary, #ffffff"><span class="sw-chip" style="background:#ffffff"></span><span class="sw-meta"><span class="sw-name">on-primary</span><span class="sw-val">#ffffff</span></span></button><button class="sw" type="button" data-copy="#000000" aria-label="Copy ink-button, #000000"><span class="sw-chip" style="background:#000000"></span><span class="sw-meta"><span class="sw-name">ink-button</span><span class="sw-val">#000000</span></span></button><button class="sw" type="button" data-copy="#ffffff" aria-label="Copy on-ink-button, #ffffff"><span class="sw-chip" style="background:#ffffff"></span><span class="sw-meta"><span class="sw-name">on-ink-button</span><span class="sw-val">#ffffff</span></span></button><button class="sw" type="button" data-copy="#1876f2" aria-label="Copy Facebook Blue, #1876f2" title="Selected radio/checkbox state and inline form-control activation color"><span class="sw-chip" style="background:#1876f2"></span><span class="sw-meta"><span class="sw-name">Facebook Blue</span><span class="sw-val">#1876f2</span><span class="sw-note">Selected radio/checkbox state and inline form-control activation color</span></span></button><button class="sw" type="button" data-copy="#385898" aria-label="Copy Meta Link Blue, #385898" title="Reserved for legacy navigation and footer link affordances"><span class="sw-chip" style="background:#385898"></span><span class="sw-meta"><span class="sw-name">Meta Link Blue</span><span class="sw-val">#385898</span><span class="sw-note">Reserved for legacy navigation and footer link affordances</span></span></button><button class="sw" type="button" data-copy="#a121ce" aria-label="Copy Oculus Purple, #a121ce" title="VR product accent — used inside Quest-branded surfaces for category emphasis"><span class="sw-chip" style="background:#a121ce"></span><span class="sw-meta"><span class="sw-name">Oculus Purple</span><span class="sw-val">#a121ce</span><span class="sw-note">VR product accent — used inside Quest-branded surfaces for category emphasis</span></span></button><button class="sw" type="button" data-copy="#31a24c" aria-label="Copy Success, #31a24c" title="&quot;In stock&quot;, &quot;Free returns&quot; affirmations"><span class="sw-chip" style="background:#31a24c"></span><span class="sw-meta"><span class="sw-name">Success</span><span class="sw-val">#31a24c</span><span class="sw-note">&quot;In stock&quot;, &quot;Free returns&quot; affirmations</span></span></button><button class="sw" type="button" data-copy="#24e400" aria-label="Copy success-bg, #24e400"><span class="sw-chip" style="background:#24e400"></span><span class="sw-meta"><span class="sw-name">success-bg</span><span class="sw-val">#24e400</span></span></button><button class="sw" type="button" data-copy="#f2a918" aria-label="Copy Attention, #f2a918" title="Mid-priority alerts and timed callouts"><span class="sw-chip" style="background:#f2a918"></span><span class="sw-meta"><span class="sw-name">Attention</span><span class="sw-val">#f2a918</span><span class="sw-note">Mid-priority alerts and timed callouts</span></span></button><button class="sw" type="button" data-copy="#f7b928" aria-label="Copy Warning, #f7b928" title="Promotional banners (&quot;Get 25% off…&quot;) and limited-time tags"><span class="sw-chip" style="background:#f7b928"></span><span class="sw-meta"><span class="sw-name">Warning</span><span class="sw-val">#f7b928</span><span class="sw-note">Promotional banners (&quot;Get 25% off…&quot;) and limited-time tags</span></span></button><button class="sw" type="button" data-copy="#ffe200" aria-label="Copy warning-bg, #ffe200"><span class="sw-chip" style="background:#ffe200"></span><span class="sw-meta"><span class="sw-name">warning-bg</span><span class="sw-val">#ffe200</span></span></button><button class="sw" type="button" data-copy="#e41e3f" aria-label="Copy Critical, #e41e3f" title="Validation errors, destructive feedback"><span class="sw-chip" style="background:#e41e3f"></span><span class="sw-meta"><span class="sw-name">Critical</span><span class="sw-val">#e41e3f</span><span class="sw-note">Validation errors, destructive feedback</span></span></button><button class="sw" type="button" data-copy="#f0284a" aria-label="Copy Critical Strong, #f0284a" title="Form-input error border and inline error labels"><span class="sw-chip" style="background:#f0284a"></span><span class="sw-meta"><span class="sw-name">Critical Strong</span><span class="sw-val">#f0284a</span><span class="sw-note">Form-input error border and inline error labels</span></span></button><button class="sw" type="button" data-copy="#ffffff" aria-label="Copy Canvas White, #ffffff" title="Page background and primary card surface"><span class="sw-chip" style="background:#ffffff"></span><span class="sw-meta"><span class="sw-name">Canvas White</span><span class="sw-val">#ffffff</span><span class="sw-note">Page background and primary card surface</span></span></button><button class="sw" type="button" data-copy="#f1f4f7" aria-label="Copy Soft Cloud, #f1f4f7" title="Subtle product-thumbnail and warranty-card background; also the search-pill rest state"><span class="sw-chip" style="background:#f1f4f7"></span><span class="sw-meta"><span class="sw-name">Soft Cloud</span><span class="sw-val">#f1f4f7</span><span class="sw-note">Subtle product-thumbnail and warranty-card background; also the search-pill rest state</span></span></button><button class="sw" type="button" data-copy="#0a1317" aria-label="Copy Deep Ink, #0a1317" title="Primary headline and body text on light surfaces"><span class="sw-chip" style="background:#0a1317"></span><span class="sw-meta"><span class="sw-name">Deep Ink</span><span class="sw-val">#0a1317</span><span class="sw-note">Primary headline and body text on light surfaces</span></span></button><button class="sw" type="button" data-copy="#1c1e21" aria-label="Copy Ink, #1c1e21" title="Standard body and secondary headline text"><span class="sw-chip" style="background:#1c1e21"></span><span class="sw-meta"><span class="sw-name">Ink</span><span class="sw-val">#1c1e21</span><span class="sw-note">Standard body and secondary headline text</span></span></button><button class="sw" type="button" data-copy="#444950" aria-label="Copy Charcoal, #444950" title="Tertiary body text and form-button labels"><span class="sw-chip" style="background:#444950"></span><span class="sw-meta"><span class="sw-name">Charcoal</span><span class="sw-val">#444950</span><span class="sw-note">Tertiary body text and form-button labels</span></span></button><button class="sw" type="button" data-copy="#4b4c4f" aria-label="Copy Slate, #4b4c4f" title="Section-header copy and supporting microcopy"><span class="sw-chip" style="background:#4b4c4f"></span><span class="sw-meta"><span class="sw-name">Slate</span><span class="sw-val">#4b4c4f</span><span class="sw-note">Section-header copy and supporting microcopy</span></span></button><button class="sw" type="button" data-copy="#5d6c7b" aria-label="Copy Steel, #5d6c7b" title="Quieter caption text and footer link hierarchy"><span class="sw-chip" style="background:#5d6c7b"></span><span class="sw-meta"><span class="sw-name">Steel</span><span class="sw-val">#5d6c7b</span><span class="sw-note">Quieter caption text and footer link hierarchy</span></span></button><button class="sw" type="button" data-copy="#8595a4" aria-label="Copy Stone, #8595a4" title="Disabled or de-emphasized labels"><span class="sw-chip" style="background:#8595a4"></span><span class="sw-meta"><span class="sw-name">Stone</span><span class="sw-val">#8595a4</span><span class="sw-note">Disabled or de-emphasized labels</span></span></button><button class="sw" type="button" data-copy="#ced0d4" aria-label="Copy Hairline Gray, #ced0d4" title="1px input border and form-control divider"><span class="sw-chip" style="background:#ced0d4"></span><span class="sw-meta"><span class="sw-name">Hairline Gray</span><span class="sw-val">#ced0d4</span><span class="sw-note">1px input border and form-control divider</span></span></button><button class="sw" type="button" data-copy="#dee3e9" aria-label="Copy Hairline Soft, #dee3e9" title="Quieter divider used on cards, footer separators, and section breaks"><span class="sw-chip" style="background:#dee3e9"></span><span class="sw-meta"><span class="sw-name">Hairline Soft</span><span class="sw-val">#dee3e9</span><span class="sw-note">Quieter divider used on cards, footer separators, and section breaks</span></span></button><button class="sw" type="button" data-copy="#bcc0c4" aria-label="Copy disabled-text, #bcc0c4"><span class="sw-chip" style="background:#bcc0c4"></span><span class="sw-meta"><span class="sw-name">disabled-text</span><span class="sw-val">#bcc0c4</span></span></button></div>
+    </div>
+
+    <div class="spec-block">
+      <h3 class="spec-h"><i class="ph ph-text-aa" aria-hidden="true"></i>Type scale</h3>
+      <p class="spec-note">Each step is fluid between 375px and 1440px viewports.</p>
+      <div class="ts-list"><div class="ts-row"><div class="ts-meta"><code>display-xl</code><span class="ts-num">var(--t-display-xl)</span></div><div class="ts-sample t-display-xl">Presence</div></div><div class="ts-row"><div class="ts-meta"><code>display-lg</code><span class="ts-num">var(--t-display-lg)</span></div><div class="ts-sample t-display-lg">Presence</div></div><div class="ts-row"><div class="ts-meta"><code>display-md</code><span class="ts-num">var(--t-display-md)</span></div><div class="ts-sample t-display-md">Presence</div></div><div class="ts-row"><div class="ts-meta"><code>headline</code><span class="ts-num">var(--t-headline)</span></div><div class="ts-sample t-headline">Presence</div></div><div class="ts-row"><div class="ts-meta"><code>card-title</code><span class="ts-num">var(--t-card-title)</span></div><div class="ts-sample t-card-title">Presence</div></div><div class="ts-row"><div class="ts-meta"><code>subhead</code><span class="ts-num">var(--t-subhead)</span></div><div class="ts-sample t-subhead">Aa Bb Cc 0123 &mdash; the quick brown fox</div></div><div class="ts-row"><div class="ts-meta"><code>body-lg</code><span class="ts-num">var(--t-body-lg)</span></div><div class="ts-sample t-body-lg">Aa Bb Cc 0123 &mdash; the quick brown fox</div></div><div class="ts-row"><div class="ts-meta"><code>body</code><span class="ts-num">var(--t-body)</span></div><div class="ts-sample t-body">Aa Bb Cc 0123 &mdash; the quick brown fox</div></div><div class="ts-row"><div class="ts-meta"><code>body-sm</code><span class="ts-num">var(--t-body-sm)</span></div><div class="ts-sample t-body-sm">Aa Bb Cc 0123 &mdash; the quick brown fox</div></div><div class="ts-row"><div class="ts-meta"><code>caption</code><span class="ts-num">var(--t-caption)</span></div><div class="ts-sample t-caption">Aa Bb Cc 0123 &mdash; the quick brown fox</div></div><div class="ts-row"><div class="ts-meta"><code>button</code><span class="ts-num">var(--t-button)</span></div><div class="ts-sample t-button">Aa Bb Cc 0123 &mdash; the quick brown fox</div></div><div class="ts-row"><div class="ts-meta"><code>eyebrow</code><span class="ts-num">var(--t-eyebrow)</span></div><div class="ts-sample t-eyebrow">Aa Bb Cc 0123 &mdash; the quick brown fox</div></div><div class="ts-row"><div class="ts-meta"><code>mono</code><span class="ts-num">var(--t-mono)</span></div><div class="ts-sample t-mono">Aa Bb Cc 0123 &mdash; the quick brown fox</div></div></div>
+    </div>
+
+    <div class="spec-block">
+      <h3 class="spec-h"><i class="ph ph-bounding-box" aria-hidden="true"></i>Radii &amp; spacing</h3>
+      <div class="sc-chips"><div class="sc-chip"><span class="sc-box" style="border-radius:var(--r-xs)"></span><code>--r-xs</code></div><div class="sc-chip"><span class="sc-box" style="border-radius:var(--r-sm)"></span><code>--r-sm</code></div><div class="sc-chip"><span class="sc-box" style="border-radius:var(--r-md)"></span><code>--r-md</code></div><div class="sc-chip"><span class="sc-box" style="border-radius:var(--r-lg)"></span><code>--r-lg</code></div><div class="sc-chip"><span class="sc-box" style="border-radius:var(--r-xl)"></span><code>--r-xl</code></div><div class="sc-chip"><span class="sc-box" style="border-radius:var(--r-xxl)"></span><code>--r-xxl</code></div><div class="sc-chip"><span class="sc-box" style="border-radius:var(--r-pill)"></span><code>--r-pill</code></div></div>
+      <div style="height:var(--s-lg)"></div>
+      <div><div class="sp-row"><code>--s-xxs</code><span class="sp-bar" style="width:var(--s-xxs)"></span></div><div class="sp-row"><code>--s-xs</code><span class="sp-bar" style="width:var(--s-xs)"></span></div><div class="sp-row"><code>--s-sm</code><span class="sp-bar" style="width:var(--s-sm)"></span></div><div class="sp-row"><code>--s-md</code><span class="sp-bar" style="width:var(--s-md)"></span></div><div class="sp-row"><code>--s-lg</code><span class="sp-bar" style="width:var(--s-lg)"></span></div><div class="sp-row"><code>--s-xl</code><span class="sp-bar" style="width:var(--s-xl)"></span></div><div class="sp-row"><code>--s-xxl</code><span class="sp-bar" style="width:var(--s-xxl)"></span></div><div class="sp-row"><code>--s-section</code><span class="sp-bar" style="width:var(--s-section)"></span></div></div>
+    </div>
+
+    <div class="spec-block">
+      <h3 class="spec-h"><i class="ph ph-squares-four" aria-hidden="true"></i>Components</h3>
+      <div class="zoo">
+        <div class="zoo-cell">
+          <h4>Buttons</h4>
+          <div class="zoo-row">
+            <button class="btn btn-primary" type="button">Primary</button>
+            <button class="btn btn-secondary" type="button">Secondary</button>
+          </div>
+          <div class="zoo-row" style="margin-top:10px">
+            <button class="btn btn-ghost" type="button">Ghost link<i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+            <button class="btn btn-primary" type="button" disabled style="opacity:.45;cursor:not-allowed">Disabled</button>
+          </div>
+        </div>
+        <div class="zoo-cell">
+          <h4>Form field</h4>
+          <div class="field">
+            <label for="zoo-email">Work email</label>
+            <input class="input" id="zoo-email" type="email" placeholder="you@company.com" autocomplete="email">
+          </div>
+        </div>
+        <div class="zoo-cell">
+          <h4>Badges</h4>
+          <div class="zoo-row">
+            <span class="badge2">Neutral</span>
+            <span class="badge2 ok"><i class="ph ph-check-circle" aria-hidden="true"></i>Live</span>
+            <span class="badge2 warn">Beta</span>
+            <span class="badge2 err">Failed</span>
+          </div>
+        </div>
+        <div class="zoo-cell">
+          <h4>Tabs</h4>
+          <div class="tabs" role="tablist">
+            <button type="button" role="tab" aria-selected="true">Monthly</button>
+            <button type="button" role="tab" aria-selected="false">Annual</button>
+          </div>
+        </div>
+        <div class="zoo-cell">
+          <h4>Toggle</h4>
+          <label class="swch"><input type="checkbox" checked><span class="track"></span><span>Notifications</span></label>
+        </div>
+        <div class="zoo-cell">
+          <h4>Alerts</h4>
+          <div class="alert ok"><i class="ph ph-check-circle" aria-hidden="true"></i><span>Changes saved.</span></div>
+          <div style="height:8px"></div>
+          <div class="alert err"><i class="ph ph-warning-circle" aria-hidden="true"></i><span>Card was declined.</span></div>
+        </div>
+      </div>
+      <div style="height:var(--s-lg)"></div>
+      <div class="zoo-cell tbl-wrap">
+        <h4>Table</h4>
+        <table class="tbl">
+          <thead><tr><th>Workspace</th><th>Plan</th><th>Seats</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Northwind</td><td>Scale</td><td>240</td><td><span class="badge2 ok">Active</span></td></tr>
+            <tr><td>Rivet Labs</td><td>Team</td><td>38</td><td><span class="badge2 ok">Active</span></td></tr>
+            <tr><td>Hollis &amp; Co</td><td>Starter</td><td>6</td><td><span class="badge2 warn">Trial</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="spec-block">
+      <h3 class="spec-h"><i class="ph ph-note" aria-hidden="true"></i>Applying this system</h3>
+      <ul class="notes-list"><li>A stark white canvas carries full-bleed product photography with generous 32px corner softening on showcase tiles.</li><li>Two tiers of primary button: ink pills for marketing CTAs, cobalt pills for commerce actions inside buy-now panels.</li><li>Pills and heavily-rounded cards are the dominant geometric signature throughout.</li><li>One variable face covers display and body with consistent stylistic-set features enabled.</li><li>Saturated promotional banners above the nav are reserved for time-bound offers and are not part of the standing chrome.</li></ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ footer ============ -->
+<footer class="foot" id="f">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="brand" href="#top"><i class="ph ph-infinity brand-ico" aria-hidden="true"></i><span>Horizon</span></a>
+        <p class="foot-tag">Presence, without the cables.</p>
+        <div class="foot-socials">
+          <a href="#f" aria-label="X"><i class="ph ph-x-logo" aria-hidden="true"></i></a>
+          <a href="#f" aria-label="GitHub"><i class="ph ph-github-logo" aria-hidden="true"></i></a>
+          <a href="#f" aria-label="LinkedIn"><i class="ph ph-linkedin-logo" aria-hidden="true"></i></a>
+          <a href="#f" aria-label="YouTube"><i class="ph ph-youtube-logo" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="foot-cols"><div class="fcol"><h4>Devices</h4><ul><li><a href="#f">Visor 3</a></li><li><a href="#f">Controllers</a></li><li><a href="#f">Accessories</a></li><li><a href="#f">Compare</a></li></ul></div><div class="fcol"><h4>Experiences</h4><ul><li><a href="#f">Store</a></li><li><a href="#f">Gaming</a></li><li><a href="#f">Creative</a></li><li><a href="#f">Fitness</a></li></ul></div><div class="fcol"><h4>Developers</h4><ul><li><a href="#f">SDKs</a></li><li><a href="#f">Documentation</a></li><li><a href="#f">Publishing</a></li><li><a href="#f">Forums</a></li></ul></div><div class="fcol"><h4>Company</h4><ul><li><a href="#f">About</a></li><li><a href="#f">Careers</a></li><li><a href="#f">Press</a></li><li><a href="#f">Legal</a></li></ul></div></div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 Horizon Devices</span>
+      <span>Template from the design-md reference library &middot; not affiliated with any brand</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* mobile nav ---------------------------------------------------------- */
+  var burger = document.querySelector(".nav-burger");
+  var panel = document.getElementById("mnav");
+  if (burger && panel) {
+    burger.addEventListener("click", function () {
+      var open = panel.classList.toggle("open");
+      burger.setAttribute("aria-expanded", String(open));
+      burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      burger.querySelector("i").className = "ph " + (open ? "ph-x" : "ph-list");
+    });
+    panel.addEventListener("click", function (e) {
+      if (e.target.closest("a")) {
+        panel.classList.remove("open");
+        burger.setAttribute("aria-expanded", "false");
+        burger.querySelector("i").className = "ph ph-list";
+      }
+    });
+  }
+
+  /* jump to spec -------------------------------------------------------- */
+  var jump = document.querySelector("[data-jump]");
+  if (jump) {
+    jump.addEventListener("click", function () {
+      var t = document.querySelector(jump.getAttribute("data-jump"));
+      if (t) t.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+    });
+  }
+
+  /* scroll reveal ------------------------------------------------------- */
+  var items = document.querySelectorAll(".reveal");
+  if (reduce || !("IntersectionObserver" in window)) {
+    items.forEach(function (el) { el.classList.add("in"); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+    items.forEach(function (el) { io.observe(el); });
+  }
+
+  /* copy colour tokens -------------------------------------------------- */
+  document.querySelectorAll(".sw").forEach(function (sw) {
+    sw.addEventListener("click", function () {
+      var val = sw.getAttribute("data-copy");
+      var done = function () {
+        var name = sw.querySelector(".sw-val");
+        var old = name.textContent;
+        sw.classList.add("copied");
+        name.textContent = "copied";
+        setTimeout(function () { name.textContent = old; sw.classList.remove("copied"); }, 1100);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(val).then(done).catch(done);
+      } else {
+        var ta = document.createElement("textarea");
+        ta.value = val; document.body.appendChild(ta); ta.select();
+        try { document.execCommand("copy"); } catch (e) {}
+        document.body.removeChild(ta); done();
+      }
+    });
+  });
+
+  /* demo tabs ----------------------------------------------------------- */
+  document.querySelectorAll(".tabs").forEach(function (tabs) {
+    tabs.addEventListener("click", function (e) {
+      var b = e.target.closest("button");
+      if (!b) return;
+      tabs.querySelectorAll("button").forEach(function (x) {
+        x.setAttribute("aria-selected", String(x === b));
+      });
+    });
+  });
+})();
+
+</script>
+</body>
+</html>

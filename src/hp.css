@@ -1,0 +1,51 @@
+/* HP — pure white with fog bands, one blue used twice a viewport, blue chevrons. */
+:root { --maxw: 1220px; --sect: clamp(56px, 7vw, 92px);
+  --cloud: #f5f7fa; --fog: #eceff3;
+  --shadow-1: 0 1px 3px rgba(0,0,0,.05), 0 8px 24px rgba(0,0,0,.06);
+  --shadow-2: 0 2px 8px rgba(0,0,0,.07), 0 18px 44px rgba(0,0,0,.1); }
+.nav { --nav-bg: rgba(255,255,255,.94); backdrop-filter: blur(10px); }
+.brand { font-weight: 700; letter-spacing: -.02em; }
+.brand-ico { color: var(--c-primary); }
+/* buttons stay tight at 4px with capitalised labels; cards round to 16px */
+.btn { border-radius: 4px; font-weight: 600; padding: 13px 24px; }
+.btn-secondary { background: #fff; border-color: var(--c-primary); color: var(--c-primary); }
+.btn-secondary:hover { background: #eef4ff; }
+.eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .13em; font-size: 11px; font-weight: 600; }
+.eyebrow { color: var(--c-primary); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; letter-spacing: -.03em; }
+.hero-title em { color: var(--c-primary); }
+/* blue chevrons framing the hero, echoing the wordmark */
+.hero { overflow: hidden; }
+.hero::before, .hero::after { content: ""; position: absolute; z-index: 0; pointer-events: none;
+  width: 240px; height: 240px; background: var(--c-primary); opacity: .1; }
+.hero::before { left: -90px; top: 8%; transform: rotate(45deg); }
+.hero::after { right: -90px; bottom: 12%; transform: rotate(45deg); }
+.hero > * { position: relative; z-index: 1; }
+.hero-media img, .sc-media img, .g-item { border-radius: 16px; border: 0; box-shadow: var(--shadow-1); }
+/* fog bands alternate for section rhythm */
+.logos { background: var(--cloud); border-block: 0; }
+.features { background: #fff; }
+.gallery { background: var(--fog); }
+.pricing { background: var(--cloud); }
+.feat-card { background: #fff; border: 0; border-radius: 16px; box-shadow: var(--shadow-1); padding: 26px; }
+.feat-card:hover { box-shadow: var(--shadow-2); transform: translateY(-2px); background: #fff; }
+.feat-ico { background: #eef4ff; color: var(--c-primary); border: 0; border-radius: 8px; }
+.metrics { --metrics-bg: var(--c-ink); border-block: 0; }
+.metrics .metric-v { color: #fff; }
+.metrics .metric-l, .metrics .logos-lead { color: #99a3ad; }
+.g-item figcaption { background: rgba(20,26,33,.86); border-radius: 4px; }
+.quote-card { background: #fff; border: 0; border-radius: 16px; box-shadow: var(--shadow-1);
+  --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--c-primary); }
+.tier { background: #fff; border: 0; border-radius: 16px; box-shadow: var(--shadow-1); }
+.tier-feat { outline: 2px solid var(--c-primary); outline-offset: -2px; }
+.tier-badge { background: var(--c-primary); border-radius: 4px; font-size: 10px; letter-spacing: .1em; }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--c-primary); }
+.faq-item { border-bottom-color: #e2e6ea; }
+.cta-band { background: var(--c-primary); color: #fff; border: 0; border-radius: 16px; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: rgba(255,255,255,.86); }
+.cta-band .btn-primary { background: #fff; color: var(--c-primary); }
+.cta-band .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.5); }
+.spec { --spec-bg: var(--cloud); }
+.input, .badge2, .tabs, .tabs button, .sw { border-radius: 4px; }

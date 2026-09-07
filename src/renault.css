@@ -1,0 +1,53 @@
+/* Renault — two-tone bands, scarce sunlight yellow, square geometry, stacked headlines. */
+:root { --maxw: 1300px; --sect: clamp(56px, 7vw, 92px); --shadow-1: none; --shadow-2: none;
+  --yellow: #efdf00; --dark: #000000; }
+/* square: 2px on buttons, nothing on tiles */
+.btn, .input { border-radius: 2px; }
+.feat-card, .tier, .quote-card, .g-item, .cta-band, .hero-media img, .sc-media img, .sw { border-radius: 0; }
+.badge2, .tabs, .tabs button, .tier-badge { border-radius: 999px; }
+.nav { --nav-bg: rgba(255,255,255,.96); border-bottom-color: #e6e6e6; }
+.brand { font-weight: 700; letter-spacing: .16em; font-size: 16px; }
+.brand-ico { color: #000; }
+.nav-links a { font-weight: 500; font-size: 14px; }
+.btn { font-weight: 600; padding: 15px 30px; }
+.btn-primary { background: var(--yellow); color: #000; }
+.btn-primary:hover { background: #f6e93a; }
+.btn-secondary { background: transparent; border-color: #000; color: #000; }
+.btn-secondary:hover { background: #f4f4f4; }
+.eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .14em; font-size: 11px; font-weight: 600; }
+.eyebrow { color: #000; }
+/* headlines stack cleanly at 0.95 */
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; line-height: .95; letter-spacing: -.02em; }
+.hero-title em { background: var(--yellow); padding: 0 .1em; }
+.logos { background: #f4f4f4; border-block: 0; }
+.logo-item { font-weight: 600; }
+/* photography-first tiles: photo full bleed, copy stacked beneath */
+.feat-card { background: #f4f4f4; border: 0; padding: 24px; }
+.feat-ico { background: var(--yellow); color: #000; border: 0; border-radius: 0; }
+.g-item figcaption { background: #000; color: #fff; border-radius: 0; letter-spacing: .12em; font-size: 10px; }
+/* the black storytelling band */
+.metrics { --metrics-bg: var(--dark); border-block: 0; }
+.metrics .metric-v { color: var(--yellow); }
+.metrics .metric-l, .metrics .logos-lead { color: #8f8f8f; }
+.quote-card { background: var(--dark); color: #fff; border: 0; --quote-align: left; --quote-by-just: flex-start; }
+.quote-text { color: #fff; }
+.quote-by b { color: #fff; } .quote-by span { color: #8f8f8f; }
+.quote-mark { color: var(--yellow); }
+.q-av { border-radius: 0; }
+.pricing { background: #f4f4f4; }
+.tier { background: #fff; border: 0; }
+.tier-feat { outline: 3px solid var(--yellow); outline-offset: -3px; }
+.tier-badge { background: var(--yellow); color: #000; letter-spacing: .1em; font-size: 10px; }
+.tier-feats i, .sc-points i, .faq-mk { color: #000; }
+.faq-item { border-bottom-color: #e6e6e6; }
+.cta-band { background: var(--dark); color: #fff; border: 0; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: #8f8f8f; }
+.cta-band .btn-secondary { color: #fff; border-color: rgba(255,255,255,.5); }
+.foot { background: var(--dark); --foot-bg: var(--dark); border-top: 0; }
+.foot .brand, .foot .brand-ico { color: #fff; }
+.fcol h4 { color: var(--yellow); letter-spacing: .12em; }
+.fcol a, .foot-tag { color: #cfcfcf; }
+.foot-legal { color: #8f8f8f; border-top-color: #2a2a2a; }
+.foot-socials a { border-color: #2a2a2a; color: #cfcfcf; border-radius: 0; }
+.spec { --spec-bg: #f4f4f4; }

@@ -1,0 +1,334 @@
+{
+  "slug": "dell-1996",
+  "name": "Dell 1996",
+  "category": "Retro web",
+  "look": "A literal black page frame around flat colour-block ribbon cards, Arial Black titles over Times body, and hand-cut GIF stickers.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "bold"
+  ],
+  "fonts": {
+    "display": "\"Archivo Black\", \"Arial Black\", sans-serif",
+    "body": "\"Tinos\", \"Times New Roman\", Times, serif",
+    "mono": "\"Courier Prime\", \"Courier New\", monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Tinos:ital,wght@0,400;0,700;1,400&family=Courier+Prime:wght@400;700&display=swap"
+  },
+  "variants": {
+    "nav": "chrome",
+    "hero": "split",
+    "features": "list",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-desktop-tower",
+    "name": "AXION COMPUTER"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "PRODUCTS",
+        "href": "features"
+      },
+      {
+        "label": "SERVICE",
+        "href": "showcase-1"
+      },
+      {
+        "label": "SUPPORT",
+        "href": "faq"
+      },
+      {
+        "label": "ABOUT",
+        "href": "showcase-0"
+      },
+      {
+        "label": "ORDER",
+        "href": "pricing"
+      }
+    ],
+    "cta": "BUY NOW",
+    "cta2": "ACCOUNT"
+  },
+  "hero": {
+    "eyebrow": "BUILD-TO-ORDER SINCE 1984",
+    "title": "THE COMPUTER YOU <em>ACTUALLY ORDERED</em>",
+    "sub": "Configure it, we build it, it ships in five days. No middleman, no shelf stock, no paying for a component you did not want.",
+    "cta1": "CONFIGURE A SYSTEM",
+    "cta2": "REQUEST A CATALOG",
+    "image": "photo-1550745165-9bc0b252726f",
+    "ratio": 0.7,
+    "stats": [
+      {
+        "v": "5 DAYS",
+        "l": "TO SHIP"
+      },
+      {
+        "v": "1-800",
+        "l": "TO ORDER"
+      },
+      {
+        "v": "30 DAY",
+        "l": "RETURNS"
+      }
+    ]
+  },
+  "logo_lead": "AS SEEN IN",
+  "logos": [
+    "PC MAGAZINE",
+    "BYTE",
+    "PC WORLD",
+    "COMPUTER SHOPPER",
+    "INFOWORLD",
+    "WINDOWS SOURCES"
+  ],
+  "features": {
+    "eyebrow": "PRODUCT FAMILIES",
+    "title": "FOUR LINES, ONE CATALOG",
+    "sub": "Each family is built to order from the same parts bin, so the configuration is yours rather than a bundle.",
+    "items": [
+      {
+        "icon": "ph-laptop",
+        "title": "LATITUDE — NOTEBOOKS",
+        "body": "Portable systems from 5.9 lbs, with a docking station that does not require a second power brick."
+      },
+      {
+        "icon": "ph-desktop-tower",
+        "title": "OPTIPLEX GX — DESKTOPS",
+        "body": "Managed desktops with a chassis that opens without tools and a documented parts list."
+      },
+      {
+        "icon": "ph-hard-drives",
+        "title": "POWEREDGE — SERVERS",
+        "body": "Rack and tower servers with hot-swap drives and a three-year on-site contract."
+      },
+      {
+        "icon": "ph-package",
+        "title": "AXIONWARE — SOFTWARE",
+        "body": "Preinstalled and licensed, with the media in the box rather than a recovery partition."
+      },
+      {
+        "icon": "ph-phone-call",
+        "title": "1-800 ORDERING",
+        "body": "A person answers. They can read your configuration back to you and change it."
+      },
+      {
+        "icon": "ph-truck",
+        "title": "FIVE-DAY SHIP",
+        "body": "Built after you order and shipped within five business days, or the freight is free."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "SERVICE",
+      "title": "NEXT-BUSINESS-DAY ON SITE",
+      "body": "A technician comes to you the next business day for the length of the warranty. Parts are stocked regionally, so the visit and the part arrive together rather than in two separate weeks.",
+      "points": [
+        "Technician on site next business day",
+        "Parts stocked regionally",
+        "Three-year contract available"
+      ],
+      "image": "photo-1518770660439-4636190af475",
+      "cta": "SERVICE PLANS"
+    },
+    {
+      "eyebrow": "ABOUT",
+      "title": "WE SELL DIRECT",
+      "body": "No dealer network and no retail markup. You configure the machine, we build that machine, and the price on the page is the price you pay.",
+      "points": [
+        "No dealer markup",
+        "Configured to order, not from stock",
+        "Price on the page is the price"
+      ],
+      "image": "photo-1504384308090-c894fdcc538d",
+      "cta": "ABOUT AXION"
+    }
+  ],
+  "metric_lead": "AXION BY THE NUMBERS",
+  "metrics": [
+    {
+      "v": "5 DAYS",
+      "l": "TO SHIP"
+    },
+    {
+      "v": "30 DAY",
+      "l": "MONEY BACK"
+    },
+    {
+      "v": "3 YEAR",
+      "l": "ON-SITE SERVICE"
+    },
+    {
+      "v": "1-800",
+      "l": "DIRECT ORDERING"
+    }
+  ],
+  "gallery": {
+    "title": "CATALOG",
+    "sub": "Current systems and configurations.",
+    "items": [
+      {
+        "id": "photo-1550745165-9bc0b252726f",
+        "tag": "DESKTOPS",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1518770660439-4636190af475",
+        "tag": "COMPONENTS",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1504384308090-c894fdcc538d",
+        "tag": "OFFICE",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "SERVERS",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1487017159836-4e23ece2e4cf",
+        "tag": "NOTEBOOKS",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "SOFTWARE",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "I called the 800 number, changed the drive size, and the man read the whole configuration back to me. Then it arrived on Thursday exactly as described.",
+    "name": "H. R. Whitfield",
+    "role": "Systems Manager",
+    "avatar": "photo-1573496359142-b8d87734a5a2"
+  },
+  "pricing": {
+    "title": "ORDER",
+    "sub": "Configure and order direct. No dealer, no markup.",
+    "tiers": [
+      {
+        "name": "LATITUDE LX",
+        "price": "$1,899",
+        "period": "",
+        "desc": "Notebook, 5.9 lbs.",
+        "features": [
+          "133 MHz processor",
+          "16 MB RAM",
+          "1.08 GB drive",
+          "One-year warranty"
+        ],
+        "cta": "CONFIGURE"
+      },
+      {
+        "name": "OPTIPLEX GX",
+        "price": "$2,349",
+        "period": "",
+        "desc": "Managed desktop.",
+        "features": [
+          "166 MHz processor",
+          "32 MB RAM",
+          "2.1 GB drive",
+          "Three-year on-site"
+        ],
+        "cta": "CONFIGURE",
+        "featured": true,
+        "badge": "BEST SELLER"
+      },
+      {
+        "name": "POWEREDGE 2100",
+        "price": "$4,999",
+        "period": "",
+        "desc": "Departmental server.",
+        "features": [
+          "Dual processor capable",
+          "64 MB RAM",
+          "4.3 GB hot-swap",
+          "Three-year on-site"
+        ],
+        "cta": "CONFIGURE"
+      }
+    ]
+  },
+  "faq": {
+    "title": "SUPPORT",
+    "items": [
+      {
+        "q": "How long until it ships?",
+        "a": "Five business days from order for a standard configuration. If we miss that, the freight is on us — that is a policy, not a goodwill gesture."
+      },
+      {
+        "q": "Can I change my configuration after ordering?",
+        "a": "Yes, until it enters the build queue, which is usually the following morning. Call the 800 number and the representative can amend it."
+      },
+      {
+        "q": "What does on-site service cover?",
+        "a": "A technician at your location the next business day for the warranty term, with the part in hand. Parts are stocked regionally so the two arrive together."
+      },
+      {
+        "q": "Is there a return period?",
+        "a": "Thirty days, money back, for any reason. You pay the return freight unless the system was misconfigured by us."
+      }
+    ]
+  },
+  "cta": {
+    "title": "CONFIGURE YOUR SYSTEM",
+    "sub": "Built after you order and shipped in five business days.",
+    "btn1": "CONFIGURE A SYSTEM",
+    "btn2": "CALL 1-800-AXION"
+  },
+  "footer": {
+    "tagline": "Build-to-order since 1984.",
+    "columns": [
+      {
+        "title": "PRODUCTS",
+        "links": [
+          "Latitude",
+          "OptiPlex",
+          "PowerEdge",
+          "Axionware"
+        ]
+      },
+      {
+        "title": "SERVICE",
+        "links": [
+          "On-site",
+          "Warranty",
+          "Parts",
+          "Contracts"
+        ]
+      },
+      {
+        "title": "SUPPORT",
+        "links": [
+          "Manuals",
+          "Drivers",
+          "FAQ",
+          "Contact"
+        ]
+      },
+      {
+        "title": "COMPANY",
+        "links": [
+          "About",
+          "Careers",
+          "Press",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 1996 Axion Computer Corporation"
+  },
+  "specimen": "BUILD TO ORDER",
+  "notes": [
+    "Every page sits inside a literal black outer frame about 8px thick — the design treats the browser window as a printed picture frame.",
+    "Flat colour-block ribbon cards tint each product family with its own catalogue colour. No gradients, no shadows, no opacity anywhere.",
+    "Type is three-tier: a chunky black display for section titles, a bold sans for product rows, and Times for all body copy.",
+    "Hand-cut GIF stickers overlay the layout — a yellow tab in the corner, angled NEW bursts, round award seals.",
+    "Dell red is reserved for exactly two things: the main CTA panel and the phone number. It is never decorative."
+  ]
+}

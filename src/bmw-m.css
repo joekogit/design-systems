@@ -1,0 +1,55 @@
+/* BMW M — near black, uppercase display, tricolour as stripe dividers only. */
+:root { --maxw: 1340px; --sect: clamp(56px, 7vw, 92px); --shadow-1: none; --shadow-2: none;
+  --m-blue-l: #2e9bd6; --m-blue-d: #16214b; --m-red: #e2001a;
+  --hero-scrim: linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.12) 44%, rgba(0,0,0,.9) 100%); }
+.btn, .feat-card, .tier, .quote-card, .g-item, .cta-band, .input, .hero-media img, .sc-media img,
+.tier-badge, .badge2, .tabs, .tabs button, .sw, .q-av { border-radius: 0; }
+.nav { --nav-bg: rgba(0,0,0,.82); backdrop-filter: blur(10px); border-bottom: 0; }
+/* the M tricolour as a stripe divider — never a fill */
+.nav::after { content: ""; display: block; height: 4px;
+  background: linear-gradient(90deg, var(--m-blue-l) 0 33.3%, var(--m-blue-d) 33.3% 66.6%, var(--m-red) 66.6% 100%); }
+.brand { font-weight: 800; letter-spacing: .2em; font-size: 15px; }
+.brand-ico { color: var(--m-red); }
+.nav-links a { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 600; }
+.btn { text-transform: uppercase; letter-spacing: .14em; font-size: 11px; font-weight: 700; padding: 16px 32px; }
+.btn-primary { background: #fff; color: #000; }
+.btn-primary:hover { background: #d8d8d8; }
+.btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.5); }
+.btn-secondary:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+.eyebrow, .logos-lead, .metric-l, .hstat span, .g-item figcaption, .fcol h4, .tier-per {
+  text-transform: uppercase; letter-spacing: .16em; font-size: 10.5px; font-weight: 600; }
+.eyebrow { color: rgba(255,255,255,.7); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title, .feat-title, .tier-name, .metric-v, .hstat b, .faq-item summary {
+  text-transform: uppercase; font-weight: 700; letter-spacing: .01em; }
+.hero-title { color: #fff; }
+.hero-title em { color: var(--m-red); }
+.hero-sub { color: rgba(255,255,255,.86); text-transform: none; font-weight: 400; }
+.hero-stats { border-top-color: rgba(255,255,255,.24); }
+.logos { border-block-color: rgba(255,255,255,.14); }
+.logo-item { text-transform: uppercase; letter-spacing: .18em; font-size: 10.5px; color: rgba(255,255,255,.5); }
+.feat-grid.v-list { gap: 0; }
+.v-list .feat-card { background: transparent; border: 0; border-top: 1px solid rgba(255,255,255,.16);
+  padding: var(--s-lg) 0; }
+.feat-ico { background: transparent; border: 0; color: var(--m-red); width: auto; height: auto; font-size: 22px; }
+.feat-title { font-size: 13px; letter-spacing: .12em; }
+.feat-body { text-transform: none; font-weight: 400; }
+.metrics { --metrics-bg: transparent; border-block: 1px solid rgba(255,255,255,.16); }
+.metrics .metric-v { color: #fff; }
+.g-item { background: #0a0a0a; }
+.g-item figcaption { background: rgba(0,0,0,.82); letter-spacing: .18em; font-size: 10px; }
+.quote-card { background: transparent; border: 0; border-top: 4px solid var(--m-red);
+  --quote-align: left; --quote-by-just: flex-start; padding-inline: 0; }
+.quote-text { text-transform: none; font-weight: 400; }
+.quote-mark { display: none; }
+.tier { background: #0a0a0a; border: 1px solid rgba(255,255,255,.16); }
+.tier-feat { border-color: var(--m-red); }
+.tier-name { font-size: 14px; letter-spacing: .16em; }
+.tier-desc, .tier-feats li { text-transform: none; font-weight: 400; }
+.tier-badge { background: var(--m-red); letter-spacing: .14em; font-size: 9.5px; }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--m-red); }
+.faq-item { border-bottom-color: rgba(255,255,255,.16); }
+.faq-item summary { font-size: 13px; letter-spacing: .1em; }
+.faq-a { text-transform: none; }
+.cta-band { background: transparent; border: 0; border-top: 4px solid var(--m-red);
+  border-bottom: 1px solid rgba(255,255,255,.16); }
+.spec { --spec-bg: #050505; border-top-color: rgba(255,255,255,.16); }

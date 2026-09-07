@@ -1,0 +1,54 @@
+/* NVIDIA — one green on monochrome, two-mode rhythm, 2px angular geometry. */
+:root { --maxw: 1260px; --sect: clamp(56px, 7vw, 92px); --shadow-1: none; --shadow-2: none;
+  --green: #76b900; --soft: #1a1a1a;
+  --hero-scrim: linear-gradient(180deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,.25) 44%, rgba(0,0,0,.92) 100%); }
+/* 2px on every interactive element — no pills, no soft chrome */
+.btn, .feat-card, .tier, .quote-card, .g-item, .cta-band, .input, .badge2, .tabs, .tabs button,
+.hero-media img, .sc-media img, .sw, .feat-ico, .tier-badge, .g-item figcaption { border-radius: 2px; }
+.nav { --nav-bg: rgba(0,0,0,.92); border-bottom-color: #2a2a2a; }
+.brand { font-weight: 700; letter-spacing: -.01em; text-transform: uppercase; }
+.brand-ico { color: var(--green); }
+.nav-links a { text-transform: uppercase; letter-spacing: .06em; font-size: 12px; font-weight: 600; }
+.btn { font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: 12px; padding: 14px 26px; }
+.btn-primary { background: var(--green); color: #000; }
+.btn-primary:hover { background: #8ad000; }
+.btn-secondary { background: transparent; border-color: #3a3a3a; color: #fff; }
+.btn-secondary:hover { background: rgba(255,255,255,.06); border-color: var(--green); }
+.eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .1em; font-size: 11px; font-weight: 600; }
+.eyebrow { color: var(--green); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 700; letter-spacing: -.01em; }
+.hero-title em { color: var(--green); }
+.hero-sub { color: rgba(255,255,255,.84); }
+.hero-stats { border-top-color: rgba(255,255,255,.22); }
+/* the light body band */
+.features { background: #fff; color: #1a1a1a; }
+.features .lede, .features .feat-body { color: #4a4a4a; }
+.features .t-display-lg { color: #1a1a1a; }
+.feat-card { background: #f5f5f5; border-color: #e0e0e0; }
+.feat-card:hover { background: #ededed; border-color: var(--green); }
+.feat-ico { background: #fff; border: 1px solid #e0e0e0; color: var(--green); }
+.feat-title { color: #1a1a1a; }
+.logos { border-block-color: #2a2a2a; }
+.metrics { --metrics-bg: var(--soft); border-block: 0; }
+.metric-v { color: var(--green); }
+.g-item { background: var(--soft); border-color: #2a2a2a; }
+.g-item figcaption { background: rgba(0,0,0,.88); border: 1px solid #2a2a2a; }
+.quote-card { background: var(--soft); border-color: #2a2a2a; --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--green); }
+.q-av { border-radius: 2px; }
+.pricing { background: #fff; color: #1a1a1a; }
+.pricing .t-display-lg { color: #1a1a1a; } .pricing .lede { color: #4a4a4a; }
+.tier { background: #f5f5f5; border-color: #e0e0e0; }
+.tier-name, .tier-num { color: #1a1a1a; }
+.tier-desc, .tier-feats li { color: #4a4a4a; }
+.tier-feat { background: #1a1a1a; border-color: #1a1a1a; }
+.tier-feat .tier-name, .tier-feat .tier-num { color: #fff; }
+.tier-feat .tier-desc, .tier-feat .tier-feats li { color: #a8a8a8; }
+.tier-feat .tier-feats i { color: var(--green); }
+.tier-feats i, .sc-points i { color: var(--green); }
+.tier .btn-secondary { color: #1a1a1a; border-color: #c8c8c8; }
+.tier-badge { background: var(--green); color: #000; font-size: 10px; letter-spacing: .08em; }
+.faq-item { border-bottom-color: #2a2a2a; }
+.faq-mk { color: var(--green); }
+.cta-band { background: var(--soft); border-color: #2a2a2a; }
+.spec { --spec-bg: var(--soft); }

@@ -1,0 +1,334 @@
+{
+  "slug": "vodafone",
+  "name": "Vodafone",
+  "category": "Media & consumer tech",
+  "look": "Monumental uppercase display at weight 800, one red on pill-filled and pill-outline buttons, and a two-band dark/light rhythm.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "fill"
+  ],
+  "fonts": {
+    "display": "\"Archivo\", -apple-system, sans-serif",
+    "body": "\"Inter\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "flat",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-quotes",
+    "name": "RESONANCE"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Mobile",
+        "href": "features"
+      },
+      {
+        "label": "Broadband",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Business",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Store",
+        "href": "pricing"
+      },
+      {
+        "label": "Help",
+        "href": "faq"
+      }
+    ],
+    "cta": "Shop now",
+    "cta2": "My Resonance"
+  },
+  "hero": {
+    "eyebrow": "UNLIMITED 5G",
+    "title": "TOGETHER <em>WE CAN</em>",
+    "sub": "Unlimited 5G on a network that publishes its coverage honestly, with a price that does not double after the first year.",
+    "cta1": "Shop now",
+    "cta2": "Check coverage",
+    "image": "photo-1512499617640-c74ae3a79d37",
+    "ratio": 0.66,
+    "stats": [
+      {
+        "v": "99%",
+        "l": "POPULATION COVERAGE"
+      },
+      {
+        "v": "No",
+        "l": "YEAR-TWO INCREASE"
+      },
+      {
+        "v": "30 DAYS",
+        "l": "TO CHANGE YOUR MIND"
+      }
+    ]
+  },
+  "logo_lead": "RECOGNISED FOR",
+  "logos": [
+    "Ofcom",
+    "RootMetrics",
+    "Umlaut",
+    "Opensignal",
+    "uSwitch",
+    "Which?"
+  ],
+  "features": {
+    "eyebrow": "MOBILE",
+    "title": "A tariff you can read",
+    "sub": "The industry's tricks — the year-two rise, the fair-use asterisk, the roaming surprise — removed one at a time.",
+    "items": [
+      {
+        "icon": "ph-cell-signal-high",
+        "title": "Honest coverage",
+        "body": "A map based on measured signal, not modelled prediction, with the difference explained."
+      },
+      {
+        "icon": "ph-currency-circle-dollar",
+        "title": "No year-two rise",
+        "body": "The price you sign up for is the price for the whole contract. It is written into the terms."
+      },
+      {
+        "icon": "ph-airplane-tilt",
+        "title": "Roaming included",
+        "body": "Seventy destinations at no extra cost, with the fair-use limit stated as a number."
+      },
+      {
+        "icon": "ph-infinity",
+        "title": "Genuinely unlimited",
+        "body": "No speed cap after a hidden threshold, and no traffic management on the unlimited plans."
+      },
+      {
+        "icon": "ph-arrows-clockwise",
+        "title": "Change any time",
+        "body": "Move up or down a plan monthly without a fee or a retention conversation."
+      },
+      {
+        "icon": "ph-device-mobile",
+        "title": "Keep your number",
+        "body": "Ported within one working day, with the old contract cancellation handled for you."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "BROADBAND",
+      "title": "A speed you will actually get",
+      "body": "Advertised speeds are the minimum guaranteed to the majority, not a peak nobody reaches. If yours falls below it, you can leave without penalty — that is in the contract rather than the marketing.",
+      "points": [
+        "Guaranteed minimum speed in the contract",
+        "Leave without penalty if it is not met",
+        "Engineer visit included if it is not"
+      ],
+      "image": "photo-1558494949-ef010cbdcc31",
+      "cta": "BROADBAND"
+    },
+    {
+      "eyebrow": "BUSINESS",
+      "title": "Connectivity with an SLA",
+      "body": "Business lines carry an availability SLA with compensation defined in advance, and a support number answered by an engineer rather than a script.",
+      "points": [
+        "Availability SLA with defined compensation",
+        "Engineer-answered support line",
+        "Backup connection options"
+      ],
+      "image": "photo-1454165804606-c3d57bc86b40",
+      "cta": "BUSINESS"
+    }
+  ],
+  "metric_lead": "THE NETWORK",
+  "metrics": [
+    {
+      "v": "99%",
+      "l": "POPULATION COVERAGE"
+    },
+    {
+      "v": "70",
+      "l": "ROAMING DESTINATIONS"
+    },
+    {
+      "v": "0",
+      "l": "YEAR-TWO INCREASE"
+    },
+    {
+      "v": "1 DAY",
+      "l": "NUMBER PORTING"
+    }
+  ],
+  "gallery": {
+    "title": "STORE",
+    "sub": "Handsets, plans and broadband.",
+    "items": [
+      {
+        "id": "photo-1512499617640-c74ae3a79d37",
+        "tag": "Handsets",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1580910051074-3eb694886505",
+        "tag": "Plans",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Broadband",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1454165804606-c3d57bc86b40",
+        "tag": "Business",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1523275335684-37898b6baf30",
+        "tag": "Wearables",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1521737604893-d14cc237f11d",
+        "tag": "Support",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "The bill in month thirteen was the same as month one. I had genuinely forgotten that was possible.",
+    "name": "Rachel Adeyemi",
+    "role": "Customer since 2023",
+    "avatar": "photo-1494790108377-be9c29b29330"
+  },
+  "pricing": {
+    "title": "PLANS",
+    "sub": "No year-two increase. Written into the terms.",
+    "tiers": [
+      {
+        "name": "ESSENTIAL",
+        "price": "£12",
+        "period": "/month",
+        "desc": "For light use.",
+        "features": [
+          "20GB data",
+          "5G included",
+          "EU roaming",
+          "No year-two rise"
+        ],
+        "cta": "Shop now"
+      },
+      {
+        "name": "UNLIMITED",
+        "price": "£22",
+        "period": "/month",
+        "desc": "No cap, no throttle.",
+        "features": [
+          "Unlimited data",
+          "No speed cap",
+          "70 roaming destinations",
+          "No year-two rise"
+        ],
+        "cta": "Shop now",
+        "featured": true,
+        "badge": "MOST POPULAR"
+      },
+      {
+        "name": "UNLIMITED MAX",
+        "price": "£30",
+        "period": "/month",
+        "desc": "Fastest speeds and extras.",
+        "features": [
+          "Everything in Unlimited",
+          "Fastest 5G tier",
+          "Entertainment included",
+          "Priority support"
+        ],
+        "cta": "Shop now"
+      }
+    ]
+  },
+  "faq": {
+    "title": "HELP",
+    "items": [
+      {
+        "q": "Is the price really fixed?",
+        "a": "Yes, for the contract term, written into the terms rather than promised in marketing. There is no annual inflation-linked increase."
+      },
+      {
+        "q": "What does unlimited actually mean?",
+        "a": "No data cap and no speed reduction after a threshold. Traffic management applies only to the two lower tiers and is described in the plan detail."
+      },
+      {
+        "q": "How accurate is the coverage map?",
+        "a": "It is built from measured signal reports rather than propagation modelling, and the methodology is published. Where confidence is low, the map says so."
+      },
+      {
+        "q": "Can I leave if it is bad?",
+        "a": "Within thirty days, yes, for any reason, with the handset returned. After that, broadband customers can leave without penalty if the guaranteed minimum speed is not met."
+      }
+    ]
+  },
+  "cta": {
+    "title": "SWITCH TODAY",
+    "sub": "Thirty days to change your mind, and a price that stays the same.",
+    "btn1": "Shop now",
+    "btn2": "Check coverage"
+  },
+  "footer": {
+    "tagline": "Together we can.",
+    "columns": [
+      {
+        "title": "MOBILE",
+        "links": [
+          "Plans",
+          "Handsets",
+          "SIM only",
+          "Roaming"
+        ]
+      },
+      {
+        "title": "BROADBAND",
+        "links": [
+          "Fibre",
+          "Bundles",
+          "Coverage",
+          "Speed test"
+        ]
+      },
+      {
+        "title": "BUSINESS",
+        "links": [
+          "Mobile",
+          "Connectivity",
+          "Cloud",
+          "Contact"
+        ]
+      },
+      {
+        "title": "HELP",
+        "links": [
+          "Support",
+          "Coverage",
+          "Billing",
+          "Complaints"
+        ]
+      }
+    ],
+    "legal": "© 2026 Resonance Telecom"
+  },
+  "specimen": "TOGETHER WE CAN",
+  "notes": [
+    "Massive uppercase display at weight 800 is the signature; weight-300 siblings handle the calmer secondary moments.",
+    "One red carries every CTA — pill-filled for primary, pill-outline for secondary. There is no third button variant.",
+    "The speechmark orb is the only decorative chrome that is not a call to action, and it anchors the centre of the page.",
+    "Pill geometry on every interactive shape: 60px on buttons, 32px on inline badges, with card chrome staying at 6px.",
+    "The page rhythm is two bands — dark hero, light content. There are no mid-tone greys; contrast does the elevation."
+  ]
+}

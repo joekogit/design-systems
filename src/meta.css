@@ -1,0 +1,46 @@
+/* Meta — stark white, 32px softened product tiles, two-tier pill CTAs. */
+:root { --maxw: 1240px; --sect: clamp(56px, 7vw, 96px); --shadow-1: none; --shadow-2: none;
+  --cobalt: #0064e0; --ink-btn: #1c2b33; }
+.nav { --nav-bg: rgba(255,255,255,.94); backdrop-filter: blur(10px); }
+/* the saturated promo banner above the nav — time-bound, not standing chrome */
+.nav::before { content: "Free shipping and 30-day returns on Visor 3 — ends Sunday";
+  display: block; background: #ffd233; color: #1c2b33; text-align: center;
+  font-size: 12px; font-weight: 600; padding: 9px 16px; }
+.brand { font-weight: 800; letter-spacing: -.03em; }
+.brand-ico { color: var(--cobalt); }
+/* two tiers of primary: ink for marketing, cobalt for commerce */
+.btn { border-radius: 999px; font-weight: 600; padding: 14px 28px; }
+.btn-primary { background: var(--ink-btn); color: #fff; }
+.btn-primary:hover { background: #2c3f4a; }
+.btn-secondary { background: #f0f2f5; border-color: transparent; }
+.btn-secondary:hover { background: #e4e6eb; border-color: transparent; }
+.tier .btn-primary, .nav-act .btn-primary { background: var(--cobalt); }
+.tier .btn-primary:hover, .nav-act .btn-primary:hover { background: #1a75f0; }
+.eyebrow, .logos-lead, .metric-l { text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 700; }
+.eyebrow { color: var(--cobalt); }
+.t-display-xl, .t-display-lg, .t-display-md, .sc-title { font-weight: 800; letter-spacing: -.035em; }
+.hero-title em { color: var(--cobalt); }
+/* generous 32px softening on showcase tiles */
+.hero-media img, .sc-media img, .g-item { border-radius: 32px; border: 0; }
+.logos { border-block-color: #e4e6eb; }
+.feat-card { background: #f0f2f5; border: 0; border-radius: 24px; padding: 28px; }
+.feat-ico { background: #fff; color: var(--cobalt); border: 0; border-radius: 999px; width: 48px; height: 48px; }
+.metrics { --metrics-bg: var(--ink-btn); border-block: 0; }
+.metrics .metric-v { color: #fff; }
+.metrics .metric-l, .metrics .logos-lead { color: #9db0bb; }
+.g-item figcaption { background: rgba(28,43,51,.86); border-radius: 999px; }
+.quote-card { background: #f0f2f5; border: 0; border-radius: 32px; --quote-align: left; --quote-by-just: flex-start; }
+.quote-mark { color: var(--cobalt); }
+.q-av { border-radius: 999px; }
+.tier { background: #f0f2f5; border: 0; border-radius: 24px; }
+.tier-feat { background: #fff; outline: 2px solid var(--cobalt); outline-offset: -2px; }
+.tier-badge { background: var(--cobalt); border-radius: 999px; font-size: 10px; letter-spacing: .1em; }
+.tier-feats i, .sc-points i, .faq-mk { color: var(--cobalt); }
+.faq-item { border-bottom-color: #e4e6eb; }
+.cta-band { background: var(--ink-btn); color: #fff; border: 0; border-radius: 32px; }
+.cta-band .t-display-md { color: #fff; }
+.cta-band .lede { color: #9db0bb; }
+.cta-band .btn-primary { background: #fff; color: var(--ink-btn); }
+.cta-band .btn-secondary { background: rgba(255,255,255,.14); color: #fff; }
+.spec { --spec-bg: #f7f8fa; }
+.input, .badge2, .tabs, .tabs button { border-radius: 999px; }

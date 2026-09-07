@@ -1,0 +1,334 @@
+{
+  "slug": "ibm",
+  "name": "IBM",
+  "category": "Media & consumer tech",
+  "look": "Carbon design system chrome — square corners everywhere, weight-300 display, one blue, and a charcoal footer as the only dark surface.",
+  "scheme": "light",
+  "icon_weights": [
+    "regular",
+    "bold"
+  ],
+  "fonts": {
+    "display": "\"IBM Plex Sans\", -apple-system, sans-serif",
+    "body": "\"IBM Plex Sans\", -apple-system, sans-serif",
+    "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "google": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Mono:wght@400&display=swap"
+  },
+  "variants": {
+    "nav": "bar",
+    "hero": "split",
+    "features": "grid",
+    "cards": "bordered",
+    "gallery": "grid"
+  },
+  "brand": {
+    "mark": "ph-squares-four",
+    "name": "Meridian Systems"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Products",
+        "href": "features"
+      },
+      {
+        "label": "Solutions",
+        "href": "showcase-0"
+      },
+      {
+        "label": "Consulting",
+        "href": "showcase-1"
+      },
+      {
+        "label": "Support",
+        "href": "gallery"
+      },
+      {
+        "label": "Pricing",
+        "href": "pricing"
+      }
+    ],
+    "cta": "Contact sales",
+    "cta2": "Log in"
+  },
+  "hero": {
+    "eyebrow": "HYBRID CLOUD AND AI",
+    "title": "Enterprise technology <em>that survives an audit</em>",
+    "sub": "Hybrid cloud, data platforms and AI governance built for organisations where a wrong answer has a regulator attached to it.",
+    "cta1": "Contact sales",
+    "cta2": "Explore products",
+    "image": "photo-1558494949-ef010cbdcc31",
+    "ratio": 0.64,
+    "stats": [
+      {
+        "v": "170+",
+        "l": "Countries"
+      },
+      {
+        "v": "Governed",
+        "l": "AI by default"
+      },
+      {
+        "v": "On-prem",
+        "l": "Or cloud"
+      }
+    ]
+  },
+  "logo_lead": "TRUSTED BY REGULATED INDUSTRIES",
+  "logos": [
+    "Northwind",
+    "Corva",
+    "Tessera",
+    "Basisplan",
+    "Perigee",
+    "Halyard"
+  ],
+  "features": {
+    "eyebrow": "PRODUCTS",
+    "title": "Built for the constrained enterprise",
+    "sub": "The requirements that make consumer-grade tooling unusable are the starting point here.",
+    "items": [
+      {
+        "icon": "ph-cloud",
+        "title": "Hybrid cloud",
+        "body": "Workloads that run on-premise, in your cloud, or both, under one control plane."
+      },
+      {
+        "icon": "ph-shield-check",
+        "title": "AI governance",
+        "body": "Model lineage, drift monitoring and documented decisions, because someone will ask."
+      },
+      {
+        "icon": "ph-database",
+        "title": "Data platform",
+        "body": "Catalogued, governed data with lineage from source to dashboard."
+      },
+      {
+        "icon": "ph-lock-key",
+        "title": "Confidential computing",
+        "body": "Data encrypted in use, so even the operator cannot read it."
+      },
+      {
+        "icon": "ph-buildings",
+        "title": "Industry models",
+        "body": "Pre-built for banking, healthcare and insurance regulatory shapes."
+      },
+      {
+        "icon": "ph-users-three",
+        "title": "Consulting",
+        "body": "People who have done the migration before, available to do yours."
+      }
+    ]
+  },
+  "showcases": [
+    {
+      "eyebrow": "SOLUTIONS",
+      "title": "Governance is not a feature you add later",
+      "body": "Model lineage, approval workflow and drift monitoring are part of the platform rather than a compliance layer bolted on afterwards. When a regulator asks how a decision was made, the answer is a report rather than a project.",
+      "points": [
+        "Lineage from training data to decision",
+        "Approval workflow with sign-off recorded",
+        "Drift monitored and alerted on"
+      ],
+      "image": "photo-1454165804606-c3d57bc86b40",
+      "cta": "Explore governance"
+    },
+    {
+      "eyebrow": "CONSULTING",
+      "title": "People who have done it before",
+      "body": "Platform work fails on the organisational parts more often than the technical ones. Our consulting practice has run these migrations in the same industries and under the same constraints.",
+      "points": [
+        "Industry-specific delivery teams",
+        "Fixed-scope assessment engagements",
+        "Knowledge transfer contracted, not assumed"
+      ],
+      "image": "photo-1521737604893-d14cc237f11d",
+      "cta": "Consulting services"
+    }
+  ],
+  "metric_lead": "",
+  "metrics": [
+    {
+      "v": "170+",
+      "l": "COUNTRIES"
+    },
+    {
+      "v": "60+",
+      "l": "YEARS"
+    },
+    {
+      "v": "Governed",
+      "l": "AI BY DEFAULT"
+    },
+    {
+      "v": "Hybrid",
+      "l": "BY DESIGN"
+    }
+  ],
+  "gallery": {
+    "title": "SUPPORT",
+    "sub": "Documentation, reference architectures and training.",
+    "items": [
+      {
+        "id": "photo-1558494949-ef010cbdcc31",
+        "tag": "Cloud",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1454165804606-c3d57bc86b40",
+        "tag": "Governance",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1551288049-bebda4e38f71",
+        "tag": "Data",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1521737604893-d14cc237f11d",
+        "tag": "Consulting",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "tag": "Developers",
+        "ratio": 0.72
+      },
+      {
+        "id": "photo-1581091226033-d5c48150dbaa",
+        "tag": "Research",
+        "ratio": 0.72
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "The audit took four days instead of six weeks. Every model decision had lineage attached, which is the only reason that was possible.",
+    "name": "Margaret Ellison",
+    "role": "Head of Risk, Northwind Bank",
+    "avatar": "photo-1438761681033-6461ffad8d80"
+  },
+  "pricing": {
+    "title": "PRICING",
+    "sub": "Consumption-based, with committed-use discounts.",
+    "tiers": [
+      {
+        "name": "Essentials",
+        "price": "From $0",
+        "period": "",
+        "desc": "Evaluate on a small workload.",
+        "features": [
+          "Core platform",
+          "Community support",
+          "Standard SLA",
+          "Public cloud only"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "name": "Standard",
+        "price": "Consumption",
+        "period": "based",
+        "desc": "Production workloads.",
+        "features": [
+          "Full platform",
+          "AI governance",
+          "99.9% SLA",
+          "Business support"
+        ],
+        "cta": "Contact sales",
+        "featured": true,
+        "badge": "MOST ORGANISATIONS"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "desc": "Regulated and hybrid.",
+        "features": [
+          "On-premise deployment",
+          "Confidential computing",
+          "Dedicated support",
+          "Named architect"
+        ],
+        "cta": "Contact sales"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS",
+    "items": [
+      {
+        "q": "Can this run entirely on-premise?",
+        "a": "Yes. The full platform runs in your own data centre with the same control plane, which is why regulated customers can adopt it at all."
+      },
+      {
+        "q": "What does AI governance actually cover?",
+        "a": "Training-data lineage, model versioning, approval workflow with recorded sign-off, and ongoing drift monitoring — exported as an evidence pack."
+      },
+      {
+        "q": "Is consulting required?",
+        "a": "No, but most large migrations use it. Assessment engagements are fixed-scope so you can find out what is involved before committing."
+      },
+      {
+        "q": "How is it priced?",
+        "a": "By consumption, with committed-use discounts. Enterprise agreements are negotiated, and the rate card is provided before commercial discussions."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Talk to someone who has done this",
+    "sub": "Fixed-scope assessment engagements, so you can size the work first.",
+    "btn1": "Contact sales",
+    "btn2": "Explore products"
+  },
+  "footer": {
+    "tagline": "Enterprise technology that survives an audit.",
+    "columns": [
+      {
+        "title": "Products",
+        "links": [
+          "Cloud",
+          "Data",
+          "AI",
+          "Security"
+        ]
+      },
+      {
+        "title": "Solutions",
+        "links": [
+          "Banking",
+          "Healthcare",
+          "Insurance",
+          "Public sector"
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          "Documentation",
+          "Training",
+          "Community",
+          "Status"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Research",
+          "Careers",
+          "Legal"
+        ]
+      }
+    ],
+    "legal": "© 2026 Meridian Systems"
+  },
+  "specimen": "Governed by design",
+  "notes": [
+    "The marketing chrome is the design system. Buttons are square, inputs are square with a bottom rule, and corners stay at 0px throughout.",
+    "Light-weight display type — weight 300 at 42–76px — is the typographic signature. Bolding it makes it a different brand.",
+    "One accent blue carries every link, primary CTA and banner. There is no second brand colour.",
+    "White canvas, light grey and charcoal cover about 95% of surfaces.",
+    "The footer inverts to charcoal and is the only dark surface above the page break."
+  ]
+}
