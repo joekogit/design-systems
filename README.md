@@ -6,7 +6,7 @@ responsive page — so you can see what a design language actually does to a pri
 form field and a data table, not just to a hero.
 
 Open `index.html` to browse. 74 systems catalogued, 20 built out so far.
-See `DEPLOY.md` for publishing to Netlify.
+Deployed at https://joekonet-systems.netlify.app (systems.joeko.net pending). See `DEPLOY.md`.
 
 ## Why this exists
 
