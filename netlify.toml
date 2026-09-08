@@ -1,9 +1,15 @@
 # Netlify configuration for the design template library.
 # The site is fully static — no build step, no dependencies to install.
 
+# `netlify init` left two bad values in the site's stored build settings: the
+# publish directory as " ." (with a leading space) and the build command as the
+# literal string "# no build command". These netlify.toml values take precedence
+# over the stored ones, so they are stated explicitly rather than left empty --
+# an empty command falls back to the stored one.
 [build]
   publish = "."
-  command = ""
+  command = "echo 'static site: pages are committed pre-built, nothing to compile'"
+
 
 # Long-lived caching for generated pages' assets is unnecessary (everything is
 # inlined), but the pages themselves should revalidate so a rebuild shows up.
