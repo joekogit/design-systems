@@ -5,6 +5,22 @@
   var n = document.getElementById("n");
   var empty = document.querySelector(".empty");
   var state = { q: "", cat: "all", scheme: "all" };
+  var total = cards.length;
+  var banner = document.getElementById("active");
+  var bannerTxt = document.getElementById("activetxt");
+  var clearBtn = document.getElementById("clear");
+
+  /* Read the filters out of the DOM rather than trusting the last value we set.
+     Browsers restore the search box and the whole filtered page on a back
+     navigation, so a `state` that always starts empty disagrees with what the
+     user is actually looking at -- which reads as designs failing to load. */
+  function readState() {
+    state.q = q.value || "";
+    var cat = document.querySelector("[data-cat].is-on");
+    var sch = document.querySelector("[data-scheme].is-on");
+    state.cat = cat ? cat.dataset.cat : "all";
+    state.scheme = sch ? sch.dataset.scheme : "all";
+  }
 
   function apply() {
     var shown = 0, term = state.q.trim().toLowerCase();
@@ -18,7 +34,35 @@
     n.textContent = shown;
     empty.hidden = shown > 0;
     if (typeof badge === "function") badge();
+    announce(shown);
   }
+
+  /* Say plainly what is being filtered, wherever the panel happens to be. */
+  function announce(shown) {
+    var bits = [];
+    if (state.cat !== "all") bits.push(state.cat);
+    if (state.scheme !== "all") bits.push(state.scheme + " theme");
+    if (state.q.trim()) bits.push('"' + state.q.trim() + '"');
+    if (!bits.length) { banner.hidden = true; return; }
+    banner.hidden = false;
+    bannerTxt.innerHTML = "Showing <b>" + shown + "</b> of " + total +
+      " \u2014 filtered by " + bits.join(", ");
+  }
+
+  function clearAll() {
+    q.value = "";
+    document.querySelectorAll("[data-cat],[data-scheme]").forEach(function (b) {
+      b.classList.toggle("is-on", b.dataset.cat === "all" || b.dataset.scheme === "all");
+    });
+    readState();
+    apply();
+  }
+  clearBtn.addEventListener("click", clearAll);
+
+  /* A page restored from the back/forward cache does not re-run this script, and
+     a reload can restore the search box on its own. Re-read both, so the list,
+     the counter and the banner always agree with the controls on screen. */
+  window.addEventListener("pageshow", function () { readState(); apply(); });
 
   q.addEventListener("input", function () { state.q = q.value; apply(); });
   document.addEventListener("keydown", function (e) {
@@ -89,5 +133,6 @@
     root.setAttribute("data-theme", next); store("dl-theme", next); paint();
   });
   paint();
+  readState();
   apply();
 })();

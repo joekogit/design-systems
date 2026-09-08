@@ -61,6 +61,12 @@
         <span class="fcount" id="fcount" hidden></span>
       </button>
     </div>
+    <!-- Sits outside .filters, which collapses on mobile: a restored filter has to
+         stay visible, or coming back to the page just looks like designs missing. -->
+    <p class="active" id="active" hidden>
+      <span id="activetxt"></span>
+      <button class="clear" type="button" id="clear">Show all {{TOTAL}}</button>
+    </p>
     <div class="filters" id="filters">
       <div class="chips" role="group" aria-label="Filter by category">{{CHIPS}}</div>
       <div class="subrow">

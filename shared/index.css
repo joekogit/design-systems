@@ -210,3 +210,17 @@ a.card { border-color: var(--line-2); }
 @media (max-width: 400px) {
   .stats { grid-template-columns: repeat(2, 1fr); gap: 12px 8px; }
 }
+
+/* Active-filter banner. Lives beside the search row rather than inside the
+   collapsible panel, so a filter carried back by the browser announces itself. */
+.active { display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  margin: 10px 0 0; font-size: 13px; color: var(--ink-2); }
+.active b { color: var(--ink); font-weight: 600; }
+.clear { min-height: 32px; padding: 0 12px; border: 1px solid var(--line);
+  border-radius: 999px; background: var(--card); color: var(--ink);
+  font: inherit; font-size: 12.5px; cursor: pointer; }
+.clear:hover { border-color: var(--line-2); }
+@media (max-width: 760px) {
+  .active { margin-top: 8px; }
+  .clear { min-height: 44px; padding: 0 14px; }
+}

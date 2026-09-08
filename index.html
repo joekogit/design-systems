@@ -225,6 +225,20 @@ a.card { border-color: var(--line-2); }
   .stats { grid-template-columns: repeat(2, 1fr); gap: 12px 8px; }
 }
 
+/* Active-filter banner. Lives beside the search row rather than inside the
+   collapsible panel, so a filter carried back by the browser announces itself. */
+.active { display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  margin: 10px 0 0; font-size: 13px; color: var(--ink-2); }
+.active b { color: var(--ink); font-weight: 600; }
+.clear { min-height: 32px; padding: 0 12px; border: 1px solid var(--line);
+  border-radius: 999px; background: var(--card); color: var(--ink);
+  font: inherit; font-size: 12.5px; cursor: pointer; }
+.clear:hover { border-color: var(--line-2); }
+@media (max-width: 760px) {
+  .active { margin-top: 8px; }
+  .clear { min-height: 44px; padding: 0 14px; }
+}
+
 </style>
 </head>
 <body>
@@ -273,6 +287,12 @@ a.card { border-color: var(--line-2); }
         <span class="fcount" id="fcount" hidden></span>
       </button>
     </div>
+    <!-- Sits outside .filters, which collapses on mobile: a restored filter has to
+         stay visible, or coming back to the page just looks like designs missing. -->
+    <p class="active" id="active" hidden>
+      <span id="activetxt"></span>
+      <button class="clear" type="button" id="clear">Show all 74</button>
+    </p>
     <div class="filters" id="filters">
       <div class="chips" role="group" aria-label="Filter by category"><button class="chip is-on" type="button" data-cat="all">All<span class="chip-n">74</span></button><button class="chip" type="button" data-cat="AI &amp; LLM platforms">AI &amp; LLM platforms<span class="chip-n">12</span></button><button class="chip" type="button" data-cat="Developer tools &amp; IDEs">Developer tools &amp; IDEs<span class="chip-n">7</span></button><button class="chip" type="button" data-cat="Backend, database &amp; DevOps">Backend, database &amp; DevOps<span class="chip-n">8</span></button><button class="chip" type="button" data-cat="Productivity &amp; SaaS">Productivity &amp; SaaS<span class="chip-n">8</span></button><button class="chip" type="button" data-cat="Design &amp; creative tools">Design &amp; creative tools<span class="chip-n">6</span></button><button class="chip" type="button" data-cat="Fintech &amp; crypto">Fintech &amp; crypto<span class="chip-n">7</span></button><button class="chip" type="button" data-cat="E-commerce &amp; retail">E-commerce &amp; retail<span class="chip-n">5</span></button><button class="chip" type="button" data-cat="Media &amp; consumer tech">Media &amp; consumer tech<span class="chip-n">12</span></button><button class="chip" type="button" data-cat="Automotive">Automotive<span class="chip-n">7</span></button><button class="chip" type="button" data-cat="Retro web">Retro web<span class="chip-n">2</span></button></div>
       <div class="subrow">
@@ -313,6 +333,22 @@ a.card { border-color: var(--line-2); }
   var n = document.getElementById("n");
   var empty = document.querySelector(".empty");
   var state = { q: "", cat: "all", scheme: "all" };
+  var total = cards.length;
+  var banner = document.getElementById("active");
+  var bannerTxt = document.getElementById("activetxt");
+  var clearBtn = document.getElementById("clear");
+
+  /* Read the filters out of the DOM rather than trusting the last value we set.
+     Browsers restore the search box and the whole filtered page on a back
+     navigation, so a `state` that always starts empty disagrees with what the
+     user is actually looking at -- which reads as designs failing to load. */
+  function readState() {
+    state.q = q.value || "";
+    var cat = document.querySelector("[data-cat].is-on");
+    var sch = document.querySelector("[data-scheme].is-on");
+    state.cat = cat ? cat.dataset.cat : "all";
+    state.scheme = sch ? sch.dataset.scheme : "all";
+  }
 
   function apply() {
     var shown = 0, term = state.q.trim().toLowerCase();
@@ -326,7 +362,35 @@ a.card { border-color: var(--line-2); }
     n.textContent = shown;
     empty.hidden = shown > 0;
     if (typeof badge === "function") badge();
+    announce(shown);
   }
+
+  /* Say plainly what is being filtered, wherever the panel happens to be. */
+  function announce(shown) {
+    var bits = [];
+    if (state.cat !== "all") bits.push(state.cat);
+    if (state.scheme !== "all") bits.push(state.scheme + " theme");
+    if (state.q.trim()) bits.push('"' + state.q.trim() + '"');
+    if (!bits.length) { banner.hidden = true; return; }
+    banner.hidden = false;
+    bannerTxt.innerHTML = "Showing <b>" + shown + "</b> of " + total +
+      " \u2014 filtered by " + bits.join(", ");
+  }
+
+  function clearAll() {
+    q.value = "";
+    document.querySelectorAll("[data-cat],[data-scheme]").forEach(function (b) {
+      b.classList.toggle("is-on", b.dataset.cat === "all" || b.dataset.scheme === "all");
+    });
+    readState();
+    apply();
+  }
+  clearBtn.addEventListener("click", clearAll);
+
+  /* A page restored from the back/forward cache does not re-run this script, and
+     a reload can restore the search box on its own. Re-read both, so the list,
+     the counter and the banner always agree with the controls on screen. */
+  window.addEventListener("pageshow", function () { readState(); apply(); });
 
   q.addEventListener("input", function () { state.q = q.value; apply(); });
   document.addEventListener("keydown", function (e) {
@@ -397,6 +461,7 @@ a.card { border-color: var(--line-2); }
     root.setAttribute("data-theme", next); store("dl-theme", next); paint();
   });
   paint();
+  readState();
   apply();
 })();
 
