@@ -22,6 +22,21 @@
   }
 
   /* jump to spec -------------------------------------------------------- */
+  /* Publish the height of the sticky chrome (library bar + the design's nav, when
+     that nav is sticky) so anchor jumps can land below it instead of behind it.
+     Nav height varies by design, so it has to be measured rather than assumed. */
+  function chromeHeight() {
+    var bar = document.querySelector(".libbar");
+    var nav = document.querySelector(".nav");
+    var h = bar ? bar.getBoundingClientRect().height : 0;
+    if (nav && getComputedStyle(nav).position === "sticky") {
+      h += nav.getBoundingClientRect().height;
+    }
+    document.documentElement.style.setProperty("--chrome-h", Math.round(h) + "px");
+  }
+  chromeHeight();
+  window.addEventListener("resize", chromeHeight);
+
   var jump = document.querySelector("[data-jump]");
   if (jump) {
     jump.addEventListener("click", function () {

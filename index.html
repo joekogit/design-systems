@@ -183,7 +183,7 @@ a.card { border-color: var(--line-2); }
 @media (max-width: 760px) {
   .top-in { min-height: 52px; }
   .mark { font-size: 15px; }
-  .theme { width: 40px; height: 40px; font-size: 16px; }
+  .theme { width: 44px; height: 44px; font-size: 16px; }
 
   /* hero: keep the headline and the numbers, drop the long paragraph */
   .hero { padding-block: 26px 18px; }
@@ -237,6 +237,15 @@ a.card { border-color: var(--line-2); }
 @media (max-width: 760px) {
   .active { margin-top: 8px; }
   .clear { min-height: 44px; padding: 0 14px; }
+}
+
+/* Touch targets. The chips sit at 38px/34px, which is fine for a mouse but
+   under the 44px floor for a finger -- and a tablet at 768px+ is a touch
+   device, so the size can't key off viewport width alone. */
+@media (pointer: coarse) {
+  .chip { min-height: 44px; padding-block: 10px; }
+  .chips.small .chip { min-height: 44px; padding-block: 9px; }
+  .theme { width: 44px; height: 44px; }
 }
 
 </style>

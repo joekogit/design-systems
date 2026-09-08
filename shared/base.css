@@ -9,7 +9,11 @@
    this, so the two can never overlap; overridden at the narrow breakpoint. */
 :root { --libbar-h: 50px; }
 [hidden] { display: none !important; }  /* author display rules must not defeat it */
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+/* Anchor jumps have to clear the sticky chrome, or the heading you asked for
+   lands behind the bars. --chrome-h is measured and published by page.js; the
+   fallback covers the moment before it runs. */
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--chrome-h, calc(var(--libbar-h) + 76px)) + 12px); }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 body {

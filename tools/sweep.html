@@ -1,0 +1,124 @@
+<!doctype html><meta charset=utf-8><title>sweep</title>
+<style>body{margin:0;font:12px system-ui;background:#111;color:#eee}
+#f{display:flex;gap:8px;overflow-x:auto;padding:8px}
+iframe{border:0;background:#fff;flex:none}</style>
+<div id=f></div>
+<script>
+/* A broad sweep for bug CLASSES, not just the ones already known. Every check
+   here exists because the narrow audit passed while real bugs sat next to it. */
+const SLUGS=["airbnb", "airtable", "apple", "binance", "bmw", "bmw-m", "bugatti", "cal", "claude", "clay", "clickhouse", "cohere", "coinbase", "composio", "cursor", "dell-1996", "elevenlabs", "expo", "ferrari", "figma", "framer", "hashicorp", "hp", "ibm", "intercom", "kraken", "lamborghini", "linear.app", "lovable", "mastercard", "meta", "minimax", "mintlify", "miro", "mistral.ai", "mongodb", "nike", "nintendo-2001", "notion", "nvidia", "ollama", "opencode.ai", "pinterest", "playstation", "posthog", "raycast", "renault", "replicate", "resend", "revolut", "runwayml", "sanity", "sentry", "shopify", "slack", "spacex", "spotify", "starbucks", "stripe", "supabase", "superhuman", "tesla", "theverge", "together.ai", "uber", "vercel", "vodafone", "voltagent", "warp", "webflow", "wired", "wise", "x.ai", "zapier"];
+let W=parseInt(new URLSearchParams(location.search).get('w')||'375',10);
+const box=document.getElementById('f');
+window.ready=new Promise(res=>{
+  let left=SLUGS.length;
+  SLUGS.forEach(s=>{
+    const i=document.createElement('iframe');
+    i.width=W; i.height=900; i.dataset.slug=s;
+    i.src='../designs/'+s+'.html?v='+Date.now();
+    i.onload=()=>{ if(--left===0) res(true); };
+    box.appendChild(i);
+  });
+});
+
+window.sweep=function(){
+  return [...document.querySelectorAll('iframe')].map(f=>{
+    const d=f.contentDocument, w=f.contentWindow, de=d.documentElement;
+    const o={slug:f.dataset.slug}, txt=d.body.innerText;
+
+    // --- content correctness -------------------------------------------------
+    o.placeholders=(txt.match(/\{\{[A-Z_]+\}\}/g)||[]).slice(0,3);
+    o.lorem=/lorem ipsum|\bTODO\b|\bTBD\b|\bFIXME\b|\bXXX\b/i.test(txt)
+      ? (txt.match(/lorem ipsum|\bTODO\b|\bTBD\b|\bFIXME\b|\bXXX\b/i)||[''])[0] : null;
+    o.undefinedText=/\bundefined\b|\bNaN\b|\[object Object\]/.test(txt)
+      ? (txt.match(/\bundefined\b|\bNaN\b|\[object Object\]/)||[''])[0] : null;
+
+    // --- assets --------------------------------------------------------------
+    // NOTE: image liveness is deliberately NOT checked here. This harness loads
+    // 74 pages at once (~740 requests to images.unsplash.com), which throttles
+    // and reports perfectly good images as broken. Check them out-of-band, one
+    // page at a time or with a rate-limited curl over shared/images.json.
+    o.brokenImgs=[];
+
+    // --- document integrity --------------------------------------------------
+    const ids={}, dupes=[];
+    d.querySelectorAll('[id]').forEach(e=>{ids[e.id]=(ids[e.id]||0)+1});
+    for(const k in ids) if(ids[k]>1) dupes.push(k+'x'+ids[k]);
+    o.dupeIds=dupes.slice(0,5);
+    o.emptyLinks=[...d.querySelectorAll('a')]
+      .filter(a=>{const h=a.getAttribute('href');return !h||h==='#'||h==='javascript:void(0)'})
+      .map(a=>(a.textContent||'').trim().slice(0,18)).slice(0,4);
+
+    // --- in-page jump targets sitting under the sticky chrome ----------------
+    const bar=d.querySelector('.libbar'), nav=d.querySelector('.nav');
+    const chrome=(bar?bar.getBoundingClientRect().height:0)+
+                 (nav&&w.getComputedStyle(nav).position==='sticky'?nav.getBoundingClientRect().height:0);
+    o.chromeH=Math.round(chrome);
+    const buried=[];
+    const anchors=new Set();
+    d.querySelectorAll('[data-jump],a[href^="#"]').forEach(e=>{
+      const t=e.getAttribute('data-jump')||e.getAttribute('href');
+      if(t&&t.length>1) anchors.add(t);
+    });
+    anchors.forEach(sel=>{
+      let t=null; try{ t=d.querySelector(sel); }catch(e){}
+      if(!t){ buried.push(sel+':MISSING'); return; }
+      const sm=(parseFloat(w.getComputedStyle(t).scrollMarginTop)||0) +
+               (parseFloat(w.getComputedStyle(d.documentElement).scrollPaddingTop)||0);
+      if(sm < chrome-1) buried.push(sel+':clear'+Math.round(sm)+'<chrome'+Math.round(chrome));
+    });
+    o.buriedAnchors=buried.slice(0,4); o.buriedCount=buried.length;
+
+    // --- text clipped by its own container -----------------------------------
+    const clipped=[];
+    d.querySelectorAll('h1,h2,h3,h4,p,li,span,td,th,button,a').forEach(e=>{
+      if(!e.textContent||!e.textContent.trim())return;
+      const cs=w.getComputedStyle(e);
+      if(cs.overflow==='visible'&&cs.overflowY==='visible')return;
+      if(cs.webkitLineClamp&&cs.webkitLineClamp!=='none')return;   // deliberate
+      if(cs.textOverflow==='ellipsis')return;                       // deliberate
+      if(e.scrollHeight>e.clientHeight+3&&e.clientHeight>0)
+        clipped.push((e.className||e.tagName).toString().slice(0,20)+':'+e.clientHeight+'<'+e.scrollHeight);
+    });
+    o.clipped=clipped.length; o.clippedEg=[...new Set(clipped)].slice(0,3);
+
+    // --- children spilling outside their container ---------------------------
+    const spill=[];
+    d.querySelectorAll('.wrap, .feat-card, .tier, .zoo-cell, .quote-card, .metric').forEach(p=>{
+      const cs=w.getComputedStyle(p);
+      if(/auto|scroll|hidden/.test(cs.overflowX))return;
+      const pr=p.getBoundingClientRect();
+      [...p.children].forEach(c=>{
+        const r=c.getBoundingClientRect();
+        if(!r.width)return;
+        if(r.right>pr.right+2||r.left<pr.left-2)
+          spill.push((p.className||p.tagName).toString().slice(0,14)+'>'+
+                     (c.className||c.tagName).toString().slice(0,14));
+      });
+    });
+    o.spill=spill.length; o.spillEg=[...new Set(spill)].slice(0,3);
+
+    // --- a section that renders nothing --------------------------------------
+    o.emptySections=[...d.querySelectorAll('section')]
+      .filter(s=>s.getBoundingClientRect().height>0 && !(s.innerText||'').trim() && !s.querySelector('img,svg,canvas'))
+      .map(s=>(s.className||'').toString().slice(0,24)).slice(0,3);
+
+    // --- does the mobile menu actually work? ---------------------------------
+    const burger=d.querySelector('.nav-burger'), panel=d.querySelector('.nav-panel');
+    if(burger&&panel&&w.getComputedStyle(burger).display!=='none'){
+      const before=w.getComputedStyle(panel).display;
+      burger.click();
+      const after=w.getComputedStyle(panel).display;
+      burger.click();
+      o.burgerWorks = before!==after;
+    } else o.burgerWorks=null;
+
+    // --- do the FAQ disclosures open? ----------------------------------------
+    const det=d.querySelector('details');
+    if(det){ const was=det.open; det.open=!was;
+      o.detailsWorks = d.querySelector('details').open!==was; det.open=was; }
+    else o.detailsWorks=null;
+
+    return o;
+  });
+};
+</script>
