@@ -1,0 +1,5 @@
+This directory exists only because the Netlify site has `functions_dir` set to
+`netlify/functions` in its stored build settings (left there by `netlify init`).
+The site has no functions and needs none; a configured directory that does not
+exist fails the Deploying stage. Keep the directory, or clear the setting in
+Site configuration -> Build & deploy -> Functions.

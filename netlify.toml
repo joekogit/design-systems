@@ -10,6 +10,12 @@
   publish = "."
   command = "echo 'static site: pages are committed pre-built, nothing to compile'"
 
+# The site's stored settings point at this directory. It is empty and this site
+# has no functions, but a configured directory that does not exist fails the
+# Deploying stage, so it is declared here and kept in the repo.
+[functions]
+  directory = "netlify/functions"
+
 
 # Long-lived caching for generated pages' assets is unnecessary (everything is
 # inlined), but the pages themselves should revalidate so a rebuild shows up.
