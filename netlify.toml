@@ -1,11 +1,10 @@
 # Netlify configuration for the design template library.
 # The site is fully static — no build step, no dependencies to install.
 
-# `netlify init` left two bad values in the site's stored build settings: the
-# publish directory as " ." (with a leading space) and the build command as the
-# literal string "# no build command". These netlify.toml values take precedence
-# over the stored ones, so they are stated explicitly rather than left empty --
-# an empty command falls back to the stored one.
+# Stated explicitly rather than left to the site's stored settings. `netlify init`
+# had left those as publish " ." (leading space) and command "# no build command",
+# which failed every git build at the Deploying stage; note that these values did
+# NOT override the stored ones, so the stored settings were corrected too.
 [build]
   publish = "."
   command = "echo 'static site: pages are committed pre-built, nothing to compile'"
