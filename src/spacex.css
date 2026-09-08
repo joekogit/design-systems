@@ -1,7 +1,7 @@
 /* SpaceX — pure black, full-bleed imagery, uppercase tracked display, ghost pills. */
 :root { --maxw: 1320px; --sect: clamp(56px, 7vw, 96px); --shadow-1: none; --shadow-2: none;
   --hero-scrim: linear-gradient(180deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.08) 40%, rgba(0,0,0,.82) 100%); }
-.nav { --nav-bg: transparent; border-bottom: 0; position: absolute; left: 0; right: 0; top: 41px; }
+.nav { --nav-bg: transparent; border-bottom: 0; position: absolute; left: 0; right: 0; top: var(--libbar-h); }
 .brand { font-family: var(--font-display); font-weight: 600; letter-spacing: .42em; font-size: 17px; color: #fff; }
 .brand-ico { display: none; }
 .nav-links a { color: #fff; text-transform: uppercase; letter-spacing: .14em; font-size: 12px; font-weight: 600; }

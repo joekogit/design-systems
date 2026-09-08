@@ -10,7 +10,8 @@ window.ready=new Promise(res=>{
   let left=SLUGS.length;
   SLUGS.forEach(s=>{
     const i=document.createElement('iframe');
-    i.dataset.slug=s; i.src='../designs/'+s+'.html';
+    // cache-bust, or a re-run silently measures the previous build
+    i.dataset.slug=s; i.src='../designs/'+s+'.html?v='+Date.now();
     i.onload=()=>{ if(--left===0) res(true); };
     box.appendChild(i);
   });
@@ -87,6 +88,54 @@ window.audit=function(){
       return !c||c==='none'||c==='normal';});
     o.icons=ics.length; o.deadIcons=dead.length;
     o.deadEg=[...new Set(dead.map(i=>i.className))].slice(0,3);
+    // A card the design has painted needs its inner padding. Variant rules like
+    // `.v-flat .feat-card { padding-inline: 0 }` outrank a design's own
+    // `.feat-card { padding: 26px }`, leaving text flush against a filled edge.
+    const flush=[];
+    // .g-item is excluded on purpose: a gallery tile's image is meant to bleed to
+    // the edge, with the caption overlaid absolutely on top of it.
+    d.querySelectorAll('.feat-card, .tier, .zoo-cell, .quote-card').forEach(el=>{
+      const cs=w.getComputedStyle(el);
+      const painted = (cs.backgroundImage&&cs.backgroundImage!=='none') ||
+        (cs.backgroundColor&&!/rgba\(0, 0, 0, 0\)|transparent/.test(cs.backgroundColor));
+      if(!painted) return;
+      const pl=parseFloat(cs.paddingLeft)||0, pr=parseFloat(cs.paddingRight)||0;
+      if(pl>=8&&pr>=8) return;
+      // only counts if normally-flowing text actually sits on that edge
+      const flowing=[...el.querySelectorAll('h1,h2,h3,h4,p,li,span')].some(t=>{
+        if(!t.textContent||!t.textContent.trim())return false;
+        if(w.getComputedStyle(t).position==='absolute')return false;
+        return t.getBoundingClientRect().left - el.getBoundingClientRect().left < 8;
+      });
+      if(flowing) flush.push((el.className||el.tagName).toString().slice(0,22)+':'+pl+'/'+pr);
+    });
+    o.flushText=flush.length; o.flushEg=[...new Set(flush)].slice(0,4);
+
+    // An inner element that scrolls sideways. Wide tables opt into this on
+    // purpose; chrome like the library bar does not.
+    const sideways=[];
+    d.querySelectorAll('*').forEach(el=>{
+      if(el.scrollWidth<=el.clientWidth+1) return;
+      const cs=w.getComputedStyle(el);
+      if(!/auto|scroll/.test(cs.overflowX)) return;
+      if(!el.getBoundingClientRect().height) return;
+      if(el.closest('.tbl-wrap, .tblwrap, .code, pre')) return;  // deliberate
+      sideways.push((el.className||el.tagName).toString().slice(0,20)+':'+el.clientWidth+'<'+el.scrollWidth);
+    });
+    o.sideways=sideways.length; o.sidewaysEg=[...new Set(sideways)].slice(0,4);
+
+    // The page's sticky nav parks below the library bar. If the bar's height and
+    // the nav's offset ever drift apart, the nav's first row is hidden behind it.
+    (function(){
+      const bar=d.querySelector('.libbar'), nav=d.querySelector('.nav');
+      if(!bar||!nav){o.navOccluded=0;return}
+      const y=w.scrollY; w.scrollTo(0,1400);
+      const rb=bar.getBoundingClientRect(), rn=nav.getBoundingClientRect();
+      o.navOccluded=Math.max(0, Math.round(rb.bottom - rn.top));
+      o.libbarH=Math.round(rb.height);
+      w.scrollTo(0,y);
+    })();
+
     o.burger=w.getComputedStyle(d.querySelector('.nav-burger')).display;
     o.navLinks=w.getComputedStyle(d.querySelector('.nav-links')).display;
     return o;

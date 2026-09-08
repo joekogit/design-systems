@@ -6,7 +6,7 @@
   --shadow-2: 0 2px 8px rgba(20,20,19,.07), 0 18px 44px rgba(20,20,19,.10); }
 
 /* the nav docks below the viewport top as a floating pill with rounded shoulders */
-.nav.v-floating-pill { top: 49px; }
+.nav.v-floating-pill { top: var(--libbar-h); }
 .nav.v-floating-pill .nav-in { margin-top: 10px; padding-inline: 22px; min-height: 62px;
   background: #fff; border: 0; border-radius: 1000px; box-shadow: var(--shadow-1); }
 .brand { font-family: var(--font-display); font-weight: 800; letter-spacing: -.03em; }

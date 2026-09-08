@@ -14,6 +14,10 @@
    ========================================================================== */
 
 *, *::before, *::after { box-sizing: border-box; }
+
+/* Height of the library chrome bar. The page's sticky nav offsets by exactly
+   this, so the two can never overlap; overridden at the narrow breakpoint. */
+:root { --libbar-h: 50px; }
 [hidden] { display: none !important; }  /* author display rules must not defeat it */
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -109,25 +113,44 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 /* --- library bar --------------------------------------------------------- */
 .libbar {
+  /* Height is fixed and published as a token: the page's own sticky nav parks
+     directly below it, and a bar that grew by a pixel used to hide the top of
+     every design's nav (it was 49px tall on desktop, 61px on mobile, against a
+     hardcoded 41px offset -- so the nav's first row was clipped at every width). */
+  height: var(--libbar-h);
   position: sticky; top: 0; z-index: 60;
-  display: flex; align-items: center; gap: 12px;
-  padding: 8px max(12px, env(safe-area-inset-left)) 8px 12px;
+  display: flex; align-items: center; gap: 12px; overflow-y: hidden;
+  padding: 0 max(12px, env(safe-area-inset-left)) 0 12px;
   background: #0b0b0d; color: #f4f4f5; border-bottom: 1px solid #26262b;
   font: 500 13px/1.2 ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif;
   letter-spacing: 0; overflow-x: auto; scrollbar-width: none;
 }
 .libbar::-webkit-scrollbar { display: none; }
-.libbar a.lb-back { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: 0 10px; border-radius: 6px; background: #1c1c21; white-space: nowrap; }
+.libbar a.lb-back { display: inline-flex; align-items: center; gap: 6px; min-height: 34px; padding: 0 10px; border-radius: 6px; background: #1c1c21; white-space: nowrap; }
 .libbar a.lb-back:hover { background: #2a2a31; }
 .lb-name { font-weight: 700; white-space: nowrap; }
 .lb-cat { color: #9a9aa4; white-space: nowrap; }
 .lb-sep { color: #45454f; }
 .lb-spacer { flex: 1 1 auto; min-width: 8px; }
-.lb-jump { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: 0 10px; border-radius: 6px; border: 1px solid #33333b; background: transparent; color: #d4d4d8; cursor: pointer; white-space: nowrap; }
+.lb-jump { display: inline-flex; align-items: center; gap: 6px; min-height: 34px; padding: 0 10px; border-radius: 6px; border: 1px solid #33333b; background: transparent; color: #d4d4d8; cursor: pointer; white-space: nowrap; }
 .lb-jump:hover { background: #1c1c21; color: #fff; }
+/* The bar carried back-link, name, category and a labelled button: about 460px
+   of content in a 375px viewport, so it scrolled sideways on every page. Drop
+   the category and the button's label rather than let chrome scroll; the back
+   link and the design's name are what the bar is for. */
+@media (max-width: 620px) {
+  :root { --libbar-h: 56px; }
+  .libbar { gap: 8px; padding-inline: 10px; }
+  .lb-cat, .lb-sep { display: none; }
+  .lb-jump span { display: none; }
+  .lb-jump { padding: 0 11px; }
+  .lb-back, .lb-jump { min-height: 40px; }
+  .lb-name { max-width: 46vw; }
+  .lb-name { overflow: hidden; text-overflow: ellipsis; }
+}
 
 /* --- nav ----------------------------------------------------------------- */
-.nav { position: sticky; top: 41px; z-index: 50; background: var(--nav-bg, var(--c-canvas)); border-bottom: 1px solid var(--nav-bd, var(--c-hairline)); }
+.nav { position: sticky; top: var(--libbar-h); z-index: 50; background: var(--nav-bg, var(--c-canvas)); border-bottom: 1px solid var(--nav-bd, var(--c-hairline)); }
 .nav-in { display: flex; align-items: center; gap: var(--s-lg); min-height: var(--nav-h, 64px); }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 700; font-size: 17px; letter-spacing: -.01em; }
 .brand-ico { font-size: 22px; color: var(--c-primary); }
@@ -145,7 +168,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 .nav-panel a { display: block; padding: 14px 0; min-height: 44px; border-bottom: 1px solid var(--c-hairline); color: var(--c-ink); }
 
 /* nav variants */
-.nav.v-floating-pill { top: 49px; background: transparent; border: 0; }
+.nav.v-floating-pill { top: var(--libbar-h); background: transparent; border: 0; }
 .nav.v-floating-pill .nav-in { margin-top: 8px; padding-inline: 18px; border: 1px solid var(--c-hairline); border-radius: var(--r-pill); background: var(--nav-bg, var(--c-surface)); backdrop-filter: blur(14px); }
 .nav.v-minimal { background: transparent; border-bottom-color: transparent; }
 .nav.v-chrome .nav-in { min-height: 58px; }
@@ -197,13 +220,18 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 .feat-body { color: var(--c-ink-muted); font-size: var(--fs-body-sm); }
 
 /* card variants */
-.v-flat .feat-card { background: transparent; border-color: transparent; padding-inline: 0; }
+.v-flat .feat-card { background: transparent; border-color: transparent; }
 .v-elevated .feat-card { border-color: transparent; box-shadow: var(--shadow-1, 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.08)); }
 .v-elevated .feat-card:hover { box-shadow: var(--shadow-2, 0 2px 6px rgba(0,0,0,.08), 0 16px 40px rgba(0,0,0,.12)); transform: translateY(-2px); }
 
 /* feature layout variants */
 .feat-grid.v-list { grid-template-columns: 1fr; gap: 0; }
-.v-list .feat-card { display: grid; grid-template-columns: 44px 1fr; column-gap: var(--s-md); border: 0; border-bottom: 1px solid var(--c-hairline); border-radius: 0; background: transparent; padding-inline: 0; }
+.v-list .feat-card { display: grid; grid-template-columns: 44px 1fr; column-gap: var(--s-md); border: 0; border-bottom: 1px solid var(--c-hairline); border-radius: 0; background: transparent; }
+/* Dropping the card's inner padding is only right while the card is unfilled.
+   :where() gives this no specificity, so a design that paints the card and sets
+   its own padding wins -- otherwise a variant rule at (0,2,0) beat the design's
+   own `.feat-card { padding: 26px }` and left text flush against a filled edge. */
+:where(.v-flat, .v-list) .feat-card { padding-inline: 0; }
 .v-list .feat-ico { grid-row: span 2; margin-bottom: 0; }
 .v-numbered .feat-ico::after { content: "0" counter(f); counter-increment: f; font-family: var(--font-mono); font-size: 13px; }
 .v-numbered .feat-grid { counter-reset: f; }
@@ -674,8 +702,8 @@ table.tbl th { font-size: 11px; text-transform: uppercase; letter-spacing: .08em
   <span class="lb-sep">/</span>
   <span class="lb-cat">Productivity & SaaS</span>
   <span class="lb-spacer"></span>
-  <button class="lb-jump" type="button" data-jump="#spec">
-    <i class="ph ph-swatches" aria-hidden="true"></i>Design spec
+  <button class="lb-jump" type="button" data-jump="#spec" aria-label="Jump to the design spec">
+    <i class="ph ph-swatches" aria-hidden="true"></i><span>Design spec</span>
   </button>
 </div>
 

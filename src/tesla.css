@@ -7,7 +7,7 @@
                 rgba(0,0,0,.02) 40%, rgba(0,0,0,.50) 100%); }
 
 /* the nav simply exists in the space above the photograph */
-.nav { --nav-bg: transparent; border-bottom: 0; position: absolute; left: 0; right: 0; top: 41px; }
+.nav { --nav-bg: transparent; border-bottom: 0; position: absolute; left: 0; right: 0; top: var(--libbar-h); }
 .nav-in { min-height: 56px; }
 .brand { color: #fff; font-weight: 600; letter-spacing: .34em; font-size: 15px;
   text-shadow: 0 1px 12px rgba(0,0,0,.55); }
