@@ -2,7 +2,7 @@
 
 Live at **https://systems.joeko.net** (also https://joekonet-systems.netlify.app).
 
-- **Repo:** `github.com/joekogit/design-systems` (private)
+- **Repo:** `github.com/joekogit/design-systems` (public, since 2026-09-08)
 - **Netlify site:** `joekonet-systems` — site id `9a161ed6-7881-4b6c-8ee7-864d7fccd50d`
 - **Team:** `joe-kocovsky`
 - Static: no build step, no dependencies, relative links only. `netlify.toml` sets
@@ -45,30 +45,40 @@ Post-processing minifies markup and turns on **pretty URLs**, so `href="designs/
 built file is served as `href='/designs/x'`. Both forms resolve; don't be alarmed when the live
 HTML doesn't match the local build byte for byte.
 
-## Continuous deploys — still blocked
+## Continuous deploys
 
-A push reaches Netlify and creates a deploy, which then fails with:
+While the repo was **private**, every webhook build was refused:
 
 > Build blocked: Unrecognized Git contributor. This plan allows only verified account members
 > to push to private repos.
 
-**`netlify init` does not fix this.** Its output says it plainly — *"Adding deploy key to
-repository... Creating Netlify GitHub Notification Hooks"*. That is the deploy-key path, which
-gives Netlify read access to the code but no GitHub **identity** mapping, so it cannot verify who
-pushed. On a private repo that means every webhook build is refused. Verified twice, and a commit
-with no `Co-Authored-By` trailer fails identically, so the trailer is not the cause.
+Three things were tried and none of them lifted it, so don't repeat them:
 
-Only the **Netlify GitHub App** creates that identity mapping, and it can only be installed from
-the web UI:
+- **`netlify init`** — its own output says what it does: *"Adding deploy key to repository...
+  Creating Netlify GitHub Notification Hooks"*. That is the deploy-key path, which grants read
+  access but no GitHub **identity** mapping, so Netlify still cannot verify who pushed.
+- **The Netlify GitHub App** (installation `111393814`) — this *does* create the identity
+  mapping, and after installing it with access to all repositories a push does reach Netlify and
+  create a production deploy. It still failed with the identical message.
+- **Commit authorship** — failing identically whether authored as `joe.kocovsky@gmail.com` or
+  `13067392+joekogit@users.noreply.github.com`, and with or without a `Co-Authored-By` trailer.
 
-> Site configuration -> Build & deploy -> Continuous deployment -> Manage repository ->
-> Link to a different repository -> GitHub -> authorise the Netlify GitHub App
+The message means exactly what it says: it is a **plan restriction on private repos**, not a
+wiring problem. The repo is now public, which removes the restriction.
 
-Alternatives:
+Note that Netlify caches the repo's visibility on the site record as
+`build_settings.public_repo`, and that flag is derived from GitHub rather than settable over the
+API — `updateSite` accepts the change and silently keeps the old value. If builds still report the
+private-repo block after the repo has gone public, the connection needs re-establishing so
+Netlify re-reads the metadata:
 
-- **Make the repo public** — `gh repo edit joekogit/design-systems --visibility public`. The
-  restriction applies only to private repos.
-- **Deploy manually** — `netlify deploy --prod --dir .`, a few seconds, works today.
+> Site configuration -> Build & deploy -> Continuous deployment -> Manage repository
+
+**Manual deploy always works** and takes a few seconds:
+
+```bash
+netlify deploy --prod --dir .
+```
 
 ## Before any deploy
 
